@@ -83,12 +83,12 @@ status open
 
 \begin_layout Plain Layout
 
-.model es2 
+.model es1 
 \end_layout
 
 \begin_layout Plain Layout
 
-.inputs x y z v  
+.inputs x y z v 
 \end_layout
 
 \begin_layout Plain Layout
@@ -108,17 +108,12 @@ status open
 
 \begin_layout Plain Layout
 
-0001 1 
-\end_layout
-
-\begin_layout Plain Layout
-
 0010 1 
 \end_layout
 
 \begin_layout Plain Layout
 
-0111 1 
+0100 1 
 \end_layout
 
 \begin_layout Plain Layout
@@ -133,7 +128,7 @@ status open
 
 \begin_layout Plain Layout
 
-1111 1 
+1011 1 
 \end_layout
 
 \begin_layout Plain Layout
@@ -148,22 +143,22 @@ status open
 
 \begin_layout Plain Layout
 
-0101 1 
+0111 1 
 \end_layout
 
 \begin_layout Plain Layout
 
-1001 1 
+1110 1 
 \end_layout
 
 \begin_layout Plain Layout
 
-1011 1 
+1111 1 
 \end_layout
 
 \begin_layout Plain Layout
 
-.end
+.end 
 \end_layout
 
 \end_inset
