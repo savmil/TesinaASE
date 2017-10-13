@@ -75,6 +75,26 @@
 
 \begin_layout Section
 Minimizzazione reti combinatorie
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+i 4 esercizi, karnaugh , mckusley, multi funzione con relative tabelle 
+\end_layout
+
+\begin_layout Plain Layout
+descrive funzione ; minimizzazione(solo min termini primi ed essenziali),
+ copertura casi particolari (solo 1),
+\end_layout
+
+\begin_layout Plain Layout
+prove con sis: cambiando comandi(tipo rugged script), librerie di componenti,
+ su diversi fattori(numero di letterali,ritardi etc)
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

@@ -74,11 +74,26 @@
 \begin_body
 
 \begin_layout Section
-Traccia
+Minimizzazione reti combinatorie
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+i 4 esercizi, karnaugh , mckusley, multi funzione con relative tabelle 
+\end_layout
+
+\begin_layout Plain Layout
+descrive funzione ; minimizzazione(solo min termini primi ed essenziali),
+ copertu
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-Minimizzare le funzioni descritte dai seguenti ON-SET ed DC-SE
+Minimizzare le funzioni descritte dai seguenti ON-SET ed DC-SET
 \end_layout
 
 \begin_layout Enumerate
@@ -152,10 +167,6 @@ ON-SET1={1,2,5,10}; DC-SET1={3,6,7,14}
 
 \begin_layout Enumerate
 ON-SET2={1,4,5,6,8,10}; DC-SET2={0,13,14}
-\end_layout
-
-\begin_layout Enumerate
-
 \end_layout
 
 \end_deeper
