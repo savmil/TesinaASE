@@ -1184,7 +1184,7 @@ filename "mappa.tex"
 \end_inset
 
 determinado la sudetta funzione minimizzata y=
-\begin_inset Formula $\neg x\neg y\neg z+\neg x\neg y\neg v+\neg xyv+yzv+xz\neg v+x\neg y$
+\begin_inset Formula $\neg x\neg z\neg v+\neg y\neg v++xz$
 \end_inset
 
 
@@ -2043,6 +2043,20 @@ F
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -2050,7 +2064,7 @@ has_inner_box 1
 inner_pos "t"
 use_parbox 0
 use_makebox 0
-width "50col%"
+width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
@@ -3854,6 +3868,48 @@ check
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "50col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
 \begin_inset Tabular
 <lyxtabular version="3" rows="9" columns="6">
 <features tabularvalignment="middle">
@@ -4515,6 +4571,9 @@ e
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -5229,7 +5288,7 @@ X
 \begin_layout Standard
 Disciminando gli implicanti primi essenziali primari e con le regole di
  dominanza quelli secondari la funzione di uscita è pari a 
-\begin_inset Formula $y=b+d$
+\begin_inset Formula $y=b+d+e$
 \end_inset
 
 

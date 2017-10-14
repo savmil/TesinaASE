@@ -1184,7 +1184,7 @@ filename "mappa.tex"
 \end_inset
 
 determinado la sudetta funzione minimizzata y=
-\begin_inset Formula $\neg x\neg y\neg z+\neg x\neg y\neg v+\neg xyv+yzv+xz\neg v+x\neg y$
+\begin_inset Formula $\neg x\neg z\neg v+\neg y\neg v++xz$
 \end_inset
 
 
