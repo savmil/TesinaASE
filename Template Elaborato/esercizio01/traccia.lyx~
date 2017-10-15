@@ -74,9 +74,9 @@
 \begin_body
 
 \begin_layout Section
-Minimizzazione reti combinatorie
+Minimizzazione di reti combinatorie
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 i 4 esercizi, karnaugh , mckusley, multi funzione con relative tabelle 
@@ -98,20 +98,21 @@ prove con sis: cambiando comandi(tipo rugged script), librerie di componenti,
 \end_layout
 
 \begin_layout Standard
-Minimizzare le funzioni descritte dai seguenti ON-SET ed DC-SET
+Minimizzare le funzioni descritte dai seguenti ON-SET ed DC-SET.
 \end_layout
 
 \begin_layout Enumerate
-ON-SET={0,2,4,8,10,11,15} ; DC-SET={7,14}
+ON-SET={0, 2, 4, 8, 10, 11, 15} ; DC-SET={7, 14}
 \end_layout
 
 \begin_layout Enumerate
-ON-SET={0,1,2,7,8,10,15}; DC-SET={5,9,11}
+ON-SET={0, 1, 2, 7, 8, 10, 15}; DC-SET={5, 9, 11}
 \end_layout
 
 \begin_layout Enumerate
-ON-SET={1,3,5,7,8,9,11,13,14,15}; DC-SET={2,12}
-\end_layout
+ON-SET={1, 3, 5, 7, 8, 9, 11, 13, 14, 15}; DC-SET={2, 12}
+\begin_inset Note Comment
+status collapsed
 
 \begin_layout Enumerate
 ON-SET={1,4,5,6,7,9,11,14,15}; DC-SET={}
@@ -125,24 +126,29 @@ ON-SET={4,10,11,13,14,15}; DC-SET={3,5,6,7}
 ON-SET={0,2,4,5,6,7,8,9,13,15}; DC-SET{}
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Enumerate
-F1;F2;F3
+Fuzione a più uscite F1, F2, F3, descritte rispettivamente da:
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-ON-SET1={0,4,8,9,14,15}; DC-SET1={1,2,5,7}
+ON-SET1={0, 4, 8, 9, 14, 15}; DC-SET1={1, 2, 5, 7}
 \end_layout
 
 \begin_layout Enumerate
-ON-SET2={0,1,7,9,11,13}; DC-SET2={4,12}
+ON-SET2={0, 1, 7, 9, 11, 13}; DC-SET2={4, 12}
 \end_layout
 
 \begin_layout Enumerate
-ON-SET3={7,9,10,11,15}; DC-SET3={5,12}
-\end_layout
+ON-SET3={7, 9, 10, 11, 15}; DC-SET3={5, 12}
+\begin_inset Note Comment
+status collapsed
 
-\end_deeper
 \begin_layout Enumerate
 F1;F2;F3
 \end_layout
@@ -172,6 +178,12 @@ ON-SET1={1,2,5,10}; DC-SET1={3,6,7,14}
 
 \begin_layout Enumerate
 ON-SET2={1,4,5,6,8,10}; DC-SET2={0,13,14}
+\end_layout
+
+\end_deeper
+\end_inset
+
+
 \end_layout
 
 \end_deeper

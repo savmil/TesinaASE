@@ -44,3 +44,5 @@ begin
 				);
 
 end structural;
+
+-- X=1 <=> (A(0)=1 and SEL="11")or(A(1)=1 and SEL="10")or(A(2)=1 and SEL="01")or(A(3)=1 and SEL="00")

@@ -282,8 +282,24 @@ Soluzione
 \end_layout
 
 \begin_layout Standard
+La minimizzazione delle funzioni sarà effettuata attraverso i differenti
+ metodi indicati.
+\end_layout
+
+\begin_layout Paragraph
+Minimizzazione 1
+\end_layout
+
+\begin_layout Standard
+La prima funzione è stata minimizzata attraverso il metodo delle mappe di
+ Karnaugh.
+ Si può generare la seguente tabella di verità a partire dalla definizione
+ insiemistica:
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Descrivere la soluzione relizzata per mezzo di schematici e riportare il
@@ -300,12 +316,7 @@ Descrivere la soluzione relizzata per mezzo di schematici e riportare il
 placement H
 wide false
 sideways false
-status open
-
-\begin_layout Plain Layout
-Si può generare la seguente tabella di verità a partire dalla definizione
- insiemistica:
-\end_layout
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Box Frameless
@@ -327,6 +338,8 @@ backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
+Si può generare la seguente tabella di verità a partire dalla definizione
+ insiemistica:
 \begin_inset Tabular
 <lyxtabular version="3" rows="17" columns="5">
 <features islongtable="true" longtabularalignment="center">
@@ -1183,6 +1196,10 @@ filename "mappa.tex"
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
 determinado la sudetta funzione minimizzata y=
 \begin_inset Formula $\neg x\neg z\neg v+\neg y\neg v++xz$
 \end_inset
@@ -1195,7 +1212,7 @@ determinado la sudetta funzione minimizzata y=
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Si può generare la seguente tabella di verità a partire dalla definizione
@@ -2055,7 +2072,7 @@ F
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Box Frameless
@@ -3587,7 +3604,7 @@ d
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Box Frameless
@@ -4517,7 +4534,7 @@ Disciminando gli implicanti primi essenziali primari e con le regole di
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Si può generare la seguente tabella di verità a partire dalla definizione
@@ -5398,11 +5415,37 @@ status open
 \end_layout
 
 \begin_layout Standard
-y=d+h+a+b o e
+y=
+\begin_inset Formula $d+h+a+boe$
+\end_inset
+
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+o nel senso che va bene o b o e
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 a=
+\begin_inset Formula $\neg xv+\neg yv+x\neg z+xy$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e=
+\begin_inset Formula $zv$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -5410,7 +5453,7 @@ a=
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Si può generare la seguente tabella di verità a partire dalla definizione
