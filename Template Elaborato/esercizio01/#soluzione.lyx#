@@ -3582,10 +3582,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -4493,7 +4489,7 @@ X
 \begin_layout Standard
 Disciminando gli implicanti primi essenziali primari e con le regole di
  dominanza quelli secondari la funzione di uscita è pari a 
-\begin_inset Formula $y=c+e+f=$
+\begin_inset Formula $y=c+e+f=yzv+\neg y\neg z+\neg y\neg v$
 \end_inset
 
 

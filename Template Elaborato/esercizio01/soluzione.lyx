@@ -2737,6 +2737,14 @@ check
 \end_inset
 
 
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+
 \begin_inset Tabular
 <lyxtabular version="3" rows="14" columns="6">
 <features tabularvalignment="middle">
@@ -3582,10 +3590,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -3840,6 +3844,14 @@ g
 </row>
 </lyxtabular>
 
+\end_inset
+
+
+\begin_inset VSpace medskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
 \end_inset
 
 
