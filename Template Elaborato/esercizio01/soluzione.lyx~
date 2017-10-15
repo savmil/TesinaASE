@@ -296,25 +296,11 @@ La prima funzione è stata minimizzata attraverso il metodo delle mappe di
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-Descrivere la soluzione relizzata per mezzo di schematici e riportare il
- codice dei soli componenti significativi.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float table
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Si può generare la seguente tabella di verità a partire dalla definizione
@@ -1206,7 +1192,11 @@ Individuando i sottocubi di area massima e gli implicanti primi essenziali,
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $y=\neg x\neg z\neg v+\neg y\neg v++xz$
+\begin_inset Formula 
+\[
+F=\neg x\neg z\neg v+\neg y\neg v++xz
+\]
+
 \end_inset
 
 
@@ -1226,7 +1216,7 @@ Al fine di minimizzare questa funzione è stato utilizzato il metodo di Quine
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Si può generare la seguente tabella di verità a partire dalla definizione
@@ -2091,7 +2081,7 @@ ne applicato.
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Box Frameless
@@ -3623,7 +3613,7 @@ d
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Box Frameless
@@ -3642,7 +3632,7 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -3920,7 +3910,7 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -4625,17 +4615,27 @@ X
 Disciminando gli implicanti primi essenziali primari, e con le regole di
  dominanza quelli secondari, si ottiene una tabella cliclica non ulteriormente
  riducibile.
- Applicando il metodo Branch & Bound in questo caso banale, si prosegue
- nella scelta dell'implicante 
+ Applicando il metodo Branch&Bound in questo caso banale, si prosegue nella
+ scelta dell'implicante 
 \begin_inset Formula $e$
 \end_inset
 
- per il completamento della copertura in base al costo in termini di letterali.
+ per il completamento della copertura.
+ Questa scelta si basa sul costo in termini di letterali dei due implicanti,
+ che individua 
+\begin_inset Formula $e$
+\end_inset
+
+ come l'implicante che consente la copertura a costo minimo.
  La funzione di uscita, dunque, è pari a:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $y=c+e+f=yzv+\neg y\neg z+\neg y\neg v$
+\begin_inset Formula 
+\[
+F=c+e+f=yzv+\neg y\neg z+\neg y\neg v
+\]
+
 \end_inset
 
 
@@ -4643,6 +4643,10 @@ Disciminando gli implicanti primi essenziali primari, e con le regole di
 
 \begin_layout Paragraph
 Minimizzazione 3
+\end_layout
+
+\begin_layout Standard
+Si prosegue nuovamente con metodo Quine Mc Cluskey.
 \end_layout
 
 \begin_layout Standard
@@ -5498,31 +5502,6 @@ F
 \end_inset
 
 
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "50col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -5531,6 +5510,26 @@ status open
 \end_layout
 
 \begin_layout Standard
+Attraverso la minimizzazione riusciamo ad ottenere un insieme di implicanti
+ primi essenziali che coprono totalmente la funzione:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+F=v+x\lnot z+xy
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
 y=
 \begin_inset Formula $d+h+a+boe$
 \end_inset
@@ -5548,7 +5547,7 @@ o nel senso che va bene o b o e
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 a=
 \begin_inset Formula $\neg xv+\neg yv+x\neg z+xy$
 \end_inset
@@ -5556,9 +5555,14 @@ a=
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 e=
 \begin_inset Formula $zv$
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -6750,22 +6754,6 @@ status open
 \end_inset
 
 
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Nell'eventialità in cui alcuni componenti sia stati utilizzati in altri
- esercizi inserire solo un riferimento (es.
- Multiplexer Generico - traccia n° 1)
-\end_layout
-
-\begin_layout Plain Layout
-Segue un esempio di inclusione di codice
 \end_layout
 
 \end_inset
