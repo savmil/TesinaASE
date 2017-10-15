@@ -4508,7 +4508,8 @@ Disciminando gli implicanti primi essenziali primari e con le regole di
 \begin_inset Formula $y=c+e+f=yzv+\neg y\neg z+\neg y\neg v$
 \end_inset
 
-
+, al posto di e può essere considerato l'implicante a, essendo f primo ed
+ essenziale, perchè entrambi sono i soli che coprono il mintermine 1
 \end_layout
 
 \begin_layout Standard
@@ -5391,6 +5392,40 @@ status open
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+y=
+\begin_inset Formula $d+h+a+boe$
+\end_inset
+
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+o nel senso che va bene o b o e
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+a=
+\begin_inset Formula $\neg xv+\neg yv+x\neg z+xy$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e=
+\begin_inset Formula $zv$
 \end_inset
 
 

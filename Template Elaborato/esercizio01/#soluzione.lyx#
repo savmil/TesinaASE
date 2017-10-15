@@ -2737,6 +2737,14 @@ check
 \end_inset
 
 
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+
 \begin_inset Tabular
 <lyxtabular version="3" rows="14" columns="6">
 <features tabularvalignment="middle">
@@ -3839,6 +3847,14 @@ g
 \end_inset
 
 
+\begin_inset VSpace medskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -4492,7 +4508,8 @@ Disciminando gli implicanti primi essenziali primari e con le regole di
 \begin_inset Formula $y=c+e+f=yzv+\neg y\neg z+\neg y\neg v$
 \end_inset
 
-
+, al posto di e può essere considerato l'implicante a, essendo f primo ed
+ essenziale, perchè entrambi sono i soli che coprono il mintermine 1
 \end_layout
 
 \begin_layout Standard
@@ -5378,6 +5395,14 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+y=d+h+a+b o e
+\end_layout
+
+\begin_layout Standard
+a=
 \end_layout
 
 \begin_layout Standard
