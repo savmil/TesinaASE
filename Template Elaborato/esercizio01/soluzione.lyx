@@ -314,7 +314,7 @@ Descrivere la soluzione relizzata per mezzo di schematici e riportare il
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Si può generare la seguente tabella di verità a partire dalla definizione
@@ -2082,11 +2082,16 @@ F
 \end_layout
 
 \begin_layout Standard
+Seguiamo brevemente le fasi di espansione e copertura del metodo di minimizzazio
+ne applicato.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Box Frameless
@@ -3618,7 +3623,7 @@ d
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Box Frameless
@@ -3894,6 +3899,11 @@ g
 \end_layout
 
 \begin_layout Plain Layout
+Individuati gli implicanti primi al termine della fase di espansione, si
+ prosegue con la fase di copertura.
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -3910,7 +3920,7 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -4521,6 +4531,84 @@ X
 \end_inset
 
 
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+a
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+e
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -4534,13 +4622,37 @@ X
 \end_layout
 
 \begin_layout Standard
-Disciminando gli implicanti primi essenziali primari e con le regole di
- dominanza quelli secondari la funzione di uscita è pari a 
+Disciminando gli implicanti primi essenziali primari, e con le regole di
+ dominanza quelli secondari, si ottiene una tabella cliclica non ulteriormente
+ riducibile.
+ Applicando il metodo Branch&Bound in questo caso banale, si prosegue nella
+ scelta dell'implicante 
+\begin_inset Formula $e$
+\end_inset
+
+ per il completamento della copertura.
+ Questa scelta si basa sul costo in termini di letterali dei due implicanti,
+ che individua 
+\begin_inset Formula $e$
+\end_inset
+
+ come l'implicante che consente la copertura a costo minimo.
+ La funzione di uscita, dunque, è pari a:
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula $y=c+e+f=yzv+\neg y\neg z+\neg y\neg v$
 \end_inset
 
-, al posto di e può essere considerato l'implicante a, essendo f primo ed
- essenziale, perchè entrambi sono i soli che coprono il mintermine 1
+
+\end_layout
+
+\begin_layout Paragraph
+Minimizzazione 3
+\end_layout
+
+\begin_layout Standard
+Si prosegue nuovamente con metodo Quine Mc Cluskey.
 \end_layout
 
 \begin_layout Standard
