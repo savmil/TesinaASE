@@ -1,0 +1,28 @@
+.model esercizio5
+.inputs a b c d
+.outputs g f h
+
+.names a b p
+11 1
+
+.names a p q
+1- 1
+-1 1
+
+.names a b c d p f
+001-- 1
+-0-1- 1
+-1-0- 1
+----1 1
+
+.names a b d q g
+11-- 1
+--0- 1
+---1 1
+
+.names a b c d h
+011- 1
+-1-1 1
+
+.end
+
