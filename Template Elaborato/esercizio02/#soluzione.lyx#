@@ -153,21 +153,5 @@ e variano secondo le esigenze che stiamo esponenso.
 
 \end_layout
 
-\begin_layout Standard
-ovviamente ciò è possibile perchè la libreria è fornita di diversi componenti
- ma se la riduciamo ad un set funzionalmente completo, and ed inverter ad
- esempio i risultati non variano, non discriminando il fatto che il mapping
- avvenga lo stesso
-\end_layout
-
-\begin_layout Standard
-\begin_inset Graphics
-	filename images/minimizzazione1_2.PNG
-
-\end_inset
-
-
-\end_layout
-
 \end_body
 \end_document

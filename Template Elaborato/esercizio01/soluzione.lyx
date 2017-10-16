@@ -286,7 +286,7 @@ La minimizzazione delle funzioni sarà effettuata attraverso i differenti
  metodi indicati.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsection
 Minimizzazione 1
 \end_layout
 
@@ -300,7 +300,7 @@ La prima funzione è stata minimizzata attraverso il metodo delle mappe di
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Si può generare la seguente tabella di verità a partire dalla definizione
@@ -1135,6 +1135,16 @@ F
 </cell>
 </row>
 </lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "esercizio_1_minimizzazione"
 
 \end_inset
 
@@ -1181,6 +1191,10 @@ filename "mappa.tex"
 
 \end_layout
 
+\begin_layout Plain Layout
+
+\end_layout
+
 \end_inset
 
 
@@ -1202,7 +1216,7 @@ F=\neg x\neg z\neg v+\neg y\neg v++xz
 
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsection
 Minimizzazione 2
 \end_layout
 
@@ -1216,7 +1230,7 @@ Al fine di minimizzare questa funzione è stato utilizzato il metodo di Quine
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Si può generare la seguente tabella di verità a partire dalla definizione
@@ -1240,7 +1254,7 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -2061,6 +2075,16 @@ F
 
 
 \begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "esercizio_2_minimizzazione"
+
 \end_inset
 
 
@@ -4641,7 +4665,7 @@ F=c+e+f=yzv+\neg y\neg z+\neg y\neg v
 
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsection
 Minimizzazione 3
 \end_layout
 
@@ -4654,7 +4678,7 @@ Si prosegue nuovamente con metodo Quine Mc Cluskey.
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Si può generare la seguente tabella di verità a partire dalla definizione
@@ -5504,6 +5528,16 @@ F
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "esercizio_3_minimizzazione"
+
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -5568,7 +5602,7 @@ e=
 
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsection
 Minimizzazione 4
 \end_layout
 
@@ -5584,7 +5618,7 @@ Poiché non si ricade più nel caso a singola uscita, si è adottato il metodo
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Si può generare la seguente tabella di verità a partire dalla definizione
@@ -5608,7 +5642,7 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -6737,6 +6771,16 @@ F3
 
 
 \begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "esercizio_4_minimizzazione"
+
 \end_inset
 
 

@@ -219,7 +219,6 @@ morecomment=[s]{--}
     \foreach \x in {#1}
         \path (\x) node {X};
 }
-\usepackage{colortbl}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -544,6 +543,17 @@ Esercizio 2
 \begin_inset CommandInset include
 LatexCommand input
 filename "esercizio02/Tesina.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Esercizio 3
+\begin_inset CommandInset include
+LatexCommand include
+filename "esercizio03/Tesina.lyx"
 
 \end_inset
 

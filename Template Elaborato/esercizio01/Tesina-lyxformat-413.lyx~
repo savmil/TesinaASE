@@ -1,9 +1,7 @@
-#LyX 2.2 created this file. For more info see http://www.lyx.org/
-\lyxformat 508
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
 \begin_document
 \begin_header
-\save_transient_properties true
-\origin unavailable
 \textclass book
 \begin_preamble
 \usepackage{listings,xcolor,courier,bookmark}
@@ -54,52 +52,55 @@ morecomment=[s]{--}
 
 \date{}
 \cfoot{}
+\usepackage{eso-pic,graphicx}
+\makeatletter
+\newcommand\BackgroundPicture[2]{
+\setlength{\unitlength}{1pt}
+\put(0,\strip@pt\paperheight){
+\parbox[t][\paperheight]{\paperwidth}{
+\vfill
+\centering\includegraphics[angle=#2]{#1}
+\vfill
+}
+}
+}
+\makeatother
 \end_preamble
 \use_default_options true
-\master Tesina.lyx
 \maintain_unincluded_children false
 \language italian
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman "default" "default"
-\font_sans "default" "default"
-\font_typewriter "default" "default"
-\font_math "auto" "auto"
-\font_default_family default
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family rmdefault
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100 100
-\font_tt_scale 100 100
+\font_sf_scale 100
+\font_tt_scale 100
+
 \graphics default
 \default_output_format default
 \output_sync 0
 \bibtex_command default
 \index_command default
-\paperfontsize default
+\paperfontsize 12
 \spacing single
 \use_hyperref false
 \papersize default
 \use_geometry true
-\use_package amsmath 1
-\use_package amssymb 1
-\use_package cancel 1
-\use_package esint 1
-\use_package mathdots 1
-\use_package mathtools 1
-\use_package mhchem 1
-\use_package stackrel 1
-\use_package stmaryrd 1
-\use_package undertilde 1
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
 \cite_engine basic
-\cite_engine_type default
-\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
-\justification true
 \use_refstyle 1
 \index Index
 \shortcut idx
@@ -126,27 +127,15 @@ morecomment=[s]{--}
 
 \begin_body
 
-\begin_layout Section
-Soluzione
-\end_layout
-
 \begin_layout Standard
-In riferimento ai file blif situati 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "blif_minimizzazione"
 
-\end_inset
+\lang american
+\begin_inset Note Note
+status open
 
-, per il primo esercizio, anche se descrive una rete molto semplice sis
- riesce velocemente a fornici una rete più consona alle nostre richieste,
- difatti effettuando due diversi tipi di mapping, i valori di area e propagazion
-e variano secondo le esigenze che stiamo esponenso.
+\begin_layout Plain Layout
+Utilizzare questo file per generare il pdf completo
 \end_layout
-
-\begin_layout Standard
-\begin_inset Graphics
-	filename images/minimizzazione1.PNG
 
 \end_inset
 
@@ -154,15 +143,67 @@ e variano secondo le esigenze che stiamo esponenso.
 \end_layout
 
 \begin_layout Standard
-ovviamente ciò è possibile perchè la libreria è fornita di diversi componenti
- ma se la riduciamo ad un set funzionalmente completo, and ed inverter ad
- esempio i risultati non variano, non discriminando il fatto che il mapping
- avvenga lo stesso
+
+\lang american
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+AddToShipoutPicture{
+\backslash
+BackgroundPicture{logo.png}{0}}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-\begin_inset Graphics
-	filename images/minimizzazione1_2.PNG
+
+\lang american
+\begin_inset CommandInset include
+LatexCommand input
+filename "traccia.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset CommandInset include
+LatexCommand input
+filename "soluzione.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset CommandInset include
+LatexCommand input
+filename "simulazione.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset CommandInset include
+LatexCommand input
+filename "sintesi.lyx"
 
 \end_inset
 

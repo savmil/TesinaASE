@@ -73,7 +73,7 @@
 \begin_body
 
 \begin_layout Section
-Descrizione in file blif
+Descrizione in file bliff
 \end_layout
 
 \begin_layout Standard
@@ -96,16 +96,7 @@ Di seguito verrano elencati i relativi file blif, con i quali è possibili
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset label
-LatexCommand label
-name "blif_minimizzazione"
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -136,6 +127,7 @@ reference "esercizio_1_minimizzazione"
 \end_layout
 
 \begin_layout Plain Layout
+
 \begin_inset ERT
 status open
 
@@ -157,6 +149,7 @@ lstinputlisting{esercizio01/listing/simulazione/esercizio1.blif}
 \end_layout
 
 \begin_layout Standard
+
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -208,6 +201,7 @@ lstinputlisting{esercizio01/listing/simulazione/esercizio2.blif}
 \end_layout
 
 \begin_layout Standard
+
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -259,6 +253,7 @@ lstinputlisting{esercizio01/listing/simulazione/esercizio3.blif}
 \end_layout
 
 \begin_layout Standard
+
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -278,7 +273,6 @@ backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
-Tabella:
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "esercizio_4_minimizzazione"

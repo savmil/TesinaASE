@@ -77,93 +77,12 @@ Descrizione in file bliff
 \end_layout
 
 \begin_layout Standard
-\begin_inset listings
-inline false
+\begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-.model es2 
-\end_layout
-
-\begin_layout Plain Layout
-
-.inputs x y z v  
-\end_layout
-
-\begin_layout Plain Layout
-
-.outputs f1 
-\end_layout
-
-\begin_layout Plain Layout
-
-.names x y z v f1 
-\end_layout
-
-\begin_layout Plain Layout
-
-0000 1 
-\end_layout
-
-\begin_layout Plain Layout
-
-0001 1 
-\end_layout
-
-\begin_layout Plain Layout
-
-0010 1 
-\end_layout
-
-\begin_layout Plain Layout
-
-0111 1 
-\end_layout
-
-\begin_layout Plain Layout
-
-1000 1 
-\end_layout
-
-\begin_layout Plain Layout
-
-1010 1 
-\end_layout
-
-\begin_layout Plain Layout
-
-1111 1 
-\end_layout
-
-\begin_layout Plain Layout
-
-.exdc 
-\end_layout
-
-\begin_layout Plain Layout
-
-.names x y z v f1 
-\end_layout
-
-\begin_layout Plain Layout
-
-0101 1 
-\end_layout
-
-\begin_layout Plain Layout
-
-1001 1 
-\end_layout
-
-\begin_layout Plain Layout
-
-1011 1 
-\end_layout
-
-\begin_layout Plain Layout
-
-.end
+Inserire i casi di test, i tempi di propagazione ed eventuali schermate
+ di simulazione significative
 \end_layout
 
 \end_inset
@@ -172,12 +91,212 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
+Di seguito verrano elencati i relativi file blif, con i quali è possibili
+ minizzare automaticamente le funzioni sopra descritte
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
-Inserire i casi di test, i tempi di propagazione ed eventuali schermate
- di simulazione significative
+Tabella:
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "esercizio_1_minimizzazione"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting{esercizio01/listing/simulazione/esercizio1.blif}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+Tabella:
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "esercizio_2_minimizzazione"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting{esercizio01/listing/simulazione/esercizio2.blif}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+Tabella:
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "esercizio_3_minimizzazione"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting{esercizio01/listing/simulazione/esercizio3.blif}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+Tabella:
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "esercizio_4_minimizzazione"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting{esercizio01/listing/simulazione/esercizio4.blif}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset

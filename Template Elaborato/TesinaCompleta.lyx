@@ -549,6 +549,20 @@ filename "esercizio02/Tesina.lyx"
 
 \end_layout
 
+\begin_layout Chapter
+Esercizio 3
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "esercizio03/Tesina.lyx"
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 
 \lang american
