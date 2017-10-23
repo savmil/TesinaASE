@@ -126,8 +126,8 @@ morecomment=[s]{--}
 
 \begin_body
 
-\begin_layout Section
-Soluzione
+\begin_layout Subsection
+Esercizio 1
 \end_layout
 
 \begin_layout Standard
@@ -145,8 +145,50 @@ e variano secondo le esigenze che stiamo esponenso.
 \end_layout
 
 \begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Graphics
 	filename images/minimizzazione1.PNG
+	scale 60
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -154,19 +196,469 @@ e variano secondo le esigenze che stiamo esponenso.
 \end_layout
 
 \begin_layout Standard
-ovviamente ciò è possibile perchè la libreria è fornita di diversi componenti
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ ovviamente ciò è possibile perchè la libreria è fornita di diversi componenti
  ma se la riduciamo ad un set funzionalmente completo, and ed inverter ad
  esempio i risultati non variano, non discriminando il fatto che il mapping
  avvenga lo stesso
 \end_layout
 
 \begin_layout Standard
-\begin_inset Graphics
-	filename images/minimizzazione1_2.PNG
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/minimizzazione1_2.PNG
+	scale 60
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Esercizio 2
+\end_layout
+
+\begin_layout Standard
+Vogliamo mettere in evidenza in questo esempio come la tecnologia impatta
+ sulle prestazioni di un circuto:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/minimizzazione2espresso.PNG
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ utilizzando espresso i costi del circuito (in termini di numero di litterali
+\begin_inset Formula $Cl$
+\end_inset
+
+, numero di ingressi 
+\begin_inset Formula $Ci$
+\end_inset
+
+, numero di porte 
+\begin_inset Formula $Cp$
+\end_inset
+
+) , sono
+\begin_inset Formula $Cl=7-Ci=10-Cp=4$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Vediamo come si comporta invece il circuito con l' utilizzo della libreria
+ mcnc, prima ottimizzando l' area poi il ritardo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/minimizzazione2m0.PNG
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ In questo caso i costi sono 
+\begin_inset Formula $Cl=9-Ci=13-Cp=5$
+\end_inset
+
+, i costi aumentano perchè cerca di usare porte che occupano meno spazio
+ aumentando i tempi di propagazione dell' informazione e delle varie commutazion
+e degli integrati.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/minimizzazione2m1.PNG
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Rilassando il vincolo di area ottieniamo prestazioni vicine a quelle di
+ espresso 
+\begin_inset Formula $Cl=9-Ci=12-Cp=4$
+\end_inset
+
+, ovviamente perchè la libreria ha a disposizione un adeguato numero di
+ componenti da utilizzare, una situazione non sempre veritiera.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Esercizio 3
+\end_layout
+
+\begin_layout Standard
+Proviamo ad applicare il rugged-script ad un rete multi-uscita:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/minimizzazione3ruggedscript.PNG
+	width 17.5cm
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ rimappiamo la nostra rete su un fpga avente componenti elementari a quattro
+ ingressi:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/minimizzazione3sureteaquattrolivelli.PNG
+	width 17.5cm
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ possiamo vedere che il numero di nodi elementari utilizzati per sintetizzare
+ la rete sono minorei nell' esempio successivo, ma il numero di operazioni
+ elementari è aumentato di ben 7 unita, anche se nel caso delle FPGA, ogni
+ nodo ha un tempo di calcolo costante quindi si sono avuti sia miglioramenti
+ di area che di tempo.
 \end_layout
 
 \end_body
