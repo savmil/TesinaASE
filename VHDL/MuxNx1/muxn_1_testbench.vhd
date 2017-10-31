@@ -2,7 +2,7 @@ LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE std.textio.ALL;
 USE ieee.std_logic_arith.ALL;
-USE ieee.std_logic_unsigned.ALL;
+--USE ieee.std_logic_unsigned.ALL;
 
 --Dichiarazione entity del testbench: nessuna porta (non sintetizzabile, quindi non presenta porte fisiche)
 entity muxn_1_testbench is
@@ -56,14 +56,15 @@ begin
 		--A <= x"0000";
 		--wait for 10 ns;
 		
+		wait for 10 ns;
 		for i in 0 to conv_integer(2**mux_selection_length-1) loop
+			SEL <= conv_std_logic_vector(i, mux_selection_length);
+			--wait for 10 ns;
 			for j in 0 to conv_integer(2**(2**mux_selection_length)-1) loop
-				wait for 10 ns;
-				SEL <= conv_std_logic_vector(i, mux_selection_length);
 				A <= conv_std_logic_vector(j, 2**mux_selection_length);
+				wait for 10 ns;
 			end loop;
 		end loop;
-		wait for 10 ns;
 		
 		wait;
 	end process;
