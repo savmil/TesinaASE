@@ -14,7 +14,8 @@ end full_adder;
 --architecture dataflow of full_adder is
 --begin
 	--s <= a xor b xor cin;
-	--c <= (a and b) or (cin and (a xor b));
+	--c <= (a and b) or (cin and (a or b));
+	--se si dispone di or a 3 ingressi: c <= (a and b) or (cin and a) or (cin and b);
 --end dataflow;
 
 architecture structural of full_adder is
