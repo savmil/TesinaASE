@@ -1,0 +1,53 @@
+.model 7segmenti
+.inputs x y z v
+.outputs A B C D E F G
+
+.names x y z v A
+0001 0
+0100 0
+1011 0
+1101 0
+
+.names x y z v B
+0101 0
+0110 0
+1011 0
+1100 0
+1110 0
+1111 0
+
+.names x y z v C
+0010 0
+1100 0
+1110 0
+1111 0
+
+.names x y z v D
+0001 0
+0100 0
+0111 0
+1010 0
+1111 0
+
+.names x y z v E
+0001 0
+0011 0
+0100 0
+0101 0
+0111 0
+1001 0
+
+.names x y z v F
+0001 0
+0010 0
+0011 0
+1101 0
+
+.names x y z v G
+0000 0
+0001 0
+0111 0
+1100 0
+
+.end
+
