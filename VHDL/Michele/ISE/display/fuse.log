@@ -1,0 +1,46 @@
+Running: C:\Xilinx\14.4\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Public/ISE/display/display_top_level_testbench_isim_beh.exe -prj C:/Users/Public/ISE/display/display_top_level_testbench_beh.prj work.display_top_level_testbench 
+ISim P.49d (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Public/ISE/display/muxn_1.vhd" into library work
+Parsing VHDL file "C:/Users/Public/ISE/display/demux1_n.vhd" into library work
+Parsing VHDL file "C:/Users/Public/ISE/display/cathode_encoder.vhd" into library work
+Parsing VHDL file "C:/Users/Public/ISE/display/edge_triggered_d_n.vhd" into library work
+Parsing VHDL file "C:/Users/Public/ISE/display/counter_mod2n.vhd" into library work
+Parsing VHDL file "C:/Users/Public/ISE/display/clock_filter.vhd" into library work
+Parsing VHDL file "C:/Users/Public/ISE/display/cathode_manager.vhd" into library work
+Parsing VHDL file "C:/Users/Public/ISE/display/anode_manager.vhd" into library work
+Parsing VHDL file "C:/Users/Public/ISE/display/display_on_board.vhd" into library work
+Parsing VHDL file "C:/Users/Public/ISE/display/display.vhd" into library work
+Parsing VHDL file "C:/Users/Public/ISE/display/display_top_level.vhd" into library work
+Parsing VHDL file "C:/Users/Public/ISE/display/display_top_level_testbench.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 106736 KB
+Fuse CPU Usage: 577 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture behavioral of entity edge_triggered_d_n [\edge_triggered_d_n(16)\]
+Compiling architecture behavioral of entity edge_triggered_d_n [\edge_triggered_d_n(4)\]
+Compiling architecture behavioral of entity display_on_board [display_on_board_default]
+Compiling package math_real
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity clock_filter [\clock_filter(50000000,120)\]
+Compiling architecture behavioral of entity counter_mod2n [\counter_mod2n(2)\]
+Compiling architecture dataflow of entity muxn_1 [\muxn_1(2)\]
+Compiling architecture behavioral of entity cathode_encoder [cathode_encoder_default]
+Compiling architecture structural of entity cathode_manager [cathode_manager_default]
+Compiling architecture dataflow of entity demux1_n [\demux1_n(2)\]
+Compiling architecture structural of entity anode_manager [anode_manager_default]
+Compiling architecture structural of entity display [\display(50000000,120)\]
+Compiling architecture structural of entity display_top_level [\display_top_level(50000000,120)...]
+Compiling architecture behavior of entity display_top_level_testbench
+Time Resolution for simulation is 1ps.
+Waiting for 15 sub-compilation(s) to finish...
+Compiled 31 VHDL Units
+Built simulation executable C:/Users/Public/ISE/display/display_top_level_testbench_isim_beh.exe
+Fuse Memory Usage: 127776 KB
+Fuse CPU Usage: 1029 ms

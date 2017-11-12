@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Public/ISE/display/display_top_level_testbench_isim_beh.exe" -prj "C:/Users/Public/ISE/display/display_top_level_testbench_beh.prj" "work.display_top_level_testbench" 
