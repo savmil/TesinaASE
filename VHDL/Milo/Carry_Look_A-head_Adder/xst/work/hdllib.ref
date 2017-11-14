@@ -1,0 +1,8 @@
+AR carry_look_a_head behavioral /home/sav/ASE/Carry_Look_A-head_Adder/Carry_Look_A-head.vhd sub00/vhpl05 1509560290
+AR generator_g_p structural /home/sav/ASE/Carry_Look_A-head_Adder/Generator_G_P.vhd sub00/vhpl03 1509560560
+EN carry_look_a_head_adder NULL /home/sav/ASE/Carry_Look_A-head_Adder/Carry_Look_A_head_Adder.vhd sub00/vhpl06 1509560291
+EN half_adder NULL /home/sav/half_adder/half_adder.vhdl sub00/vhpl00 1509560557
+EN generator_g_p NULL /home/sav/ASE/Carry_Look_A-head_Adder/Generator_G_P.vhd sub00/vhpl02 1509560559
+AR half_adder dataflow /home/sav/half_adder/half_adder.vhdl sub00/vhpl01 1509560558
+AR carry_look_a_head_adder structural /home/sav/ASE/Carry_Look_A-head_Adder/Carry_Look_A_head_Adder.vhd sub00/vhpl07 1509560292
+EN carry_look_a_head NULL /home/sav/ASE/Carry_Look_A-head_Adder/Carry_Look_A-head.vhd sub00/vhpl04 1509560289

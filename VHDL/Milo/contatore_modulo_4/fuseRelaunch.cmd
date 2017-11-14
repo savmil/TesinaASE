@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/sav/ASE/contatore_modulo_4/contatore_modulo_4_testbench_isim_beh.exe" -prj "/home/sav/ASE/contatore_modulo_4/contatore_modulo_4_testbench_beh.prj" "work.contatore_modulo_4_testbench" 

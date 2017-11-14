@@ -1,0 +1,6 @@
+vhdl isim_temp "diplay_sette_segmenti_e.vhd"
+vhdl isim_temp "diplay_sette_segmenti_b.vhd"
+vhdl isim_temp "display_sette_segmenti_f.vhd"
+vhdl isim_temp "diplay_sette_segmenti_d.vhd"
+vhdl isim_temp "diplay_sette_segmenti_c.vhd"
+vhdl isim_temp "display_sette_segmenti_g.vhd"

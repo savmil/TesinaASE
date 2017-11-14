@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/sav/ASE/RippleCarryAdder/RippleCarryAdder_testbench_isim_beh.exe" -prj "/home/sav/ASE/RippleCarryAdder/RippleCarryAdder_testbench_beh.prj" "work.RippleCarryAdder_testbench" 

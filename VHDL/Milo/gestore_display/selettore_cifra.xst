@@ -1,0 +1,5 @@
+set -tmpdir "/home/sav/ASE/gestore_display/xst/projnav.tmp"
+set -xsthdpdir "/home/sav/ASE/gestore_display/xst"
+elaborate
+-ifn selettore_cifra.prj
+-ifmt mixed

@@ -1,0 +1,10 @@
+EN full_adder_half NULL /home/sav/full_adder_half/full_adder_half.vhdl sub00/vhpl04 1510175227
+AR contatore_modulo_4 structural /home/sav/ASE/contatore_modulo_4/contatore_modulo_4.vhd sub00/vhpl09 1510175234
+EN half_adder NULL /home/sav/full_adder_half/half_adder.vhdl sub00/vhpl02 1510175225
+EN flip_flop_rising_edge NULL /home/sav/ASE/registro/flip_flop_rising_edge.vhd sub00/vhpl06 1510175229
+AR flip_flop_rising_edge behavioral /home/sav/ASE/registro/flip_flop_rising_edge.vhd sub00/vhpl07 1510175230
+AR half_adder dataflow /home/sav/full_adder_half/half_adder.vhdl sub00/vhpl03 1510175226
+AR full_adder_half register_transfer /home/sav/full_adder_half/full_adder_half.vhdl sub00/vhpl05 1510175228
+AR ripplecarryadder structural /home/sav/ASE/RippleCarryAdder/RippleCarryAdder.vhd sub00/vhpl01 1510175232
+EN ripplecarryadder NULL /home/sav/ASE/RippleCarryAdder/RippleCarryAdder.vhd sub00/vhpl00 1510175231
+EN contatore_modulo_4 NULL /home/sav/ASE/contatore_modulo_4/contatore_modulo_4.vhd sub00/vhpl08 1510175233

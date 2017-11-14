@@ -1,0 +1,16 @@
+V3 11
+FL /home/sav/ASE/mux16_1/mux16_1.vhd 2017/10/27.19:39:36 P.20131013
+EN work/mux16_1 1509127768 FL /home/sav/ASE/mux16_1/mux16_1.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/mux16_1/Structural 1509127769 \
+      FL /home/sav/ASE/mux16_1/mux16_1.vhd EN work/mux16_1 1509127768 CP mux4_1
+FL /media/sf_ASE/VHDL/Mux4x1/mux2_1.vhd 2017/10/27.17:57:20 P.20131013
+EN work/mux2_1 1509127764 FL /media/sf_ASE/VHDL/Mux4x1/mux2_1.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/mux2_1/dataflow 1509127765 \
+      FL /media/sf_ASE/VHDL/Mux4x1/mux2_1.vhd EN work/mux2_1 1509127764
+FL /media/sf_ASE/VHDL/Mux4x1/mux4_1.vhd 2017/10/27.19:39:36 P.20131013
+EN work/mux4_1 1509127766 FL /media/sf_ASE/VHDL/Mux4x1/mux4_1.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/mux4_1/structural 1509127767 \
+      FL /media/sf_ASE/VHDL/Mux4x1/mux4_1.vhd EN work/mux4_1 1509127766 CP mux2_1

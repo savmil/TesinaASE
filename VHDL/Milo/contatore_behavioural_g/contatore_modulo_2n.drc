@@ -1,0 +1,8 @@
+Release 14.7 Drc P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Fri Nov 10 21:18:56 2017
+
+drc -z contatore_modulo_2n.ncd contatore_modulo_2n.pcf
+
+DRC detected 0 errors and 0 warnings.

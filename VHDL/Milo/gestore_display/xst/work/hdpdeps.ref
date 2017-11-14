@@ -1,0 +1,94 @@
+V3 51
+FL /home/sav/ASE/display_sette_segmenti/diplay_sette_segmenti_b.vhd 2017/10/30.12:06:32 P.20131013
+EN work/diplay_sette_segmenti_b 1510488096 \
+      FL /home/sav/ASE/display_sette_segmenti/diplay_sette_segmenti_b.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/diplay_sette_segmenti_b/structural 1510488097 \
+      FL /home/sav/ASE/display_sette_segmenti/diplay_sette_segmenti_b.vhd \
+      EN work/diplay_sette_segmenti_b 1510488096 CP display_sette_segmenti_e
+FL /home/sav/ASE/display_sette_segmenti/diplay_sette_segmenti_c.vhd 2017/10/30.12:09:49 P.20131013
+EN work/diplay_sette_segmenti_c 1510488102 \
+      FL /home/sav/ASE/display_sette_segmenti/diplay_sette_segmenti_c.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/diplay_sette_segmenti_c/Behavioral 1510488103 \
+      FL /home/sav/ASE/display_sette_segmenti/diplay_sette_segmenti_c.vhd \
+      EN work/diplay_sette_segmenti_c 1510488102 CP display_sette_segmenti_f
+FL /home/sav/ASE/display_sette_segmenti/diplay_sette_segmenti_d.vhd 2017/10/30.12:24:22 P.20131013
+EN work/diplay_sette_segmenti_d 1510488100 \
+      FL /home/sav/ASE/display_sette_segmenti/diplay_sette_segmenti_d.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/diplay_sette_segmenti_d/structural 1510488101 \
+      FL /home/sav/ASE/display_sette_segmenti/diplay_sette_segmenti_d.vhd \
+      EN work/diplay_sette_segmenti_d 1510488100 CP diplay_sette_segmenti_b \
+      CP display_sette_segmenti_e CP display_sette_segmenti_f
+FL /home/sav/ASE/display_sette_segmenti/diplay_sette_segmenti_e.vhd 2017/10/30.10:24:07 P.20131013
+EN work/display_sette_segmenti_e 1510488094 \
+      FL /home/sav/ASE/display_sette_segmenti/diplay_sette_segmenti_e.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/display_sette_segmenti_e/dataflow 1510488095 \
+      FL /home/sav/ASE/display_sette_segmenti/diplay_sette_segmenti_e.vhd \
+      EN work/display_sette_segmenti_e 1510488094
+FL /home/sav/ASE/display_sette_segmenti/display_sette_segmenti_a.vhd 2017/10/30.12:17:56 P.20131013
+EN work/display_sette_segmenti_a 1510488106 \
+      FL /home/sav/ASE/display_sette_segmenti/display_sette_segmenti_a.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/display_sette_segmenti_a/structural 1510488107 \
+      FL /home/sav/ASE/display_sette_segmenti/display_sette_segmenti_a.vhd \
+      EN work/display_sette_segmenti_a 1510488106 CP display_sette_segmenti_e \
+      CP diplay_sette_segmenti_d
+FL /home/sav/ASE/display_sette_segmenti/display_sette_segmenti_f.vhd 2017/10/30.12:15:59 P.20131013
+EN work/display_sette_segmenti_f 1510488098 \
+      FL /home/sav/ASE/display_sette_segmenti/display_sette_segmenti_f.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/display_sette_segmenti_f/Behavioral 1510488099 \
+      FL /home/sav/ASE/display_sette_segmenti/display_sette_segmenti_f.vhd \
+      EN work/display_sette_segmenti_f 1510488098 CP diplay_sette_segmenti_b
+FL /home/sav/ASE/display_sette_segmenti/display_sette_segmenti_g.vhd 2017/10/30.12:12:14 P.20131013
+EN work/display_sette_segmenti_g 1510488104 \
+      FL /home/sav/ASE/display_sette_segmenti/display_sette_segmenti_g.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/display_sette_segmenti_g/dataflow 1510488105 \
+      FL /home/sav/ASE/display_sette_segmenti/display_sette_segmenti_g.vhd \
+      EN work/display_sette_segmenti_g 1510488104 CP display_sette_segmenti_e \
+      CP display_sette_segmenti_f CP diplay_sette_segmenti_d \
+      CP diplay_sette_segmenti_c
+FL /home/sav/ASE/gestore_display/clk_fil.vhd 2017/11/12.12:57:47 P.20131013
+EN work/clk_fil 1510488108 FL /home/sav/ASE/gestore_display/clk_fil.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/clk_fil/Behavioral 1510488109 \
+      FL /home/sav/ASE/gestore_display/clk_fil.vhd EN work/clk_fil 1510488108
+FL /home/sav/ASE/gestore_display/contatore_modulo_4.vhd 2017/11/12.10:30:31 P.20131013
+EN work/contatore_modulo_2n 1510488110 \
+      FL /home/sav/ASE/gestore_display/contatore_modulo_4.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/contatore_modulo_2n/Behavioral 1510488111 \
+      FL /home/sav/ASE/gestore_display/contatore_modulo_4.vhd \
+      EN work/contatore_modulo_2n 1510488110
+FL /home/sav/ASE/gestore_display/demux1_4.vhd 2017/10/25.12:13:22 P.20131013
+EN work/demux1_4 1510488116 FL /home/sav/ASE/gestore_display/demux1_4.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/demux1_4/dataflow 1510488117 \
+      FL /home/sav/ASE/gestore_display/demux1_4.vhd EN work/demux1_4 1510488116
+FL /home/sav/ASE/gestore_display/diplay_7_segmenti.vhd 2017/11/12.10:52:25 P.20131013
+EN work/display_7_segmenti 1510488114 \
+      FL /home/sav/ASE/gestore_display/diplay_7_segmenti.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/display_7_segmenti/structural 1510488115 \
+      FL /home/sav/ASE/gestore_display/diplay_7_segmenti.vhd \
+      EN work/display_7_segmenti 1510488114 CP diplay_sette_segmenti_b \
+      CP diplay_sette_segmenti_d CP display_sette_segmenti_f \
+      CP display_sette_segmenti_g CP display_sette_segmenti_a \
+      CP diplay_sette_segmenti_c CP display_sette_segmenti_e
+FL /home/sav/ASE/gestore_display/gestore_display.vhd 2017/11/12.12:49:43 P.20131013
+EN work/gestore_display 1510488118 \
+      FL /home/sav/ASE/gestore_display/gestore_display.vhd PB ieee/std_logic_1164 1381692176
+AR work/gestore_display/Behavioral 1510488119 \
+      FL /home/sav/ASE/gestore_display/gestore_display.vhd \
+      EN work/gestore_display 1510488118 CP clk_fil CP contatore_modulo_2n \
+      CP selettore_cifra CP display_7_segmenti CP demux1_4
+FL /home/sav/ASE/gestore_display/selettore_cifra.vhd 2017/11/12.10:49:02 P.20131013
+EN work/selettore_cifra 1510488112 \
+      FL /home/sav/ASE/gestore_display/selettore_cifra.vhd PB ieee/std_logic_1164 1381692176
+AR work/selettore_cifra/Structural 1510488113 \
+      FL /home/sav/ASE/gestore_display/selettore_cifra.vhd \
+      EN work/selettore_cifra 1510488112

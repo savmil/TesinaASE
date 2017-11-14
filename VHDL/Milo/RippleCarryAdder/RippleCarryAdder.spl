@@ -1,0 +1,7 @@
+[Inputs]
+=adder1[7:0]=
+=adder2[7:0]=
+[Outputs]
+last_carry
+=sum[7:0]=
+[BiDir]

@@ -1,0 +1,6 @@
+EN full_adder_half NULL /home/sav/full_adder_half/full_adder_half.vhdl sub00/vhpl02 1509487220
+EN half_adder NULL /home/sav/half_adder/half_adder.vhdl sub00/vhpl00 1509487218
+AR half_adder dataflow /home/sav/half_adder/half_adder.vhdl sub00/vhpl01 1509487219
+AR full_adder_half register_transfer /home/sav/full_adder_half/full_adder_half.vhdl sub00/vhpl03 1509487221
+AR ripplecarryadder structural /home/sav/ASE/RippleCarryAdder/RippleCarryAdder.vhd sub00/vhpl05 1509487223
+EN ripplecarryadder NULL /home/sav/ASE/RippleCarryAdder/RippleCarryAdder.vhd sub00/vhpl04 1509487222

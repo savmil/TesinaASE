@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "/home/sav/ASE/display_sette_segmenti/diplay_sette_segmenti_b.xst" -ofn "/home/sav/ASE/display_sette_segmenti/diplay_sette_segmenti_b.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-tq144-5 diplay_sette_segmenti_b.ngc diplay_sette_segmenti_b.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o diplay_sette_segmenti_b_map.ncd diplay_sette_segmenti_b.ngd diplay_sette_segmenti_b.pcf 
+par -w -intstyle ise -ol high -t 1 diplay_sette_segmenti_b_map.ncd diplay_sette_segmenti_b.ncd diplay_sette_segmenti_b.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml diplay_sette_segmenti_b.twx diplay_sette_segmenti_b.ncd -o diplay_sette_segmenti_b.twr diplay_sette_segmenti_b.pcf 

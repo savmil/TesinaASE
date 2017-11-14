@@ -1,0 +1,9 @@
+xst -intstyle ise -ifn "/home/sav/ASE/display_sette_segmenti/diplay_sette_segmenti_c.xst" -ofn "/home/sav/ASE/display_sette_segmenti/diplay_sette_segmenti_c.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-tq144-5 diplay_sette_segmenti_c.ngc diplay_sette_segmenti_c.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-tq144-5 diplay_sette_segmenti_c.ngc diplay_sette_segmenti_c.ngd  
+xst -intstyle ise -ifn "/home/sav/ASE/display_sette_segmenti/diplay_sette_segmenti_c.xst" -ofn "/home/sav/ASE/display_sette_segmenti/diplay_sette_segmenti_c.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-tq144-5 diplay_sette_segmenti_c.ngc diplay_sette_segmenti_c.ngd  
+xst -intstyle ise -ifn "/home/sav/ASE/display_sette_segmenti/diplay_sette_segmenti_c.xst" -ofn "/home/sav/ASE/display_sette_segmenti/diplay_sette_segmenti_c.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-tq144-5 diplay_sette_segmenti_c.ngc diplay_sette_segmenti_c.ngd  
+xst -intstyle ise -ifn "/home/sav/ASE/display_sette_segmenti/diplay_sette_segmenti_c.xst" -ofn "/home/sav/ASE/display_sette_segmenti/diplay_sette_segmenti_c.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-tq144-5 diplay_sette_segmenti_c.ngc diplay_sette_segmenti_c.ngd  

@@ -1,0 +1,64 @@
+V3 31
+FL /home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.vhd 2017/10/28.21:44:38 P.20131013
+EN work/diplay_7_segmenti 1509362754 \
+      FL /home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/diplay_7_segmenti/structural 1509362755 \
+      FL /home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.vhd \
+      EN work/diplay_7_segmenti 1509362754 CP diplay_sette_segmenti_b \
+      CP diplay_sette_segmenti_d CP display_sette_segmenti_f \
+      CP display_sette_segmenti_g CP display_sette_segmenti_a \
+      CP diplay_sette_segmenti_c CP display_sette_segmenti_e
+FL /home/sav/ASE/display_sette_segmenti/diplay_sette_segmenti_b.vhd 2017/10/30.12:06:32 P.20131013
+EN work/diplay_sette_segmenti_b 1509362742 \
+      FL /home/sav/ASE/display_sette_segmenti/diplay_sette_segmenti_b.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/diplay_sette_segmenti_b/structural 1509362743 \
+      FL /home/sav/ASE/display_sette_segmenti/diplay_sette_segmenti_b.vhd \
+      EN work/diplay_sette_segmenti_b 1509362742 CP display_sette_segmenti_e
+FL /home/sav/ASE/display_sette_segmenti/diplay_sette_segmenti_c.vhd 2017/10/30.12:09:49 P.20131013
+EN work/diplay_sette_segmenti_c 1509362748 \
+      FL /home/sav/ASE/display_sette_segmenti/diplay_sette_segmenti_c.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/diplay_sette_segmenti_c/Behavioral 1509362749 \
+      FL /home/sav/ASE/display_sette_segmenti/diplay_sette_segmenti_c.vhd \
+      EN work/diplay_sette_segmenti_c 1509362748 CP display_sette_segmenti_f
+FL /home/sav/ASE/display_sette_segmenti/diplay_sette_segmenti_d.vhd 2017/10/30.12:24:22 P.20131013
+EN work/diplay_sette_segmenti_d 1509362746 \
+      FL /home/sav/ASE/display_sette_segmenti/diplay_sette_segmenti_d.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/diplay_sette_segmenti_d/structural 1509362747 \
+      FL /home/sav/ASE/display_sette_segmenti/diplay_sette_segmenti_d.vhd \
+      EN work/diplay_sette_segmenti_d 1509362746 CP diplay_sette_segmenti_b \
+      CP display_sette_segmenti_e CP display_sette_segmenti_f
+FL /home/sav/ASE/display_sette_segmenti/diplay_sette_segmenti_e.vhd 2017/10/30.10:24:07 P.20131013
+EN work/display_sette_segmenti_e 1509362740 \
+      FL /home/sav/ASE/display_sette_segmenti/diplay_sette_segmenti_e.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/display_sette_segmenti_e/dataflow 1509362741 \
+      FL /home/sav/ASE/display_sette_segmenti/diplay_sette_segmenti_e.vhd \
+      EN work/display_sette_segmenti_e 1509362740
+FL /home/sav/ASE/display_sette_segmenti/display_sette_segmenti_a.vhd 2017/10/30.12:17:56 P.20131013
+EN work/display_sette_segmenti_a 1509362752 \
+      FL /home/sav/ASE/display_sette_segmenti/display_sette_segmenti_a.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/display_sette_segmenti_a/structural 1509362753 \
+      FL /home/sav/ASE/display_sette_segmenti/display_sette_segmenti_a.vhd \
+      EN work/display_sette_segmenti_a 1509362752 CP display_sette_segmenti_e \
+      CP diplay_sette_segmenti_d
+FL /home/sav/ASE/display_sette_segmenti/display_sette_segmenti_f.vhd 2017/10/30.12:15:59 P.20131013
+EN work/display_sette_segmenti_f 1509362744 \
+      FL /home/sav/ASE/display_sette_segmenti/display_sette_segmenti_f.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/display_sette_segmenti_f/Behavioral 1509362745 \
+      FL /home/sav/ASE/display_sette_segmenti/display_sette_segmenti_f.vhd \
+      EN work/display_sette_segmenti_f 1509362744 CP diplay_sette_segmenti_b
+FL /home/sav/ASE/display_sette_segmenti/display_sette_segmenti_g.vhd 2017/10/30.12:12:14 P.20131013
+EN work/display_sette_segmenti_g 1509362750 \
+      FL /home/sav/ASE/display_sette_segmenti/display_sette_segmenti_g.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/display_sette_segmenti_g/dataflow 1509362751 \
+      FL /home/sav/ASE/display_sette_segmenti/display_sette_segmenti_g.vhd \
+      EN work/display_sette_segmenti_g 1509362750 CP display_sette_segmenti_e \
+      CP display_sette_segmenti_f CP diplay_sette_segmenti_d \
+      CP diplay_sette_segmenti_c

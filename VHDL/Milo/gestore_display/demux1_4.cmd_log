@@ -1,0 +1,1 @@
+vhdtdtfi -prj gestore_display -o /home/sav/ASE/gestore_display/demux1_4.vhi -module demux1_4 -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work demux1_4.vhd 

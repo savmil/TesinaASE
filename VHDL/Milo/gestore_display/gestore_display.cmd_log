@@ -1,0 +1,4 @@
+vhdtdtfi -prj gestore_display -o /home/sav/ASE/gestore_display/gestore_display.vhi -module gestore_display -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work clk_fil.vhd -lib work gestore_display.vhd 
+xst -intstyle ise -ifn "/home/sav/ASE/gestore_display/gestore_display.xst" -ofn "/home/sav/ASE/gestore_display/gestore_display.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-tq144-5 gestore_display.ngc gestore_display.ngd  
+netgen -intstyle ise -rpw 100 -tpw 0 -ar Structure -tm gestore_display -w -dir netgen/translate -ofmt vhdl -sim gestore_display.ngd gestore_display_translate.vhd 

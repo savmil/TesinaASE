@@ -1,0 +1,29 @@
+Command line:
+   display_sette_segmenti_e_testbench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  35255
+
+Thu Nov  9 22:07:01 2017
+
+
+ Elaboration Time: 0.01 sec
+
+ Current Memory Usage: 199.786 Meg
+
+ Total Signals          : 4
+ Total Nets             : 5
+ Total Signal Drivers   : 2
+ Total Blocks           : 4
+ Total Primitive Blocks : 3
+ Total Processes        : 2
+ Total Traceable Variables  : 13
+ Total Scalar Nets and Variables : 488
+Total Line Count : 7
+
+ Total Simulation Time: 0.02 sec
+
+ Current Memory Usage: 208.179 Meg
+
+Thu Nov  9 22:07:14 2017
+

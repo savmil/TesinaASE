@@ -1,0 +1,9 @@
+xst -intstyle ise -ifn "/home/sav/ASE/contatore_modulo_4/contatore_modulo_4.xst" -ofn "/home/sav/ASE/contatore_modulo_4/contatore_modulo_4.syr" 
+xst -intstyle ise -ifn "/home/sav/ASE/contatore_modulo_4/contatore_modulo_4.xst" -ofn "/home/sav/ASE/contatore_modulo_4/contatore_modulo_4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-tq144-5 contatore_modulo_4.ngc contatore_modulo_4.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o contatore_modulo_4_map.ncd contatore_modulo_4.ngd contatore_modulo_4.pcf 
+par -w -intstyle ise -ol high -t 1 contatore_modulo_4_map.ncd contatore_modulo_4.ncd contatore_modulo_4.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml contatore_modulo_4.twx contatore_modulo_4.ncd -o contatore_modulo_4.twr contatore_modulo_4.pcf 
+bitgen -intstyle ise -f contatore_modulo_4.ut contatore_modulo_4.ncd 
+xst -intstyle ise -ifn "/home/sav/ASE/contatore_modulo_4/contatore_modulo_4.xst" -ofn "/home/sav/ASE/contatore_modulo_4/contatore_modulo_4.syr" 
+netgen -intstyle ise -ar Structure -tm contatore_modulo_4 -w -dir netgen/synthesis -ofmt vhdl -sim contatore_modulo_4.ngc contatore_modulo_4_synthesis.vhd 

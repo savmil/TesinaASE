@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=/home/sav/ASE/prova1/impact.xsl
+OUTFILE=/home/sav/ASE/prova1/impact.xsl
+FAMILY=Multiple
+PART=Multiple
+WORKINGDIR=/home/sav/ASE/prova1
+LICENSE=iMPACT
+USER_INFO=iMPACT

@@ -1,0 +1,29 @@
+Command line:
+   contatore_modulo_4_testbench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51257
+
+Thu Nov  9 18:31:59 2017
+
+
+ Elaboration Time: 0.03 sec
+
+ Current Memory Usage: 199.807 Meg
+
+ Total Signals          : 68
+ Total Nets             : 28
+ Total Signal Drivers   : 21
+ Total Blocks           : 19
+ Total Primitive Blocks : 10
+ Total Processes        : 20
+ Total Traceable Variables  : 16
+ Total Scalar Nets and Variables : 930
+Total Line Count : 37
+
+ Total Simulation Time: 0.05 sec
+
+ Current Memory Usage: 208.2 Meg
+
+Thu Nov  9 20:39:12 2017
+

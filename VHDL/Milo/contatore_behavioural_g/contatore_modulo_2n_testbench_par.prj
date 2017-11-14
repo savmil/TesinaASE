@@ -1,0 +1,2 @@
+vhdl work "netgen/par/contatore_modulo_2n_timesim.vhd"
+vhdl work "contatore_modulo_2n_testbench.vhd"

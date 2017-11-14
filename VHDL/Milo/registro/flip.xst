@@ -1,0 +1,5 @@
+set -tmpdir "/home/sav/ASE/registro/xst/projnav.tmp"
+set -xsthdpdir "/home/sav/ASE/registro/xst"
+elaborate
+-ifn flip.prj
+-ifmt mixed

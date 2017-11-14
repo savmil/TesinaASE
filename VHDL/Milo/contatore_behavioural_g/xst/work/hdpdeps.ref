@@ -1,0 +1,8 @@
+V3 3
+FL /home/sav/ASE/contatore_behavioural_g/contatore_modulo_4.vhd 2017/11/09.23:09:25 P.20131013
+EN work/contatore_modulo_2n 1510345112 \
+      FL /home/sav/ASE/contatore_behavioural_g/contatore_modulo_4.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/contatore_modulo_2n/Behavioral 1510345113 \
+      FL /home/sav/ASE/contatore_behavioural_g/contatore_modulo_4.vhd \
+      EN work/contatore_modulo_2n 1510345112

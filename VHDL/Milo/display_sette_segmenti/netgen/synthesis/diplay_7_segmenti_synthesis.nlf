@@ -1,0 +1,21 @@
+Release 14.7 - netgen P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: netgen -intstyle ise -ar Structure -tm diplay_7_segmenti -w -dir
+netgen/synthesis -ofmt vhdl -sim diplay_7_segmenti.ngc
+diplay_7_segmenti_synthesis.vhd  
+
+Reading design 'diplay_7_segmenti.ngc' ...
+Flattening design ...
+Processing design ... 
+  Preping design's networks ...
+  Preping design's macros ...
+Writing VHDL netlist
+'/home/sav/ASE/display_sette_segmenti/netgen/synthesis/diplay_7_segmenti_synthes
+is.vhd' ...
+INFO:NetListWriters:635 - The generated VHDL netlist contains Xilinx UNISIM
+   simulation primitives and has to be used with UNISIM library for correct
+   compilation and simulation. 
+Number of warnings: 0
+Number of info messages: 1
+Total memory usage is 313276 kilobytes

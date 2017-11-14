@@ -1,0 +1,4 @@
+vhdl work "display_sette_segmenti_g.vhd"
+vhdl work "diplay_sette_segmenti_e.vhd"
+vhdl work "display_sette_segmenti_a.vhd"
+vhdl work "diplay_sette_segmenti_d.vhd"

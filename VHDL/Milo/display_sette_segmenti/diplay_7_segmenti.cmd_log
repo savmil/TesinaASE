@@ -1,0 +1,106 @@
+xst -intstyle ise -ifn "/home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.xst" -ofn "/home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /media/sf_ASE/scheda/BasysRevEGeneral.ucf -p xc3s100e-tq144-5 diplay_7_segmenti.ngc diplay_7_segmenti.ngd  
+netgen -intstyle ise -ar Structure -tm diplay_7_segmenti -w -dir netgen/synthesis -ofmt vhdl -sim diplay_7_segmenti.ngc diplay_7_segmenti_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /media/sf_ASE/scheda/BasysRevEGeneral.ucf -p xc3s100e-tq144-5 diplay_7_segmenti.ngc diplay_7_segmenti.ngd  
+xst -intstyle ise -ifn "/home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.xst" -ofn "/home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /media/sf_ASE/scheda/BasysRevEGeneral.ucf -p xc3s100e-tq144-5 diplay_7_segmenti.ngc diplay_7_segmenti.ngd  
+xst -intstyle ise -ifn "/home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.xst" -ofn "/home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /media/sf_ASE/scheda/BasysRevEGeneral.ucf -p xc3s100e-tq144-5 diplay_7_segmenti.ngc diplay_7_segmenti.ngd  
+xst -intstyle ise -ifn "/home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.xst" -ofn "/home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.syr" 
+xst -intstyle ise -ifn "/home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.xst" -ofn "/home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /media/sf_ASE/scheda/BasysRevEGeneral.ucf -p xc3s100e-tq144-5 diplay_7_segmenti.ngc diplay_7_segmenti.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o diplay_7_segmenti_map.ncd diplay_7_segmenti.ngd diplay_7_segmenti.pcf 
+par -w -intstyle ise -ol high -t 1 diplay_7_segmenti_map.ncd diplay_7_segmenti.ncd diplay_7_segmenti.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml diplay_7_segmenti.twx diplay_7_segmenti.ncd -o diplay_7_segmenti.twr diplay_7_segmenti.pcf 
+bitgen -intstyle ise -f diplay_7_segmenti.ut diplay_7_segmenti.ncd 
+xst -intstyle ise -ifn "/home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.xst" -ofn "/home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /media/sf_ASE/scheda/BasysRevEGeneral.ucf -p xc3s100e-tq144-5 diplay_7_segmenti.ngc diplay_7_segmenti.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o diplay_7_segmenti_map.ncd diplay_7_segmenti.ngd diplay_7_segmenti.pcf 
+par -w -intstyle ise -ol high -t 1 diplay_7_segmenti_map.ncd diplay_7_segmenti.ncd diplay_7_segmenti.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml diplay_7_segmenti.twx diplay_7_segmenti.ncd -o diplay_7_segmenti.twr diplay_7_segmenti.pcf 
+bitgen -intstyle ise -f diplay_7_segmenti.ut diplay_7_segmenti.ncd 
+xst -intstyle ise -ifn "/home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.xst" -ofn "/home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.syr" 
+xst -intstyle ise -ifn "/home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.xst" -ofn "/home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.syr" 
+xst -intstyle ise -ifn "/home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.xst" -ofn "/home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /media/sf_ASE/scheda/BasysRevEGeneral.ucf -p xc3s100e-tq144-5 diplay_7_segmenti.ngc diplay_7_segmenti.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o diplay_7_segmenti_map.ncd diplay_7_segmenti.ngd diplay_7_segmenti.pcf 
+par -w -intstyle ise -ol high -t 1 diplay_7_segmenti_map.ncd diplay_7_segmenti.ncd diplay_7_segmenti.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml diplay_7_segmenti.twx diplay_7_segmenti.ncd -o diplay_7_segmenti.twr diplay_7_segmenti.pcf 
+bitgen -intstyle ise -f diplay_7_segmenti.ut diplay_7_segmenti.ncd 
+xst -intstyle ise -ifn "/home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.xst" -ofn "/home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /media/sf_ASE/scheda/BasysRevEGeneral.ucf -p xc3s100e-tq144-5 diplay_7_segmenti.ngc diplay_7_segmenti.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o diplay_7_segmenti_map.ncd diplay_7_segmenti.ngd diplay_7_segmenti.pcf 
+par -w -intstyle ise -ol high -t 1 diplay_7_segmenti_map.ncd diplay_7_segmenti.ncd diplay_7_segmenti.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml diplay_7_segmenti.twx diplay_7_segmenti.ncd -o diplay_7_segmenti.twr diplay_7_segmenti.pcf 
+bitgen -intstyle ise -f diplay_7_segmenti.ut diplay_7_segmenti.ncd 
+xst -intstyle ise -ifn "/home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.xst" -ofn "/home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /media/sf_ASE/scheda/BasysRevEGeneral.ucf -p xc3s100e-tq144-5 diplay_7_segmenti.ngc diplay_7_segmenti.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o diplay_7_segmenti_map.ncd diplay_7_segmenti.ngd diplay_7_segmenti.pcf 
+par -w -intstyle ise -ol high -t 1 diplay_7_segmenti_map.ncd diplay_7_segmenti.ncd diplay_7_segmenti.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml diplay_7_segmenti.twx diplay_7_segmenti.ncd -o diplay_7_segmenti.twr diplay_7_segmenti.pcf 
+bitgen -intstyle ise -f diplay_7_segmenti.ut diplay_7_segmenti.ncd 
+xst -intstyle ise -ifn "/home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.xst" -ofn "/home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /media/sf_ASE/scheda/BasysRevEGeneral.ucf -p xc3s100e-tq144-5 diplay_7_segmenti.ngc diplay_7_segmenti.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o diplay_7_segmenti_map.ncd diplay_7_segmenti.ngd diplay_7_segmenti.pcf 
+par -w -intstyle ise -ol high -t 1 diplay_7_segmenti_map.ncd diplay_7_segmenti.ncd diplay_7_segmenti.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml diplay_7_segmenti.twx diplay_7_segmenti.ncd -o diplay_7_segmenti.twr diplay_7_segmenti.pcf 
+bitgen -intstyle ise -f diplay_7_segmenti.ut diplay_7_segmenti.ncd 
+xst -intstyle ise -ifn "/home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.xst" -ofn "/home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /media/sf_ASE/scheda/BasysRevEGeneral.ucf -p xc3s100e-tq144-5 diplay_7_segmenti.ngc diplay_7_segmenti.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o diplay_7_segmenti_map.ncd diplay_7_segmenti.ngd diplay_7_segmenti.pcf 
+par -w -intstyle ise -ol high -t 1 diplay_7_segmenti_map.ncd diplay_7_segmenti.ncd diplay_7_segmenti.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml diplay_7_segmenti.twx diplay_7_segmenti.ncd -o diplay_7_segmenti.twr diplay_7_segmenti.pcf 
+bitgen -intstyle ise -f diplay_7_segmenti.ut diplay_7_segmenti.ncd 
+xst -intstyle ise -ifn "/home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.xst" -ofn "/home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /media/sf_ASE/scheda/BasysRevEGeneral.ucf -p xc3s100e-tq144-5 diplay_7_segmenti.ngc diplay_7_segmenti.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o diplay_7_segmenti_map.ncd diplay_7_segmenti.ngd diplay_7_segmenti.pcf 
+par -w -intstyle ise -ol high -t 1 diplay_7_segmenti_map.ncd diplay_7_segmenti.ncd diplay_7_segmenti.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml diplay_7_segmenti.twx diplay_7_segmenti.ncd -o diplay_7_segmenti.twr diplay_7_segmenti.pcf 
+bitgen -intstyle ise -f diplay_7_segmenti.ut diplay_7_segmenti.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /media/sf_ASE/scheda/BasysRevEGeneral.ucf -p xc3s100e-tq144-5 diplay_7_segmenti.ngc diplay_7_segmenti.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o diplay_7_segmenti_map.ncd diplay_7_segmenti.ngd diplay_7_segmenti.pcf 
+par -w -intstyle ise -ol high -t 1 diplay_7_segmenti_map.ncd diplay_7_segmenti.ncd diplay_7_segmenti.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml diplay_7_segmenti.twx diplay_7_segmenti.ncd -o diplay_7_segmenti.twr diplay_7_segmenti.pcf 
+bitgen -intstyle ise -f diplay_7_segmenti.ut diplay_7_segmenti.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /media/sf_ASE/scheda/BasysRevEGeneral.ucf -p xc3s100e-tq144-5 diplay_7_segmenti.ngc diplay_7_segmenti.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o diplay_7_segmenti_map.ncd diplay_7_segmenti.ngd diplay_7_segmenti.pcf 
+par -w -intstyle ise -ol high -t 1 diplay_7_segmenti_map.ncd diplay_7_segmenti.ncd diplay_7_segmenti.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml diplay_7_segmenti.twx diplay_7_segmenti.ncd -o diplay_7_segmenti.twr diplay_7_segmenti.pcf 
+bitgen -intstyle ise -f diplay_7_segmenti.ut diplay_7_segmenti.ncd 
+xst -intstyle ise -ifn "/home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.xst" -ofn "/home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /media/sf_ASE/scheda/BasysRevEGeneral.ucf -p xc3s100e-tq144-5 diplay_7_segmenti.ngc diplay_7_segmenti.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o diplay_7_segmenti_map.ncd diplay_7_segmenti.ngd diplay_7_segmenti.pcf 
+par -w -intstyle ise -ol high -t 1 diplay_7_segmenti_map.ncd diplay_7_segmenti.ncd diplay_7_segmenti.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml diplay_7_segmenti.twx diplay_7_segmenti.ncd -o diplay_7_segmenti.twr diplay_7_segmenti.pcf 
+bitgen -intstyle ise -f diplay_7_segmenti.ut diplay_7_segmenti.ncd 
+xst -intstyle ise -ifn "/home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.xst" -ofn "/home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.syr" 
+xst -intstyle ise -ifn "/home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.xst" -ofn "/home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /media/sf_ASE/scheda/BasysRevEGeneral.ucf -p xc3s100e-tq144-5 diplay_7_segmenti.ngc diplay_7_segmenti.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o diplay_7_segmenti_map.ncd diplay_7_segmenti.ngd diplay_7_segmenti.pcf 
+par -w -intstyle ise -ol high -t 1 diplay_7_segmenti_map.ncd diplay_7_segmenti.ncd diplay_7_segmenti.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml diplay_7_segmenti.twx diplay_7_segmenti.ncd -o diplay_7_segmenti.twr diplay_7_segmenti.pcf 
+bitgen -intstyle ise -f diplay_7_segmenti.ut diplay_7_segmenti.ncd 
+xst -intstyle ise -ifn "/home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.xst" -ofn "/home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /media/sf_ASE/scheda/BasysRevEGeneral.ucf -p xc3s100e-tq144-5 diplay_7_segmenti.ngc diplay_7_segmenti.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o diplay_7_segmenti_map.ncd diplay_7_segmenti.ngd diplay_7_segmenti.pcf 
+par -w -intstyle ise -ol high -t 1 diplay_7_segmenti_map.ncd diplay_7_segmenti.ncd diplay_7_segmenti.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml diplay_7_segmenti.twx diplay_7_segmenti.ncd -o diplay_7_segmenti.twr diplay_7_segmenti.pcf 
+bitgen -intstyle ise -f diplay_7_segmenti.ut diplay_7_segmenti.ncd 
+xst -intstyle ise -ifn "/home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.xst" -ofn "/home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /media/sf_ASE/scheda/BasysRevEGeneral.ucf -p xc3s100e-tq144-5 diplay_7_segmenti.ngc diplay_7_segmenti.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o diplay_7_segmenti_map.ncd diplay_7_segmenti.ngd diplay_7_segmenti.pcf 
+par -w -intstyle ise -ol high -t 1 diplay_7_segmenti_map.ncd diplay_7_segmenti.ncd diplay_7_segmenti.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml diplay_7_segmenti.twx diplay_7_segmenti.ncd -o diplay_7_segmenti.twr diplay_7_segmenti.pcf 
+bitgen -intstyle ise -f diplay_7_segmenti.ut diplay_7_segmenti.ncd 
+xst -intstyle ise -ifn "/home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.xst" -ofn "/home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /media/sf_ASE/scheda/BasysRevEGeneral.ucf -p xc3s100e-tq144-5 diplay_7_segmenti.ngc diplay_7_segmenti.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o diplay_7_segmenti_map.ncd diplay_7_segmenti.ngd diplay_7_segmenti.pcf 
+par -w -intstyle ise -ol high -t 1 diplay_7_segmenti_map.ncd diplay_7_segmenti.ncd diplay_7_segmenti.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml diplay_7_segmenti.twx diplay_7_segmenti.ncd -o diplay_7_segmenti.twr diplay_7_segmenti.pcf 
+bitgen -intstyle ise -f diplay_7_segmenti.ut diplay_7_segmenti.ncd 
+xst -intstyle ise -ifn "/home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.xst" -ofn "/home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /media/sf_ASE/scheda/BasysRevEGeneral.ucf -p xc3s100e-tq144-5 diplay_7_segmenti.ngc diplay_7_segmenti.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o diplay_7_segmenti_map.ncd diplay_7_segmenti.ngd diplay_7_segmenti.pcf 
+par -w -intstyle ise -ol high -t 1 diplay_7_segmenti_map.ncd diplay_7_segmenti.ncd diplay_7_segmenti.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml diplay_7_segmenti.twx diplay_7_segmenti.ncd -o diplay_7_segmenti.twr diplay_7_segmenti.pcf 
+bitgen -intstyle ise -f diplay_7_segmenti.ut diplay_7_segmenti.ncd 

@@ -1,0 +1,48 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /home/sav/ASE/display_sette_segmenti/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Parameter xsthdpdir set to /home/sav/ASE/display_sette_segmenti/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/sav/ASE/display_sette_segmenti/diplay_sette_segmenti_e.vhd" in Library work.
+Entity <display_sette_segmenti_e> compiled.
+Entity <display_sette_segmenti_e> (Architecture <dataflow>) compiled.
+Compiling vhdl file "/home/sav/ASE/display_sette_segmenti/display_sette_segmenti_g.vhd" in Library work.
+Entity <display_sette_segmenti_g> compiled.
+Entity <display_sette_segmenti_g> (Architecture <dataflow>) compiled.
+Compiling vhdl file "/home/sav/ASE/display_sette_segmenti/diplay_sette_segmenti_b.vhd" in Library work.
+Entity <diplay_sette_segmenti_b> compiled.
+Entity <diplay_sette_segmenti_b> (Architecture <structural>) compiled.
+Compiling vhdl file "/home/sav/ASE/display_sette_segmenti/display_sette_segmenti_f.vhd" in Library work.
+Entity <display_sette_segmenti_f> compiled.
+ERROR:HDLParsers:164 - "/home/sav/ASE/display_sette_segmenti/display_sette_segmenti_f.vhd" Line 42. parse error, unexpected END
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+
+
+Total memory usage is 468296 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

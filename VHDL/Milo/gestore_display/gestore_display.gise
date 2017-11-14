@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="gestore_display.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="clk_fil.vhi"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="clk_fil_isim_beh.exe"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="clk_fil_testbench_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="contatore_modulo_2n.vhi"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="demux1_4.vhi"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="diplay_7_segmenti.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="diplay_7_segmenti.stx"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="diplay_7_segmenti.vhi"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="diplay_7_segmenti.xst"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="gestore_display.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="gestore_display.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="gestore_display.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="gestore_display.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="gestore_display.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="gestore_display.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="gestore_display.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="gestore_display.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="gestore_display.syr"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="gestore_display.vhi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="gestore_display.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="gestore_display_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="gestore_display_ngdbuild.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="gestore_display_summary.html"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="gestore_display_testbench_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="gestore_display_testbench_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="gestore_display_testbench_isim_beh.wdb"/>
+    <file xil_pn:branch="PostTranslateSimulation" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="gestore_display_testbench_isim_translate.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="gestore_display_testbench_isim_translate.wdb"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="gestore_display_testbench_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="gestore_display_testbench_translate.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="gestore_display_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd">
+      <branch xil_pn:name="BehavioralSim"/>
+      <branch xil_pn:name="PostTranslateSimulation"/>
+    </file>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="netgen"/>
+    <file xil_pn:branch="PostTranslateSimulation" xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/translate/gestore_display_translate.nlf"/>
+    <file xil_pn:branch="PostTranslateSimulation" xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/translate/gestore_display_translate.vhd"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="selettore_cifra.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="selettore_cifra.stx"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="selettore_cifra.vhi"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="selettore_cifra.xst"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini">
+      <branch xil_pn:name="BehavioralSim"/>
+      <branch xil_pn:name="PostTranslateSimulation"/>
+    </file>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1510477978" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1510477978">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1510488869" xil_pn:in_ck="462095845948833511" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1510488869">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="../display_sette_segmenti/diplay_sette_segmenti_b.vhd"/>
+      <outfile xil_pn:name="../display_sette_segmenti/diplay_sette_segmenti_c.vhd"/>
+      <outfile xil_pn:name="../display_sette_segmenti/diplay_sette_segmenti_d.vhd"/>
+      <outfile xil_pn:name="../display_sette_segmenti/diplay_sette_segmenti_e.vhd"/>
+      <outfile xil_pn:name="../display_sette_segmenti/display_sette_segmenti_a.vhd"/>
+      <outfile xil_pn:name="../display_sette_segmenti/display_sette_segmenti_f.vhd"/>
+      <outfile xil_pn:name="../display_sette_segmenti/display_sette_segmenti_g.vhd"/>
+      <outfile xil_pn:name="clk_fil.vhd"/>
+      <outfile xil_pn:name="contatore_modulo_2n_testbench.vhd"/>
+      <outfile xil_pn:name="contatore_modulo_4.vhd"/>
+      <outfile xil_pn:name="demux1_4.vhd"/>
+      <outfile xil_pn:name="diplay_7_segmenti.vhd"/>
+      <outfile xil_pn:name="gestore_display.vhd"/>
+      <outfile xil_pn:name="gestore_display_testbench.vhd"/>
+      <outfile xil_pn:name="selettore_cifra.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1510488772" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-1120345370921979485" xil_pn:start_ts="1510488772">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1510488772" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="3505087452628761189" xil_pn:start_ts="1510488772">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1510477978" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="4045020518131699058" xil_pn:start_ts="1510477978">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1510488869" xil_pn:in_ck="462095845948833511" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1510488869">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="../display_sette_segmenti/diplay_sette_segmenti_b.vhd"/>
+      <outfile xil_pn:name="../display_sette_segmenti/diplay_sette_segmenti_c.vhd"/>
+      <outfile xil_pn:name="../display_sette_segmenti/diplay_sette_segmenti_d.vhd"/>
+      <outfile xil_pn:name="../display_sette_segmenti/diplay_sette_segmenti_e.vhd"/>
+      <outfile xil_pn:name="../display_sette_segmenti/display_sette_segmenti_a.vhd"/>
+      <outfile xil_pn:name="../display_sette_segmenti/display_sette_segmenti_f.vhd"/>
+      <outfile xil_pn:name="../display_sette_segmenti/display_sette_segmenti_g.vhd"/>
+      <outfile xil_pn:name="clk_fil.vhd"/>
+      <outfile xil_pn:name="contatore_modulo_2n_testbench.vhd"/>
+      <outfile xil_pn:name="contatore_modulo_4.vhd"/>
+      <outfile xil_pn:name="demux1_4.vhd"/>
+      <outfile xil_pn:name="diplay_7_segmenti.vhd"/>
+      <outfile xil_pn:name="gestore_display.vhd"/>
+      <outfile xil_pn:name="gestore_display_testbench.vhd"/>
+      <outfile xil_pn:name="selettore_cifra.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1510488871" xil_pn:in_ck="462095845948833511" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-2720782355225798424" xil_pn:start_ts="1510488869">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="gestore_display_testbench_beh.prj"/>
+      <outfile xil_pn:name="gestore_display_testbench_isim_beh.exe"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1510488871" xil_pn:in_ck="-5246054190940152642" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="6789044841881661685" xil_pn:start_ts="1510488871">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="gestore_display_testbench_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
+    <transform xil_pn:end_ts="1510488091" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1510488091">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1510488091" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-2315928121352640269" xil_pn:start_ts="1510488091">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1510488091" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="4045020518131699058" xil_pn:start_ts="1510488091">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1510488091" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1510488091">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1510488091" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="2160386501479740529" xil_pn:start_ts="1510488091">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1510488091" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="2988080280842703814" xil_pn:start_ts="1510488091">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1510488091" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="433561225982981308" xil_pn:start_ts="1510488091">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1510488098" xil_pn:in_ck="1629706803488744766" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="1831445952903453167" xil_pn:start_ts="1510488091">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name=".lso"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="gestore_display.lso"/>
+      <outfile xil_pn:name="gestore_display.ngc"/>
+      <outfile xil_pn:name="gestore_display.ngr"/>
+      <outfile xil_pn:name="gestore_display.prj"/>
+      <outfile xil_pn:name="gestore_display.stx"/>
+      <outfile xil_pn:name="gestore_display.syr"/>
+      <outfile xil_pn:name="gestore_display.xst"/>
+      <outfile xil_pn:name="gestore_display_testbench_stx_beh.prj"/>
+      <outfile xil_pn:name="gestore_display_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1510488098" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="9135716770861045638" xil_pn:start_ts="1510488098">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1510488103" xil_pn:in_ck="3068082817082581780" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-4833297701812642049" xil_pn:start_ts="1510488098">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="gestore_display.bld"/>
+      <outfile xil_pn:name="gestore_display.ngd"/>
+      <outfile xil_pn:name="gestore_display_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1510488106" xil_pn:in_ck="3068082817082581781" xil_pn:name="TRAN_postXlateSimModel" xil_pn:prop_ck="7939613884324103379" xil_pn:start_ts="1510488103">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="netgen"/>
+      <outfile xil_pn:name="netgen/translate/gestore_display_translate.nlf"/>
+      <outfile xil_pn:name="netgen/translate/gestore_display_translate.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1510488106" xil_pn:in_ck="-8215322989244375519" xil_pn:name="TRAN_copyPost-TranslateAbstractToPreSimulation" xil_pn:start_ts="1510488106">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="contatore_modulo_2n_testbench.vhd"/>
+      <outfile xil_pn:name="gestore_display_testbench.vhd"/>
+      <outfile xil_pn:name="netgen/translate/gestore_display_translate.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1510488111" xil_pn:in_ck="-8215322989244375519" xil_pn:name="TRAN_ISimulatePostTranslateModelRunFuse" xil_pn:prop_ck="-1821360269766922552" xil_pn:start_ts="1510488106">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="gestore_display_testbench_isim_translate.exe"/>
+      <outfile xil_pn:name="gestore_display_testbench_translate.prj"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1510488111" xil_pn:in_ck="577777293902122331" xil_pn:name="TRAN_ISimulatePostTranslateModel" xil_pn:prop_ck="-2942983491822683500" xil_pn:start_ts="1510488111">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="gestore_display_testbench_isim_translate.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+    </transform>
+  </transforms>
+
+</generated_project>

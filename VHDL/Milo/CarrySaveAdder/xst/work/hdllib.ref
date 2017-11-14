@@ -1,0 +1,8 @@
+EN carry_save_adder NULL /home/sav/ASE/CarrySaveAdder/carry_save_adder.vhd sub00/vhpl00 1509828625
+EN full_adder_half NULL /home/sav/full_adder_half/full_adder_half.vhdl sub00/vhpl03 1509828621
+EN half_adder NULL /home/sav/full_adder_half/half_adder.vhdl sub00/vhpl01 1509828619
+AR half_adder dataflow /home/sav/full_adder_half/half_adder.vhdl sub00/vhpl02 1509828620
+AR full_adder_half register_transfer /home/sav/full_adder_half/full_adder_half.vhdl sub00/vhpl04 1509828622
+AR carry_save_cell structural /home/sav/ASE/CarrySaveAdder/carry_save_cell.vhd sub00/vhpl06 1509828624
+AR carry_save_adder behavioral /home/sav/ASE/CarrySaveAdder/carry_save_adder.vhd sub00/vhpl07 1509828626
+EN carry_save_cell NULL /home/sav/ASE/CarrySaveAdder/carry_save_cell.vhd sub00/vhpl05 1509828623

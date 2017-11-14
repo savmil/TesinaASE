@@ -1,0 +1,60 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /home/sav/ASE/gestore_display/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Parameter xsthdpdir set to /home/sav/ASE/gestore_display/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/sav/ASE/display_sette_segmenti/diplay_sette_segmenti_e.vhd" in Library work.
+Entity <display_sette_segmenti_e> compiled.
+Entity <display_sette_segmenti_e> (Architecture <dataflow>) compiled.
+Compiling vhdl file "/home/sav/ASE/display_sette_segmenti/diplay_sette_segmenti_b.vhd" in Library work.
+Entity <diplay_sette_segmenti_b> compiled.
+Entity <diplay_sette_segmenti_b> (Architecture <structural>) compiled.
+Compiling vhdl file "/home/sav/ASE/display_sette_segmenti/display_sette_segmenti_f.vhd" in Library work.
+Entity <display_sette_segmenti_f> compiled.
+Entity <display_sette_segmenti_f> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/sav/ASE/display_sette_segmenti/diplay_sette_segmenti_d.vhd" in Library work.
+Entity <diplay_sette_segmenti_d> compiled.
+Entity <diplay_sette_segmenti_d> (Architecture <structural>) compiled.
+Compiling vhdl file "/home/sav/ASE/display_sette_segmenti/diplay_sette_segmenti_c.vhd" in Library work.
+Entity <diplay_sette_segmenti_c> compiled.
+Entity <diplay_sette_segmenti_c> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/sav/ASE/display_sette_segmenti/display_sette_segmenti_g.vhd" in Library work.
+Entity <display_sette_segmenti_g> compiled.
+Entity <display_sette_segmenti_g> (Architecture <dataflow>) compiled.
+Compiling vhdl file "/home/sav/ASE/display_sette_segmenti/display_sette_segmenti_a.vhd" in Library work.
+Entity <display_sette_segmenti_a> compiled.
+Entity <display_sette_segmenti_a> (Architecture <structural>) compiled.
+Compiling vhdl file "/home/sav/ASE/gestore_display/diplay_7_segmenti.vhd" in Library work.
+Entity <display_7_segmenti> compiled.
+Entity <display_7_segmenti> (Architecture <structural>) compiled.
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+
+
+Total memory usage is 469204 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

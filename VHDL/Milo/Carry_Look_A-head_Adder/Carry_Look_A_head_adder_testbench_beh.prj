@@ -1,0 +1,5 @@
+vhdl work "../../half_adder/half_adder.vhdl"
+vhdl work "Generator_G_P.vhd"
+vhdl work "Carry_Look_A-head.vhd"
+vhdl work "Carry_Look_A_head_Adder.vhd"
+vhdl work "Carry_Look_A_head_adder_testbench.vhd"

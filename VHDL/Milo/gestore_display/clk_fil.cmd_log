@@ -1,0 +1,1 @@
+vhdtdtfi -prj gestore_display -o /home/sav/ASE/gestore_display/clk_fil.vhi -module clk_fil -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work clk_fil.vhd 

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/sav/ASE/contatore_behavioural_g/contatore_modulo_2n.ncd
+OUTFILE=/home/sav/ASE/contatore_behavioural_g/contatore_modulo_2n.bit
+FAMILY=Spartan3E
+PART=xc3s100e-5tq144
+WORKINGDIR=/home/sav/ASE/contatore_behavioural_g
+LICENSE=WebPack
+USER_INFO=211407724_0_0_917

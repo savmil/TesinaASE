@@ -1,0 +1,2 @@
+vhdl work "netgen/translate/gestore_display_translate.vhd"
+vhdl work "gestore_display_testbench.vhd"

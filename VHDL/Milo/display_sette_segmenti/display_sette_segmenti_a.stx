@@ -1,0 +1,43 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /home/sav/ASE/display_sette_segmenti/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to /home/sav/ASE/display_sette_segmenti/xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/sav/ASE/display_sette_segmenti/display_sette_segmenti_g.vhd" in Library work.
+Architecture dataflow of Entity display_sette_segmenti_g is up to date.
+Compiling vhdl file "/home/sav/ASE/display_sette_segmenti/display_sette_segmenti_a.vhd" in Library work.
+Entity <display_sette_segmenti_a> compiled.
+ERROR:HDLParsers:402 - "/home/sav/ASE/display_sette_segmenti/display_sette_segmenti_a.vhd" Line 61. Label 'g' g can not be used as a primary name.
+ERROR:HDLParsers:402 - "/home/sav/ASE/display_sette_segmenti/display_sette_segmenti_a.vhd" Line 61. Label 'e' e can not be used as a primary name.
+ERROR:HDLParsers:402 - "/home/sav/ASE/display_sette_segmenti/display_sette_segmenti_a.vhd" Line 61. Label 'b' b can not be used as a primary name.
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+
+
+Total memory usage is 468052 kilobytes
+
+Number of errors   :    3 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

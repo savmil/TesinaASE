@@ -1,0 +1,41 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /home/sav/ASE/registro/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to /home/sav/ASE/registro/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/sav/ASE/registro/registro.vhd" in Library work.
+Entity <flip_flop_rising_edge> compiled.
+WARNING:HDLParsers:1406 - "/home/sav/ASE/registro/registro.vhd" Line 43. No sensitivity list and no wait in the process
+Entity <flip_flop_rising_edge> (Architecture <Behavioral>) compiled.
+ERROR:HDLParsers:164 - "/home/sav/ASE/registro/registro.vhd" Line 55. parse error, unexpected END
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+
+
+Total memory usage is 467784 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

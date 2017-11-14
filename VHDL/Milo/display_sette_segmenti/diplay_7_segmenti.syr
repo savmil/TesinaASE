@@ -1,0 +1,394 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Reading design: diplay_7_segmenti.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "diplay_7_segmenti.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "diplay_7_segmenti"
+Output Format                      : NGC
+Target Device                      : xc3s100e-5-tq144
+
+---- Source Options
+Top Module Name                    : diplay_7_segmenti
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/sav/ASE/display_sette_segmenti/diplay_sette_segmenti_e.vhd" in Library work.
+Entity <display_sette_segmenti_e> compiled.
+Entity <display_sette_segmenti_e> (Architecture <dataflow>) compiled.
+Compiling vhdl file "/home/sav/ASE/display_sette_segmenti/diplay_sette_segmenti_b.vhd" in Library work.
+Entity <diplay_sette_segmenti_b> compiled.
+Entity <diplay_sette_segmenti_b> (Architecture <structural>) compiled.
+Compiling vhdl file "/home/sav/ASE/display_sette_segmenti/display_sette_segmenti_f.vhd" in Library work.
+Entity <display_sette_segmenti_f> compiled.
+Entity <display_sette_segmenti_f> (Architecture <behavioral>) compiled.
+Compiling vhdl file "/home/sav/ASE/display_sette_segmenti/diplay_sette_segmenti_d.vhd" in Library work.
+Entity <diplay_sette_segmenti_d> compiled.
+Entity <diplay_sette_segmenti_d> (Architecture <structural>) compiled.
+Compiling vhdl file "/home/sav/ASE/display_sette_segmenti/diplay_sette_segmenti_c.vhd" in Library work.
+Entity <diplay_sette_segmenti_c> compiled.
+Entity <diplay_sette_segmenti_c> (Architecture <behavioral>) compiled.
+Compiling vhdl file "/home/sav/ASE/display_sette_segmenti/display_sette_segmenti_g.vhd" in Library work.
+Entity <display_sette_segmenti_g> compiled.
+Entity <display_sette_segmenti_g> (Architecture <dataflow>) compiled.
+Compiling vhdl file "/home/sav/ASE/display_sette_segmenti/display_sette_segmenti_a.vhd" in Library work.
+Entity <display_sette_segmenti_a> compiled.
+Entity <display_sette_segmenti_a> (Architecture <structural>) compiled.
+Compiling vhdl file "/home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.vhd" in Library work.
+Architecture structural of Entity diplay_7_segmenti is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <diplay_7_segmenti> in library <work> (architecture <dataflow>).
+
+Analyzing hierarchy for entity <diplay_sette_segmenti_b> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <diplay_sette_segmenti_d> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <display_sette_segmenti_f> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <display_sette_segmenti_g> in library <work> (architecture <dataflow>).
+
+Analyzing hierarchy for entity <display_sette_segmenti_a> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <diplay_sette_segmenti_c> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <display_sette_segmenti_e> in library <work> (architecture <dataflow>).
+
+Analyzing hierarchy for entity <diplay_sette_segmenti_b> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <display_sette_segmenti_f> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <diplay_sette_segmenti_d> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <display_sette_segmenti_e> in library <work> (architecture <dataflow>).
+
+Analyzing hierarchy for entity <diplay_sette_segmenti_b> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <display_sette_segmenti_e> in library <work> (architecture <dataflow>).
+
+Analyzing hierarchy for entity <display_sette_segmenti_f> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <diplay_sette_segmenti_b> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <display_sette_segmenti_e> in library <work> (architecture <dataflow>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <diplay_7_segmenti> in library <work> (Architecture <dataflow>).
+Entity <diplay_7_segmenti> analyzed. Unit <diplay_7_segmenti> generated.
+
+Analyzing Entity <diplay_sette_segmenti_b> in library <work> (Architecture <structural>).
+Entity <diplay_sette_segmenti_b> analyzed. Unit <diplay_sette_segmenti_b> generated.
+
+Analyzing Entity <diplay_sette_segmenti_d> in library <work> (Architecture <structural>).
+Entity <diplay_sette_segmenti_d> analyzed. Unit <diplay_sette_segmenti_d> generated.
+
+Analyzing Entity <display_sette_segmenti_f> in library <work> (Architecture <behavioral>).
+Entity <display_sette_segmenti_f> analyzed. Unit <display_sette_segmenti_f> generated.
+
+Analyzing Entity <display_sette_segmenti_g> in library <work> (Architecture <dataflow>).
+Entity <display_sette_segmenti_g> analyzed. Unit <display_sette_segmenti_g> generated.
+
+Analyzing Entity <display_sette_segmenti_a> in library <work> (Architecture <structural>).
+Entity <display_sette_segmenti_a> analyzed. Unit <display_sette_segmenti_a> generated.
+
+Analyzing Entity <diplay_sette_segmenti_c> in library <work> (Architecture <behavioral>).
+Entity <diplay_sette_segmenti_c> analyzed. Unit <diplay_sette_segmenti_c> generated.
+
+Analyzing Entity <display_sette_segmenti_e> in library <work> (Architecture <dataflow>).
+Entity <display_sette_segmenti_e> analyzed. Unit <display_sette_segmenti_e> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <display_sette_segmenti_e>.
+    Related source file is "/home/sav/ASE/display_sette_segmenti/diplay_sette_segmenti_e.vhd".
+Unit <display_sette_segmenti_e> synthesized.
+
+
+Synthesizing Unit <diplay_sette_segmenti_b>.
+    Related source file is "/home/sav/ASE/display_sette_segmenti/diplay_sette_segmenti_b.vhd".
+Unit <diplay_sette_segmenti_b> synthesized.
+
+
+Synthesizing Unit <display_sette_segmenti_f>.
+    Related source file is "/home/sav/ASE/display_sette_segmenti/display_sette_segmenti_f.vhd".
+Unit <display_sette_segmenti_f> synthesized.
+
+
+Synthesizing Unit <diplay_sette_segmenti_d>.
+    Related source file is "/home/sav/ASE/display_sette_segmenti/diplay_sette_segmenti_d.vhd".
+Unit <diplay_sette_segmenti_d> synthesized.
+
+
+Synthesizing Unit <diplay_sette_segmenti_c>.
+    Related source file is "/home/sav/ASE/display_sette_segmenti/diplay_sette_segmenti_c.vhd".
+Unit <diplay_sette_segmenti_c> synthesized.
+
+
+Synthesizing Unit <display_sette_segmenti_g>.
+    Related source file is "/home/sav/ASE/display_sette_segmenti/display_sette_segmenti_g.vhd".
+Unit <display_sette_segmenti_g> synthesized.
+
+
+Synthesizing Unit <display_sette_segmenti_a>.
+    Related source file is "/home/sav/ASE/display_sette_segmenti/display_sette_segmenti_a.vhd".
+Unit <display_sette_segmenti_a> synthesized.
+
+
+Synthesizing Unit <diplay_7_segmenti>.
+    Related source file is "/home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.vhd".
+Unit <diplay_7_segmenti> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <diplay_7_segmenti> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block diplay_7_segmenti, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : diplay_7_segmenti.ngr
+Top Level Output File Name         : diplay_7_segmenti
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 12
+
+Cell Usage :
+# BELS                             : 8
+#      GND                         : 1
+#      LUT4                        : 7
+# IO Buffers                       : 12
+#      IBUF                        : 4
+#      OBUF                        : 8
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100etq144-5 
+
+ Number of Slices:                        4  out of    960     0%  
+ Number of 4 input LUTs:                  7  out of   1920     0%  
+ Number of IOs:                          12
+ Number of bonded IOBs:                  12  out of    108    11%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 5.998ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 28 / 7
+-------------------------------------------------------------------------
+Delay:               5.998ns (Levels of Logic = 3)
+  Source:            switch<1> (PAD)
+  Destination:       segment<6> (PAD)
+
+  Data Path: switch<1> to segment<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   1.106   0.754  switch_1_IBUF (switch_1_IBUF)
+     LUT4:I0->O            1   0.612   0.357  c/o1 (segment_2_OBUF)
+     OBUF:I->O                 3.169          segment_2_OBUF (segment<2>)
+    ----------------------------------------
+    Total                      5.998ns (4.887ns logic, 1.111ns route)
+                                       (81.5% logic, 18.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.01 secs
+ 
+--> 
+
+
+Total memory usage is 511292 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

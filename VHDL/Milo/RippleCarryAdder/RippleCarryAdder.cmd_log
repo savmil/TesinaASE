@@ -1,0 +1,4 @@
+vhdtdtfi -lib work ../../half_adder/half_adder.vhdl -lib work ../../full_adder_half/full_adder_half.vhdl -lib work RippleCarryAdder.vhd -prj RippleCarryAdder -o RippleCarryAdder.spl -module RippleCarryAdder -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e RippleCarryAdder.spl /home/sav/ASE/RippleCarryAdder/RippleCarryAdder.sym 
+vhdtdtfi -prj RippleCarryAdder -o /home/sav/ASE/RippleCarryAdder/RippleCarryAdder.vhi -module RippleCarryAdder -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ../../half_adder/half_adder.vhdl -lib work ../../full_adder_half/full_adder_half.vhdl -lib work RippleCarryAdder.vhd 
+xst -intstyle ise -ifn "/home/sav/ASE/RippleCarryAdder/RippleCarryAdder.xst" -ofn "/home/sav/ASE/RippleCarryAdder/RippleCarryAdder.syr" 

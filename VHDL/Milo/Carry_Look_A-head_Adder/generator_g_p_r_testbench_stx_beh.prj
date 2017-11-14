@@ -1,0 +1,3 @@
+vhdl isim_temp "../../half_adder/half_adder.vhdl"
+vhdl isim_temp "Generator_G_P.vhd"
+vhdl isim_temp "generator_g_p_r_testbench.vhd"

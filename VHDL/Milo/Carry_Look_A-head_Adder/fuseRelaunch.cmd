@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/sav/ASE/Carry_Look_A-head_Adder/Carry_Look_A_head_adder_testbench_isim_beh.exe" -prj "/home/sav/ASE/Carry_Look_A-head_Adder/Carry_Look_A_head_adder_testbench_beh.prj" "work.Carry_Look_A_head_adder_testbench" 

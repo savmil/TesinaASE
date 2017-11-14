@@ -1,0 +1,5 @@
+set -tmpdir "/home/sav/ASE/display_sette_segmenti/xst/projnav.tmp"
+set -xsthdpdir "/home/sav/ASE/display_sette_segmenti/xst"
+elaborate
+-ifn display_sette_segmenti_a.prj
+-ifmt mixed

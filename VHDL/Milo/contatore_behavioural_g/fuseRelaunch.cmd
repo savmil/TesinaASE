@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/sav/ASE/contatore_behavioural_g/contatore_modulo_2n_testbench_isim_beh.exe" -prj "/home/sav/ASE/contatore_behavioural_g/contatore_modulo_2n_testbench_beh.prj" "work.contatore_modulo_2n_testbench" 

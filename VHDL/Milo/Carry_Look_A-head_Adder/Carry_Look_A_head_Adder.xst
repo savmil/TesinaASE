@@ -1,0 +1,5 @@
+set -tmpdir "/home/sav/ASE/Carry_Look_A-head_Adder/xst/projnav.tmp"
+set -xsthdpdir "/home/sav/ASE/Carry_Look_A-head_Adder/xst"
+elaborate
+-ifn Carry_Look_A_head_Adder.prj
+-ifmt mixed

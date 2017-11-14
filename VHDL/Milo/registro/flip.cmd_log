@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "/home/sav/ASE/registro/flip.xst" -ofn "/home/sav/ASE/registro/flip.syr" 
+vhdtdtfi -lib work registro.vhd -prj registro -o flip.spl -module flip -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
