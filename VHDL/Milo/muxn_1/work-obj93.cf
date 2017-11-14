@@ -1,7 +1,0 @@
-v 3
-file . "muxn_1_testbench.vhd" "20171024092156.000" "20171024112202.165":
-  entity muxn_1_testbench at 1( 0) + 0 on 41;
-  architecture behavioral of muxn_1_testbench at 9( 184) + 0 on 42;
-file . "muxn_1.vhd" "20171024075122.000" "20171024112202.157":
-  entity muxn_1 at 4( 60) + 0 on 39;
-  architecture dataflow of muxn_1 at 19( 353) + 0 on 40;
