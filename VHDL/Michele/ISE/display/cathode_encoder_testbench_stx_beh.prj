@@ -1,2 +1,0 @@
-vhdl isim_temp "cathode_encoder.vhd"
-vhdl isim_temp "cathode_encoder_testbench.vhd"

@@ -1,4 +1,0 @@
-vhdl isim_temp "muxn_1.vhd"
-vhdl isim_temp "demux1_n.vhd"
-vhdl isim_temp "anode_manager.vhd"
-vhdl isim_temp "anode_manager_testbench.vhd"

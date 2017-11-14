@@ -1,3 +1,0 @@
-vhdl isim_temp "edge_triggered_d_n.vhd"
-vhdl isim_temp "display_on_board.vhd"
-vhdl isim_temp "display_on_board_testbench.vhd"

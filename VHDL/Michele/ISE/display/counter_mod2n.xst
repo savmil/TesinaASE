@@ -1,5 +1,0 @@
-set -tmpdir "C:/Users/Public/ISE/display/xst/projnav.tmp"
-set -xsthdpdir "C:/Users/Public/ISE/display/xst"
-elaborate
--ifn counter_mod2n.prj
--ifmt mixed
