@@ -148,18 +148,28 @@ Descrivere la soluzione relizzata per mezzo di schematici e riportare il
 Schematici
 \end_layout
 
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
+\begin_layout Subsubsection
+Clock_filter
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Caption Standard
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -168,6 +178,13 @@ status open
 \end_inset
 
 
+\begin_inset CommandInset label
+LatexCommand label
+name "clock_filter_schematics"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -175,7 +192,130 @@ status open
 
 \end_layout
 
+\begin_layout Subsubsection
+Cathod_manager
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
 \begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/cathod_manager.png
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "cathod_manager"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Anode_manager
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/anode_manager.png
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "anode_manager"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Gestore_display
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/gestore_display.png
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "gestore_display"
+
+\end_inset
+
 
 \end_layout
 
@@ -219,6 +359,35 @@ In realtà questo codice illustra il funzionamento di un contatore, con la
 \end_layout
 
 \begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "60pheight%"
+height_special "none"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "clock_filter_schematics"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -227,10 +396,184 @@ status open
 
 \backslash
 lstinputlisting [language=VHDL,caption={Definizione del componente Clock
- FIlter}] {codice/clk_fil.vhd}
+ FIlter}] {esercizio03/codice/clk_fil.vhd}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Cathode_manager
+\end_layout
+
+\begin_layout Standard
+Il componente offre l' astrazione che si sta utilizzando un mux sedici uno
+ che funziona a blocchi da quattro bit che determinano la cifra esadecimale
+ del relativo display, composto in realtà da quattro mux quattro 1, a cui
+ il primo bit dei quattro mux corrispondono ai bit del primo nibble e così
+ via per gli altri ingressi.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cathod_manager"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting [language=VHDL,caption={Definizione del componente Clock
+ FIlter}] {esercizio03/codice/cathode_manager.vhd}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Anode_manager
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cathod_manager"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting [language=VHDL,caption={Definizione del componente Clock
+ FIlter}] {esercizio03/codice/anode_manager.vhd}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Gestore_display
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "gestore_display"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting [language=VHDL,caption={Definizione del componente Clock
+ FIlter}] {esercizio03/codice/display.vhd}
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
