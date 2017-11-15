@@ -212,10 +212,7 @@ ClockFilter
 \end_layout
 
 \begin_layout Standard
-In realtà questo codice illustra il funzionamento di un contatore, con la
- differenza però che il valore da contare dipende dalla frequenza di clock
- del dispositivo su cui andremo successivamente a sintetizzare, freq_out
- ed la frequenza con la quale vengono generati i segnali di hit, freq_in.
+In realtà questo componente è un contatore inl cui valore da contare è pari
 \end_layout
 
 \begin_layout Standard
@@ -227,7 +224,7 @@ status open
 
 \backslash
 lstinputlisting [language=VHDL,caption={Definizione del componente Clock
- FIlter}] {esercizio03/codice/clk_fil.vhd}
+ FIlter}] {codice/clk_fil.vhd}
 \end_layout
 
 \begin_layout Plain Layout

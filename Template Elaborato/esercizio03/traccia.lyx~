@@ -90,12 +90,12 @@ status open
 
 
 \backslash
-noindent
+noindent{}
 \end_layout
 
 \end_inset
 
- Descrivere il circuito in VHDL e simularlo nell'ambiente Xilinx ISE costruendo
+Descrivere il circuito in VHDL e simularlo nell'ambiente Xilinx ISE costruendo
  un ambiente di test per verificarne tutte le funzionalità e gli aspetti
  di tempificazione.
 \end_layout

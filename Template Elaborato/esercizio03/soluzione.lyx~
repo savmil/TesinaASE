@@ -227,7 +227,7 @@ status open
 
 \backslash
 lstinputlisting [language=VHDL,caption={Definizione del componente Clock
- FIlter}] {esercizio03/codice/clk_fil.vhd}
+ FIlter}] {codice/clk_fil.vhd}
 \end_layout
 
 \begin_layout Plain Layout
