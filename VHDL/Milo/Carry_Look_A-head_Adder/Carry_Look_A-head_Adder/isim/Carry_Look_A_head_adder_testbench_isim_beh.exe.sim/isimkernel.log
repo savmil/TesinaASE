@@ -1,0 +1,29 @@
+Command line:
+   Carry_Look_A_head_adder_testbench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  55179
+
+Sat Nov 18 15:22:39 2017
+
+
+ Elaboration Time: 0.02 sec
+
+ Current Memory Usage: 199.795 Meg
+
+ Total Signals          : 58
+ Total Nets             : 37
+ Total Signal Drivers   : 30
+ Total Blocks           : 45
+ Total Primitive Blocks : 19
+ Total Processes        : 28
+ Total Traceable Variables  : 42
+ Total Scalar Nets and Variables : 549
+Total Line Count : 30
+
+ Total Simulation Time: 0.05 sec
+
+ Current Memory Usage: 208.187 Meg
+
+Sat Nov 18 15:23:16 2017
+

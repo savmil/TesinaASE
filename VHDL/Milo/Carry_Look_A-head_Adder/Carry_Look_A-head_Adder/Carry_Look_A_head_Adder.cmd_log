@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/sav/ASE/Carry_Look_A-head_Adder/Carry_Look_A_head_Adder.xst" -ofn "/home/sav/ASE/Carry_Look_A-head_Adder/Carry_Look_A_head_Adder.syr" 

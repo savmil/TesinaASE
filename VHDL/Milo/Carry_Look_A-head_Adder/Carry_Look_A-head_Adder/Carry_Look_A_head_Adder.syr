@@ -1,0 +1,260 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Reading design: Carry_Look_A_head_Adder.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Carry_Look_A_head_Adder.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Carry_Look_A_head_Adder"
+Output Format                      : NGC
+Target Device                      : xc3s100e-5-tq144
+
+---- Source Options
+Top Module Name                    : Carry_Look_A_head_Adder
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/sav/ASE/Carry_Look_A-head_Adder/Carry_Look_A_head_unit.vhd" in Library work.
+Entity <Carry_Look_A_head_unit> compiled.
+Entity <Carry_Look_A_head_unit> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/sav/half_adder/half_adder.vhdl" in Library work.
+Entity <half_adder> compiled.
+Entity <half_adder> (Architecture <dataflow>) compiled.
+Compiling vhdl file "/home/sav/ASE/Carry_Look_A-head_Adder/Generator_G_P.vhd" in Library work.
+Entity <Generator_G_P> compiled.
+Entity <Generator_G_P> (Architecture <structural>) compiled.
+Compiling vhdl file "/home/sav/ASE/Carry_Look_A-head_Adder/Carry_Look_A_head_r.vhd" in Library work.
+Entity <Carry_Look_A_head_r> compiled.
+Entity <Carry_Look_A_head_r> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/sav/ASE/Carry_Look_A-head_Adder/Carry_Look_A_head_Adder.vhd" in Library work.
+Entity <Carry_Look_A_head_Adder> compiled.
+Entity <Carry_Look_A_head_Adder> (Architecture <structural>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Carry_Look_A_head_Adder> in library <work> (architecture <structural>) with generics.
+	N = 4
+
+Analyzing hierarchy for entity <Generator_G_P> in library <work> (architecture <structural>) with generics.
+	width = 4
+
+Analyzing hierarchy for entity <Carry_Look_A_head_r> in library <work> (architecture <Behavioral>) with generics.
+	width = 4
+
+Analyzing hierarchy for entity <half_adder> in library <work> (architecture <dataflow>).
+
+Analyzing hierarchy for entity <Carry_Look_A_head_unit> in library <work> (architecture <Behavioral>) with generics.
+	width = 1
+
+Analyzing hierarchy for entity <Carry_Look_A_head_unit> in library <work> (architecture <Behavioral>) with generics.
+	width = 2
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <Carry_Look_A_head_Adder> in library <work> (Architecture <structural>).
+	N = 4
+Entity <Carry_Look_A_head_Adder> analyzed. Unit <Carry_Look_A_head_Adder> generated.
+
+Analyzing generic Entity <Generator_G_P> in library <work> (Architecture <structural>).
+	width = 4
+Entity <Generator_G_P> analyzed. Unit <Generator_G_P> generated.
+
+Analyzing Entity <half_adder> in library <work> (Architecture <dataflow>).
+Entity <half_adder> analyzed. Unit <half_adder> generated.
+
+Analyzing generic Entity <Carry_Look_A_head_r> in library <work> (Architecture <Behavioral>).
+	width = 4
+Entity <Carry_Look_A_head_r> analyzed. Unit <Carry_Look_A_head_r> generated.
+
+Analyzing generic Entity <Carry_Look_A_head_unit.1> in library <work> (Architecture <Behavioral>).
+	width = 1
+Entity <Carry_Look_A_head_unit.1> analyzed. Unit <Carry_Look_A_head_unit.1> generated.
+
+Analyzing generic Entity <Carry_Look_A_head_unit.2> in library <work> (Architecture <Behavioral>).
+	width = 2
+Entity <Carry_Look_A_head_unit.2> analyzed. Unit <Carry_Look_A_head_unit.2> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <half_adder>.
+    Related source file is "/home/sav/half_adder/half_adder.vhdl".
+    Found 1-bit xor2 for signal <S>.
+Unit <half_adder> synthesized.
+
+
+Synthesizing Unit <Carry_Look_A_head_unit_1>.
+    Related source file is "/home/sav/ASE/Carry_Look_A-head_Adder/Carry_Look_A_head_unit.vhd".
+Unit <Carry_Look_A_head_unit_1> synthesized.
+
+
+Synthesizing Unit <Carry_Look_A_head_unit_2>.
+    Related source file is "/home/sav/ASE/Carry_Look_A-head_Adder/Carry_Look_A_head_unit.vhd".
+Unit <Carry_Look_A_head_unit_2> synthesized.
+
+
+Synthesizing Unit <Generator_G_P>.
+    Related source file is "/home/sav/ASE/Carry_Look_A-head_Adder/Generator_G_P.vhd".
+Unit <Generator_G_P> synthesized.
+
+
+Synthesizing Unit <Carry_Look_A_head_r>.
+    Related source file is "/home/sav/ASE/Carry_Look_A-head_Adder/Carry_Look_A_head_r.vhd".
+WARNING:Xst:647 - Input <c_generate<3:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <c_propagate<3:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <carry> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <Carry_Look_A_head_r> synthesized.
+
+
+Synthesizing Unit <Carry_Look_A_head_Adder>.
+    Related source file is "/home/sav/ASE/Carry_Look_A-head_Adder/Carry_Look_A_head_Adder.vhd".
+WARNING:Xst:653 - Signal <cin1> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <carry1> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
+Unit <Carry_Look_A_head_Adder> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Xors                                                 : 4
+ 1-bit xor2                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Xors                                                 : 4
+ 1-bit xor2                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+ERROR:Xst:528 - Multi-source in Unit <Carry_Look_A_head_r> on signal <cout>; this signal is connected to multiple drivers.
+Drivers are: 
+   Signal <carry_look_a_head_register/inst_C_L_A_U_1/carry_1_or0000> is assigned to logic
+   Signal <carry_look_a_head_register/inst_C_L_A_U_2/carry_2_or0000> is assigned to logic
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 2.88 secs
+ 
+--> 
+
+
+Total memory usage is 509016 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
