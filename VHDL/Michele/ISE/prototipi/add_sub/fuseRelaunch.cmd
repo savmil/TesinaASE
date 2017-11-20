@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Public/ISE/add_sub/add_sub_on_board_testbench_isim_beh.exe" -prj "C:/Users/Public/ISE/add_sub/add_sub_on_board_testbench_beh.prj" "work.add_sub_on_board_testbench" 
