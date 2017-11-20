@@ -1,0 +1,5 @@
+set -tmpdir "C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain/xst/projnav.tmp"
+set -xsthdpdir "C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain/xst"
+elaborate
+-ifn counter_mod_2n.prj
+-ifmt mixed

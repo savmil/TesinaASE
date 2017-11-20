@@ -1,0 +1,5 @@
+work	"boundary_scan_chain.vhd"
+work	"counter_mod_2n.vhd"
+work	"edge_triggered_d_n.vhd"
+work	"mux2_1.vhd"
+work	"test_counter_mod_2n.vhd"

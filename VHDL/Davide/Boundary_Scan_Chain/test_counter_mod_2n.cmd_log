@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain/test_counter_mod_2n.xst" -ofn "C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain/test_counter_mod_2n.syr" 
+xst -intstyle ise -ifn "C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain/test_counter_mod_2n.xst" -ofn "C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain/test_counter_mod_2n.syr" 
+xst -intstyle ise -ifn "C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain/test_counter_mod_2n.xst" -ofn "C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain/test_counter_mod_2n.syr" 
+xst -intstyle ise -ifn "C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain/test_counter_mod_2n.xst" -ofn "C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain/test_counter_mod_2n.syr" 
+xst -intstyle ise -ifn "C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain/test_counter_mod_2n.xst" -ofn "C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain/test_counter_mod_2n.syr" 
+netgen -intstyle ise -ar Structure -tm test_counter_mod_2n -w -dir netgen/synthesis -ofmt vhdl -sim test_counter_mod_2n.ngc test_counter_mod_2n_synthesis.vhd 
+xst -intstyle ise -ifn "C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain/test_counter_mod_2n.xst" -ofn "C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain/test_counter_mod_2n.syr" 
+netgen -intstyle ise -ar Structure -tm test_counter_mod_2n -w -dir netgen/synthesis -ofmt vhdl -sim test_counter_mod_2n.ngc test_counter_mod_2n_synthesis.vhd 
