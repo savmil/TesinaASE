@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Public/ISE/cathode_manager/cathode_encoder_testbench_isim_beh.exe" -prj "C:/Users/Public/ISE/cathode_manager/cathode_encoder_testbench_beh.prj" "work.cathode_encoder_testbench" 

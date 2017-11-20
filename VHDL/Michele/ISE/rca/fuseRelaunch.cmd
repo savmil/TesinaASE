@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Public/ISE/rca/ripple_carry_adder_testbench_isim_beh.exe" -prj "C:/Users/Public/ISE/rca/ripple_carry_adder_testbench_beh.prj" "work.ripple_carry_adder_testbench" 

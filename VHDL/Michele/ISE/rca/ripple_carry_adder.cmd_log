@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "C:/Users/Public/ISE/rca/ripple_carry_adder.xst" -ofn "C:/Users/Public/ISE/rca/ripple_carry_adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BasysRevEGeneral.ucf -p xc3s100e-tq144-5 ripple_carry_adder.ngc ripple_carry_adder.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BasysRevEGeneral.ucf -p xc3s100e-tq144-5 ripple_carry_adder.ngc ripple_carry_adder.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o ripple_carry_adder_map.ncd ripple_carry_adder.ngd ripple_carry_adder.pcf 
+par -w -intstyle ise -ol high -t 1 ripple_carry_adder_map.ncd ripple_carry_adder.ncd ripple_carry_adder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ripple_carry_adder.twx ripple_carry_adder.ncd -o ripple_carry_adder.twr ripple_carry_adder.pcf -ucf BasysRevEGeneral.ucf 
+bitgen -intstyle ise -f ripple_carry_adder.ut ripple_carry_adder.ncd 

@@ -1,0 +1,8 @@
+Release 14.4 Drc P.49d (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Fri Nov 10 20:23:04 2017
+
+drc -z ripple_carry_adder.ncd ripple_carry_adder.pcf
+
+DRC detected 0 errors and 0 warnings.

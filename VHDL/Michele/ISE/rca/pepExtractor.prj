@@ -1,0 +1,3 @@
+work	"full_adder.vhd"
+work	"half_adder.vhd"
+work	"ripple_carry_adder.vhd"

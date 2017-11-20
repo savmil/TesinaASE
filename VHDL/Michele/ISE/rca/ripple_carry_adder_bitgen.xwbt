@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Public\ISE\rca\ripple_carry_adder.ncd
+OUTFILE=C:\Users\Public\ISE\rca\ripple_carry_adder.bit
+FAMILY=Spartan3E
+PART=xc3s100e-5tq144
+WORKINGDIR=C:\Users\Public\ISE\rca
+LICENSE=WebPack
+USER_INFO=211410971_0_0_510

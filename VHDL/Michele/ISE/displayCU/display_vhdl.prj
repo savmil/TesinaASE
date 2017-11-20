@@ -1,0 +1,8 @@
+vhdl work "C:\Users\Public\ISE\display\muxn_1.vhd"
+vhdl work "C:\Users\Public\ISE\display\demux1_n.vhd"
+vhdl work "C:\Users\Public\ISE\display\cathode_encoder.vhd"
+vhdl work "C:\Users\Public\ISE\display\counter_mod2n.vhd"
+vhdl work "C:\Users\Public\ISE\display\clock_filter.vhd"
+vhdl work "C:\Users\Public\ISE\display\cathode_manager.vhd"
+vhdl work "C:\Users\Public\ISE\display\anode_manager.vhd"
+vhdl work "C:\Users\Public\ISE\display\display.vhd"
