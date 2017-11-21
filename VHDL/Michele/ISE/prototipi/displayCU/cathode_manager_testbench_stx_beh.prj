@@ -1,0 +1,4 @@
+vhdl isim_temp "muxn_1.vhd"
+vhdl isim_temp "cathode_encoder.vhd"
+vhdl isim_temp "cathode_manager.vhd"
+vhdl isim_temp "cathode_manager_testbench.vhd"

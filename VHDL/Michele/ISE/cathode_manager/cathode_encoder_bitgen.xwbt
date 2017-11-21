@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Public\ISE\cathode_manager\cathode_encoder.ncd
+OUTFILE=C:\Users\Public\ISE\cathode_manager\cathode_encoder.bit
+FAMILY=Spartan3E
+PART=xc3s100e-5tq144
+WORKINGDIR=C:\Users\Public\ISE\cathode_manager
+LICENSE=WebPack
+USER_INFO=211410971_0_0_510

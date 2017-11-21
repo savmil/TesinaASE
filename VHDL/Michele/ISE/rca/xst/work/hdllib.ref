@@ -1,0 +1,6 @@
+AR half_adder dataflow C:/Users/Public/ISE/rca/half_adder.vhd sub00/vhpl01 1510341705
+AR ripple_carry_adder structural C:/Users/Public/ISE/rca/ripple_carry_adder.vhd sub00/vhpl05 1510341709
+EN half_adder NULL C:/Users/Public/ISE/rca/half_adder.vhd sub00/vhpl00 1510341704
+EN full_adder NULL C:/Users/Public/ISE/rca/full_adder.vhd sub00/vhpl02 1510341706
+EN ripple_carry_adder NULL C:/Users/Public/ISE/rca/ripple_carry_adder.vhd sub00/vhpl04 1510341708
+AR full_adder structural C:/Users/Public/ISE/rca/full_adder.vhd sub00/vhpl03 1510341707

@@ -1,0 +1,25 @@
+xst -intstyle ise -ifn "C:/Users/Public/ISE/cathode_manager/cathode_encoder.xst" -ofn "C:/Users/Public/ISE/cathode_manager/cathode_encoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BasysRevEGeneral.ucf -p xc3s100e-tq144-5 cathode_encoder.ngc cathode_encoder.ngd  
+xst -intstyle ise -ifn "C:/Users/Public/ISE/cathode_manager/cathode_encoder.xst" -ofn "C:/Users/Public/ISE/cathode_manager/cathode_encoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BasysRevEGeneral.ucf -p xc3s100e-tq144-5 cathode_encoder.ngc cathode_encoder.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o cathode_encoder_map.ncd cathode_encoder.ngd cathode_encoder.pcf 
+par -w -intstyle ise -ol high -t 1 cathode_encoder_map.ncd cathode_encoder.ncd cathode_encoder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml cathode_encoder.twx cathode_encoder.ncd -o cathode_encoder.twr cathode_encoder.pcf -ucf BasysRevEGeneral.ucf 
+bitgen -intstyle ise -f cathode_encoder.ut cathode_encoder.ncd 
+xst -intstyle ise -ifn "C:/Users/Public/ISE/cathode_manager/cathode_encoder.xst" -ofn "C:/Users/Public/ISE/cathode_manager/cathode_encoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BasysRevEGeneral.ucf -p xc3s100e-tq144-5 cathode_encoder.ngc cathode_encoder.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o cathode_encoder_map.ncd cathode_encoder.ngd cathode_encoder.pcf 
+par -w -intstyle ise -ol high -t 1 cathode_encoder_map.ncd cathode_encoder.ncd cathode_encoder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml cathode_encoder.twx cathode_encoder.ncd -o cathode_encoder.twr cathode_encoder.pcf -ucf BasysRevEGeneral.ucf 
+xst -intstyle ise -ifn "C:/Users/Public/ISE/cathode_manager/cathode_encoder.xst" -ofn "C:/Users/Public/ISE/cathode_manager/cathode_encoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BasysRevEGeneral.ucf -p xc3s100e-tq144-5 cathode_encoder.ngc cathode_encoder.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o cathode_encoder_map.ncd cathode_encoder.ngd cathode_encoder.pcf 
+par -w -intstyle ise -ol high -t 1 cathode_encoder_map.ncd cathode_encoder.ncd cathode_encoder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml cathode_encoder.twx cathode_encoder.ncd -o cathode_encoder.twr cathode_encoder.pcf -ucf BasysRevEGeneral.ucf 
+bitgen -intstyle ise -f cathode_encoder.ut cathode_encoder.ncd 
+xst -intstyle ise -ifn "C:/Users/Public/ISE/cathode_manager/cathode_encoder.xst" -ofn "C:/Users/Public/ISE/cathode_manager/cathode_encoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BasysRevEGeneral.ucf -p xc3s100e-tq144-5 cathode_encoder.ngc cathode_encoder.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o cathode_encoder_map.ncd cathode_encoder.ngd cathode_encoder.pcf 
+par -w -intstyle ise -ol high -t 1 cathode_encoder_map.ncd cathode_encoder.ncd cathode_encoder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml cathode_encoder.twx cathode_encoder.ncd -o cathode_encoder.twr cathode_encoder.pcf -ucf BasysRevEGeneral.ucf 
+bitgen -intstyle ise -f cathode_encoder.ut cathode_encoder.ncd 

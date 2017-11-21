@@ -1,0 +1,2 @@
+vhdl work "cathode_encoder.vhd"
+vhdl work "cathode_encoder_testbench.vhd"

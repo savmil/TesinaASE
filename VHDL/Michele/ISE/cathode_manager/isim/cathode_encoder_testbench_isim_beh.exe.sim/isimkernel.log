@@ -1,0 +1,29 @@
+Command line:
+   cathode_encoder_testbench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50484
+
+Fri Nov 10 19:25:38 2017
+
+
+ Elaboration Time: 0.093601 sec
+
+ Current Memory Usage: 491.373 Meg
+
+ Total Signals          : 7
+ Total Nets             : 13
+ Total Signal Drivers   : 3
+ Total Blocks           : 4
+ Total Primitive Blocks : 3
+ Total Processes        : 3
+ Total Traceable Variables  : 26
+ Total Scalar Nets and Variables : 503
+Total Line Count : 24
+
+ Total Simulation Time: 0.093601 sec
+
+ Current Memory Usage: 491.373 Meg
+
+Fri Nov 10 19:25:53 2017
+

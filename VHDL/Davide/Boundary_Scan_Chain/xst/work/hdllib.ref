@@ -1,0 +1,12 @@
+EN boundary_scan_chain NULL C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain/boundary_scan_chain.vhd sub00/vhpl04 1511194205
+AR test_counter_mod_2n structural C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain/test_counter_mod_2n.vhd sub00/vhpl11 1511194208
+AR boundary_scan_chain structural C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain/boundary_scan_chain.vhd sub00/vhpl05 1511194206
+EN test_counter_mod_2n NULL C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain/test_counter_mod_2n.vhd sub00/vhpl10 1511194207
+AR counter_mod_2n behavioral C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain/counter_mod_2n.vhd sub00/vhpl09 1511194204
+AR edge_triggered_d behavioral C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain/edge_triggered_d.vhd sub00/vhpl07 1511172759
+AR edge_triggered_d_n behavioral C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain/edge_triggered_d_n.vhd sub00/vhpl03 1511194202
+AR mux2_1 dataflow C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain/mux2_1.vhd sub00/vhpl01 1511194200
+EN mux2_1 NULL C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain/mux2_1.vhd sub00/vhpl00 1511194199
+EN edge_triggered_d NULL C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain/edge_triggered_d.vhd sub00/vhpl06 1511172758
+EN counter_mod_2n NULL C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain/counter_mod_2n.vhd sub00/vhpl08 1511194203
+EN edge_triggered_d_n NULL C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain/edge_triggered_d_n.vhd sub00/vhpl02 1511194201

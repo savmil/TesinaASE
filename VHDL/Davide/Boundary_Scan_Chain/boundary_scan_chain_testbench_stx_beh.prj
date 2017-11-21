@@ -1,0 +1,4 @@
+vhdl isim_temp "mux2_1.vhd"
+vhdl isim_temp "edge_triggered_d_n.vhd"
+vhdl isim_temp "boundary_scan_chain.vhd"
+vhdl isim_temp "boundary_scan_chain_testbench.vhd"

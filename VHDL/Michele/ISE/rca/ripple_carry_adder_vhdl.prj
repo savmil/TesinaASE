@@ -1,0 +1,3 @@
+vhdl work "C:\Users\Public\ISE\rca\half_adder.vhd"
+vhdl work "C:\Users\Public\ISE\rca\full_adder.vhd"
+vhdl work "C:\Users\Public\ISE\rca\ripple_carry_adder.vhd"

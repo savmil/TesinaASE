@@ -1,0 +1,54 @@
+Release 14.4 - xst P.49d (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/Public/ISE/display/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.23 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/Public/ISE/display/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.23 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Public/ISE/display/muxn_1.vhd" in Library work.
+Architecture dataflow of Entity muxn_1 is up to date.
+Compiling vhdl file "C:/Users/Public/ISE/display/demux1_n.vhd" in Library work.
+Architecture dataflow of Entity demux1_n is up to date.
+Compiling vhdl file "C:/Users/Public/ISE/display/cathode_encoder.vhd" in Library work.
+Architecture behavioral of Entity cathode_encoder is up to date.
+Compiling vhdl file "C:/Users/Public/ISE/display/clock_filter.vhd" in Library work.
+Architecture behavioral of Entity clock_filter is up to date.
+Compiling vhdl file "C:/Users/Public/ISE/display/counter_mod2n.vhd" in Library work.
+Architecture behavioral of Entity counter_mod2n is up to date.
+Compiling vhdl file "C:/Users/Public/ISE/display/cathode_manager.vhd" in Library work.
+Architecture structural of Entity cathode_manager is up to date.
+Compiling vhdl file "C:/Users/Public/ISE/display/anode_manager.vhd" in Library work.
+Architecture structural of Entity anode_manager is up to date.
+Compiling vhdl file "C:/Users/Public/ISE/display/edge_triggered_d_n.vhd" in Library work.
+Entity <edge_triggered_d_n> compiled.
+Entity <edge_triggered_d_n> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/Public/ISE/display/display.vhd" in Library work.
+Architecture structural of Entity display is up to date.
+Compiling vhdl file "C:/Users/Public/ISE/display/display_on_board.vhd" in Library work.
+Entity <display_on_board> compiled.
+Entity <display_on_board> (Architecture <behavioral>) compiled.
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 1.03 secs
+ 
+--> 
+
+Total memory usage is 168236 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

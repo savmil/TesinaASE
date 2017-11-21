@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=C:\Users\Public\ISE\cathode_manager\impact.xsl
+OUTFILE=C:\Users\Public\ISE\cathode_manager\impact.xsl
+FAMILY=None
+PART=None
+WORKINGDIR=C:\Users\Public\ISE\cathode_manager
+LICENSE=iMPACT
+USER_INFO=iMPACT

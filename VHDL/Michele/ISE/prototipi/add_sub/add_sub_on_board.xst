@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/Public/ISE/add_sub/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Public/ISE/add_sub/xst"
+elaborate
+-ifn add_sub_on_board.prj
+-ifmt mixed

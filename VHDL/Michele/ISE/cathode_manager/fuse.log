@@ -1,0 +1,22 @@
+Running: C:\Xilinx\14.4\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Public/ISE/cathode_manager/cathode_encoder_testbench_isim_beh.exe -prj C:/Users/Public/ISE/cathode_manager/cathode_encoder_testbench_beh.prj work.cathode_encoder_testbench 
+ISim P.49d (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Public/ISE/cathode_manager/cathode_encoder.vhd" into library work
+Parsing VHDL file "C:/Users/Public/ISE/cathode_manager/cathode_encoder_testbench.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 105904 KB
+Fuse CPU Usage: 483 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling architecture behavioral of entity cathode_encoder [cathode_encoder_default]
+Compiling architecture behavior of entity cathode_encoder_testbench
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 6 VHDL Units
+Built simulation executable C:/Users/Public/ISE/cathode_manager/cathode_encoder_testbench_isim_beh.exe
+Fuse Memory Usage: 118752 KB
+Fuse CPU Usage: 686 ms
