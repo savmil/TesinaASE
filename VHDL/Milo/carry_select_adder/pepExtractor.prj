@@ -1,0 +1,5 @@
+work	"../../full_adder_half/full_adder_half.vhdl"
+work	"../../mux4_1/mux2_1.vhd"
+work	"../RippleCarryAdder/RippleCarryAdder.vhd"
+work	"carry_select_cell.vhd"
+work	"half_adder.vhdl"

@@ -1,0 +1,5 @@
+set -tmpdir "/home/sav/ASE/carry_select_adder/xst/projnav.tmp"
+set -xsthdpdir "/home/sav/ASE/carry_select_adder/xst"
+elaborate
+-ifn carry_select.prj
+-ifmt mixed
