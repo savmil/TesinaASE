@@ -1,0 +1,1 @@
+vhdtdtfi -prj carry_select_adder -o /home/sav/ASE/carry_select_adder/RippleCarryAdder.vhi -module RippleCarryAdder -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work half_adder.vhdl -lib work ../../full_adder_half/full_adder_half.vhdl -lib work ../RippleCarryAdder/RippleCarryAdder.vhd 

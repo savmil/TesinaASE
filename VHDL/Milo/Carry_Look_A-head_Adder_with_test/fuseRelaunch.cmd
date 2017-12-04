@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/sav/ASE/Carry_Look_A-head_Adder/gest_disp_isim_beh.exe" -prj "/home/sav/ASE/Carry_Look_A-head_Adder/gest_disp_beh.prj" "work.gest_disp" 

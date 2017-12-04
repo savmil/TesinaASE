@@ -1,0 +1,1 @@
+vhdtdtfi -prj moltiplicatore_booth -o /home/sav/ASE/moltiplicatore_booth/test_counter_mod_2n.vhi -module test_counter_mod_2n -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work mux2_1.vhd -lib work edge_triggered_d_n.vhd -lib work counter_mod_2n.vhd -lib work boundary_scan_chain.vhd -lib work test_counter_mod_2n.vhd 

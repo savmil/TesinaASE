@@ -1,0 +1,56 @@
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date:    20:10:01 11/17/2017 
+-- Design Name: 
+-- Module Name:    Carry_Look_A_head - Behavioral 
+-- Project Name: 
+-- Target Devices: 
+-- Tool versions: 
+-- Description: 
+--
+-- Dependencies: 
+--
+-- Revision: 
+-- Revision 0.01 - File Created
+-- Additional Comments: 
+--
+----------------------------------------------------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx primitives in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+entity Carry_Look_A_head is
+	 generic(width: NATURAL :=4)
+    Port ( c_generate : in  STD_LOGIC_VECTOR (width-1 downto 0);
+           c_propagate : in  STD_LOGIC_VECTOR (width-1 downto 0);
+           cin : in  STD_LOGIC;
+           cout : out  STD_LOGIC);
+end Carry_Look_A_head;
+
+architecture Behavioral of Carry_Look_A_head is
+COMPONENT Carry_Look_A_head_unit
+	generic(width: NATURAL:=4)
+	PORT(
+		c_generate : IN std_logic_vector(width-1 to 0);
+		c_propagate : IN std_logic_vector(width-1 to 0);
+		cin : IN std_logic;          
+		cout : OUT std_logic
+		);
+	END COMPONENT
+begin
+	C_L_A:for i in 0 to width-1 generate
+		inst_C_L_A_U: Carry_Look_A_head_unit generic map (i)
+														 port map(c_generate,c_propagate,cin,cout);
+	end generate;
+end Behavioral;
+

@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="contatore_behavioural_g.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="contatore_modulo_2n.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="contatore_modulo_2n.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="contatore_modulo_2n.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="contatore_modulo_2n.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="contatore_modulo_2n.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="contatore_modulo_2n.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="contatore_modulo_2n.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="contatore_modulo_2n.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="contatore_modulo_2n.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="contatore_modulo_2n.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="contatore_modulo_2n.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="contatore_modulo_2n.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="contatore_modulo_2n.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="contatore_modulo_2n.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="contatore_modulo_2n.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="contatore_modulo_2n.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="contatore_modulo_2n.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="contatore_modulo_2n.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="contatore_modulo_2n.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="contatore_modulo_2n.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="contatore_modulo_2n.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="contatore_modulo_2n.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="contatore_modulo_2n.xst"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="contatore_modulo_2n_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="contatore_modulo_2n_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="contatore_modulo_2n_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="contatore_modulo_2n_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="contatore_modulo_2n_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="contatore_modulo_2n_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="contatore_modulo_2n_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="contatore_modulo_2n_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="contatore_modulo_2n_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="contatore_modulo_2n_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="contatore_modulo_2n_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="contatore_modulo_2n_summary.xml"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="contatore_modulo_2n_testbench_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="contatore_modulo_2n_testbench_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="contatore_modulo_2n_testbench_isim_beh.wdb"/>
+    <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="contatore_modulo_2n_testbench_isim_par.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="contatore_modulo_2n_testbench_isim_par.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="contatore_modulo_2n_testbench_par.prj"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="contatore_modulo_2n_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="contatore_modulo_2n_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd">
+      <branch xil_pn:name="BehavioralSim"/>
+      <branch xil_pn:name="PostRouteSimulation"/>
+    </file>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="netgen"/>
+    <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/par/contatore_modulo_2n_timesim.nlf"/>
+    <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_SDF" xil_pn:name="netgen/par/contatore_modulo_2n_timesim.sdf"/>
+    <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/par/contatore_modulo_2n_timesim.vhd"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini">
+      <branch xil_pn:name="BehavioralSim"/>
+      <branch xil_pn:name="PostRouteSimulation"/>
+    </file>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1510257684" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1510257684">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1510347224" xil_pn:in_ck="5444653353059955053" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1510347224">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="contatore_modulo_2n_testbench.vhd"/>
+      <outfile xil_pn:name="contatore_modulo_4.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1510258088" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-8712388532548989710" xil_pn:start_ts="1510258088">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1510258088" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="4995971461815853940" xil_pn:start_ts="1510258088">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1510257684" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-4655656779952771743" xil_pn:start_ts="1510257684">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1510347224" xil_pn:in_ck="5444653353059955053" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1510347224">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="contatore_modulo_2n_testbench.vhd"/>
+      <outfile xil_pn:name="contatore_modulo_4.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1510347225" xil_pn:in_ck="5444653353059955053" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="7015316356733734726" xil_pn:start_ts="1510347224">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="contatore_modulo_2n_testbench_beh.prj"/>
+      <outfile xil_pn:name="contatore_modulo_2n_testbench_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1510347225" xil_pn:in_ck="-2780996376584713973" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3382899546671475571" xil_pn:start_ts="1510347225">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="contatore_modulo_2n_testbench_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
+    <transform xil_pn:end_ts="1510345109" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1510345109">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1510345109" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="7116555643143689794" xil_pn:start_ts="1510345109">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1510345109" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-4655656779952771743" xil_pn:start_ts="1510345109">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1510345109" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1510345109">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1510345109" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-4485664344332914496" xil_pn:start_ts="1510345109">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1510345109" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="2988080280842703814" xil_pn:start_ts="1510345109">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1510345109" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-372059416890021461" xil_pn:start_ts="1510345109">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1510345116" xil_pn:in_ck="2326805290086483393" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-7745603715490500994" xil_pn:start_ts="1510345109">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="contatore_modulo_2n.lso"/>
+      <outfile xil_pn:name="contatore_modulo_2n.ngc"/>
+      <outfile xil_pn:name="contatore_modulo_2n.ngr"/>
+      <outfile xil_pn:name="contatore_modulo_2n.prj"/>
+      <outfile xil_pn:name="contatore_modulo_2n.stx"/>
+      <outfile xil_pn:name="contatore_modulo_2n.syr"/>
+      <outfile xil_pn:name="contatore_modulo_2n.xst"/>
+      <outfile xil_pn:name="contatore_modulo_2n_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1510345116" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-2641681649576539915" xil_pn:start_ts="1510345116">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1510345120" xil_pn:in_ck="2997598278010792931" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-2349437356931125554" xil_pn:start_ts="1510345116">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="contatore_modulo_2n.bld"/>
+      <outfile xil_pn:name="contatore_modulo_2n.ngd"/>
+      <outfile xil_pn:name="contatore_modulo_2n_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1510345125" xil_pn:in_ck="2997598278010792932" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-6349267131326700252" xil_pn:start_ts="1510345120">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="contatore_modulo_2n.pcf"/>
+      <outfile xil_pn:name="contatore_modulo_2n_map.map"/>
+      <outfile xil_pn:name="contatore_modulo_2n_map.mrp"/>
+      <outfile xil_pn:name="contatore_modulo_2n_map.ncd"/>
+      <outfile xil_pn:name="contatore_modulo_2n_map.ngm"/>
+      <outfile xil_pn:name="contatore_modulo_2n_map.xrpt"/>
+      <outfile xil_pn:name="contatore_modulo_2n_summary.xml"/>
+      <outfile xil_pn:name="contatore_modulo_2n_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1510345134" xil_pn:in_ck="5803526209247120637" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="1934304854298957634" xil_pn:start_ts="1510345125">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="contatore_modulo_2n.ncd"/>
+      <outfile xil_pn:name="contatore_modulo_2n.pad"/>
+      <outfile xil_pn:name="contatore_modulo_2n.par"/>
+      <outfile xil_pn:name="contatore_modulo_2n.ptwx"/>
+      <outfile xil_pn:name="contatore_modulo_2n.unroutes"/>
+      <outfile xil_pn:name="contatore_modulo_2n.xpi"/>
+      <outfile xil_pn:name="contatore_modulo_2n_pad.csv"/>
+      <outfile xil_pn:name="contatore_modulo_2n_pad.txt"/>
+      <outfile xil_pn:name="contatore_modulo_2n_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1510345141" xil_pn:in_ck="2997598278010792800" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1510345134">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="contatore_modulo_2n.bgn"/>
+      <outfile xil_pn:name="contatore_modulo_2n.bit"/>
+      <outfile xil_pn:name="contatore_modulo_2n.drc"/>
+      <outfile xil_pn:name="contatore_modulo_2n.ut"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1510345141" xil_pn:in_ck="2997598278010779946" xil_pn:name="TRAN_impactProgrammingTool" xil_pn:prop_ck="1890673188639090495" xil_pn:start_ts="1510345141">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+    <transform xil_pn:end_ts="1510345233" xil_pn:in_ck="2997598278010792800" xil_pn:name="TRAN_postParSimModel" xil_pn:prop_ck="-9203898490810034947" xil_pn:start_ts="1510345229">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="netgen"/>
+      <outfile xil_pn:name="netgen/par/contatore_modulo_2n_timesim.nlf"/>
+      <outfile xil_pn:name="netgen/par/contatore_modulo_2n_timesim.sdf"/>
+      <outfile xil_pn:name="netgen/par/contatore_modulo_2n_timesim.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1510345233" xil_pn:in_ck="-5634771000486516813" xil_pn:name="TRAN_copyPost-ParAbstractToPreSimulation" xil_pn:start_ts="1510345233">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="contatore_modulo_2n_testbench.vhd"/>
+      <outfile xil_pn:name="netgen/par/contatore_modulo_2n_timesim.sdf"/>
+      <outfile xil_pn:name="netgen/par/contatore_modulo_2n_timesim.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1510345238" xil_pn:in_ck="5461155374635546418" xil_pn:name="TRAN_ISimulatePostPlace&amp;RouteModelRunFuse" xil_pn:prop_ck="-5111119500905337658" xil_pn:start_ts="1510345233">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="contatore_modulo_2n_testbench_isim_par.exe"/>
+      <outfile xil_pn:name="contatore_modulo_2n_testbench_par.prj"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1510345239" xil_pn:in_ck="-2780996358648844769" xil_pn:name="TRAN_ISimulatePostPlace&amp;RouteModel" xil_pn:prop_ck="-3279382880910142783" xil_pn:start_ts="1510345238">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="contatore_modulo_2n_testbench_isim_par.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+    </transform>
+    <transform xil_pn:end_ts="1510345134" xil_pn:in_ck="2997598278010792800" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1510345131">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="contatore_modulo_2n.twr"/>
+      <outfile xil_pn:name="contatore_modulo_2n.twx"/>
+    </transform>
+  </transforms>
+
+</generated_project>

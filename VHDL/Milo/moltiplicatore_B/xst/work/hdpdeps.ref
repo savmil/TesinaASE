@@ -1,0 +1,66 @@
+V3 39
+FL /media/sf_ASE/moltiplicatore_B/add_sub.vhd 2017/12/01.17:30:46 P.20131013
+EN work/add_sub 1512209927 FL /media/sf_ASE/moltiplicatore_B/add_sub.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/add_sub/structural 1512209928 \
+      FL /media/sf_ASE/moltiplicatore_B/add_sub.vhd EN work/add_sub 1512209927 \
+      CP ripple_carry_adder
+FL /media/sf_ASE/moltiplicatore_B/Booth_multiplier.vhd 2017/12/02.09:21:05 P.20131013
+EN work/Booth_multiplier 1512209929 \
+      FL /media/sf_ASE/moltiplicatore_B/Booth_multiplier.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/Booth_multiplier/Structural 1512209930 \
+      FL /media/sf_ASE/moltiplicatore_B/Booth_multiplier.vhd \
+      EN work/Booth_multiplier 1512209929 CP Serial_Booth_PC_Moore \
+      CP contatore_modulo_2n CP boundary_scan_chain CP latch_d CP add_sub
+FL /media/sf_ASE/moltiplicatore_B/boundary_scan_chain.vhd 2017/12/02.11:18:15 P.20131013
+EN work/boundary_scan_chain 1512209923 \
+      FL /media/sf_ASE/moltiplicatore_B/boundary_scan_chain.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177
+AR work/boundary_scan_chain/Structural 1512209924 \
+      FL /media/sf_ASE/moltiplicatore_B/boundary_scan_chain.vhd \
+      EN work/boundary_scan_chain 1512209923 CP edge_triggered_d_n
+FL /media/sf_ASE/moltiplicatore_B/contatore_modulo_4.vhd 2017/12/01.17:30:46 P.20131013
+EN work/contatore_modulo_2n 1512209921 \
+      FL /media/sf_ASE/moltiplicatore_B/contatore_modulo_4.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/contatore_modulo_2n/Behavioral 1512209922 \
+      FL /media/sf_ASE/moltiplicatore_B/contatore_modulo_4.vhd \
+      EN work/contatore_modulo_2n 1512209921
+FL /media/sf_ASE/moltiplicatore_B/edge_triggered_d_n.vhd 2017/12/02.10:30:57 P.20131013
+EN work/edge_triggered_d_n 1512209917 \
+      FL /media/sf_ASE/moltiplicatore_B/edge_triggered_d_n.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/edge_triggered_d_n/Behavioral 1512209918 \
+      FL /media/sf_ASE/moltiplicatore_B/edge_triggered_d_n.vhd \
+      EN work/edge_triggered_d_n 1512209917
+FL /media/sf_ASE/moltiplicatore_B/full_adder.vhd 2017/12/01.17:30:46 P.20131013
+EN work/full_adder 1512209913 FL /media/sf_ASE/moltiplicatore_B/full_adder.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/full_adder/structural 1512209914 \
+      FL /media/sf_ASE/moltiplicatore_B/full_adder.vhd EN work/full_adder 1512209913 \
+      CP half_adder
+FL /media/sf_ASE/moltiplicatore_B/half_adder.vhd 2017/12/01.17:30:46 P.20131013
+EN work/half_adder 1512209911 FL /media/sf_ASE/moltiplicatore_B/half_adder.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/half_adder/dataflow 1512209912 \
+      FL /media/sf_ASE/moltiplicatore_B/half_adder.vhd EN work/half_adder 1512209911
+FL /media/sf_ASE/moltiplicatore_B/latch_d.vhd 2017/11/28.00:03:51 P.20131013
+EN work/latch_d 1512209925 FL /media/sf_ASE/moltiplicatore_B/latch_d.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/latch_d/Behavioral 1512209926 \
+      FL /media/sf_ASE/moltiplicatore_B/latch_d.vhd EN work/latch_d 1512209925
+FL /media/sf_ASE/moltiplicatore_B/ripple_carry_adder.vhd 2017/12/01.17:30:46 P.20131013
+EN work/ripple_carry_adder 1512209915 \
+      FL /media/sf_ASE/moltiplicatore_B/ripple_carry_adder.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177
+AR work/ripple_carry_adder/structural 1512209916 \
+      FL /media/sf_ASE/moltiplicatore_B/ripple_carry_adder.vhd \
+      EN work/ripple_carry_adder 1512209915 CP full_adder
+FL /media/sf_ASE/moltiplicatore_B/Serial_Booth_PC_Moore.vhd 2017/12/02.11:17:17 P.20131013
+EN work/Serial_Booth_PC_Moore 1512209919 \
+      FL /media/sf_ASE/moltiplicatore_B/Serial_Booth_PC_Moore.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/Serial_Booth_PC_Moore/Behavioral 1512209920 \
+      FL /media/sf_ASE/moltiplicatore_B/Serial_Booth_PC_Moore.vhd \
+      EN work/Serial_Booth_PC_Moore 1512209919

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/sav/ASE/prova/comparatore.ncd
+OUTFILE=/home/sav/ASE/prova/comparatore.bit
+FAMILY=Spartan3
+PART=xc3s50-5pq208
+WORKINGDIR=/home/sav/ASE/prova
+LICENSE=WebPack
+USER_INFO=211407724_0_0_917

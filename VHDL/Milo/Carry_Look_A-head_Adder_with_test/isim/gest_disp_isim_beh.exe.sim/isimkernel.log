@@ -1,0 +1,29 @@
+Command line:
+   gest_disp_isim_beh.exe
+     -simmode  gui
+     -simrunnum  1
+     -socket  60077
+
+Mon Nov 27 23:39:00 2017
+
+
+ Elaboration Time: 0.02 sec
+
+ Current Memory Usage: 199.934 Meg
+
+ Total Signals          : 98
+ Total Nets             : 142
+ Total Signal Drivers   : 33
+ Total Blocks           : 32
+ Total Primitive Blocks : 21
+ Total Processes        : 29
+ Total Traceable Variables  : 87
+ Total Scalar Nets and Variables : 905
+Total Line Count : 66
+
+ Total Simulation Time: 0.07 sec
+
+ Current Memory Usage: 208.327 Meg
+
+Mon Nov 27 23:39:11 2017
+

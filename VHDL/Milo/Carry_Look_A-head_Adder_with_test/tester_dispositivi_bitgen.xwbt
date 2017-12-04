@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/sav/ASE/Carry_Look_A-head_Adder/tester_dispositivi.ncd
+OUTFILE=/home/sav/ASE/Carry_Look_A-head_Adder/tester_dispositivi.bit
+FAMILY=Spartan3E
+PART=xc3s100e-5tq144
+WORKINGDIR=/home/sav/ASE/Carry_Look_A-head_Adder
+LICENSE=WebPack
+USER_INFO=211407724_0_0_917

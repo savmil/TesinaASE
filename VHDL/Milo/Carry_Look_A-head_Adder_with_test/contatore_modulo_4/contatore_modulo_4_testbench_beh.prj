@@ -1,0 +1,6 @@
+vhdl work "../../full_adder_half/half_adder.vhdl"
+vhdl work "../../full_adder_half/full_adder_half.vhdl"
+vhdl work "../RippleCarryAdder/RippleCarryAdder.vhd"
+vhdl work "../registro/flip_flop_rising_edge.vhd"
+vhdl work "contatore_modulo_4.vhd"
+vhdl work "contatore_modulo_4_testbench.vhd"

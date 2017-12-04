@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/media/sf_ASE/moltiplicatore_B/Booth_multiplier.xst" -ofn "/media/sf_ASE/moltiplicatore_B/Booth_multiplier.syr" 

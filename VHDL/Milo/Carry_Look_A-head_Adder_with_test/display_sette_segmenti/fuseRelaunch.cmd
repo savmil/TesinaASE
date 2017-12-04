@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/sav/ASE/display_sette_segmenti/testbench_isim_beh.exe" -prj "/home/sav/ASE/display_sette_segmenti/testbench_beh.prj" "work.testbench" 

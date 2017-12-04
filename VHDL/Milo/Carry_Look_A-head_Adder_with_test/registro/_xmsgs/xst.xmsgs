@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="error" file="HDLParsers" num="3011" delta="new" >&quot;<arg fmt="%s" index="1">/home/sav/ASE/registro/registro.vhd</arg>&quot; Line <arg fmt="%d" index="2">38</arg>. End Identifier <arg fmt="%s" index="3">flip_lop_rising_edge</arg> does not match declaration, <arg fmt="%s" index="4">flip_flop_rising_edge</arg>.
+</msg>
+
+<msg type="error" file="HDLParsers" num="3010" delta="new" >&quot;<arg fmt="%s" index="1">/home/sav/ASE/registro/registro.vhd</arg>&quot; Line <arg fmt="%d" index="2">40</arg>. Entity <arg fmt="%s" index="3">flip_flop_rising_edge</arg> does not exist.
+</msg>
+
+<msg type="error" file="HDLParsers" num="808" delta="new" >&quot;<arg fmt="%s" index="1">/home/sav/ASE/registro/registro.vhd</arg>&quot; Line <arg fmt="%d" index="2">45</arg>. <arg fmt="%s" index="3">=</arg> can not have such operands in this context.
+</msg>
+
+<msg type="error" file="HDLParsers" num="3312" delta="new" >&quot;<arg fmt="%s" index="1">/home/sav/ASE/registro/registro.vhd</arg>&quot; Line <arg fmt="%d" index="2">45</arg>. Undefined symbol &apos;<arg fmt="%s" index="3">clk</arg>&apos;.
+</msg>
+
+<msg type="error" file="HDLParsers" num="808" delta="new" >&quot;<arg fmt="%s" index="1">/home/sav/ASE/registro/registro.vhd</arg>&quot; Line <arg fmt="%d" index="2">45</arg>. <arg fmt="%s" index="3">=</arg> can not have such operands in this context.
+</msg>
+
+<msg type="error" file="HDLParsers" num="3312" delta="new" >&quot;<arg fmt="%s" index="1">/home/sav/ASE/registro/registro.vhd</arg>&quot; Line <arg fmt="%d" index="2">46</arg>. Undefined symbol &apos;<arg fmt="%s" index="3">q</arg>&apos;.
+</msg>
+
+<msg type="error" file="HDLParsers" num="3312" delta="new" >&quot;<arg fmt="%s" index="1">/home/sav/ASE/registro/registro.vhd</arg>&quot; Line <arg fmt="%d" index="2">47</arg>. Undefined symbol &apos;<arg fmt="%s" index="3">notq</arg>&apos;.
+</msg>
+
+<msg type="error" file="HDLParsers" num="808" delta="new" >&quot;<arg fmt="%s" index="1">/home/sav/ASE/registro/registro.vhd</arg>&quot; Line <arg fmt="%d" index="2">48</arg>. <arg fmt="%s" index="3">=</arg> can not have such operands in this context.
+</msg>
+
+<msg type="error" file="HDLParsers" num="1209" delta="new" >&quot;<arg fmt="%s" index="1">/home/sav/ASE/registro/registro.vhd</arg>&quot; Line <arg fmt="%d" index="2">48</arg>. <arg fmt="%s" index="3">clk</arg>: Undefined symbol (last report in this block)
+</msg>
+
+<msg type="error" file="HDLParsers" num="808" delta="new" >&quot;<arg fmt="%s" index="1">/home/sav/ASE/registro/registro.vhd</arg>&quot; Line <arg fmt="%d" index="2">48</arg>. <arg fmt="%s" index="3">=</arg> can not have such operands in this context.
+</msg>
+
+<msg type="error" file="HDLParsers" num="1209" delta="new" >&quot;<arg fmt="%s" index="1">/home/sav/ASE/registro/registro.vhd</arg>&quot; Line <arg fmt="%d" index="2">49</arg>. <arg fmt="%s" index="3">q</arg>: Undefined symbol (last report in this block)
+</msg>
+
+<msg type="error" file="HDLParsers" num="1209" delta="new" >&quot;<arg fmt="%s" index="1">/home/sav/ASE/registro/registro.vhd</arg>&quot; Line <arg fmt="%d" index="2">50</arg>. <arg fmt="%s" index="3">notq</arg>: Undefined symbol (last report in this block)
+</msg>
+
+<msg type="error" file="HDLParsers" num="164" delta="new" >&quot;<arg fmt="%s" index="1">/home/sav/ASE/registro/registro.vhd</arg>&quot; Line <arg fmt="%d" index="2">53</arg>. <arg fmt="%s" index="3">parse error, unexpected PROCESS, expecting IF</arg>
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3481" delta="new" >Library <arg fmt="%s" index="1">work</arg> has no units. Did not save reference file &quot;<arg fmt="%s" index="2">xst/work/hdllib.ref</arg>&quot; for it.
+</msg>
+
+</messages>
+

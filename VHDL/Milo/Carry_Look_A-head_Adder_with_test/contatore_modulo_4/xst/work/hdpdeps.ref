@@ -1,0 +1,35 @@
+V3 20
+FL /home/sav/ASE/contatore_modulo_4/contatore_modulo_4.vhd 2017/11/08.22:04:25 P.20131013
+EN work/contatore_modulo_4 1510175233 \
+      FL /home/sav/ASE/contatore_modulo_4/contatore_modulo_4.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/contatore_modulo_4/Structural 1510175234 \
+      FL /home/sav/ASE/contatore_modulo_4/contatore_modulo_4.vhd \
+      EN work/contatore_modulo_4 1510175233 CP flip_flop_rising_edge \
+      CP RippleCarryAdder
+FL /home/sav/ASE/registro/flip_flop_rising_edge.vhd 2017/11/08.19:35:10 P.20131013
+EN work/flip_flop_rising_edge 1510175229 \
+      FL /home/sav/ASE/registro/flip_flop_rising_edge.vhd LB STD PB std/TEXTIO 1381692176 \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_TEXTIO 1381692180
+AR work/flip_flop_rising_edge/Behavioral 1510175230 \
+      FL /home/sav/ASE/registro/flip_flop_rising_edge.vhd \
+      EN work/flip_flop_rising_edge 1510175229
+FL /home/sav/ASE/RippleCarryAdder/RippleCarryAdder.vhd 2017/10/31.23:12:38 P.20131013
+EN work/RippleCarryAdder 1510175231 \
+      FL /home/sav/ASE/RippleCarryAdder/RippleCarryAdder.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/RippleCarryAdder/structural 1510175232 \
+      FL /home/sav/ASE/RippleCarryAdder/RippleCarryAdder.vhd \
+      EN work/RippleCarryAdder 1510175231 CP full_adder_half
+FL /home/sav/full_adder_half/full_adder_half.vhdl 2017/10/23.16:24:02 P.20131013
+EN work/full_adder_half 1510175227 \
+      FL /home/sav/full_adder_half/full_adder_half.vhdl PB ieee/std_logic_1164 1381692176
+AR work/full_adder_half/register_transfer 1510175228 \
+      FL /home/sav/full_adder_half/full_adder_half.vhdl EN work/full_adder_half 1510175227 \
+      CP half_adder
+FL /home/sav/full_adder_half/half_adder.vhdl 2017/10/23.15:46:11 P.20131013
+EN work/half_adder 1510175225 FL /home/sav/full_adder_half/half_adder.vhdl \
+      PB ieee/std_logic_1164 1381692176
+AR work/half_adder/dataflow 1510175226 \
+      FL /home/sav/full_adder_half/half_adder.vhdl EN work/half_adder 1510175225

@@ -1,0 +1,6 @@
+V3 3
+FL /home/sav/ASE/tester_dispositivi/latch_d.vhd 2017/11/15.18:16:11 P.20131013
+EN work/latch_d 1510766175 FL /home/sav/ASE/tester_dispositivi/latch_d.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/latch_d/Behavioral 1510766176 \
+      FL /home/sav/ASE/tester_dispositivi/latch_d.vhd EN work/latch_d 1510766175

@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.xst" -ofn "/home/sav/ASE/display_sette_segmenti/diplay_7_segmenti.syr" 
