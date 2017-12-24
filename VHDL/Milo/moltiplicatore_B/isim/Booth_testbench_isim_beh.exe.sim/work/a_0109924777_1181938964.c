@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "/media/sf_ASE/moltiplicatore_B/Booth_multiplier.vhd";
+static const char *ng0 = "/media/sf_ASE/VHDL/Milo/moltiplicatore_B/Booth_multiplier.vhd";
 extern char *IEEE_P_2592010699;
 
 
@@ -47,7 +47,7 @@ LAB0:    xsi_set_current_line(116, ng0);
 LAB3:    t1 = (t0 + 1192U);
     t2 = *((char **)t1);
     t4 = ((IEEE_P_2592010699) + 4000);
-    t5 = (t0 + 9216U);
+    t5 = (t0 + 9520U);
     t1 = xsi_base_array_concat(t1, t3, t4, (char)97, t2, t5, (char)99, (unsigned char)2, (char)101);
     t6 = (8U + 1U);
     t7 = (9U != t6);

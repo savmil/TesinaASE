@@ -1,5 +1,0 @@
-vhdl work "mux2_1.vhd"
-vhdl work "edge_triggered_d_n.vhd"
-vhdl work "counter_mod_2n.vhd"
-vhdl work "boundary_scan_chain.vhd"
-vhdl work "test_counter_mod_2n.vhd"

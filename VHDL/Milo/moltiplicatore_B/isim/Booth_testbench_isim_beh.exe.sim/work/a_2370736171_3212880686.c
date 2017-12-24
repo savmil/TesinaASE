@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "/media/sf_ASE/moltiplicatore_B/contatore_modulo_4.vhd";
+static const char *ng0 = "/media/sf_ASE/VHDL/Milo/moltiplicatore_B/contatore_modulo_4.vhd";
 extern char *IEEE_P_2592010699;
 extern char *IEEE_P_1242562249;
 
@@ -98,7 +98,7 @@ LAB2:    xsi_set_current_line(47, ng0);
 LAB5:    xsi_set_current_line(49, ng0);
     t2 = (t0 + 1832U);
     t6 = *((char **)t2);
-    t2 = (t0 + 5824U);
+    t2 = (t0 + 5928U);
     t7 = ieee_p_1242562249_sub_1006216973935652998_1035706684(IEEE_P_1242562249, t13, t6, t2, 1);
     t8 = (t0 + 3768);
     t9 = (t8 + 56U);

@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-12-02T10:53:28</DateModified>
+  <DateModified>2017-12-23T09:33:59</DateModified>
   <ModuleName>Booth_multiplier</ModuleName>
-  <SummaryTimeStamp>2017-12-01T10:17:08</SummaryTimeStamp>
-  <SavedFilePath>/media/sf_ASE/moltiplicatore_B/iseconfig/Booth_multiplier.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/media/sf_ASE/moltiplicatore_B/</ImplementationReportsDirectory>
+  <SummaryTimeStamp>2017-12-22T12:25:24</SummaryTimeStamp>
+  <SavedFilePath>/media/sf_ASE/VHDL/Milo/moltiplicatore_B/iseconfig/Booth_multiplier.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/media/sf_ASE/VHDL/Milo/moltiplicatore_B/</ImplementationReportsDirectory>
   <DateInitialized>2017-11-30T21:52:28</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

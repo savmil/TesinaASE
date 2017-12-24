@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "/media/sf_ASE/moltiplicatore_B/boundary_scan_chain.vhd";
+static const char *ng0 = "/media/sf_ASE/VHDL/Milo/moltiplicatore_B/boundary_scan_chain.vhd";
 extern char *IEEE_P_2592010699;
 
 unsigned char ieee_p_2592010699_sub_2763492388968962707_503743352(char *, char *, unsigned int , unsigned int );
@@ -127,9 +127,9 @@ LAB8:    goto LAB3;
 
 LAB7:    xsi_set_current_line(82, ng0);
     t11 = (9 - 2);
-    t1 = (t0 + 12016);
+    t1 = (t0 + 12416);
     *((int *)t1) = t11;
-    t5 = (t0 + 12020);
+    t5 = (t0 + 12420);
     *((int *)t5) = 0;
     t15 = t11;
     t16 = 0;
@@ -153,7 +153,7 @@ LAB13:    xsi_set_current_line(85, ng0);
 LAB11:    xsi_set_current_line(83, ng0);
     t6 = (t0 + 4688U);
     t7 = *((char **)t6);
-    t6 = (t0 + 12016);
+    t6 = (t0 + 12416);
     t17 = *((int *)t6);
     t18 = (t17 + 1);
     t19 = (t18 - 8);
@@ -163,7 +163,7 @@ LAB11:    xsi_set_current_line(83, ng0);
     t14 = (0 + t13);
     t8 = (t7 + t14);
     t20 = *((unsigned char *)t8);
-    t9 = (t0 + 12016);
+    t9 = (t0 + 12416);
     t21 = *((int *)t9);
     t22 = (t21 - 8);
     t23 = (t22 * -1);
@@ -177,16 +177,16 @@ LAB11:    xsi_set_current_line(83, ng0);
     *((unsigned char *)t29) = t20;
     xsi_driver_first_trans_delta(t10, t25, 1, 0LL);
 
-LAB12:    t1 = (t0 + 12016);
+LAB12:    t1 = (t0 + 12416);
     t15 = *((int *)t1);
-    t2 = (t0 + 12020);
+    t2 = (t0 + 12420);
     t16 = *((int *)t2);
     if (t15 == t16)
         goto LAB13;
 
 LAB14:    t11 = (t15 + -1);
     t15 = t11;
-    t5 = (t0 + 12016);
+    t5 = (t0 + 12416);
     *((int *)t5) = t15;
     goto LAB10;
 

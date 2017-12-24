@@ -1,0 +1,29 @@
+Command line:
+   boundary_scan_chain_testbench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  40941
+
+Fri Dec 22 21:43:10 2017
+
+
+ Elaboration Time: 0.02 sec
+
+ Current Memory Usage: 199.77 Meg
+
+ Total Signals          : 49
+ Total Nets             : 22
+ Total Signal Drivers   : 14
+ Total Blocks           : 20
+ Total Primitive Blocks : 10
+ Total Processes        : 12
+ Total Traceable Variables  : 20
+ Total Scalar Nets and Variables : 410
+Total Line Count : 38
+
+ Total Simulation Time: 0.1 sec
+
+ Current Memory Usage: 208.163 Meg
+
+Fri Dec 22 21:46:28 2017
+

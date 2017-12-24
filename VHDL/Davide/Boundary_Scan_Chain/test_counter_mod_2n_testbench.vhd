@@ -104,9 +104,9 @@ BEGIN
 		wait until clk'event and clk='1';
 		scan_in <= '0';
 		wait until clk'event and clk='1';
-		scan_in <= '0';
+		scan_in <= '1';
 		wait until clk'event and clk='1';
-		scan_in <= '0';
+		scan_in <= '1';
 		wait until clk'event and clk='1';
 		
 		scan_en <= '0';

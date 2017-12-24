@@ -31,7 +31,7 @@ USE ieee.std_logic_arith.ALL;
 --use UNISIM.VComponents.all;
 
 entity boundary_scan_chain is
-	generic(n : natural := 4);
+	generic(n : natural := 1);
     Port ( --state_vector : in  STD_LOGIC_VECTOR (n-1 downto 0);
 			  scan_in : in STD_LOGIC;
            clk : in  STD_LOGIC;
@@ -62,7 +62,7 @@ architecture Structural of boundary_scan_chain is
 		);
 	end component;
 
-signal q : std_logic_vector(n downto 0) := (others => '0');
+signal q : std_logic_vector(n-1 downto 0) := (others => '0');
 signal x : std_logic_vector(n-1 downto 0) := (others => '0');
 
 begin
@@ -84,17 +84,19 @@ begin
 
 main : process(clk)
 	begin
-		if(clk'event and clk='1') then
-			if(scan_en='1') then
-				for i in 0 to n-1 loop
-					q(i+1) <= q(i);
-				end loop;
-				q(0) <= scan_in; --q(0) è l'ingresso del primo mux relativo allo scan_in
+		--if(clk'event and clk='1') then
+			if((scan_en='1')) then
+				if (rising_edge(clk)) then
+					for i in 0 to n-2 loop
+						q(i+1) <= q(i);
+					end loop;
+					q(0) <= scan_in; --q(0)  l'ingresso del primo mux relativo allo scan_in
+				end if;
 			end if;
-		end if;
+		scan_out <= q(n-1);
 	end process;
 	
-	scan_out <= q(n);
+	
 	
 end Structural;
 

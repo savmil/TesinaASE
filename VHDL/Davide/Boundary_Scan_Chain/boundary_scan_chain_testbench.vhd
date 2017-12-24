@@ -33,6 +33,7 @@ USE ieee.std_logic_1164.ALL;
 --USE ieee.numeric_std.ALL;
  
 ENTITY boundary_scan_chain_testbench IS
+generic(N : natural := 4);
 END boundary_scan_chain_testbench;
  
 ARCHITECTURE behavior OF boundary_scan_chain_testbench IS 
@@ -40,14 +41,15 @@ ARCHITECTURE behavior OF boundary_scan_chain_testbench IS
     -- Component Declaration for the Unit Under Test (UUT)
  
     COMPONENT boundary_scan_chain
+	 generic(N : natural := 4);
     PORT(
          scan_in : IN  std_logic;
          clk : IN  std_logic;
          reset_n : IN  std_logic;
-         din : IN  std_logic_vector(3 downto 0);
+         din : IN  std_logic_vector(N-1 downto 0);
          scan_en : IN  std_logic;
          scan_out : OUT  std_logic;
-         dout : OUT  std_logic_vector(3 downto 0)
+         dout : OUT  std_logic_vector(N-1 downto 0)
         );
     END COMPONENT;
     
@@ -56,12 +58,12 @@ ARCHITECTURE behavior OF boundary_scan_chain_testbench IS
    signal scan_in : std_logic :='0';
    signal clk : std_logic := '0';
    signal reset_n : std_logic := '1';
-   signal din : std_logic_vector(3 downto 0) := (others => '0');
+   signal din : std_logic_vector(N-1 downto 0) := (others => '0');
    signal scan_en : std_logic := '0';
 
  	--Outputs
    signal scan_out : std_logic;
-   signal dout : std_logic_vector(3 downto 0);
+   signal dout : std_logic_vector(N-1 downto 0);
 
    -- Clock period definitions
    constant clk_period : time := 10 ns;
@@ -93,26 +95,36 @@ BEGIN
    stim_proc: process
    begin		
       -- hold reset state for 100 ns.
-      wait for 100 ns;	
-
-      --wait for clk_period*10;
+		wait for 10 ns;
+		
+		scan_en <= '1';	
+--		wait for 10 ns;
+--		scan_en <= '0';
+--		wait for 10 ns;
+		scan_in <= '1';
+		--scan_en <='1';
+		wait until clk'event and clk='1';
+      
 
       -- insert stimulus here
-		din <= "0101";
-		wait until clk'event and clk='1';
-		scan_in <= '1';
-		scan_en <= '1';
-		wait until clk'event and clk='1';
-		scan_in <= '0';
+		--din <= "1010";
+		--wait until clk'event and clk='1';
+		
 		wait until clk'event and clk='1';
 		scan_in <= '1';
 		wait until clk'event and clk='1';
 		scan_in <= '0';
+		wait until clk'event and clk='1';
+		scan_in <= '1';
 		wait until clk'event and clk='1';
 		
-		scan_en <= '0';
+		
+
+		
+		--scan_en <= '1';
 		wait until clk'event and clk='1';
-		scan_en <= '1';
+		scan_en <= '0';
+		wait for clk_period*10;
       wait;
    end process;
 

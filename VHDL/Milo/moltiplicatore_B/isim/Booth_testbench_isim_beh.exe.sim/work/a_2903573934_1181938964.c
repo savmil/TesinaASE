@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "/media/sf_ASE/moltiplicatore_B/ripple_carry_adder.vhd";
+static const char *ng0 = "/media/sf_ASE/VHDL/Milo/moltiplicatore_B/ripple_carry_adder.vhd";
 
 
 

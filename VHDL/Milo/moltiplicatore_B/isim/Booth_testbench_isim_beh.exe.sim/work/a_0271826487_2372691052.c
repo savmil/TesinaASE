@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "/media/sf_ASE/moltiplicatore_B/Booth_testbench.vhd";
+static const char *ng0 = "/media/sf_ASE/VHDL/Milo/moltiplicatore_B/Booth_testbench.vhd";
 
 
 
@@ -130,7 +130,7 @@ LAB4:    xsi_set_current_line(94, ng0);
     *((unsigned char *)t7) = (unsigned char)3;
     xsi_driver_first_trans_fast(t2);
     xsi_set_current_line(95, ng0);
-    t2 = (t0 + 6136);
+    t2 = (t0 + 6256);
     t5 = (t0 + 3864);
     t6 = (t5 + 56U);
     t7 = *((char **)t6);
@@ -139,7 +139,7 @@ LAB4:    xsi_set_current_line(94, ng0);
     memcpy(t9, t2, 8U);
     xsi_driver_first_trans_fast(t5);
     xsi_set_current_line(96, ng0);
-    t2 = (t0 + 6144);
+    t2 = (t0 + 6264);
     t5 = (t0 + 3928);
     t6 = (t5 + 56U);
     t7 = *((char **)t6);

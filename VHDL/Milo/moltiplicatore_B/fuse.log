@@ -1,23 +1,23 @@
-Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /media/sf_ASE/moltiplicatore_B/Booth_testbench_isim_beh.exe -prj /media/sf_ASE/moltiplicatore_B/Booth_testbench_beh.prj work.Booth_testbench 
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -relaunch -intstyle "ise" -incremental -o "/media/sf_ASE/VHDL/Milo/moltiplicatore_B/Booth_testbench_isim_beh.exe" -prj "/media/sf_ASE/VHDL/Milo/moltiplicatore_B/Booth_testbench_beh.prj" "work.Booth_testbench" 
 ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 1
 Turning on mult-threading, number of parallel sub-compilation jobs: 0 
 Determining compilation order of HDL files
-Parsing VHDL file "/media/sf_ASE/moltiplicatore_B/half_adder.vhd" into library work
-Parsing VHDL file "/media/sf_ASE/moltiplicatore_B/full_adder.vhd" into library work
-Parsing VHDL file "/media/sf_ASE/moltiplicatore_B/ripple_carry_adder.vhd" into library work
-Parsing VHDL file "/media/sf_ASE/moltiplicatore_B/edge_triggered_d_n.vhd" into library work
-Parsing VHDL file "/media/sf_ASE/moltiplicatore_B/Serial_Booth_PC_Moore.vhd" into library work
-Parsing VHDL file "/media/sf_ASE/moltiplicatore_B/latch_d.vhd" into library work
-Parsing VHDL file "/media/sf_ASE/moltiplicatore_B/contatore_modulo_4.vhd" into library work
-Parsing VHDL file "/media/sf_ASE/moltiplicatore_B/boundary_scan_chain.vhd" into library work
-Parsing VHDL file "/media/sf_ASE/moltiplicatore_B/add_sub.vhd" into library work
-Parsing VHDL file "/media/sf_ASE/moltiplicatore_B/Booth_multiplier.vhd" into library work
-Parsing VHDL file "/media/sf_ASE/moltiplicatore_B/Booth_testbench.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/VHDL/Milo/moltiplicatore_B/half_adder.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/VHDL/Milo/moltiplicatore_B/full_adder.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/VHDL/Milo/moltiplicatore_B/ripple_carry_adder.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/VHDL/Milo/moltiplicatore_B/edge_triggered_d_n.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/VHDL/Milo/moltiplicatore_B/Serial_Booth_PC_Moore.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/VHDL/Milo/moltiplicatore_B/latch_d.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/VHDL/Milo/moltiplicatore_B/contatore_modulo_4.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/VHDL/Milo/moltiplicatore_B/boundary_scan_chain.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/VHDL/Milo/moltiplicatore_B/add_sub.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/VHDL/Milo/moltiplicatore_B/Booth_multiplier.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/VHDL/Milo/moltiplicatore_B/Booth_testbench.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Fuse Memory Usage: 97256 KB
-Fuse CPU Usage: 1170 ms
+Fuse CPU Usage: 1090 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
@@ -36,7 +36,7 @@ Compiling architecture structural of entity Booth_multiplier [\Booth_multiplier(
 Compiling architecture behavior of entity booth_testbench
 Time Resolution for simulation is 1ps.
 Compiled 27 VHDL Units
-Built simulation executable /media/sf_ASE/moltiplicatore_B/Booth_testbench_isim_beh.exe
-Fuse Memory Usage: 115164 KB
-Fuse CPU Usage: 1310 ms
-GCC CPU Usage: 430 ms
+Built simulation executable /media/sf_ASE/VHDL/Milo/moltiplicatore_B/Booth_testbench_isim_beh.exe
+Fuse Memory Usage: 115168 KB
+Fuse CPU Usage: 1240 ms
+GCC CPU Usage: 160 ms

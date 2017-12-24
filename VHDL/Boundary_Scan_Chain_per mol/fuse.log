@@ -1,0 +1,26 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /media/sf_ASE/VHDL/Davide/Boundary_Scan_Chain/boundary_scan_chain_testbench_isim_beh.exe -prj /media/sf_ASE/VHDL/Davide/Boundary_Scan_Chain/boundary_scan_chain_testbench_beh.prj work.boundary_scan_chain_testbench 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Determining compilation order of HDL files
+Parsing VHDL file "/media/sf_ASE/VHDL/Davide/Boundary_Scan_Chain/mux2_1.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/VHDL/Davide/Boundary_Scan_Chain/edge_triggered_d_n.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/VHDL/Davide/Boundary_Scan_Chain/boundary_scan_chain.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/VHDL/Davide/Boundary_Scan_Chain/boundary_scan_chain_testbench.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 95384 KB
+Fuse CPU Usage: 1150 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling architecture dataflow of entity mux2_1 [mux2_1_default]
+Compiling architecture behavioral of entity edge_triggered_d_n [\edge_triggered_d_n(1)\]
+Compiling architecture structural of entity boundary_scan_chain [\boundary_scan_chain(4)\]
+Compiling architecture behavior of entity boundary_scan_chain_testbench
+Time Resolution for simulation is 1ps.
+Compiled 10 VHDL Units
+Built simulation executable /media/sf_ASE/VHDL/Davide/Boundary_Scan_Chain/boundary_scan_chain_testbench_isim_beh.exe
+Fuse Memory Usage: 108528 KB
+Fuse CPU Usage: 1220 ms
+GCC CPU Usage: 220 ms

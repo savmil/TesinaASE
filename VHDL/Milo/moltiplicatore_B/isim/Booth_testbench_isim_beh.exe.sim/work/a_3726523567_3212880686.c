@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "/media/sf_ASE/moltiplicatore_B/Serial_Booth_PC_Moore.vhd";
+static const char *ng0 = "/media/sf_ASE/VHDL/Milo/moltiplicatore_B/Serial_Booth_PC_Moore.vhd";
 extern char *IEEE_P_2592010699;
 
 unsigned char ieee_p_2592010699_sub_2763492388968962707_503743352(char *, char *, unsigned int , unsigned int );
@@ -151,7 +151,7 @@ LAB8:    xsi_set_current_line(83, ng0);
     xsi_set_current_line(84, ng0);
     t1 = (t0 + 1352U);
     t3 = *((char **)t1);
-    t1 = (t0 + 6879);
+    t1 = (t0 + 7023);
     t8 = 1;
     if (2U == 2U)
         goto LAB20;
@@ -163,7 +163,7 @@ LAB22:    if (t8 == 1)
 
 LAB18:    t7 = (t0 + 1352U);
     t10 = *((char **)t7);
-    t7 = (t0 + 6881);
+    t7 = (t0 + 7025);
     t9 = 1;
     if (2U == 2U)
         goto LAB26;
@@ -177,7 +177,7 @@ LAB19:    if (t2 != 0)
 
 LAB16:    t1 = (t0 + 1352U);
     t3 = *((char **)t1);
-    t1 = (t0 + 6883);
+    t1 = (t0 + 7027);
     t2 = 1;
     if (2U == 2U)
         goto LAB34;
@@ -189,7 +189,7 @@ LAB36:    if (t2 != 0)
 
 LAB33:    t1 = (t0 + 1352U);
     t3 = *((char **)t1);
-    t1 = (t0 + 6885);
+    t1 = (t0 + 7029);
     t2 = 1;
     if (2U == 2U)
         goto LAB42;
