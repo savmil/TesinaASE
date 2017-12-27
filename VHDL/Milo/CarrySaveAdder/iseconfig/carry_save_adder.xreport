@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-11-07T21:29:03</DateModified>
+  <DateModified>2017-12-27T10:53:40</DateModified>
   <ModuleName>carry_save_adder</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>/home/sav/ASE/CarrySaveAdder/iseconfig/carry_save_adder.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/sav/ASE/CarrySaveAdder</ImplementationReportsDirectory>
+  <SavedFilePath>/media/sf_ASE/VHDL/Milo/CarrySaveAdder/iseconfig/carry_save_adder.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/media/sf_ASE/VHDL/Milo/CarrySaveAdder/</ImplementationReportsDirectory>
   <DateInitialized>2017-11-07T21:29:03</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

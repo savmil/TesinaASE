@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "/media/sf_ASE/DUE_UART/due_uart.xst" -ofn "/media/sf_ASE/DUE_UART/due_uart.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s250e-tq144-4 due_uart.ngc due_uart.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o due_uart_map.ncd due_uart.ngd due_uart.pcf 
+par -w -intstyle ise -ol high -t 1 due_uart_map.ncd due_uart.ncd due_uart.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml due_uart.twx due_uart.ncd -o due_uart.twr due_uart.pcf -ucf Basys2_100_250General.ucf 
+bitgen -intstyle ise -f due_uart.ut due_uart.ncd 

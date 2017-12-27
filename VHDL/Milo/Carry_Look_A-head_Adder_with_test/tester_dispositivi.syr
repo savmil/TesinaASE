@@ -4,15 +4,15 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.02 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.02 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Reading design: tester_dispositivi.prj
@@ -107,44 +107,80 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "/home/sav/ASE/Carry_Look_A-head_Adder/muxn_1.vhd" in Library work.
+WARNING:HDLParsers:3607 - Unit work/tester_dispositivi is now defined in a different file.  It was defined in "/home/sav/ASE/Carry_Look_A-head_Adder/tester_dispositivi.vhd", and is now defined in "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/tester_dispositivi.vhd".
+WARNING:HDLParsers:3607 - Unit work/tester_dispositivi/Behavioral is now defined in a different file.  It was defined in "/home/sav/ASE/Carry_Look_A-head_Adder/tester_dispositivi.vhd", and is now defined in "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/tester_dispositivi.vhd".
+WARNING:HDLParsers:3607 - Unit work/Carry_Look_A_head_Adder is now defined in a different file.  It was defined in "/home/sav/ASE/Carry_Look_A-head_Adder/Carry_Look_A_head_Adder.vhd", and is now defined in "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/Carry_Look_A_head_Adder.vhd".
+WARNING:HDLParsers:3607 - Unit work/Carry_Look_A_head_Adder/structural is now defined in a different file.  It was defined in "/home/sav/ASE/Carry_Look_A-head_Adder/Carry_Look_A_head_Adder.vhd", and is now defined in "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/Carry_Look_A_head_Adder.vhd".
+WARNING:HDLParsers:3607 - Unit work/contatore_modulo_2n is now defined in a different file.  It was defined in "/home/sav/ASE/Carry_Look_A-head_Adder/contatore_modulo_4.vhd", and is now defined in "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/contatore_modulo_4.vhd".
+WARNING:HDLParsers:3607 - Unit work/contatore_modulo_2n/Behavioral is now defined in a different file.  It was defined in "/home/sav/ASE/Carry_Look_A-head_Adder/contatore_modulo_4.vhd", and is now defined in "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/contatore_modulo_4.vhd".
+WARNING:HDLParsers:3607 - Unit work/display_top_level is now defined in a different file.  It was defined in "/home/sav/ASE/Carry_Look_A-head_Adder/display_top_level.vhd", and is now defined in "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/display_top_level.vhd".
+WARNING:HDLParsers:3607 - Unit work/display_top_level/structural is now defined in a different file.  It was defined in "/home/sav/ASE/Carry_Look_A-head_Adder/display_top_level.vhd", and is now defined in "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/display_top_level.vhd".
+WARNING:HDLParsers:3607 - Unit work/latch_d is now defined in a different file.  It was defined in "/home/sav/ASE/Carry_Look_A-head_Adder/latch_d.vhd", and is now defined in "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/latch_d.vhd".
+WARNING:HDLParsers:3607 - Unit work/latch_d/Behavioral is now defined in a different file.  It was defined in "/home/sav/ASE/Carry_Look_A-head_Adder/latch_d.vhd", and is now defined in "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/latch_d.vhd".
+WARNING:HDLParsers:3607 - Unit work/Carry_Look_A_head_r is now defined in a different file.  It was defined in "/home/sav/ASE/Carry_Look_A-head_Adder/Carry_Look_A_head_r.vhd", and is now defined in "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/Carry_Look_A_head_r.vhd".
+WARNING:HDLParsers:3607 - Unit work/Carry_Look_A_head_r/Behavioral is now defined in a different file.  It was defined in "/home/sav/ASE/Carry_Look_A-head_Adder/Carry_Look_A_head_r.vhd", and is now defined in "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/Carry_Look_A_head_r.vhd".
+WARNING:HDLParsers:3607 - Unit work/display is now defined in a different file.  It was defined in "/home/sav/ASE/Carry_Look_A-head_Adder/display.vhd", and is now defined in "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/display.vhd".
+WARNING:HDLParsers:3607 - Unit work/display/structural is now defined in a different file.  It was defined in "/home/sav/ASE/Carry_Look_A-head_Adder/display.vhd", and is now defined in "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/display.vhd".
+WARNING:HDLParsers:3607 - Unit work/display_on_board is now defined in a different file.  It was defined in "/home/sav/ASE/Carry_Look_A-head_Adder/display_on_board.vhd", and is now defined in "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/display_on_board.vhd".
+WARNING:HDLParsers:3607 - Unit work/display_on_board/Behavioral is now defined in a different file.  It was defined in "/home/sav/ASE/Carry_Look_A-head_Adder/display_on_board.vhd", and is now defined in "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/display_on_board.vhd".
+WARNING:HDLParsers:3607 - Unit work/Generator_G_P is now defined in a different file.  It was defined in "/home/sav/ASE/Carry_Look_A-head_Adder/Generator_G_P.vhd", and is now defined in "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/Generator_G_P.vhd".
+WARNING:HDLParsers:3607 - Unit work/Generator_G_P/structural is now defined in a different file.  It was defined in "/home/sav/ASE/Carry_Look_A-head_Adder/Generator_G_P.vhd", and is now defined in "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/Generator_G_P.vhd".
+WARNING:HDLParsers:3607 - Unit work/anode_manager is now defined in a different file.  It was defined in "/home/sav/ASE/Carry_Look_A-head_Adder/anode_manager.vhd", and is now defined in "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/anode_manager.vhd".
+WARNING:HDLParsers:3607 - Unit work/anode_manager/structural is now defined in a different file.  It was defined in "/home/sav/ASE/Carry_Look_A-head_Adder/anode_manager.vhd", and is now defined in "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/anode_manager.vhd".
+WARNING:HDLParsers:3607 - Unit work/Carry_Look_A_head_unit is now defined in a different file.  It was defined in "/home/sav/ASE/Carry_Look_A-head_Adder/Carry_Look_A_head_unit.vhd", and is now defined in "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/Carry_Look_A_head_unit.vhd".
+WARNING:HDLParsers:3607 - Unit work/Carry_Look_A_head_unit/Behavioral is now defined in a different file.  It was defined in "/home/sav/ASE/Carry_Look_A-head_Adder/Carry_Look_A_head_unit.vhd", and is now defined in "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/Carry_Look_A_head_unit.vhd".
+WARNING:HDLParsers:3607 - Unit work/cathode_manager is now defined in a different file.  It was defined in "/home/sav/ASE/Carry_Look_A-head_Adder/cathode_manager.vhd", and is now defined in "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/cathode_manager.vhd".
+WARNING:HDLParsers:3607 - Unit work/cathode_manager/structural is now defined in a different file.  It was defined in "/home/sav/ASE/Carry_Look_A-head_Adder/cathode_manager.vhd", and is now defined in "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/cathode_manager.vhd".
+WARNING:HDLParsers:3607 - Unit work/clock_filter is now defined in a different file.  It was defined in "/home/sav/ASE/Carry_Look_A-head_Adder/clock_filter.vhd", and is now defined in "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/clock_filter.vhd".
+WARNING:HDLParsers:3607 - Unit work/clock_filter/Behavioral is now defined in a different file.  It was defined in "/home/sav/ASE/Carry_Look_A-head_Adder/clock_filter.vhd", and is now defined in "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/clock_filter.vhd".
+WARNING:HDLParsers:3607 - Unit work/counter_mod2n is now defined in a different file.  It was defined in "/home/sav/ASE/Carry_Look_A-head_Adder/counter_mod2n.vhd", and is now defined in "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/counter_mod2n.vhd".
+WARNING:HDLParsers:3607 - Unit work/counter_mod2n/Behavioral is now defined in a different file.  It was defined in "/home/sav/ASE/Carry_Look_A-head_Adder/counter_mod2n.vhd", and is now defined in "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/counter_mod2n.vhd".
+WARNING:HDLParsers:3607 - Unit work/edge_triggered_d_n is now defined in a different file.  It was defined in "/home/sav/ASE/Carry_Look_A-head_Adder/edge_triggered_d_n.vhd", and is now defined in "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/edge_triggered_d_n.vhd".
+WARNING:HDLParsers:3607 - Unit work/edge_triggered_d_n/Behavioral is now defined in a different file.  It was defined in "/home/sav/ASE/Carry_Look_A-head_Adder/edge_triggered_d_n.vhd", and is now defined in "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/edge_triggered_d_n.vhd".
+WARNING:HDLParsers:3607 - Unit work/cathode_encoder is now defined in a different file.  It was defined in "/home/sav/ASE/Carry_Look_A-head_Adder/cathode_encoder.vhd", and is now defined in "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/cathode_encoder.vhd".
+WARNING:HDLParsers:3607 - Unit work/cathode_encoder/Behavioral is now defined in a different file.  It was defined in "/home/sav/ASE/Carry_Look_A-head_Adder/cathode_encoder.vhd", and is now defined in "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/cathode_encoder.vhd".
+WARNING:HDLParsers:3607 - Unit work/demux1_n is now defined in a different file.  It was defined in "/home/sav/ASE/Carry_Look_A-head_Adder/demux1_n.vhd", and is now defined in "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/demux1_n.vhd".
+WARNING:HDLParsers:3607 - Unit work/demux1_n/dataflow is now defined in a different file.  It was defined in "/home/sav/ASE/Carry_Look_A-head_Adder/demux1_n.vhd", and is now defined in "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/demux1_n.vhd".
+WARNING:HDLParsers:3607 - Unit work/muxn_1 is now defined in a different file.  It was defined in "/home/sav/ASE/Carry_Look_A-head_Adder/muxn_1.vhd", and is now defined in "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/muxn_1.vhd".
+WARNING:HDLParsers:3607 - Unit work/muxn_1/dataflow is now defined in a different file.  It was defined in "/home/sav/ASE/Carry_Look_A-head_Adder/muxn_1.vhd", and is now defined in "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/muxn_1.vhd".
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/muxn_1.vhd" in Library work.
 Architecture dataflow of Entity muxn_1 is up to date.
-Compiling vhdl file "/home/sav/ASE/Carry_Look_A-head_Adder/demux1_n.vhd" in Library work.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/demux1_n.vhd" in Library work.
 Architecture dataflow of Entity demux1_n is up to date.
-Compiling vhdl file "/home/sav/ASE/Carry_Look_A-head_Adder/cathode_encoder.vhd" in Library work.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/cathode_encoder.vhd" in Library work.
 Architecture behavioral of Entity cathode_encoder is up to date.
-Compiling vhdl file "/home/sav/ASE/Carry_Look_A-head_Adder/clock_filter.vhd" in Library work.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/clock_filter.vhd" in Library work.
 Architecture behavioral of Entity clock_filter is up to date.
-Compiling vhdl file "/home/sav/ASE/Carry_Look_A-head_Adder/counter_mod2n.vhd" in Library work.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/counter_mod2n.vhd" in Library work.
 Architecture behavioral of Entity counter_mod2n is up to date.
-Compiling vhdl file "/home/sav/ASE/Carry_Look_A-head_Adder/cathode_manager.vhd" in Library work.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/cathode_manager.vhd" in Library work.
 Architecture structural of Entity cathode_manager is up to date.
-Compiling vhdl file "/home/sav/ASE/Carry_Look_A-head_Adder/anode_manager.vhd" in Library work.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/anode_manager.vhd" in Library work.
 Architecture structural of Entity anode_manager is up to date.
-Compiling vhdl file "/home/sav/ASE/Carry_Look_A-head_Adder/edge_triggered_d_n.vhd" in Library work.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/edge_triggered_d_n.vhd" in Library work.
 Architecture behavioral of Entity edge_triggered_d_n is up to date.
-Compiling vhdl file "/home/sav/ASE/Carry_Look_A-head_Adder/Carry_Look_A_head_unit.vhd" in Library work.
-Architecture behavioral of Entity carry_look_a_head_unit is up to date.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/Carry_Look_A_head_unit.vhd" in Library work.
+Entity <carry_look_a_head_unit> compiled.
+Entity <carry_look_a_head_unit> (Architecture <behavioral>) compiled.
 Compiling vhdl file "/home/sav/half_adder/half_adder.vhdl" in Library work.
 Architecture dataflow of Entity half_adder is up to date.
-Compiling vhdl file "/home/sav/ASE/Carry_Look_A-head_Adder/display_on_board.vhd" in Library work.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/display_on_board.vhd" in Library work.
 Architecture behavioral of Entity display_on_board is up to date.
-Compiling vhdl file "/home/sav/ASE/Carry_Look_A-head_Adder/display.vhd" in Library work.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/display.vhd" in Library work.
 Architecture structural of Entity display is up to date.
-Compiling vhdl file "/home/sav/ASE/Carry_Look_A-head_Adder/Generator_G_P.vhd" in Library work.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/Generator_G_P.vhd" in Library work.
 Architecture structural of Entity generator_g_p is up to date.
-Compiling vhdl file "/home/sav/ASE/Carry_Look_A-head_Adder/Carry_Look_A_head_r.vhd" in Library work.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/Carry_Look_A_head_r.vhd" in Library work.
 Architecture behavioral of Entity carry_look_a_head_r is up to date.
-Compiling vhdl file "/home/sav/ASE/Carry_Look_A-head_Adder/contatore_modulo_4.vhd" in Library work.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/contatore_modulo_4.vhd" in Library work.
 Architecture behavioral of Entity contatore_modulo_2n is up to date.
-Compiling vhdl file "/home/sav/ASE/Carry_Look_A-head_Adder/latch_d.vhd" in Library work.
-Entity <latch_d> compiled.
-Entity <latch_d> (Architecture <behavioral>) compiled.
-Compiling vhdl file "/home/sav/ASE/Carry_Look_A-head_Adder/Carry_Look_A_head_Adder.vhd" in Library work.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/latch_d.vhd" in Library work.
+Architecture behavioral of Entity latch_d is up to date.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/Carry_Look_A_head_Adder.vhd" in Library work.
 Architecture structural of Entity carry_look_a_head_adder is up to date.
-Compiling vhdl file "/home/sav/ASE/Carry_Look_A-head_Adder/display_top_level.vhd" in Library work.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/display_top_level.vhd" in Library work.
 Architecture structural of Entity display_top_level is up to date.
-Compiling vhdl file "/home/sav/ASE/Carry_Look_A-head_Adder/tester_dispositivi.vhd" in Library work.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/tester_dispositivi.vhd" in Library work.
 Architecture behavioral of Entity tester_dispositivi is up to date.
 
 =========================================================================
@@ -233,7 +269,7 @@ Analyzing hierarchy for entity <demux1_n> in library <work> (architecture <dataf
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <tester_dispositivi> in library <work> (Architecture <behavioral>).
-WARNING:Xst:753 - "/home/sav/ASE/Carry_Look_A-head_Adder/tester_dispositivi.vhd" line 88: Unconnected output port 'hit' of component 'contatore_modulo_2n'.
+WARNING:Xst:753 - "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/tester_dispositivi.vhd" line 88: Unconnected output port 'hit' of component 'contatore_modulo_2n'.
 Entity <tester_dispositivi> analyzed. Unit <tester_dispositivi> generated.
 
 Analyzing generic Entity <contatore_modulo_2n> in library <work> (Architecture <behavioral>).
@@ -329,7 +365,7 @@ Analyzing generic Entity <muxn_1> in library <work> (Architecture <dataflow>).
 Entity <muxn_1> analyzed. Unit <muxn_1> generated.
 
 Analyzing Entity <cathode_encoder> in library <work> (Architecture <behavioral>).
-INFO:Xst:1561 - "/home/sav/ASE/Carry_Look_A-head_Adder/cathode_encoder.vhd" line 97: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/cathode_encoder.vhd" line 97: Mux is complete : default of case is discarded
 Entity <cathode_encoder> analyzed. Unit <cathode_encoder> generated.
 
 Analyzing Entity <anode_manager> in library <work> (Architecture <structural>).
@@ -347,7 +383,7 @@ Entity <demux1_n> analyzed. Unit <demux1_n> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <contatore_modulo_2n>.
-    Related source file is "/home/sav/ASE/Carry_Look_A-head_Adder/contatore_modulo_4.vhd".
+    Related source file is "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/contatore_modulo_4.vhd".
     Found 1-bit register for signal <hit>.
     Found 2-bit up counter for signal <count>.
     Summary:
@@ -357,7 +393,7 @@ Unit <contatore_modulo_2n> synthesized.
 
 
 Synthesizing Unit <latch_d>.
-    Related source file is "/home/sav/ASE/Carry_Look_A-head_Adder/latch_d.vhd".
+    Related source file is "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/latch_d.vhd".
     Found 8-bit register for signal <output>.
     Summary:
 	inferred   8 D-type flip-flop(s).
@@ -371,47 +407,47 @@ Unit <half_adder> synthesized.
 
 
 Synthesizing Unit <Carry_Look_A_head_unit_1>.
-    Related source file is "/home/sav/ASE/Carry_Look_A-head_Adder/Carry_Look_A_head_unit.vhd".
+    Related source file is "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/Carry_Look_A_head_unit.vhd".
 Unit <Carry_Look_A_head_unit_1> synthesized.
 
 
 Synthesizing Unit <Carry_Look_A_head_unit_2>.
-    Related source file is "/home/sav/ASE/Carry_Look_A-head_Adder/Carry_Look_A_head_unit.vhd".
+    Related source file is "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/Carry_Look_A_head_unit.vhd".
 Unit <Carry_Look_A_head_unit_2> synthesized.
 
 
 Synthesizing Unit <Carry_Look_A_head_unit_3>.
-    Related source file is "/home/sav/ASE/Carry_Look_A-head_Adder/Carry_Look_A_head_unit.vhd".
+    Related source file is "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/Carry_Look_A_head_unit.vhd".
 Unit <Carry_Look_A_head_unit_3> synthesized.
 
 
 Synthesizing Unit <Carry_Look_A_head_unit_4>.
-    Related source file is "/home/sav/ASE/Carry_Look_A-head_Adder/Carry_Look_A_head_unit.vhd".
+    Related source file is "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/Carry_Look_A_head_unit.vhd".
 Unit <Carry_Look_A_head_unit_4> synthesized.
 
 
 Synthesizing Unit <Carry_Look_A_head_unit_5>.
-    Related source file is "/home/sav/ASE/Carry_Look_A-head_Adder/Carry_Look_A_head_unit.vhd".
+    Related source file is "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/Carry_Look_A_head_unit.vhd".
 Unit <Carry_Look_A_head_unit_5> synthesized.
 
 
 Synthesizing Unit <Carry_Look_A_head_unit_6>.
-    Related source file is "/home/sav/ASE/Carry_Look_A-head_Adder/Carry_Look_A_head_unit.vhd".
+    Related source file is "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/Carry_Look_A_head_unit.vhd".
 Unit <Carry_Look_A_head_unit_6> synthesized.
 
 
 Synthesizing Unit <Carry_Look_A_head_unit_7>.
-    Related source file is "/home/sav/ASE/Carry_Look_A-head_Adder/Carry_Look_A_head_unit.vhd".
+    Related source file is "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/Carry_Look_A_head_unit.vhd".
 Unit <Carry_Look_A_head_unit_7> synthesized.
 
 
 Synthesizing Unit <Carry_Look_A_head_unit_8>.
-    Related source file is "/home/sav/ASE/Carry_Look_A-head_Adder/Carry_Look_A_head_unit.vhd".
+    Related source file is "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/Carry_Look_A_head_unit.vhd".
 Unit <Carry_Look_A_head_unit_8> synthesized.
 
 
 Synthesizing Unit <edge_triggered_d_n_1>.
-    Related source file is "/home/sav/ASE/Carry_Look_A-head_Adder/edge_triggered_d_n.vhd".
+    Related source file is "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/edge_triggered_d_n.vhd".
     Found 16-bit register for signal <q>.
     Summary:
 	inferred  16 D-type flip-flop(s).
@@ -419,7 +455,7 @@ Unit <edge_triggered_d_n_1> synthesized.
 
 
 Synthesizing Unit <edge_triggered_d_n_2>.
-    Related source file is "/home/sav/ASE/Carry_Look_A-head_Adder/edge_triggered_d_n.vhd".
+    Related source file is "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/edge_triggered_d_n.vhd".
     Found 4-bit register for signal <q>.
     Summary:
 	inferred   4 D-type flip-flop(s).
@@ -427,7 +463,7 @@ Unit <edge_triggered_d_n_2> synthesized.
 
 
 Synthesizing Unit <clock_filter>.
-    Related source file is "/home/sav/ASE/Carry_Look_A-head_Adder/clock_filter.vhd".
+    Related source file is "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/clock_filter.vhd".
     Found 18-bit up counter for signal <count>.
     Summary:
 	inferred   1 Counter(s).
@@ -435,7 +471,7 @@ Unit <clock_filter> synthesized.
 
 
 Synthesizing Unit <counter_mod2n>.
-    Related source file is "/home/sav/ASE/Carry_Look_A-head_Adder/counter_mod2n.vhd".
+    Related source file is "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/counter_mod2n.vhd".
     Found 2-bit register for signal <count>.
     Found 2-bit adder for signal <count$add0000> created at line 25.
     Summary:
@@ -445,7 +481,7 @@ Unit <counter_mod2n> synthesized.
 
 
 Synthesizing Unit <muxn_1>.
-    Related source file is "/home/sav/ASE/Carry_Look_A-head_Adder/muxn_1.vhd".
+    Related source file is "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/muxn_1.vhd".
     Found 1-bit 4-to-1 multiplexer for signal <X>.
     Summary:
 	inferred   1 Multiplexer(s).
@@ -453,7 +489,7 @@ Unit <muxn_1> synthesized.
 
 
 Synthesizing Unit <cathode_encoder>.
-    Related source file is "/home/sav/ASE/Carry_Look_A-head_Adder/cathode_encoder.vhd".
+    Related source file is "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/cathode_encoder.vhd".
     Found 16x7-bit ROM for signal <cathodes>.
     Summary:
 	inferred   1 ROM(s).
@@ -461,22 +497,22 @@ Unit <cathode_encoder> synthesized.
 
 
 Synthesizing Unit <demux1_n>.
-    Related source file is "/home/sav/ASE/Carry_Look_A-head_Adder/demux1_n.vhd".
+    Related source file is "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/demux1_n.vhd".
 Unit <demux1_n> synthesized.
 
 
 Synthesizing Unit <Generator_G_P>.
-    Related source file is "/home/sav/ASE/Carry_Look_A-head_Adder/Generator_G_P.vhd".
+    Related source file is "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/Generator_G_P.vhd".
 Unit <Generator_G_P> synthesized.
 
 
 Synthesizing Unit <Carry_Look_A_head_r>.
-    Related source file is "/home/sav/ASE/Carry_Look_A-head_Adder/Carry_Look_A_head_r.vhd".
+    Related source file is "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/Carry_Look_A_head_r.vhd".
 Unit <Carry_Look_A_head_r> synthesized.
 
 
 Synthesizing Unit <display_on_board>.
-    Related source file is "/home/sav/ASE/Carry_Look_A-head_Adder/display_on_board.vhd".
+    Related source file is "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/display_on_board.vhd".
     Found 4-bit register for signal <dots_reg>.
     Found 4-bit register for signal <enable_reg>.
     Found 16-bit register for signal <value_reg>.
@@ -486,33 +522,33 @@ Unit <display_on_board> synthesized.
 
 
 Synthesizing Unit <cathode_manager>.
-    Related source file is "/home/sav/ASE/Carry_Look_A-head_Adder/cathode_manager.vhd".
+    Related source file is "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/cathode_manager.vhd".
 Unit <cathode_manager> synthesized.
 
 
 Synthesizing Unit <anode_manager>.
-    Related source file is "/home/sav/ASE/Carry_Look_A-head_Adder/anode_manager.vhd".
+    Related source file is "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/anode_manager.vhd".
 Unit <anode_manager> synthesized.
 
 
 Synthesizing Unit <Carry_Look_A_head_Adder>.
-    Related source file is "/home/sav/ASE/Carry_Look_A-head_Adder/Carry_Look_A_head_Adder.vhd".
+    Related source file is "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/Carry_Look_A_head_Adder.vhd".
     Found 8-bit xor2 for signal <sum>.
 Unit <Carry_Look_A_head_Adder> synthesized.
 
 
 Synthesizing Unit <display>.
-    Related source file is "/home/sav/ASE/Carry_Look_A-head_Adder/display.vhd".
+    Related source file is "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/display.vhd".
 Unit <display> synthesized.
 
 
 Synthesizing Unit <display_top_level>.
-    Related source file is "/home/sav/ASE/Carry_Look_A-head_Adder/display_top_level.vhd".
+    Related source file is "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/display_top_level.vhd".
 Unit <display_top_level> synthesized.
 
 
 Synthesizing Unit <tester_dispositivi>.
-    Related source file is "/home/sav/ASE/Carry_Look_A-head_Adder/tester_dispositivi.vhd".
+    Related source file is "/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/tester_dispositivi.vhd".
 WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <load_value> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <load_conf> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -957,15 +993,15 @@ Offset:              11.213ns (Levels of Logic = 8)
 =========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 3.45 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 3.30 secs
  
 --> 
 
 
-Total memory usage is 518132 kilobytes
+Total memory usage is 518164 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   32 (   0 filtered)
+Number of warnings :   68 (   0 filtered)
 Number of infos    :    3 (   0 filtered)
 

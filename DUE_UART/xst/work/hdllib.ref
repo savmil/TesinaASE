@@ -1,0 +1,4 @@
+EN due_uart NULL /media/sf_ASE/DUE_UART/due_uart.vhd sub00/vhpl02 1514298808
+EN rs232refcomp NULL /media/sf_ASE/DUE_UART/RS232RefComp.vhd sub00/vhpl00 1514298806
+AR rs232refcomp behavioral /media/sf_ASE/DUE_UART/RS232RefComp.vhd sub00/vhpl01 1514298807
+AR due_uart behavioral /media/sf_ASE/DUE_UART/due_uart.vhd sub00/vhpl03 1514298809

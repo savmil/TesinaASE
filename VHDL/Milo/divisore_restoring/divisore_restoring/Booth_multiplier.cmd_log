@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "/media/sf_ASE/VHDL/Milo/divisore_restoring/divisore_restoring/Booth_multiplier.xst" -ofn "/media/sf_ASE/VHDL/Milo/divisore_restoring/divisore_restoring/Booth_multiplier.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 Booth_multiplier.ngc Booth_multiplier.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Booth_multiplier_map.ncd Booth_multiplier.ngd Booth_multiplier.pcf 
+par -w -intstyle ise -ol high -mt off Booth_multiplier_map.ncd Booth_multiplier.ncd Booth_multiplier.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Booth_multiplier.twx Booth_multiplier.ncd -o Booth_multiplier.twr Booth_multiplier.pcf 
+bitgen -intstyle ise -f Booth_multiplier.ut Booth_multiplier.ncd 

@@ -1,0 +1,2 @@
+vhdl work "RS232RefComp.vhd"
+vhdl work "due_uart.vhd"

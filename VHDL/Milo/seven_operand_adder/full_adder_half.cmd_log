@@ -1,0 +1,1 @@
+vhdtdtfi -prj seven_operand_adder -o /media/sf_ASE/VHDL/Milo/seven_operand_adder/full_adder_half.vhi -module full_adder_half -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work half_adder.vhdl -lib work full_adder_half.vhdl 

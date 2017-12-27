@@ -1,0 +1,7 @@
+work	"Receiver.vhd"
+work	"Sender_receiver.vhd"
+work	"Transmitter.vhd"
+work	"boundary_scan_chain.vhd"
+work	"contatore_modulo_4.vhd"
+work	"edge_triggered_d_n.vhd"
+work	"mux2_1.vhd"

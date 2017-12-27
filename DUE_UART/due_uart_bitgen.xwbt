@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/media/sf_ASE/DUE_UART/due_uart.ncd
+OUTFILE=/media/sf_ASE/DUE_UART/due_uart.bit
+FAMILY=Spartan3E
+PART=xc3s250e-4tq144
+WORKINGDIR=/media/sf_ASE/DUE_UART
+LICENSE=WebPack
+USER_INFO=211407724_0_0_917

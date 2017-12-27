@@ -1,0 +1,3 @@
+vhdtdtfi -prj riconoscitore_stringa -o /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/riconoscitore_stringa.vhi -module riconoscitore_stringa -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work riconoscitore_stringa.vhd 
+vhdtdtfi -prj riconoscitore_stringa -o /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/riconoscitore_stringa.vhi -module riconoscitore_stringa -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work riconoscitore_stringa.vhd 
+vhdtdtfi -prj riconoscitore_stringa -o /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/riconoscitore_stringa.vhi -module riconoscitore_stringa -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work riconoscitore_stringa.vhd 

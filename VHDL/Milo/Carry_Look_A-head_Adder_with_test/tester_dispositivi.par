@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-debian::  Tue Nov 28 00:04:31 2017
+debian::  Tue Dec 26 15:31:38 2017
 
 par -w -intstyle ise -ol high -t 1 tester_dispositivi_map.ncd
 tester_dispositivi.ncd tester_dispositivi.pcf 
@@ -53,8 +53,8 @@ Placer effort level (-pl):    High
 Placer cost table entry (-t): 1
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 1 secs 
-Finished initial Timing Analysis.  REAL time: 1 secs 
+Starting initial Timing Analysis.  REAL time: 0 secs 
+Finished initial Timing Analysis.  REAL time: 0 secs 
 
 
 Starting Placer
@@ -62,13 +62,13 @@ Total REAL time at the beginning of Placer: 1 secs
 Total CPU  time at the beginning of Placer: 0 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:cbcb835) REAL time: 2 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:cbcb835) REAL time: 1 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:cbcb835) REAL time: 2 secs 
+Phase 2.7  Design Feasibility Check (Checksum:cbcb835) REAL time: 1 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:cbcb835) REAL time: 2 secs 
+Phase 3.31  Local Placement Optimization (Checksum:cbcb835) REAL time: 1 secs 
 
 Phase 4.2  Initial Clock and IO Placement
 
@@ -80,29 +80,29 @@ WARNING:Place:1019 - A clock IOB / clock component pair have been found that are
    allowing your design to continue. This constraint disables all clock placer rules related to the specified COMP.PIN.
    The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that
    this error condition be corrected in the design.
-Phase 4.2  Initial Clock and IO Placement (Checksum:10530b74) REAL time: 4 secs 
+Phase 4.2  Initial Clock and IO Placement (Checksum:10530b74) REAL time: 2 secs 
 
 Phase 5.30  Global Clock Region Assignment
-Phase 5.30  Global Clock Region Assignment (Checksum:10530b74) REAL time: 4 secs 
+Phase 5.30  Global Clock Region Assignment (Checksum:10530b74) REAL time: 2 secs 
 
 Phase 6.36  Local Placement Optimization
-Phase 6.36  Local Placement Optimization (Checksum:10530b74) REAL time: 4 secs 
+Phase 6.36  Local Placement Optimization (Checksum:10530b74) REAL time: 2 secs 
 
 Phase 7.8  Global Placement
 ..
 ..
-Phase 7.8  Global Placement (Checksum:206805b7) REAL time: 4 secs 
+Phase 7.8  Global Placement (Checksum:206805b7) REAL time: 2 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:206805b7) REAL time: 4 secs 
+Phase 8.5  Local Placement Optimization (Checksum:206805b7) REAL time: 2 secs 
 
 Phase 9.18  Placement Optimization
-Phase 9.18  Placement Optimization (Checksum:1fa33e72) REAL time: 5 secs 
+Phase 9.18  Placement Optimization (Checksum:1fa33e72) REAL time: 2 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:1fa33e72) REAL time: 5 secs 
+Phase 10.5  Local Placement Optimization (Checksum:1fa33e72) REAL time: 2 secs 
 
-Total REAL time to Placer completion: 5 secs 
+Total REAL time to Placer completion: 2 secs 
 Total CPU  time to Placer completion: 2 secs 
 Writing design to file tester_dispositivi.ncd
 
@@ -111,35 +111,35 @@ Writing design to file tester_dispositivi.ncd
 Starting Router
 
 
-Phase  1  : 340 unrouted;      REAL time: 6 secs 
+Phase  1  : 340 unrouted;      REAL time: 3 secs 
 
-Phase  2  : 302 unrouted;      REAL time: 6 secs 
+Phase  2  : 302 unrouted;      REAL time: 3 secs 
 
-Phase  3  : 59 unrouted;      REAL time: 6 secs 
+Phase  3  : 59 unrouted;      REAL time: 3 secs 
 
-Phase  4  : 63 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
+Phase  4  : 63 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
-
-Updating file: tester_dispositivi.ncd with current fully routed design.
-
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
-
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
 Updating file: tester_dispositivi.ncd with current fully routed design.
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
+Updating file: tester_dispositivi.ncd with current fully routed design.
 
-Phase 11  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
-Phase 12  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
-Total REAL time to Router completion: 8 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
+
+Phase 11  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
+
+Phase 12  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
+
+Total REAL time to Router completion: 4 secs 
 Total CPU time to Router completion: 3 secs 
 
 Partition Implementation Status
@@ -204,8 +204,8 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 8 secs 
-Total CPU time to PAR completion: 3 secs 
+Total REAL time to PAR completion: 4 secs 
+Total CPU time to PAR completion: 4 secs 
 
 Peak Memory Usage:  551 MB
 

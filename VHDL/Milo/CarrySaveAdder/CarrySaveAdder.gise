@@ -47,8 +47,12 @@
     <transform xil_pn:end_ts="1509829871" xil_pn:in_ck="-2676484812260086951" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1509829871">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="../../full_adder_half/full_adder_half.vhdl"/>
-      <outfile xil_pn:name="../../full_adder_half/half_adder.vhdl"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="../seven_operand_adder/full_adder_half.vhdl"/>
+      <outfile xil_pn:name="../seven_operand_adder/half_adder.vhdl"/>
       <outfile xil_pn:name="carry_save_adder.vhd"/>
       <outfile xil_pn:name="carry_save_adder_testbench.vhd"/>
       <outfile xil_pn:name="carry_save_cell.vhd"/>
@@ -68,8 +72,13 @@
     <transform xil_pn:end_ts="1509829871" xil_pn:in_ck="-2676484812260086951" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1509829871">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="../../full_adder_half/full_adder_half.vhdl"/>
-      <outfile xil_pn:name="../../full_adder_half/half_adder.vhdl"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="../seven_operand_adder/full_adder_half.vhdl"/>
+      <outfile xil_pn:name="../seven_operand_adder/half_adder.vhdl"/>
       <outfile xil_pn:name="carry_save_adder.vhd"/>
       <outfile xil_pn:name="carry_save_adder_testbench.vhd"/>
       <outfile xil_pn:name="carry_save_cell.vhd"/>
@@ -77,6 +86,9 @@
     <transform xil_pn:end_ts="1509829887" xil_pn:in_ck="-2676484812260086951" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="7101954634322309448" xil_pn:start_ts="1509829884">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="carry_save_adder_testbench_beh.prj"/>
       <outfile xil_pn:name="carry_save_adder_testbench_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
@@ -87,6 +99,7 @@
     <transform xil_pn:end_ts="1509829887" xil_pn:in_ck="3271910303768066841" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="518709783926245173" xil_pn:start_ts="1509829887">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="carry_save_adder_testbench_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>

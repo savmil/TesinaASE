@@ -1,0 +1,2 @@
+vhdtdtfi -prj UART -o /media/sf_ASE/VHDL/Milo/UART/counter_mod_2n.vhi -module counter_mod_2n -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work counter_mod_2n.vhd 
+vhdtdtfi -prj UART -o /media/sf_ASE/VHDL/Milo/UART/counter_mod_2n.vhi -module counter_mod_2n -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work counter_mod_2n.vhd 

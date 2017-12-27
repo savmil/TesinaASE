@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/media/sf_ASE/DUE_UART/due_uart_isim_beh.exe" -prj "/media/sf_ASE/DUE_UART/due_uart_beh.prj" "work.due_uart" 

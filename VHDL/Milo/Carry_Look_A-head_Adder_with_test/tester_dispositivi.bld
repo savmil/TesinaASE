@@ -5,8 +5,9 @@ Command Line: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -intstyle
 ise -dd _ngo -nt timestamp -uc BasysRevEGeneral.ucf -p xc3s100e-tq144-5
 tester_dispositivi.ngc tester_dispositivi.ngd
 
-Reading NGO file "/home/sav/ASE/Carry_Look_A-head_Adder/tester_dispositivi.ngc"
-...
+Reading NGO file
+"/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/tester_dispositivi.ng
+c" ...
 Gathering constraint information from source properties...
 Done.
 
@@ -28,10 +29,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 388300 kilobytes
+Total memory usage is 388304 kilobytes
 
 Writing NGD file "tester_dispositivi.ngd" ...
-Total REAL time to NGDBUILD completion:  4 sec
+Total REAL time to NGDBUILD completion:  2 sec
 Total CPU time to NGDBUILD completion:   1 sec
 
 Writing NGDBUILD log file "tester_dispositivi.bld"...
