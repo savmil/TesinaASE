@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="MacMultiplier.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="mac_multiplier.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="mac_multiplier.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="mac_multiplier.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="mac_multiplier.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="mac_multiplier.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="mac_multiplier.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="mac_multiplier.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="mac_multiplier.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="mac_multiplier.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="mac_multiplier.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="mac_multiplier.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="mac_multiplier.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="mac_multiplier.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="mac_multiplier.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="mac_multiplier.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="mac_multiplier.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="mac_multiplier.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="mac_multiplier.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="mac_multiplier.xst"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="mac_multiplier_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="mac_multiplier_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="mac_multiplier_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="mac_multiplier_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="mac_multiplier_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="mac_multiplier_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="mac_multiplier_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="mac_multiplier_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="mac_multiplier_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="mac_multiplier_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="mac_multiplier_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="mac_multiplier_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="mac_multiplier_usage.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="mac_multiplier_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="mac_multiplier_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_mac_multiplier_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1514417270" xil_pn:in_ck="3539150639413325007" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1514417270">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="full_adder.vhd"/>
+      <outfile xil_pn:name="half_adder.vhd"/>
+      <outfile xil_pn:name="mac_cell.vhd"/>
+      <outfile xil_pn:name="mac_multiplier.vhd"/>
+      <outfile xil_pn:name="tb_mac_multiplier.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1514417279" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1514417279">
+      <status xil_pn:value="SuccessfullyRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1514417279" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-7518491684772852904" xil_pn:start_ts="1514417279">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1514417279" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="1207321727497235255" xil_pn:start_ts="1514417279">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1514417279" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1514417279">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1514417279" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="7709944818651094806" xil_pn:start_ts="1514417279">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1514417279" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="2988080280842703814" xil_pn:start_ts="1514417279">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1514417279" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-3374054390133829311" xil_pn:start_ts="1514417279">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1514417303" xil_pn:in_ck="-5621417676091983085" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="4085298716918504264" xil_pn:start_ts="1514417279">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="mac_multiplier.lso"/>
+      <outfile xil_pn:name="mac_multiplier.ngc"/>
+      <outfile xil_pn:name="mac_multiplier.ngr"/>
+      <outfile xil_pn:name="mac_multiplier.prj"/>
+      <outfile xil_pn:name="mac_multiplier.stx"/>
+      <outfile xil_pn:name="mac_multiplier.syr"/>
+      <outfile xil_pn:name="mac_multiplier.xst"/>
+      <outfile xil_pn:name="mac_multiplier_vhdl.prj"/>
+      <outfile xil_pn:name="mac_multiplier_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1514417438" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-2120838044961955189" xil_pn:start_ts="1514417438">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1514417460" xil_pn:in_ck="9153639414821466109" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="6016792637479955332" xil_pn:start_ts="1514417438">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="mac_multiplier.bld"/>
+      <outfile xil_pn:name="mac_multiplier.ngd"/>
+      <outfile xil_pn:name="mac_multiplier_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1514417481" xil_pn:in_ck="9153639414821466110" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-6349267131326700252" xil_pn:start_ts="1514417460">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="mac_multiplier.pcf"/>
+      <outfile xil_pn:name="mac_multiplier_map.map"/>
+      <outfile xil_pn:name="mac_multiplier_map.mrp"/>
+      <outfile xil_pn:name="mac_multiplier_map.ncd"/>
+      <outfile xil_pn:name="mac_multiplier_map.ngm"/>
+      <outfile xil_pn:name="mac_multiplier_map.xrpt"/>
+      <outfile xil_pn:name="mac_multiplier_summary.xml"/>
+      <outfile xil_pn:name="mac_multiplier_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1514417511" xil_pn:in_ck="8596202198897741335" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="1934304854298957634" xil_pn:start_ts="1514417481">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="mac_multiplier.ncd"/>
+      <outfile xil_pn:name="mac_multiplier.pad"/>
+      <outfile xil_pn:name="mac_multiplier.par"/>
+      <outfile xil_pn:name="mac_multiplier.ptwx"/>
+      <outfile xil_pn:name="mac_multiplier.unroutes"/>
+      <outfile xil_pn:name="mac_multiplier.xpi"/>
+      <outfile xil_pn:name="mac_multiplier_pad.csv"/>
+      <outfile xil_pn:name="mac_multiplier_pad.txt"/>
+      <outfile xil_pn:name="mac_multiplier_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1514417511" xil_pn:in_ck="9153639414821465978" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1514417502">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="mac_multiplier.twr"/>
+      <outfile xil_pn:name="mac_multiplier.twx"/>
+    </transform>
+  </transforms>
+
+</generated_project>

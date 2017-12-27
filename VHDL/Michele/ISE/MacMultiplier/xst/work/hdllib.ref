@@ -1,0 +1,8 @@
+AR half_adder dataflow C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/MacMultiplier/half_adder.vhd sub00/vhpl01 1514417287
+AR mac_cell structural C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/MacMultiplier/mac_cell.vhd sub00/vhpl05 1514417291
+EN half_adder NULL C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/MacMultiplier/half_adder.vhd sub00/vhpl00 1514417286
+AR mac_multiplier structural C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/MacMultiplier/mac_multiplier.vhd sub00/vhpl07 1514417293
+EN mac_cell NULL C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/MacMultiplier/mac_cell.vhd sub00/vhpl04 1514417290
+EN mac_multiplier NULL C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/MacMultiplier/mac_multiplier.vhd sub00/vhpl06 1514417292
+EN full_adder NULL C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/MacMultiplier/full_adder.vhd sub00/vhpl02 1514417288
+AR full_adder structural C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/MacMultiplier/full_adder.vhd sub00/vhpl03 1514417289
