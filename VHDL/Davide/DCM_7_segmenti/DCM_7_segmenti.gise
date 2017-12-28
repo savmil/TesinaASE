@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="DCM_7_segmenti.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="anodes_manager.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="anodes_manager.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="anodes_manager.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="anodes_manager.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="anodes_manager.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="anodes_manager.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="anodes_manager.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="anodes_manager.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="anodes_manager_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="anodes_manager_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="anodes_manager_testbench_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="anodes_manager_testbench_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="anodes_manager_testbench_isim_beh.wdb"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="anodes_manager_testbench_stx_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="anodes_manager_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="anodes_manager_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="cathode_manager.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="cathode_manager.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="cathode_manager.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="cathode_manager.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="cathode_manager.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="cathode_manager.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="cathode_manager.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="cathode_manager.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="cathode_manager_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="cathode_manager_summary.html"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="cathode_manager_testbench_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="cathode_manager_testbench_stx_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="cathode_manager_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="cathode_manager_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="clock_filter.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="clock_filter.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="clock_filter.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="counter_mod_2n.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="counter_mod_2n.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="counter_mod_2n.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="counter_mod_2n.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="counter_mod_2n.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="counter_mod_2n.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="counter_mod_2n.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="counter_mod_2n.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="counter_mod_2n.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="counter_mod_2n.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="counter_mod_2n.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="counter_mod_2n.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="counter_mod_2n.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="counter_mod_2n.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="counter_mod_2n.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="counter_mod_2n.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="counter_mod_2n.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="counter_mod_2n.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="counter_mod_2n.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="counter_mod_2n_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="counter_mod_2n_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="counter_mod_2n_isim_par.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="counter_mod_2n_isim_par.wdb"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="counter_mod_2n_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="counter_mod_2n_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="counter_mod_2n_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="counter_mod_2n_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="counter_mod_2n_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="counter_mod_2n_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="counter_mod_2n_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="counter_mod_2n_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="counter_mod_2n_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="counter_mod_2n_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="counter_mod_2n_summary.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="counter_mod_2n_testbench_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="counter_mod_2n_testbench_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="counter_mod_2n_testbench_isim_beh.wdb"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="counter_mod_2n_testbench_par.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="counter_mod_2n_testbench_stx_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="counter_mod_2n_testbench_translate.prj"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="counter_mod_2n_usage.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="counter_mod_2n_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="counter_mod_2n_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_VHDL" xil_pn:name="dcm.vhd">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="BehavioralSim"/>
+    </file>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="dcm.vhi"/>
+    <file xil_pn:fileType="FILE_UCF" xil_pn:name="dcm_arwz.ucf" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="display.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="display.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="display.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="display.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="display.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="display.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="display.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="display.xst"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="display_on_board.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="display_on_board.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="display_on_board.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="display_on_board.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="display_on_board.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="display_on_board.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="display_on_board.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="display_on_board.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="display_on_board_testbench_isim_beh.exe"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="display_on_board_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="display_on_board_xst.xrpt"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="display_testbench_isim_beh.exe"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="display_top_level.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="display_top_level.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="display_top_level.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="display_top_level.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="display_top_level.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="display_top_level.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="display_top_level.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="display_top_level.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="display_top_level.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="display_top_level.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="display_top_level.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="display_top_level.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="display_top_level.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="display_top_level.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="display_top_level.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="display_top_level.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="display_top_level.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="display_top_level.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="display_top_level.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="display_top_level.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="display_top_level.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="display_top_level.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="display_top_level.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="display_top_level_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="display_top_level_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="display_top_level_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="display_top_level_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="display_top_level_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="display_top_level_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="display_top_level_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="display_top_level_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="display_top_level_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="display_top_level_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="display_top_level_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="display_top_level_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="display_top_level_summary.xml"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="display_top_level_testbench_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="display_top_level_testbench_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="display_top_level_testbench_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="display_top_level_usage.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="display_top_level_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="display_top_level_xst.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="display_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="display_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="edge_triggered_d_n.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="edge_triggered_d_n.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="edge_triggered_d_n.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="edge_triggered_d_n.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="edge_triggered_d_n.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="edge_triggered_d_n.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="edge_triggered_d_n.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="edge_triggered_d_n.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="edge_triggered_d_n_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="edge_triggered_d_n_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="ipcore_dir/coregen.log"/>
+    <file xil_pn:fileType="FILE_VHDL" xil_pn:name="ipcore_dir/dcm.vhd" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd">
+      <branch xil_pn:name="BehavioralSim"/>
+      <branch xil_pn:name="PostRouteSimulation"/>
+    </file>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="netgen"/>
+    <file xil_pn:branch="PostMapSimulation" xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/map/counter_mod_2n_map.nlf"/>
+    <file xil_pn:branch="PostMapSimulation" xil_pn:fileType="FILE_SDF" xil_pn:name="netgen/map/counter_mod_2n_map.sdf"/>
+    <file xil_pn:branch="PostMapSimulation" xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/map/counter_mod_2n_map.vhd"/>
+    <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/par/counter_mod_2n_timesim.nlf"/>
+    <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_SDF" xil_pn:name="netgen/par/counter_mod_2n_timesim.sdf"/>
+    <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/par/counter_mod_2n_timesim.vhd"/>
+    <file xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/synthesis/anodes_manager_synthesis.nlf"/>
+    <file xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/synthesis/anodes_manager_synthesis.vhd"/>
+    <file xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/synthesis/cathode_manager_synthesis.nlf"/>
+    <file xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/synthesis/cathode_manager_synthesis.vhd"/>
+    <file xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/synthesis/counter_mod_2n_synthesis.nlf"/>
+    <file xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/synthesis/counter_mod_2n_synthesis.vhd"/>
+    <file xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/synthesis/display_on_board_synthesis.nlf"/>
+    <file xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/synthesis/display_on_board_synthesis.vhd"/>
+    <file xil_pn:branch="PostSynthSim" xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/synthesis/display_synthesis.nlf"/>
+    <file xil_pn:branch="PostSynthSim" xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/synthesis/display_synthesis.vhd"/>
+    <file xil_pn:branch="PostSynthSim" xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/synthesis/display_top_level_synthesis.nlf"/>
+    <file xil_pn:branch="PostSynthSim" xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/synthesis/display_top_level_synthesis.vhd"/>
+    <file xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/synthesis/edge_triggered_d_n_synthesis.nlf"/>
+    <file xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/synthesis/edge_triggered_d_n_synthesis.vhd"/>
+    <file xil_pn:branch="PostTranslateSimulation" xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/translate/counter_mod_2n_translate.nlf"/>
+    <file xil_pn:branch="PostTranslateSimulation" xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/translate/counter_mod_2n_translate.vhd"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="xaw2vhdl.log"/>
+    <file xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini">
+      <branch xil_pn:name="BehavioralSim"/>
+      <branch xil_pn:name="PostRouteSimulation"/>
+    </file>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1510522539" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1510522539">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1514471979" xil_pn:in_ck="-4466954381074945552" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1514471979">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="anodes_manager.vhd"/>
+      <outfile xil_pn:name="anodes_manager_testbench.vhd"/>
+      <outfile xil_pn:name="cathode_encoder.vhd"/>
+      <outfile xil_pn:name="cathode_manager.vhd"/>
+      <outfile xil_pn:name="cathode_manager_testbench.vhd"/>
+      <outfile xil_pn:name="clock_filter.vhd"/>
+      <outfile xil_pn:name="counter_mod_2n.vhd"/>
+      <outfile xil_pn:name="counter_mod_2n_testbench.vhd"/>
+      <outfile xil_pn:name="demux1_n.vhd"/>
+      <outfile xil_pn:name="display.vhd"/>
+      <outfile xil_pn:name="display_on_board.vhd"/>
+      <outfile xil_pn:name="display_on_board_testbench.vhd"/>
+      <outfile xil_pn:name="display_testbench.vhd"/>
+      <outfile xil_pn:name="display_top_level.vhd"/>
+      <outfile xil_pn:name="display_top_level_testbench.vhd"/>
+      <outfile xil_pn:name="edge_triggered_d_n.vhd"/>
+      <outfile xil_pn:name="muxn_1.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1514471979" xil_pn:in_ck="-7186897585538331039" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-3937094518978035436" xil_pn:start_ts="1514471979">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="dcm.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1514471979" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="2348693736675781654" xil_pn:start_ts="1514471979">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1514471979" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="6518660652352134879" xil_pn:start_ts="1514471979">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1514471979" xil_pn:in_ck="-1112105849517375468" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1514471979">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="anodes_manager.vhd"/>
+      <outfile xil_pn:name="anodes_manager_testbench.vhd"/>
+      <outfile xil_pn:name="cathode_encoder.vhd"/>
+      <outfile xil_pn:name="cathode_manager.vhd"/>
+      <outfile xil_pn:name="cathode_manager_testbench.vhd"/>
+      <outfile xil_pn:name="clock_filter.vhd"/>
+      <outfile xil_pn:name="counter_mod_2n.vhd"/>
+      <outfile xil_pn:name="counter_mod_2n_testbench.vhd"/>
+      <outfile xil_pn:name="dcm.vhd"/>
+      <outfile xil_pn:name="demux1_n.vhd"/>
+      <outfile xil_pn:name="display.vhd"/>
+      <outfile xil_pn:name="display_on_board.vhd"/>
+      <outfile xil_pn:name="display_on_board_testbench.vhd"/>
+      <outfile xil_pn:name="display_testbench.vhd"/>
+      <outfile xil_pn:name="display_top_level.vhd"/>
+      <outfile xil_pn:name="display_top_level_testbench.vhd"/>
+      <outfile xil_pn:name="edge_triggered_d_n.vhd"/>
+      <outfile xil_pn:name="muxn_1.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1514471990" xil_pn:in_ck="-1112105849517375468" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-8082372478255634422" xil_pn:start_ts="1514471979">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="display_top_level_testbench_beh.prj"/>
+      <outfile xil_pn:name="display_top_level_testbench_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1514471991" xil_pn:in_ck="1389286028752239046" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-4320068331860040905" xil_pn:start_ts="1514471990">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="display_top_level_testbench_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
+    <transform xil_pn:end_ts="1510526276" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1510526276">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1514471967" xil_pn:in_ck="-7926730541359275042" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="5113224893043737331" xil_pn:start_ts="1514471967">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+    <transform xil_pn:end_ts="1510576202" xil_pn:name="TRAN_copyPost-ParAbstractToPreSimulation" xil_pn:start_ts="1510576201">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="counter_mod_2n_testbench.vhd"/>
+      <outfile xil_pn:name="netgen/par/counter_mod_2n_timesim.sdf"/>
+      <outfile xil_pn:name="netgen/par/counter_mod_2n_timesim.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1510576205" xil_pn:name="TRAN_ISimulatePostPlace&amp;RouteModelRunFuse" xil_pn:start_ts="1510576202">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
+    </transform>
+    <transform xil_pn:end_ts="1510529350" xil_pn:name="TRAN_ISimulatePostPlace&amp;RouteModel" xil_pn:start_ts="1510529349">
+      <status xil_pn:value="AbortedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutOfDateForced"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="counter_mod_2n_isim_par.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+    </transform>
+    <transform xil_pn:end_ts="1510529320" xil_pn:name="TRAN_copyPost-TranslateAbstractToPreSimulation" xil_pn:start_ts="1510529320">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="counter_mod_2n_testbench.vhd"/>
+      <outfile xil_pn:name="netgen/translate/counter_mod_2n_translate.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1510529322" xil_pn:name="TRAN_ISimulatePostTranslateModelRunFuse" xil_pn:start_ts="1510529320">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
+    </transform>
+  </transforms>
+
+</generated_project>

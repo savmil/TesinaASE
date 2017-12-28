@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/anodes_manager.xst" -ofn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/anodes_manager.syr" 
+xst -intstyle ise -ifn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/anodes_manager.xst" -ofn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/anodes_manager.syr" 
+netgen -intstyle ise -ar Structure -tm anodes_manager -w -dir netgen/synthesis -ofmt vhdl -sim anodes_manager.ngc anodes_manager_synthesis.vhd 
+xst -intstyle ise -ifn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/anodes_manager.xst" -ofn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/anodes_manager.syr" 
+xst -intstyle ise -ifn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/anodes_manager.xst" -ofn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/anodes_manager.syr" 
+xst -intstyle ise -ifn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/anodes_manager.xst" -ofn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/anodes_manager.syr" 

@@ -1,0 +1,5 @@
+set -tmpdir "C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/xst/projnav.tmp"
+set -xsthdpdir "C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/xst"
+elaborate
+-ifn cathode_manager.prj
+-ifmt mixed

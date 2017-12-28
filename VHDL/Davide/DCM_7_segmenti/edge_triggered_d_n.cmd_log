@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/edge_triggered_d_n.xst" -ofn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/edge_triggered_d_n.syr" 
+netgen -intstyle ise -ar Structure -tm edge_triggered_d_n -w -dir netgen/synthesis -ofmt vhdl -sim edge_triggered_d_n.ngc edge_triggered_d_n_synthesis.vhd 

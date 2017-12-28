@@ -1,0 +1,391 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: display_on_board.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "display_on_board.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "display_on_board"
+Output Format                      : NGC
+Target Device                      : xc3s100e-5-vq100
+
+---- Source Options
+Top Module Name                    : display_on_board
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/edge_triggered_d_n.vhd" in Library work.
+Entity <edge_triggered_d_n> compiled.
+Entity <edge_triggered_d_n> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/display_on_board.vhd" in Library work.
+Entity <display_on_board> compiled.
+Entity <display_on_board> (Architecture <structural>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <display_on_board> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <edge_triggered_d_n> in library <work> (architecture <behavioral>) with generics.
+	width = 16
+
+Analyzing hierarchy for entity <edge_triggered_d_n> in library <work> (architecture <behavioral>) with generics.
+	width = 4
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <display_on_board> in library <work> (Architecture <structural>).
+Entity <display_on_board> analyzed. Unit <display_on_board> generated.
+
+Analyzing generic Entity <edge_triggered_d_n.1> in library <work> (Architecture <behavioral>).
+	width = 16
+Entity <edge_triggered_d_n.1> analyzed. Unit <edge_triggered_d_n.1> generated.
+
+Analyzing generic Entity <edge_triggered_d_n.2> in library <work> (Architecture <behavioral>).
+	width = 4
+Entity <edge_triggered_d_n.2> analyzed. Unit <edge_triggered_d_n.2> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <edge_triggered_d_n_1>.
+    Related source file is "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/edge_triggered_d_n.vhd".
+    Found 16-bit register for signal <q>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+Unit <edge_triggered_d_n_1> synthesized.
+
+
+Synthesizing Unit <edge_triggered_d_n_2>.
+    Related source file is "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/edge_triggered_d_n.vhd".
+    Found 4-bit register for signal <q>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <edge_triggered_d_n_2> synthesized.
+
+
+Synthesizing Unit <display_on_board>.
+    Related source file is "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/display_on_board.vhd".
+    Found 4-bit register for signal <dots_reg>.
+    Found 4-bit register for signal <enable_reg>.
+    Found 16-bit register for signal <value_reg>.
+    Summary:
+	inferred  24 D-type flip-flop(s).
+Unit <display_on_board> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 21
+ 1-bit register                                        : 16
+ 16-bit register                                       : 1
+ 4-bit register                                        : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 48
+ Flip-Flops                                            : 48
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <display_on_board> ...
+
+Optimizing unit <edge_triggered_d_n_1> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block display_on_board, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 48
+ Flip-Flops                                            : 48
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : display_on_board.ngr
+Top Level Output File Name         : display_on_board
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 37
+
+Cell Usage :
+# BELS                             : 10
+#      INV                         : 8
+#      LUT2                        : 1
+#      LUT3                        : 1
+# FlipFlops/Latches                : 48
+#      FDC                         : 24
+#      FDCE                        : 24
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 36
+#      IBUF                        : 12
+#      OBUF                        : 24
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100evq100-5 
+
+ Number of Slices:                       28  out of    960     2%  
+ Number of Slice Flip Flops:             48  out of   1920     2%  
+ Number of 4 input LUTs:                 10  out of   1920     0%  
+ Number of IOs:                          37
+ Number of bonded IOBs:                  37  out of     66    56%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clock                              | BUFGP                  | 48    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 48    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 1.139ns (Maximum Frequency: 877.963MHz)
+   Minimum input arrival time before clock: 3.746ns
+   Maximum output required time after clock: 5.009ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 1.139ns (frequency: 877.963MHz)
+  Total number of paths / destination ports: 24 / 24
+-------------------------------------------------------------------------
+Delay:               1.139ns (Levels of Logic = 0)
+  Source:            enable_reg_3 (FF)
+  Destination:       inst_edge_triggered_enable/q_3 (FF)
+  Source Clock:      clock rising
+  Destination Clock: clock rising
+
+  Data Path: enable_reg_3 to inst_edge_triggered_enable/q_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             1   0.514   0.357  enable_reg_3 (enable_reg_3)
+     FDC:D                     0.268          inst_edge_triggered_enable/q_3
+    ----------------------------------------
+    Total                      1.139ns (0.782ns logic, 0.357ns route)
+                                       (68.7% logic, 31.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
+  Total number of paths / destination ports: 72 / 48
+-------------------------------------------------------------------------
+Offset:              3.746ns (Levels of Logic = 2)
+  Source:            load_dots_enable (PAD)
+  Destination:       value_reg_11 (FF)
+  Destination Clock: clock rising
+
+  Data Path: load_dots_enable to value_reg_11
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            10   1.106   0.902  load_dots_enable_IBUF (load_dots_enable_IBUF)
+     LUT2:I0->O            8   0.612   0.643  value_reg_9_not00011 (value_reg_9_not0001)
+     FDCE:CE                   0.483          value_reg_11
+    ----------------------------------------
+    Total                      3.746ns (2.201ns logic, 1.545ns route)
+                                       (58.8% logic, 41.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
+  Total number of paths / destination ports: 24 / 24
+-------------------------------------------------------------------------
+Offset:              5.009ns (Levels of Logic = 2)
+  Source:            inst_edge_triggered_enable/q_3 (FF)
+  Destination:       enable<3> (PAD)
+  Source Clock:      clock rising
+
+  Data Path: inst_edge_triggered_enable/q_3 to enable<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.514   0.357  inst_edge_triggered_enable/q_3 (inst_edge_triggered_enable/q_3)
+     INV:I->O              1   0.612   0.357  enable<3>1_INV_0 (enable_3_OBUF)
+     OBUF:I->O                 3.169          enable_3_OBUF (enable<3>)
+    ----------------------------------------
+    Total                      5.009ns (4.295ns logic, 0.714ns route)
+                                       (85.7% logic, 14.3% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.43 secs
+ 
+--> 
+
+Total memory usage is 257068 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

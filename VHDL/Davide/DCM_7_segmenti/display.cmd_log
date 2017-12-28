@@ -1,0 +1,15 @@
+xst -intstyle ise -ifn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/display.xst" -ofn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/display.syr" 
+xst -intstyle ise -ifn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/display.xst" -ofn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/display.syr" 
+xst -intstyle ise -ifn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/display.xst" -ofn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/display.syr" 
+xst -intstyle ise -ifn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/display.xst" -ofn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/display.syr" 
+xst -intstyle ise -ifn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/display.xst" -ofn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/display.syr" 
+xst -intstyle ise -ifn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/display.xst" -ofn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/display.syr" 
+netgen -intstyle ise -ar Structure -tm display -w -dir netgen/synthesis -ofmt vhdl -sim display.ngc display_synthesis.vhd 
+xst -intstyle ise -ifn "C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/display.xst" -ofn "C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/display.syr" 
+xst -intstyle ise -ifn "C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/display.xst" -ofn "C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/display.syr" 
+xst -intstyle ise -ifn "C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/display.xst" -ofn "C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/display.syr" 
+xst -intstyle ise -ifn "C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/display.xst" -ofn "C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/display.syr" 
+netgen -intstyle ise -ar Structure -tm display -w -dir netgen/synthesis -ofmt vhdl -sim display.ngc display_synthesis.vhd 
+xst -intstyle ise -ifn "C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/display.xst" -ofn "C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/display.syr" 
+xst -intstyle ise -ifn "C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/display.xst" -ofn "C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/display.syr" 
+xst -intstyle ise -ifn "C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/display.xst" -ofn "C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/display.syr" 

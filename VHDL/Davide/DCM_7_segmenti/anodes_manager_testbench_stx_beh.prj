@@ -1,0 +1,4 @@
+vhdl isim_temp "../../VHDL/multiplexer-demultiplexer/MuxNx1/muxn_1.vhd"
+vhdl isim_temp "../../VHDL/multiplexer-demultiplexer/Demux1xN/demux1_n.vhd"
+vhdl isim_temp "anodes_manager.vhd"
+vhdl isim_temp "anodes_manager_testbench.vhd"

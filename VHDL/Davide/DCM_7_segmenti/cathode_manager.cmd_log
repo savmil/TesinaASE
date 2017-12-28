@@ -1,0 +1,9 @@
+xst -intstyle ise -ifn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/cathode_manager.xst" -ofn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/cathode_manager.syr" 
+xst -intstyle ise -ifn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/cathode_manager.xst" -ofn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/cathode_manager.syr" 
+xst -intstyle ise -ifn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/cathode_manager.xst" -ofn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/cathode_manager.syr" 
+xst -intstyle ise -ifn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/cathode_manager.xst" -ofn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/cathode_manager.syr" 
+xst -intstyle ise -ifn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/cathode_manager.xst" -ofn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/cathode_manager.syr" 
+netgen -intstyle ise -ar Structure -tm cathode_manager -w -dir netgen/synthesis -ofmt vhdl -sim cathode_manager.ngc cathode_manager_synthesis.vhd 
+xst -intstyle ise -ifn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/cathode_manager.xst" -ofn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/cathode_manager.syr" 
+xst -intstyle ise -ifn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/cathode_manager.xst" -ofn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/cathode_manager.syr" 
+netgen -intstyle ise -ar Structure -tm cathode_manager -w -dir netgen/synthesis -ofmt vhdl -sim cathode_manager.ngc cathode_manager_synthesis.vhd 

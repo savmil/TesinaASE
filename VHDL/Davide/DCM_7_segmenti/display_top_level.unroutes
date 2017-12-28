@@ -1,0 +1,99 @@
+Release 14.7 - par P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Thu Dec 28 15:54:10 2017
+
+88 signals are not completely routed.
+
+WARNING:ParHelpers:360 - Design is not completely routed.
+
+   GLOBAL_LOGIC0
+   GLOBAL_LOGIC1
+   Inst_dcm/CLK0_BUF
+   Inst_dcm/CLKFB_IN
+   Inst_dcm/CLKFX_BUF
+   Inst_dcm/CLKIN_IBUFG
+   anodes_0_OBUF
+   anodes_1_OBUF
+   anodes_2_OBUF
+   anodes_3_OBUF
+   cathodes_0_OBUF
+   cathodes_1_OBUF
+   cathodes_2_OBUF
+   cathodes_3_OBUF
+   cathodes_4_OBUF
+   cathodes_5_OBUF
+   cathodes_6_OBUF
+   cathodes_7_OBUF
+   clkfx
+   in_byte_0_IBUF
+   in_byte_1_IBUF
+   in_byte_2_IBUF
+   in_byte_3_IBUF
+   in_byte_4_IBUF
+   in_byte_5_IBUF
+   in_byte_6_IBUF
+   in_byte_7_IBUF
+   inst_display/inst_anode_manager/enable
+   inst_display/inst_cathode_manager/nibble<0>
+   inst_display/inst_cathode_manager/nibble<1>
+   inst_display/inst_cathode_manager/nibble<2>
+   inst_display/inst_cathode_manager/nibble<3>
+   inst_display/inst_counter/count<0>
+   inst_display/inst_counter/count<1>
+   inst_display/inst_counter/reset_n_inv
+   inst_on_board/dots_reg<0>
+   inst_on_board/dots_reg<1>
+   inst_on_board/dots_reg<2>
+   inst_on_board/dots_reg<3>
+   inst_on_board/enable_reg<0>
+   inst_on_board/enable_reg<1>
+   inst_on_board/enable_reg<2>
+   inst_on_board/enable_reg<3>
+   inst_on_board/inst_edge_triggered_dots/q<0>
+   inst_on_board/inst_edge_triggered_dots/q<1>
+   inst_on_board/inst_edge_triggered_dots/q<2>
+   inst_on_board/inst_edge_triggered_dots/q<3>
+   inst_on_board/inst_edge_triggered_enable/q<0>
+   inst_on_board/inst_edge_triggered_enable/q<1>
+   inst_on_board/inst_edge_triggered_enable/q<2>
+   inst_on_board/inst_edge_triggered_enable/q<3>
+   inst_on_board/inst_edge_triggered_value/q<0>
+   inst_on_board/inst_edge_triggered_value/q<10>
+   inst_on_board/inst_edge_triggered_value/q<11>
+   inst_on_board/inst_edge_triggered_value/q<12>
+   inst_on_board/inst_edge_triggered_value/q<13>
+   inst_on_board/inst_edge_triggered_value/q<14>
+   inst_on_board/inst_edge_triggered_value/q<15>
+   inst_on_board/inst_edge_triggered_value/q<1>
+   inst_on_board/inst_edge_triggered_value/q<2>
+   inst_on_board/inst_edge_triggered_value/q<3>
+   inst_on_board/inst_edge_triggered_value/q<4>
+   inst_on_board/inst_edge_triggered_value/q<5>
+   inst_on_board/inst_edge_triggered_value/q<6>
+   inst_on_board/inst_edge_triggered_value/q<7>
+   inst_on_board/inst_edge_triggered_value/q<8>
+   inst_on_board/inst_edge_triggered_value/q<9>
+   inst_on_board/value_reg<0>
+   inst_on_board/value_reg<10>
+   inst_on_board/value_reg<11>
+   inst_on_board/value_reg<12>
+   inst_on_board/value_reg<13>
+   inst_on_board/value_reg<14>
+   inst_on_board/value_reg<15>
+   inst_on_board/value_reg<1>
+   inst_on_board/value_reg<2>
+   inst_on_board/value_reg<3>
+   inst_on_board/value_reg<4>
+   inst_on_board/value_reg<5>
+   inst_on_board/value_reg<6>
+   inst_on_board/value_reg<7>
+   inst_on_board/value_reg<8>
+   inst_on_board/value_reg<9>
+   inst_on_board/value_reg_0_not0001
+   inst_on_board/value_reg_9_not0001
+   load_dots_enable_IBUF
+   load_lsb_value_IBUF
+   load_msb_value_IBUF
+
+

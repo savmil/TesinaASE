@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/display_top_level_testbench_isim_beh.exe" -prj "C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/display_top_level_testbench_beh.prj" "work.display_top_level_testbench" 

@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/display_on_board.xst" -ofn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/display_on_board.syr" 
+netgen -intstyle ise -ar Structure -tm display_on_board -w -dir netgen/synthesis -ofmt vhdl -sim display_on_board.ngc display_on_board_synthesis.vhd 
+xst -intstyle ise -ifn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/display_on_board.xst" -ofn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/display_on_board.syr" 
+xst -intstyle ise -ifn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/display_on_board.xst" -ofn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/display_on_board.syr" 
+xst -intstyle ise -ifn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/display_on_board.xst" -ofn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/display_on_board.syr" 
+xst -intstyle ise -ifn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/display_on_board.xst" -ofn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/display_on_board.syr" 
+xst -intstyle ise -ifn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/display_on_board.xst" -ofn "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/display_on_board.syr" 
+netgen -intstyle ise -ar Structure -tm display_on_board -w -dir netgen/synthesis -ofmt vhdl -sim display_on_board.ngc display_on_board_synthesis.vhd 

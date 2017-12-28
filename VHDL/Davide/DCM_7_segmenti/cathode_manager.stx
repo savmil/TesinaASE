@@ -1,0 +1,44 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.39 secs
+ 
+--> Parameter xsthdpdir set to C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.39 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+WARNING:HDLParsers:3607 - Unit work/cathode_manager is now defined in a different file.  It was defined in "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/cathode_manager.vhd", and is now defined in "C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/cathode_manager.vhd".
+WARNING:HDLParsers:3607 - Unit work/cathode_manager/Structural is now defined in a different file.  It was defined in "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/cathode_manager.vhd", and is now defined in "C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/cathode_manager.vhd".
+WARNING:HDLParsers:3607 - Unit work/cathode_encoder is now defined in a different file.  It was defined in "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/cathode_encoder.vhd", and is now defined in "C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/cathode_encoder.vhd".
+WARNING:HDLParsers:3607 - Unit work/cathode_encoder/Behavioral is now defined in a different file.  It was defined in "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/cathode_encoder.vhd", and is now defined in "C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/cathode_encoder.vhd".
+WARNING:HDLParsers:3607 - Unit work/muxn_1 is now defined in a different file.  It was defined in "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/muxn_1.vhd", and is now defined in "C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/muxn_1.vhd".
+WARNING:HDLParsers:3607 - Unit work/muxn_1/dataflow is now defined in a different file.  It was defined in "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/muxn_1.vhd", and is now defined in "C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/muxn_1.vhd".
+Compiling vhdl file "C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/muxn_1.vhd" in Library work.
+Architecture dataflow of Entity muxn_1 is up to date.
+Compiling vhdl file "C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/cathode_encoder.vhd" in Library work.
+Architecture behavioral of Entity cathode_encoder is up to date.
+Compiling vhdl file "C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/cathode_manager.vhd" in Library work.
+Architecture structural of Entity cathode_manager is up to date.
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 1.11 secs
+ 
+--> 
+
+Total memory usage is 212992 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    7 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

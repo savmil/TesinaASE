@@ -1,0 +1,4 @@
+vhdl work "../../VHDL/multiplexer-demultiplexer/MuxNx1/muxn_1.vhd"
+vhdl work "../../VHDL/multiplexer-demultiplexer/Demux1xN/demux1_n.vhd"
+vhdl work "anodes_manager.vhd"
+vhdl work "anodes_manager_testbench.vhd"

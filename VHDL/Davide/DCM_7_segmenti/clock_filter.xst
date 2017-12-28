@@ -1,0 +1,5 @@
+set -tmpdir "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/xst/projnav.tmp"
+set -xsthdpdir "C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/xst"
+elaborate
+-ifn clock_filter.prj
+-ifmt mixed
