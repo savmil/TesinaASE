@@ -1,0 +1,20 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/DAVIDE/ASE/Esercizi/ISE/GPIO/gpio_testbench_isim_beh.exe -prj C:/DAVIDE/ASE/Esercizi/ISE/GPIO/gpio_testbench_beh.prj work.gpio_testbench 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/DAVIDE/ASE/Esercizi/ISE/GPIO/pad.vhd" into library work
+Parsing VHDL file "C:/DAVIDE/ASE/Esercizi/ISE/GPIO/gpio.vhd" into library work
+Parsing VHDL file "C:/DAVIDE/ASE/Esercizi/ISE/GPIO/gpio_testbench.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture behavioral of entity pad [pad_default]
+Compiling architecture structural of entity gpio [\gpio(4)\]
+Compiling architecture behavior of entity gpio_testbench
+Time Resolution for simulation is 1ps.
+Compiled 7 VHDL Units
+Built simulation executable C:/DAVIDE/ASE/Esercizi/ISE/GPIO/gpio_testbench_isim_beh.exe
+Fuse Memory Usage: 28228 KB
+Fuse CPU Usage: 436 ms
