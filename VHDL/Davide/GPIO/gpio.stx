@@ -1,0 +1,40 @@
+Release 14.4 - xst P.49d (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/GPIO/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.50 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/GPIO/xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.51 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+WARNING:HDLParsers:3607 - Unit work/gpio is now defined in a different file.  It was defined in "C:/DAVIDE/ASE/Esercizi/ISE/GPIO/gpio.vhd", and is now defined in "C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/GPIO/gpio.vhd".
+WARNING:HDLParsers:3607 - Unit work/gpio/Structural is now defined in a different file.  It was defined in "C:/DAVIDE/ASE/Esercizi/ISE/GPIO/gpio.vhd", and is now defined in "C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/GPIO/gpio.vhd".
+WARNING:HDLParsers:3607 - Unit work/pad is now defined in a different file.  It was defined in "C:/DAVIDE/ASE/Esercizi/ISE/GPIO/pad.vhd", and is now defined in "C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/GPIO/pad.vhd".
+WARNING:HDLParsers:3607 - Unit work/pad/Behavioral is now defined in a different file.  It was defined in "C:/DAVIDE/ASE/Esercizi/ISE/GPIO/pad.vhd", and is now defined in "C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/GPIO/pad.vhd".
+Compiling vhdl file "C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/GPIO/pad.vhd" in Library work.
+Architecture behavioral of Entity pad is up to date.
+Compiling vhdl file "C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/GPIO/gpio.vhd" in Library work.
+Architecture structural of Entity gpio is up to date.
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 2.23 secs
+ 
+--> 
+
+Total memory usage is 166760 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
