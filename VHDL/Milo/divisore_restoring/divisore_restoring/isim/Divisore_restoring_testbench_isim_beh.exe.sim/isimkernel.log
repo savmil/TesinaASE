@@ -1,0 +1,29 @@
+Command line:
+   Divisore_restoring_testbench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49272
+
+Thu Dec 28 18:15:41 2017
+
+
+ Elaboration Time: 0.03 sec
+
+ Current Memory Usage: 200.454 Meg
+
+ Total Signals          : 348
+ Total Nets             : 189
+ Total Signal Drivers   : 112
+ Total Blocks           : 116
+ Total Primitive Blocks : 62
+ Total Processes        : 100
+ Total Traceable Variables  : 71
+ Total Scalar Nets and Variables : 746
+Total Line Count : 183
+
+ Total Simulation Time: 0.05 sec
+
+ Current Memory Usage: 208.847 Meg
+
+Thu Dec 28 18:17:05 2017
+

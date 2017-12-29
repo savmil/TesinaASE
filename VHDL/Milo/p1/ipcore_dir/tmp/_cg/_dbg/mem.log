@@ -1,0 +1,327 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter xsthdpdir set to ./_cg/_dbg/mem_xsd
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Reading design: ./_cg/_dbg/mem.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "./_cg/_dbg/mem.prj"
+Input Format                       : VHDL
+
+---- Target Parameters
+Output Format                      : NGC
+Output File Name                   : "./_cg/_dbg/mem.ngc"
+Target Device                      : xc3s100e-5tq144
+
+---- Source Options
+Work Library                       : work
+Entity Name                        : mem
+Architecture Name                  : spartan3e
+Top Module Name                    : mem
+Resource Sharing                   : NO
+
+---- Target Options
+Add IO Buffers                     : NO
+Register Duplication               : NO
+
+---- General Options
+Bus Delimiter                      : <>
+Library Search Order               : "./_cg/_dbg/_default.lso"
+Keep Hierarchy                     : NO
+
+=========================================================================
+
+WARNING:Xst:29 - Optimization Effort not specified
+The following parameters have been added:
+Optimization Goal                  : SPEED
+
+=========================================================================
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_utils.vhd" in Library dist_mem_gen_v7_2.
+WARNING:HDLParsers:3530 - Time stamp of file "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_utils.vhd" is newer than current system time.
+Package <dist_mem_utils> compiled.
+Package body <dist_mem_utils> compiled.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_comps.vhd" in Library dist_mem_gen_v7_2.
+WARNING:HDLParsers:3530 - Time stamp of file "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_comps.vhd" is newer than current system time.
+Package <dist_mem_comps> compiled.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/rom/rom.vhd" in Library dist_mem_gen_v7_2.
+WARNING:HDLParsers:3530 - Time stamp of file "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/rom/rom.vhd" is newer than current system time.
+Entity <rom> compiled.
+Entity <rom> (Architecture <rtl>) compiled.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/spram/spram.vhd" in Library dist_mem_gen_v7_2.
+WARNING:HDLParsers:3530 - Time stamp of file "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/spram/spram.vhd" is newer than current system time.
+Entity <spram> compiled.
+Entity <spram> (Architecture <rtl>) compiled.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dpram/dpram.vhd" in Library dist_mem_gen_v7_2.
+WARNING:HDLParsers:3530 - Time stamp of file "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dpram/dpram.vhd" is newer than current system time.
+Entity <dpram> compiled.
+Entity <dpram> (Architecture <rtl>) compiled.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/sdpram/sdpram.vhd" in Library dist_mem_gen_v7_2.
+WARNING:HDLParsers:3530 - Time stamp of file "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/sdpram/sdpram.vhd" is newer than current system time.
+Entity <sdpram> compiled.
+Entity <sdpram> (Architecture <rtl>) compiled.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/srlram/srl_block.vhd" in Library dist_mem_gen_v7_2.
+WARNING:HDLParsers:3530 - Time stamp of file "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/srlram/srl_block.vhd" is newer than current system time.
+Entity <srl_block> compiled.
+Entity <srl_block> (Architecture <rtl>) compiled.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/srlram/srlram.vhd" in Library dist_mem_gen_v7_2.
+WARNING:HDLParsers:3530 - Time stamp of file "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/srlram/srlram.vhd" is newer than current system time.
+Entity <srlram> compiled.
+Entity <srlram> (Architecture <rtl>) compiled.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_gen_v7_2_xst_comp.vhd" in Library dist_mem_gen_v7_2.
+WARNING:HDLParsers:3530 - Time stamp of file "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_gen_v7_2_xst_comp.vhd" is newer than current system time.
+Package <dist_mem_gen_v7_2_xst_comp> compiled.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_gen_v7_2_xst.vhd" in Library dist_mem_gen_v7_2.
+WARNING:HDLParsers:3530 - Time stamp of file "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_gen_v7_2_xst.vhd" is newer than current system time.
+Entity <dist_mem_gen_v7_2_xst> compiled.
+Entity <dist_mem_gen_v7_2_xst> (Architecture <rtl>) compiled.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_gen_v7_2.vhd" in Library dist_mem_gen_v7_2.
+WARNING:HDLParsers:3530 - Time stamp of file "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_gen_v7_2.vhd" is newer than current system time.
+Entity <dist_mem_gen_v7_2> compiled.
+Entity <dist_mem_gen_v7_2> (Architecture <xilinx>) compiled.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/mem.vhd" in Library work.
+WARNING:HDLParsers:3530 - Time stamp of file "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/mem.vhd" is newer than current system time.
+Entity <mem> compiled.
+Entity <mem> (Architecture <spartan3e>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <mem> in library <work> (architecture <spartan3e>).
+
+Analyzing hierarchy for entity <dist_mem_gen_v7_2> in library <dist_mem_gen_v7_2> (architecture <xilinx>) with generics.
+	c_addr_width = 15
+	c_default_data = "0"
+	c_depth = 32768
+	c_elaboration_dir = "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/_cg/"
+	c_family = "spartan3"
+	c_has_clk = 0
+	c_has_d = 0
+	c_has_dpo = 0
+	c_has_dpra = 0
+	c_has_i_ce = 0
+	c_has_qdpo = 0
+	c_has_qdpo_ce = 0
+	c_has_qdpo_clk = 0
+	c_has_qdpo_rst = 0
+	c_has_qdpo_srst = 0
+	c_has_qspo = 0
+	c_has_qspo_ce = 0
+	c_has_qspo_rst = 0
+	c_has_qspo_srst = 0
+	c_has_spo = 1
+	c_has_spra = 0
+	c_has_we = 0
+	c_mem_init_file = "mem.mif"
+	c_mem_type = 0
+	c_parser_type = 1
+	c_pipeline_stages = 0
+	c_qce_joined = 0
+	c_qualify_we = 0
+	c_read_mif = 1
+	c_reg_a_d_inputs = 0
+	c_reg_dpra_input = 0
+	c_sync_enable = 1
+	c_width = 8
+WARNING:Xst:795 - "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_gen_v7_2.vhd" line 142: Size of operands are different : result is <false>.
+WARNING:Xst:795 - "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_gen_v7_2.vhd" line 142: Size of operands are different : result is <false>.
+WARNING:Xst:795 - "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_gen_v7_2.vhd" line 142: Size of operands are different : result is <false>.
+WARNING:Xst:795 - "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_gen_v7_2.vhd" line 142: Size of operands are different : result is <false>.
+WARNING:Xst:795 - "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_gen_v7_2.vhd" line 142: Size of operands are different : result is <false>.
+
+Analyzing hierarchy for entity <dist_mem_gen_v7_2_xst> in library <dist_mem_gen_v7_2> (architecture <rtl>) with generics.
+	c_addr_width = 15
+	c_default_data = "0"
+	c_depth = 32768
+	c_elaboration_dir = "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/_cg/"
+	c_family = "spartan3"
+	c_has_clk = 0
+	c_has_d = 0
+	c_has_dpo = 0
+	c_has_dpra = 0
+	c_has_i_ce = 0
+	c_has_qdpo = 0
+	c_has_qdpo_ce = 0
+	c_has_qdpo_clk = 0
+	c_has_qdpo_rst = 0
+	c_has_qdpo_srst = 0
+	c_has_qspo = 0
+	c_has_qspo_ce = 0
+	c_has_qspo_rst = 0
+	c_has_qspo_srst = 0
+	c_has_spo = 1
+	c_has_spra = 0
+	c_has_we = 0
+	c_mem_init_file = "mem.mif"
+	c_mem_type = 0
+	c_parser_type = 1
+	c_pipeline_stages = 0
+	c_qce_joined = 0
+	c_qualify_we = 0
+	c_read_mif = 1
+	c_reg_a_d_inputs = 0
+	c_reg_dpra_input = 0
+	c_sync_enable = 1
+	c_width = 8
+
+Analyzing hierarchy for entity <rom> in library <dist_mem_gen_v7_2> (architecture <rtl>) with generics.
+	c_addr_width = 15
+	c_default_data = "0"
+	c_depth = 32768
+	c_elaboration_dir = "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/_cg/"
+	c_has_clk = 0
+	c_has_qspo = 0
+	c_has_qspo_ce = 0
+	c_has_qspo_rst = 0
+	c_has_qspo_srst = 0
+	c_has_spo = 1
+	c_mem_init_file = "mem.mif"
+	c_parser_type = 1
+	c_read_mif = 1
+	c_reg_a_d_inputs = 0
+	c_sync_enable = 1
+	c_width = 8
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <mem> in library <work> (Architecture <spartan3e>).
+WARNING:Xst:752 - "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/mem.vhd" line 111: Unconnected input port 'd' of component 'dist_mem_gen_v7_2' is tied to default value.
+WARNING:Xst:752 - "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/mem.vhd" line 111: Unconnected input port 'dpra' of component 'dist_mem_gen_v7_2' is tied to default value.
+WARNING:Xst:752 - "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/mem.vhd" line 111: Unconnected input port 'spra' of component 'dist_mem_gen_v7_2' is tied to default value.
+WARNING:Xst:752 - "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/mem.vhd" line 111: Unconnected input port 'clk' of component 'dist_mem_gen_v7_2' is tied to default value.
+WARNING:Xst:752 - "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/mem.vhd" line 111: Unconnected input port 'we' of component 'dist_mem_gen_v7_2' is tied to default value.
+WARNING:Xst:752 - "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/mem.vhd" line 111: Unconnected input port 'i_ce' of component 'dist_mem_gen_v7_2' is tied to default value.
+WARNING:Xst:752 - "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/mem.vhd" line 111: Unconnected input port 'qspo_ce' of component 'dist_mem_gen_v7_2' is tied to default value.
+WARNING:Xst:752 - "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/mem.vhd" line 111: Unconnected input port 'qdpo_ce' of component 'dist_mem_gen_v7_2' is tied to default value.
+WARNING:Xst:752 - "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/mem.vhd" line 111: Unconnected input port 'qdpo_clk' of component 'dist_mem_gen_v7_2' is tied to default value.
+WARNING:Xst:752 - "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/mem.vhd" line 111: Unconnected input port 'qspo_rst' of component 'dist_mem_gen_v7_2' is tied to default value.
+WARNING:Xst:752 - "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/mem.vhd" line 111: Unconnected input port 'qdpo_rst' of component 'dist_mem_gen_v7_2' is tied to default value.
+WARNING:Xst:752 - "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/mem.vhd" line 111: Unconnected input port 'qspo_srst' of component 'dist_mem_gen_v7_2' is tied to default value.
+WARNING:Xst:752 - "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/mem.vhd" line 111: Unconnected input port 'qdpo_srst' of component 'dist_mem_gen_v7_2' is tied to default value.
+WARNING:Xst:753 - "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/mem.vhd" line 111: Unconnected output port 'dpo' of component 'dist_mem_gen_v7_2'.
+WARNING:Xst:753 - "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/mem.vhd" line 111: Unconnected output port 'qspo' of component 'dist_mem_gen_v7_2'.
+WARNING:Xst:753 - "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/mem.vhd" line 111: Unconnected output port 'qdpo' of component 'dist_mem_gen_v7_2'.
+Entity <mem> analyzed. Unit <mem> generated.
+
+Analyzing generic Entity <dist_mem_gen_v7_2> in library <dist_mem_gen_v7_2> (Architecture <xilinx>).
+	c_addr_width = 15
+	c_default_data = "0"
+	c_depth = 32768
+	c_elaboration_dir = "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/_cg/"
+	c_family = "spartan3"
+	c_has_clk = 0
+	c_has_d = 0
+	c_has_dpo = 0
+	c_has_dpra = 0
+	c_has_i_ce = 0
+	c_has_qdpo = 0
+	c_has_qdpo_ce = 0
+	c_has_qdpo_clk = 0
+	c_has_qdpo_rst = 0
+	c_has_qdpo_srst = 0
+	c_has_qspo = 0
+	c_has_qspo_ce = 0
+	c_has_qspo_rst = 0
+	c_has_qspo_srst = 0
+	c_has_spo = 1
+	c_has_spra = 0
+	c_has_we = 0
+	c_mem_init_file = "mem.mif"
+	c_mem_type = 0
+	c_parser_type = 1
+	c_pipeline_stages = 0
+	c_qce_joined = 0
+	c_qualify_we = 0
+	c_read_mif = 1
+	c_reg_a_d_inputs = 0
+	c_reg_dpra_input = 0
+	c_sync_enable = 1
+	c_width = 8
+Entity <dist_mem_gen_v7_2> analyzed. Unit <dist_mem_gen_v7_2> generated.
+
+Analyzing generic Entity <dist_mem_gen_v7_2_xst> in library <dist_mem_gen_v7_2> (Architecture <rtl>).
+	c_addr_width = 15
+	c_default_data = "0"
+	c_depth = 32768
+	c_elaboration_dir = "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/_cg/"
+	c_family = "spartan3"
+	c_has_clk = 0
+	c_has_d = 0
+	c_has_dpo = 0
+	c_has_dpra = 0
+	c_has_i_ce = 0
+	c_has_qdpo = 0
+	c_has_qdpo_ce = 0
+	c_has_qdpo_clk = 0
+	c_has_qdpo_rst = 0
+	c_has_qdpo_srst = 0
+	c_has_qspo = 0
+	c_has_qspo_ce = 0
+	c_has_qspo_rst = 0
+	c_has_qspo_srst = 0
+	c_has_spo = 1
+	c_has_spra = 0
+	c_has_we = 0
+	c_mem_init_file = "mem.mif"
+	c_mem_type = 0
+	c_parser_type = 1
+	c_pipeline_stages = 0
+	c_qce_joined = 0
+	c_qualify_we = 0
+	c_read_mif = 1
+	c_reg_a_d_inputs = 0
+	c_reg_dpra_input = 0
+	c_sync_enable = 1
+	c_width = 8
+Entity <dist_mem_gen_v7_2_xst> analyzed. Unit <dist_mem_gen_v7_2_xst> generated.
+
+Analyzing generic Entity <rom> in library <dist_mem_gen_v7_2> (Architecture <rtl>).
+	c_addr_width = 15
+	c_default_data = "0"
+	c_depth = 32768
+	c_elaboration_dir = "/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/_cg/"
+	c_has_clk = 0
+	c_has_qspo = 0
+	c_has_qspo_ce = 0
+	c_has_qspo_rst = 0
+	c_has_qspo_srst = 0
+	c_has_spo = 1
+	c_mem_init_file = "mem.mif"
+	c_parser_type = 1
+	c_read_mif = 1
+	c_reg_a_d_inputs = 0
+	c_sync_enable = 1
+	c_width = 8
+    Set property "rom_extract = yes" for signal <spo_int>.
+    Set property "rom_style = distributed" for signal <spo_int>.

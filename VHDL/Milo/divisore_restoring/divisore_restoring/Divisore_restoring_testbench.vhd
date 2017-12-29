@@ -39,13 +39,14 @@ ARCHITECTURE behavior OF Divisore_restoring_testbench IS
  
     -- Component Declaration for the Unit Under Test (UUT)
  
-    COMPONENT Booth_multiplier
+    COMPONENT divisore_restoring
     PORT(
          dividendo : IN  std_logic_vector(7 downto 0);
          divisore : IN  std_logic_vector(7 downto 0);
          start : IN  std_logic;
          clk : IN  std_logic;
          reset : IN  std_logic;
+			finish: out STD_LOGIC;
          quoziente : OUT  std_logic_vector(7 downto 0);
          resto : OUT  std_logic_vector(7 downto 0)
         );
@@ -60,6 +61,7 @@ ARCHITECTURE behavior OF Divisore_restoring_testbench IS
    signal reset : std_logic := '0';
 
  	--Outputs
+	signal finish : std_logic;
    signal quoziente : std_logic_vector(7 downto 0);
    signal resto : std_logic_vector(7 downto 0);
 
@@ -69,7 +71,7 @@ ARCHITECTURE behavior OF Divisore_restoring_testbench IS
 BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
-   uut: Booth_multiplier PORT MAP (
+   uut: divisore_restoring PORT MAP (
           dividendo => dividendo,
           divisore => divisore,
           start => start,
@@ -96,8 +98,8 @@ BEGIN
 		start<='1';
 		
 		reset<='1';
-		dividendo<="00010111";
-		divisore<="00000111";
+		dividendo<="00001000";
+		divisore<="00000010";
 		wait for 11 ns;
 		start<='0';
       wait for 100 ns;	

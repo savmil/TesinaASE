@@ -1,0 +1,39 @@
+# quartus backup files
+*.bak
+
+# database files for quartus
+db/
+incremental_db/
+
+# simulation temp files
+output_files/
+simulation/
+
+# modelsim temp files
+work/
+*.wlf
+wlf*
+*.mpf
+*.mti
+*.do
+*.qpf
+*.qws
+*.qsf
+*.qdf
+*.rpt
+*.vstf
+*.done
+*.smsg
+*.summary
+*.jdi
+*.pin
+*.sld
+*.sof
+*.db
+
+# modelsim history
+transcript
+
+# compiled python files
+*.pyc
+

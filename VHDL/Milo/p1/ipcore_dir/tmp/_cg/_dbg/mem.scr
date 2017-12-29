@@ -1,0 +1,17 @@
+set -xsthdpdir "./_cg/_dbg/mem_xsd"
+run
+-ifn "./_cg/_dbg/mem.prj"
+-ifmt VHDL
+-ofmt NGC
+-ofn "./_cg/_dbg/mem.ngc"
+-p xc3s100e-5tq144
+-iobuf NO
+-work_lib work
+-ent mem
+-arch spartan3e
+-top mem
+-bus_delimiter <>
+-lso "./_cg/_dbg/_default.lso"
+-keep_hierarchy NO
+-resource_sharing NO
+-register_duplication NO

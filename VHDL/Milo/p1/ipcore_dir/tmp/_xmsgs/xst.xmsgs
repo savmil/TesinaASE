@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLParsers" num="3530" delta="new" >Time stamp of file &quot;<arg fmt="%s" index="1">/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_utils.vhd</arg>&quot; is newer than current system time.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3530" delta="new" >Time stamp of file &quot;<arg fmt="%s" index="1">/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_comps.vhd</arg>&quot; is newer than current system time.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3530" delta="new" >Time stamp of file &quot;<arg fmt="%s" index="1">/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/rom/rom.vhd</arg>&quot; is newer than current system time.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3530" delta="new" >Time stamp of file &quot;<arg fmt="%s" index="1">/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/spram/spram.vhd</arg>&quot; is newer than current system time.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3530" delta="new" >Time stamp of file &quot;<arg fmt="%s" index="1">/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dpram/dpram.vhd</arg>&quot; is newer than current system time.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3530" delta="new" >Time stamp of file &quot;<arg fmt="%s" index="1">/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/sdpram/sdpram.vhd</arg>&quot; is newer than current system time.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3530" delta="new" >Time stamp of file &quot;<arg fmt="%s" index="1">/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/srlram/srl_block.vhd</arg>&quot; is newer than current system time.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3530" delta="new" >Time stamp of file &quot;<arg fmt="%s" index="1">/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/srlram/srlram.vhd</arg>&quot; is newer than current system time.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3530" delta="new" >Time stamp of file &quot;<arg fmt="%s" index="1">/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_gen_v7_2_xst_comp.vhd</arg>&quot; is newer than current system time.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3530" delta="new" >Time stamp of file &quot;<arg fmt="%s" index="1">/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_gen_v7_2_xst.vhd</arg>&quot; is newer than current system time.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3530" delta="new" >Time stamp of file &quot;<arg fmt="%s" index="1">/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_gen_v7_2.vhd</arg>&quot; is newer than current system time.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3530" delta="new" >Time stamp of file &quot;<arg fmt="%s" index="1">/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/mem.vhd</arg>&quot; is newer than current system time.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="new" >&quot;<arg fmt="%s" index="1">/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_gen_v7_2.vhd</arg>&quot; line <arg fmt="%d" index="2">142</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="new" >&quot;<arg fmt="%s" index="1">/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_gen_v7_2.vhd</arg>&quot; line <arg fmt="%d" index="2">142</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="new" >&quot;<arg fmt="%s" index="1">/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_gen_v7_2.vhd</arg>&quot; line <arg fmt="%d" index="2">142</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="new" >&quot;<arg fmt="%s" index="1">/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_gen_v7_2.vhd</arg>&quot; line <arg fmt="%d" index="2">142</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="795" delta="new" >&quot;<arg fmt="%s" index="1">/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/./dist_mem_gen_v7_2/dist_mem_gen_v7_2.vhd</arg>&quot; line <arg fmt="%d" index="2">142</arg>: Size of operands are different : result is &lt;false&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%d" index="2">111</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">d</arg>&apos; of component &apos;<arg fmt="%s" index="4">dist_mem_gen_v7_2</arg>&apos; is tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%d" index="2">111</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">dpra</arg>&apos; of component &apos;<arg fmt="%s" index="4">dist_mem_gen_v7_2</arg>&apos; is tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%d" index="2">111</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">spra</arg>&apos; of component &apos;<arg fmt="%s" index="4">dist_mem_gen_v7_2</arg>&apos; is tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%d" index="2">111</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">clk</arg>&apos; of component &apos;<arg fmt="%s" index="4">dist_mem_gen_v7_2</arg>&apos; is tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%d" index="2">111</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">we</arg>&apos; of component &apos;<arg fmt="%s" index="4">dist_mem_gen_v7_2</arg>&apos; is tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%d" index="2">111</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">i_ce</arg>&apos; of component &apos;<arg fmt="%s" index="4">dist_mem_gen_v7_2</arg>&apos; is tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%d" index="2">111</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">qspo_ce</arg>&apos; of component &apos;<arg fmt="%s" index="4">dist_mem_gen_v7_2</arg>&apos; is tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%d" index="2">111</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">qdpo_ce</arg>&apos; of component &apos;<arg fmt="%s" index="4">dist_mem_gen_v7_2</arg>&apos; is tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%d" index="2">111</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">qdpo_clk</arg>&apos; of component &apos;<arg fmt="%s" index="4">dist_mem_gen_v7_2</arg>&apos; is tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%d" index="2">111</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">qspo_rst</arg>&apos; of component &apos;<arg fmt="%s" index="4">dist_mem_gen_v7_2</arg>&apos; is tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%d" index="2">111</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">qdpo_rst</arg>&apos; of component &apos;<arg fmt="%s" index="4">dist_mem_gen_v7_2</arg>&apos; is tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%d" index="2">111</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">qspo_srst</arg>&apos; of component &apos;<arg fmt="%s" index="4">dist_mem_gen_v7_2</arg>&apos; is tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%d" index="2">111</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">qdpo_srst</arg>&apos; of component &apos;<arg fmt="%s" index="4">dist_mem_gen_v7_2</arg>&apos; is tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%d" index="2">111</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">dpo</arg>&apos; of component &apos;<arg fmt="%s" index="4">dist_mem_gen_v7_2</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%d" index="2">111</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">qspo</arg>&apos; of component &apos;<arg fmt="%s" index="4">dist_mem_gen_v7_2</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/media/sf_ASE/VHDL/Milo/p1/ipcore_dir/tmp/./_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%d" index="2">111</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">qdpo</arg>&apos; of component &apos;<arg fmt="%s" index="4">dist_mem_gen_v7_2</arg>&apos;.
+</msg>
+
+</messages>

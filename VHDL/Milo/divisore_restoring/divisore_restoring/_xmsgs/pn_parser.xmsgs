@@ -8,22 +8,16 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/media/sf_ASE/VHDL/Milo/divisore_restoring/divisore_restoring/Booth_multiplier.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/media/sf_ASE/VHDL/Milo/divisore_restoring/divisore_restoring/Serial_Booth_PC_Moore.vhd&quot; into library work</arg>
-</msg>
-
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/media/sf_ASE/VHDL/Milo/divisore_restoring/divisore_restoring/add_sub.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/media/sf_ASE/VHDL/Milo/divisore_restoring/divisore_restoring/boundary_scan_chain.vhd&quot; into library work</arg>
 </msg>
 
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/media/sf_ASE/VHDL/Milo/divisore_restoring/divisore_restoring/contatore_modulo_4.vhd&quot; into library work</arg>
 </msg>
 
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/media/sf_ASE/VHDL/Milo/divisore_restoring/divisore_restoring/counter_mod_2n.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/media/sf_ASE/VHDL/Milo/divisore_restoring/divisore_restoring/divisore_restoring.vhd&quot; into library work</arg>
 </msg>
 
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/media/sf_ASE/VHDL/Milo/divisore_restoring/divisore_restoring/edge_triggered_d_n.vhd&quot; into library work</arg>
@@ -42,6 +36,12 @@
 </msg>
 
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/media/sf_ASE/VHDL/Milo/divisore_restoring/divisore_restoring/ripple_carry_adder.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/media/sf_ASE/VHDL/Milo/divisore_restoring/divisore_restoring/serial_div_restoring.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/media/sf_ASE/VHDL/Milo/divisore_restoring/divisore_restoring/shifter_a_sinistra.vhd&quot; into library work</arg>
 </msg>
 
 </messages>
