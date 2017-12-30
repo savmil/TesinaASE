@@ -550,7 +550,11 @@ filename "esercizio02/Tesina.lyx"
 \end_layout
 
 \begin_layout Chapter
+<<<<<<< HEAD
 Display a 7 segmenti
+=======
+Esercizio 3
+>>>>>>> e0573848dd9ef8cb5d5fe88453034980ec8133a2
 \end_layout
 
 \begin_layout Standard

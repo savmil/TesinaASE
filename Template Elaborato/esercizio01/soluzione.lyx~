@@ -286,7 +286,7 @@ La minimizzazione delle funzioni sarà effettuata attraverso i differenti
  metodi indicati.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsection
 Minimizzazione 1
 \end_layout
 
@@ -1141,6 +1141,16 @@ F
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "esercizio_1_minimizzazione"
+
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -1164,7 +1174,7 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset CommandInset include
@@ -1182,12 +1192,6 @@ filename "mappa.tex"
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "esercizio_1_minimizzazione"
-
-\end_inset
-
 
 \end_layout
 
@@ -1212,7 +1216,7 @@ F=\neg x\neg z\neg v+\neg y\neg v++xz
 
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsection
 Minimizzazione 2
 \end_layout
 
@@ -1250,7 +1254,7 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -2120,7 +2124,7 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -3930,7 +3934,7 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -4632,9 +4636,9 @@ X
 \end_layout
 
 \begin_layout Standard
-Disciminando gli implicanti primi essenziali primari, e con le regole di
- dominanza quelli secondari, si ottiene una tabella cliclica non ulteriormente
- riducibile.
+Discriminando gli implicanti primi essenziali primari e secondari (questi
+ ultimi mediante le regole di dominanza), si ottiene una tabella cliclica
+ non ulteriormente riducibile.
  Applicando il metodo Branch&Bound in questo caso banale, si prosegue nella
  scelta dell'implicante 
 \begin_inset Formula $e$
@@ -4647,7 +4651,67 @@ Disciminando gli implicanti primi essenziali primari, e con le regole di
 \end_inset
 
  come l'implicante che consente la copertura a costo minimo.
- La funzione di uscita, dunque, è pari a:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[H]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[scale=0.5]{B&B.pdf}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Analogamente, tramite il metodo di Petrick, otteniamo la somma degli implicanti
+ che coprono il mintermine in questione:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A+E=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tra essi si effettua la medesima scelta dettata dal costo dei letterali.
+\end_layout
+
+\begin_layout Standard
+La funzione di uscita, dunque, è pari a:
 \end_layout
 
 \begin_layout Standard
@@ -4661,7 +4725,7 @@ F=c+e+f=yzv+\neg y\neg z+\neg y\neg v
 
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsection
 Minimizzazione 3
 \end_layout
 
@@ -5598,7 +5662,7 @@ e=
 
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsection
 Minimizzazione 4
 \end_layout
 
@@ -6798,7 +6862,7 @@ Percorriamo l'applicazione del metodo che, rispetto al caso a singola uscita,
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -8105,7 +8169,11 @@ check
 \end_inset
 
 
-\begin_inset Newline linebreak
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset Newline newline
 \end_inset
 
 

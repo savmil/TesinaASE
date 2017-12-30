@@ -522,7 +522,11 @@ esercizio01/Tesina.lyx ->esercizio02/Tesina.lyx e così via.
 \end_layout
 
 \begin_layout Chapter
+<<<<<<< HEAD
 Minimizzazione reti combinatorie
+=======
+Minimizzazione di reti combinatorie
+>>>>>>> e0573848dd9ef8cb5d5fe88453034980ec8133a2
 \end_layout
 
 \begin_layout Standard
@@ -536,7 +540,11 @@ filename "esercizio01/Tesina.lyx"
 \end_layout
 
 \begin_layout Chapter
+<<<<<<< HEAD
 Reti combinatorie Esercizi svolti con l'ausilio di SIS e Mapping Tecnologico
+=======
+Reti combinatorie con l'ausilio di SIS e Mapping Tecnologico
+>>>>>>> e0573848dd9ef8cb5d5fe88453034980ec8133a2
 \end_layout
 
 \begin_layout Standard
@@ -550,6 +558,13 @@ filename "esercizio02/Tesina.lyx"
 \end_layout
 
 \begin_layout Chapter
+<<<<<<< HEAD
+=======
+Latch/Flip Flop
+\end_layout
+
+\begin_layout Chapter
+>>>>>>> e0573848dd9ef8cb5d5fe88453034980ec8133a2
 Display a 7 segmenti
 \end_layout
 
@@ -597,6 +612,58 @@ end{mainmatter}
 \end_inset
 
 
+\end_layout
+
+\begin_layout Chapter
+Clock Generator
+\end_layout
+
+\begin_layout Chapter
+Scan Chain
+\end_layout
+
+\begin_layout Chapter
+Finite State Machine
+\end_layout
+
+\begin_layout Chapter
+Ripple Carry
+\end_layout
+
+\begin_layout Chapter
+Carry Lookahead
+\end_layout
+
+\begin_layout Chapter
+Carry Save
+\end_layout
+
+\begin_layout Chapter
+Carry Select
+\end_layout
+
+\begin_layout Chapter
+Addizionatore a 7 operandi
+\end_layout
+
+\begin_layout Chapter
+Moltiplicatori
+\end_layout
+
+\begin_layout Chapter
+Divisori
+\end_layout
+
+\begin_layout Chapter
+UART
+\end_layout
+
+\begin_layout Chapter
+GPIO
+\end_layout
+
+\begin_layout Chapter
+Firma digitale
 \end_layout
 
 \end_body
