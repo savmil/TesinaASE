@@ -126,6 +126,14 @@ morecomment=[s]{--}
 
 \begin_body
 
+\begin_layout Section
+Soluzione
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
 \begin_layout Subsection
 Esercizio 1
 \end_layout
@@ -275,6 +283,22 @@ Vogliamo mettere in evidenza in questo esempio come la tecnologia impatta
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+smallskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -404,7 +428,7 @@ centering
 
 \begin_inset Graphics
 	filename images/minimizzazione2m0.PNG
-	scale 80
+	scale 60
 
 \end_inset
 

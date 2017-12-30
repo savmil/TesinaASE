@@ -396,7 +396,7 @@ status open
 
 \backslash
 lstinputlisting [language=VHDL,caption={Definizione del componente Clock
- FIlter}] {esercizio03/codice/clk_fil.vhd}
+ FIlter}] {esercizio04/codice/clk_fil.vhd}
 \end_layout
 
 \end_inset
@@ -431,8 +431,8 @@ use_parbox 0
 use_makebox 0
 width "100col%"
 special "none"
-height "1in"
-height_special "totalheight"
+height "60pheight%"
+height_special "none"
 thickness "0.4pt"
 separation "3pt"
 shadowsize "4pt"
@@ -459,7 +459,7 @@ status open
 
 \backslash
 lstinputlisting [language=VHDL,caption={Definizione del componente Clock
- FIlter}] {esercizio03/codice/cathode_manager.vhd}
+ FIlter}] {esercizio04/codice/cathode_manager.vhd}
 \end_layout
 
 \end_inset
@@ -486,8 +486,8 @@ use_parbox 0
 use_makebox 0
 width "100col%"
 special "none"
-height "1in"
-height_special "totalheight"
+height "100pheight%"
+height_special "none"
 thickness "0.4pt"
 separation "3pt"
 shadowsize "4pt"
@@ -514,7 +514,7 @@ status open
 
 \backslash
 lstinputlisting [language=VHDL,caption={Definizione del componente Clock
- FIlter}] {esercizio03/codice/anode_manager.vhd}
+ FIlter}] {esercizio04/codice/anode_manager.vhd}
 \end_layout
 
 \end_inset
@@ -541,8 +541,8 @@ use_parbox 0
 use_makebox 0
 width "100col%"
 special "none"
-height "1in"
-height_special "totalheight"
+height "100pheight%"
+height_special "none"
 thickness "0.4pt"
 separation "3pt"
 shadowsize "4pt"
@@ -569,7 +569,7 @@ status open
 
 \backslash
 lstinputlisting [language=VHDL,caption={Definizione del componente Clock
- FIlter}] {esercizio03/codice/display.vhd}
+ FIlter}] {esercizio04/codice/display.vhd}
 \end_layout
 
 \end_inset

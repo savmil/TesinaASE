@@ -327,6 +327,17 @@ backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
+Tabella 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "esercizio_1_minimizzazione"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Tabular
 <lyxtabular version="3" rows="17" columns="5">
 <features islongtable="true" longtabularalignment="center">
@@ -1158,6 +1169,9 @@ name "esercizio_1_minimizzazione"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -1174,7 +1188,7 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset CommandInset include
@@ -1254,7 +1268,18 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status collapsed
+status open
+
+\begin_layout Plain Layout
+Tabella 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "esercizio_2_minimizzazione"
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -4636,9 +4661,16 @@ X
 \end_layout
 
 \begin_layout Standard
-Discriminando gli implicanti primi essenziali primari e secondari (questi
- ultimi mediante le regole di dominanza), si ottiene una tabella cliclica
- non ulteriormente riducibile.
+Discriminando gli implicanti primi essenziali primari (
+\begin_inset Formula $f$
+\end_inset
+
+) e secondari (
+\begin_inset Formula $c$
+\end_inset
+
+), questi ultimi mediante le regole di dominanza, si ottiene una tabella
+ cliclica non ulteriormente riducibile.
  Applicando il metodo Branch&Bound in questo caso banale, si prosegue nella
  scelta dell'implicante 
 \begin_inset Formula $e$
@@ -4675,7 +4707,7 @@ centering
 
 
 \backslash
-includegraphics[scale=0.5]{B&B.pdf}
+includegraphics[scale=0.7]{esercizio01/images/B&B.png}
 \end_layout
 
 \begin_layout Plain Layout
@@ -4704,6 +4736,10 @@ A+E=1
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Tra essi si effettua la medesima scelta dettata dal costo dei letterali.
 \end_layout
 
 \begin_layout Standard
@@ -4759,6 +4795,17 @@ shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
 status open
+
+\begin_layout Plain Layout
+Tabella 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "esercizio_3_minimizzazione"
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -5699,6 +5746,10 @@ shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
 status open
+
+\begin_layout Plain Layout
+Ta
+\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -10028,6 +10079,7 @@ check
 
 \begin_layout Standard
 Segue la fase di copertura con gli implicanti primi trovati.
+ Essa viene effettuata con l'obiettivo di minimizzare il costo dei letterali.
 \end_layout
 
 \begin_layout Standard

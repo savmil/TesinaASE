@@ -126,6 +126,22 @@ morecomment=[s]{--}
 
 \begin_body
 
+\begin_layout Section
+Soluzione
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset CommandInset include
+LatexCommand input
+filename "simulazione.lyx"
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Esercizio 1
 \end_layout

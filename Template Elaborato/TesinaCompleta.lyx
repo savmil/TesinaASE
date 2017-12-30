@@ -219,6 +219,8 @@ morecomment=[s]{--}
     \foreach \x in {#1}
         \path (\x) node {X};
 }
+
+\hypersetup{hidelinks}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -553,10 +555,6 @@ filename "esercizio02/Tesina.lyx"
 Latch/Flip Flop
 \end_layout
 
-\begin_layout Chapter
-Display a 7 segmenti
-\end_layout
-
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
@@ -568,47 +566,171 @@ filename "esercizio03/Tesina.lyx"
 \end_layout
 
 \begin_layout Chapter
+Display a 7 segmenti
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "esercizio04/Tesina.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
 Clock Generator
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "esercizio05/Tesina.lyx"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter
 Scan Chain
 \end_layout
 
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "esercizio06/Tesina.lyx"
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 Finite State Machine
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "esercizio07/Tesina.lyx"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter
 Ripple Carry
 \end_layout
 
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "esercizio08/Tesina.lyx"
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 Carry Lookahead
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "esercizio09/Tesina.lyx"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter
 Carry Save
 \end_layout
 
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "esercizio10/Tesina.lyx"
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 Carry Select
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "esercizio11/Tesina.lyx"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter
 Addizionatore a 7 operandi
 \end_layout
 
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "esercizio12/Tesina.lyx"
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 Moltiplicatori
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "esercizio13/Tesina.lyx"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter
 Divisori
 \end_layout
 
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "esercizio14/Tesina.lyx"
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 UART
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "esercizio15/Tesina.lyx"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter
@@ -627,6 +749,16 @@ filename "esercizio16/Tesina.lyx"
 
 \begin_layout Chapter
 Firma digitale
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "esercizio17/Tesina.lyx"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

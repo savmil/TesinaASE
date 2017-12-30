@@ -126,22 +126,299 @@ morecomment=[s]{--}
 
 \begin_body
 
-\begin_layout Subsection
-Esercizio 1
+\begin_layout Section
+Soluzione
 \end_layout
 
 \begin_layout Standard
-In riferimento ai file blif situati 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Descrivere la soluzione relizzata per mezzo di schematici e riportare il
+ codice dei soli componenti significativi.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Schematici
+\end_layout
+
+\begin_layout Subsubsection
+Clock_filter
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/clockfilter.png
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "clock_filter_schematics"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Cathod_manager
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/cathod_manager.png
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "cathod_manager"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Anode_manager
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/anode_manager.png
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "anode_manager"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Gestore_display
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/gestore_display.png
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "gestore_display"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Codice
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Nell'eventialità in cui alcuni componenti sia stati utilizzati in altri
+ esercizi inserire solo un riferimento (es.
+ Multiplexer Generico - traccia n° 1)
+\end_layout
+
+\begin_layout Plain Layout
+Segue un esempio di inclusione di codice
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+ClockFilter
+\end_layout
+
+\begin_layout Standard
+In realtà questo codice illustra il funzionamento di un contatore, con la
+ differenza però che il valore da contare dipende dalla frequenza di clock
+ del dispositivo su cui andremo successivamente a sintetizzare, freq_out
+ ed la frequenza con la quale vengono generati i segnali di hit, freq_in.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "60pheight%"
+height_special "none"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "blif_minimizzazione"
+reference "clock_filter_schematics"
 
 \end_inset
 
-, per il primo esercizio, anche se descrive una rete molto semplice sis
- riesce velocemente a fornici una rete più consona alle nostre richieste,
- difatti effettuando due diversi tipi di mapping, i valori di area e propagazion
-e variano secondo le esigenze che stiamo esponenso.
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting [language=VHDL,caption={Definizione del componente Clock
+ FIlter}] {esercizio03/codice/clk_fil.vhd}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Cathode_manager
+\end_layout
+
+\begin_layout Standard
+Il componente offre l' astrazione che si sta utilizzando un mux sedici uno
+ che funziona a blocchi da quattro bit che determinano la cifra esadecimale
+ del relativo display, composto in realtà da quattro mux quattro 1, a cui
+ il primo bit dei quattro mux corrispondono ai bit del primo nibble e così
+ via per gli altri ingressi.
 \end_layout
 
 \begin_layout Standard
@@ -154,8 +431,8 @@ use_parbox 0
 use_makebox 0
 width "100col%"
 special "none"
-height "1in"
-height_special "totalheight"
+height "60pheight%"
+height_special "none"
 thickness "0.4pt"
 separation "3pt"
 shadowsize "4pt"
@@ -164,62 +441,14 @@ backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-centering
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cathod_manager"
 
 \end_inset
 
 
 \end_layout
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/minimizzazione1.PNG
-	scale 60
-	rotateOrigin center
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-ovviamente ciò è possibile perchè la libreria è fornita di diversi componenti
- ma se la riduciamo ad un set funzionalmente completo, and ed inverter ad
- esempio i risultati non variano, non discriminando il fatto che il mapping
- avvenga lo stesso
-\end_layout
-
-\begin_layout Standard
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "c"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -229,19 +458,9 @@ status open
 
 
 \backslash
-centering
+lstinputlisting [language=VHDL,caption={Definizione del componente Clock
+ FIlter}] {esercizio03/codice/cathode_manager.vhd}
 \end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/minimizzazione1_2.PNG
-	scale 60
-	rotateOrigin center
 
 \end_inset
 
@@ -253,29 +472,8 @@ centering
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-newpage
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Esercizio 2
-\end_layout
-
-\begin_layout Standard
-Vogliamo mettere in evidenza in questo esempio come la tecnologia impatta
- sulle prestazioni di un circuto:
+\begin_layout Subsubsection
+Anode_manager
 \end_layout
 
 \begin_layout Standard
@@ -288,14 +486,24 @@ use_parbox 0
 use_makebox 0
 width "100col%"
 special "none"
-height "1in"
-height_special "totalheight"
+height "100pheight%"
+height_special "none"
 thickness "0.4pt"
 separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
 status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cathod_manager"
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -305,14 +513,9 @@ status open
 
 
 \backslash
-centering
+lstinputlisting [language=VHDL,caption={Definizione del componente Clock
+ FIlter}] {esercizio03/codice/anode_manager.vhd}
 \end_layout
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename images/minimizzazione2espresso.PNG
 
 \end_inset
 
@@ -324,29 +527,8 @@ centering
 
 \end_layout
 
-\begin_layout Standard
-utilizzando espresso i costi del circuito (in termini di numero di litterali
-\begin_inset Formula $Cl$
-\end_inset
-
-, numero di ingressi 
-\begin_inset Formula $Ci$
-\end_inset
-
-, numero di porte 
-\begin_inset Formula $Cp$
-\end_inset
-
-) , sono
-\begin_inset Formula $Cl=7-Ci=10-Cp=4$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Vediamo come si comporta invece il circuito con l' utilizzo della libreria
- mcnc, prima ottimizzando l' area poi il ritardo:
+\begin_layout Subsubsection
+Gestore_display
 \end_layout
 
 \begin_layout Standard
@@ -359,8 +541,8 @@ use_parbox 0
 use_makebox 0
 width "100col%"
 special "none"
-height "1in"
-height_special "totalheight"
+height "100pheight%"
+height_special "none"
 thickness "0.4pt"
 separation "3pt"
 shadowsize "4pt"
@@ -369,61 +551,14 @@ backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-centering
-\end_layout
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename images/minimizzazione2m0.PNG
-	scale 80
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "gestore_display"
 
 \end_inset
 
 
 \end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-In questo caso i costi sono 
-\begin_inset Formula $Cl=9-Ci=13-Cp=5$
-\end_inset
-
-, i costi aumentano perchè cerca di usare porte che occupano meno spazio
- aumentando i tempi di propagazione dell' informazione e delle varie commutazion
-e degli integrati.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -433,14 +568,9 @@ status open
 
 
 \backslash
-centering
+lstinputlisting [language=VHDL,caption={Definizione del componente Clock
+ FIlter}] {esercizio03/codice/display.vhd}
 \end_layout
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename images/minimizzazione2m1.PNG
 
 \end_inset
 
@@ -450,155 +580,6 @@ centering
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-Rilassando il vincolo di area ottieniamo prestazioni vicine a quelle di
- espresso 
-\begin_inset Formula $Cl=9-Ci=12-Cp=4$
-\end_inset
-
-, ovviamente perchè la libreria ha a disposizione un adeguato numero di
- componenti da utilizzare, una situazione non sempre veritiera.
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-newpage
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Esercizio 3
-\end_layout
-
-\begin_layout Standard
-Proviamo ad applicare il rugged-script ad un rete multi-uscita:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100text%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-centering
-\end_layout
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename images/minimizzazione3ruggedscript.PNG
-	width 17.5cm
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-noindent
-\end_layout
-
-\end_inset
-
-rimappiamo la nostra rete su un fpga avente componenti elementari a quattro
- ingressi:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100text%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-centering
-\end_layout
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename images/minimizzazione3sureteaquattrolivelli.PNG
-	width 17.5cm
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-possiamo vedere che il numero di nodi elementari utilizzati per sintetizzare
- la rete sono minorei nell' esempio successivo, ma il numero di operazioni
- elementari è aumentato di ben 7 unita, anche se nel caso delle FPGA, ogni
- nodo ha un tempo di calcolo costante quindi si sono avuti sia miglioramenti
- di area che di tempo.
 \end_layout
 
 \end_body
