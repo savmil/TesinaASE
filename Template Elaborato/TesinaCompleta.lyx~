@@ -551,8 +551,11 @@ filename "esercizio02/Tesina.lyx"
 
 \begin_layout Chapter
 Esercizio 3
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset include
-LatexCommand include
+LatexCommand input
 filename "esercizio03/Tesina.lyx"
 
 \end_inset
