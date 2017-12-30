@@ -522,7 +522,7 @@ esercizio01/Tesina.lyx ->esercizio02/Tesina.lyx e così via.
 \end_layout
 
 \begin_layout Chapter
-Esercizio 1
+Minimizzazione reti combinatorie
 \end_layout
 
 \begin_layout Standard
@@ -536,7 +536,7 @@ filename "esercizio01/Tesina.lyx"
 \end_layout
 
 \begin_layout Chapter
-Esercizio 2
+Reti combinatorie Esercizi svolti con l'ausilio di SIS e Mapping Tecnologico
 \end_layout
 
 \begin_layout Standard
@@ -550,7 +550,7 @@ filename "esercizio02/Tesina.lyx"
 \end_layout
 
 \begin_layout Chapter
-Esercizio 3
+Display a 7 segmenti
 \end_layout
 
 \begin_layout Standard
@@ -560,6 +560,24 @@ filename "esercizio03/Tesina.lyx"
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Chapter
+GPIO
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "esercizio16/Tesina.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 

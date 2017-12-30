@@ -1,0 +1,133 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass book
+\use_default_options true
+\master Tesina.lyx
+\maintain_unincluded_children false
+\language italian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Sintesi su board FPGA
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Indicare la soluzione adottata per interfacciare il design realizzato con
+ l'I/O di board.
+ Indicare la semantica dei led, switch, pulsanti o altre periferiche di
+ interfacciamento utilizzate.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Questo dispositivo di GPIO è stato utilizzato per pilotare quattro led su
+ una board Basys.
+ 
+\end_layout
+
+\begin_layout Standard
+Facendo riferimento al codice: 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "GPIO_code"
+
+\end_inset
+
+, la sintesi di questo componente è stata realizzata facendo corrispondere
+ al segnale di input/output 
+\shape italic
+pads, 
+\shape default
+quattro 6-pin connectors; al segnale 
+\shape italic
+inputs
+\shape default
+ i quattro switch meno significativi, per determinare l'accensione o lo
+ spegnimento dei led; il segnale 
+\shape italic
+enable
+\shape default
+ è stato collegato ai quattro switch più significativi, per abilitare la
+ scrittura o la lettura dei valori di input e infine il segnale 
+\shape italic
+outputs 
+\shape default
+è stato collegato ai primi quattro degli otto led della board.
+\end_layout
+
+\end_body
+\end_document
