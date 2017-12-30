@@ -1,0 +1,51 @@
+ISim log file
+Running: /media/sf_ASE/VHDL/Milo/RSA/mod_exp_testbench_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /media/sf_ASE/VHDL/Milo/RSA/mod_exp_testbench_isim_beh.wdb 
+ISim P.20131013 (signature 0xfbc00daa)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+d1 1d1 1d1 1d1 1d1 1d1 1d1 1indice 8
+d 7
+# run 1.00us
+# run 1.00us
+d1 49d1 266indice 5
+d 1802
+indice 5
+d 1497
+indice 5
+d 1192
+indice 5
+d 887
+indice 5
+d 582
+indice 5
+d 277
+indice 5
+d 277
+# run 1.00us
+# run 1.00us
+# run 1.00us
+indice 4
+d 913
+indice 4
+d 608
+indice 4
+d 303
+indice 4
+d 303
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# exit 0

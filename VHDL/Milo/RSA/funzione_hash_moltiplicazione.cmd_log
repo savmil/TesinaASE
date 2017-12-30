@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/media/sf_ASE/VHDL/Milo/RSA/funzione_hash_moltiplicazione.xst" -ofn "/media/sf_ASE/VHDL/Milo/RSA/funzione_hash_moltiplicazione.syr" 

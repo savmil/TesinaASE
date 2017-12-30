@@ -1,0 +1,878 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Reading design: tester_dispositivi.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "tester_dispositivi.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "tester_dispositivi"
+Output Format                      : NGC
+Target Device                      : xc3s100e-5-tq144
+
+---- Source Options
+Top Module Name                    : tester_dispositivi
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/CarrySaveAdder/muxn_1.vhd" in Library work.
+Entity <muxn_1> compiled.
+Entity <muxn_1> (Architecture <dataflow>) compiled.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/CarrySaveAdder/demux1_n.vhd" in Library work.
+Entity <demux1_n> compiled.
+Entity <demux1_n> (Architecture <dataflow>) compiled.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/CarrySaveAdder/cathode_encoder.vhd" in Library work.
+Entity <cathode_encoder> compiled.
+Entity <cathode_encoder> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/seven_operand_adder/half_adder.vhdl" in Library work.
+Entity <half_adder> compiled.
+Entity <half_adder> (Architecture <dataflow>) compiled.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/CarrySaveAdder/clock_filter.vhd" in Library work.
+Entity <clock_filter> compiled.
+Entity <clock_filter> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/CarrySaveAdder/counter_mod2n.vhd" in Library work.
+Entity <counter_mod2n> compiled.
+Entity <counter_mod2n> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/CarrySaveAdder/cathode_manager.vhd" in Library work.
+Entity <cathode_manager> compiled.
+Entity <cathode_manager> (Architecture <structural>) compiled.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/CarrySaveAdder/anode_manager.vhd" in Library work.
+Entity <anode_manager> compiled.
+Entity <anode_manager> (Architecture <structural>) compiled.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/CarrySaveAdder/edge_triggered_d_n.vhd" in Library work.
+Entity <edge_triggered_d_n> compiled.
+Entity <edge_triggered_d_n> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/seven_operand_adder/full_adder_half.vhdl" in Library work.
+Entity <full_adder_half> compiled.
+Entity <full_adder_half> (Architecture <register_transfer>) compiled.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/CarrySaveAdder/display_on_board.vhd" in Library work.
+Entity <display_on_board> compiled.
+Entity <display_on_board> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/CarrySaveAdder/display.vhd" in Library work.
+Entity <display> compiled.
+Entity <display> (Architecture <structural>) compiled.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/CarrySaveAdder/carry_save_cell.vhd" in Library work.
+Entity <carry_save_cell> compiled.
+Entity <carry_save_cell> (Architecture <structural>) compiled.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/CarrySaveAdder/contatore_modulo_4.vhd" in Library work.
+Entity <contatore_modulo_2n> compiled.
+Entity <contatore_modulo_2n> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/CarrySaveAdder/latch_d.vhd" in Library work.
+Entity <latch_d> compiled.
+Entity <latch_d> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/CarrySaveAdder/carry_save_adder.vhd" in Library work.
+Entity <carry_save_adder> compiled.
+Entity <carry_save_adder> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/CarrySaveAdder/display_top_level.vhd" in Library work.
+Entity <display_top_level> compiled.
+Entity <display_top_level> (Architecture <structural>) compiled.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/CarrySaveAdder/tester_dispositivi.vhd" in Library work.
+Entity <tester_dispositivi> compiled.
+Entity <tester_dispositivi> (Architecture <Behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <tester_dispositivi> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <contatore_modulo_2n> in library <work> (architecture <Behavioral>) with generics.
+	width = 2
+
+Analyzing hierarchy for entity <latch_d> in library <work> (architecture <Behavioral>) with generics.
+	width = 3
+
+Analyzing hierarchy for entity <carry_save_adder> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <display_top_level> in library <work> (architecture <structural>) with generics.
+	freq_clock = 50000000
+	freq_hit = 250
+
+Analyzing hierarchy for entity <carry_save_cell> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <display_on_board> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <display> in library <work> (architecture <structural>) with generics.
+	freq_clock = 50000000
+	freq_hit = 250
+
+Analyzing hierarchy for entity <full_adder_half> in library <work> (architecture <register_transfer>).
+
+Analyzing hierarchy for entity <edge_triggered_d_n> in library <work> (architecture <Behavioral>) with generics.
+	width = 16
+
+Analyzing hierarchy for entity <edge_triggered_d_n> in library <work> (architecture <Behavioral>) with generics.
+	width = 4
+
+Analyzing hierarchy for entity <clock_filter> in library <work> (architecture <Behavioral>) with generics.
+	freq_clock = 50000000
+	freq_hit = 250
+
+Analyzing hierarchy for entity <counter_mod2n> in library <work> (architecture <Behavioral>) with generics.
+	width = 2
+
+Analyzing hierarchy for entity <cathode_manager> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <anode_manager> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <half_adder> in library <work> (architecture <dataflow>).
+
+Analyzing hierarchy for entity <muxn_1> in library <work> (architecture <dataflow>) with generics.
+	address_width = 2
+
+Analyzing hierarchy for entity <cathode_encoder> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <demux1_n> in library <work> (architecture <dataflow>) with generics.
+	address_width = 2
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <tester_dispositivi> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:753 - "/media/sf_ASE/VHDL/Milo/CarrySaveAdder/tester_dispositivi.vhd" line 84: Unconnected output port 'hit' of component 'contatore_modulo_2n'.
+Entity <tester_dispositivi> analyzed. Unit <tester_dispositivi> generated.
+
+Analyzing generic Entity <contatore_modulo_2n> in library <work> (Architecture <Behavioral>).
+	width = 2
+Entity <contatore_modulo_2n> analyzed. Unit <contatore_modulo_2n> generated.
+
+Analyzing generic Entity <latch_d> in library <work> (Architecture <Behavioral>).
+	width = 3
+Entity <latch_d> analyzed. Unit <latch_d> generated.
+
+Analyzing Entity <carry_save_adder> in library <work> (Architecture <Behavioral>).
+Entity <carry_save_adder> analyzed. Unit <carry_save_adder> generated.
+
+Analyzing Entity <carry_save_cell> in library <work> (Architecture <structural>).
+Entity <carry_save_cell> analyzed. Unit <carry_save_cell> generated.
+
+Analyzing Entity <full_adder_half> in library <work> (Architecture <register_transfer>).
+Entity <full_adder_half> analyzed. Unit <full_adder_half> generated.
+
+Analyzing Entity <half_adder> in library <work> (Architecture <dataflow>).
+Entity <half_adder> analyzed. Unit <half_adder> generated.
+
+Analyzing generic Entity <display_top_level> in library <work> (Architecture <structural>).
+	freq_clock = 50000000
+	freq_hit = 250
+Entity <display_top_level> analyzed. Unit <display_top_level> generated.
+
+Analyzing Entity <display_on_board> in library <work> (Architecture <Behavioral>).
+Entity <display_on_board> analyzed. Unit <display_on_board> generated.
+
+Analyzing generic Entity <edge_triggered_d_n.1> in library <work> (Architecture <Behavioral>).
+	width = 16
+Entity <edge_triggered_d_n.1> analyzed. Unit <edge_triggered_d_n.1> generated.
+
+Analyzing generic Entity <edge_triggered_d_n.2> in library <work> (Architecture <Behavioral>).
+	width = 4
+Entity <edge_triggered_d_n.2> analyzed. Unit <edge_triggered_d_n.2> generated.
+
+Analyzing generic Entity <display> in library <work> (Architecture <structural>).
+	freq_clock = 50000000
+	freq_hit = 250
+Entity <display> analyzed. Unit <display> generated.
+
+Analyzing generic Entity <clock_filter> in library <work> (Architecture <Behavioral>).
+	freq_clock = 50000000
+	freq_hit = 250
+Entity <clock_filter> analyzed. Unit <clock_filter> generated.
+
+Analyzing generic Entity <counter_mod2n> in library <work> (Architecture <Behavioral>).
+	width = 2
+Entity <counter_mod2n> analyzed. Unit <counter_mod2n> generated.
+
+Analyzing Entity <cathode_manager> in library <work> (Architecture <structural>).
+Entity <cathode_manager> analyzed. Unit <cathode_manager> generated.
+
+Analyzing generic Entity <muxn_1> in library <work> (Architecture <dataflow>).
+	address_width = 2
+Entity <muxn_1> analyzed. Unit <muxn_1> generated.
+
+Analyzing Entity <cathode_encoder> in library <work> (Architecture <Behavioral>).
+INFO:Xst:1561 - "/media/sf_ASE/VHDL/Milo/CarrySaveAdder/cathode_encoder.vhd" line 97: Mux is complete : default of case is discarded
+Entity <cathode_encoder> analyzed. Unit <cathode_encoder> generated.
+
+Analyzing Entity <anode_manager> in library <work> (Architecture <structural>).
+Entity <anode_manager> analyzed. Unit <anode_manager> generated.
+
+Analyzing generic Entity <demux1_n> in library <work> (Architecture <dataflow>).
+	address_width = 2
+Entity <demux1_n> analyzed. Unit <demux1_n> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <contatore_modulo_2n>.
+    Related source file is "/media/sf_ASE/VHDL/Milo/CarrySaveAdder/contatore_modulo_4.vhd".
+    Found 1-bit register for signal <hit>.
+    Found 2-bit up counter for signal <count>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <contatore_modulo_2n> synthesized.
+
+
+Synthesizing Unit <latch_d>.
+    Related source file is "/media/sf_ASE/VHDL/Milo/CarrySaveAdder/latch_d.vhd".
+    Found 3-bit register for signal <output>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+Unit <latch_d> synthesized.
+
+
+Synthesizing Unit <half_adder>.
+    Related source file is "/media/sf_ASE/VHDL/Milo/seven_operand_adder/half_adder.vhdl".
+    Found 1-bit xor2 for signal <S>.
+Unit <half_adder> synthesized.
+
+
+Synthesizing Unit <edge_triggered_d_n_1>.
+    Related source file is "/media/sf_ASE/VHDL/Milo/CarrySaveAdder/edge_triggered_d_n.vhd".
+    Found 16-bit register for signal <q>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+Unit <edge_triggered_d_n_1> synthesized.
+
+
+Synthesizing Unit <edge_triggered_d_n_2>.
+    Related source file is "/media/sf_ASE/VHDL/Milo/CarrySaveAdder/edge_triggered_d_n.vhd".
+    Found 4-bit register for signal <q>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <edge_triggered_d_n_2> synthesized.
+
+
+Synthesizing Unit <clock_filter>.
+    Related source file is "/media/sf_ASE/VHDL/Milo/CarrySaveAdder/clock_filter.vhd".
+    Found 18-bit up counter for signal <count>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <clock_filter> synthesized.
+
+
+Synthesizing Unit <counter_mod2n>.
+    Related source file is "/media/sf_ASE/VHDL/Milo/CarrySaveAdder/counter_mod2n.vhd".
+    Found 2-bit register for signal <count>.
+    Found 2-bit adder for signal <count$add0000> created at line 25.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <counter_mod2n> synthesized.
+
+
+Synthesizing Unit <muxn_1>.
+    Related source file is "/media/sf_ASE/VHDL/Milo/CarrySaveAdder/muxn_1.vhd".
+    Found 1-bit 4-to-1 multiplexer for signal <X>.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <muxn_1> synthesized.
+
+
+Synthesizing Unit <cathode_encoder>.
+    Related source file is "/media/sf_ASE/VHDL/Milo/CarrySaveAdder/cathode_encoder.vhd".
+    Found 16x7-bit ROM for signal <cathodes>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <cathode_encoder> synthesized.
+
+
+Synthesizing Unit <demux1_n>.
+    Related source file is "/media/sf_ASE/VHDL/Milo/CarrySaveAdder/demux1_n.vhd".
+Unit <demux1_n> synthesized.
+
+
+Synthesizing Unit <full_adder_half>.
+    Related source file is "/media/sf_ASE/VHDL/Milo/seven_operand_adder/full_adder_half.vhdl".
+Unit <full_adder_half> synthesized.
+
+
+Synthesizing Unit <display_on_board>.
+    Related source file is "/media/sf_ASE/VHDL/Milo/CarrySaveAdder/display_on_board.vhd".
+    Found 4-bit register for signal <dots_reg>.
+    Found 4-bit register for signal <enable_reg>.
+    Found 16-bit register for signal <value_reg>.
+    Summary:
+	inferred  24 D-type flip-flop(s).
+Unit <display_on_board> synthesized.
+
+
+Synthesizing Unit <cathode_manager>.
+    Related source file is "/media/sf_ASE/VHDL/Milo/CarrySaveAdder/cathode_manager.vhd".
+Unit <cathode_manager> synthesized.
+
+
+Synthesizing Unit <anode_manager>.
+    Related source file is "/media/sf_ASE/VHDL/Milo/CarrySaveAdder/anode_manager.vhd".
+Unit <anode_manager> synthesized.
+
+
+Synthesizing Unit <carry_save_cell>.
+    Related source file is "/media/sf_ASE/VHDL/Milo/CarrySaveAdder/carry_save_cell.vhd".
+Unit <carry_save_cell> synthesized.
+
+
+Synthesizing Unit <display>.
+    Related source file is "/media/sf_ASE/VHDL/Milo/CarrySaveAdder/display.vhd".
+Unit <display> synthesized.
+
+
+Synthesizing Unit <carry_save_adder>.
+    Related source file is "/media/sf_ASE/VHDL/Milo/CarrySaveAdder/carry_save_adder.vhd".
+Unit <carry_save_adder> synthesized.
+
+
+Synthesizing Unit <display_top_level>.
+    Related source file is "/media/sf_ASE/VHDL/Milo/CarrySaveAdder/display_top_level.vhd".
+Unit <display_top_level> synthesized.
+
+
+Synthesizing Unit <tester_dispositivi>.
+    Related source file is "/media/sf_ASE/VHDL/Milo/CarrySaveAdder/tester_dispositivi.vhd".
+WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <load_value> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <load_conf> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1306 - Output <led<5:1>> is never assigned.
+WARNING:Xst:1780 - Signal <value<15:6>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <sum1<15:3>> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000.
+WARNING:Xst:646 - Signal <en_cla> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <tester_dispositivi> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 1
+ 2-bit adder                                           : 1
+# Counters                                             : 2
+ 18-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+# Registers                                            : 14
+ 1-bit register                                        : 7
+ 16-bit register                                       : 2
+ 2-bit register                                        : 1
+ 4-bit register                                        : 4
+# Multiplexers                                         : 6
+ 1-bit 4-to-1 multiplexer                              : 6
+# Xors                                                 : 8
+ 1-bit xor2                                            : 8
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1293 - FF/Latch <value_reg_15> has a constant value of 0 in block <inst_on_board>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <value_reg_14> has a constant value of 0 in block <inst_on_board>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <value_reg_13> has a constant value of 0 in block <inst_on_board>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <value_reg_12> has a constant value of 0 in block <inst_on_board>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <value_reg_11> has a constant value of 0 in block <inst_on_board>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <value_reg_10> has a constant value of 0 in block <inst_on_board>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <value_reg_9> has a constant value of 0 in block <inst_on_board>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <value_reg_8> has a constant value of 0 in block <inst_on_board>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <value_reg_7> has a constant value of 0 in block <inst_on_board>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <value_reg_6> has a constant value of 0 in block <inst_on_board>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <value_reg_5> has a constant value of 0 in block <inst_on_board>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <value_reg_4> has a constant value of 0 in block <inst_on_board>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <value_reg_3> has a constant value of 0 in block <inst_on_board>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q_15> (without init value) has a constant value of 0 in block <inst_edge_triggered_value>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q_14> (without init value) has a constant value of 0 in block <inst_edge_triggered_value>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q_13> (without init value) has a constant value of 0 in block <inst_edge_triggered_value>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q_12> (without init value) has a constant value of 0 in block <inst_edge_triggered_value>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q_11> (without init value) has a constant value of 0 in block <inst_edge_triggered_value>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q_10> (without init value) has a constant value of 0 in block <inst_edge_triggered_value>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q_9> (without init value) has a constant value of 0 in block <inst_edge_triggered_value>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q_8> (without init value) has a constant value of 0 in block <inst_edge_triggered_value>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q_7> (without init value) has a constant value of 0 in block <inst_edge_triggered_value>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q_6> (without init value) has a constant value of 0 in block <inst_edge_triggered_value>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q_5> (without init value) has a constant value of 0 in block <inst_edge_triggered_value>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q_4> (without init value) has a constant value of 0 in block <inst_edge_triggered_value>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q_3> (without init value) has a constant value of 0 in block <inst_edge_triggered_value>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 1
+ 2-bit adder                                           : 1
+# Counters                                             : 2
+ 18-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+# Registers                                            : 57
+ Flip-Flops                                            : 57
+# Multiplexers                                         : 6
+ 1-bit 4-to-1 multiplexer                              : 6
+# Xors                                                 : 8
+ 1-bit xor2                                            : 8
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <value_reg_3> in Unit <display_on_board> is equivalent to the following 12 FFs/Latches, which will be removed : <value_reg_4> <value_reg_5> <value_reg_6> <value_reg_7> <value_reg_8> <value_reg_9> <value_reg_10> <value_reg_11> <value_reg_12> <value_reg_13> <value_reg_14> <value_reg_15> 
+WARNING:Xst:1293 - FF/Latch <value_reg_3> has a constant value of 0 in block <display_on_board>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <selettore/hit> of sequential type is unconnected in block <tester_dispositivi>.
+
+Optimizing unit <tester_dispositivi> ...
+
+Optimizing unit <edge_triggered_d_n_1> ...
+
+Optimizing unit <display_on_board> ...
+WARNING:Xst:1710 - FF/Latch <gest_disp/inst_on_board/inst_edge_triggered_value/q_3> (without init value) has a constant value of 0 in block <tester_dispositivi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gest_disp/inst_on_board/inst_edge_triggered_value/q_4> (without init value) has a constant value of 0 in block <tester_dispositivi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gest_disp/inst_on_board/inst_edge_triggered_value/q_5> (without init value) has a constant value of 0 in block <tester_dispositivi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gest_disp/inst_on_board/inst_edge_triggered_value/q_6> (without init value) has a constant value of 0 in block <tester_dispositivi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gest_disp/inst_on_board/inst_edge_triggered_value/q_7> (without init value) has a constant value of 0 in block <tester_dispositivi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gest_disp/inst_on_board/inst_edge_triggered_value/q_8> (without init value) has a constant value of 0 in block <tester_dispositivi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gest_disp/inst_on_board/inst_edge_triggered_value/q_9> (without init value) has a constant value of 0 in block <tester_dispositivi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gest_disp/inst_on_board/inst_edge_triggered_value/q_10> (without init value) has a constant value of 0 in block <tester_dispositivi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gest_disp/inst_on_board/inst_edge_triggered_value/q_11> (without init value) has a constant value of 0 in block <tester_dispositivi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gest_disp/inst_on_board/inst_edge_triggered_value/q_12> (without init value) has a constant value of 0 in block <tester_dispositivi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gest_disp/inst_on_board/inst_edge_triggered_value/q_13> (without init value) has a constant value of 0 in block <tester_dispositivi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gest_disp/inst_on_board/inst_edge_triggered_value/q_14> (without init value) has a constant value of 0 in block <tester_dispositivi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gest_disp/inst_on_board/inst_edge_triggered_value/q_15> (without init value) has a constant value of 0 in block <tester_dispositivi>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block tester_dispositivi, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 50
+ Flip-Flops                                            : 50
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : tester_dispositivi.ngr
+Top Level Output File Name         : tester_dispositivi
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 36
+
+Cell Usage :
+# BELS                             : 100
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 17
+#      LUT2                        : 6
+#      LUT3                        : 20
+#      LUT4                        : 7
+#      MUXCY                       : 22
+#      MUXF5                       : 5
+#      VCC                         : 1
+#      XORCY                       : 18
+# FlipFlops/Latches                : 50
+#      FDC                         : 37
+#      FDCE                        : 13
+# Clock Buffers                    : 2
+#      BUFGP                       : 2
+# IO Buffers                       : 26
+#      IBUF                        : 11
+#      OBUF                        : 15
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100etq144-5 
+
+ Number of Slices:                       36  out of    960     3%  
+ Number of Slice Flip Flops:             50  out of   1920     2%  
+ Number of 4 input LUTs:                 53  out of   1920     2%  
+ Number of IOs:                          36
+ Number of bonded IOBs:                  28  out of    108    25%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)   | Load  |
+-----------------------------------+-------------------------+-------+
+en_ad2(en_ad21:O)                  | NONE(*)(adder2/output_1)| 3     |
+en_ad1(en_ad11:O)                  | NONE(*)(adder1/output_1)| 3     |
+clock                              | BUFGP                   | 42    |
+button<0>                          | BUFGP                   | 2     |
+-----------------------------------+-------------------------+-------+
+(*) These 2 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+button<3>                          | IBUF                   | 50    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 3.801ns (Maximum Frequency: 263.057MHz)
+   Minimum input arrival time before clock: 3.418ns
+   Maximum output required time after clock: 7.283ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 3.801ns (frequency: 263.057MHz)
+  Total number of paths / destination ports: 221 / 33
+-------------------------------------------------------------------------
+Delay:               3.801ns (Levels of Logic = 18)
+  Source:            gest_disp/inst_display/inst_clk_fliter/count_1 (FF)
+  Destination:       gest_disp/inst_display/inst_clk_fliter/count_17 (FF)
+  Source Clock:      clock rising
+  Destination Clock: clock rising
+
+  Data Path: gest_disp/inst_display/inst_clk_fliter/count_1 to gest_disp/inst_display/inst_clk_fliter/count_17
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.514   0.532  gest_disp/inst_display/inst_clk_fliter/count_1 (gest_disp/inst_display/inst_clk_fliter/count_1)
+     LUT1:I0->O            1   0.612   0.000  gest_disp/inst_display/inst_clk_fliter/Mcount_count_cy<1>_rt (gest_disp/inst_display/inst_clk_fliter/Mcount_count_cy<1>_rt)
+     MUXCY:S->O            1   0.404   0.000  gest_disp/inst_display/inst_clk_fliter/Mcount_count_cy<1> (gest_disp/inst_display/inst_clk_fliter/Mcount_count_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  gest_disp/inst_display/inst_clk_fliter/Mcount_count_cy<2> (gest_disp/inst_display/inst_clk_fliter/Mcount_count_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  gest_disp/inst_display/inst_clk_fliter/Mcount_count_cy<3> (gest_disp/inst_display/inst_clk_fliter/Mcount_count_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  gest_disp/inst_display/inst_clk_fliter/Mcount_count_cy<4> (gest_disp/inst_display/inst_clk_fliter/Mcount_count_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  gest_disp/inst_display/inst_clk_fliter/Mcount_count_cy<5> (gest_disp/inst_display/inst_clk_fliter/Mcount_count_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  gest_disp/inst_display/inst_clk_fliter/Mcount_count_cy<6> (gest_disp/inst_display/inst_clk_fliter/Mcount_count_cy<6>)
+     MUXCY:CI->O           1   0.051   0.000  gest_disp/inst_display/inst_clk_fliter/Mcount_count_cy<7> (gest_disp/inst_display/inst_clk_fliter/Mcount_count_cy<7>)
+     MUXCY:CI->O           1   0.051   0.000  gest_disp/inst_display/inst_clk_fliter/Mcount_count_cy<8> (gest_disp/inst_display/inst_clk_fliter/Mcount_count_cy<8>)
+     MUXCY:CI->O           1   0.051   0.000  gest_disp/inst_display/inst_clk_fliter/Mcount_count_cy<9> (gest_disp/inst_display/inst_clk_fliter/Mcount_count_cy<9>)
+     MUXCY:CI->O           1   0.051   0.000  gest_disp/inst_display/inst_clk_fliter/Mcount_count_cy<10> (gest_disp/inst_display/inst_clk_fliter/Mcount_count_cy<10>)
+     MUXCY:CI->O           1   0.051   0.000  gest_disp/inst_display/inst_clk_fliter/Mcount_count_cy<11> (gest_disp/inst_display/inst_clk_fliter/Mcount_count_cy<11>)
+     MUXCY:CI->O           1   0.051   0.000  gest_disp/inst_display/inst_clk_fliter/Mcount_count_cy<12> (gest_disp/inst_display/inst_clk_fliter/Mcount_count_cy<12>)
+     MUXCY:CI->O           1   0.051   0.000  gest_disp/inst_display/inst_clk_fliter/Mcount_count_cy<13> (gest_disp/inst_display/inst_clk_fliter/Mcount_count_cy<13>)
+     MUXCY:CI->O           1   0.051   0.000  gest_disp/inst_display/inst_clk_fliter/Mcount_count_cy<14> (gest_disp/inst_display/inst_clk_fliter/Mcount_count_cy<14>)
+     MUXCY:CI->O           1   0.051   0.000  gest_disp/inst_display/inst_clk_fliter/Mcount_count_cy<15> (gest_disp/inst_display/inst_clk_fliter/Mcount_count_cy<15>)
+     MUXCY:CI->O           0   0.051   0.000  gest_disp/inst_display/inst_clk_fliter/Mcount_count_cy<16> (gest_disp/inst_display/inst_clk_fliter/Mcount_count_cy<16>)
+     XORCY:CI->O           1   0.699   0.000  gest_disp/inst_display/inst_clk_fliter/Mcount_count_xor<17> (Result<17>)
+     FDC:D                     0.268          gest_disp/inst_display/inst_clk_fliter/count_17
+    ----------------------------------------
+    Total                      3.801ns (3.270ns logic, 0.532ns route)
+                                       (86.0% logic, 14.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'button<0>'
+  Clock period: 2.289ns (frequency: 436.862MHz)
+  Total number of paths / destination ports: 3 / 2
+-------------------------------------------------------------------------
+Delay:               2.289ns (Levels of Logic = 1)
+  Source:            selettore/count_0 (FF)
+  Destination:       selettore/count_0 (FF)
+  Source Clock:      button<0> rising
+  Destination Clock: button<0> rising
+
+  Data Path: selettore/count_0 to selettore/count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              5   0.514   0.538  selettore/count_0 (selettore/count_0)
+     INV:I->O              1   0.612   0.357  selettore/Mcount_count_xor<0>11_INV_0 (Result<0>)
+     FDC:D                     0.268          selettore/count_0
+    ----------------------------------------
+    Total                      2.289ns (1.394ns logic, 0.895ns route)
+                                       (60.9% logic, 39.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'en_ad2'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              1.754ns (Levels of Logic = 1)
+  Source:            in_byte<4> (PAD)
+  Destination:       adder2/output_1 (FF)
+  Destination Clock: en_ad2 rising
+
+  Data Path: in_byte<4> to adder2/output_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.106   0.380  in_byte_4_IBUF (in_byte_4_IBUF)
+     FDC:D                     0.268          adder2/output_1
+    ----------------------------------------
+    Total                      1.754ns (1.374ns logic, 0.380ns route)
+                                       (78.3% logic, 21.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'en_ad1'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              1.754ns (Levels of Logic = 1)
+  Source:            in_byte<1> (PAD)
+  Destination:       adder1/output_1 (FF)
+  Destination Clock: en_ad1 rising
+
+  Data Path: in_byte<1> to adder1/output_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.106   0.380  in_byte_1_IBUF (in_byte_1_IBUF)
+     FDC:D                     0.268          adder1/output_1
+    ----------------------------------------
+    Total                      1.754ns (1.374ns logic, 0.380ns route)
+                                       (78.3% logic, 21.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
+  Total number of paths / destination ports: 22 / 19
+-------------------------------------------------------------------------
+Offset:              3.418ns (Levels of Logic = 2)
+  Source:            button<2> (PAD)
+  Destination:       gest_disp/inst_on_board/value_reg_2 (FF)
+  Destination Clock: clock rising
+
+  Data Path: button<2> to gest_disp/inst_on_board/value_reg_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             9   1.106   0.766  button_2_IBUF (button_2_IBUF)
+     LUT2:I1->O            3   0.612   0.451  gest_disp/inst_on_board/value_reg_not00011 (gest_disp/inst_on_board/value_reg_not0001)
+     FDCE:CE                   0.483          gest_disp/inst_on_board/value_reg_0
+    ----------------------------------------
+    Total                      3.418ns (2.201ns logic, 1.217ns route)
+                                       (64.4% logic, 35.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
+  Total number of paths / destination ports: 106 / 12
+-------------------------------------------------------------------------
+Offset:              7.283ns (Levels of Logic = 4)
+  Source:            gest_disp/inst_display/inst_counter/count_0 (FF)
+  Destination:       cathodes<6> (PAD)
+  Source Clock:      clock rising
+
+  Data Path: gest_disp/inst_display/inst_counter/count_0 to cathodes<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            13   0.514   0.988  gest_disp/inst_display/inst_counter/count_0 (gest_disp/inst_display/inst_counter/count_0)
+     LUT3:I0->O            1   0.612   0.000  gest_disp/inst_display/inst_cathode_manager/inst_mux_all[1].inst_mux4_1/Mmux_X_4 (gest_disp/inst_display/inst_cathode_manager/inst_mux_all[1].inst_mux4_1/Mmux_X_4)
+     MUXF5:I0->O           7   0.278   0.754  gest_disp/inst_display/inst_cathode_manager/inst_mux_all[1].inst_mux4_1/Mmux_X_2_f5 (gest_disp/inst_display/inst_cathode_manager/nibble<1>)
+     LUT3:I0->O            1   0.612   0.357  gest_disp/inst_display/inst_cathode_manager/inst_encoder/Mrom_cathodes61 (cathodes_6_OBUF)
+     OBUF:I->O                 3.169          cathodes_6_OBUF (cathodes<6>)
+    ----------------------------------------
+    Total                      7.283ns (5.185ns logic, 2.098ns route)
+                                       (71.2% logic, 28.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'button<0>'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              4.221ns (Levels of Logic = 1)
+  Source:            selettore/count_0 (FF)
+  Destination:       led<6> (PAD)
+  Source Clock:      button<0> rising
+
+  Data Path: selettore/count_0 to led<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              5   0.514   0.538  selettore/count_0 (selettore/count_0)
+     OBUF:I->O                 3.169          led_6_OBUF (led<6>)
+    ----------------------------------------
+    Total                      4.221ns (3.683ns logic, 0.538ns route)
+                                       (87.3% logic, 12.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'en_ad2'
+  Total number of paths / destination ports: 3 / 1
+-------------------------------------------------------------------------
+Offset:              5.255ns (Levels of Logic = 2)
+  Source:            adder2/output_1 (FF)
+  Destination:       led<0> (PAD)
+  Source Clock:      en_ad2 rising
+
+  Data Path: adder2/output_1 to led<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.514   0.603  adder2/output_1 (adder2/output_1)
+     LUT4:I0->O            1   0.612   0.357  led<0>1 (led_0_OBUF)
+     OBUF:I->O                 3.169          led_0_OBUF (led<0>)
+    ----------------------------------------
+    Total                      5.255ns (4.295ns logic, 0.960ns route)
+                                       (81.7% logic, 18.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'en_ad1'
+  Total number of paths / destination ports: 3 / 1
+-------------------------------------------------------------------------
+Offset:              6.277ns (Levels of Logic = 3)
+  Source:            adder1/output_1 (FF)
+  Destination:       led<0> (PAD)
+  Source Clock:      en_ad1 rising
+
+  Data Path: adder1/output_1 to led<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.514   0.532  adder1/output_1 (adder1/output_1)
+     LUT3:I0->O            3   0.612   0.481  cla/carry_save_cell_2/full_adder/S121 (cla/carry_save_cell_2/full_adder/S1_bdd3)
+     LUT4:I2->O            1   0.612   0.357  led<0>1 (led_0_OBUF)
+     OBUF:I->O                 3.169          led_0_OBUF (led<0>)
+    ----------------------------------------
+    Total                      6.277ns (4.907ns logic, 1.370ns route)
+                                       (78.2% logic, 21.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 3.51 secs
+ 
+--> 
+
+
+Total memory usage is 515904 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   49 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

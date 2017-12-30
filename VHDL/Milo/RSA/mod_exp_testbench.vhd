@@ -2,7 +2,7 @@
 -- Company: 
 -- Engineer:
 --
--- Create Date:   18:45:34 12/28/2017
+-- Create Date:   14:09:28 12/29/2017
 -- Design Name:   
 -- Module Name:   /media/sf_ASE/VHDL/Milo/RSA/mod_exp_testbench.vhd
 -- Project Name:  RSA
@@ -10,7 +10,7 @@
 -- Tool versions:  
 -- Description:   
 -- 
--- VHDL Test Bench Created by ISE for module: modular_exponentiation
+-- VHDL Test Bench Created by ISE for module: mod_exp
 -- 
 -- Dependencies:
 -- 
@@ -27,7 +27,7 @@
 --------------------------------------------------------------------------------
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
-use IEEE.numeric_std.all;
+ 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --USE ieee.numeric_std.ALL;
@@ -39,29 +39,25 @@ ARCHITECTURE behavior OF mod_exp_testbench IS
  
     -- Component Declaration for the Unit Under Test (UUT)
  
-    COMPONENT modular_exponentiation
+    COMPONENT mod_exp
     PORT(
-         N : IN  unsigned(31 downto 0);
-         Exp : IN  unsigned(31 downto 0);
-         M : IN  unsigned(31 downto 0);
-         enc_dec : IN  std_logic;
          clk : IN  std_logic;
-         reset : IN  std_logic;
-         C : OUT  unsigned(31 downto 0)
+         base : IN  std_logic_vector(15 downto 0);
+         esponente : IN  std_logic_vector(15 downto 0);
+         modulo : IN  std_logic_vector(15 downto 0);
+         m_e : OUT  std_logic_vector(31 downto 0)
         );
     END COMPONENT;
     
 
    --Inputs
-   signal N : unsigned(31 downto 0) := (others => '0');
-   signal Exp : unsigned(31 downto 0) := (others => '0');
-   signal M : unsigned(31 downto 0) := (others => '0');
-   signal enc_dec : std_logic := '0';
    signal clk : std_logic := '0';
-   signal reset : std_logic := '0';
+   signal base : std_logic_vector(15 downto 0) := (others => '0');
+   signal esponente : std_logic_vector(15 downto 0) := (others => '0');
+   signal modulo : std_logic_vector(15 downto 0) := (others => '0');
 
  	--Outputs
-   signal C : unsigned(31 downto 0);
+   signal m_e : std_logic_vector(31 downto 0);
 
    -- Clock period definitions
    constant clk_period : time := 10 ns;
@@ -69,14 +65,12 @@ ARCHITECTURE behavior OF mod_exp_testbench IS
 BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
-   uut: modular_exponentiation PORT MAP (
-          N => N,
-          Exp => Exp,
-          M => M,
-          enc_dec => enc_dec,
+   uut: mod_exp PORT MAP (
           clk => clk,
-          reset => reset,
-          C => C
+          base => base,
+          esponente => esponente,
+          modulo => modulo,
+          m_e => m_e
         );
 
    -- Clock process definitions
@@ -93,13 +87,10 @@ BEGIN
    stim_proc: process
    begin		
       -- hold reset state for 100 ns.
-		reset<='1';
       wait for 100 ns;	
-		reset<='0';
-		N<=x"00000004";
-		EXP<=x"00000002";
-		M<=x"00000003";
-		enc_dec<='0';
+		base<=x"0007";
+		esponente<=x"0130";
+		modulo<=x"0131";
       wait for clk_period*10;
 
       -- insert stimulus here 

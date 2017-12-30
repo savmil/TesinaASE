@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "/home/sav/full_adder_half/full_adder_half.vhdl";
+static const char *ng0 = "/media/sf_ASE/VHDL/Milo/seven_operand_adder/full_adder_half.vhdl";
 extern char *IEEE_P_2592010699;
 
 unsigned char ieee_p_2592010699_sub_3488546069778340532_503743352(char *, unsigned char , unsigned char );

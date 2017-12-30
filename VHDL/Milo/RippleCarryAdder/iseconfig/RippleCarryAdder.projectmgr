@@ -8,15 +8,17 @@
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/RippleCarryAdder - structural |home|sav|ASE|RippleCarryAdder|RippleCarryAdder.vhd/adder - full_adder_half - register_transfer</ClosedNode>
+         <ClosedNode>/RippleCarryAdder - structural |media|sf_ASE|VHDL|Milo|RippleCarryAdder|RippleCarryAdder.vhd</ClosedNode>
+         <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|VHDL|Milo|RippleCarryAdder|tester_dispositivi.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>RippleCarryAdder - structural (/home/sav/ASE/RippleCarryAdder/RippleCarryAdder.vhd)</SelectedItem>
+         <SelectedItem>tester_dispositivi - Behavioral (/media/sf_ASE/VHDL/Milo/RippleCarryAdder/tester_dispositivi.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001e4000000020000000000000000000000000200000064ffffffff000000810000000300000002000001e40000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001a3000000020000000000000000000000000200000064ffffffff000000810000000300000002000001a30000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>RippleCarryAdder - structural (/home/sav/ASE/RippleCarryAdder/RippleCarryAdder.vhd)</CurrentItem>
+      <CurrentItem>tester_dispositivi - Behavioral (/media/sf_ASE/VHDL/Milo/RippleCarryAdder/tester_dispositivi.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -39,9 +41,9 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000170000000040101000100000000000000000000000064ffffffff000000810000000000000004000000510000000100000000000000290000000100000000000000840000000100000000000000720000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000390000000040101000100000000000000000000000064ffffffff000000810000000000000004000000510000000100000000000000290000000100000000000000840000000100000000000002920000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>full_adder_half.vhdl</CurrentItem>
    </ItemView>
    <ItemView guiview="Library" >
       <ClosedNodes>
@@ -51,9 +53,9 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000093000000010001000100000000000000000000000064ffffffff000000810000000000000001000000930000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000124000000010001000100000000000000000000000064ffffffff000000810000000000000001000001240000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>work</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
@@ -64,28 +66,30 @@
          <ClosedNode>Implement Design/Translate</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>View Technology Schematic</SelectedItem>
+         <SelectedItem>Generate Programming File</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >11</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f4000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f40000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001af000000010000000100000000000000000000000064ffffffff000000810000000000000001000001af0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>View Technology Schematic</CurrentItem>
+      <CurrentItem>Generate Programming File</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/RippleCarryAdder - structural |home|sav|ASE|RippleCarryAdder|RippleCarryAdder.vhd/adder - full_adder_half - register_transfer</ClosedNode>
          <ClosedNode>/RippleCarryAdder_testbench - behavior |home|sav|ASE|RippleCarryAdder|RippleCarryAdder_testbench.vhd/uut - RippleCarryAdder - structural</ClosedNode>
+         <ClosedNode>/RippleCarryAdder_testbench - behavior |media|sf_ASE|VHDL|Milo|RippleCarryAdder|RippleCarryAdder_testbench.vhd/uut - RippleCarryAdder - structural</ClosedNode>
+         <ClosedNode>/gest_disp - behavior |media|sf_ASE|VHDL|Milo|RippleCarryAdder|gest_disp.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>uut - RippleCarryAdder - structural (/home/sav/ASE/RippleCarryAdder/RippleCarryAdder.vhd)</SelectedItem>
+         <SelectedItem>RippleCarryAdder_testbench - behavior (/media/sf_ASE/VHDL/Milo/RippleCarryAdder/RippleCarryAdder_testbench.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000021b000000020000000000000000000000000200000064ffffffff0000008100000003000000020000021b0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000002b5000000020000000000000000000000000200000064ffffffff000000810000000300000002000002b50000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>uut - RippleCarryAdder - structural (/home/sav/ASE/RippleCarryAdder/RippleCarryAdder.vhd)</CurrentItem>
+      <CurrentItem>RippleCarryAdder_testbench - behavior (/media/sf_ASE/VHDL/Milo/RippleCarryAdder/RippleCarryAdder_testbench.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -93,27 +97,27 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f4000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f40000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001be000000010000000100000000000000000000000064ffffffff000000810000000000000001000001be0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f4000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f40000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001be000000010000000100000000000000000000000064ffffffff000000810000000000000001000001be0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff0000000000000002000001440000011d01000000060100000002</SourceProcessView>
-   <CurrentView>Behavioral Simulation</CurrentView>
+   <CurrentView>Implementation</CurrentView>
 </Project>

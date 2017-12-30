@@ -8,7 +8,7 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/media/sf_ASE/VHDL/Milo/RSA/ipcore_dir/mem.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/media/sf_ASE/VHDL/Milo/RSA/ipcore_dir/div.vhd&quot; into library work</arg>
 </msg>
 
 </messages>

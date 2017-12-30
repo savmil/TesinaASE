@@ -30,7 +30,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity carry_select is
-	 generic(width:natural :=16);
+	 generic(width:natural :=8);
     Port ( adder1 : in  STD_LOGIC_VECTOR (width-1 downto 0);
            adder2 : in  STD_LOGIC_VECTOR (width-1 downto 0);
            cin : in  STD_LOGIC;
@@ -39,8 +39,9 @@ entity carry_select is
 end carry_select;
 	
 architecture Behavioral of carry_select is
+constant cell_dimension: NATURAL:=4;
 	COMPONENT carry_select_cell
-	generic (N: natural :=4);
+	generic (N: natural :=width/cell_dimension);
 	PORT(
 		adder1 : IN std_logic_vector(N-1 downto 0);
 		adder2 : IN std_logic_vector(N-1 downto 0);
@@ -49,14 +50,14 @@ architecture Behavioral of carry_select is
 		cout : OUT std_logic
 		);
 	END COMPONENT;
-	constant cell_dimension: NATURAL:=4;
-	signal cout1: STD_LOGIC_VECTOR(width/cell_dimension-1 downto 0);
+	constant number_of_cell: NATURAL:=width/(width/cell_dimension);
+	signal cout1: STD_LOGIC_VECTOR(cell_dimension-1 downto 0);
 begin
-	carry_select:for i in 0 to width/cell_dimension generate
-		c_s_c:carry_select_cell port map(adder1(width/cell_dimension+i*cell_dimension downto 0+i*cell_dimension),
-		adder2(width/cell_dimension+i*cell_dimension downto 0+i*cell_dimension),cin,
-		sum(width/cell_dimension+i*cell_dimension downto 0+i*cell_dimension),cout1(i));
-		cout<=cout1(cell_dimension);
+	carry_select:for i in 0 to number_of_cell-1 generate
+		c_s_c:carry_select_cell port map(adder1((width/cell_dimension+i*(width/cell_dimension))-1 downto 0+i*width/cell_dimension),
+		adder2((width/cell_dimension+i*(width/cell_dimension))-1 downto 0+i*width/cell_dimension),cin,
+		sum((width/cell_dimension+i*(width/cell_dimension))-1 downto 0+i*width/cell_dimension),cout1(i));
+		cout<=cout1(cell_dimension-1);
 	end generate carry_select;
 end Behavioral;
 

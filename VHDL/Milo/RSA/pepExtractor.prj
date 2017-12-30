@@ -1,2 +1,1 @@
-work	"modular_exponentiation.vhd"
-work	"montgomery_multiplier.vhd"
+work	"mod_exp.vhd"
