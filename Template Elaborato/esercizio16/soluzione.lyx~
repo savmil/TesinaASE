@@ -238,6 +238,13 @@ with-select.
 \end_layout
 
 \begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "GPIO_schematics"
@@ -256,7 +263,7 @@ status open
 
 \backslash
 lstinputlisting [language=VHDL,caption={Definizione del componente Pad}]
- {codice/pad.vhd}
+ {esercizio16/codice/pad.vhd}
 \end_layout
 
 \end_inset
@@ -337,7 +344,7 @@ status open
 
 \backslash
 lstinputlisting [language=VHDL,caption={Definizione del componente GPIO}]
- {codice/gpio.vhd}
+ {esercizio16/codice/gpio.vhd}
 \end_layout
 
 \end_inset

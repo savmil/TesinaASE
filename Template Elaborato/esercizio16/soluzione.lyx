@@ -238,6 +238,13 @@ with-select.
 \end_layout
 
 \begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "GPIO_schematics"
@@ -312,9 +319,6 @@ una serie di pad, il cui numero è settato tramite un generic.
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace bigskip
-\end_inset
-
 
 \end_layout
 

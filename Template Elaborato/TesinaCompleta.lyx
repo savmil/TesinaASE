@@ -522,11 +522,7 @@ esercizio01/Tesina.lyx ->esercizio02/Tesina.lyx e così via.
 \end_layout
 
 \begin_layout Chapter
-<<<<<<< HEAD
-Minimizzazione reti combinatorie
-=======
-Minimizzazione di reti combinatorie
->>>>>>> e0573848dd9ef8cb5d5fe88453034980ec8133a2
+Minimizzazione reti combinatorie 
 \end_layout
 
 \begin_layout Standard
@@ -540,11 +536,7 @@ filename "esercizio01/Tesina.lyx"
 \end_layout
 
 \begin_layout Chapter
-<<<<<<< HEAD
-Reti combinatorie Esercizi svolti con l'ausilio di SIS e Mapping Tecnologico
-=======
 Reti combinatorie con l'ausilio di SIS e Mapping Tecnologico
->>>>>>> e0573848dd9ef8cb5d5fe88453034980ec8133a2
 \end_layout
 
 \begin_layout Standard
@@ -558,13 +550,10 @@ filename "esercizio02/Tesina.lyx"
 \end_layout
 
 \begin_layout Chapter
-<<<<<<< HEAD
-=======
 Latch/Flip Flop
 \end_layout
 
 \begin_layout Chapter
->>>>>>> e0573848dd9ef8cb5d5fe88453034980ec8133a2
 Display a 7 segmenti
 \end_layout
 
@@ -572,42 +561,6 @@ Display a 7 segmenti
 \begin_inset CommandInset include
 LatexCommand input
 filename "esercizio03/Tesina.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Chapter
-GPIO
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "esercizio16/Tesina.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\end_layout
-
-\begin_layout Standard
-
-\lang american
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{mainmatter}
-\end_layout
 
 \end_inset
 
@@ -662,8 +615,36 @@ UART
 GPIO
 \end_layout
 
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "esercizio16/Tesina.lyx"
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 Firma digitale
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{mainmatter}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
