@@ -1268,7 +1268,18 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status collapsed
+status open
+
+\begin_layout Plain Layout
+Tabella 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "esercizio_2_minimizzazione"
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -4786,6 +4797,17 @@ backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
+Tabella 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "esercizio_3_minimizzazione"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Tabular
 <lyxtabular version="3" rows="17" columns="5">
 <features islongtable="true" longtabularalignment="center">
@@ -5724,6 +5746,17 @@ shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
 status open
+
+\begin_layout Plain Layout
+Tabella 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "esercizio_4_minimizzazione"
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Tabular
