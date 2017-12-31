@@ -513,7 +513,7 @@ Esercizio 2
 
 \begin_layout Standard
 Vogliamo mettere in evidenza in questo esempio come la tecnologia impatta
- sulle prestazioni di un circuto.
+ sulle prestazioni di una rete combinatoria.
 \end_layout
 
 \begin_layout Standard
@@ -597,7 +597,7 @@ espresso
 \emph default
  ritroviamo la medesima minimizzazione attuata manualmente col metodo di
  Quine Mc Cluskey.
- I costi del circuito, in termini di numero di litterali 
+ I costi della rete, in termini di numero di litterali 
 \begin_inset Formula $Cl$
 \end_inset
 
@@ -648,7 +648,7 @@ espresso
 \color inherit
 \lang italian
 .
- Vediamo come si comporta invece il circuito con l' utilizzo della libreria
+ Vediamo come si comporta invece la rete con l' utilizzo della libreria
  
 \emph on
 mcnc
@@ -896,7 +896,11 @@ noindent
 
 \end_inset
 
- rimappiamo la nostra rete su un fpga avente componenti elementari a quattro
+ La minimizzazione sub-ottima ottenuta con questo metodo euristico è simile
+ a quella ricavata da Mc Cluskey multi-funzione, a conferma del fatto che
+ il rugged-script si rivela una buona sequenza per le trasformazioni da
+ applicare alla rete.
+ Rimappiamo la nostra rete su un fpga avente componenti elementari a quattro
  ingressi:
 \end_layout
 
@@ -960,11 +964,28 @@ noindent
 
 \end_inset
 
- possiamo vedere che il numero di nodi elementari utilizzati per sintetizzare
- la rete sono minorei nell' esempio successivo, ma il numero di operazioni
- elementari è aumentato di ben 7 unita, anche se nel caso delle FPGA, ogni
- nodo ha un tempo di calcolo costante quindi si sono avuti sia miglioramenti
- di area che di tempo.
+ Il mapping è stato possibile perchè il fan-in dei nodi della rete non è
+ maggiore del numero di input di una cella.
+ Al seguito di questa verifica, è stata effettuata la minimizzazione del
+ numero di nodi della rete e l'associazione di questi alle celle Xilinx.
+ Il numero di nodi utilizzati per sintetizzare la rete è diminuito e il
+ numero di letterali è aumentato di 7 unità: un nodo è stato eliminato sostituen
+do la sua espressione nei nodi a valle.
+ Ciò ha consentito un risparmio di area, in termini di celle Xilinx, ed
+ eventualmente anche di tempo, grazie ad una dipendenza più diretta dei
+ nodi a valle dagli input primari.
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+anche se nel caso delle FPGA, ogni nodo ha un tempo di calcolo costante
+ quindi si sono avuti sia miglioramenti di area che di tempo.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
