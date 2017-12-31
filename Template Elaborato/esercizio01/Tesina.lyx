@@ -176,6 +176,18 @@ BackgroundPicture{logo.png}{0}}
 \begin_layout Standard
 
 \lang american
+\begin_inset CommandInset label
+LatexCommand label
+name "minimizzazione"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
 \begin_inset CommandInset include
 LatexCommand input
 filename "traccia.lyx"

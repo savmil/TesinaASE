@@ -1222,7 +1222,7 @@ Individuando i sottocubi di area massima e gli implicanti primi essenziali,
 \begin_layout Standard
 \begin_inset Formula 
 \[
-F=\neg x\neg z\neg v+\neg y\neg v++xz
+F=\neg x\neg z\neg v+\neg y\neg v+xz
 \]
 
 \end_inset

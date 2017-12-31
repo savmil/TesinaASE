@@ -596,8 +596,8 @@ noindent
 espresso
 \emph default
  ritroviamo la medesima minimizzazione attuata manualmente col metodo di
- Quine Mc Cluskey.
- I costi del circuito, in termini di numero di litterali 
+ Quine Mc Clusky.
+ I costi del circuito, in termini di numero di litterali
 \begin_inset Formula $Cl$
 \end_inset
 
@@ -609,44 +609,10 @@ espresso
 \begin_inset Formula $Cp$
 \end_inset
 
- , sono 
-\begin_inset Formula $Cl=7$
+ , sono
+\begin_inset Formula $Cl=7-Ci=10-Cp=4$
 \end_inset
 
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\lang english
-; 
-\begin_inset Formula $Ci=10$
-\end_inset
-
-; 
-\begin_inset Formula $Cp=4$
-\end_inset
-
-
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-\lang italian
 .
  Vediamo come si comporta invece il circuito con l' utilizzo della libreria
  
@@ -796,15 +762,7 @@ noindent
 espresso:
 \emph default
  
-\begin_inset Formula $Cl=9$
-\end_inset
-
-; 
-\begin_inset Formula $Ci=12$
-\end_inset
-
-; 
-\begin_inset Formula $Cp=4$
+\begin_inset Formula $Cl=9-Ci=12-Cp=4$
 \end_inset
 
 .

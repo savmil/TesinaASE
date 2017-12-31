@@ -130,13 +130,28 @@ morecomment=[s]{--}
 Soluzione
 \end_layout
 
+\begin_layout Standard
+Si farà riferimento agli esercizi del capitolo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "minimizzazione"
+
+\end_inset
+
+, definiti in file di formato 
+\emph on
+blif 
+\emph default
+per la minimizzazione ed il mapping tecnologico mediante SIS.
+\end_layout
+
 \begin_layout Subsection
 Descrizione in file blif
 \end_layout
 
 \begin_layout Standard
 Di seguito verrano elencati i relativi file blif, con i quali è possibili
- minizzare automaticamente le funzioni sopra descritte
+ minizzare automaticamente le funzioni sopra descritte.
 \end_layout
 
 \begin_layout Standard
@@ -169,7 +184,7 @@ backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
-Tabella:
+In riferimento alla Tabella 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "esercizio_1_minimizzazione"
@@ -220,7 +235,7 @@ backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
-Tabella:
+In riferimento alla Tabella 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "esercizio_2_minimizzazione"
@@ -271,7 +286,7 @@ backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
-Tabella:
+In riferimento alla Tabella 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "esercizio_3_minimizzazione"
@@ -322,7 +337,7 @@ backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
-Tabella:
+In riferimento alla Tabella 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "esercizio_4_minimizzazione"
@@ -358,17 +373,14 @@ Esercizio 1
 \end_layout
 
 \begin_layout Standard
-In riferimento ai file blif situati 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "blif_minimizzazione"
-
-\end_inset
-
-, per il primo esercizio, anche se descrive una rete molto semplice sis
- riesce velocemente a fornici una rete più consona alle nostre richieste,
- difatti effettuando due diversi tipi di mapping, i valori di area e propagazion
-e variano secondo le esigenze che stiamo esponenso.
+La minimizzazione automatica restituisce lo stesso risultato di quella eseguita
+ manualmente attraverso il comando 
+\emph on
+full_simplify
+\emph default
+.
+ Effettuando due diversi tipi di mapping, i valori di area e ritardo variano
+ secondo le esigenze esposte.
 \end_layout
 
 \begin_layout Standard
@@ -419,10 +431,7 @@ centering
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
+ 
 \begin_inset ERT
 status open
 
@@ -435,10 +444,16 @@ noindent
 
 \end_inset
 
- ovviamente ciò è possibile perchè la libreria è fornita di diversi componenti
- ma se la riduciamo ad un set funzionalmente completo, and ed inverter ad
- esempio i risultati non variano, non discriminando il fatto che il mapping
- avvenga lo stesso
+ Ciò è possibile perchè la libreria è fornita di diversi componenti, ma
+ se la riduciamo ad un set funzionalmente completo, 
+\series bold
+And
+\series default
+ e 
+\series bold
+Not
+\series default
+ ad esempio, i risultati non variano.
 \end_layout
 
 \begin_layout Standard
@@ -498,7 +513,7 @@ Esercizio 2
 
 \begin_layout Standard
 Vogliamo mettere in evidenza in questo esempio come la tecnologia impatta
- sulle prestazioni di un circuto:
+ sulle prestazioni di una rete combinatoria.
 \end_layout
 
 \begin_layout Standard
@@ -576,7 +591,13 @@ noindent
 
 \end_inset
 
- utilizzando espresso i costi del circuito (in termini di numero di litterali
+ Utilizzando 
+\emph on
+espresso
+\emph default
+ ritroviamo la medesima minimizzazione attuata manualmente col metodo di
+ Quine Mc Cluskey.
+ I costi della rete, in termini di numero di litterali 
 \begin_inset Formula $Cl$
 \end_inset
 
@@ -588,28 +609,52 @@ noindent
 \begin_inset Formula $Cp$
 \end_inset
 
-) , sono
-\begin_inset Formula $Cl=7-Ci=10-Cp=4$
+ , sono 
+\begin_inset Formula $Cl=7$
 \end_inset
 
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+; 
+\begin_inset Formula $Ci=10$
+\end_inset
+
+; 
+\begin_inset Formula $Cp=4$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang italian
 .
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-noindent
-\end_layout
-
-\end_inset
-
- Vediamo come si comporta invece il circuito con l' utilizzo della libreria
- mcnc, prima ottimizzando l' area poi il ritardo:
+ Vediamo come si comporta invece la rete con l' utilizzo della libreria
+ 
+\emph on
+mcnc
+\emph default
+.
+ Ottimizzando l'aria occupata:
 \end_layout
 
 \begin_layout Standard
@@ -676,9 +721,14 @@ noindent
 \begin_inset Formula $Cl=9-Ci=13-Cp=5$
 \end_inset
 
-, i costi aumentano perchè cerca di usare porte che occupano meno spazio
- aumentando i tempi di propagazione dell' informazione e delle varie commutazion
-e degli integrati.
+.
+ I costi aumentano perchè SIS cerca di usare porte che occupano meno spazio,
+ non curandosi dei tempi di commutazione e di propagazione dell'informazione
+ lungo il path critico.
+\end_layout
+
+\begin_layout Standard
+Ottimizzando il ritardo:
 \end_layout
 
 \begin_layout Standard
@@ -741,12 +791,25 @@ noindent
 \end_inset
 
  Rilassando il vincolo di area ottieniamo prestazioni vicine a quelle di
- espresso 
-\begin_inset Formula $Cl=9-Ci=12-Cp=4$
+ 
+\emph on
+espresso:
+\emph default
+ 
+\begin_inset Formula $Cl=9$
 \end_inset
 
-, ovviamente perchè la libreria ha a disposizione un adeguato numero di
- componenti da utilizzare, una situazione non sempre veritiera.
+; 
+\begin_inset Formula $Ci=12$
+\end_inset
+
+; 
+\begin_inset Formula $Cp=4$
+\end_inset
+
+.
+ Ciò è possibile perchè la libreria ha a disposizione un adeguato numero
+ di componenti da utilizzare, situazione non sempre veritiera.
 \end_layout
 
 \begin_layout Standard
@@ -766,7 +829,7 @@ newpage
 \end_layout
 
 \begin_layout Subsection
-Esercizio 3
+Esercizio 4
 \end_layout
 
 \begin_layout Standard
