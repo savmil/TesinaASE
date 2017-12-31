@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/media/sf_ASE/VHDL/Milo/CarrySaveAdder/tester_dispositivi.ncd
+OUTFILE=/media/sf_ASE/VHDL/Milo/CarrySaveAdder/tester_dispositivi.bit
+FAMILY=Spartan3E
+PART=xc3s100e-5tq144
+WORKINGDIR=/media/sf_ASE/VHDL/Milo/CarrySaveAdder
+LICENSE=WebPack
+USER_INFO=211407724_0_0_917

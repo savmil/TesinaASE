@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/media/sf_ASE/VHDL/Milo/carry_select_adder/prova_isim_beh.exe" -prj "/media/sf_ASE/VHDL/Milo/carry_select_adder/prova_beh.prj" "work.prova" 

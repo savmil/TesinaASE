@@ -33,6 +33,7 @@ entity RippleCarryAdder is
 	 generic ( N : natural:= 2);
     Port ( adder1 : in  STD_LOGIC_VECTOR(N-1 downto 0);
            adder2 : in  STD_LOGIC_VECTOR(N-1 downto 0);
+			  cin : IN STD_LOGIC;
            sum : out  STD_LOGIC_VECTOR(N-1 downto 0);
            last_carry : out  STD_LOGIC);
 end RippleCarryAdder;
@@ -51,7 +52,7 @@ architecture structural of RippleCarryAdder is
 begin 
 	RippleCarryAdder: for i in 0 to N-1 generate
 		first_adder: if i=0 generate
-			adder: full_adder_half port map (adder1(i),adder2(i),carry_rappresentation,sum(i),carry(i));
+			adder: full_adder_half port map (adder1(i),adder2(i),cin,sum(i),carry(i));
 		end generate first_adder;
 		intermataded_adder: if i>0 and i<N-1 generate
 			adder: full_adder_half port map(adder1(i),adder2(i),carry(i-1),sum(i), carry(i));

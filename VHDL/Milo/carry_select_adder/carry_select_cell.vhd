@@ -40,7 +40,7 @@ end carry_select_cell;
 
 architecture Behavioral of carry_select_cell is
 COMPONENT RippleCarryAdder
-	generic ( N : natural:= 4);
+	generic ( N : natural:= 2);
 	PORT(
 		adder1 : IN std_logic_vector(N-1 downto 0);
 		adder2 : IN std_logic_vector(N-1 downto 0);  
@@ -64,8 +64,7 @@ begin
 		c_s_c_1:RippleCarryAdder port map(adder1,adder2,'1',sum1,cout1);
 		with cin select sum<=
 			  sum0 when '0',
-			  sum1 when '1',
-			  "UUUU" when others;
+			  sum1 when others;
 		--mux_s:mux2_1 port map (cin,sum0,sum1,sum);
 		mux_c:mux2_1 port map (cin,cout0,cout1,cout);
 end Behavioral;

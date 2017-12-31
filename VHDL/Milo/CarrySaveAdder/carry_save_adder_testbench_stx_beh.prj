@@ -1,5 +1,0 @@
-vhdl isim_temp "../../full_adder_half/half_adder.vhdl"
-vhdl isim_temp "../../full_adder_half/full_adder_half.vhdl"
-vhdl isim_temp "carry_save_cell.vhd"
-vhdl isim_temp "carry_save_adder.vhd"
-vhdl isim_temp "carry_save_adder_testbench.vhd"
