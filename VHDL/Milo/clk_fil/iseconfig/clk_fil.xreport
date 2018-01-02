@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-11-12T12:57:56</DateModified>
+  <DateModified>2018-01-02T18:51:07</DateModified>
   <ModuleName>clk_fil</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>/home/sav/ASE/clk_fil/iseconfig/clk_fil.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/sav/ASE/clk_fil/</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/Michele/Documents/TesinaASE/VHDL/Milo/clk_fil/iseconfig/clk_fil.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Michele/Documents/TesinaASE/VHDL/Milo/clk_fil\</ImplementationReportsDirectory>
   <DateInitialized>2017-11-10T22:13:02</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

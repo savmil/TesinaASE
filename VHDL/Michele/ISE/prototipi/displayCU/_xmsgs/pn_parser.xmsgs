@@ -8,7 +8,37 @@
 <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Public/ISE/display/display_top_level.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/prototipi/displayCU/anode_manager.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/prototipi/displayCU/cathode_encoder.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/prototipi/displayCU/cathode_manager.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/prototipi/displayCU/clock_filter.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/prototipi/displayCU/counter_mod2n.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/prototipi/displayCU/demux1_n.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/prototipi/displayCU/display.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/prototipi/displayCU/display_on_board.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/prototipi/displayCU/display_top_level.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/prototipi/displayCU/edge_triggered_d_n.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/prototipi/displayCU/muxn_1.vhd&quot; into library work</arg>
 </msg>
 
 </messages>

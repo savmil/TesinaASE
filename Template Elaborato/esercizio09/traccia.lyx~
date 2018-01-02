@@ -78,7 +78,25 @@ Traccia
 \end_layout
 
 \begin_layout Standard
-Realizzare un esempio di addizionatore basato sulla modalita Carry Save.
+Realizzare un'architettura di tipo Carry Look-Ahead per un sommatore ad
+ 8 bit.
+ Il circuito deve essere realizzato a partire dai blocchi:
+\end_layout
+
+\begin_layout Enumerate
+Propagation/Generation calculator
+\end_layout
+
+\begin_layout Enumerate
+Carry Look-Ahead
+\end_layout
+
+\begin_layout Enumerate
+Full Adder
+\end_layout
+
+\begin_layout Standard
+Opzionale: rendere il CLA generico.
 \end_layout
 
 \end_body

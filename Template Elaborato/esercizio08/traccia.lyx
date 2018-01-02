@@ -78,62 +78,12 @@ Traccia
 \end_layout
 
 \begin_layout Standard
-Progettare una cella di un comparatore a maggioranza (magnitude comparator)
- ad 1 bit la cui tabella di verità è riportata in fig.
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Tabella-di-verità"
-
-\end_inset
-
-.
- La sintesi è basata sull'uso di una porta NXOR come mostrato in fig.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/traccia/tab-ver-bit-comparator.png
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Tabella-di-verità"
-
-\end_inset
-
-Tabella di verità magnitude comparator
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Descrivere il circuito in VHDL e simularlo nell'ambiente Xilinx ISE costruendo
- un ambiente di test per verificarne tutte le funzionalità e gli aspetti
- di tempificazione.
+Realizzare un'architettura di tipo Ripple Carry per un sommatore ad N bit
+ generico.
+ Il circuito deve essere realizzato a partire da blocchi di Full Adder,
+ espresso mediante porte logiche XOR/AND/OR.
+ Riportare considerazioni sull'area occupata e sul tempo di calcolo al variare
+ di N e commentare il risultato con le formule teoriche.
 \end_layout
 
 \end_body

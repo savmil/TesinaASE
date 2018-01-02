@@ -15,7 +15,7 @@
 
   <!--                                                          -->
 
-  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+  <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved. -->
 
   <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
 
@@ -138,6 +138,7 @@
     <transform xil_pn:end_ts="1510488871" xil_pn:in_ck="462095845948833511" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-2720782355225798424" xil_pn:start_ts="1510488869">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="gestore_display_testbench_beh.prj"/>
       <outfile xil_pn:name="gestore_display_testbench_isim_beh.exe"/>
@@ -148,6 +149,8 @@
     <transform xil_pn:end_ts="1510488871" xil_pn:in_ck="-5246054190940152642" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="6789044841881661685" xil_pn:start_ts="1510488871">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="gestore_display_testbench_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
