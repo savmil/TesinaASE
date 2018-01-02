@@ -381,6 +381,10 @@ full_simplify
 .
  Effettuando due diversi tipi di mapping, i valori di area e ritardo variano
  secondo le esigenze esposte.
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -429,6 +433,13 @@ centering
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
  
@@ -454,6 +465,13 @@ And
 Not
 \series default
  ad esempio, i risultati non variano.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -497,6 +515,13 @@ centering
 	scale 60
 	rotateOrigin center
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
 \end_inset
 
 
@@ -568,6 +593,13 @@ centering
 \begin_inset Graphics
 	filename images/minimizzazione2espresso.PNG
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
 \end_inset
 
 
@@ -654,7 +686,14 @@ espresso
 mcnc
 \emph default
 .
- Ottimizzando l'aria occupata:
+ Ottimizzando l'area occupata:
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -699,6 +738,13 @@ centering
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -718,7 +764,7 @@ noindent
 \end_inset
 
  In questo caso i costi sono 
-\begin_inset Formula $Cl=9-Ci=13-Cp=5$
+\begin_inset Formula $Cl=9-Ci=12-Cp=4$
 \end_inset
 
 .
@@ -729,6 +775,13 @@ noindent
 
 \begin_layout Standard
 Ottimizzando il ritardo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -767,6 +820,13 @@ centering
 \begin_inset Graphics
 	filename images/minimizzazione2m1.PNG
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
 \end_inset
 
 
@@ -837,6 +897,13 @@ Proviamo ad applicare il rugged-script ad un rete multi-uscita:
 \end_layout
 
 \begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -878,6 +945,13 @@ centering
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -901,7 +975,14 @@ noindent
  il rugged-script si rivela una buona sequenza per le trasformazioni da
  applicare alla rete.
  Rimappiamo la nostra rete su un fpga avente componenti elementari a quattro
- ingressi:
+ ingressi.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -941,6 +1022,13 @@ centering
 	filename images/minimizzazione3sureteaquattrolivelli.PNG
 	width 17.5cm
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
 \end_inset
 
 
