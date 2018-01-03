@@ -1,0 +1,1 @@
+vhdtdtfi -prj BootMultiplier -o C:/Users/Mario/Desktop/rippleCarry/BootMultiplier/RCAddSub.vhi -module RCAddSub -template C:/Xilinx/14.1/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work full_adder.vhd -lib work rippleCarryAdder.vhd -lib work controlled_not.vhd -lib work RCAddSub.vhd 

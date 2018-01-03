@@ -1,0 +1,48 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "C:/Users/Mario/Desktop/BootMultiplier/tb_booth_isim_beh.exe" -prj "C:/Users/Mario/Desktop/BootMultiplier/tb_booth_beh.prj" "work.tb_booth" 
+ISim P.15xf (signature 0x2f00eba5)
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Mario/Desktop/BootMultiplier/mux2.vhd" into library work
+Parsing VHDL file "C:/Users/Mario/Desktop/BootMultiplier/full_adder.vhd" into library work
+Parsing VHDL file "C:/Users/Mario/Desktop/BootMultiplier/flipflopd.vhd" into library work
+Parsing VHDL file "C:/Users/Mario/Desktop/BootMultiplier/rippleCarryAdder.vhd" into library work
+Parsing VHDL file "C:/Users/Mario/Desktop/BootMultiplier/log_functions.vhd" into library work
+Parsing VHDL file "C:/Users/Mario/Desktop/BootMultiplier/flipflopmux.vhd" into library work
+Parsing VHDL file "C:/Users/Mario/Desktop/BootMultiplier/controlled_not.vhd" into library work
+Parsing VHDL file "C:/Users/Mario/Desktop/BootMultiplier/shift_register_pilotato.vhd" into library work
+Parsing VHDL file "C:/Users/Mario/Desktop/BootMultiplier/reg_clock.vhd" into library work
+Parsing VHDL file "C:/Users/Mario/Desktop/BootMultiplier/RCAddSub.vhd" into library work
+Parsing VHDL file "C:/Users/Mario/Desktop/BootMultiplier/counter.vhd" into library work
+Parsing VHDL file "C:/Users/Mario/Desktop/BootMultiplier/control_unit.vhd" into library work
+Parsing VHDL file "C:/Users/Mario/Desktop/BootMultiplier/booth_multiplier.vhd" into library work
+Parsing VHDL file "C:/Users/Mario/Desktop/BootMultiplier/tb_booth.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 100456 KB
+Fuse CPU Usage: 280 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package log_functions
+Compiling package std_logic_arith
+Compiling architecture dataflow of entity controlled_not [\controlled_not(8)\]
+Compiling package std_logic_unsigned
+Compiling architecture dataflow of entity full_adder [full_adder_default]
+Compiling architecture structural of entity rippleCarryAdder [\rippleCarryAdder(8)\]
+Compiling architecture structural of entity RCAddSub [\RCAddSub(8)\]
+Compiling architecture behavioral of entity counter [\counter(8)\]
+Compiling architecture dataflow of entity mux2 [mux2_default]
+Compiling architecture behavioral of entity flipflopd [flipflopd_default]
+Compiling architecture structural of entity flipflopmux [flipflopmux_default]
+Compiling architecture behavioral of entity shift_register_pilotato [\shift_register_pilotato(8,'0')\]
+Compiling architecture behavioral of entity shift_register_pilotato [\shift_register_pilotato(9,'0')\]
+Compiling architecture behavioral of entity reg_clock [\reg_clock(8)\]
+Compiling architecture behavioral of entity control_unit [control_unit_default]
+Compiling architecture structural of entity booth_multiplier [\booth_multiplier(8)\]
+Compiling architecture behavior of entity tb_booth
+Time Resolution for simulation is 1ps.
+Compiled 33 VHDL Units
+Built simulation executable C:/Users/Mario/Desktop/BootMultiplier/tb_booth_isim_beh.exe
+Fuse Memory Usage: 120472 KB
+Fuse CPU Usage: 405 ms

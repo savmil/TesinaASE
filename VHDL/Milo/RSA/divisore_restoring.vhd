@@ -30,7 +30,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity divisore_restoring is
-	 generic (width : NATURAL:=8);
+	 generic (width : NATURAL:=64);
     Port ( dividendo : in  STD_LOGIC_VECTOR (width-1 downto 0):=(others=>'0');
            divisore : in  STD_LOGIC_VECTOR (width-1 downto 0);
            start : in  STD_LOGIC;
@@ -43,7 +43,7 @@ end divisore_restoring;
 
 architecture Structural of divisore_restoring is
 COMPONENT add_sub
-	generic (width : NATURAL:=8);
+	generic (width : NATURAL:=64);
 	PORT(
 		a : IN std_logic_vector(width-1 downto 0);
 		b : IN std_logic_vector(width-1 downto 0);
@@ -54,7 +54,7 @@ COMPONENT add_sub
 		);
 	END COMPONENT;
 COMPONENT contatore_modulo_2n
-	generic (width : NATURAL :=3);
+	generic (width : NATURAL :=6);
 	PORT(
 		clk : IN std_logic;
 		enable : IN std_logic;
@@ -64,7 +64,7 @@ COMPONENT contatore_modulo_2n
 		);
 	END COMPONENT;
 	COMPONENT latch_d
-	generic(width: NATURAL:=8);
+	generic(width: NATURAL:=64);
 	PORT(
 		input : IN std_logic_vector(width-1 downto 0);
 		enable : IN std_logic;
@@ -88,19 +88,8 @@ COMPONENT contatore_modulo_2n
 			  finish: out STD_LOGIC;
            stop : in  STD_LOGIC);
 	END COMPONENT;
-	COMPONENT registro_a_scorrimento
-	generic (width:NATUrAL:=8);
-	PORT(
-		input : IN std_logic_VECTOR(width-1 downto 0);
-		enable : IN std_logic;
-		shift : in  STD_LOGIC;
-		reset : IN std_logic;       
-		shift_bit : IN std_logic;
-		output:out STD_LOGIC_VECTOR(width-1 downto 0)
-		);
-	END COMPONENT;
-	component boundary_scan_chain 
-	generic(n : natural := 8);
+	component shifter_a_sinistra 
+	generic(n : natural := 64);
     Port ( --state_vector : in  STD_LOGIC_VECTOR (n-1 downto 0);
 			  scan_in : in STD_LOGIC;
            clk : in  STD_LOGIC;
@@ -117,9 +106,9 @@ COMPONENT contatore_modulo_2n
 begin
 	cu: serial_div_restoring port map(clk,start,sum1(width-1),en_div,a_s,en_sh,en_c,en_r,en_q,bit_q1,fin,stop);
 	operation_counter: contatore_modulo_2n port map(clk,en_c,reset,stop,open);
-	remainder: boundary_scan_chain port map(bit_shift,clk,reset,en_r,sum1,en_sh,open,suma);
+	remainder: shifter_a_sinistra port map(bit_shift,clk,reset,en_r,sum1,en_sh,open,suma);
 	divisor: latch_d port map(divisore,en_div,reset,div);
-	quotient: boundary_scan_chain port map(bit_q1,clk,reset,en_q,dividendo,en_sh,bit_shift,quoz);
+	quotient: shifter_a_sinistra port map(bit_q1,clk,reset,en_q,dividendo,en_sh,bit_shift,quoz);
 	gestore_shift: add_sub port map(suma,div,a_s,sum1,open,open);
 	with bit_q1 select resto <=
 		suma when '0',

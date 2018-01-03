@@ -61,7 +61,7 @@ begin
 	end process;
 
 
-	gestore_mul: process (clk)
+	gestore_mul: process (current_state,start,stop,neg)
 		begin
 		en_div<='0';
 		en_shift<='0';

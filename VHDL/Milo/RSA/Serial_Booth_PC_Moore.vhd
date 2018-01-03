@@ -60,7 +60,7 @@ begin
 	end process;
 
 
-	gestore_mul: process (clk)
+	gestore_mul: process (current_state,start,pair_of_bits,stop)
 		begin
 		--reset_a<='0';
 		en_m<='0';

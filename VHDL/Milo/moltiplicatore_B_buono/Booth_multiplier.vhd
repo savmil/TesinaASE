@@ -75,11 +75,13 @@ COMPONENT contatore_modulo_2n
 		clk: in STD_LOGIC;
 			  start: in STD_LOGIC;
 			  pair_of_bits :in STD_LOGIC_VECTOR(1 downto 0);
+			  reset : in STD_LOGIC:='0';
 			  en_a : out  STD_LOGIC;
            en_m : out  STD_LOGIC;
 			  en_q : out STD_LOGIC;
 			  en_c : out STD_LOGIC;
            en_shift : out  STD_LOGIC;
+			  en_p1 : out STD_LOGIC;
            stop : in  STD_LOGIC);
 	END COMPONENT;
 	COMPONENT registro_a_scorrimento
@@ -107,14 +109,15 @@ COMPONENT contatore_modulo_2n
 	 );
 	end component;
 	signal q_val,q_val_2:STD_LOGIC_VECTOR(width downto 0):=(others=>'0');
-	signal moltiplicatore,suma,sum1:STD_LOGIC_VECTOR(width-1 downto 0):=(others=>'0');
-	signal ou,i:STD_LOGIC_VECTOR(2*width-1 downto 0):=(others=>'0');
-	signal stop,en_m,en_c,en_a,en_q,en_sh,bit_shift:STD_LOGIC:='0';
+	signal moltiplicatore,molt2,suma,sum1:STD_LOGIC_VECTOR(width-1 downto 0):=(others=>'0');
+	signal prod:STD_LOGIC_VECTOR(2*width-1 downto 0):=(others=>'0');
+	signal stop,en_m,en_c,en_a,en_q,en_sh,en_p1,bit_shift:STD_LOGIC:='0';
 begin
 	-- conto per il numero di bit, abilito i registri, vedo i bit, 00 11 solo shift, 01 - mul2 poi prodotto shift
 	--10 + mul2 shift
-	q_val_2<=mul2 & '0';
-	cu: Serial_Booth_PC_Moore port map(clk,start,q_val(1 downto 0),en_a,en_m,en_q,en_c,en_sh,stop);
+	q_val_2<=molt2 & '0';
+	m2: latch_d port map(mul2,start,reset,molt2);
+	cu: Serial_Booth_PC_Moore port map(clk,start,q_val(1 downto 0),reset,en_a,en_m,en_q,en_c,en_sh,en_p1,stop);
 	operation_counter: contatore_modulo_2n port map(clk,en_c,reset,stop,open);--inserire segnale stop per po
 	q: boundary_scan_chain generic map (n=> width+1) port map(bit_shift,clk,reset,en_q,q_val_2,en_sh,open,q_val);
 	m: latch_d port map(mul1,en_m,reset,moltiplicatore);
@@ -123,7 +126,8 @@ begin
 	--q_val_2(width-1 downto 0)<=q_val(width-1 downto 0);
 	--sum1(2*width-1 downto width)<=moltiplicando;-- abilito i due registri per fare prodotto enable gestisce po e carico moltiplicando in sum1
 	gestore_shift: add_sub port map(suma,moltiplicatore,q_val(1),sum1,open,open);-- bisogna inserire il segno 
-	product<= suma & q_val(width downto 1);
+	prod<= suma & q_val(width downto 1);
+	prod1:latch_d generic map (width=>16) port map(prod,en_p1,reset,product);
 	--prodotto: latch_d generic map(width=>17) port map (sum1,start,reset,start,sum1(width-1),moltiplicatore); --segnale di shifting
 	--i(2*width-1 downto 9)<=sum1(6 downto 0);
 	--i(8 downto 0)<=q_val;

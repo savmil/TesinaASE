@@ -41,29 +41,29 @@ ARCHITECTURE behavior OF Divisore_restoring_testbench IS
  
     COMPONENT divisore_restoring
     PORT(
-         dividendo : IN  std_logic_vector(7 downto 0);
-         divisore : IN  std_logic_vector(7 downto 0);
+         dividendo : IN  std_logic_vector(63 downto 0);
+         divisore : IN  std_logic_vector(63 downto 0);
          start : IN  std_logic;
          clk : IN  std_logic;
          reset : IN  std_logic;
 			finish: out STD_LOGIC;
-         quoziente : OUT  std_logic_vector(7 downto 0);
-         resto : OUT  std_logic_vector(7 downto 0)
+         quoziente : OUT  std_logic_vector(63 downto 0);
+         resto : OUT  std_logic_vector(63 downto 0)
         );
     END COMPONENT;
     
 
    --Inputs
-   signal dividendo : std_logic_vector(7 downto 0) := (others => '0');
-   signal divisore : std_logic_vector(7 downto 0) := (others => '0');
+   signal dividendo : std_logic_vector(63 downto 0) := (others => '0');
+   signal divisore : std_logic_vector(63 downto 0) := (others => '0');
    signal start : std_logic := '0';
    signal clk : std_logic := '0';
    signal reset : std_logic := '0';
 
  	--Outputs
 	signal finish : std_logic;
-   signal quoziente : std_logic_vector(7 downto 0);
-   signal resto : std_logic_vector(7 downto 0);
+   signal quoziente : std_logic_vector(63 downto 0);
+   signal resto : std_logic_vector(63 downto 0);
 
    -- Clock period definitions
    constant clk_period : time := 10 ns;
@@ -77,6 +77,7 @@ BEGIN
           start => start,
           clk => clk,
           reset => reset,
+			 finish => finish,
           quoziente => quoziente,
           resto => resto
         );
@@ -98,12 +99,18 @@ BEGIN
 		start<='1';
 		
 		reset<='1';
-		dividendo<="00001000";
-		divisore<="00000010";
+		dividendo<=x"0000000000000080";
+		divisore<=x"000000000000000F";
 		wait for 11 ns;
 		start<='0';
       wait for 100 ns;	
-		
+		wait until finish='1';
+		start<='1';
+		dividendo<=x"0000000000000080";
+		divisore<=x"000000000000000F";
+		wait for 11 ns;
+		start<='0';
+      wait for 100 ns;
       wait for clk_period*10;
 
       -- insert stimulus here 

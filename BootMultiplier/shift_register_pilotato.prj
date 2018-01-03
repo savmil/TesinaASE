@@ -1,0 +1,4 @@
+vhdl work "mux2.vhd"
+vhdl work "flipflopd.vhd"
+vhdl work "flipflopmux.vhd"
+vhdl work "shift_register_pilotato.vhd"

@@ -48,7 +48,7 @@ architecture Behavioral of gestore_hash is
 type state is (idle,shifting);
 signal current_state, next_state:state;
 begin
-	change_state: process (clk)
+	change_state: process (clk,reset)
 	begin
 		if rising_edge(clk) then	
 			if (reset = '0') then
@@ -58,7 +58,7 @@ begin
 			end if;
 		end if;
 	end process;
-	gestore_RSA: process (clk)
+	gestore_RSA: process (current_state,start_sh)
 	begin
 		case current_state is
 			when idle => shift_r<='0';

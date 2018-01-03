@@ -42,9 +42,12 @@ ARCHITECTURE behavior OF mod_exp_testbench IS
     COMPONENT mod_exp
     PORT(
          clk : IN  std_logic;
-         base : IN  std_logic_vector(15 downto 0);
-         esponente : IN  std_logic_vector(15 downto 0);
-         modulo : IN  std_logic_vector(15 downto 0);
+			start: in STD_LOGIC;
+			reset: IN STD_LOGIC;
+         base : IN  std_logic_vector(31 downto 0);
+         esponente : IN  std_logic_vector(31 downto 0);
+         modulo : IN  std_logic_vector(31 downto 0);
+			finished : out STD_LOGIC:='0';
          m_e : OUT  std_logic_vector(31 downto 0)
         );
     END COMPONENT;
@@ -52,11 +55,14 @@ ARCHITECTURE behavior OF mod_exp_testbench IS
 
    --Inputs
    signal clk : std_logic := '0';
-   signal base : std_logic_vector(15 downto 0) := (others => '0');
-   signal esponente : std_logic_vector(15 downto 0) := (others => '0');
-   signal modulo : std_logic_vector(15 downto 0) := (others => '0');
+	signal start : std_logic := '0';
+	signal reset: std_logic:='0';
+   signal base : std_logic_vector(31 downto 0) := (others => '0');
+   signal esponente : std_logic_vector(31 downto 0) := (others => '0');
+   signal modulo : std_logic_vector(31 downto 0) := (others => '0');
 
  	--Outputs
+	signal finished: std_logic;
    signal m_e : std_logic_vector(31 downto 0);
 
    -- Clock period definitions
@@ -67,8 +73,11 @@ BEGIN
 	-- Instantiate the Unit Under Test (UUT)
    uut: mod_exp PORT MAP (
           clk => clk,
+			 start => start,
+			 reset => reset,
           base => base,
           esponente => esponente,
+			 finished => finished,
           modulo => modulo,
           m_e => m_e
         );
@@ -87,10 +96,15 @@ BEGIN
    stim_proc: process
    begin		
       -- hold reset state for 100 ns.
+		reset<='1';
+		base<=x"000000F0";
+		esponente<=x"0000000F";
+		modulo<=x"000000FF";
       wait for 100 ns;	
-		base<=x"0007";
-		esponente<=x"0130";
-		modulo<=x"0131";
+		
+		start<='1';
+		wait for 11 ns;
+		start<='0';
       wait for clk_period*10;
 
       -- insert stimulus here 

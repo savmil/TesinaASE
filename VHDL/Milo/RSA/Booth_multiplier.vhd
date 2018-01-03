@@ -42,7 +42,7 @@ end Booth_multiplier;
 
 architecture Structural of Booth_multiplier is
 COMPONENT add_sub
-	generic (width : NATURAL:=64);
+	generic (width : NATURAL:=32);
 	PORT(
 		a : IN std_logic_vector(width-1 downto 0);
 		b : IN std_logic_vector(width-1 downto 0);
@@ -53,7 +53,7 @@ COMPONENT add_sub
 		);
 	END COMPONENT;
 COMPONENT contatore_modulo_2n
-	generic (width : NATURAL :=6);
+	generic (width : NATURAL :=5);
 	PORT(
 		clk : IN std_logic;
 		enable : IN std_logic;
@@ -63,7 +63,7 @@ COMPONENT contatore_modulo_2n
 		);
 	END COMPONENT;
 	COMPONENT latch_d
-	generic(width: NATURAL:=64);
+	generic(width: NATURAL:=32);
 	PORT(
 		input : IN std_logic_vector(width-1 downto 0);
 		enable : IN std_logic;
@@ -86,7 +86,7 @@ COMPONENT contatore_modulo_2n
            stop : in  STD_LOGIC);
 	END COMPONENT;
 	component boundary_scan_chain 
-	generic(n : natural := 64);
+	generic(n : natural := 32);
     Port ( --state_vector : in  STD_LOGIC_VECTOR (n-1 downto 0);
 			  scan_in : in STD_LOGIC;
            clk : in  STD_LOGIC;

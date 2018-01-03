@@ -1,0 +1,618 @@
+Release 14.1 - xst P.15xf (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: booth_multiplier.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "booth_multiplier.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "booth_multiplier"
+Output Format                      : NGC
+Target Device                      : xc3s1200e-5-fg320
+
+---- Source Options
+Top Module Name                    : booth_multiplier
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+WARNING:HDLParsers:3607 - Unit work/booth_multiplier is now defined in a different file.  It was defined in "C:/Users/Mario/Desktop/rippleCarry/BootMultiplier/booth_multiplier.vhd", and is now defined in "C:/Users/Mario/Desktop/BootMultiplier/booth_multiplier.vhd".
+WARNING:HDLParsers:3607 - Unit work/booth_multiplier/Structural is now defined in a different file.  It was defined in "C:/Users/Mario/Desktop/rippleCarry/BootMultiplier/booth_multiplier.vhd", and is now defined in "C:/Users/Mario/Desktop/BootMultiplier/booth_multiplier.vhd".
+WARNING:HDLParsers:3607 - Unit work/control_unit is now defined in a different file.  It was defined in "C:/Users/Mario/Desktop/rippleCarry/BootMultiplier/control_unit.vhd", and is now defined in "C:/Users/Mario/Desktop/BootMultiplier/control_unit.vhd".
+WARNING:HDLParsers:3607 - Unit work/control_unit/Behavioral is now defined in a different file.  It was defined in "C:/Users/Mario/Desktop/rippleCarry/BootMultiplier/control_unit.vhd", and is now defined in "C:/Users/Mario/Desktop/BootMultiplier/control_unit.vhd".
+WARNING:HDLParsers:3607 - Unit work/counter is now defined in a different file.  It was defined in "C:/Users/Mario/Desktop/rippleCarry/BootMultiplier/counter.vhd", and is now defined in "C:/Users/Mario/Desktop/BootMultiplier/counter.vhd".
+WARNING:HDLParsers:3607 - Unit work/counter/Behavioral is now defined in a different file.  It was defined in "C:/Users/Mario/Desktop/rippleCarry/BootMultiplier/counter.vhd", and is now defined in "C:/Users/Mario/Desktop/BootMultiplier/counter.vhd".
+WARNING:HDLParsers:3607 - Unit work/RCAddSub is now defined in a different file.  It was defined in "C:/Users/Mario/Desktop/rippleCarry/BootMultiplier/RCAddSub.vhd", and is now defined in "C:/Users/Mario/Desktop/BootMultiplier/RCAddSub.vhd".
+WARNING:HDLParsers:3607 - Unit work/RCAddSub/Structural is now defined in a different file.  It was defined in "C:/Users/Mario/Desktop/rippleCarry/BootMultiplier/RCAddSub.vhd", and is now defined in "C:/Users/Mario/Desktop/BootMultiplier/RCAddSub.vhd".
+WARNING:HDLParsers:3607 - Unit work/reg_clock is now defined in a different file.  It was defined in "C:/Users/Mario/Desktop/rippleCarry/BootMultiplier/reg_clock.vhd", and is now defined in "C:/Users/Mario/Desktop/BootMultiplier/reg_clock.vhd".
+WARNING:HDLParsers:3607 - Unit work/reg_clock/Behavioral is now defined in a different file.  It was defined in "C:/Users/Mario/Desktop/rippleCarry/BootMultiplier/reg_clock.vhd", and is now defined in "C:/Users/Mario/Desktop/BootMultiplier/reg_clock.vhd".
+WARNING:HDLParsers:3607 - Unit work/shift_register_pilotato is now defined in a different file.  It was defined in "C:/Users/Mario/Desktop/rippleCarry/BootMultiplier/shift_register_pilotato.vhd", and is now defined in "C:/Users/Mario/Desktop/BootMultiplier/shift_register_pilotato.vhd".
+WARNING:HDLParsers:3607 - Unit work/shift_register_pilotato/Behavioral is now defined in a different file.  It was defined in "C:/Users/Mario/Desktop/rippleCarry/BootMultiplier/shift_register_pilotato.vhd", and is now defined in "C:/Users/Mario/Desktop/BootMultiplier/shift_register_pilotato.vhd".
+WARNING:HDLParsers:3607 - Unit work/controlled_not is now defined in a different file.  It was defined in "C:/Users/Mario/Desktop/rippleCarry/BootMultiplier/controlled_not.vhd", and is now defined in "C:/Users/Mario/Desktop/BootMultiplier/controlled_not.vhd".
+WARNING:HDLParsers:3607 - Unit work/controlled_not/Dataflow is now defined in a different file.  It was defined in "C:/Users/Mario/Desktop/rippleCarry/BootMultiplier/controlled_not.vhd", and is now defined in "C:/Users/Mario/Desktop/BootMultiplier/controlled_not.vhd".
+WARNING:HDLParsers:3607 - Unit work/flipflopmux is now defined in a different file.  It was defined in "C:/Users/Mario/Desktop/rippleCarry/BootMultiplier/flipflopmux.vhd", and is now defined in "C:/Users/Mario/Desktop/BootMultiplier/flipflopmux.vhd".
+WARNING:HDLParsers:3607 - Unit work/flipflopmux/Structural is now defined in a different file.  It was defined in "C:/Users/Mario/Desktop/rippleCarry/BootMultiplier/flipflopmux.vhd", and is now defined in "C:/Users/Mario/Desktop/BootMultiplier/flipflopmux.vhd".
+WARNING:HDLParsers:3607 - Unit work/log_functions is now defined in a different file.  It was defined in "C:/Users/Mario/Desktop/rippleCarry/BootMultiplier/log_functions.vhd", and is now defined in "C:/Users/Mario/Desktop/BootMultiplier/log_functions.vhd".
+WARNING:HDLParsers:3607 - Unit work/log_functions is now defined in a different file.  It was defined in "C:/Users/Mario/Desktop/rippleCarry/BootMultiplier/log_functions.vhd", and is now defined in "C:/Users/Mario/Desktop/BootMultiplier/log_functions.vhd".
+WARNING:HDLParsers:3607 - Unit work/rippleCarryAdder is now defined in a different file.  It was defined in "C:/Users/Mario/Desktop/rippleCarry/BootMultiplier/rippleCarryAdder.vhd", and is now defined in "C:/Users/Mario/Desktop/BootMultiplier/rippleCarryAdder.vhd".
+WARNING:HDLParsers:3607 - Unit work/rippleCarryAdder/Structural is now defined in a different file.  It was defined in "C:/Users/Mario/Desktop/rippleCarry/BootMultiplier/rippleCarryAdder.vhd", and is now defined in "C:/Users/Mario/Desktop/BootMultiplier/rippleCarryAdder.vhd".
+WARNING:HDLParsers:3607 - Unit work/flipflopd is now defined in a different file.  It was defined in "C:/Users/Mario/Desktop/rippleCarry/BootMultiplier/flipflopd.vhd", and is now defined in "C:/Users/Mario/Desktop/BootMultiplier/flipflopd.vhd".
+WARNING:HDLParsers:3607 - Unit work/flipflopd/Behavioral is now defined in a different file.  It was defined in "C:/Users/Mario/Desktop/rippleCarry/BootMultiplier/flipflopd.vhd", and is now defined in "C:/Users/Mario/Desktop/BootMultiplier/flipflopd.vhd".
+WARNING:HDLParsers:3607 - Unit work/full_adder is now defined in a different file.  It was defined in "C:/Users/Mario/Desktop/rippleCarry/BootMultiplier/full_adder.vhd", and is now defined in "C:/Users/Mario/Desktop/BootMultiplier/full_adder.vhd".
+WARNING:HDLParsers:3607 - Unit work/full_adder/Dataflow is now defined in a different file.  It was defined in "C:/Users/Mario/Desktop/rippleCarry/BootMultiplier/full_adder.vhd", and is now defined in "C:/Users/Mario/Desktop/BootMultiplier/full_adder.vhd".
+WARNING:HDLParsers:3607 - Unit work/mux2 is now defined in a different file.  It was defined in "C:/Users/Mario/Desktop/rippleCarry/BootMultiplier/mux2.vhd", and is now defined in "C:/Users/Mario/Desktop/BootMultiplier/mux2.vhd".
+WARNING:HDLParsers:3607 - Unit work/mux2/Dataflow is now defined in a different file.  It was defined in "C:/Users/Mario/Desktop/rippleCarry/BootMultiplier/mux2.vhd", and is now defined in "C:/Users/Mario/Desktop/BootMultiplier/mux2.vhd".
+Compiling vhdl file "C:/Users/Mario/Desktop/BootMultiplier/mux2.vhd" in Library work.
+Architecture dataflow of Entity mux2 is up to date.
+Compiling vhdl file "C:/Users/Mario/Desktop/BootMultiplier/flipflopd.vhd" in Library work.
+Architecture behavioral of Entity flipflopd is up to date.
+Compiling vhdl file "C:/Users/Mario/Desktop/BootMultiplier/full_adder.vhd" in Library work.
+Architecture dataflow of Entity full_adder is up to date.
+Compiling vhdl file "C:/Users/Mario/Desktop/BootMultiplier/log_functions.vhd" in Library work.
+Architecture log_functions of Entity log_functions is up to date.
+Compiling vhdl file "C:/Users/Mario/Desktop/BootMultiplier/flipflopmux.vhd" in Library work.
+Architecture structural of Entity flipflopmux is up to date.
+Compiling vhdl file "C:/Users/Mario/Desktop/BootMultiplier/controlled_not.vhd" in Library work.
+Architecture dataflow of Entity controlled_not is up to date.
+Compiling vhdl file "C:/Users/Mario/Desktop/BootMultiplier/rippleCarryAdder.vhd" in Library work.
+Architecture structural of Entity ripplecarryadder is up to date.
+Compiling vhdl file "C:/Users/Mario/Desktop/BootMultiplier/RCAddSub.vhd" in Library work.
+Architecture structural of Entity rcaddsub is up to date.
+Compiling vhdl file "C:/Users/Mario/Desktop/BootMultiplier/counter.vhd" in Library work.
+Architecture behavioral of Entity counter is up to date.
+Compiling vhdl file "C:/Users/Mario/Desktop/BootMultiplier/shift_register_pilotato.vhd" in Library work.
+Architecture behavioral of Entity shift_register_pilotato is up to date.
+Compiling vhdl file "C:/Users/Mario/Desktop/BootMultiplier/reg_clock.vhd" in Library work.
+Architecture behavioral of Entity reg_clock is up to date.
+Compiling vhdl file "C:/Users/Mario/Desktop/BootMultiplier/control_unit.vhd" in Library work.
+Architecture behavioral of Entity control_unit is up to date.
+Compiling vhdl file "C:/Users/Mario/Desktop/BootMultiplier/booth_multiplier.vhd" in Library work.
+Entity <booth_multiplier> compiled.
+Entity <booth_multiplier> (Architecture <structural>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <booth_multiplier> in library <work> (architecture <structural>) with generics.
+	N = 8
+
+Analyzing hierarchy for entity <RCAddSub> in library <work> (architecture <structural>) with generics.
+	width = 8
+
+Analyzing hierarchy for entity <counter> in library <work> (architecture <behavioral>) with generics.
+	count_max = 8
+
+Analyzing hierarchy for entity <shift_register_pilotato> in library <work> (architecture <behavioral>) with generics.
+	right_left_n_shift = '0'
+	width = 8
+
+Analyzing hierarchy for entity <shift_register_pilotato> in library <work> (architecture <behavioral>) with generics.
+	right_left_n_shift = '0'
+	width = 9
+
+Analyzing hierarchy for entity <reg_clock> in library <work> (architecture <behavioral>) with generics.
+	width = 8
+
+Analyzing hierarchy for entity <control_unit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <controlled_not> in library <work> (architecture <dataflow>) with generics.
+	width = 8
+
+Analyzing hierarchy for entity <rippleCarryAdder> in library <work> (architecture <structural>) with generics.
+	width = 8
+
+Analyzing hierarchy for entity <flipflopmux> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <full_adder> in library <work> (architecture <dataflow>).
+
+Analyzing hierarchy for entity <mux2> in library <work> (architecture <dataflow>).
+
+Analyzing hierarchy for entity <flipflopd> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <booth_multiplier> in library <work> (Architecture <structural>).
+	N = 8
+WARNING:Xst:753 - "C:/Users/Mario/Desktop/BootMultiplier/booth_multiplier.vhd" line 131: Unconnected output port 'ov' of component 'RCAddSub'.
+WARNING:Xst:753 - "C:/Users/Mario/Desktop/BootMultiplier/booth_multiplier.vhd" line 141: Unconnected output port 'value' of component 'counter'.
+WARNING:Xst:753 - "C:/Users/Mario/Desktop/BootMultiplier/booth_multiplier.vhd" line 165: Unconnected output port 'scan_out' of component 'shift_register_pilotato'.
+Entity <booth_multiplier> analyzed. Unit <booth_multiplier> generated.
+
+Analyzing generic Entity <RCAddSub> in library <work> (Architecture <structural>).
+	width = 8
+Entity <RCAddSub> analyzed. Unit <RCAddSub> generated.
+
+Analyzing generic Entity <controlled_not> in library <work> (Architecture <dataflow>).
+	width = 8
+Entity <controlled_not> analyzed. Unit <controlled_not> generated.
+
+Analyzing generic Entity <rippleCarryAdder> in library <work> (Architecture <structural>).
+	width = 8
+Entity <rippleCarryAdder> analyzed. Unit <rippleCarryAdder> generated.
+
+Analyzing Entity <full_adder> in library <work> (Architecture <dataflow>).
+Entity <full_adder> analyzed. Unit <full_adder> generated.
+
+Analyzing generic Entity <counter> in library <work> (Architecture <behavioral>).
+	count_max = 8
+Entity <counter> analyzed. Unit <counter> generated.
+
+Analyzing generic Entity <shift_register_pilotato.1> in library <work> (Architecture <behavioral>).
+	right_left_n_shift = '0'
+	width = 8
+Entity <shift_register_pilotato.1> analyzed. Unit <shift_register_pilotato.1> generated.
+
+Analyzing Entity <flipflopmux> in library <work> (Architecture <structural>).
+Entity <flipflopmux> analyzed. Unit <flipflopmux> generated.
+
+Analyzing Entity <mux2> in library <work> (Architecture <dataflow>).
+Entity <mux2> analyzed. Unit <mux2> generated.
+
+Analyzing Entity <flipflopd> in library <work> (Architecture <behavioral>).
+Entity <flipflopd> analyzed. Unit <flipflopd> generated.
+
+Analyzing generic Entity <shift_register_pilotato.2> in library <work> (Architecture <behavioral>).
+	right_left_n_shift = '0'
+	width = 9
+Entity <shift_register_pilotato.2> analyzed. Unit <shift_register_pilotato.2> generated.
+
+Analyzing generic Entity <reg_clock> in library <work> (Architecture <behavioral>).
+	width = 8
+Entity <reg_clock> analyzed. Unit <reg_clock> generated.
+
+Analyzing Entity <control_unit> in library <work> (Architecture <behavioral>).
+Entity <control_unit> analyzed. Unit <control_unit> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <counter>.
+    Related source file is "C:/Users/Mario/Desktop/BootMultiplier/counter.vhd".
+    Found 3-bit up counter for signal <cnt>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <counter> synthesized.
+
+
+Synthesizing Unit <reg_clock>.
+    Related source file is "C:/Users/Mario/Desktop/BootMultiplier/reg_clock.vhd".
+    Found 8-bit register for signal <reg>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <reg_clock> synthesized.
+
+
+Synthesizing Unit <control_unit>.
+    Related source file is "C:/Users/Mario/Desktop/BootMultiplier/control_unit.vhd".
+    Found finite state machine <FSM_0> for signal <current>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 7                                              |
+    | Clock              | clock                     (rising_edge)        |
+    | Reset              | reset_n                   (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <control_unit> synthesized.
+
+
+Synthesizing Unit <controlled_not>.
+    Related source file is "C:/Users/Mario/Desktop/BootMultiplier/controlled_not.vhd".
+Unit <controlled_not> synthesized.
+
+
+Synthesizing Unit <full_adder>.
+    Related source file is "C:/Users/Mario/Desktop/BootMultiplier/full_adder.vhd".
+    Found 1-bit xor3 for signal <s>.
+    Summary:
+	inferred   1 Xor(s).
+Unit <full_adder> synthesized.
+
+
+Synthesizing Unit <mux2>.
+    Related source file is "C:/Users/Mario/Desktop/BootMultiplier/mux2.vhd".
+Unit <mux2> synthesized.
+
+
+Synthesizing Unit <flipflopd>.
+    Related source file is "C:/Users/Mario/Desktop/BootMultiplier/flipflopd.vhd".
+    Found 1-bit register for signal <q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <flipflopd> synthesized.
+
+
+Synthesizing Unit <rippleCarryAdder>.
+    Related source file is "C:/Users/Mario/Desktop/BootMultiplier/rippleCarryAdder.vhd".
+Unit <rippleCarryAdder> synthesized.
+
+
+Synthesizing Unit <flipflopmux>.
+    Related source file is "C:/Users/Mario/Desktop/BootMultiplier/flipflopmux.vhd".
+Unit <flipflopmux> synthesized.
+
+
+Synthesizing Unit <RCAddSub>.
+    Related source file is "C:/Users/Mario/Desktop/BootMultiplier/RCAddSub.vhd".
+    Found 1-bit xor2 for signal <ov>.
+Unit <RCAddSub> synthesized.
+
+
+Synthesizing Unit <shift_register_pilotato_1>.
+    Related source file is "C:/Users/Mario/Desktop/BootMultiplier/shift_register_pilotato.vhd".
+Unit <shift_register_pilotato_1> synthesized.
+
+
+Synthesizing Unit <shift_register_pilotato_2>.
+    Related source file is "C:/Users/Mario/Desktop/BootMultiplier/shift_register_pilotato.vhd".
+Unit <shift_register_pilotato_2> synthesized.
+
+
+Synthesizing Unit <booth_multiplier>.
+    Related source file is "C:/Users/Mario/Desktop/BootMultiplier/booth_multiplier.vhd".
+Unit <booth_multiplier> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 3-bit up counter                                      : 1
+# Registers                                            : 18
+ 1-bit register                                        : 17
+ 8-bit register                                        : 1
+# Xors                                                 : 9
+ 1-bit xor2                                            : 1
+ 1-bit xor3                                            : 8
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <cu/current/FSM> on signal <current[1:3]> with sequential encoding.
+-------------------------
+ State       | Encoding
+-------------------------
+ idle        | 000
+ init        | 001
+ choice      | 010
+ operation   | 100
+ right_shift | 011
+-------------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Counters                                             : 1
+ 3-bit up counter                                      : 1
+# Registers                                            : 25
+ Flip-Flops                                            : 25
+# Xors                                                 : 9
+ 1-bit xor2                                            : 1
+ 1-bit xor3                                            : 8
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <booth_multiplier> ...
+
+Optimizing unit <reg_clock> ...
+
+Optimizing unit <rippleCarryAdder> ...
+
+Optimizing unit <shift_register_pilotato_1> ...
+
+Optimizing unit <shift_register_pilotato_2> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block booth_multiplier, actual ratio is 0.
+FlipFlop cu/current_FSM_FFd2 has been replicated 1 time(s)
+FlipFlop cu/current_FSM_FFd3 has been replicated 1 time(s)
+FlipFlop reg_q/shift_reg[1].shift_reg_right.ffd_with_mux/ffd/q has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 34
+ Flip-Flops                                            : 34
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : booth_multiplier.ngr
+Top Level Output File Name         : booth_multiplier
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 36
+
+Cell Usage :
+# BELS                             : 69
+#      INV                         : 2
+#      LUT2                        : 5
+#      LUT2_D                      : 2
+#      LUT3                        : 12
+#      LUT3_D                      : 1
+#      LUT4                        : 33
+#      LUT4_D                      : 1
+#      LUT4_L                      : 7
+#      MUXF5                       : 6
+# FlipFlops/Latches                : 34
+#      FDC                         : 5
+#      FDCE                        : 29
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 35
+#      IBUF                        : 18
+#      OBUF                        : 17
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1200efg320-5 
+
+ Number of Slices:                       34  out of   8672     0%  
+ Number of Slice Flip Flops:             34  out of  17344     0%  
+ Number of 4 input LUTs:                 63  out of  17344     0%  
+ Number of IOs:                          36
+ Number of bonded IOBs:                  36  out of    250    14%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clock                              | BUFGP                  | 34    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------------------------------------------------------------------------+--------------------------+-------+
+Control Signal                                                                                       | Buffer(FF name)          | Load  |
+-----------------------------------------------------------------------------------------------------+--------------------------+-------+
+cu/current_FSM_Acst_FSM_inv(reg_q/shift_reg[0].shift_reg_right.ffd_with_mux/ffd/reset_n_inv1_INV_0:O)| NONE(cu/current_FSM_FFd1)| 23    |
+counter_mod_N/reset(reg_a/shift_reg[0].shift_reg_right.ffd_with_mux/ffd/reset_n_inv1:O)              | NONE(counter_mod_N/cnt_0)| 11    |
+-----------------------------------------------------------------------------------------------------+--------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 5.658ns (Maximum Frequency: 176.738MHz)
+   Minimum input arrival time before clock: 3.127ns
+   Maximum output required time after clock: 5.754ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 5.658ns (frequency: 176.738MHz)
+  Total number of paths / destination ports: 390 / 55
+-------------------------------------------------------------------------
+Delay:               5.658ns (Levels of Logic = 5)
+  Source:            reg_q/shift_reg[1].shift_reg_right.ffd_with_mux/ffd/q_1 (FF)
+  Destination:       reg_a/shift_reg[7].shift_reg_right.ffd_with_mux/ffd/q (FF)
+  Source Clock:      clock rising
+  Destination Clock: clock rising
+
+  Data Path: reg_q/shift_reg[1].shift_reg_right.ffd_with_mux/ffd/q_1 to reg_a/shift_reg[7].shift_reg_right.ffd_with_mux/ffd/q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            11   0.514   0.796  reg_q/shift_reg[1].shift_reg_right.ffd_with_mux/ffd/q_1 (reg_q/shift_reg[1].shift_reg_right.ffd_with_mux/ffd/q_1)
+     LUT4:I3->O            1   0.612   0.000  add_sub_ripple/rca/rca[2].fa/cout1_SW0_SW0_F (N52)
+     MUXF5:I0->O           1   0.278   0.426  add_sub_ripple/rca/rca[2].fa/cout1_SW0_SW0 (N46)
+     LUT3:I1->O            5   0.612   0.568  add_sub_ripple/rca/rca[2].fa/cout1 (add_sub_ripple/rca/carry<3>)
+     LUT3:I2->O            1   0.612   0.360  add_sub_ripple/rca/rca[4].fa/cout1 (add_sub_ripple/rca/carry<5>)
+     LUT4:I3->O            1   0.612   0.000  reg_a/shift_reg[7].shift_reg_right.ffd_with_mux/mux/o1 (reg_a/shift_reg[7].shift_reg_right.ffd_with_mux/true_d)
+     FDCE:D                    0.268          reg_a/shift_reg[7].shift_reg_right.ffd_with_mux/ffd/q
+    ----------------------------------------
+    Total                      5.658ns (3.508ns logic, 2.150ns route)
+                                       (62.0% logic, 38.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
+  Total number of paths / destination ports: 19 / 19
+-------------------------------------------------------------------------
+Offset:              3.127ns (Levels of Logic = 3)
+  Source:            start (PAD)
+  Destination:       cu/current_FSM_FFd3 (FF)
+  Destination Clock: clock rising
+
+  Data Path: start to cu/current_FSM_FFd3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.106   0.360  start_IBUF (start_IBUF)
+     LUT4_L:I3->LO         1   0.612   0.169  cu/current_FSM_FFd3-In_SW0 (N7)
+     LUT3:I1->O            2   0.612   0.000  cu/current_FSM_FFd3-In (cu/current_FSM_FFd3-In)
+     FDC:D                     0.268          cu/current_FSM_FFd3
+    ----------------------------------------
+    Total                      3.127ns (2.598ns logic, 0.529ns route)
+                                       (83.1% logic, 16.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
+  Total number of paths / destination ports: 19 / 17
+-------------------------------------------------------------------------
+Offset:              5.754ns (Levels of Logic = 2)
+  Source:            cu/current_FSM_FFd3 (FF)
+  Destination:       stop (PAD)
+  Source Clock:      clock rising
+
+  Data Path: cu/current_FSM_FFd3 to stop
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             30   0.514   1.102  cu/current_FSM_FFd3 (cu/current_FSM_FFd3)
+     LUT3:I2->O            1   0.612   0.357  cu/current_FSM_Out01 (stop_OBUF)
+     OBUF:I->O                 3.169          stop_OBUF (stop)
+    ----------------------------------------
+    Total                      5.754ns (4.295ns logic, 1.459ns route)
+                                       (74.6% logic, 25.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 19.00 secs
+Total CPU time to Xst completion: 19.41 secs
+ 
+--> 
+
+Total memory usage is 198048 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   29 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

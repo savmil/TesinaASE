@@ -1,0 +1,4 @@
+vhdl work "C:\Users\Mario\Desktop\rippleCarry\BootMultiplier\mux2.vhd"
+vhdl work "C:\Users\Mario\Desktop\rippleCarry\BootMultiplier\flipflopd.vhd"
+vhdl work "C:\Users\Mario\Desktop\rippleCarry\BootMultiplier\flipflopmux.vhd"
+vhdl work "C:\Users\Mario\Desktop\rippleCarry\BootMultiplier\shift_register_pilotato.vhd"

@@ -1,0 +1,21 @@
+Release 14.1 - netgen P.15xf (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: netgen -intstyle ise -rpw 100 -tpw 0 -ar Structure -tm
+shift_register_pilotato -w -dir netgen/translate -ofmt vhdl -sim
+shift_register_pilotato.ngd shift_register_pilotato_translate.vhd  
+
+Reading design 'shift_register_pilotato.ngd' ...
+Flattening design ...
+Processing design ... 
+  Preping design's networks ...
+  Preping design's macros ...
+Writing VHDL netlist
+'C:\Users\Mario\Desktop\rippleCarry\BootMultiplier\netgen\translate\shift_regist
+er_pilotato_translate.vhd' ...
+INFO:NetListWriters:635 - The generated VHDL netlist contains Xilinx SIMPRIM
+   simulation primitives and has to be used with SIMPRIM library for correct
+   compilation and simulation. 
+Number of warnings: 0
+Number of info messages: 1
+Total memory usage is 105780 kilobytes
