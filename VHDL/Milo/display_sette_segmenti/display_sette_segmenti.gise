@@ -15,7 +15,7 @@
 
   <!--                                                          -->
 
-  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+  <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved. -->
 
   <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
 
@@ -200,6 +200,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
@@ -214,6 +215,7 @@
     <transform xil_pn:end_ts="1510261647" xil_pn:in_ck="-6874423794953430851" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="8916427109707753147" xil_pn:start_ts="1510261647">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
@@ -274,68 +276,54 @@
     <transform xil_pn:end_ts="1509198853" xil_pn:in_ck="8509723946408150256" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="1237611813923824833" xil_pn:start_ts="1509198853">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1509362749" xil_pn:in_ck="5292659588390744637" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="4081847855335964570" xil_pn:start_ts="1509362744">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
-      <outfile xil_pn:name="_ngo"/>
-      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
-      <outfile xil_pn:name="diplay_7_segmenti.bld"/>
-      <outfile xil_pn:name="diplay_7_segmenti.ngd"/>
-      <outfile xil_pn:name="diplay_7_segmenti_ngdbuild.xrpt"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1509362754" xil_pn:in_ck="153946732648886261" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-6349267131326700252" xil_pn:start_ts="1509362749">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
-      <outfile xil_pn:name="diplay_7_segmenti.pcf"/>
-      <outfile xil_pn:name="diplay_7_segmenti_map.map"/>
-      <outfile xil_pn:name="diplay_7_segmenti_map.mrp"/>
-      <outfile xil_pn:name="diplay_7_segmenti_map.ncd"/>
-      <outfile xil_pn:name="diplay_7_segmenti_map.ngm"/>
-      <outfile xil_pn:name="diplay_7_segmenti_map.xrpt"/>
-      <outfile xil_pn:name="diplay_7_segmenti_summary.xml"/>
-      <outfile xil_pn:name="diplay_7_segmenti_usage.xml"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1509362762" xil_pn:in_ck="-335463154857483513" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="1934304854298957634" xil_pn:start_ts="1509362754">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
-      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
-      <outfile xil_pn:name="diplay_7_segmenti.ncd"/>
-      <outfile xil_pn:name="diplay_7_segmenti.pad"/>
-      <outfile xil_pn:name="diplay_7_segmenti.par"/>
-      <outfile xil_pn:name="diplay_7_segmenti.ptwx"/>
-      <outfile xil_pn:name="diplay_7_segmenti.unroutes"/>
-      <outfile xil_pn:name="diplay_7_segmenti.xpi"/>
-      <outfile xil_pn:name="diplay_7_segmenti_pad.csv"/>
-      <outfile xil_pn:name="diplay_7_segmenti_pad.txt"/>
-      <outfile xil_pn:name="diplay_7_segmenti_par.xrpt"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1509362769" xil_pn:in_ck="-3394741881005925251" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1509362762">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
-      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
-      <outfile xil_pn:name="diplay_7_segmenti.bgn"/>
-      <outfile xil_pn:name="diplay_7_segmenti.bit"/>
-      <outfile xil_pn:name="diplay_7_segmenti.drc"/>
-      <outfile xil_pn:name="diplay_7_segmenti.ut"/>
-      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
-      <outfile xil_pn:name="webtalk.log"/>
-      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1509362762" xil_pn:in_ck="-1892399125732867731" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1509362759">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
-      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
-      <outfile xil_pn:name="diplay_7_segmenti.twr"/>
-      <outfile xil_pn:name="diplay_7_segmenti.twx"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
   </transforms>
 

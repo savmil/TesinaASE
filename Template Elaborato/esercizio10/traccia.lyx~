@@ -78,8 +78,62 @@ Traccia
 \end_layout
 
 \begin_layout Standard
-Utilizzare lo strumento automatico SIS per la minimizzazione di circuiti
- combinatori e il loro relativo mapping tecnologico.
+Progettare una cella di un comparatore a maggioranza (magnitude comparator)
+ ad 1 bit la cui tabella di verità è riportata in fig.
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Tabella-di-verità"
+
+\end_inset
+
+.
+ La sintesi è basata sull'uso di una porta NXOR come mostrato in fig.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/traccia/tab-ver-bit-comparator.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Tabella-di-verità"
+
+\end_inset
+
+Tabella di verità magnitude comparator
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Descrivere il circuito in VHDL e simularlo nell'ambiente Xilinx ISE costruendo
+ un ambiente di test per verificarne tutte le funzionalità e gli aspetti
+ di tempificazione.
 \end_layout
 
 \end_body

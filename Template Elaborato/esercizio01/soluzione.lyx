@@ -327,6 +327,8 @@ backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
+
+\series bold
 Tabella 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1222,7 +1224,7 @@ Individuando i sottocubi di area massima e gli implicanti primi essenziali,
 \begin_layout Standard
 \begin_inset Formula 
 \[
-F=\neg x\neg z\neg v+\neg y\neg v++xz
+F=\neg x\neg z\neg v+\neg y\neg v+xz
 \]
 
 \end_inset
@@ -1271,6 +1273,8 @@ backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
+
+\series bold
 Tabella 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2149,7 +2153,7 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -3943,6 +3947,13 @@ Individuati gli implicanti primi al termine della fase di espansione, si
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -4797,6 +4808,8 @@ backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
+
+\series bold
 Tabella 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -5748,6 +5761,8 @@ backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
+
+\series bold
 Tabella 
 \begin_inset CommandInset ref
 LatexCommand ref

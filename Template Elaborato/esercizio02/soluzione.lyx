@@ -131,11 +131,237 @@ Soluzione
 \end_layout
 
 \begin_layout Standard
+Si farà riferimento agli esercizi del capitolo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "minimizzazione"
 
-\lang american
-\begin_inset CommandInset include
-LatexCommand input
-filename "simulazione.lyx"
+\end_inset
+
+, definiti in file di formato 
+\emph on
+blif 
+\emph default
+per la minimizzazione ed il mapping tecnologico mediante SIS.
+\end_layout
+
+\begin_layout Subsection
+Descrizione in file blif
+\end_layout
+
+\begin_layout Standard
+Di seguito verrano elencati i relativi file blif, con i quali è possibili
+ minizzare automaticamente le funzioni sopra descritte.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "blif_minimizzazione"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+In riferimento alla Tabella 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "esercizio_1_minimizzazione"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting{esercizio02/listing/blif/esercizio1.blif}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+In riferimento alla Tabella 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "esercizio_2_minimizzazione"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting{esercizio02/listing/blif/esercizio2.blif}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+In riferimento alla Tabella 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "esercizio_3_minimizzazione"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting{esercizio02/listing/blif/esercizio3.blif}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+In riferimento alla Tabella 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "esercizio_4_minimizzazione"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting{esercizio02/listing/blif/esercizio4.blif}
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -147,17 +373,18 @@ Esercizio 1
 \end_layout
 
 \begin_layout Standard
-In riferimento ai file blif situati 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "blif_minimizzazione"
-
+La minimizzazione automatica restituisce lo stesso risultato di quella eseguita
+ manualmente attraverso il comando 
+\emph on
+full_simplify
+\emph default
+.
+ Effettuando due diversi tipi di mapping, i valori di area e ritardo variano
+ secondo le esigenze esposte.
+\begin_inset VSpace defskip
 \end_inset
 
-, per il primo esercizio, anche se descrive una rete molto semplice sis
- riesce velocemente a fornici una rete più consona alle nostre richieste,
- difatti effettuando due diversi tipi di mapping, i valori di area e propagazion
-e variano secondo le esigenze che stiamo esponenso.
+
 \end_layout
 
 \begin_layout Standard
@@ -206,12 +433,16 @@ centering
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
+\end_inset
+
+ 
 \begin_inset ERT
 status open
 
@@ -224,10 +455,23 @@ noindent
 
 \end_inset
 
- ovviamente ciò è possibile perchè la libreria è fornita di diversi componenti
- ma se la riduciamo ad un set funzionalmente completo, and ed inverter ad
- esempio i risultati non variano, non discriminando il fatto che il mapping
- avvenga lo stesso
+ Ciò è possibile perchè la libreria è fornita di diversi componenti, ma
+ se la riduciamo ad un set funzionalmente completo, 
+\series bold
+And
+\series default
+ e 
+\series bold
+Not
+\series default
+ ad esempio, i risultati non variano.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -276,6 +520,13 @@ centering
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -287,7 +538,7 @@ Esercizio 2
 
 \begin_layout Standard
 Vogliamo mettere in evidenza in questo esempio come la tecnologia impatta
- sulle prestazioni di un circuto:
+ sulle prestazioni di una rete combinatoria.
 \end_layout
 
 \begin_layout Standard
@@ -347,6 +598,13 @@ centering
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -365,7 +623,13 @@ noindent
 
 \end_inset
 
- utilizzando espresso i costi del circuito (in termini di numero di litterali
+ Utilizzando 
+\emph on
+espresso
+\emph default
+ ritroviamo la medesima minimizzazione attuata manualmente col metodo di
+ Quine Mc Cluskey.
+ I costi della rete, in termini di numero di litterali 
 \begin_inset Formula $Cl$
 \end_inset
 
@@ -377,28 +641,59 @@ noindent
 \begin_inset Formula $Cp$
 \end_inset
 
-) , sono
-\begin_inset Formula $Cl=7-Ci=10-Cp=4$
+ , sono 
+\begin_inset Formula $Cl=7$
 \end_inset
 
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+; 
+\begin_inset Formula $Ci=10$
+\end_inset
+
+; 
+\begin_inset Formula $Cp=4$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang italian
 .
+ Vediamo come si comporta invece la rete con l' utilizzo della libreria
+ 
+\emph on
+mcnc
+\emph default
+.
+ Ottimizzando l'area occupata:
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-noindent
-\end_layout
-
+\begin_inset VSpace defskip
 \end_inset
 
- Vediamo come si comporta invece il circuito con l' utilizzo della libreria
- mcnc, prima ottimizzando l' area poi il ritardo:
+
 \end_layout
 
 \begin_layout Standard
@@ -443,6 +738,13 @@ centering
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -465,9 +767,21 @@ noindent
 \begin_inset Formula $Cl=9-Ci=13-Cp=5$
 \end_inset
 
-, i costi aumentano perchè cerca di usare porte che occupano meno spazio
- aumentando i tempi di propagazione dell' informazione e delle varie commutazion
-e degli integrati.
+.
+ I costi aumentano perchè SIS cerca di usare porte che occupano meno spazio,
+ non curandosi dei tempi di commutazione e di propagazione dell'informazione
+ lungo il path critico.
+\end_layout
+
+\begin_layout Standard
+Ottimizzando il ritardo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -511,6 +825,13 @@ centering
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -530,12 +851,25 @@ noindent
 \end_inset
 
  Rilassando il vincolo di area ottieniamo prestazioni vicine a quelle di
- espresso 
-\begin_inset Formula $Cl=9-Ci=12-Cp=4$
+ 
+\emph on
+espresso:
+\emph default
+ 
+\begin_inset Formula $Cl=9$
 \end_inset
 
-, ovviamente perchè la libreria ha a disposizione un adeguato numero di
- componenti da utilizzare, una situazione non sempre veritiera.
+; 
+\begin_inset Formula $Ci=12$
+\end_inset
+
+; 
+\begin_inset Formula $Cp=4$
+\end_inset
+
+.
+ Ciò è possibile perchè la libreria ha a disposizione un adeguato numero
+ di componenti da utilizzare, situazione non sempre veritiera.
 \end_layout
 
 \begin_layout Standard
@@ -555,11 +889,18 @@ newpage
 \end_layout
 
 \begin_layout Subsection
-Esercizio 3
+Esercizio 4
 \end_layout
 
 \begin_layout Standard
 Proviamo ad applicare il rugged-script ad un rete multi-uscita:
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -604,6 +945,13 @@ centering
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -622,8 +970,19 @@ noindent
 
 \end_inset
 
- rimappiamo la nostra rete su un fpga avente componenti elementari a quattro
- ingressi:
+ La minimizzazione sub-ottima ottenuta con questo metodo euristico è simile
+ a quella ricavata da Mc Cluskey multi-funzione, a conferma del fatto che
+ il rugged-script si rivela una buona sequenza per le trasformazioni da
+ applicare alla rete.
+ Rimappiamo la nostra rete su un fpga avente componenti elementari a quattro
+ ingressi.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -668,6 +1027,13 @@ centering
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -686,11 +1052,28 @@ noindent
 
 \end_inset
 
- possiamo vedere che il numero di nodi elementari utilizzati per sintetizzare
- la rete sono minorei nell' esempio successivo, ma il numero di operazioni
- elementari è aumentato di ben 7 unita, anche se nel caso delle FPGA, ogni
- nodo ha un tempo di calcolo costante quindi si sono avuti sia miglioramenti
- di area che di tempo.
+ Il mapping è stato possibile perchè il fan-in dei nodi della rete non è
+ maggiore del numero di input di una cella.
+ Al seguito di questa verifica, è stata effettuata la minimizzazione del
+ numero di nodi della rete e l'associazione di questi alle celle Xilinx.
+ Il numero di nodi utilizzati per sintetizzare la rete è diminuito e il
+ numero di letterali è aumentato di 7 unità: un nodo è stato eliminato sostituen
+do la sua espressione nei nodi a valle.
+ Ciò ha consentito un risparmio di area, in termini di celle Xilinx, ed
+ eventualmente anche di tempo, grazie ad una dipendenza più diretta dei
+ nodi a valle dagli input primari.
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+anche se nel caso delle FPGA, ogni nodo ha un tempo di calcolo costante
+ quindi si sono avuti sia miglioramenti di area che di tempo.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
