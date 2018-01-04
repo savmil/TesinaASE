@@ -43,7 +43,7 @@ ARCHITECTURE behavior OF funzione_hash_moltiplicazione_testbench IS
     PORT(
          clk : IN  std_logic;
          data : IN  std_logic_vector(7 downto 0);
-         moltiplicando : IN  std_logic_vector(63 downto 0);
+         moltiplicando : IN  std_logic_vector(31 downto 0);
          start : IN  std_logic;
          reset : IN  std_logic;
          number_of_shift : IN  std_logic_vector(6 downto 0);
@@ -56,7 +56,7 @@ ARCHITECTURE behavior OF funzione_hash_moltiplicazione_testbench IS
    --Inputs
    signal clk : std_logic := '0';
    signal data : std_logic_vector(7 downto 0) := (others => '0');
-   signal moltiplicando : std_logic_vector(63 downto 0) := (others => '0');
+   signal moltiplicando : std_logic_vector(31 downto 0) := (others => '0');
    signal start : std_logic := '0';
    signal reset : std_logic := '0';
    signal number_of_shift : std_logic_vector(6 downto 0) := (others => '0');
@@ -98,7 +98,7 @@ BEGIN
       -- hold reset state for 100 ns.
 		reset<='1';
 		data<="00110011";
-		moltiplicando<="0000000000000000000000000000000010000000000000000000000000000000";
+		moltiplicando<="11111111111111110000000000000000";
       wait for 100 ns;	
 		start<='1';
 		wait for 10 ns;

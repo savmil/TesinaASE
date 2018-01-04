@@ -1,0 +1,17 @@
+vhdtdtfi -prj BootMultiplier -o C:/Users/Mario/Desktop/rippleCarry/BootMultiplier/shift_register_pilotato.vhi -module shift_register_pilotato -template C:/Xilinx/14.1/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work mux2.vhd -lib work flipflopd.vhd -lib work flipflopmux.vhd -lib work shift_register_pilotato.vhd 
+xst -intstyle ise -ifn "C:/Users/Mario/Desktop/rippleCarry/BootMultiplier/shift_register_pilotato.xst" -ofn "C:/Users/Mario/Desktop/rippleCarry/BootMultiplier/shift_register_pilotato.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1200e-fg320-5 shift_register_pilotato.ngc shift_register_pilotato.ngd  
+netgen -intstyle ise -rpw 100 -tpw 0 -ar Structure -tm shift_register_pilotato -w -dir netgen/translate -ofmt vhdl -sim shift_register_pilotato.ngd shift_register_pilotato_translate.vhd 
+xst -intstyle ise -ifn "C:/Users/Mario/Desktop/rippleCarry/BootMultiplier/shift_register_pilotato.xst" -ofn "C:/Users/Mario/Desktop/rippleCarry/BootMultiplier/shift_register_pilotato.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1200e-fg320-5 shift_register_pilotato.ngc shift_register_pilotato.ngd  
+netgen -intstyle ise -rpw 100 -tpw 0 -ar Structure -tm shift_register_pilotato -w -dir netgen/translate -ofmt vhdl -sim shift_register_pilotato.ngd shift_register_pilotato_translate.vhd 
+xst -intstyle ise -ifn "C:/Users/Mario/Desktop/rippleCarry/BootMultiplier/shift_register_pilotato.xst" -ofn "C:/Users/Mario/Desktop/rippleCarry/BootMultiplier/shift_register_pilotato.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1200e-fg320-5 shift_register_pilotato.ngc shift_register_pilotato.ngd  
+netgen -intstyle ise -rpw 100 -tpw 0 -ar Structure -tm shift_register_pilotato -w -dir netgen/translate -ofmt vhdl -sim shift_register_pilotato.ngd shift_register_pilotato_translate.vhd 
+xst -intstyle ise -ifn "C:/Users/Mario/Desktop/rippleCarry/BootMultiplier/shift_register_pilotato.xst" -ofn "C:/Users/Mario/Desktop/rippleCarry/BootMultiplier/shift_register_pilotato.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1200e-fg320-5 shift_register_pilotato.ngc shift_register_pilotato.ngd  
+netgen -intstyle ise -rpw 100 -tpw 0 -ar Structure -tm shift_register_pilotato -w -dir netgen/translate -ofmt vhdl -sim shift_register_pilotato.ngd shift_register_pilotato_translate.vhd 
+xst -intstyle ise -ifn "C:/Users/Mario/Desktop/rippleCarry/BootMultiplier/shift_register_pilotato.xst" -ofn "C:/Users/Mario/Desktop/rippleCarry/BootMultiplier/shift_register_pilotato.syr" 
+xst -intstyle ise -ifn "C:/Users/Mario/Desktop/rippleCarry/BootMultiplier/shift_register_pilotato.xst" -ofn "C:/Users/Mario/Desktop/rippleCarry/BootMultiplier/shift_register_pilotato.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1200e-fg320-5 shift_register_pilotato.ngc shift_register_pilotato.ngd  
+netgen -intstyle ise -rpw 100 -tpw 0 -ar Structure -tm shift_register_pilotato -w -dir netgen/translate -ofmt vhdl -sim shift_register_pilotato.ngd shift_register_pilotato_translate.vhd 

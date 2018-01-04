@@ -1,0 +1,2 @@
+vhdl isim_temp "netgen/translate/booth_multiplier_translate.vhd"
+vhdl isim_temp "tb_booth.vhd"

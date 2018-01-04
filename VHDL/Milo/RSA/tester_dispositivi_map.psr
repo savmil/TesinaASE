@@ -1,0 +1,46 @@
+Release 14.7 Physical Synthesis Report P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc. All rights reserved.
+
+TABLE OF CONTENTS
+  1) Physical Synthesis Options Summary
+  2) Optimizations statistics and details
+
+
+=========================================================================
+*                 Physical Synthesis Options Summary                    *
+=========================================================================
+---- Options
+Global Optimization                 : OFF
+    Retiming                        : OFF
+    Equivalent Register Removal     : OFF
+Timing-Driven Packing and Placement : ON
+    Logic Optimization              : ON
+    Register Duplication            : ON
+
+---- Intelligent clock gating       : OFF
+
+---- Target Parameters
+Target Device                       : 3s100etq144-5
+
+=========================================================================
+
+
+=========================================================================
+*                        Optimizations                                  *
+=========================================================================
+---- Statistics
+   Number of registers added by Replication                  | 3               
+
+   Overall change in number of design objects                | +3               
+
+
+---- Details
+
+New or modified components                             | Optimization             | Objective           
+-------------------------------------------------------|--------------------------|----------------------
+RSA/m_e_exp/div/remainder/chain_gen[1].sc_ch.inst_edge_triggered/q_0_REPLICA_2| Replication              | Fanout Optimization
+RSA/m_e_exp/div/remainder/chain_gen[62].sc_ch.inst_edge_triggered/q_0_BRB1_REPLICA_0| Replication              | Fanout Optimization
+RSA/m_e_exp/div/remainder/chain_gen[62].sc_ch.inst_edge_triggered/q_0_BRB1_REPLICA_1| Replication              | Fanout Optimization
+
+   Flops added for Enable Generation                       
+-------------------------

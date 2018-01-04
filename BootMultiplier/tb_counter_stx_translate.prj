@@ -1,0 +1,2 @@
+vhdl isim_temp "netgen/translate/counter_translate.vhd"
+vhdl isim_temp "tb_counter.vhd"

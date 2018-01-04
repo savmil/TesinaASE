@@ -1,0 +1,2 @@
+vhdl work "netgen/translate/booth_multiplier_translate.vhd"
+vhdl work "tb_booth.vhd"

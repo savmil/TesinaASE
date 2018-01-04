@@ -9,33 +9,49 @@
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/Booth_multiplier - Structural |home|sav|ASE|moltiplicatore_booth|Booth_multiplier.vhd/gestore_shift - add_sub - structural</ClosedNode>
          <ClosedNode>/Booth_multiplier - Structural |home|sav|ASE|moltiplicatore_booth|Booth_multiplier.vhd/shifter - boundary_scan_chain - Structural</ClosedNode>
+         <ClosedNode>/Booth_multiplier - Structural |media|sf_ASE|VHDL|Milo|moltiplicatore_B_buono|Booth_multiplier.vhd</ClosedNode>
+         <ClosedNode>/Booth_multiplier - Structural |media|sf_ASE|VHDL|Milo|moltiplicatore_B_buono|Booth_multiplier.vhd/a - boundary_scan_chain - Structural</ClosedNode>
+         <ClosedNode>/Booth_multiplier - Structural |media|sf_ASE|VHDL|Milo|moltiplicatore_B_buono|Booth_multiplier.vhd/gestore_shift - add_sub - structural</ClosedNode>
+         <ClosedNode>/Booth_multiplier - Structural |media|sf_ASE|VHDL|Milo|moltiplicatore_B_buono|Booth_multiplier.vhd/q - boundary_scan_chain - Structural</ClosedNode>
          <ClosedNode>/add_sub - structural |home|sav|ASE|moltiplicatore_booth|add_sub.vhd</ClosedNode>
          <ClosedNode>/boundary_scan_chain - Structural |home|sav|ASE|moltiplicatore_booth|boundary_scan_chain.vhd</ClosedNode>
+         <ClosedNode>/gest_disp - behavior |media|sf_ASE|VHDL|Milo|moltiplicatore_B_buono|gest_disp.vhd</ClosedNode>
+         <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|VHDL|Milo|moltiplicatore_B_buono|tester_dispositivi.vhd</ClosedNode>
+         <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|VHDL|Milo|moltiplicatore_B_buono|tester_dispositivi.vhd/booth - Booth_multiplier - Structural</ClosedNode>
+         <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|VHDL|Milo|moltiplicatore_B_buono|tester_dispositivi.vhd/booth - Booth_multiplier - Structural/a - boundary_scan_chain - Structural</ClosedNode>
+         <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|VHDL|Milo|moltiplicatore_B_buono|tester_dispositivi.vhd/booth - Booth_multiplier - Structural/gestore_shift - add_sub - structural</ClosedNode>
+         <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|VHDL|Milo|moltiplicatore_B_buono|tester_dispositivi.vhd/booth - Booth_multiplier - Structural/q - boundary_scan_chain - Structural</ClosedNode>
+         <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|VHDL|Milo|moltiplicatore_B_buono|tester_dispositivi.vhd/gest_disp - display_top_level - structural</ClosedNode>
+         <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|VHDL|Milo|moltiplicatore_B_buono|tester_dispositivi.vhd/gest_disp - display_top_level - structural/inst_display - display - structural/inst_anode_manager - anode_manager - structural</ClosedNode>
+         <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|VHDL|Milo|moltiplicatore_B_buono|tester_dispositivi.vhd/gest_disp - display_top_level - structural/inst_display - display - structural/inst_cathode_manager - cathode_manager - structural</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Booth_multiplier - Structural (/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/Booth_multiplier.vhd)</SelectedItem>
+         <SelectedItem>tester_dispositivi - Behavioral (/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/tester_dispositivi.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000026f000000020000000000000000000000000200000064ffffffff0000008100000003000000020000026f0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001e5000000020000000000000000000000000200000064ffffffff000000810000000300000002000001e50000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>Booth_multiplier - Structural (/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/Booth_multiplier.vhd)</CurrentItem>
+      <CurrentItem>tester_dispositivi - Behavioral (/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/tester_dispositivi.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
          <ClosedNode>Configure Target Device</ClosedNode>
-         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>Implement Design/Map</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
+         <ClosedNode>Implement Design/Translate</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Synthesize - XST</SelectedItem>
+         <SelectedItem>Generate Programming File</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >2</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000124000000010000000100000000000000000000000064ffffffff000000810000000000000001000001240000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001af000000010000000100000000000000000000000064ffffffff000000810000000000000001000001af0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Synthesize - XST</CurrentItem>
+      <CurrentItem>Generate Programming File</CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -44,7 +60,7 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000039f000000040101000100000000000000000000000064ffffffff000000810000000000000004000000cb00000001000000000000005c0000000100000000000000840000000100000000000001f40000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000020f000000040101000100000000000000000000000064ffffffff000000810000000000000004000000cb00000001000000000000005c0000000100000000000000840000000100000000000000640000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>add_sub.vhd</CurrentItem>
    </ItemView>
@@ -56,7 +72,7 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000124000000010001000100000000000000000000000064ffffffff000000810000000000000001000001240000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000001be000000010001000100000000000000000000000064ffffffff000000810000000000000001000001be0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>work</CurrentItem>
    </ItemView>
@@ -69,6 +85,7 @@
          <ClosedNode>/Booth_testbench - behavior |home|sav|ASE|moltiplicatore_booth|Booth_testbench.vhd/uut - Booth_multiplier - Structural/gestore_shift - add_sub - structural</ClosedNode>
          <ClosedNode>/Booth_testbench - behavior |home|sav|ASE|moltiplicatore_booth|Booth_testbench.vhd/uut - Booth_multiplier - Structural/q - boundary_scan_chain - Structural</ClosedNode>
          <ClosedNode>/Booth_testbench - behavior |home|sav|ASE|moltiplicatore_booth|Booth_testbench.vhd/uut - Booth_multiplier - Structural/shifter - boundary_scan_chain - Structural</ClosedNode>
+         <ClosedNode>/Booth_testbench - behavior |media|sf_ASE|VHDL|Milo|moltiplicatore_B_buono|Booth_testbench.vhd</ClosedNode>
          <ClosedNode>/Booth_testbench - behavior |media|sf_ASE|VHDL|Milo|moltiplicatore_B_buono|Booth_testbench.vhd/uut - Booth_multiplier - Structural/a - boundary_scan_chain - Structural</ClosedNode>
          <ClosedNode>/Booth_testbench - behavior |media|sf_ASE|VHDL|Milo|moltiplicatore_B_buono|Booth_testbench.vhd/uut - Booth_multiplier - Structural/gestore_shift - add_sub - structural</ClosedNode>
          <ClosedNode>/Booth_testbench - behavior |media|sf_ASE|VHDL|Milo|moltiplicatore_B_buono|Booth_testbench.vhd/uut - Booth_multiplier - Structural/q - boundary_scan_chain - Structural</ClosedNode>
@@ -76,13 +93,15 @@
          <ClosedNode>/Booth_testbench - behavior |media|sf_ASE|moltiplicatore_B|Booth_testbench.vhd/uut - Booth_multiplier - Structural/gestore_shift - add_sub - structural</ClosedNode>
          <ClosedNode>/add_sub - structural |home|sav|ASE|moltiplicatore_booth|add_sub.vhd</ClosedNode>
          <ClosedNode>/boundary_scan_chain - Structural |home|sav|ASE|moltiplicatore_booth|boundary_scan_chain.vhd</ClosedNode>
+         <ClosedNode>/gest_disp - behavior |media|sf_ASE|VHDL|Milo|moltiplicatore_B_buono|gest_disp.vhd</ClosedNode>
+         <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|VHDL|Milo|moltiplicatore_B_buono|tester_dispositivi.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
          <SelectedItem>Booth_testbench - behavior (/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/Booth_testbench.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000277000000020000000000000000000000000200000064ffffffff000000810000000300000002000002770000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001e5000000020000000000000000000000000200000064ffffffff000000810000000300000002000001e50000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
       <CurrentItem>Booth_testbench - behavior (/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/Booth_testbench.vhd)</CurrentItem>
    </ItemView>
@@ -109,7 +128,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000124000000010000000100000000000000000000000064ffffffff000000810000000000000001000001240000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001be000000010000000100000000000000000000000064ffffffff000000810000000000000001000001be0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>
@@ -180,9 +199,37 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000002ac000000010000000100000000000000000000000064ffffffff000000810000000000000001000002ac0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001be000000010000000100000000000000000000000064ffffffff000000810000000000000001000001be0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>ISim Simulator</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001be000000010000000100000000000000000000000064ffffffff000000810000000000000001000001be0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001be000000010000000100000000000000000000000064ffffffff000000810000000000000001000001be0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
    </ItemView>
 </Project>
 <?xml version="1.0" encoding="utf-8"?>

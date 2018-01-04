@@ -1,0 +1,29 @@
+Command line:
+   tester_testbench_isim_translate.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  39937
+
+Wed Jan  3 17:34:56 2018
+
+
+ Elaboration Time: 0.56 sec
+
+ Current Memory Usage: 327.193 Meg
+
+ Total Signals          : 36819
+ Total Nets             : 24665
+ Total Signal Drivers   : 24628
+ Total Blocks           : 6573
+ Total Primitive Blocks : 3722
+ Total Processes        : 24627
+ Total Traceable Variables  : 54201
+ Total Scalar Nets and Variables : 156190
+Total Line Count : 58999
+
+ Total Simulation Time: 1.88 sec
+
+ Current Memory Usage: 335.585 Meg
+
+Wed Jan  3 17:36:12 2018
+

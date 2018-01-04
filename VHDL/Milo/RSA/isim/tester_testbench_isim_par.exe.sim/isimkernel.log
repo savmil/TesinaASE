@@ -1,0 +1,31 @@
+Command line:
+   tester_testbench_isim_par.exe
+     -simmode  gui
+     -sdfmax  /uut/=netgen/par/tester_dispositivi_timesim.sdf
+     -sdfroot  /uut
+     -simrunnum  0
+     -socket  36680
+
+Wed Jan  3 17:00:09 2018
+
+
+ Elaboration Time: 2.82 sec
+
+ Current Memory Usage: 429.588 Meg
+
+ Total Signals          : 52324
+ Total Nets             : 32627
+ Total Signal Drivers   : 32558
+ Total Blocks           : 12806
+ Total Primitive Blocks : 6851
+ Total Processes        : 32567
+ Total Traceable Variables  : 75193
+ Total Scalar Nets and Variables : 247423
+Total Line Count : 101159
+
+ Total Simulation Time: 6.29 sec
+
+ Current Memory Usage: 438.104 Meg
+
+Wed Jan  3 17:34:19 2018
+

@@ -1,0 +1,28 @@
+Command line:
+   tb_booth_isim_translate.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49228
+
+Fri Nov 29 11:26:45 2013
+
+
+ Elaboration Time: 0.124801 sec
+
+ Current Memory Usage: 506.098 Meg
+
+ Total Signals          : 1695
+ Total Nets             : 1118
+ Total Signal Drivers   : 1080
+ Total Blocks           : 349
+ Total Primitive Blocks : 196
+ Total Processes        : 1078
+ Total Traceable Variables  : 2538
+ Total Scalar Nets and Variables : 11791
+
+ Total Simulation Time: 0.249602 sec
+
+ Current Memory Usage: 506.098 Meg
+
+Fri Nov 29 11:27:11 2013
+

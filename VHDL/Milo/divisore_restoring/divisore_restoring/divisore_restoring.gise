@@ -83,7 +83,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1514481333" xil_pn:in_ck="-5196853415907239756" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1514481333">
+    <transform xil_pn:end_ts="1514968928" xil_pn:in_ck="-5196853415907239756" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1514968928">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Divisore_restoring_testbench.vhd"/>
@@ -112,7 +112,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1514481333" xil_pn:in_ck="-5196853415907239756" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1514481333">
+    <transform xil_pn:end_ts="1514968928" xil_pn:in_ck="-5196853415907239756" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1514968928">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Divisore_restoring_testbench.vhd"/>
@@ -129,10 +129,9 @@
       <outfile xil_pn:name="serial_div_restoring.vhd"/>
       <outfile xil_pn:name="shifter_a_sinistra.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1514481338" xil_pn:in_ck="-5196853415907239756" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6398060438110036196" xil_pn:start_ts="1514481333">
+    <transform xil_pn:end_ts="1514968932" xil_pn:in_ck="-5196853415907239756" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6398060438110036196" xil_pn:start_ts="1514968928">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Divisore_restoring_testbench_beh.prj"/>
@@ -142,11 +141,9 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1514481338" xil_pn:in_ck="-5599224157659367473" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="1708249382626571305" xil_pn:start_ts="1514481338">
+    <transform xil_pn:end_ts="1514968933" xil_pn:in_ck="-5599224157659367473" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="1708249382626571305" xil_pn:start_ts="1514968932">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Divisore_restoring_testbench_isim_beh.wdb"/>

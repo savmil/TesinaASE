@@ -1,0 +1,2 @@
+vhdl work "netgen/translate/generazione_valori_RSA_translate.vhd"
+vhdl work "generazione_valore_RSA_testbench.vhd"

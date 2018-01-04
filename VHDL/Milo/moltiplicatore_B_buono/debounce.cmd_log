@@ -1,0 +1,1 @@
+vhdtdtfi -prj moltiplicatore_booth -o /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/debounce.vhi -module debounce -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work debounce.vhd 
