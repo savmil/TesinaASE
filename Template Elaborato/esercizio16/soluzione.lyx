@@ -145,7 +145,7 @@ Descrivere la soluzione relizzata per mezzo di schematici e riportare il
 \end_layout
 
 \begin_layout Subsection
-Schematics
+Schematici
 \end_layout
 
 \begin_layout Subsubsection
@@ -297,8 +297,7 @@ GPIO
 \end_layout
 
 \begin_layout Standard
-Questa entity è una control unit che si preoccupa di creare, tramite un
- 
+Questa è una top-level entity che si preoccupa di creare, tramite un 
 \shape italic
 for-generate, 
 \shape default
@@ -315,10 +314,6 @@ una serie di pad, il cui numero è settato tramite un generic.
 \begin_inset VSpace bigskip
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 
 \end_layout
 

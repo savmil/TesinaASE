@@ -182,7 +182,7 @@ centering
 
 	
 \backslash
-includegraphics[scale=0.7]{./esercizio04/images/Display.png}
+includegraphics[scale=0.7]{esercizio04/images/Display.png}
 \end_layout
 
 \begin_layout Plain Layout
