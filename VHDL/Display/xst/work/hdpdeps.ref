@@ -1,65 +1,86 @@
-V3 28
-FL C:/Users/Michele/Documents/TesinaASE/VHDL/Display/anode_manager.vhd 2018/01/04.00:40:44 P.49d
-EN work/anode_manager 1515022861 \
+V3 43
+FL C:/Users/Michele/Documents/TesinaASE/VHDL/Display/anode_manager.vhd 2018/01/04.00:41:32 P.49d
+EN work/anode_manager 1515089329 \
       FL C:/Users/Michele/Documents/TesinaASE/VHDL/Display/anode_manager.vhd \
       PB ieee/std_logic_1164 1354696159
-AR work/anode_manager/structural 1515022862 \
+AR work/anode_manager/structural 1515089330 \
       FL C:/Users/Michele/Documents/TesinaASE/VHDL/Display/anode_manager.vhd \
-      EN work/anode_manager 1515022861 AR work/demux1_n/behavioral1 1515022858 \
+      EN work/anode_manager 1515089329 AR work/demux1_n/dataflow 1515089318 \
       CP muxn_1 CP demux1_n
 FL C:/Users/Michele/Documents/TesinaASE/VHDL/Display/cathode_encoder.vhd 2018/01/04.00:27:41 P.49d
-EN work/cathode_encoder 1515027608 \
+EN work/cathode_encoder 1515089319 \
       FL C:/Users/Michele/Documents/TesinaASE/VHDL/Display/cathode_encoder.vhd \
       PB ieee/std_logic_1164 1354696159
-AR work/cathode_encoder/Behavioral 1515027609 \
+AR work/cathode_encoder/Behavioral 1515089320 \
       FL C:/Users/Michele/Documents/TesinaASE/VHDL/Display/cathode_encoder.vhd \
-      EN work/cathode_encoder 1515027608
-AR work/cathode_encoder/structural 1515027610 \
+      EN work/cathode_encoder 1515089319
+AR work/cathode_encoder/structural 1515089321 \
       FL C:/Users/Michele/Documents/TesinaASE/VHDL/Display/cathode_encoder.vhd \
-      EN work/cathode_encoder 1515027608 CP muxn_1
-AR work/cathode_encoder/dataflow 1515027611 \
+      EN work/cathode_encoder 1515089319 CP muxn_1
+AR work/cathode_encoder/dataflow 1515089322 \
       FL C:/Users/Michele/Documents/TesinaASE/VHDL/Display/cathode_encoder.vhd \
-      EN work/cathode_encoder 1515027608
-FL C:/Users/Michele/Documents/TesinaASE/VHDL/Display/cathode_manager.vhd 2018/01/04.01:59:53 P.49d
-EN work/cathode_manager 1515027612 \
+      EN work/cathode_encoder 1515089319
+FL C:/Users/Michele/Documents/TesinaASE/VHDL/Display/cathode_manager.vhd 2018/01/04.10:54:50 P.49d
+EN work/cathode_manager 1515089327 \
       FL C:/Users/Michele/Documents/TesinaASE/VHDL/Display/cathode_manager.vhd \
       PB ieee/std_logic_1164 1354696159
-AR work/cathode_manager/structural 1515027613 \
+AR work/cathode_manager/structural 1515089328 \
       FL C:/Users/Michele/Documents/TesinaASE/VHDL/Display/cathode_manager.vhd \
-      EN work/cathode_manager 1515027612 AR work/cathode_encoder/Behavioral 1515027609 \
+      EN work/cathode_manager 1515089327 AR work/cathode_encoder/Behavioral 1515089320 \
       CP muxn_1 CP cathode_encoder
 FL C:/Users/Michele/Documents/TesinaASE/VHDL/Display/clock_filter.vhd 2018/01/03.17:48:31 P.49d
-EN work/clock_filter 1514998412 \
+EN work/clock_filter 1515089323 \
       FL C:/Users/Michele/Documents/TesinaASE/VHDL/Display/clock_filter.vhd \
       PB ieee/std_logic_1164 1354696159
-AR work/clock_filter/Behavioral 1514998413 \
+AR work/clock_filter/Behavioral 1515089324 \
       FL C:/Users/Michele/Documents/TesinaASE/VHDL/Display/clock_filter.vhd \
-      EN work/clock_filter 1514998412
-FL C:/Users/Michele/Documents/TesinaASE/VHDL/Display/counter_mod2n.vhd 2018/01/03.15:18:54 P.49d
-EN work/counter_mod2n 1514989143 \
+      EN work/clock_filter 1515089323
+FL C:/Users/Michele/Documents/TesinaASE/VHDL/Display/counter_mod2n.vhd 2018/01/03.19:23:21 P.49d
+EN work/counter_mod2n 1515089325 \
       FL C:/Users/Michele/Documents/TesinaASE/VHDL/Display/counter_mod2n.vhd \
-      PB ieee/std_logic_1164 1354696159 PB ieee/NUMERIC_STD 1354696164 \
-      PB ieee/STD_LOGIC_UNSIGNED 1354696162
-AR work/counter_mod2n/Behavioral 1514989144 \
+      PB ieee/std_logic_1164 1354696159 PB ieee/STD_LOGIC_UNSIGNED 1354696162
+AR work/counter_mod2n/Behavioral 1515089326 \
       FL C:/Users/Michele/Documents/TesinaASE/VHDL/Display/counter_mod2n.vhd \
-      EN work/counter_mod2n 1514989143
+      EN work/counter_mod2n 1515089325
 FL C:/Users/Michele/Documents/TesinaASE/VHDL/Display/demux1_n.vhd 2018/01/03.19:49:36 P.49d
-EN work/demux1_n 1515022857 \
+EN work/demux1_n 1515089315 \
       FL C:/Users/Michele/Documents/TesinaASE/VHDL/Display/demux1_n.vhd \
       PB ieee/std_logic_1164 1354696159 PB ieee/STD_LOGIC_UNSIGNED 1354696162
-AR work/demux1_n/behavioral1 1515022858 \
+AR work/demux1_n/behavioral1 1515089316 \
       FL C:/Users/Michele/Documents/TesinaASE/VHDL/Display/demux1_n.vhd \
-      EN work/demux1_n 1515022857
-AR work/demux1_n/behavioral2 1515022859 \
+      EN work/demux1_n 1515089315
+AR work/demux1_n/behavioral2 1515089317 \
       FL C:/Users/Michele/Documents/TesinaASE/VHDL/Display/demux1_n.vhd \
-      EN work/demux1_n 1515022857
-AR work/demux1_n/dataflow 1515022860 \
+      EN work/demux1_n 1515089315
+AR work/demux1_n/dataflow 1515089318 \
       FL C:/Users/Michele/Documents/TesinaASE/VHDL/Display/demux1_n.vhd \
-      EN work/demux1_n 1515022857
+      EN work/demux1_n 1515089315
+FL C:/Users/Michele/Documents/TesinaASE/VHDL/Display/display.vhd 2018/01/04.16:12:25 P.49d
+EN work/display 1515089333 \
+      FL C:/Users/Michele/Documents/TesinaASE/VHDL/Display/display.vhd \
+      PB ieee/std_logic_1164 1354696159
+AR work/display/structural 1515089334 \
+      FL C:/Users/Michele/Documents/TesinaASE/VHDL/Display/display.vhd \
+      EN work/display 1515089333 CP clock_filter CP counter_mod2n \
+      CP cathode_manager CP anode_manager
+FL C:/Users/Michele/Documents/TesinaASE/VHDL/Display/display_cu.vhd 2018/01/04.19:08:23 P.49d
+EN work/display_cu 1515089335 \
+      FL C:/Users/Michele/Documents/TesinaASE/VHDL/Display/display_cu.vhd \
+      PB ieee/std_logic_1164 1354696159
+AR work/display_cu/Structural 1515089336 \
+      FL C:/Users/Michele/Documents/TesinaASE/VHDL/Display/display_cu.vhd \
+      EN work/display_cu 1515089335 CP edge_triggered_d_n CP display
+FL C:/Users/Michele/Documents/TesinaASE/VHDL/Display/edge_triggered_d_n.vhd 2018/01/04.15:32:09 P.49d
+EN work/edge_triggered_d_n 1515089331 \
+      FL C:/Users/Michele/Documents/TesinaASE/VHDL/Display/edge_triggered_d_n.vhd \
+      PB ieee/std_logic_1164 1354696159
+AR work/edge_triggered_d_n/Behavioral 1515089332 \
+      FL C:/Users/Michele/Documents/TesinaASE/VHDL/Display/edge_triggered_d_n.vhd \
+      EN work/edge_triggered_d_n 1515089331
 FL C:/Users/Michele/Documents/TesinaASE/VHDL/Display/muxn_1.vhd 2018/01/03.19:40:48 P.49d
-EN work/muxn_1 1515027606 \
+EN work/muxn_1 1515089313 \
       FL C:/Users/Michele/Documents/TesinaASE/VHDL/Display/muxn_1.vhd \
       PB ieee/std_logic_1164 1354696159 PB ieee/STD_LOGIC_UNSIGNED 1354696162
-AR work/muxn_1/dataflow 1515027607 \
+AR work/muxn_1/dataflow 1515089314 \
       FL C:/Users/Michele/Documents/TesinaASE/VHDL/Display/muxn_1.vhd \
-      EN work/muxn_1 1515027606
+      EN work/muxn_1 1515089313

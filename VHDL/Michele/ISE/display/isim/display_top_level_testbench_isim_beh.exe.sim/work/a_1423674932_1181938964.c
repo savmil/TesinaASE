@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/Public/ISE/display/cathode_manager.vhd";
+static const char *ng0 = "C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/display/cathode_manager.vhd";
 
 
 

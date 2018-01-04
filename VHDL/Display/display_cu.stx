@@ -1,0 +1,57 @@
+Release 14.4 - xst P.49d (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/Michele/Documents/TesinaASE/VHDL/Display/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.18 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/Michele/Documents/TesinaASE/VHDL/Display/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.18 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/muxn_1.vhd" in Library work.
+Architecture dataflow of Entity muxn_1 is up to date.
+Compiling vhdl file "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/demux1_n.vhd" in Library work.
+Architecture behavioral1 of Entity demux1_n is up to date.
+Architecture behavioral2 of Entity demux1_n is up to date.
+Architecture dataflow of Entity demux1_n is up to date.
+Compiling vhdl file "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/cathode_encoder.vhd" in Library work.
+Architecture behavioral of Entity cathode_encoder is up to date.
+Architecture structural of Entity cathode_encoder is up to date.
+Architecture dataflow of Entity cathode_encoder is up to date.
+Compiling vhdl file "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/clock_filter.vhd" in Library work.
+Architecture behavioral of Entity clock_filter is up to date.
+Compiling vhdl file "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/counter_mod2n.vhd" in Library work.
+Architecture behavioral of Entity counter_mod2n is up to date.
+Compiling vhdl file "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/cathode_manager.vhd" in Library work.
+Architecture structural of Entity cathode_manager is up to date.
+Compiling vhdl file "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/anode_manager.vhd" in Library work.
+Architecture structural of Entity anode_manager is up to date.
+Compiling vhdl file "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/edge_triggered_d_n.vhd" in Library work.
+Architecture behavioral of Entity edge_triggered_d_n is up to date.
+Compiling vhdl file "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/display.vhd" in Library work.
+Architecture structural of Entity display is up to date.
+Compiling vhdl file "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/display_cu.vhd" in Library work.
+Entity <display_cu> compiled.
+Entity <display_cu> (Architecture <structural>) compiled.
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.58 secs
+ 
+--> 
+
+Total memory usage is 167336 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

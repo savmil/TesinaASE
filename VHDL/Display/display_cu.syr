@@ -1,0 +1,554 @@
+Release 14.4 - xst P.49d (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Reading design: display_cu.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "display_cu.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "display_cu"
+Output Format                      : NGC
+Target Device                      : xc3s100e-5-tq144
+
+---- Source Options
+Top Module Name                    : display_cu
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/muxn_1.vhd" in Library work.
+Architecture dataflow of Entity muxn_1 is up to date.
+Compiling vhdl file "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/demux1_n.vhd" in Library work.
+Architecture behavioral1 of Entity demux1_n is up to date.
+Architecture behavioral2 of Entity demux1_n is up to date.
+Architecture dataflow of Entity demux1_n is up to date.
+Compiling vhdl file "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/cathode_encoder.vhd" in Library work.
+Architecture behavioral of Entity cathode_encoder is up to date.
+Architecture structural of Entity cathode_encoder is up to date.
+Architecture dataflow of Entity cathode_encoder is up to date.
+Compiling vhdl file "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/clock_filter.vhd" in Library work.
+Architecture behavioral of Entity clock_filter is up to date.
+Compiling vhdl file "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/counter_mod2n.vhd" in Library work.
+Architecture behavioral of Entity counter_mod2n is up to date.
+Compiling vhdl file "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/cathode_manager.vhd" in Library work.
+Architecture structural of Entity cathode_manager is up to date.
+Compiling vhdl file "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/anode_manager.vhd" in Library work.
+Architecture structural of Entity anode_manager is up to date.
+Compiling vhdl file "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/edge_triggered_d_n.vhd" in Library work.
+Architecture behavioral of Entity edge_triggered_d_n is up to date.
+Compiling vhdl file "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/display.vhd" in Library work.
+Architecture structural of Entity display is up to date.
+Compiling vhdl file "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/display_cu.vhd" in Library work.
+Entity <display_cu> compiled.
+Entity <display_cu> (Architecture <structural>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <display_cu> in library <work> (architecture <structural>) with generics.
+	freq_clock = 50000000
+	freq_hit = 250
+
+Analyzing hierarchy for entity <edge_triggered_d_n> in library <work> (architecture <behavioral>) with generics.
+	width = 8
+
+Analyzing hierarchy for entity <display> in library <work> (architecture <structural>) with generics.
+	freq_clock = 50000000
+	freq_hit = 250
+
+Analyzing hierarchy for entity <clock_filter> in library <work> (architecture <behavioral>) with generics.
+	freq_clock = 50000000
+	freq_hit = 250
+
+Analyzing hierarchy for entity <counter_mod2n> in library <work> (architecture <behavioral>) with generics.
+	width = 2
+
+Analyzing hierarchy for entity <cathode_manager> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <anode_manager> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <muxn_1> in library <work> (architecture <dataflow>) with generics.
+	address_width = 2
+
+Analyzing hierarchy for entity <cathode_encoder> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <demux1_n> in library <work> (architecture <dataflow>) with generics.
+	address_width = 2
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <display_cu> in library <work> (Architecture <structural>).
+	freq_clock = 50000000
+	freq_hit = 250
+Entity <display_cu> analyzed. Unit <display_cu> generated.
+
+Analyzing generic Entity <edge_triggered_d_n> in library <work> (Architecture <behavioral>).
+	width = 8
+Entity <edge_triggered_d_n> analyzed. Unit <edge_triggered_d_n> generated.
+
+Analyzing generic Entity <display> in library <work> (Architecture <structural>).
+	freq_clock = 50000000
+	freq_hit = 250
+Entity <display> analyzed. Unit <display> generated.
+
+Analyzing generic Entity <clock_filter> in library <work> (Architecture <behavioral>).
+	freq_clock = 50000000
+	freq_hit = 250
+Entity <clock_filter> analyzed. Unit <clock_filter> generated.
+
+Analyzing generic Entity <counter_mod2n> in library <work> (Architecture <behavioral>).
+	width = 2
+Entity <counter_mod2n> analyzed. Unit <counter_mod2n> generated.
+
+Analyzing Entity <cathode_manager> in library <work> (Architecture <structural>).
+Entity <cathode_manager> analyzed. Unit <cathode_manager> generated.
+
+Analyzing generic Entity <muxn_1> in library <work> (Architecture <dataflow>).
+	address_width = 2
+Entity <muxn_1> analyzed. Unit <muxn_1> generated.
+
+Analyzing Entity <cathode_encoder> in library <work> (Architecture <behavioral>).
+INFO:Xst:1561 - "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/cathode_encoder.vhd" line 94: Mux is complete : default of case is discarded
+Entity <cathode_encoder> analyzed. Unit <cathode_encoder> generated.
+
+Analyzing Entity <anode_manager> in library <work> (Architecture <structural>).
+Entity <anode_manager> analyzed. Unit <anode_manager> generated.
+
+Analyzing generic Entity <demux1_n> in library <work> (Architecture <dataflow>).
+	address_width = 2
+Entity <demux1_n> analyzed. Unit <demux1_n> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <edge_triggered_d_n>.
+    Related source file is "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/edge_triggered_d_n.vhd".
+    Found 8-bit register for signal <q>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <edge_triggered_d_n> synthesized.
+
+
+Synthesizing Unit <clock_filter>.
+    Related source file is "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/clock_filter.vhd".
+    Found 1-bit register for signal <hit>.
+    Found 31-bit up counter for signal <count>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <clock_filter> synthesized.
+
+
+Synthesizing Unit <counter_mod2n>.
+    Related source file is "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/counter_mod2n.vhd".
+    Found 2-bit up counter for signal <count>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <counter_mod2n> synthesized.
+
+
+Synthesizing Unit <muxn_1>.
+    Related source file is "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/muxn_1.vhd".
+    Found 1-bit 4-to-1 multiplexer for signal <X>.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <muxn_1> synthesized.
+
+
+Synthesizing Unit <cathode_encoder>.
+    Related source file is "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/cathode_encoder.vhd".
+    Found 16x7-bit ROM for signal <cathodes>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <cathode_encoder> synthesized.
+
+
+Synthesizing Unit <demux1_n>.
+    Related source file is "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/demux1_n.vhd".
+Unit <demux1_n> synthesized.
+
+
+Synthesizing Unit <cathode_manager>.
+    Related source file is "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/cathode_manager.vhd".
+Unit <cathode_manager> synthesized.
+
+
+Synthesizing Unit <anode_manager>.
+    Related source file is "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/anode_manager.vhd".
+Unit <anode_manager> synthesized.
+
+
+Synthesizing Unit <display>.
+    Related source file is "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/display.vhd".
+Unit <display> synthesized.
+
+
+Synthesizing Unit <display_cu>.
+    Related source file is "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/display_cu.vhd".
+Unit <display_cu> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Counters                                             : 2
+ 2-bit up counter                                      : 1
+ 31-bit up counter                                     : 1
+# Registers                                            : 4
+ 1-bit register                                        : 1
+ 8-bit register                                        : 3
+# Multiplexers                                         : 6
+ 1-bit 4-to-1 multiplexer                              : 6
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Counters                                             : 2
+ 2-bit up counter                                      : 1
+ 31-bit up counter                                     : 1
+# Registers                                            : 25
+ Flip-Flops                                            : 25
+# Multiplexers                                         : 6
+ 1-bit 4-to-1 multiplexer                              : 6
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <display_cu> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block display_cu, actual ratio is 6.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 58
+ Flip-Flops                                            : 58
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : display_cu.ngr
+Top Level Output File Name         : display_cu
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 25
+
+Cell Usage :
+# BELS                             : 172
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 30
+#      LUT2                        : 32
+#      LUT3                        : 17
+#      LUT4                        : 14
+#      MUXCY                       : 38
+#      MUXF5                       : 6
+#      VCC                         : 1
+#      XORCY                       : 31
+# FlipFlops/Latches                : 58
+#      FDC                         : 32
+#      FDCE                        : 26
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 24
+#      IBUF                        : 12
+#      OBUF                        : 12
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100etq144-5 
+
+ Number of Slices:                       60  out of    960     6%  
+ Number of Slice Flip Flops:             58  out of   1920     3%  
+ Number of 4 input LUTs:                 95  out of   1920     4%  
+ Number of IOs:                          25
+ Number of bonded IOBs:                  25  out of    108    23%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clock                              | BUFGP                  | 58    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 58    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 5.509ns (Maximum Frequency: 181.523MHz)
+   Minimum input arrival time before clock: 2.232ns
+   Maximum output required time after clock: 7.356ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 5.509ns (frequency: 181.523MHz)
+  Total number of paths / destination ports: 1493 / 36
+-------------------------------------------------------------------------
+Delay:               5.509ns (Levels of Logic = 32)
+  Source:            inst_display/inst_clk_fliter/count_1 (FF)
+  Destination:       inst_display/inst_clk_fliter/count_30 (FF)
+  Source Clock:      clock rising
+  Destination Clock: clock rising
+
+  Data Path: inst_display/inst_clk_fliter/count_1 to inst_display/inst_clk_fliter/count_30
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.514   0.532  inst_display/inst_clk_fliter/count_1 (inst_display/inst_clk_fliter/count_1)
+     LUT1:I0->O            1   0.612   0.000  inst_display/inst_clk_fliter/Mcount_count_cy<1>_rt (inst_display/inst_clk_fliter/Mcount_count_cy<1>_rt)
+     MUXCY:S->O            1   0.404   0.000  inst_display/inst_clk_fliter/Mcount_count_cy<1> (inst_display/inst_clk_fliter/Mcount_count_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  inst_display/inst_clk_fliter/Mcount_count_cy<2> (inst_display/inst_clk_fliter/Mcount_count_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  inst_display/inst_clk_fliter/Mcount_count_cy<3> (inst_display/inst_clk_fliter/Mcount_count_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  inst_display/inst_clk_fliter/Mcount_count_cy<4> (inst_display/inst_clk_fliter/Mcount_count_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  inst_display/inst_clk_fliter/Mcount_count_cy<5> (inst_display/inst_clk_fliter/Mcount_count_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  inst_display/inst_clk_fliter/Mcount_count_cy<6> (inst_display/inst_clk_fliter/Mcount_count_cy<6>)
+     MUXCY:CI->O           1   0.052   0.000  inst_display/inst_clk_fliter/Mcount_count_cy<7> (inst_display/inst_clk_fliter/Mcount_count_cy<7>)
+     MUXCY:CI->O           1   0.052   0.000  inst_display/inst_clk_fliter/Mcount_count_cy<8> (inst_display/inst_clk_fliter/Mcount_count_cy<8>)
+     MUXCY:CI->O           1   0.052   0.000  inst_display/inst_clk_fliter/Mcount_count_cy<9> (inst_display/inst_clk_fliter/Mcount_count_cy<9>)
+     MUXCY:CI->O           1   0.052   0.000  inst_display/inst_clk_fliter/Mcount_count_cy<10> (inst_display/inst_clk_fliter/Mcount_count_cy<10>)
+     MUXCY:CI->O           1   0.052   0.000  inst_display/inst_clk_fliter/Mcount_count_cy<11> (inst_display/inst_clk_fliter/Mcount_count_cy<11>)
+     MUXCY:CI->O           1   0.052   0.000  inst_display/inst_clk_fliter/Mcount_count_cy<12> (inst_display/inst_clk_fliter/Mcount_count_cy<12>)
+     MUXCY:CI->O           1   0.052   0.000  inst_display/inst_clk_fliter/Mcount_count_cy<13> (inst_display/inst_clk_fliter/Mcount_count_cy<13>)
+     MUXCY:CI->O           1   0.052   0.000  inst_display/inst_clk_fliter/Mcount_count_cy<14> (inst_display/inst_clk_fliter/Mcount_count_cy<14>)
+     MUXCY:CI->O           1   0.052   0.000  inst_display/inst_clk_fliter/Mcount_count_cy<15> (inst_display/inst_clk_fliter/Mcount_count_cy<15>)
+     MUXCY:CI->O           1   0.052   0.000  inst_display/inst_clk_fliter/Mcount_count_cy<16> (inst_display/inst_clk_fliter/Mcount_count_cy<16>)
+     MUXCY:CI->O           1   0.052   0.000  inst_display/inst_clk_fliter/Mcount_count_cy<17> (inst_display/inst_clk_fliter/Mcount_count_cy<17>)
+     MUXCY:CI->O           1   0.052   0.000  inst_display/inst_clk_fliter/Mcount_count_cy<18> (inst_display/inst_clk_fliter/Mcount_count_cy<18>)
+     MUXCY:CI->O           1   0.052   0.000  inst_display/inst_clk_fliter/Mcount_count_cy<19> (inst_display/inst_clk_fliter/Mcount_count_cy<19>)
+     MUXCY:CI->O           1   0.052   0.000  inst_display/inst_clk_fliter/Mcount_count_cy<20> (inst_display/inst_clk_fliter/Mcount_count_cy<20>)
+     MUXCY:CI->O           1   0.052   0.000  inst_display/inst_clk_fliter/Mcount_count_cy<21> (inst_display/inst_clk_fliter/Mcount_count_cy<21>)
+     MUXCY:CI->O           1   0.052   0.000  inst_display/inst_clk_fliter/Mcount_count_cy<22> (inst_display/inst_clk_fliter/Mcount_count_cy<22>)
+     MUXCY:CI->O           1   0.052   0.000  inst_display/inst_clk_fliter/Mcount_count_cy<23> (inst_display/inst_clk_fliter/Mcount_count_cy<23>)
+     MUXCY:CI->O           1   0.052   0.000  inst_display/inst_clk_fliter/Mcount_count_cy<24> (inst_display/inst_clk_fliter/Mcount_count_cy<24>)
+     MUXCY:CI->O           1   0.052   0.000  inst_display/inst_clk_fliter/Mcount_count_cy<25> (inst_display/inst_clk_fliter/Mcount_count_cy<25>)
+     MUXCY:CI->O           1   0.052   0.000  inst_display/inst_clk_fliter/Mcount_count_cy<26> (inst_display/inst_clk_fliter/Mcount_count_cy<26>)
+     MUXCY:CI->O           1   0.052   0.000  inst_display/inst_clk_fliter/Mcount_count_cy<27> (inst_display/inst_clk_fliter/Mcount_count_cy<27>)
+     MUXCY:CI->O           1   0.052   0.000  inst_display/inst_clk_fliter/Mcount_count_cy<28> (inst_display/inst_clk_fliter/Mcount_count_cy<28>)
+     MUXCY:CI->O           0   0.052   0.000  inst_display/inst_clk_fliter/Mcount_count_cy<29> (inst_display/inst_clk_fliter/Mcount_count_cy<29>)
+     XORCY:CI->O           1   0.699   0.426  inst_display/inst_clk_fliter/Mcount_count_xor<30> (Result<30>)
+     LUT2:I1->O            1   0.612   0.000  inst_display/inst_clk_fliter/Mcount_count_eqn_301 (inst_display/inst_clk_fliter/Mcount_count_eqn_30)
+     FDC:D                     0.268          inst_display/inst_clk_fliter/count_30
+    ----------------------------------------
+    Total                      5.509ns (4.551ns logic, 0.958ns route)
+                                       (82.6% logic, 17.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
+  Total number of paths / destination ports: 48 / 48
+-------------------------------------------------------------------------
+Offset:              2.232ns (Levels of Logic = 1)
+  Source:            loader<2> (PAD)
+  Destination:       edge_triggered_en_dots/q_7 (FF)
+  Destination Clock: clock rising
+
+  Data Path: loader<2> to edge_triggered_en_dots/q_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   1.106   0.643  loader_2_IBUF (loader_2_IBUF)
+     FDCE:CE                   0.483          edge_triggered_en_dots/q_0
+    ----------------------------------------
+    Total                      2.232ns (1.589ns logic, 0.643ns route)
+                                       (71.2% logic, 28.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
+  Total number of paths / destination ports: 239 / 12
+-------------------------------------------------------------------------
+Offset:              7.356ns (Levels of Logic = 4)
+  Source:            inst_display/inst_counter/count_0 (FF)
+  Destination:       cathodes<6> (PAD)
+  Source Clock:      clock rising
+
+  Data Path: inst_display/inst_counter/count_0 to cathodes<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            18   0.514   1.060  inst_display/inst_counter/count_0 (inst_display/inst_counter/count_0)
+     LUT3:I0->O            1   0.612   0.000  inst_display/inst_cathode_manager/mux16_4[3].inst_mux4_1/Mmux_X_3 (inst_display/inst_cathode_manager/mux16_4[3].inst_mux4_1/Mmux_X_3)
+     MUXF5:I1->O           7   0.278   0.754  inst_display/inst_cathode_manager/mux16_4[3].inst_mux4_1/Mmux_X_2_f5 (inst_display/inst_cathode_manager/nibble<3>)
+     LUT4:I0->O            1   0.612   0.357  inst_display/inst_cathode_manager/inst_encoder/Mrom_cathodes41 (cathodes_4_OBUF)
+     OBUF:I->O                 3.169          cathodes_4_OBUF (cathodes<4>)
+    ----------------------------------------
+    Total                      7.356ns (5.185ns logic, 2.171ns route)
+                                       (70.5% logic, 29.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 9.27 secs
+ 
+--> 
+
+Total memory usage is 200800 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

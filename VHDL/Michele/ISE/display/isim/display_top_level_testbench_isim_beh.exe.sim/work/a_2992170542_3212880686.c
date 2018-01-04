@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/Public/ISE/display/counter_mod2n.vhd";
+static const char *ng0 = "C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/display/counter_mod2n.vhd";
 extern char *IEEE_P_3499444699;
 extern char *IEEE_P_3620187407;
 
@@ -143,7 +143,7 @@ LAB7:    t1 = (t0 + 752U);
 LAB10:    xsi_set_current_line(25, ng0);
     t5 = (t0 + 960U);
     t7 = *((char **)t5);
-    t5 = (t0 + 3476U);
+    t5 = (t0 + 3816U);
     t16 = ieee_p_3620187407_sub_514432868_3965413181(IEEE_P_3620187407, t7, t5);
     t17 = (t16 + 1);
     t8 = ieee_p_3499444699_sub_2213602152_3536714472(IEEE_P_3499444699, t15, t17, 2);

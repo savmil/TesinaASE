@@ -2,28 +2,28 @@ Command line:
    clock_filter_testbench_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  49640
+     -socket  49256
 
-Wed Jan 03 17:42:39 2018
+Thu Jan 04 11:16:23 2018
 
 
- Elaboration Time: 0.0312 sec
+ Elaboration Time: 0.093601 sec
 
- Current Memory Usage: 490.107 Meg
+ Current Memory Usage: 489.226 Meg
 
  Total Signals          : 6
  Total Nets             : 3
  Total Signal Drivers   : 3
- Total Blocks           : 5
- Total Primitive Blocks : 4
+ Total Blocks           : 4
+ Total Primitive Blocks : 3
  Total Processes        : 3
- Total Traceable Variables  : 47
- Total Scalar Nets and Variables : 614
+ Total Traceable Variables  : 19
+ Total Scalar Nets and Variables : 492
 Total Line Count : 21
 
- Total Simulation Time: 0.0468 sec
+ Total Simulation Time: 0.156001 sec
 
- Current Memory Usage: 490.107 Meg
+ Current Memory Usage: 490.275 Meg
 
-Wed Jan 03 17:45:22 2018
+Thu Jan 04 11:18:10 2018
 

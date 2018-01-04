@@ -1,26 +1,40 @@
-Running: C:\Xilinx\14.4\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Michele/Documents/TesinaASE/VHDL/Display/cathode_manager_testbench_isim_beh.exe -prj C:/Users/Michele/Documents/TesinaASE/VHDL/Display/cathode_manager_testbench_beh.prj work.cathode_manager_testbench 
+Running: C:\Xilinx\14.4\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Michele/Documents/TesinaASE/VHDL/Display/display_cu_testbench_isim_beh.exe -prj C:/Users/Michele/Documents/TesinaASE/VHDL/Display/display_cu_testbench_beh.prj work.display_cu_testbench 
 ISim P.49d (signature 0x8ef4fb42)
 Number of CPUs detected in this system: 1
 Turning on mult-threading, number of parallel sub-compilation jobs: 0 
 Determining compilation order of HDL files
 Parsing VHDL file "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/muxn_1.vhd" into library work
+Parsing VHDL file "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/demux1_n.vhd" into library work
+Parsing VHDL file "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/counter_mod2n.vhd" into library work
+Parsing VHDL file "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/clock_filter.vhd" into library work
 Parsing VHDL file "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/cathode_encoder.vhd" into library work
 Parsing VHDL file "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/cathode_manager.vhd" into library work
-Parsing VHDL file "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/cathode_manager_testbench.vhd" into library work
+Parsing VHDL file "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/anode_manager.vhd" into library work
+Parsing VHDL file "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/edge_triggered_d_n.vhd" into library work
+Parsing VHDL file "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/display.vhd" into library work
+Parsing VHDL file "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/display_cu.vhd" into library work
+Parsing VHDL file "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/display_cu_testbench.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 103732 KB
+Fuse Memory Usage: 103220 KB
 Fuse CPU Usage: 498 ms
 Compiling package standard
 Compiling package std_logic_1164
+Compiling architecture behavioral of entity edge_triggered_d_n [\edge_triggered_d_n(8)\]
 Compiling package std_logic_arith
 Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity clock_filter [\clock_filter(100000000,50000000...]
+Compiling architecture behavioral of entity counter_mod2n [\counter_mod2n(2)\]
 Compiling architecture dataflow of entity muxn_1 [\muxn_1(2)\]
 Compiling architecture behavioral of entity cathode_encoder [cathode_encoder_default]
 Compiling architecture structural of entity cathode_manager [cathode_manager_default]
-Compiling architecture behavior of entity cathode_manager_testbench
+Compiling architecture dataflow of entity demux1_n [\demux1_n(2)\]
+Compiling architecture structural of entity anode_manager [anode_manager_default]
+Compiling architecture structural of entity display [\display(100000000,50000000)\]
+Compiling architecture structural of entity display_cu [\display_cu(100000000,50000000)\]
+Compiling architecture behavior of entity display_cu_testbench
 Time Resolution for simulation is 1ps.
-Compiled 11 VHDL Units
-Built simulation executable C:/Users/Michele/Documents/TesinaASE/VHDL/Display/cathode_manager_testbench_isim_beh.exe
-Fuse Memory Usage: 117732 KB
-Fuse CPU Usage: 639 ms
+Compiled 25 VHDL Units
+Built simulation executable C:/Users/Michele/Documents/TesinaASE/VHDL/Display/display_cu_testbench_isim_beh.exe
+Fuse Memory Usage: 118244 KB
+Fuse CPU Usage: 717 ms

@@ -207,8 +207,8 @@ end{figure}
 \begin_layout Standard
 Gli input sono rappresentati da un segnale di clock, uno di reset in logica
  0 attiva, le abilitazioni per le quattro cifre del display, i valori che
- esse devono assumere e l'eventuale posizione dei punti da accendere.
- Gli output sono costituiti dai segnali degli anodi comuni ai sette segmenti
+ le stesse cifre devono assumere e l'eventuale posizione dei punti da accendere.
+ Gli output sono costituiti dai segnali degli anodi comuni ai sette segmenti,
  in logica 0 attiva, uno per ciascuna cifra, e dai segnali dei catodi, sette
  dei quali in riferimento ai segmenti della cifra in questione, l'ultimo
  relativo al punto ad essa associato.
@@ -220,10 +220,10 @@ Il segnale di clock è filtrato da un clock filter, che restituisce un segnale
  Il clock permette, inoltre, il conteggio al contatore modulo 4, abilitato
  dal segnale di hit del clock filter.
  Il reset, se negato, consente il ripristino del clock filter e del contatore.
- L'uscita del contatore consente ad ogni conteggio di selezionare una cifra
- del display.
+ L'uscita del contatore consente di selezionare una cifra del display ad
+ ogni conteggio.
  Infatti, avendo le quattro cifre i catodi dei segmenti in comune, per mostrare
- un valore differente su ciascuna di esse è necessario un refresh dei nibble
+ un valore differente su ciascuna di esse è necessario un refresh del valore
  con una frequenza sufficientemente elevata.
 \begin_inset Newline newline
 \end_inset
@@ -231,9 +231,9 @@ Il segnale di clock è filtrato da un clock filter, che restituisce un segnale
 I segnali di abilitazione permettono di decidere quali cifre del display
  utilizzare.
  Essi, in ingresso ad un multiplexer 4x1, sono selezionati dal contatore
- per considerare in ogni istate l'abilitazione legata alla cifra corrente.
+ per considerare in ogni istante l'abilitazione legata alla cifra corrente.
  L'abilitazione così individuata identifica l'anodo relativo attraverso
- un demultiplexter 1x4, sempre tramite la selezione del contatore.
+ un demultiplexer 1x4, sempre tramite la selezione del contatore.
  Ad ogni conteggio, la cifra selezionata avrà anodo basso (accesa), o alto
  (spenta), a seconda dei valori di abilitazione passati in ingresso.
 \begin_inset Newline newline
@@ -249,8 +249,8 @@ I 16 bit di ingresso dei valori rappresentano i quattro nibble relativi
 \end_inset
 
 L'ottavo catodo della cifra è costituito dal punto ad essa associato.
- I quattro segnali di ingresso dei punti, infatti, decretano appunto se
- il punto, associato alla cifra selezionata, debba essere acceso, o meno.
+ I quattro segnali di ingresso dei punti, infatti, decretano se il punto,
+ associato alla cifra selezionata, debba essere acceso, o meno.
  Un multiplexer 4x1 seleziona, grazie al conteggio, il valore corretto da
  assegnare al punto della cifra corrente.
 \end_layout

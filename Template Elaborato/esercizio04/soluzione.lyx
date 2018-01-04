@@ -206,12 +206,13 @@ end{figure}
 
 \begin_layout Standard
 Gli input sono rappresentati da un segnale di clock, uno di reset in logica
- 0 attiva, le abilitazioni per le quattro cifre del display, i valori che
- le stesse cifre devono assumere e l'eventuale posizione dei punti da accendere.
+ 0 attiva, le abilitazioni per le quattro cifre del display in logica 0
+ attiva, i valori che le stesse cifre devono assumere e l'eventuale posizione
+ dei punti da accendere.
  Gli output sono costituiti dai segnali degli anodi comuni ai sette segmenti,
- in logica 0 attiva, uno per ciascuna cifra, e dai segnali dei catodi, sette
- dei quali in riferimento ai segmenti della cifra in questione, l'ultimo
- relativo al punto ad essa associato.
+ uno per ciascuna cifra, e dai segnali dei catodi, sette dei quali in riferiment
+o ai segmenti della cifra in questione, l'ultimo relativo al punto ad essa
+ associato.
 \begin_inset Newline newline
 \end_inset
 

@@ -1,0 +1,40 @@
+Release 14.4 - xst P.49d (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/Michele/Documents/TesinaASE/VHDL/Display/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.92 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/Michele/Documents/TesinaASE/VHDL/Display/xst
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.92 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/muxn_1.vhd" in Library work.
+Architecture dataflow of Entity muxn_1 is up to date.
+Compiling vhdl file "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/cathode_encoder.vhd" in Library work.
+Architecture behavioral of Entity cathode_encoder is up to date.
+Architecture structural of Entity cathode_encoder is up to date.
+Architecture dataflow of Entity cathode_encoder is up to date.
+Compiling vhdl file "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/cathode_manager.vhd" in Library work.
+Architecture structural of Entity cathode_manager is up to date.
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.72 secs
+ 
+--> 
+
+Total memory usage is 166952 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

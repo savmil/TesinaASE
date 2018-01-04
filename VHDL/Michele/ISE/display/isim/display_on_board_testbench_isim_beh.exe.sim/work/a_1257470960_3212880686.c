@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/Public/ISE/display/display_on_board.vhd";
+static const char *ng0 = "C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/display/display_on_board.vhd";
 extern char *IEEE_P_2592010699;
 
 unsigned char ieee_p_2592010699_sub_1690584930_503743352(char *, unsigned char );
@@ -84,7 +84,7 @@ LAB0:    xsi_set_current_line(65, ng0);
 
 LAB3:    t2 = (t0 + 1788U);
     t3 = *((char **)t2);
-    t2 = (t0 + 5944U);
+    t2 = (t0 + 6760U);
     t4 = ieee_p_2592010699_sub_1837678034_503743352(IEEE_P_2592010699, t1, t3, t2);
     t5 = (t1 + 12U);
     t6 = *((unsigned int *)t5);
@@ -133,7 +133,7 @@ LAB0:    xsi_set_current_line(66, ng0);
 
 LAB3:    t2 = (t0 + 1880U);
     t3 = *((char **)t2);
-    t2 = (t0 + 5960U);
+    t2 = (t0 + 6776U);
     t4 = ieee_p_2592010699_sub_1837678034_503743352(IEEE_P_2592010699, t1, t3, t2);
     t5 = (t1 + 12U);
     t6 = *((unsigned int *)t5);

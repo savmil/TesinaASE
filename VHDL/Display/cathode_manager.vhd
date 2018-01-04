@@ -12,7 +12,7 @@ end cathode_manager;
 architecture structural of cathode_manager is
 
 component muxn_1 is
-	generic(address_width : natural := 3);
+	generic(address_width : NATURAL := 3);
 	port (
 		SEL : in STD_LOGIC_VECTOR(address_width-1 downto 0);
 		 A : in STD_LOGIC_VECTOR(2**address_width-1 downto 0);

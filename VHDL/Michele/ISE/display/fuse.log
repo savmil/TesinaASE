@@ -1,24 +1,24 @@
-Running: C:\Xilinx\14.4\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Public/ISE/display/display_top_level_testbench_isim_beh.exe -prj C:/Users/Public/ISE/display/display_top_level_testbench_beh.prj work.display_top_level_testbench 
+Running: C:\Xilinx\14.4\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/display/display_top_level_testbench_isim_beh.exe -prj C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/display/display_top_level_testbench_beh.prj work.display_top_level_testbench 
 ISim P.49d (signature 0x8ef4fb42)
-Number of CPUs detected in this system: 2
-Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
 Determining compilation order of HDL files
-Parsing VHDL file "C:/Users/Public/ISE/display/muxn_1.vhd" into library work
-Parsing VHDL file "C:/Users/Public/ISE/display/demux1_n.vhd" into library work
-Parsing VHDL file "C:/Users/Public/ISE/display/cathode_encoder.vhd" into library work
-Parsing VHDL file "C:/Users/Public/ISE/display/edge_triggered_d_n.vhd" into library work
-Parsing VHDL file "C:/Users/Public/ISE/display/counter_mod2n.vhd" into library work
-Parsing VHDL file "C:/Users/Public/ISE/display/clock_filter.vhd" into library work
-Parsing VHDL file "C:/Users/Public/ISE/display/cathode_manager.vhd" into library work
-Parsing VHDL file "C:/Users/Public/ISE/display/anode_manager.vhd" into library work
-Parsing VHDL file "C:/Users/Public/ISE/display/display_on_board.vhd" into library work
-Parsing VHDL file "C:/Users/Public/ISE/display/display.vhd" into library work
-Parsing VHDL file "C:/Users/Public/ISE/display/display_top_level.vhd" into library work
-Parsing VHDL file "C:/Users/Public/ISE/display/display_top_level_testbench.vhd" into library work
+Parsing VHDL file "C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/display/muxn_1.vhd" into library work
+Parsing VHDL file "C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/display/demux1_n.vhd" into library work
+Parsing VHDL file "C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/display/cathode_encoder.vhd" into library work
+Parsing VHDL file "C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/display/edge_triggered_d_n.vhd" into library work
+Parsing VHDL file "C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/display/counter_mod2n.vhd" into library work
+Parsing VHDL file "C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/display/clock_filter.vhd" into library work
+Parsing VHDL file "C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/display/cathode_manager.vhd" into library work
+Parsing VHDL file "C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/display/anode_manager.vhd" into library work
+Parsing VHDL file "C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/display/display_on_board.vhd" into library work
+Parsing VHDL file "C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/display/display.vhd" into library work
+Parsing VHDL file "C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/display/display_top_level.vhd" into library work
+Parsing VHDL file "C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/display/display_top_level_testbench.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 106736 KB
-Fuse CPU Usage: 577 ms
+Fuse Memory Usage: 104372 KB
+Fuse CPU Usage: 639 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
@@ -39,8 +39,7 @@ Compiling architecture structural of entity display [\display(50000000,120)\]
 Compiling architecture structural of entity display_top_level [\display_top_level(50000000,120)...]
 Compiling architecture behavior of entity display_top_level_testbench
 Time Resolution for simulation is 1ps.
-Waiting for 15 sub-compilation(s) to finish...
 Compiled 31 VHDL Units
-Built simulation executable C:/Users/Public/ISE/display/display_top_level_testbench_isim_beh.exe
-Fuse Memory Usage: 127776 KB
-Fuse CPU Usage: 1029 ms
+Built simulation executable C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/display/display_top_level_testbench_isim_beh.exe
+Fuse Memory Usage: 124388 KB
+Fuse CPU Usage: 1123 ms

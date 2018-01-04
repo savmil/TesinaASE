@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/Public/ISE/display/cathode_encoder.vhd";
+static const char *ng0 = "C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/display/cathode_encoder.vhd";
 
 
 
@@ -73,82 +73,82 @@ static void work_a_4198048548_3212880686_p_0(char *t0)
 LAB0:    xsi_set_current_line(65, ng0);
     t1 = (t0 + 592U);
     t2 = *((char **)t1);
-    t1 = (t0 + 5096);
+    t1 = (t0 + 5812);
     t4 = xsi_mem_cmp(t1, t2, 4U);
     if (t4 == 1)
         goto LAB3;
 
-LAB20:    t5 = (t0 + 5100);
+LAB20:    t5 = (t0 + 5816);
     t7 = xsi_mem_cmp(t5, t2, 4U);
     if (t7 == 1)
         goto LAB4;
 
-LAB21:    t8 = (t0 + 5104);
+LAB21:    t8 = (t0 + 5820);
     t10 = xsi_mem_cmp(t8, t2, 4U);
     if (t10 == 1)
         goto LAB5;
 
-LAB22:    t11 = (t0 + 5108);
+LAB22:    t11 = (t0 + 5824);
     t13 = xsi_mem_cmp(t11, t2, 4U);
     if (t13 == 1)
         goto LAB6;
 
-LAB23:    t14 = (t0 + 5112);
+LAB23:    t14 = (t0 + 5828);
     t16 = xsi_mem_cmp(t14, t2, 4U);
     if (t16 == 1)
         goto LAB7;
 
-LAB24:    t17 = (t0 + 5116);
+LAB24:    t17 = (t0 + 5832);
     t19 = xsi_mem_cmp(t17, t2, 4U);
     if (t19 == 1)
         goto LAB8;
 
-LAB25:    t20 = (t0 + 5120);
+LAB25:    t20 = (t0 + 5836);
     t22 = xsi_mem_cmp(t20, t2, 4U);
     if (t22 == 1)
         goto LAB9;
 
-LAB26:    t23 = (t0 + 5124);
+LAB26:    t23 = (t0 + 5840);
     t25 = xsi_mem_cmp(t23, t2, 4U);
     if (t25 == 1)
         goto LAB10;
 
-LAB27:    t26 = (t0 + 5128);
+LAB27:    t26 = (t0 + 5844);
     t28 = xsi_mem_cmp(t26, t2, 4U);
     if (t28 == 1)
         goto LAB11;
 
-LAB28:    t29 = (t0 + 5132);
+LAB28:    t29 = (t0 + 5848);
     t31 = xsi_mem_cmp(t29, t2, 4U);
     if (t31 == 1)
         goto LAB12;
 
-LAB29:    t32 = (t0 + 5136);
+LAB29:    t32 = (t0 + 5852);
     t34 = xsi_mem_cmp(t32, t2, 4U);
     if (t34 == 1)
         goto LAB13;
 
-LAB30:    t35 = (t0 + 5140);
+LAB30:    t35 = (t0 + 5856);
     t37 = xsi_mem_cmp(t35, t2, 4U);
     if (t37 == 1)
         goto LAB14;
 
-LAB31:    t38 = (t0 + 5144);
+LAB31:    t38 = (t0 + 5860);
     t40 = xsi_mem_cmp(t38, t2, 4U);
     if (t40 == 1)
         goto LAB15;
 
-LAB32:    t41 = (t0 + 5148);
+LAB32:    t41 = (t0 + 5864);
     t43 = xsi_mem_cmp(t41, t2, 4U);
     if (t43 == 1)
         goto LAB16;
 
-LAB33:    t44 = (t0 + 5152);
+LAB33:    t44 = (t0 + 5868);
     t46 = xsi_mem_cmp(t44, t2, 4U);
     if (t46 == 1)
         goto LAB17;
 
-LAB34:    t47 = (t0 + 5156);
+LAB34:    t47 = (t0 + 5872);
     t49 = xsi_mem_cmp(t47, t2, 4U);
     if (t49 == 1)
         goto LAB18;

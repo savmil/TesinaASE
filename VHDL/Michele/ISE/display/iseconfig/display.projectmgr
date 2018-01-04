@@ -14,13 +14,13 @@
          <ClosedNode>/display_on_board - Behavioral C:|Users|Public|ISE|display|display_on_board.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>inst_display - display - structural (C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/display/display.vhd)</SelectedItem>
+         <SelectedItem>inst_on_board - display_on_board - Behavioral (C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/display/display_on_board.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000238000000020000000000000000000000000200000064ffffffff000000810000000300000002000002380000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>inst_display - display - structural (C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/display/display.vhd)</CurrentItem>
+      <CurrentItem>inst_on_board - display_on_board - Behavioral (C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/display/display_on_board.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -96,24 +96,30 @@
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/anode_manager - structural C:|Users|Public|ISE|display|anode_manager.vhd</ClosedNode>
+         <ClosedNode>/anode_manager_testbench - behavior C:|Users|Michele|Documents|TesinaASE|VHDL|Michele|ISE|display|anode_manager_testbench.vhd</ClosedNode>
+         <ClosedNode>/cathode_encoder_testbench - behavior C:|Users|Michele|Documents|TesinaASE|VHDL|Michele|ISE|display|cathode_encoder_testbench.vhd</ClosedNode>
          <ClosedNode>/cathode_encoder_testbench - behavior C:|Users|Public|ISE|display|cathode_encoder_testbench.vhd</ClosedNode>
          <ClosedNode>/cathode_manager - structural C:|Users|Public|ISE|display|cathode_manager.vhd</ClosedNode>
+         <ClosedNode>/cathode_manager_testbench - behavior C:|Users|Michele|Documents|TesinaASE|VHDL|Michele|ISE|display|cathode_manager_testbench.vhd</ClosedNode>
          <ClosedNode>/cathode_manager_testbench - behavior C:|Users|Public|ISE|display|cathode_manager_testbench.vhd</ClosedNode>
          <ClosedNode>/display - structural C:|Users|Public|ISE|display|display.vhd</ClosedNode>
          <ClosedNode>/display_on_board - Behavioral C:|Users|Public|ISE|display|display_on_board.vhd</ClosedNode>
+         <ClosedNode>/display_on_board_testbench - behavior C:|Users|Michele|Documents|TesinaASE|VHDL|Michele|ISE|display|display_on_board_testbench.vhd</ClosedNode>
          <ClosedNode>/display_on_board_testbench - behavior C:|Users|Public|ISE|display|display_on_board_testbench.vhd</ClosedNode>
+         <ClosedNode>/display_testbench - behavior C:|Users|Michele|Documents|TesinaASE|VHDL|Michele|ISE|display|display_testbench.vhd</ClosedNode>
          <ClosedNode>/display_testbench - behavior C:|Users|Public|ISE|display|display_testbench.vhd/uut - display - structural/inst_anode_manager - anode_manager - structural</ClosedNode>
          <ClosedNode>/display_testbench - behavior C:|Users|Public|ISE|display|display_testbench.vhd/uut - display - structural/inst_cathode_manager - cathode_manager - structural</ClosedNode>
+         <ClosedNode>/display_top_level_testbench - behavior C:|Users|Michele|Documents|TesinaASE|VHDL|Michele|ISE|display|display_top_level_testbench.vhd</ClosedNode>
          <ClosedNode>/display_top_level_testbench - behavior C:|Users|Public|ISE|display|display_top_level_testbench.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>display_top_level_testbench - behavior (C:/Users/Public/ISE/display/display_top_level_testbench.vhd)</SelectedItem>
+         <SelectedItem>display_top_level_testbench - behavior (C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/display/display_top_level_testbench.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >8</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000020a000000020000000000000000000000000200000064ffffffff0000008100000003000000020000020a0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001cf000000020000000000000000000000000200000064ffffffff000000810000000300000002000001cf0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>display_top_level_testbench - behavior (C:/Users/Public/ISE/display/display_top_level_testbench.vhd)</CurrentItem>
+      <CurrentItem>display_top_level_testbench - behavior (C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/display/display_top_level_testbench.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -121,13 +127,13 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001cc000000010000000100000000000000000000000064ffffffff000000810000000000000001000001cc0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
@@ -138,7 +144,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001cc000000010000000100000000000000000000000064ffffffff000000810000000000000001000001cc0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>

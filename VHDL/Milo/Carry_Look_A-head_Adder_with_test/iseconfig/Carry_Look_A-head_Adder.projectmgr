@@ -28,13 +28,13 @@
          <ClosedNode>/unit_test - behavior |home|sav|ASE|Carry_Look_A-head_Adder|unit_test.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>inst_on_board - display_on_board - Behavioral (C:/Users/Michele/Documents/TesinaASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/display_on_board.vhd)</SelectedItem>
+         <SelectedItem>cla - Carry_Look_A_head_Adder - structural (C:/Users/Michele/Documents/TesinaASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/Carry_Look_A_head_Adder.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >4</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000021e000000020000000000000000000000000200000064ffffffff0000008100000003000000020000021e0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>inst_on_board - display_on_board - Behavioral (C:/Users/Michele/Documents/TesinaASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/display_on_board.vhd)</CurrentItem>
+      <CurrentItem>cla - Carry_Look_A_head_Adder - structural (C:/Users/Michele/Documents/TesinaASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/Carry_Look_A_head_Adder.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -152,12 +152,12 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f4000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f40000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
 </Project>

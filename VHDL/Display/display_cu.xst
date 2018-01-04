@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/xst"
+elaborate
+-ifn display_cu.prj
+-ifmt mixed

@@ -1,4 +1,0 @@
-vhdl work "muxn_1.vhd"
-vhdl work "cathode_manager.vhd"
-vhdl work "cathode_manager_testbench.vhd"
-vhdl work "cathode_encoder.vhd"
