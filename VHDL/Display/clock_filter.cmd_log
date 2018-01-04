@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/clock_filter.xst" -ofn "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/clock_filter.syr" 

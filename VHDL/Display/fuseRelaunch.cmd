@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/cathode_manager_testbench_isim_beh.exe" -prj "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/cathode_manager_testbench_beh.prj" "work.cathode_manager_testbench" 
