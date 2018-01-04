@@ -1,0 +1,2 @@
+vhdl isim_temp "counter_mod2n.vhd"
+vhdl isim_temp "counter_mod2n_testbench.vhd"

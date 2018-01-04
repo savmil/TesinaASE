@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-12-26T15:31:15</DateModified>
+  <DateModified>2018-01-03T19:15:56</DateModified>
   <ModuleName>tester_dispositivi</ModuleName>
   <SummaryTimeStamp>2017-11-27T23:04:58</SummaryTimeStamp>
-  <SavedFilePath>/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/iseconfig/tester_dispositivi.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/Michele/Documents/TesinaASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/iseconfig/tester_dispositivi.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Michele/Documents/TesinaASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test\</ImplementationReportsDirectory>
   <DateInitialized>2017-11-27T23:04:21</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

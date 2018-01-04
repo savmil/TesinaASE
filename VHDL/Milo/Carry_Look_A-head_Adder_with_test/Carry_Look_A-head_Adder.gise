@@ -15,7 +15,7 @@
 
   <!--                                                          -->
 
-  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+  <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved. -->
 
   <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
 
@@ -95,32 +95,9 @@
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="/home/sav/half_adder/half_adder.vhdl"/>
-      <outfile xil_pn:name="Carry_Look_A_head_Adder.vhd"/>
-      <outfile xil_pn:name="Carry_Look_A_head_adder_testbench.vhd"/>
-      <outfile xil_pn:name="Carry_Look_A_head_r.vhd"/>
-      <outfile xil_pn:name="Carry_Look_A_head_unit.vhd"/>
-      <outfile xil_pn:name="Generator_G_P.vhd"/>
-      <outfile xil_pn:name="anode_manager.vhd"/>
-      <outfile xil_pn:name="carry_look_a_head_testbench.vhd"/>
-      <outfile xil_pn:name="cathode_encoder.vhd"/>
-      <outfile xil_pn:name="cathode_manager.vhd"/>
-      <outfile xil_pn:name="clock_filter.vhd"/>
-      <outfile xil_pn:name="contatore_modulo_4.vhd"/>
-      <outfile xil_pn:name="counter_mod2n.vhd"/>
-      <outfile xil_pn:name="demux1_n.vhd"/>
-      <outfile xil_pn:name="display.vhd"/>
-      <outfile xil_pn:name="display_on_board.vhd"/>
-      <outfile xil_pn:name="display_top_level.vhd"/>
-      <outfile xil_pn:name="edge_triggered_d_n.vhd"/>
-      <outfile xil_pn:name="generator_g_p_r_testbench.vhd"/>
-      <outfile xil_pn:name="gest_disp.vhd"/>
-      <outfile xil_pn:name="half_adder_testbench.vhd"/>
-      <outfile xil_pn:name="latch_d.vhd"/>
-      <outfile xil_pn:name="muxn_1.vhd"/>
-      <outfile xil_pn:name="tester_dispositivi.vhd"/>
-      <outfile xil_pn:name="unit_test.vhd"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1511822335" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="4527044649971721464" xil_pn:start_ts="1511822335">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -141,57 +118,30 @@
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="/home/sav/half_adder/half_adder.vhdl"/>
-      <outfile xil_pn:name="Carry_Look_A_head_Adder.vhd"/>
-      <outfile xil_pn:name="Carry_Look_A_head_adder_testbench.vhd"/>
-      <outfile xil_pn:name="Carry_Look_A_head_r.vhd"/>
-      <outfile xil_pn:name="Carry_Look_A_head_unit.vhd"/>
-      <outfile xil_pn:name="Generator_G_P.vhd"/>
-      <outfile xil_pn:name="anode_manager.vhd"/>
-      <outfile xil_pn:name="carry_look_a_head_testbench.vhd"/>
-      <outfile xil_pn:name="cathode_encoder.vhd"/>
-      <outfile xil_pn:name="cathode_manager.vhd"/>
-      <outfile xil_pn:name="clock_filter.vhd"/>
-      <outfile xil_pn:name="contatore_modulo_4.vhd"/>
-      <outfile xil_pn:name="counter_mod2n.vhd"/>
-      <outfile xil_pn:name="demux1_n.vhd"/>
-      <outfile xil_pn:name="display.vhd"/>
-      <outfile xil_pn:name="display_on_board.vhd"/>
-      <outfile xil_pn:name="display_top_level.vhd"/>
-      <outfile xil_pn:name="edge_triggered_d_n.vhd"/>
-      <outfile xil_pn:name="generator_g_p_r_testbench.vhd"/>
-      <outfile xil_pn:name="gest_disp.vhd"/>
-      <outfile xil_pn:name="half_adder_testbench.vhd"/>
-      <outfile xil_pn:name="latch_d.vhd"/>
-      <outfile xil_pn:name="muxn_1.vhd"/>
-      <outfile xil_pn:name="tester_dispositivi.vhd"/>
-      <outfile xil_pn:name="unit_test.vhd"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1511822338" xil_pn:in_ck="-9208014877187686832" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="3663495594170630610" xil_pn:start_ts="1511822335">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
+    </transform>
+    <transform xil_pn:end_ts="1511822338" xil_pn:in_ck="-4918141415197601025" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="5254238582437791935" xil_pn:start_ts="1511822338">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="fuse.log"/>
-      <outfile xil_pn:name="gest_disp_beh.prj"/>
-      <outfile xil_pn:name="gest_disp_isim_beh.exe"/>
-      <outfile xil_pn:name="isim"/>
-      <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="xilinxsim.ini"/>
-    </transform>
-    <transform xil_pn:end_ts="1511822338" xil_pn:in_ck="-4918141415197601025" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="5254238582437791935" xil_pn:start_ts="1511822338">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="gest_disp_isim_beh.wdb"/>
-      <outfile xil_pn:name="isim.cmd"/>
-      <outfile xil_pn:name="isim.log"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1511820857" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1511820857">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -225,20 +175,11 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
-      <outfile xil_pn:name="tester_dispositivi.lso"/>
-      <outfile xil_pn:name="tester_dispositivi.ngc"/>
-      <outfile xil_pn:name="tester_dispositivi.ngr"/>
-      <outfile xil_pn:name="tester_dispositivi.prj"/>
-      <outfile xil_pn:name="tester_dispositivi.stx"/>
-      <outfile xil_pn:name="tester_dispositivi.syr"/>
-      <outfile xil_pn:name="tester_dispositivi.xst"/>
-      <outfile xil_pn:name="tester_dispositivi_vhdl.prj"/>
-      <outfile xil_pn:name="tester_dispositivi_xst.xrpt"/>
-      <outfile xil_pn:name="webtalk_pn.xml"/>
-      <outfile xil_pn:name="xst"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1511823316" xil_pn:in_ck="-7926730541359275042" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="5627218658086389125" xil_pn:start_ts="1511823316">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -246,63 +187,52 @@
     </transform>
     <transform xil_pn:end_ts="1514298691" xil_pn:in_ck="3123981191096455345" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="8695850753606384190" xil_pn:start_ts="1514298686">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="_ngo"/>
-      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
-      <outfile xil_pn:name="tester_dispositivi.bld"/>
-      <outfile xil_pn:name="tester_dispositivi.ngd"/>
-      <outfile xil_pn:name="tester_dispositivi_ngdbuild.xrpt"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1514298696" xil_pn:in_ck="3123981191096455346" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-6349267131326700252" xil_pn:start_ts="1514298691">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
-      <outfile xil_pn:name="tester_dispositivi.pcf"/>
-      <outfile xil_pn:name="tester_dispositivi_map.map"/>
-      <outfile xil_pn:name="tester_dispositivi_map.mrp"/>
-      <outfile xil_pn:name="tester_dispositivi_map.ncd"/>
-      <outfile xil_pn:name="tester_dispositivi_map.ngm"/>
-      <outfile xil_pn:name="tester_dispositivi_map.xrpt"/>
-      <outfile xil_pn:name="tester_dispositivi_summary.xml"/>
-      <outfile xil_pn:name="tester_dispositivi_usage.xml"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1514298708" xil_pn:in_ck="6158596780995913931" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="1934304854298957634" xil_pn:start_ts="1514298696">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
-      <outfile xil_pn:name="tester_dispositivi.ncd"/>
-      <outfile xil_pn:name="tester_dispositivi.pad"/>
-      <outfile xil_pn:name="tester_dispositivi.par"/>
-      <outfile xil_pn:name="tester_dispositivi.ptwx"/>
-      <outfile xil_pn:name="tester_dispositivi.unroutes"/>
-      <outfile xil_pn:name="tester_dispositivi.xpi"/>
-      <outfile xil_pn:name="tester_dispositivi_pad.csv"/>
-      <outfile xil_pn:name="tester_dispositivi_pad.txt"/>
-      <outfile xil_pn:name="tester_dispositivi_par.xrpt"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1514298712" xil_pn:in_ck="-290745620906376752" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1514298708">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
-      <outfile xil_pn:name="tester_dispositivi.bgn"/>
-      <outfile xil_pn:name="tester_dispositivi.bit"/>
-      <outfile xil_pn:name="tester_dispositivi.drc"/>
-      <outfile xil_pn:name="tester_dispositivi.ut"/>
-      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
-      <outfile xil_pn:name="webtalk.log"/>
-      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1514298708" xil_pn:in_ck="3123981191096455214" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1514298704">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
-      <outfile xil_pn:name="tester_dispositivi.twr"/>
-      <outfile xil_pn:name="tester_dispositivi.twx"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
   </transforms>
 

@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/cathode_encoder.xst" -ofn "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/cathode_encoder.syr" 

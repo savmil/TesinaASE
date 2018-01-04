@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Display.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="anode_manager.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="anode_manager.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="anode_manager.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="anode_manager.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="anode_manager.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="anode_manager.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="anode_manager.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="anode_manager.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="anode_manager_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="anode_manager_summary.html"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="anode_manager_testbench_isim_beh.exe"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="anode_manager_testbench_stx_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="anode_manager_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="anode_manager_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="cathode_encoder.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="cathode_encoder.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="cathode_encoder.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="cathode_encoder.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="cathode_encoder.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="cathode_encoder.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="cathode_encoder.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="cathode_encoder.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="cathode_encoder_summary.html"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="cathode_encoder_testbench_isim_beh.exe"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="cathode_encoder_testbench_stx_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="cathode_encoder_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="cathode_encoder_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="cathode_manager.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="cathode_manager.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="cathode_manager.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="cathode_manager.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="cathode_manager.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="cathode_manager.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="cathode_manager.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="cathode_manager.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="cathode_manager_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="cathode_manager_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="cathode_manager_testbench_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="cathode_manager_testbench_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="cathode_manager_testbench_isim_beh.wdb"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="cathode_manager_testbench_stx_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="cathode_manager_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="cathode_manager_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="clock_filter.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="clock_filter.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="clock_filter.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="clock_filter.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="clock_filter.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="clock_filter.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="clock_filter.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="clock_filter.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="clock_filter_summary.html"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="clock_filter_testbench_isim_beh.exe"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="clock_filter_testbench_stx_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="clock_filter_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="clock_filter_xst.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="counter_mod2n.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="counter_mod2n.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="counter_mod2n.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="counter_mod2n.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="counter_mod2n.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="counter_mod2n.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="counter_mod2n.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="counter_mod2n.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="counter_mod2n.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="counter_mod2n.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="counter_mod2n_envsettings.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="counter_mod2n_ngdbuild.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="counter_mod2n_summary.html"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="counter_mod2n_testbench_isim_beh.exe"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="counter_mod2n_testbench_stx_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="counter_mod2n_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="counter_mod2n_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="demux1_n.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="demux1_n.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="demux1_n.xst"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="muxn_1.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="muxn_1.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="muxn_1.xst"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1514985184" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1514985184">
+      <status xil_pn:value="SuccessfullyRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1515027061" xil_pn:in_ck="915760847057745576" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1515027061">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="anode_manager.vhd"/>
+      <outfile xil_pn:name="anode_manager_testbench.vhd"/>
+      <outfile xil_pn:name="cathode_encoder.vhd"/>
+      <outfile xil_pn:name="cathode_encoder_testbench.vhd"/>
+      <outfile xil_pn:name="cathode_manager.vhd"/>
+      <outfile xil_pn:name="cathode_manager_testbench.vhd"/>
+      <outfile xil_pn:name="clock_filter.vhd"/>
+      <outfile xil_pn:name="clock_filter_testbench.vhd"/>
+      <outfile xil_pn:name="counter_mod2n.vhd"/>
+      <outfile xil_pn:name="counter_mod2n_testbench.vhd"/>
+      <outfile xil_pn:name="demux1_n.vhd"/>
+      <outfile xil_pn:name="muxn_1.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1515026039" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="3799231971628787719" xil_pn:start_ts="1515026039">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1515026039" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-6647242892515761719" xil_pn:start_ts="1515026039">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1515026039" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="783066991268436577" xil_pn:start_ts="1515026039">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+    </transform>
+    <transform xil_pn:end_ts="1515027065" xil_pn:in_ck="915760847057745576" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1515027065">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="anode_manager.vhd"/>
+      <outfile xil_pn:name="anode_manager_testbench.vhd"/>
+      <outfile xil_pn:name="cathode_encoder.vhd"/>
+      <outfile xil_pn:name="cathode_encoder_testbench.vhd"/>
+      <outfile xil_pn:name="cathode_manager.vhd"/>
+      <outfile xil_pn:name="cathode_manager_testbench.vhd"/>
+      <outfile xil_pn:name="clock_filter.vhd"/>
+      <outfile xil_pn:name="clock_filter_testbench.vhd"/>
+      <outfile xil_pn:name="counter_mod2n.vhd"/>
+      <outfile xil_pn:name="counter_mod2n_testbench.vhd"/>
+      <outfile xil_pn:name="demux1_n.vhd"/>
+      <outfile xil_pn:name="muxn_1.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1515027074" xil_pn:in_ck="915760847057745576" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-2525768267584576848" xil_pn:start_ts="1515027065">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="cathode_manager_testbench_beh.prj"/>
+      <outfile xil_pn:name="cathode_manager_testbench_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1515027075" xil_pn:in_ck="7131383787273976896" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="2867654041794176061" xil_pn:start_ts="1515027074">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="cathode_manager_testbench_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
+    <transform xil_pn:end_ts="1514985717" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1514985716">
+      <status xil_pn:value="SuccessfullyRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1515027129" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-1508568905418203917" xil_pn:start_ts="1515027129">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1515027129" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-4003164764216721038" xil_pn:start_ts="1515027129">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1515027129" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1515027129">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1515027129" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="2967745717414176881" xil_pn:start_ts="1515027129">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1515027130" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="2988080280842703814" xil_pn:start_ts="1515027129">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1515027130" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-7614624056365438788" xil_pn:start_ts="1515027130">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1515027614" xil_pn:in_ck="1519542058999488131" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="4673573863889814115" xil_pn:start_ts="1515027603">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name=".lso"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="cathode_encoder.ngr"/>
+      <outfile xil_pn:name="cathode_manager.lso"/>
+      <outfile xil_pn:name="cathode_manager.ngc"/>
+      <outfile xil_pn:name="cathode_manager.ngr"/>
+      <outfile xil_pn:name="cathode_manager.prj"/>
+      <outfile xil_pn:name="cathode_manager.stx"/>
+      <outfile xil_pn:name="cathode_manager.syr"/>
+      <outfile xil_pn:name="cathode_manager.xst"/>
+      <outfile xil_pn:name="cathode_manager_testbench_beh.prj"/>
+      <outfile xil_pn:name="cathode_manager_testbench_stx_beh.prj"/>
+      <outfile xil_pn:name="cathode_manager_vhdl.prj"/>
+      <outfile xil_pn:name="cathode_manager_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1514985769" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-6459818843695743209" xil_pn:start_ts="1514985768">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+    </transform>
+  </transforms>
+
+</generated_project>

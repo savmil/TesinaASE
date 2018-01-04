@@ -148,6 +148,113 @@ Descrivere la soluzione relizzata per mezzo di schematici e riportare il
 Schematici
 \end_layout
 
+\begin_layout Standard
+L'approccio di design adottato è rappresentato dallo schematico dell'architettur
+a.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[H]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+label{fig:display}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+includegraphics[scale=0.7]{./esercizio04/images/Display.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+caption{Architettura del display a sette segmenti}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Gli input sono rappresentati da un segnale di clock, uno di reset in logica
+ 0 attiva, le abilitazioni per le quattro cifre del display, i valori che
+ esse devono assumere e l'eventuale posizione dei punti da accendere.
+ Gli output sono costituiti dai segnali degli anodi comuni ai sette segmenti
+ in logica 0 attiva, uno per ciascuna cifra, e dai segnali dei catodi, sette
+ dei quali in riferimento ai segmenti della cifra in questione, l'ultimo
+ relativo al punto ad essa associato.
+\begin_inset Newline newline
+\end_inset
+
+Il segnale di clock è filtrato da un clock filter, che restituisce un segnale
+ di hit a frequenza minore.
+ Il clock permette, inoltre, il conteggio al contatore modulo 4, abilitato
+ dal segnale di hit del clock filter.
+ Il reset, se negato, consente il ripristino del clock filter e del contatore.
+ L'uscita del contatore consente ad ogni conteggio di selezionare una cifra
+ del display.
+ Infatti, avendo le quattro cifre i catodi dei segmenti in comune, per mostrare
+ un valore differente su ciascuna di esse è necessario un refresh dei nibble
+ con una frequenza sufficientemente elevata.
+\begin_inset Newline newline
+\end_inset
+
+I segnali di abilitazione permettono di decidere quali cifre del display
+ utilizzare.
+ Essi, in ingresso ad un multiplexer 4x1, sono selezionati dal contatore
+ per considerare in ogni istate l'abilitazione legata alla cifra corrente.
+ L'abilitazione così individuata identifica l'anodo relativo attraverso
+ un demultiplexter 1x4, sempre tramite la selezione del contatore.
+ Ad ogni conteggio, la cifra selezionata avrà anodo basso (accesa), o alto
+ (spenta), a seconda dei valori di abilitazione passati in ingresso.
+\begin_inset Newline newline
+\end_inset
+
+I 16 bit di ingresso dei valori rappresentano i quattro nibble relativi
+ alle quattro cifre del display.
+ Una struttura di multiplexing seleziona, in riferimento ai valori di conteggio,
+ il nibble relativo alla cifra corrente.
+ I 4 bit del nibble entrano in un transcodificatore per la corretta accensione
+ dei sette segmenti della cifra.
+\begin_inset Newline newline
+\end_inset
+
+L'ottavo catodo della cifra è costituito dal punto ad essa associato.
+ I quattro segnali di ingresso dei punti, infatti, decretano appunto se
+ il punto, associato alla cifra selezionata, debba essere acceso, o meno.
+ Un multiplexer 4x1 seleziona, grazie al conteggio, il valore corretto da
+ assegnare al punto della cifra corrente.
+\end_layout
+
 \begin_layout Subsubsection
 Clock_filter
 \end_layout
@@ -396,7 +503,7 @@ status open
 
 \backslash
 lstinputlisting [language=VHDL,caption={Definizione del componente Clock
- FIlter}] {esercizio03/codice/clk_fil.vhd}
+ FIlter}] {esercizio04/codice/clk_fil.vhd}
 \end_layout
 
 \end_inset
@@ -459,7 +566,7 @@ status open
 
 \backslash
 lstinputlisting [language=VHDL,caption={Definizione del componente Clock
- FIlter}] {esercizio03/codice/cathode_manager.vhd}
+ FIlter}] {esercizio04/codice/cathode_manager.vhd}
 \end_layout
 
 \end_inset
@@ -514,7 +621,7 @@ status open
 
 \backslash
 lstinputlisting [language=VHDL,caption={Definizione del componente Clock
- FIlter}] {esercizio03/codice/anode_manager.vhd}
+ FIlter}] {esercizio04/codice/anode_manager.vhd}
 \end_layout
 
 \end_inset
@@ -569,7 +676,7 @@ status open
 
 \backslash
 lstinputlisting [language=VHDL,caption={Definizione del componente Clock
- FIlter}] {esercizio03/codice/display.vhd}
+ FIlter}] {esercizio04/codice/display.vhd}
 \end_layout
 
 \end_inset

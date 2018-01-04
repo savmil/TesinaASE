@@ -1,0 +1,3 @@
+vhdl isim_temp "muxn_1.vhd"
+vhdl isim_temp "cathode_encoder_testbench.vhd"
+vhdl isim_temp "cathode_encoder.vhd"
