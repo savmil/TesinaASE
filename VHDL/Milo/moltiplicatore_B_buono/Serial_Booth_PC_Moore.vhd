@@ -35,9 +35,9 @@ entity Serial_Booth_PC_Moore is
 			  pair_of_bits :in STD_LOGIC_VECTOR(1 downto 0);
 			  reset : in STD_LOGIC:='0';
 			  --reset_a : out STD_LOGIC;
-			  en_a : out  STD_LOGIC;
+			  en_a : out  STD_LOGIC_VECTOR(0 downto 0);
            en_m : out  STD_LOGIC;
-			  en_q : out STD_LOGIC;
+			  en_q : out STD_LOGIC_VECTOR(0 downto 0);
 			  en_c : out STD_LOGIC;
            en_shift : out  STD_LOGIC;
 			  en_p1 : out STD_LOGIC;
@@ -47,6 +47,7 @@ end Serial_Booth_PC_Moore;
 architecture Behavioral of Serial_Booth_PC_Moore is
 type state is (idle,getseq,init,inits,shift);
 signal current_state, next_state:state;
+signal a_val,q_val,en_q_val,en_a_val:STD_LOGIC:='0';
 begin
 	synchronous_process: process (clk,reset)
 	begin
@@ -68,33 +69,39 @@ begin
 		end case;
 		end if;
 	end process;
-
-
 	gestore_mul: process (current_state,pair_of_bits,start,stop)
 		begin
 		en_m<='0';
 		en_shift<='0';
 		en_c<='0';
+		en_p1<='0'; 
 			case current_state is 
-				when idle =>en_p1<='1'; 
+				when idle =>
 								if start='1' then
-									en_q<='0';
-									en_a<='0';
+									en_q(0)<='0';
+									en_a(0)<='0';
 									en_p1<='0';
 								end if;
 				when init => en_m<='1';
-								 en_q<='1';
-								 en_a<='1';-- questa prima abilitazione mi fa caricare il moltiplicatore in a
+								 en_q(0)<='1';
+								 en_a(0)<='1';-- questa prima abilitazione mi fa caricare il moltiplicatore in a
 				when getseq =>	en_c<='1';
+									en_q(0)<='1';
+									en_a(0)<='1';
 									if (pair_of_bits="00" or pair_of_bits="11") then
+										en_a(0)<='1';
 									elsif pair_of_bits="01" then
-										en_a<='0'; -- serve a dire che voglio shiftare la somma, non il valore salvato nella scan_chain
+										en_a(0)<='0'; -- serve a dire che voglio shiftare la somma, non il valore salvato nella scan_chain
 									elsif pair_of_bits="10" then
-										en_a<='0';
+										en_a(0)<='0';
 									end if;
-				when inits =>  en_shift<='1'; 
-				when shift =>  en_shift<='0';
-								   en_a<='1';-- mi rimango il valore nella scan chain
+				when inits =>  en_shift<='1';
+									en_q(0)<='1';
+									en_a(0)<='1';
+				when shift =>  en_q(0)<='1';
+									en_shift<='0';
+								   en_a(0)<='1';
+									en_p1<='1';-- mi rimango il valore nella scan chain
 
 			end case;
 	end process;

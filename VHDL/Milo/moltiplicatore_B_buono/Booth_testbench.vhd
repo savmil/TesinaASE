@@ -46,6 +46,7 @@ ARCHITECTURE behavior OF Booth_testbench IS
          start : IN  std_logic;
          clk : IN  std_logic;
          reset : IN  std_logic;
+			fin: out STD_LOGIC_VECTOR(0 downto 0);
          product : OUT  std_logic_vector(15 downto 0)
         );
     END COMPONENT;
@@ -59,6 +60,7 @@ ARCHITECTURE behavior OF Booth_testbench IS
    signal reset : std_logic := '0';
 
  	--Outputs
+	signal fin: std_logic_vector(0 downto 0);
    signal product : std_logic_vector(15 downto 0);
 
    -- Clock period definitions
@@ -73,6 +75,7 @@ BEGIN
           start => start,
           clk => clk,
           reset => reset,
+			 fin=>fin,
           product => product
         );
 
@@ -94,13 +97,18 @@ BEGIN
       wait for 100 ns;	
 		reset<='1';
 		mul1<="00000111";
-		mul2<="00000111";
+		mul2<="00000011";
 		wait for 1 ns;
 		start<='1';
 		wait for 11 ns;
 		start<='0';
-      wait for clk_period*10;
-		
+      wait for clk_period*1000;
+		mul1<="00000011";
+		mul2<="00000011";
+		wait for 1 ns;
+		start<='1';
+		wait for 11 ns;
+		start<='0';
       -- insert stimulus here 
 
       wait;

@@ -31,9 +31,6 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity tester_dispositivi is
     Port ( clock : in  STD_LOGIC;
-           reset : in  STD_LOGIC;
-           load_conf : in  STD_LOGIC;
-           load_value : in  STD_LOGIC;
 			  button : in STD_LOGIC_VECTOR (3 downto 0);
 			  led : out STD_LOGIC_VECTOR (7 downto 0);
            in_byte : in  STD_LOGIC_VECTOR (7 downto 0);
@@ -52,22 +49,22 @@ COMPONENT contatore_modulo_2n
 		output : OUT std_logic_vector(1 downto 0)
 		);
 	END COMPONENT;
-	COMPONENT latch_d
-	generic(width: NATURAL:=8);
-	PORT(
-		input : IN std_logic_vector(width-1 downto 0);
-		enable : IN std_logic;
-		reset : IN std_logic;          
-		output : OUT std_logic_vector(width-1 downto 0)
-		);
-	END COMPONENT;
+	component latch_d_en is
+	generic(width:natural:=8);
+    Port ( clk : in  STD_LOGIC;
+           reset : in  STD_LOGIC;
+           en : in  STD_LOGIC;
+           d : in  STD_LOGIC_VECTOR (width-1 downto 0);
+           q : out  STD_LOGIC_VECTOR (width-1 downto 0));
+	end component;
 	COMPONENT Booth_multiplier
 	PORT(
 		mul1 : IN std_logic_vector(7 downto 0);
 		mul2 : IN std_logic_vector(7 downto 0);
 		start : IN std_logic;
 		clk : IN std_logic;
-		reset : IN std_logic;          
+		reset : IN std_logic;
+		fin: out STD_LOGIC_vector(0 downto 0);
 		product : OUT std_logic_vector(15 downto 0)
 		);
 	END COMPONENT;
@@ -92,34 +89,21 @@ COMPONENT contatore_modulo_2n
 	END COMPONENT;
 	signal sel :STD_LOGIC_VECTOR(1 downto 0):=(others=>'0');
 	signal value,prod:STD_LOGIC_VECTOR(15 downto 0) := (others=>'0');
+	signal s: STD_LOGIC_VECTOR( 0 downto 0) := (others=>'0');
 	signal en_mul1,en_mul2,en_mul,en_c,en_m,check_start,en_c1,hit :STD_LOGIC:='0';
 begin
 	deb:debounce port map(clock,button(0),en_c);
 	selettore: contatore_modulo_2n port map(en_c,'1',not( button(3)),open,sel);
 	en_mul1<=(not(sel(1)) and sel(0));
-	mul1 : latch_d port map(in_byte(7 downto 0),en_mul1,not(button(3)),value(7 downto 0));
+	mul1 : latch_d_en port map(clock,not(button(3)),en_mul1,in_byte(7 downto 0),value(7 downto 0));
 	en_mul2<=(sel(1) and not(sel(0)));
-	mul2 : latch_d port map(in_byte(7 downto 0),en_mul2,not(button(3)),value(15 downto 8));
-	counter : contatore_modulo_2n port map(en_c1,clock,not( button(3)),hit,open);
-	st: process(clock,en_mul,prod)
-	begin
-	 if en_mul='1' and check_start='0' then
-		en_m<='1';
-		check_start<='1';
-	 else
-		en_m<='0';
-	 end if;
-	 if prod/=x"0000" then 
-		led(1)<='1';
-	 else 
-		led(1)<='0';	
-	 end if;
-	 end process;
-	en_mul<=(sel(1) and sel(0));
+	mul2 : latch_d_en port map(clock,not(button(3)),en_mul2,in_byte(7 downto 0),value(15 downto 8));
+	en_mul<=(sel(1) and sel(0) and en_c);
 	led(0)<=en_m;
 	led(7)<=sel(1);
 	led(6)<=sel(0);
-	booth : Booth_multiplier port map(x"03",x"0B",en_m,clock,not(button(3)),prod);
+	led(1)<=s(0);
+	booth : Booth_multiplier port map(x"02",x"05",en_c,clock,not(button(3)),s,prod);
 	gest_disp : display_top_level port map(clock,button(3),button(2),button(1),prod,in_byte,anodes,cathodes);
 	produ<=prod;
 end Behavioral;

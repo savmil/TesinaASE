@@ -1,12 +1,8 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Wed Jan 03 21:03:27 2018
+// Written by: Map P.20131013 on Thu Jan 04 14:10:28 2018
 //! **************************************************************************
 
 SCHEMATIC START;
-COMP "cathodes<6>" LOCATE = SITE "P83" LEVEL 1;
-COMP "cathodes<7>" LOCATE = SITE "P22" LEVEL 1;
-COMP "clock" LOCATE = SITE "P54" LEVEL 1;
-NET "clock_BUFGP/IBUFG" BEL "clock_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
 COMP "led<0>" LOCATE = SITE "P15" LEVEL 1;
 COMP "led<1>" LOCATE = SITE "P14" LEVEL 1;
 COMP "button<0>" LOCATE = SITE "P69" LEVEL 1;
@@ -39,5 +35,9 @@ COMP "cathodes<3>" LOCATE = SITE "P21" LEVEL 1;
 COMP "anodes<3>" LOCATE = SITE "P26" LEVEL 1;
 COMP "cathodes<4>" LOCATE = SITE "P20" LEVEL 1;
 COMP "cathodes<5>" LOCATE = SITE "P17" LEVEL 1;
+COMP "cathodes<6>" LOCATE = SITE "P83" LEVEL 1;
+COMP "cathodes<7>" LOCATE = SITE "P22" LEVEL 1;
+COMP "clock" LOCATE = SITE "P54" LEVEL 1;
+NET "clock_BUFGP/IBUFG" BEL "clock_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
 SCHEMATIC END;
 

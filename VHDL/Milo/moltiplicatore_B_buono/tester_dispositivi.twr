@@ -45,18 +45,18 @@ Setup/Hold to clock clock
             |Max Setup to|Max Hold to |                  | Clock  |
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
-button<0>   |    0.181(R)|    0.948(R)|clock_BUFGP       |   0.000|
-button<1>   |    2.789(R)|   -0.505(R)|clock_BUFGP       |   0.000|
-button<2>   |    2.814(R)|    1.101(R)|clock_BUFGP       |   0.000|
-button<3>   |    1.981(R)|   -0.310(R)|clock_BUFGP       |   0.000|
-in_byte<0>  |   -0.105(R)|    1.179(R)|clock_BUFGP       |   0.000|
-in_byte<1>  |   -0.335(R)|    1.363(R)|clock_BUFGP       |   0.000|
-in_byte<2>  |   -0.326(R)|    1.353(R)|clock_BUFGP       |   0.000|
-in_byte<3>  |   -0.163(R)|    1.223(R)|clock_BUFGP       |   0.000|
-in_byte<4>  |    0.153(R)|    0.970(R)|clock_BUFGP       |   0.000|
-in_byte<5>  |    0.455(R)|    0.728(R)|clock_BUFGP       |   0.000|
-in_byte<6>  |   -0.027(R)|    1.114(R)|clock_BUFGP       |   0.000|
-in_byte<7>  |    0.142(R)|    0.979(R)|clock_BUFGP       |   0.000|
+button<0>   |    0.120(R)|    1.000(R)|clock_BUFGP       |   0.000|
+button<1>   |    1.541(R)|    0.321(R)|clock_BUFGP       |   0.000|
+button<2>   |    2.354(R)|    0.876(R)|clock_BUFGP       |   0.000|
+button<3>   |    2.165(R)|   -0.454(R)|clock_BUFGP       |   0.000|
+in_byte<0>  |    0.151(R)|    0.975(R)|clock_BUFGP       |   0.000|
+in_byte<1>  |   -0.126(R)|    1.197(R)|clock_BUFGP       |   0.000|
+in_byte<2>  |   -0.122(R)|    1.192(R)|clock_BUFGP       |   0.000|
+in_byte<3>  |    0.340(R)|    0.823(R)|clock_BUFGP       |   0.000|
+in_byte<4>  |    0.146(R)|    0.976(R)|clock_BUFGP       |   0.000|
+in_byte<5>  |    0.323(R)|    0.834(R)|clock_BUFGP       |   0.000|
+in_byte<6>  |    0.187(R)|    0.942(R)|clock_BUFGP       |   0.000|
+in_byte<7>  |    0.455(R)|    0.728(R)|clock_BUFGP       |   0.000|
 ------------+------------+------------+------------------+--------+
 
 Clock clock to Pad
@@ -64,18 +64,35 @@ Clock clock to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-anodes<0>   |    9.856(R)|clock_BUFGP       |   0.000|
-anodes<1>   |    9.546(R)|clock_BUFGP       |   0.000|
-anodes<2>   |    9.976(R)|clock_BUFGP       |   0.000|
-anodes<3>   |    9.690(R)|clock_BUFGP       |   0.000|
-cathodes<0> |   12.193(R)|clock_BUFGP       |   0.000|
-cathodes<1> |   12.140(R)|clock_BUFGP       |   0.000|
-cathodes<2> |   12.553(R)|clock_BUFGP       |   0.000|
-cathodes<3> |   12.203(R)|clock_BUFGP       |   0.000|
-cathodes<4> |   11.464(R)|clock_BUFGP       |   0.000|
-cathodes<5> |   11.869(R)|clock_BUFGP       |   0.000|
-cathodes<6> |   11.956(R)|clock_BUFGP       |   0.000|
-cathodes<7> |    8.643(R)|clock_BUFGP       |   0.000|
+anodes<0>   |    9.949(R)|clock_BUFGP       |   0.000|
+anodes<1>   |   10.177(R)|clock_BUFGP       |   0.000|
+anodes<2>   |   10.409(R)|clock_BUFGP       |   0.000|
+anodes<3>   |    9.479(R)|clock_BUFGP       |   0.000|
+cathodes<0> |   11.638(R)|clock_BUFGP       |   0.000|
+cathodes<1> |   12.594(R)|clock_BUFGP       |   0.000|
+cathodes<2> |   12.269(R)|clock_BUFGP       |   0.000|
+cathodes<3> |   11.892(R)|clock_BUFGP       |   0.000|
+cathodes<4> |   11.830(R)|clock_BUFGP       |   0.000|
+cathodes<5> |   12.532(R)|clock_BUFGP       |   0.000|
+cathodes<6> |   12.184(R)|clock_BUFGP       |   0.000|
+cathodes<7> |    9.065(R)|clock_BUFGP       |   0.000|
+led<1>      |    7.906(R)|clock_BUFGP       |   0.000|
+produ<0>    |    7.147(R)|clock_BUFGP       |   0.000|
+produ<1>    |    7.116(R)|clock_BUFGP       |   0.000|
+produ<2>    |    7.210(R)|clock_BUFGP       |   0.000|
+produ<3>    |    7.142(R)|clock_BUFGP       |   0.000|
+produ<4>    |    6.990(R)|clock_BUFGP       |   0.000|
+produ<5>    |    7.366(R)|clock_BUFGP       |   0.000|
+produ<6>    |    7.030(R)|clock_BUFGP       |   0.000|
+produ<7>    |    7.157(R)|clock_BUFGP       |   0.000|
+produ<8>    |    7.521(R)|clock_BUFGP       |   0.000|
+produ<9>    |    7.665(R)|clock_BUFGP       |   0.000|
+produ<10>   |    7.221(R)|clock_BUFGP       |   0.000|
+produ<11>   |    7.140(R)|clock_BUFGP       |   0.000|
+produ<12>   |    7.089(R)|clock_BUFGP       |   0.000|
+produ<13>   |    6.919(R)|clock_BUFGP       |   0.000|
+produ<14>   |    7.183(R)|clock_BUFGP       |   0.000|
+produ<15>   |    6.912(R)|clock_BUFGP       |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clock
@@ -83,18 +100,18 @@ Clock to Setup on destination clock clock
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clock          |    3.769|         |         |         |
+clock          |    3.584|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Wed Jan  3 21:03:39 2018 
+Analysis completed Thu Jan  4 14:10:45 2018 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 336 MB
+Peak Memory Usage: 334 MB
 
 
 
