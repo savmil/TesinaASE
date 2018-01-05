@@ -63,10 +63,10 @@ Clock clock to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-anodes<0>   |   10.342(R)|clock_BUFGP       |   0.000|
-anodes<1>   |   10.123(R)|clock_BUFGP       |   0.000|
-anodes<2>   |    9.985(R)|clock_BUFGP       |   0.000|
-anodes<3>   |   10.482(R)|clock_BUFGP       |   0.000|
+anodes_n<0> |   10.342(R)|clock_BUFGP       |   0.000|
+anodes_n<1> |   10.123(R)|clock_BUFGP       |   0.000|
+anodes_n<2> |    9.985(R)|clock_BUFGP       |   0.000|
+anodes_n<3> |   10.482(R)|clock_BUFGP       |   0.000|
 cathodes<0> |    9.676(R)|clock_BUFGP       |   0.000|
 cathodes<1> |   10.578(R)|clock_BUFGP       |   0.000|
 cathodes<2> |   10.043(R)|clock_BUFGP       |   0.000|
@@ -86,7 +86,7 @@ clock          |    4.889|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Thu Jan 04 17:16:48 2018 
+Analysis completed Fri Jan 05 16:23:53 2018 
 --------------------------------------------------------------------------------
 
 Trace Settings:

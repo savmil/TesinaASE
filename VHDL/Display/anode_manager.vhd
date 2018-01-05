@@ -3,7 +3,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity anode_manager is
     Port ( counter : in STD_LOGIC_VECTOR (1 downto 0);
-		     en_n : in  STD_LOGIC_VECTOR (3 downto 0);
+		     en : in  STD_LOGIC_VECTOR (3 downto 0);
            anodes : out  STD_LOGIC_VECTOR (3 downto 0)
 		  );
 end anode_manager;
@@ -29,14 +29,14 @@ component demux1_n is
 end component;
 for all : demux1_n use entity WORK.demux1_n(dataflow);
 
-signal enable_anode : STD_LOGIC := '1';
+signal enable_anode : STD_LOGIC := '0';
 
 begin
 				 
 	inst_mux4_1 : muxn_1
 		generic map ( address_width => 2 )
 		port map ( SEL => counter,
-				     A => en_n,
+				     A => en,
 				     X => enable_anode
 					);
 					 

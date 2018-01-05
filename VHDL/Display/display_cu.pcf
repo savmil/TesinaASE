@@ -1,16 +1,16 @@
 //! **************************************************************************
-// Written by: Map P.49d on Thu Jan 04 17:16:25 2018
+// Written by: Map P.49d on Fri Jan 05 16:23:27 2018
 //! **************************************************************************
 
 SCHEMATIC START;
+COMP "anodes_n<0>" LOCATE = SITE "P34" LEVEL 1;
+COMP "anodes_n<1>" LOCATE = SITE "P33" LEVEL 1;
+COMP "anodes_n<2>" LOCATE = SITE "P32" LEVEL 1;
 COMP "cathodes<0>" LOCATE = SITE "P25" LEVEL 1;
-COMP "anodes<0>" LOCATE = SITE "P34" LEVEL 1;
+COMP "anodes_n<3>" LOCATE = SITE "P26" LEVEL 1;
 COMP "cathodes<1>" LOCATE = SITE "P16" LEVEL 1;
-COMP "anodes<1>" LOCATE = SITE "P33" LEVEL 1;
 COMP "cathodes<2>" LOCATE = SITE "P23" LEVEL 1;
-COMP "anodes<2>" LOCATE = SITE "P32" LEVEL 1;
 COMP "cathodes<3>" LOCATE = SITE "P21" LEVEL 1;
-COMP "anodes<3>" LOCATE = SITE "P26" LEVEL 1;
 COMP "cathodes<4>" LOCATE = SITE "P20" LEVEL 1;
 COMP "cathodes<5>" LOCATE = SITE "P17" LEVEL 1;
 COMP "cathodes<6>" LOCATE = SITE "P83" LEVEL 1;

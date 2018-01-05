@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-01-04T19:08:26</DateModified>
+  <DateModified>2018-01-05T16:22:09</DateModified>
   <ModuleName>display_cu</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SummaryTimeStamp>2018-01-05T13:35:09</SummaryTimeStamp>
   <SavedFilePath>C:/Users/Michele/Documents/TesinaASE/VHDL/Display/iseconfig/display_cu.xreport</SavedFilePath>
   <ImplementationReportsDirectory>C:/Users/Michele/Documents/TesinaASE/VHDL/Display\</ImplementationReportsDirectory>
   <DateInitialized>2018-01-04T17:09:47</DateInitialized>

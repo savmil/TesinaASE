@@ -16,8 +16,8 @@ Parsing VHDL file "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/display_cu.
 Parsing VHDL file "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/display_cu_testbench.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 103220 KB
-Fuse CPU Usage: 498 ms
+Fuse Memory Usage: 103604 KB
+Fuse CPU Usage: 514 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling architecture behavioral of entity edge_triggered_d_n [\edge_triggered_d_n(8)\]
@@ -36,5 +36,5 @@ Compiling architecture behavior of entity display_cu_testbench
 Time Resolution for simulation is 1ps.
 Compiled 25 VHDL Units
 Built simulation executable C:/Users/Michele/Documents/TesinaASE/VHDL/Display/display_cu_testbench_isim_beh.exe
-Fuse Memory Usage: 118244 KB
-Fuse CPU Usage: 717 ms
+Fuse Memory Usage: 117604 KB
+Fuse CPU Usage: 795 ms

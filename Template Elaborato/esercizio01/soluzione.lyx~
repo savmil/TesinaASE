@@ -2153,7 +2153,7 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -3944,6 +3944,13 @@ g
 \begin_layout Plain Layout
 Individuati gli implicanti primi al termine della fase di espansione, si
  prosegue con la fase di copertura.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout

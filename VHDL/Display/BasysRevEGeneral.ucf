@@ -44,10 +44,10 @@
  NET "cathodes<6>"    LOC = "P83"; # Bank = 1, Pin name = IO/VREF_1,           Sch name = CG
  NET "cathodes<7>"        LOC = "P22"; # Bank = 3, Pin name = IO_L7P_3/GCLK26,     Sch name = DP
                                                                                                                         
- NET "anodes<0>"     LOC = "P34"; # Bank = 3, Pin name = IO_L10P_3,           Sch name = AN1
- NET "anodes<1>"     LOC = "P33"; # Bank = 3, Pin name = IO_L9N_3,            Sch name = AN2
- NET "anodes<2>"     LOC = "P32"; # Bank = 3, Pin name = IO_L9P_3,            Sch name = AN3
- NET "anodes<3>"     LOC = "P26"; # Bank = 3, Pin name = IO_L8N_3,            Sch name = AN4
+ NET "anodes_n<0>"     LOC = "P34"; # Bank = 3, Pin name = IO_L10P_3,           Sch name = AN1
+ NET "anodes_n<1>"     LOC = "P33"; # Bank = 3, Pin name = IO_L9N_3,            Sch name = AN2
+ NET "anodes_n<2>"     LOC = "P32"; # Bank = 3, Pin name = IO_L9P_3,            Sch name = AN3
+ NET "anodes_n<3>"     LOC = "P26"; # Bank = 3, Pin name = IO_L8N_3,            Sch name = AN4
                                                                                                                         
 #  Leds                                                                                                                        
 # NET "Led<0>"    LOC = "P15"; # Bank = 3, Pin name = IO_L4N_3/GCLK21      Sch name = LD0

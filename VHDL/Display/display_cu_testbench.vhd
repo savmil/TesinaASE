@@ -48,7 +48,7 @@ ARCHITECTURE behavior OF display_cu_testbench IS
          reset : IN  std_logic;
          loader : IN  std_logic_vector(2 downto 0);
          input_byte : IN  std_logic_vector(7 downto 0);
-         anodes : OUT  std_logic_vector(3 downto 0);
+         anodes_n : OUT  std_logic_vector(3 downto 0);
          cathodes : OUT  std_logic_vector(7 downto 0)
         );
     END COMPONENT;
@@ -63,7 +63,7 @@ ARCHITECTURE behavior OF display_cu_testbench IS
 	constant freq_hit : natural := 50000000;
 
  	--Outputs
-   signal anodes : std_logic_vector(3 downto 0);
+   signal anodes_n : std_logic_vector(3 downto 0);
    signal cathodes : std_logic_vector(7 downto 0);
 
    -- Clock period definitions
@@ -82,7 +82,7 @@ BEGIN
           reset => reset,
           loader => loader,
           input_byte => input_byte,
-          anodes => anodes,
+          anodes_n => anodes_n,
           cathodes => cathodes
         );
 

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Michele\Documents\TesinaASE\VHDL\Display\display_cu.ncd
+OUTFILE=C:\Users\Michele\Documents\TesinaASE\VHDL\Display\display_cu.bit
+FAMILY=Spartan3E
+PART=xc3s100e-5tq144
+WORKINGDIR=C:\Users\Michele\Documents\TesinaASE\VHDL\Display
+LICENSE=WebPack
+USER_INFO=211410971_0_0_510

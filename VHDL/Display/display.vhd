@@ -35,7 +35,7 @@ entity display is
 				);
    Port ( rst_n : in  STD_LOGIC;
 			 clock : in STD_LOGIC;
-          en_n : in  STD_LOGIC_VECTOR (3 downto 0);
+          en : in  STD_LOGIC_VECTOR (3 downto 0);
           values : in  STD_LOGIC_VECTOR (15 downto 0);
           dots : in  STD_LOGIC_VECTOR (3 downto 0);
           anodes : out  STD_LOGIC_VECTOR (3 downto 0);
@@ -75,7 +75,7 @@ end component;
 
 component anode_manager is
     Port ( counter : in STD_LOGIC_VECTOR (1 downto 0);
-		     en_n : in  STD_LOGIC_VECTOR (3 downto 0);
+		     en : in  STD_LOGIC_VECTOR (3 downto 0);
            anodes : out  STD_LOGIC_VECTOR (3 downto 0)
 		  );
 end component;
@@ -109,7 +109,7 @@ begin
 					 
 	inst_anode_manager : anode_manager
 		port map ( counter => sel,
-					  en_n => en_n,
+					  en => en,
 					  anodes => anodes
 					 );
 

@@ -148,9 +148,36 @@ Descrivere la soluzione relizzata per mezzo di schematici e riportare il
 Schematici
 \end_layout
 
+\begin_layout Subsubsection
+Display a 7 segmenti
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:display"
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 L'approccio di design adottato è rappresentato dallo schematico dell'architettur
-a.
+a in figura 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{fig:display}
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -168,13 +195,6 @@ begin{figure}[H]
 
 	
 \backslash
-label{fig:display}
-\end_layout
-
-\begin_layout Plain Layout
-
-	
-\backslash
 centering
 \end_layout
 
@@ -182,7 +202,7 @@ centering
 
 	
 \backslash
-includegraphics[scale=0.7]{./esercizio04/images/Display.png}
+includegraphics[scale=0.7]{esercizio04/images/Display.png}
 \end_layout
 
 \begin_layout Plain Layout
@@ -190,6 +210,13 @@ includegraphics[scale=0.7]{./esercizio04/images/Display.png}
 	
 \backslash
 caption{Architettura del display a sette segmenti}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+label{fig:display}
 \end_layout
 
 \begin_layout Plain Layout
@@ -209,9 +236,9 @@ Gli input sono rappresentati da un segnale di clock, uno di reset in logica
  0 attiva, le abilitazioni per le quattro cifre del display, i valori che
  le stesse cifre devono assumere e l'eventuale posizione dei punti da accendere.
  Gli output sono costituiti dai segnali degli anodi comuni ai sette segmenti,
- in logica 0 attiva, uno per ciascuna cifra, e dai segnali dei catodi, sette
- dei quali in riferimento ai segmenti della cifra in questione, l'ultimo
- relativo al punto ad essa associato.
+ uno per ciascuna cifra, e dai segnali dei catodi, sette dei quali in riferiment
+o ai segmenti della cifra in questione, l'ultimo relativo al punto ad essa
+ associato.
 \begin_inset Newline newline
 \end_inset
 
@@ -231,11 +258,11 @@ Il segnale di clock è filtrato da un clock filter, che restituisce un segnale
 I segnali di abilitazione permettono di decidere quali cifre del display
  utilizzare.
  Essi, in ingresso ad un multiplexer 4x1, sono selezionati dal contatore
- per considerare in ogni istate l'abilitazione legata alla cifra corrente.
+ per considerare in ogni istante l'abilitazione legata alla cifra corrente.
  L'abilitazione così individuata identifica l'anodo relativo attraverso
- un demultiplexter 1x4, sempre tramite la selezione del contatore.
- Ad ogni conteggio, la cifra selezionata avrà anodo basso (accesa), o alto
- (spenta), a seconda dei valori di abilitazione passati in ingresso.
+ un demultiplexer 1x4, sempre tramite la selezione del contatore.
+ Ad ogni conteggio, la cifra selezionata avrà anodo basso o alto, a seconda
+ dei valori di abilitazione passati in ingresso.
 \begin_inset Newline newline
 \end_inset
 
@@ -249,93 +276,68 @@ I 16 bit di ingresso dei valori rappresentano i quattro nibble relativi
 \end_inset
 
 L'ottavo catodo della cifra è costituito dal punto ad essa associato.
- I quattro segnali di ingresso dei punti, infatti, decretano appunto se
- il punto, associato alla cifra selezionata, debba essere acceso, o meno.
+ I quattro segnali di ingresso dei punti, infatti, decretano se il punto,
+ associato alla cifra selezionata, debba essere acceso, o meno.
  Un multiplexer 4x1 seleziona, grazie al conteggio, il valore corretto da
  assegnare al punto della cifra corrente.
-\end_layout
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout Subsubsection
-Clock_filter
-\end_layout
-
-\begin_layout Standard
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/clockfilter.png
+L'implementazione dell'architettura è stata realizzata mediante la rappresentazi
+one RT Level di figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:impl"
 
 \end_inset
 
-
-\begin_inset CommandInset label
-LatexCommand label
-name "clock_filter_schematics"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Cathod_manager
+.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/cathod_manager.png
-
-\end_inset
 
 
-\begin_inset CommandInset label
-LatexCommand label
-name "cathod_manager"
+\backslash
+begin{figure}[H]
+\end_layout
 
-\end_inset
+\begin_layout Plain Layout
+
+	
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+includegraphics[scale=0.8]{esercizio04/images/Implementazione.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+caption{Display RTL Schematic}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+label{fig:impl}
+\end_layout
+
+\begin_layout Plain Layout
 
 
+\backslash
+end{figure}
 \end_layout
 
 \end_inset
@@ -344,86 +346,71 @@ name "cathod_manager"
 \end_layout
 
 \begin_layout Subsubsection
-Anode_manager
+Struttura di multiplexing 16x4
 \end_layout
 
 \begin_layout Standard
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/anode_manager.png
-
-\end_inset
-
-
 \begin_inset CommandInset label
 LatexCommand label
-name "anode_manager"
+name "subsec:mux16x4"
 
 \end_inset
 
 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Gestore_display
 \end_layout
 
 \begin_layout Standard
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
+Esplodiamo l'architettura che consente la selezione del nibble relativo
+ alla cifra corrente del conteggio.
+ Essa è realizzata mediante 4 multiplexer 4x1, ognuno dei quali riceve in
+ ingresso un bit di pari peso dei nibble associati alle diverse cifre.
+ L'ingresso di selezione è costituito dall'uscita del contatore.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/gestore_display.png
-
-\end_inset
 
 
-\begin_inset CommandInset label
-LatexCommand label
-name "gestore_display"
+\backslash
+begin{figure}[H]
+\end_layout
 
-\end_inset
+\begin_layout Plain Layout
+
+	
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+includegraphics[scale=0.9]{esercizio04/images/Mux16x4.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+caption{Architettura di multiplexing 16x4}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+label{fig:mux16x4}
+\end_layout
+
+\begin_layout Plain Layout
 
 
+\backslash
+end{figure}
 \end_layout
 
 \end_inset
@@ -455,46 +442,23 @@ Segue un esempio di inclusione di codice
 \end_layout
 
 \begin_layout Subsubsection
-ClockFilter
+Clock Filter
 \end_layout
 
 \begin_layout Standard
-In realtà questo codice illustra il funzionamento di un contatore, con la
- differenza però che il valore da contare dipende dalla frequenza di clock
- del dispositivo su cui andremo successivamente a sintetizzare, freq_out
- ed la frequenza con la quale vengono generati i segnali di hit, freq_in.
+Il clock filter riceve in ingresso un segnale di reset in logica 0 attiva
+ per ritornare ad uno stato neutro in modo asincrono all'elaborazione del
+ conteggio.
+ Esso funge da divisore di frequenza, restituendo il segnale hit con una
+ frequenza sottomultipla di quella del clock in ingresso.
+ Il rapporto tra le due frequenze rappresenta il numero di conteggi da effettuar
+e dopo il quale il filtro deve alzare hit (nemero di colpi di clock in un
+ periodo di hit).
+ Non si è potuto sfruttare un contatore modulo N perchè non è detto che
+ il conteggio sia potenza di 2.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "60pheight%"
-height_special "none"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "clock_filter_schematics"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -503,12 +467,7 @@ status open
 
 \backslash
 lstinputlisting [language=VHDL,caption={Definizione del componente Clock
- FIlter}] {esercizio04/codice/clk_fil.vhd}
-\end_layout
-
-\end_inset
-
-
+ Filter}] {esercizio04/codice/clock_filter.vhd}
 \end_layout
 
 \end_inset
@@ -517,47 +476,21 @@ lstinputlisting [language=VHDL,caption={Definizione del componente Clock
 \end_layout
 
 \begin_layout Subsubsection
-Cathode_manager
+Anode Manager
 \end_layout
 
 \begin_layout Standard
-Il componente offre l' astrazione che si sta utilizzando un mux sedici uno
- che funziona a blocchi da quattro bit che determinano la cifra esadecimale
- del relativo display, composto in realtà da quattro mux quattro 1, a cui
- il primo bit dei quattro mux corrispondono ai bit del primo nibble e così
- via per gli altri ingressi.
+Il gestore degli anodi utilizza una rete mux-demux per abilitare ad ogni
+ conteggio l'anodo corretto.
+ L'uscita del contatore rappresenta l'ingresso di selezione sia per il multiplex
+er, che per il demultiplexer.
+ Gli ingressi di abilitazione entrano in un mux 4x1.
+ L'uscita del multiplexer è posta in ingresso al demultiplexer.
+ Lo stesso segnale di selezione garantisce che l'abilitazione sarà portata
+ fino all'anodo a cui essa fa riferimento.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "60pheight%"
-height_special "none"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "cathod_manager"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -565,13 +498,8 @@ status open
 
 
 \backslash
-lstinputlisting [language=VHDL,caption={Definizione del componente Clock
- FIlter}] {esercizio04/codice/cathode_manager.vhd}
-\end_layout
-
-\end_inset
-
-
+lstinputlisting [language=VHDL,caption={Definizione del componente Anode
+ Manager}] {esercizio04/codice/anode_manager.vhd}
 \end_layout
 
 \end_inset
@@ -580,39 +508,32 @@ lstinputlisting [language=VHDL,caption={Definizione del componente Clock
 \end_layout
 
 \begin_layout Subsubsection
-Anode_manager
+Cathode Manager
 \end_layout
 
 \begin_layout Standard
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "100pheight%"
-height_special "none"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
+Il gestore dei catodi riceve in ingresso il conteggio, i valori che i catodi
+ dei sette segmenti devono assumere e quelli del catodo dei punti.
+ L'uscita è costituita dagli 8 segnali dei catodi.
+ Il componente sfrutta la struttura di multiplexing descritta in 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "cathod_manager"
+reference "subsec:mux16x4"
 
 \end_inset
 
-
+.
+ Per fare ciò riordina i valori di ingresso nel modo richiesto dalla batteria
+ di mux 4x1.
+ Il nibble così ottenuto entra nel transcodificatore, realizzato col componente
+ cathode encoder, dal quale si ottengono i segnali dei catodi dei sette
+ segmenti.
+ Il segnale dell'ultimo catodo è ricavato dal multiplexing dei valori dei
+ punti in ingresso: un mux 4x1 determina quale valore porre in uscita sul
+ catodo.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -620,13 +541,8 @@ status open
 
 
 \backslash
-lstinputlisting [language=VHDL,caption={Definizione del componente Clock
- FIlter}] {esercizio04/codice/anode_manager.vhd}
-\end_layout
-
-\end_inset
-
-
+lstinputlisting [language=VHDL,caption={Definizione del componente Cathode
+ Manager}] {esercizio04/codice/cathode_manager.vhd}
 \end_layout
 
 \end_inset
@@ -635,39 +551,287 @@ lstinputlisting [language=VHDL,caption={Definizione del componente Clock
 \end_layout
 
 \begin_layout Subsubsection
-Gestore_display
+Cathode_encoder
 \end_layout
 
 \begin_layout Standard
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "100pheight%"
-height_special "none"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
+Questo componente effettua la funzione di transcodifica di un nibble nelle
+ funzioni booleane dei sette segmenti.
+ Esso, dunque, riceve in input un nibble e restituisce il valore assunto
+ dai catodi dei sette segmenti.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "gestore_display"
+
+
+\backslash
+lstinputlisting[language=VHDL, caption={Interfaccia del componente Cathode
+ Encoder},firstline=1,lastline=8]{esercizio04/codice/cathode_encoder.vhd}
+\end_layout
 
 \end_inset
 
 
 \end_layout
 
+\begin_layout Standard
+A scopo didattico, la sua implementazione è stata effettuata seguendo differenti
+ approcci.
+\end_layout
+
+\begin_layout Paragraph
+Behavioral
+\end_layout
+
+\begin_layout Standard
+Questo approccio comportamentale prevede, appunto, la specifica del comportament
+o dell'uscita in concomitanza a ciascuna combinazione degli ingressi mediante
+ costrutto 
+\emph on
+case-when
+\emph default
+.
+ Sono state definite delle costanti per ogni caso al fine di migliorare
+ la leggibilità.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
 \begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting[language=VHDL, caption={Architettura Behavioral del componente
+ Cathode Encoder},firstline=10,lastline=70]{esercizio04/codice/cathode_encoder.vh
+d}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Structural
+\end_layout
+
+\begin_layout Standard
+Questo approccio realizza il transcodificatore con 7 mux 8x1, mostrando
+ l'utilizzo del multiplexer come rete universale.
+ I 3 bit più significativi del nibble vanno a costituire l'ingresso di selezione
+ dei multiplexer, mentre il bit meno significativo permette la codifica
+ degli ingressi.
+ In figura 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{fig:muxA}
+\end_layout
+
+\end_inset
+
+ viene rappresentato il caso per la funzione booleana del segmento A.
+ Si assumono gli ingressi denominati come 
+\emph on
+x,y,z,v
+\emph default
+, a partire dal bit più significativo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[H]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+includegraphics[scale=0.9]{esercizio04/images/MuxA8x1.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+caption{Multiplexer 8x1 che realizza la funzione booleana del segmento A}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+label{fig:muxA}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dopo la costruzione dei vettori degli ingressi per ogni multiplexer, si
+ è definito un vettore di vettori per consentire una generazione della struttura
+ mediante il costrutto 
+\emph on
+for-generate
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting[language=VHDL, caption={Architettura Structural del componente
+ Cathode Encoder},firstline=73,lastline=110]{esercizio04/codice/cathode_encoder.v
+hd}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Dataflow
+\end_layout
+
+\begin_layout Standard
+Denominati gli ingressi come nel paragrafo precendete, si è provveduto a
+ definire un file blif per la funzione multi-uscita dei sette segmenti.
+ In tal modo è stata possibile una minimizzazione con SIS attraverso l'uso
+ del 
+\emph on
+rugged-script
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[H]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+includegraphics[scale=0.9]{esercizio04/images/7SegRuggedScriptmod.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+caption{Funzione multi-uscita dei sette segmenti minimizzata col rugged-script}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+label{fig:7segrs}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ogni uscita è calcolata in base alla forma minimizzata della funzione corrispond
+ente.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting[language=VHDL, caption={Architettura Dataflow del componente
+ Cathode Encoder},firstline=112,lastline=149]{esercizio04/codice/cathode_encoder.
+vhd}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Display
+\end_layout
+
+\begin_layout Standard
+Il display non fa altro che realizzare la struttura descritta in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:display"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -677,11 +841,6 @@ status open
 \backslash
 lstinputlisting [language=VHDL,caption={Definizione del componente Clock
  FIlter}] {esercizio04/codice/display.vhd}
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_inset

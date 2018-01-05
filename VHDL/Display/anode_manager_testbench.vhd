@@ -11,7 +11,7 @@ ARCHITECTURE behavior OF anode_manager_testbench IS
  
     COMPONENT anode_manager
     Port ( counter : in STD_LOGIC_VECTOR (1 downto 0);
-			  en_n : in  STD_LOGIC_VECTOR (3 downto 0);
+			  en : in  STD_LOGIC_VECTOR (3 downto 0);
            anodes : out  STD_LOGIC_VECTOR (3 downto 0)
 		  );
     END COMPONENT;
@@ -19,17 +19,17 @@ ARCHITECTURE behavior OF anode_manager_testbench IS
 
    --Inputs
    signal counter : STD_LOGIC_VECTOR (1 downto 0) := (others => '0');
-   signal en_n : std_logic_vector(3 downto 0) := (others => '1');
+   signal en : std_logic_vector(3 downto 0) := (others => '0');
 
  	--Outputs
-   signal anodes : std_logic_vector(3 downto 0) := (others => '1');
+   signal anodes : std_logic_vector(3 downto 0) := (others => '0');
  
 BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
    uut: anode_manager
     Port Map( counter => counter,
-				  en_n => en_n,
+				  en => en,
               anodes => anodes
 			);
 		
@@ -39,7 +39,7 @@ BEGIN
    
       -- insert stimulus here 
 		for i in 0 to 15 loop
-			en_n <= std_logic_vector(to_unsigned(i, 4));
+			en <= std_logic_vector(to_unsigned(i, 4));
 			for z in 0 to 3 loop
 				counter <= std_logic_vector(to_unsigned(z, 2));
 				wait for 10 ns;

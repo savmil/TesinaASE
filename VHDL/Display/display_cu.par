@@ -1,7 +1,7 @@
 Release 14.4 par P.49d (nt)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-WIN-OQ3GFLCOVAE::  Thu Jan 04 17:16:32 2018
+WIN-OQ3GFLCOVAE::  Fri Jan 05 16:23:38 2018
 
 par -w -intstyle ise -ol high -t 1 display_cu_map.ncd display_cu.ncd
 display_cu.pcf 
@@ -62,39 +62,39 @@ Total REAL time at the beginning of Placer: 2 secs
 Total CPU  time at the beginning of Placer: 1 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:f8dc636) REAL time: 3 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:f8e1db6) REAL time: 2 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:f8dc636) REAL time: 3 secs 
+Phase 2.7  Design Feasibility Check (Checksum:f8e1db6) REAL time: 2 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:f8dc636) REAL time: 3 secs 
+Phase 3.31  Local Placement Optimization (Checksum:f8e1db6) REAL time: 2 secs 
 
 Phase 4.2  Initial Clock and IO Placement
 
-Phase 4.2  Initial Clock and IO Placement (Checksum:11899dd9) REAL time: 5 secs 
+Phase 4.2  Initial Clock and IO Placement (Checksum:1189f559) REAL time: 4 secs 
 
 Phase 5.30  Global Clock Region Assignment
-Phase 5.30  Global Clock Region Assignment (Checksum:11899dd9) REAL time: 5 secs 
+Phase 5.30  Global Clock Region Assignment (Checksum:1189f559) REAL time: 4 secs 
 
 Phase 6.36  Local Placement Optimization
-Phase 6.36  Local Placement Optimization (Checksum:11899dd9) REAL time: 5 secs 
+Phase 6.36  Local Placement Optimization (Checksum:1189f559) REAL time: 4 secs 
 
 Phase 7.8  Global Placement
 .......
 ..
-Phase 7.8  Global Placement (Checksum:bc348912) REAL time: 5 secs 
+Phase 7.8  Global Placement (Checksum:bc31eeac) REAL time: 4 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:bc348912) REAL time: 5 secs 
+Phase 8.5  Local Placement Optimization (Checksum:bc31eeac) REAL time: 5 secs 
 
 Phase 9.18  Placement Optimization
-Phase 9.18  Placement Optimization (Checksum:d9671ddf) REAL time: 6 secs 
+Phase 9.18  Placement Optimization (Checksum:d964fde0) REAL time: 5 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:d9671ddf) REAL time: 6 secs 
+Phase 10.5  Local Placement Optimization (Checksum:d964fde0) REAL time: 5 secs 
 
-Total REAL time to Placer completion: 6 secs 
+Total REAL time to Placer completion: 5 secs 
 Total CPU  time to Placer completion: 4 secs 
 Writing design to file display_cu.ncd
 
@@ -187,10 +187,10 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 9 secs 
-Total CPU time to PAR completion: 8 secs 
+Total REAL time to PAR completion: 10 secs 
+Total CPU time to PAR completion: 7 secs 
 
-Peak Memory Usage:  189 MB
+Peak Memory Usage:  190 MB
 
 Placement: Completed - No errors found.
 Routing: Completed - No errors found.

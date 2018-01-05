@@ -35,8 +35,6 @@ entity cathode_encoder is
 			  );
 end cathode_encoder;
 
---DA TRASFORMARE IN LOGICA 0 ATTIVA
-
 architecture Behavioral of cathode_encoder is
 
 constant digit0 : std_logic_vector(6 downto 0) := "1000000";

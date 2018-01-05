@@ -184,10 +184,10 @@ backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
-In riferimento alla Tabella 
+In riferimento a 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "esercizio_1_minimizzazione"
+reference "subsec:min1"
 
 \end_inset
 
@@ -235,10 +235,16 @@ backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
-In riferimento alla Tabella 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "esercizio_2_minimizzazione"
+In riferimento a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{subsec:min2}
+\end_layout
 
 \end_inset
 
@@ -764,7 +770,7 @@ noindent
 \end_inset
 
  In questo caso i costi sono 
-\begin_inset Formula $Cl=9-Ci=12-Cp=4$
+\begin_inset Formula $Cl=9-Ci=13-Cp=5$
 \end_inset
 
 .

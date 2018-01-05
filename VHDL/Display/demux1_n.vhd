@@ -38,6 +38,6 @@ architecture dataflow of demux1_n is
 begin
 	demux_gen : for i in 0 to 2**address_width-1 generate
 		x(i) <= a when conv_integer(sel) = i
-					 else '1';
+					 else '0';
 	end generate;
 end dataflow;

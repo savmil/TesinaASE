@@ -67,7 +67,7 @@ LAB5:    t14 = (t0 + 3032);
     t16 = *((char **)t15);
     t17 = (t16 + 40U);
     t18 = *((char **)t17);
-    *((unsigned char *)t18) = (unsigned char)3;
+    *((unsigned char *)t18) = (unsigned char)2;
     xsi_driver_first_trans_delta(t14, 3U, 1, 0LL);
 
 LAB2:    t19 = (t0 + 2964);
@@ -130,7 +130,7 @@ LAB5:    t14 = (t0 + 3068);
     t16 = *((char **)t15);
     t17 = (t16 + 40U);
     t18 = *((char **)t17);
-    *((unsigned char *)t18) = (unsigned char)3;
+    *((unsigned char *)t18) = (unsigned char)2;
     xsi_driver_first_trans_delta(t14, 2U, 1, 0LL);
 
 LAB2:    t19 = (t0 + 2972);
@@ -193,7 +193,7 @@ LAB5:    t14 = (t0 + 3104);
     t16 = *((char **)t15);
     t17 = (t16 + 40U);
     t18 = *((char **)t17);
-    *((unsigned char *)t18) = (unsigned char)3;
+    *((unsigned char *)t18) = (unsigned char)2;
     xsi_driver_first_trans_delta(t14, 1U, 1, 0LL);
 
 LAB2:    t19 = (t0 + 2980);
@@ -256,7 +256,7 @@ LAB5:    t14 = (t0 + 3140);
     t16 = *((char **)t15);
     t17 = (t16 + 40U);
     t18 = *((char **)t17);
-    *((unsigned char *)t18) = (unsigned char)3;
+    *((unsigned char *)t18) = (unsigned char)2;
     xsi_driver_first_trans_delta(t14, 0U, 1, 0LL);
 
 LAB2:    t19 = (t0 + 2988);

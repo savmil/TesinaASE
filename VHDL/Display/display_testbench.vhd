@@ -46,7 +46,7 @@ ARCHITECTURE behavior OF display_testbench IS
     PORT(
          rst_n : IN  std_logic;
 			clock : IN std_logic;
-         en_n : IN  std_logic_vector(3 downto 0);
+         en : IN  std_logic_vector(3 downto 0);
          values : IN  std_logic_vector(15 downto 0);
          dots : IN  std_logic_vector(3 downto 0);
          anodes : OUT  std_logic_vector(3 downto 0);
@@ -56,10 +56,10 @@ ARCHITECTURE behavior OF display_testbench IS
     
 
    --Inputs
-   signal rst_n : std_logic := '0';
-   signal en_n : std_logic_vector(3 downto 0) := (others => '0');
+   signal rst_n : std_logic := '1';
+   signal en : std_logic_vector(3 downto 0) := (others => '0');
    signal values : std_logic_vector(15 downto 0) := (others => '0');
-   signal dots : std_logic_vector(3 downto 0) := (others => '0');
+   signal dots : std_logic_vector(3 downto 0) := (others => '1');
 	signal clock : std_logic := '0';
 
  	--Outputs
@@ -81,7 +81,7 @@ BEGIN
 		PORT MAP (
           rst_n => rst_n,
 			 clock => clock,
-          en_n => en_n,
+          en => en,
           values => values,
           dots => dots,
           anodes => anodes,
@@ -110,7 +110,7 @@ BEGIN
 		for t in std_logic range '0' to '1' loop
 			rst_n <= not t;
 			for i in 0 to 2 loop
-				en_n <= std_logic_vector(to_unsigned(i*4, 4));
+				en <= std_logic_vector(to_unsigned(i*4, 4));
 				dots <= std_logic_vector(to_unsigned(i*4, 4));
 				for j in 1 to 2 loop
 					values <= std_logic_vector(to_unsigned(j*64, 16));

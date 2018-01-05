@@ -291,6 +291,16 @@ Minimizzazione 1
 \end_layout
 
 \begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:min1"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 La prima funzione è stata minimizzata attraverso il metodo delle mappe di
  Karnaugh.
 \end_layout
@@ -324,20 +334,7 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
-
-\series bold
-Tabella 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "esercizio_1_minimizzazione"
-
-\end_inset
-
-
-\end_layout
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -1148,16 +1145,6 @@ F
 </cell>
 </row>
 </lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "esercizio_1_minimizzazione"
 
 \end_inset
 
@@ -1237,6 +1224,16 @@ Minimizzazione 2
 \end_layout
 
 \begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:min2"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Al fine di minimizzare questa funzione è stato utilizzato il metodo di Quine
  Mc Cluskey.
 \end_layout
@@ -1270,20 +1267,7 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
-
-\series bold
-Tabella 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "esercizio_2_minimizzazione"
-
-\end_inset
-
-
-\end_layout
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -2103,20 +2087,6 @@ F
 \end_inset
 
 
-\begin_inset space \hfill{}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "esercizio_2_minimizzazione"
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -2134,7 +2104,7 @@ ne applicato.
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Box Frameless
@@ -3666,7 +3636,7 @@ d
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Box Frameless
@@ -4773,6 +4743,16 @@ Minimizzazione 3
 \end_layout
 
 \begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:min3"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Si prosegue nuovamente con metodo Quine Mc Cluskey.
 \end_layout
 
@@ -4781,7 +4761,7 @@ Si prosegue nuovamente con metodo Quine Mc Cluskey.
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Si può generare la seguente tabella di verità a partire dalla definizione
@@ -4805,20 +4785,7 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
-
-\series bold
-Tabella 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "esercizio_3_minimizzazione"
-
-\end_inset
-
-
-\end_layout
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -5638,20 +5605,6 @@ F
 \end_inset
 
 
-\begin_inset space \hfill{}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "esercizio_3_minimizzazione"
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -5723,6 +5676,16 @@ Minimizzazione 4
 \end_layout
 
 \begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:min4"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Poiché non si ricade più nel caso a singola uscita, si è adottato il metodo
  di Quine Mc Cluskey per funzioni a più uscite.
  Esso consente il riuso di implicanti comuni a più funzioni, che non si
@@ -5734,7 +5697,7 @@ Poiché non si ricade più nel caso a singola uscita, si è adottato il metodo
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Si può generare la seguente tabella di verità a partire dalla definizione
@@ -5758,20 +5721,7 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
-
-\series bold
-Tabella 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "esercizio_4_minimizzazione"
-
-\end_inset
-
-
-\end_layout
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -6899,20 +6849,6 @@ F3
 \end_inset
 
 
-\begin_inset space \hfill{}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "esercizio_4_minimizzazione"
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -6931,7 +6867,7 @@ Percorriamo l'applicazione del metodo che, rispetto al caso a singola uscita,
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -10109,7 +10045,7 @@ Segue la fase di copertura con gli implicanti primi trovati.
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Tabular

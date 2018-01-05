@@ -184,10 +184,10 @@ backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
-In riferimento alla Tabella 
+In riferimento a 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "esercizio_1_minimizzazione"
+reference "subsec:min1"
 
 \end_inset
 
@@ -235,10 +235,10 @@ backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
-In riferimento alla Tabella 
+In riferimento a 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "esercizio_2_minimizzazione"
+reference "subsec:min2"
 
 \end_inset
 
@@ -286,10 +286,10 @@ backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
-In riferimento alla Tabella 
+In riferimento a 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "esercizio_3_minimizzazione"
+reference "subsec:min3"
 
 \end_inset
 
@@ -337,10 +337,10 @@ backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
-In riferimento alla Tabella 
+In riferimento a 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "esercizio_4_minimizzazione"
+reference "subsec:min4"
 
 \end_inset
 
