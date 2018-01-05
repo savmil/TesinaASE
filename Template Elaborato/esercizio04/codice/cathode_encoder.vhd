@@ -116,8 +116,10 @@ alias y : std_logic is nibble(2);
 alias z : std_logic is nibble(1);
 alias v : std_logic is nibble(0);
 
+-- generati dalla minimizzazione
 signal t7 : std_logic := '1';
 signal t8 : std_logic := '1';
+-- cathodes(i) non puo' essere usato per definire un'altra uscita, essendo un segnale di output
 signal A : std_logic := '1';
 signal B : std_logic := '1';
 signal C : std_logic := '1';

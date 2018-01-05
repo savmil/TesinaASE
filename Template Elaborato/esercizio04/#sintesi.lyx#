@@ -158,36 +158,19 @@ anodes_n
 cathodes
 \emph default
  agli otto catodi.
- Sono utilizzate tre batterie di otto flip flop D edge triggered per salvare
+ Sono utilizzate tre batterie di otto flip flop D edge triggered, per salvare
  l'input nel giusto registro a seconda del pulsante premuto.
- Esse, infatti, hanno per abilitazione ciascuna un differente bit di 
+ Esse infatti hanno per abilitazione ciascuna un differente bit di 
 \emph on
 loader
 \emph default
 , e quindi un differente pulsante.
  Il reset negato ed i vari registri sono poi collegati al display.
- Per i punti, il registro è collegato al display in forma negata.
- Ciò perché sono presi in input i punti da abilitare, abilitazione che corrispon
-de a valle ad un abbassamento del catodo relativo.
+ Per i punti il registro è collegato al display in forma negata.
+ Sono, infatti, presi in input i punti da abilitare, abilitazione che corrispond
+e a valle ad un abbassamento del catodo relativo.
  Infine, si noti che gli anodi della board sono associati al valore negato
  di quelli in uscita dal display: essi sono pilotati con una logica 0 attiva.
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-lstinputlisting[language=VHDL,caption={Architettura della Control Unit},firstlin
-e=17]{esercizio04/codice/display_cu.vhd}
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_body

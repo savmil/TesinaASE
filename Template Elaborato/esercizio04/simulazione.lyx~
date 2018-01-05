@@ -91,44 +91,24 @@ Inserire i casi di test, i tempi di propagazione ed eventuali schermate
 \end_layout
 
 \begin_layout Standard
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
+Per la simulazione sono state valutate differenti configurazioni degli ingressi
+ mediante il costrutto 
+\emph on
+for-loop
+\emph default
+.
+\end_layout
 
-\begin_layout Plain Layout
-\begin_inset Float figure
-wide false
-sideways false
+\begin_layout Standard
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-\end_layout
 
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/clock_filter_testbench.png
-
-\end_inset
-
-
+\backslash
+lstinputlisting[language=VHDL,caption={Simulazione del componente Display},first
+line=71]{esercizio04/codice/display_testbench.vhd}
 \end_layout
 
 \end_inset
@@ -136,13 +116,316 @@ status open
 
 \end_layout
 
+\begin_layout Standard
+Di seguito il segnale 
+\emph on
+values
+\emph default
+ sarà rappresentato in esadecimale.
+ In figura 
+\begin_inset ERT
+status open
+
 \begin_layout Plain Layout
 
+
+\backslash
+ref{fig:dispsim1}
+\end_layout
+
+\end_inset
+
+ osserviamo come al variare di 
+\emph on
+values
+\emph default
+ segue la commutazione del segnale 
+\emph on
+cathodes
+\emph default
+ in modo coerente al conteggio.
+ Quando infatti il valore di ingresso è pari a 
+\emph on
+x
+\begin_inset Quotes erd
+\end_inset
+
+0008
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+, al primo conteggio i catodi seguono l'ingresso diverso per la prima cifra.
+ Analogamente per la seconda cifra quando il valore di ingresso è pari a
+ 
+\emph on
+x
+\begin_inset Quotes erd
+\end_inset
+
+0010
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[H]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+includegraphics[scale=0.8]{esercizio04/images/Simulazione1.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+caption{Simulazione del display: i catodi seguono correttamente il valore
+ di ingresso per i sette segmenti delle diverse cifre}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+label{fig:dispsim1}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+In figura 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{fig:dispsim2}
+\end_layout
+
+\end_inset
+
+ notiamo che, al variare di 
+\emph on
+en
+\emph default
+ e 
+\emph on
+dots
+\emph default
+, segue la commutazione di 
+\emph on
+anodes
+\emph default
+ e 
+\emph on
+cathodes
+\emph default
+, coerentemente al valore di conteggio.
+ Quando, infatti, i segnali di abilitazione e dei punti sono pari a x
+\emph on
+
+\begin_inset Quotes erd
+\end_inset
+
+0100
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+, al conteggio associato alla terza cifra seguono nella commutazione anche
+ il relativo anodo e il catodo che rappresenta il punto.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[H]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+includegraphics[scale=0.8]{esercizio04/images/Simulazione2.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+caption{Simulazione del display: gli anodi seguono correttamente i valori
+ di abilitazione; il catodo del punto segue correttamente i valori dei punti}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+label{fig:dispsim2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Con 
+\emph on
+rst_n
+\emph default
+ pari a 0, ovvero il segnale di reset attivo, il conteggo si blocca alla
+ prima cifra.
+ Osserviamo in figura 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{fig:dispsim3}
+\end_layout
+
+\end_inset
+
+ che le uscite segnano identicamente i valori relativi alla prima cifra,
+ indipendentemente dalla variazione degli altri ingressi.
+ Esse infatti non sono sensibili alle variazioni di 
+\emph on
+en
+\emph default
+ e 
+\emph on
+dots
+\emph default
+ sulla terza cifra (
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+0100
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+), ma notiamo una commutazione al variare di values sulla prima cifra (
+\emph on
+x
+\begin_inset Quotes erd
+\end_inset
+
+0008
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[H]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+includegraphics[scale=0.8]{esercizio04/images/Simulazione3.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+caption{Simulazione del display: il reset basso blocca il conteggio alla
+ prima cifra}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+label{fig:dispsim3}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
 \end_layout
 
 \end_inset

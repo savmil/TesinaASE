@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/display_cu_testbench_isim_beh.exe" -prj "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/display_cu_testbench_beh.prj" "work.display_cu_testbench" 
+-intstyle "ise" -incremental -o "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/display_testbench_isim_beh.exe" -prj "C:/Users/Michele/Documents/TesinaASE/VHDL/Display/display_testbench_beh.prj" "work.display_testbench" 

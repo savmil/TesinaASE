@@ -1,5 +1,5 @@
 ISim log file
-Running: C:\Users\Michele\Documents\TesinaASE\VHDL\Display\display_cu_testbench_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Michele/Documents/TesinaASE/VHDL/Display/display_cu_testbench_isim_beh.wdb 
+Running: C:\Users\Michele\Documents\TesinaASE\VHDL\Display\display_testbench_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Michele/Documents/TesinaASE/VHDL/Display/display_testbench_isim_beh.wdb 
 ISim P.49d (signature 0x8ef4fb42)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
@@ -10,15 +10,16 @@ Time resolution is 1 ps
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
-at 0 ps, Instance /display_cu_testbench/uut/inst_display/inst_cathode_manager/\mux16_4(0)\/inst_mux4_1/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-at 0 ps, Instance /display_cu_testbench/uut/inst_display/inst_cathode_manager/\mux16_4(0)\/inst_mux4_1/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 0 ps, Instance /display_cu_testbench/uut/inst_display/inst_cathode_manager/\mux16_4(1)\/inst_mux4_1/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 0 ps, Instance /display_cu_testbench/uut/inst_display/inst_cathode_manager/\mux16_4(2)\/inst_mux4_1/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 0 ps, Instance /display_cu_testbench/uut/inst_display/inst_cathode_manager/\mux16_4(3)\/inst_mux4_1/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 0 ps, Instance /display_cu_testbench/uut/inst_display/inst_cathode_manager/inst_dots_manager/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 0 ps, Instance /display_cu_testbench/uut/inst_display/inst_anode_manager/inst_mux4_1/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 0 ps, Instance /display_cu_testbench/uut/inst_display/inst_anode_manager/inst_demux4_1/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 0 ps, Instance /display_cu_testbench/uut/inst_display/inst_anode_manager/inst_demux4_1/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 0 ps, Instance /display_cu_testbench/uut/inst_display/inst_anode_manager/inst_demux4_1/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 0 ps, Instance /display_cu_testbench/uut/inst_display/inst_anode_manager/inst_demux4_1/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /display_testbench/uut/inst_cathode_manager/\mux16_4(0)\/inst_mux4_1/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /display_testbench/uut/inst_cathode_manager/\mux16_4(0)\/inst_mux4_1/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /display_testbench/uut/inst_cathode_manager/\mux16_4(1)\/inst_mux4_1/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /display_testbench/uut/inst_cathode_manager/\mux16_4(2)\/inst_mux4_1/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /display_testbench/uut/inst_cathode_manager/\mux16_4(3)\/inst_mux4_1/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /display_testbench/uut/inst_cathode_manager/inst_dots_manager/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /display_testbench/uut/inst_anode_manager/inst_mux4_1/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /display_testbench/uut/inst_anode_manager/inst_demux4_1/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /display_testbench/uut/inst_anode_manager/inst_demux4_1/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /display_testbench/uut/inst_anode_manager/inst_demux4_1/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /display_testbench/uut/inst_anode_manager/inst_demux4_1/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 Finished circuit initialization process.
+# run 2.00us
