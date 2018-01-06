@@ -1,7 +1,9 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass book
 \begin_preamble
 \usepackage{listings,xcolor,courier,bookmark}
@@ -60,16 +62,16 @@ morecomment=[s]{--}
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
-
+\font_sf_scale 100 100
+\font_tt_scale 100 100
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -80,15 +82,24 @@ morecomment=[s]{--}
 \use_hyperref false
 \papersize default
 \use_geometry true
-\use_amsmath 1
-\use_esint 1
-\use_mhchem 1
-\use_mathdots 1
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 1
 \index Index
 \shortcut idx
@@ -116,12 +127,12 @@ morecomment=[s]{--}
 \begin_body
 
 \begin_layout Section
-Soluzione
+Latch RS
 \end_layout
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Descrivere la soluzione relizzata per mezzo di schematici e riportare il
@@ -134,7 +145,16 @@ Descrivere la soluzione relizzata per mezzo di schematici e riportare il
 \end_layout
 
 \begin_layout Subsection
-Schematici
+Schematico
+\end_layout
+
+\begin_layout Standard
+Si è scelto di implementare il latch RS in logica 1-attiva con due porte
+ NOR, questo implica che, quando S=1 e R=0, l'uscita Q è alta, che lo stato
+ neutro degli ingressi è S=R=0 e quello non ammesso è S=R=1, il quale produce
+ un'uscita non stabile e soggetta ad un transitorio.
+ Dualmente, grazie alla simmetria del circuito, è possibile cambiare la
+ logica in 0-attiva utilizzando due porte NAND.
 \end_layout
 
 \begin_layout Subsection
@@ -143,7 +163,7 @@ Codice
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Nell'eventialità in cui alcuni componenti sia stati utilizzati in altri
@@ -161,22 +181,7 @@ Segue un esempio di inclusione di codice
 \end_layout
 
 \begin_layout Subsubsection
-Bit String Comparator
-\end_layout
-
-\begin_layout Standard
-Il componente Top Module è ottenuto con costrutto 
-\emph on
-Generate
-\emph default
- e le connessioni sono fatte sfruttando tre array monodimensionali (aGT,
- aLT, aEQ).
-\end_layout
-
-\begin_layout Standard
-I valori MSB di questi array sono posti a (0,0,1) rispettivamente per garantire
- che sui bit più significativi della stringa in ingresso sia fatta una comparazi
-one assoluta, e non relativa.
+RS_Latch
 \end_layout
 
 \begin_layout Standard
@@ -187,224 +192,39 @@ status open
 
 
 \backslash
-begin{lstlisting}[language=VHDL,caption={Definizione del componente Bit
- String Comparator Generic}] 
+lstinputlisting [language=VHDL,caption={Definizione del componente RS latch}]
+ {esercizio03/codice/rs_latch.vhd}
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
 
-library IEEE;
-\end_layout
-
-\begin_layout Plain Layout
-
-use IEEE.STD_LOGIC_1164.ALL;
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
-\begin_layout Plain Layout
-
-entity bit_string_comparator is
+\begin_layout Subsection
+Simulazione
 \end_layout
 
-\begin_layout Plain Layout
-
-GENERIC(N: Integer:=4);
+\begin_layout Subsubsection
+Behavioral
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
+\begin_inset Graphics
+	filename images/rs_latch_behavioral.png
 
-    Port ( a : in  STD_LOGIC_VECTOR (N-1 downto 0);
-\end_layout
+\end_inset
 
-\begin_layout Plain Layout
-
-           b : in  STD_LOGIC_VECTOR (N-1 downto 0);
-\end_layout
-
-\begin_layout Plain Layout
-
-           aGTb : out  STD_LOGIC;
-\end_layout
-
-\begin_layout Plain Layout
-
-           aEQb : out  STD_LOGIC;
-\end_layout
-
-\begin_layout Plain Layout
-
-           aLTb : out  STD_LOGIC);
-\end_layout
-
-\begin_layout Plain Layout
-
-end bit_string_comparator;
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
-\begin_layout Plain Layout
-
-architecture Structural of bit_string_comparator is
+\begin_layout Subsubsection
+Post-Route
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-component bit_comparator_comp
-\end_layout
-
-\begin_layout Plain Layout
-
-    Port ( a : in  STD_LOGIC;
-\end_layout
-
-\begin_layout Plain Layout
-
-           b : in  STD_LOGIC;
-\end_layout
-
-\begin_layout Plain Layout
-
-           aEQ_INb : in  STD_LOGIC;
-\end_layout
-
-\begin_layout Plain Layout
-
-           aLT_INb : in  STD_LOGIC;
-\end_layout
-
-\begin_layout Plain Layout
-
-           aGT_INb : in  STD_LOGIC;
-\end_layout
-
-\begin_layout Plain Layout
-
-           aEQb : out  STD_LOGIC;
-\end_layout
-
-\begin_layout Plain Layout
-
-           aLTb : out  STD_LOGIC;
-\end_layout
-
-\begin_layout Plain Layout
-
-           aGTb : out  STD_LOGIC);
-\end_layout
-
-\begin_layout Plain Layout
-
-end component bit_comparator_comp;
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-for all: bit_comparator_comp use entity WORK.bit_comparator(Dataflow);
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-signal aGT, aLT, aEQ: STD_LOGIC_VECTOR(N downto 0); --Array di GT, LT ed
- EQ per la propagazione
-\end_layout
-
-\begin_layout Plain Layout
-
-begin
-\end_layout
-
-\begin_layout Plain Layout
-
-aGT(N)<='0';
-\end_layout
-
-\begin_layout Plain Layout
-
-aLT(N)<='0';
-\end_layout
-
-\begin_layout Plain Layout
-
-aEQ(N)<='1'; --Altrimenti non vengono riconosciute mai come uguali!!!
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-aGTb<=aGT(0);
-\end_layout
-
-\begin_layout Plain Layout
-
-aEQb<=aEQ(0);
-\end_layout
-
-\begin_layout Plain Layout
-
-aLTb<=aLT(0);
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-one_bcc: for i in N-1 downto 0 GENERATE begin
-\end_layout
-
-\begin_layout Plain Layout
-
-	bit_comparator: bit_comparator_comp port map(a(i), b(i), aEQ(i+1), aLT(i+1),
- aGT(i+1),aEQ(i), aLT(i), aGT(i));
-\end_layout
-
-\begin_layout Plain Layout
-
-end GENERATE one_bcc;
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-end Structural;
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{lstlisting}
-\end_layout
+\begin_layout Standard
+\begin_inset Graphics
+	filename images/rs_latch_post-route.png
 
 \end_inset
 

@@ -145,7 +145,7 @@ Descrivere la soluzione relizzata per mezzo di schematici e riportare il
 \end_layout
 
 \begin_layout Subsection
-Schematici
+Schematico
 \end_layout
 
 \begin_layout Subsubsection
@@ -232,7 +232,7 @@ viene caricato con il valore del segnale di input, poi trasferito al segnale
  Quando enable è basso si effettua un'operazione di lettura e quindi, per
  evitare di danneggiare il valore da leggere, viene spento il buffer, ponendo
  il segnale in_out ad alta impedenza ('Z').
- Questo comportamento è modellato tramite un costrutto behavioral 
+ Questo comportamento è modellato tramite un costrutto dataflow 
 \shape italic
 with-select.
 \end_layout

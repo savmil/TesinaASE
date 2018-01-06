@@ -1,0 +1,1 @@
+vhdtdtfi -prj rs_latch -o C:/DAVIDE/ASE/Esercizi/ISE/rs_latch/nor_gate.vhi -module nor_gate -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work nor_gate.vhd 

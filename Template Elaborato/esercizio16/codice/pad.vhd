@@ -8,7 +8,7 @@ entity pad is
            s_out : out  STD_LOGIC);
 end pad;
 
-architecture Behavioral of pad is
+architecture Dataflow of pad is
 
 begin
 
@@ -17,5 +17,5 @@ with enable select
 	
 s_out <= in_out;
 
-end Behavioral;
+end Dataflow;
 
