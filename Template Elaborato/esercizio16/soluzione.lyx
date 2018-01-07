@@ -153,38 +153,49 @@ GPIO
 \end_layout
 
 \begin_layout Standard
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/GPIO.pdf
-
-\end_inset
 
 
-\begin_inset CommandInset label
-LatexCommand label
-name "GPIO_schematics"
+\backslash
+begin{figure}[H]
+\end_layout
 
-\end_inset
+\begin_layout Plain Layout
+
+	
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+includegraphics[scale=0.8]{esercizio16/images/GPIO.pdf}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+caption{GPIO Schematic}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+label{fig:GPIO_schematics}
+\end_layout
+
+\begin_layout Plain Layout
 
 
+\backslash
+end{figure}
 \end_layout
 
 \end_inset
@@ -220,8 +231,15 @@ Pad
 \end_layout
 
 \begin_layout Standard
-Questo componente decide se l'operazione da effettuare è di scrittura o
- di lettura in base al valore del segnale di enable.
+Questo componente, rappresentato in Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:GPIO_schematics"
+
+\end_inset
+
+ decide se l'operazione da effettuare è di scrittura o di lettura in base
+ al valore del segnale di enable.
  Quando enable è alto, si effettua una scrittura e il segnale di input/output
  
 \shape italic
@@ -239,16 +257,6 @@ with-select.
 
 \begin_layout Standard
 \begin_inset VSpace bigskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "GPIO_schematics"
-
 \end_inset
 
 

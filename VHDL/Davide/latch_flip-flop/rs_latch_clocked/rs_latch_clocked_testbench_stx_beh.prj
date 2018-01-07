@@ -1,0 +1,5 @@
+vhdl isim_temp "nor_gate.vhd"
+vhdl isim_temp "rs_latch.vhd"
+vhdl isim_temp "and_gate.vhd"
+vhdl isim_temp "rs_latch_clocked.vhd"
+vhdl isim_temp "rs_latch_clocked_testbench.vhd"

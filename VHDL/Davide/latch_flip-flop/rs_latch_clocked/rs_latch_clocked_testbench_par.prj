@@ -1,0 +1,2 @@
+vhdl work "netgen/par/rs_latch_clocked_timesim.vhd"
+vhdl work "rs_latch_clocked_testbench.vhd"

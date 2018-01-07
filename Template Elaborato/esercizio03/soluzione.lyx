@@ -152,7 +152,8 @@ Schematico
 Si è scelto di implementare il latch RS in logica 1-attiva con due porte
  NOR, questo implica che, quando S=1 e R=0, l'uscita Q è alta, che lo stato
  neutro degli ingressi è S=R=0 e quello non ammesso è S=R=1, il quale produce
- un'uscita non stabile e soggetta ad un transitorio.
+ un'uscita non stabile e soggetta ad un transitorio, che può portare ad
+ alee e quindi a corse.
  Dualmente, grazie alla simmetria del circuito, è possibile cambiare la
  logica in 0-attiva utilizzando due porte NAND.
 \end_layout
@@ -185,6 +186,27 @@ RS_Latch
 \end_layout
 
 \begin_layout Standard
+Questo componente è stato realizzato con un'architettura di tipo Structural,
+ connettendo due componenti 
+\shape italic
+nor_gate
+\shape default
+, che non fanno altro che fare la NOR dei due ingressi.
+ Le uscite di ogni porta nor viene poi retroazionata all'ingresso dell'altra
+ porta.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "rs_latch"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -192,7 +214,7 @@ status open
 
 
 \backslash
-lstinputlisting [language=VHDL,caption={Definizione del componente RS latch}]
+lstinputlisting [language=VHDL,caption={Definizione del componente RS-latch}]
  {esercizio03/codice/rs_latch.vhd}
 \end_layout
 
@@ -210,8 +232,88 @@ Behavioral
 \end_layout
 
 \begin_layout Standard
-\begin_inset Graphics
-	filename images/rs_latch_behavioral.png
+In questo tipo di simulazione, viene modellato solo il comportamento funzionale
+ del sistema, infatti le porte sono considerate ideali e quindi senza ritardo;
+ per questo motivo quando provo ad utilizzare la configurazione degli ingressi
+ non ammessa R=S=1 (che viola il vincolo logico 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R
+\backslash
+cdot S=0$
+\end_layout
+
+\end_inset
+
+ e quindi quello 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Q=not(
+\backslash
+neg Q)$
+\end_layout
+
+\end_inset
+
+) e poi nello stesso istante (80 ns) le abbasso entrambe , questo genera
+ degli eventi oscillatori che producono cicli di delta cycle.
+ Questi però non riusciamo ad osservarli in simulazione poichè il tempo
+ di simulazione non avanza e viene generato un errore che indica che si
+ è raggiunto il limite di iterazioni, dovuto al fatto che il sistema non
+ riesce a raggiungere uno stato stabile.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[H]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+includegraphics[scale=0.8]{esercizio03/images/rs_latch_behavioral.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+caption{Simulazione del latch RS Behavioral}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+label{fig:RS_behavioral}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
 
 \end_inset
 
@@ -219,16 +321,347 @@ Behavioral
 \end_layout
 
 \begin_layout Subsubsection
-Post-Route
+Post-Sintesi
 \end_layout
 
 \begin_layout Standard
-\begin_inset Graphics
-	filename images/rs_latch_post-route.png
+La simulazione di Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:RS_post-route"
+
+\end_inset
+
+ rappresenta l'evoluzione del sistema in seguito all'operazione di Place
+ & Route che, dopo aver utilizzato dei componenti della libreria Xilinx
+ con i relativi ritardi dovuti ai tempi di commutazione, collega tali componenti
+, tenendo in considerazione i ritardi delle connessioni relative al routing
+ effettuato.
+ Proprio grazie a questi ritardi la simulazione continua e non si blocca
+ come quella precedente quando gli ingressi passano dal valore R=S=1 a R=S=0,
+ ma vengono introdotte delle asimmetrie nel circuito che portano le uscite
+ ad assumere dei valori che rispettano i vincoli, nel nostro caso sono Q=1
+ e 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+lnot$
+\end_layout
+
+\end_inset
+
+Q=0 a 86 ns.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[H]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+includegraphics[scale=0.8]{esercizio03/images/rs_latch_post-route.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+caption{Simulazione del latch RS Post-Route}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+label{fig:RS_post-route}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Latch RS abilitato
+\end_layout
+
+\begin_layout Subsection
+Schematico
+\end_layout
+
+\begin_layout Standard
+Questo tipo di latch deriva dal latch RS precedente, al quale si antepone
+ una rete combinatoria formata da due porte AND, i cui ingressi sono R ed
+ S e in più un segnale di abilitazione, che può essere un clock, ma che
+ in nessun caso rende sincrona la rete.
+\end_layout
+
+\begin_layout Subsection
+Codice
+\end_layout
+
+\begin_layout Subsubsection
+RS_Latch_Clocked
+\end_layout
+
+\begin_layout Standard
+Tale componente è stato realizzato con un'architettura Structural, connettendo,
+ tramite i due segnali 
+\shape italic
+r_clocked
+\shape default
+ ed 
+\shape italic
+s_clocked
+\shape default
+, le uscite di due porte AND, realizzate con il componente 
+\shape italic
+and_gate
+\shape default
+, agli ingressi R ed S del componente 
+\shape italic
+rs_latch
+\shape default
+ visto precedentemente (componente 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rs_latch"
+
+\end_inset
+
+).
+ Ovviamente in ingresso alle porte AND ci saranno i segnali di set e reset,
+ nonché un clock che funge da segnale di abilitazione.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting [language=VHDL,caption={Definizione del componente RS-latch
+ clocked}] {esercizio03/codice/rs_latch_clocked.vhd}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Simulazione
+\end_layout
+
+\begin_layout Subsubsection
+Behavioral
+\end_layout
+
+\begin_layout Standard
+In Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:RS_clk_behavioral"
+
+\end_inset
+
+ è rappresentata la simulazione behavioral del latch RS abilitato, che si
+ comporta come un normale latch RS quando il clock è alto, altrimenti mantiene
+ lo stato precedente.
+ Inoltre si osserva, come nel caso del latch RS, che la simulazione si ferma
+ (in questo caso a 50 ns) e viene generato un errore che indica che si è
+ raggiunto il limite di iterazioni.
+ Tutto questo è dovuto al fatto che, avendo utilizzanto nel testbench, a
+ 45 ns, la configurazione degli ingressi non ammessa R=S=1, vengono generate
+ delle oscillazioni non osservabili in questo tipo di simulazione e che
+ probabilmente sono causate dal successivo abbassamento del segnale di clock
+ alla soglia dei 50 ns, che porterebbe il sistema a conservare lo stato
+ precedente.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[H]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+includegraphics[scale=0.8]{esercizio03/images/rs_latch_clocked_behavioral.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+caption{Simulazione del latch RS abilitato Behavioral}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+label{fig:RS_clk_behavioral}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Post-Sintesi
+\end_layout
+
+\begin_layout Standard
+In Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:RS_clk_post-route"
+
+\end_inset
+
+ è mostrata la simulazione Post-Route del sistema.
+ Come si è verificato per il lactch RS, anche qui, utilizzando i componenti
+ della libreria Xilinx e considerando i loro ritardi e quelli delle connessioni,
+ si osserva che la simulazione continua e non si arresta, grazie al fatto
+ che vengono forzati dei valori in uscita (Q=1 e 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+lnot$
+\end_layout
+
+\end_inset
+
+Q=0 a 55ns) dovuti all'asimmetria introdotta dopo l'operazione di Place
+ & Route.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[H]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+includegraphics[scale=0.8]{esercizio03/images/rs_latch_clocked_post-route.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+caption{Simulazione del latch RS abilitato Post-Route}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+label{fig:RS_clk_post-route}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Latch D
+\end_layout
+
+\begin_layout Section
+Latch T
+\end_layout
+
+\begin_layout Section
+Latch JK
+\end_layout
+
+\begin_layout Section
+Flip-Flop D edge triggered
+\end_layout
+
+\begin_layout Section
+Flip-Flop D Master Slave
 \end_layout
 
 \end_body
