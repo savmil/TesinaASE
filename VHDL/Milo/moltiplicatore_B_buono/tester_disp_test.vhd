@@ -42,9 +42,6 @@ ARCHITECTURE behavior OF tester_disp_test IS
     COMPONENT tester_dispositivi
     PORT(
          clock : IN  std_logic;
-         reset : IN  std_logic;
-         load_conf : IN  std_logic;
-         load_value : IN  std_logic;
          button : IN  std_logic_vector(3 downto 0);
          led : OUT  std_logic_vector(7 downto 0);
          in_byte : IN  std_logic_vector(7 downto 0);
@@ -56,9 +53,6 @@ ARCHITECTURE behavior OF tester_disp_test IS
 
    --Inputs
    signal clock : std_logic := '0';
-   signal reset : std_logic := '0';
-   signal load_conf : std_logic := '0';
-   signal load_value : std_logic := '0';
    signal button : std_logic_vector(3 downto 0) := (others => '0');
    signal in_byte : std_logic_vector(7 downto 0) := (others => '0');
 
@@ -75,9 +69,6 @@ BEGIN
 	-- Instantiate the Unit Under Test (UUT)
    uut: tester_dispositivi PORT MAP (
           clock => clock,
-          reset => reset,
-          load_conf => load_conf,
-          load_value => load_value,
           button => button,
           led => led,
           in_byte => in_byte,

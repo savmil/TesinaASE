@@ -45,6 +45,7 @@ process (clk, reset)
 begin
    if reset='0' then 
       count <= (others => '0');
+		hit<='0';
    elsif (rising_edge(clk) and enable='1') then
          count <= std_logic_vector(unsigned(count) +1);
 			if count=(width-1 downto 0=>'1') then

@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-01-04T14:09:58</DateModified>
+  <DateModified>2018-01-05T01:45:51</DateModified>
   <ModuleName>tester_dispositivi</ModuleName>
-  <SummaryTimeStamp>2018-01-04T14:05:19</SummaryTimeStamp>
+  <SummaryTimeStamp>2018-01-05T01:43:10</SummaryTimeStamp>
   <SavedFilePath>/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/iseconfig/Booth_multiplier.xreport</SavedFilePath>
   <ImplementationReportsDirectory>/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/</ImplementationReportsDirectory>
   <DateInitialized>2018-01-04T14:09:57</DateInitialized>

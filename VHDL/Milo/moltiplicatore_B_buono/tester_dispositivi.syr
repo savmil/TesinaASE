@@ -108,98 +108,123 @@ Slice Utilization Ratio Delta      : 5
 *                          HDL Compilation                              *
 =========================================================================
 Compiling vhdl file "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/half_adder.vhd" in Library work.
-Architecture dataflow of Entity half_adder is up to date.
+Entity <half_adder> compiled.
+Entity <half_adder> (Architecture <dataflow>) compiled.
 Compiling vhdl file "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/muxn_1.vhd" in Library work.
-Architecture dataflow of Entity muxn_1 is up to date.
+Entity <muxn_1> compiled.
+Entity <muxn_1> (Architecture <dataflow>) compiled.
 Compiling vhdl file "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/demux1_n.vhd" in Library work.
-Architecture dataflow of Entity demux1_n is up to date.
+Entity <demux1_n> compiled.
+Entity <demux1_n> (Architecture <dataflow>) compiled.
 Compiling vhdl file "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/cathode_encoder.vhd" in Library work.
-Architecture behavioral of Entity cathode_encoder is up to date.
+Entity <cathode_encoder> compiled.
+Entity <cathode_encoder> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/full_adder.vhd" in Library work.
-Architecture structural of Entity full_adder is up to date.
+Entity <full_adder> compiled.
+Entity <full_adder> (Architecture <structural>) compiled.
 Compiling vhdl file "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/clock_filter.vhd" in Library work.
-Architecture behavioral of Entity clock_filter is up to date.
+Entity <clock_filter> compiled.
+Entity <clock_filter> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/counter_mod2n.vhd" in Library work.
-Architecture behavioral of Entity counter_mod2n is up to date.
+Entity <counter_mod2n> compiled.
+Entity <counter_mod2n> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/cathode_manager.vhd" in Library work.
-Architecture structural of Entity cathode_manager is up to date.
+Entity <cathode_manager> compiled.
+Entity <cathode_manager> (Architecture <structural>) compiled.
 Compiling vhdl file "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/anode_manager.vhd" in Library work.
-Architecture structural of Entity anode_manager is up to date.
+Entity <anode_manager> compiled.
+Entity <anode_manager> (Architecture <structural>) compiled.
 Compiling vhdl file "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/edge_triggered_d_n.vhd" in Library work.
-Architecture behavioral of Entity edge_triggered_d_n is up to date.
+Entity <edge_triggered_d_n> compiled.
+Entity <edge_triggered_d_n> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/ripple_carry_adder.vhd" in Library work.
-Architecture structural of Entity ripple_carry_adder is up to date.
+Entity <ripple_carry_adder> compiled.
+Entity <ripple_carry_adder> (Architecture <structural>) compiled.
 Compiling vhdl file "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/mux2_1.vhd" in Library work.
-Architecture dataflow of Entity mux2_1 is up to date.
+Entity <mux2_1> compiled.
+Entity <mux2_1> (Architecture <dataflow>) compiled.
 Compiling vhdl file "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/latch_d_en.vhd" in Library work.
-Architecture behavioral of Entity latch_d_en is up to date.
+Entity <latch_d_en> compiled.
+Entity <latch_d_en> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/display_on_board.vhd" in Library work.
-Architecture behavioral of Entity display_on_board is up to date.
+Entity <display_on_board> compiled.
+Entity <display_on_board> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/display.vhd" in Library work.
-Architecture structural of Entity display is up to date.
+Entity <display> compiled.
+Entity <display> (Architecture <structural>) compiled.
 Compiling vhdl file "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/Serial_Booth_PC_Moore.vhd" in Library work.
-Architecture behavioral of Entity serial_booth_pc_moore is up to date.
+Entity <Serial_Booth_PC_Moore> compiled.
+Entity <Serial_Booth_PC_Moore> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/contatore_modulo_4.vhd" in Library work.
-Architecture behavioral of Entity contatore_modulo_2n is up to date.
+Entity <contatore_modulo_2n> compiled.
+Entity <contatore_modulo_2n> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/boundary_scan_chain.vhd" in Library work.
-Architecture structural of Entity boundary_scan_chain is up to date.
+Entity <boundary_scan_chain> compiled.
+Entity <boundary_scan_chain> (Architecture <Structural>) compiled.
 Compiling vhdl file "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/add_sub.vhd" in Library work.
-Architecture structural of Entity add_sub is up to date.
+Entity <add_sub> compiled.
+Entity <add_sub> (Architecture <structural>) compiled.
 Compiling vhdl file "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/debounce.vhd" in Library work.
-Architecture logic of Entity debounce is up to date.
+Entity <debounce> compiled.
+Entity <debounce> (Architecture <logic>) compiled.
 Compiling vhdl file "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/Booth_multiplier.vhd" in Library work.
-Architecture structural of Entity booth_multiplier is up to date.
+Entity <Booth_multiplier> compiled.
+Entity <Booth_multiplier> (Architecture <Structural>) compiled.
 Compiling vhdl file "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/display_top_level.vhd" in Library work.
-Architecture structural of Entity display_top_level is up to date.
+Entity <display_top_level> compiled.
+Entity <display_top_level> (Architecture <structural>) compiled.
 Compiling vhdl file "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/tester_dispositivi.vhd" in Library work.
 Entity <tester_dispositivi> compiled.
-Entity <tester_dispositivi> (Architecture <behavioral>) compiled.
+Entity <tester_dispositivi> (Architecture <Behavioral>) compiled.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
-Analyzing hierarchy for entity <tester_dispositivi> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <tester_dispositivi> in library <work> (architecture <Behavioral>).
 
 Analyzing hierarchy for entity <debounce> in library <work> (architecture <logic>) with generics.
 	counter_size = 19
 
-Analyzing hierarchy for entity <contatore_modulo_2n> in library <work> (architecture <behavioral>) with generics.
+Analyzing hierarchy for entity <contatore_modulo_2n> in library <work> (architecture <Behavioral>) with generics.
 	width = 2
 
-Analyzing hierarchy for entity <latch_d_en> in library <work> (architecture <behavioral>) with generics.
+Analyzing hierarchy for entity <latch_d_en> in library <work> (architecture <Behavioral>) with generics.
 	width = 8
 
-Analyzing hierarchy for entity <Booth_multiplier> in library <work> (architecture <structural>) with generics.
+Analyzing hierarchy for entity <latch_d_en> in library <work> (architecture <Behavioral>) with generics.
+	width = 1
+
+Analyzing hierarchy for entity <Booth_multiplier> in library <work> (architecture <Structural>) with generics.
 	width = 8
 
 Analyzing hierarchy for entity <display_top_level> in library <work> (architecture <structural>) with generics.
 	freq_clock = 50000000
 	freq_hit = 250
 
-Analyzing hierarchy for entity <Serial_Booth_PC_Moore> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <Serial_Booth_PC_Moore> in library <work> (architecture <Behavioral>).
 
-Analyzing hierarchy for entity <contatore_modulo_2n> in library <work> (architecture <behavioral>) with generics.
+Analyzing hierarchy for entity <contatore_modulo_2n> in library <work> (architecture <Behavioral>) with generics.
 	width = 3
 
-Analyzing hierarchy for entity <boundary_scan_chain> in library <work> (architecture <structural>) with generics.
+Analyzing hierarchy for entity <boundary_scan_chain> in library <work> (architecture <Structural>) with generics.
 	n = 9
 
-Analyzing hierarchy for entity <latch_d_en> in library <work> (architecture <behavioral>) with generics.
+Analyzing hierarchy for entity <latch_d_en> in library <work> (architecture <Behavioral>) with generics.
 	width = 8
 
-Analyzing hierarchy for entity <boundary_scan_chain> in library <work> (architecture <structural>) with generics.
+Analyzing hierarchy for entity <boundary_scan_chain> in library <work> (architecture <Structural>) with generics.
 	n = 8
 
 Analyzing hierarchy for entity <add_sub> in library <work> (architecture <structural>) with generics.
 	width = 8
 
-Analyzing hierarchy for entity <latch_d_en> in library <work> (architecture <behavioral>) with generics.
+Analyzing hierarchy for entity <latch_d_en> in library <work> (architecture <Behavioral>) with generics.
 	width = 16
 
-Analyzing hierarchy for entity <latch_d_en> in library <work> (architecture <behavioral>) with generics.
+Analyzing hierarchy for entity <latch_d_en> in library <work> (architecture <Behavioral>) with generics.
 	width = 1
 
-Analyzing hierarchy for entity <display_on_board> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <display_on_board> in library <work> (architecture <Behavioral>).
 
 Analyzing hierarchy for entity <display> in library <work> (architecture <structural>) with generics.
 	freq_clock = 50000000
@@ -207,71 +232,71 @@ Analyzing hierarchy for entity <display> in library <work> (architecture <struct
 
 Analyzing hierarchy for entity <mux2_1> in library <work> (architecture <dataflow>).
 
-Analyzing hierarchy for entity <latch_d_en> in library <work> (architecture <behavioral>) with generics.
+Analyzing hierarchy for entity <latch_d_en> in library <work> (architecture <Behavioral>) with generics.
 	width = 1
 
-Analyzing hierarchy for entity <latch_d_en> in library <work> (architecture <behavioral>) with generics.
+Analyzing hierarchy for entity <latch_d_en> in library <work> (architecture <Behavioral>) with generics.
 	width = 1
 
-Analyzing hierarchy for entity <latch_d_en> in library <work> (architecture <behavioral>) with generics.
+Analyzing hierarchy for entity <latch_d_en> in library <work> (architecture <Behavioral>) with generics.
 	width = 1
 
-Analyzing hierarchy for entity <latch_d_en> in library <work> (architecture <behavioral>) with generics.
+Analyzing hierarchy for entity <latch_d_en> in library <work> (architecture <Behavioral>) with generics.
 	width = 1
 
-Analyzing hierarchy for entity <latch_d_en> in library <work> (architecture <behavioral>) with generics.
+Analyzing hierarchy for entity <latch_d_en> in library <work> (architecture <Behavioral>) with generics.
 	width = 1
 
-Analyzing hierarchy for entity <latch_d_en> in library <work> (architecture <behavioral>) with generics.
+Analyzing hierarchy for entity <latch_d_en> in library <work> (architecture <Behavioral>) with generics.
 	width = 1
 
-Analyzing hierarchy for entity <latch_d_en> in library <work> (architecture <behavioral>) with generics.
+Analyzing hierarchy for entity <latch_d_en> in library <work> (architecture <Behavioral>) with generics.
 	width = 1
 
-Analyzing hierarchy for entity <latch_d_en> in library <work> (architecture <behavioral>) with generics.
+Analyzing hierarchy for entity <latch_d_en> in library <work> (architecture <Behavioral>) with generics.
 	width = 1
 
-Analyzing hierarchy for entity <latch_d_en> in library <work> (architecture <behavioral>) with generics.
+Analyzing hierarchy for entity <latch_d_en> in library <work> (architecture <Behavioral>) with generics.
 	width = 1
 
-Analyzing hierarchy for entity <latch_d_en> in library <work> (architecture <behavioral>) with generics.
+Analyzing hierarchy for entity <latch_d_en> in library <work> (architecture <Behavioral>) with generics.
 	width = 1
 
-Analyzing hierarchy for entity <latch_d_en> in library <work> (architecture <behavioral>) with generics.
+Analyzing hierarchy for entity <latch_d_en> in library <work> (architecture <Behavioral>) with generics.
 	width = 1
 
-Analyzing hierarchy for entity <latch_d_en> in library <work> (architecture <behavioral>) with generics.
+Analyzing hierarchy for entity <latch_d_en> in library <work> (architecture <Behavioral>) with generics.
 	width = 1
 
-Analyzing hierarchy for entity <latch_d_en> in library <work> (architecture <behavioral>) with generics.
+Analyzing hierarchy for entity <latch_d_en> in library <work> (architecture <Behavioral>) with generics.
 	width = 1
 
-Analyzing hierarchy for entity <latch_d_en> in library <work> (architecture <behavioral>) with generics.
+Analyzing hierarchy for entity <latch_d_en> in library <work> (architecture <Behavioral>) with generics.
 	width = 1
 
-Analyzing hierarchy for entity <latch_d_en> in library <work> (architecture <behavioral>) with generics.
+Analyzing hierarchy for entity <latch_d_en> in library <work> (architecture <Behavioral>) with generics.
 	width = 1
 
-Analyzing hierarchy for entity <latch_d_en> in library <work> (architecture <behavioral>) with generics.
+Analyzing hierarchy for entity <latch_d_en> in library <work> (architecture <Behavioral>) with generics.
 	width = 1
 
-Analyzing hierarchy for entity <latch_d_en> in library <work> (architecture <behavioral>) with generics.
+Analyzing hierarchy for entity <latch_d_en> in library <work> (architecture <Behavioral>) with generics.
 	width = 1
 
 Analyzing hierarchy for entity <ripple_carry_adder> in library <work> (architecture <structural>) with generics.
 	width = 8
 
-Analyzing hierarchy for entity <edge_triggered_d_n> in library <work> (architecture <behavioral>) with generics.
+Analyzing hierarchy for entity <edge_triggered_d_n> in library <work> (architecture <Behavioral>) with generics.
 	width = 16
 
-Analyzing hierarchy for entity <edge_triggered_d_n> in library <work> (architecture <behavioral>) with generics.
+Analyzing hierarchy for entity <edge_triggered_d_n> in library <work> (architecture <Behavioral>) with generics.
 	width = 4
 
-Analyzing hierarchy for entity <clock_filter> in library <work> (architecture <behavioral>) with generics.
+Analyzing hierarchy for entity <clock_filter> in library <work> (architecture <Behavioral>) with generics.
 	freq_clock = 50000000
 	freq_hit = 250
 
-Analyzing hierarchy for entity <counter_mod2n> in library <work> (architecture <behavioral>) with generics.
+Analyzing hierarchy for entity <counter_mod2n> in library <work> (architecture <Behavioral>) with generics.
 	width = 2
 
 Analyzing hierarchy for entity <cathode_manager> in library <work> (architecture <structural>).
@@ -283,7 +308,7 @@ Analyzing hierarchy for entity <full_adder> in library <work> (architecture <str
 Analyzing hierarchy for entity <muxn_1> in library <work> (architecture <dataflow>) with generics.
 	address_width = 2
 
-Analyzing hierarchy for entity <cathode_encoder> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <cathode_encoder> in library <work> (architecture <Behavioral>).
 
 Analyzing hierarchy for entity <demux1_n> in library <work> (architecture <dataflow>) with generics.
 	address_width = 2
@@ -294,24 +319,29 @@ Analyzing hierarchy for entity <half_adder> in library <work> (architecture <dat
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
-Analyzing Entity <tester_dispositivi> in library <work> (Architecture <behavioral>).
+Analyzing Entity <tester_dispositivi> in library <work> (Architecture <Behavioral>).
 WARNING:Xst:753 - "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/tester_dispositivi.vhd" line 96: Unconnected output port 'hit' of component 'contatore_modulo_2n'.
-WARNING:Xst:753 - "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/tester_dispositivi.vhd" line 106: Unconnected output port 'en_i' of component 'Booth_multiplier'.
+WARNING:Xst:753 - "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/tester_dispositivi.vhd" line 103: Unconnected output port 'output' of component 'contatore_modulo_2n'.
+WARNING:Xst:753 - "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/tester_dispositivi.vhd" line 123: Unconnected output port 'en_i' of component 'Booth_multiplier'.
 Entity <tester_dispositivi> analyzed. Unit <tester_dispositivi> generated.
 
 Analyzing generic Entity <debounce> in library <work> (Architecture <logic>).
 	counter_size = 19
 Entity <debounce> analyzed. Unit <debounce> generated.
 
-Analyzing generic Entity <contatore_modulo_2n.1> in library <work> (Architecture <behavioral>).
+Analyzing generic Entity <contatore_modulo_2n.1> in library <work> (Architecture <Behavioral>).
 	width = 2
 Entity <contatore_modulo_2n.1> analyzed. Unit <contatore_modulo_2n.1> generated.
 
-Analyzing generic Entity <latch_d_en.1> in library <work> (Architecture <behavioral>).
+Analyzing generic Entity <latch_d_en.1> in library <work> (Architecture <Behavioral>).
 	width = 8
 Entity <latch_d_en.1> analyzed. Unit <latch_d_en.1> generated.
 
-Analyzing generic Entity <Booth_multiplier> in library <work> (Architecture <structural>).
+Analyzing generic Entity <latch_d_en.2> in library <work> (Architecture <Behavioral>).
+	width = 1
+Entity <latch_d_en.2> analyzed. Unit <latch_d_en.2> generated.
+
+Analyzing generic Entity <Booth_multiplier> in library <work> (Architecture <Structural>).
 	width = 8
 WARNING:Xst:753 - "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/Booth_multiplier.vhd" line 123: Unconnected output port 'output' of component 'contatore_modulo_2n'.
 WARNING:Xst:753 - "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/Booth_multiplier.vhd" line 124: Unconnected output port 'scan_out' of component 'boundary_scan_chain'.
@@ -319,21 +349,21 @@ WARNING:Xst:753 - "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/Booth_multipli
 WARNING:Xst:753 - "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/Booth_multiplier.vhd" line 127: Unconnected output port 'overflow' of component 'add_sub'.
 Entity <Booth_multiplier> analyzed. Unit <Booth_multiplier> generated.
 
-Analyzing Entity <Serial_Booth_PC_Moore> in library <work> (Architecture <behavioral>).
+Analyzing Entity <Serial_Booth_PC_Moore> in library <work> (Architecture <Behavioral>).
 Entity <Serial_Booth_PC_Moore> analyzed. Unit <Serial_Booth_PC_Moore> generated.
 
-Analyzing generic Entity <contatore_modulo_2n.2> in library <work> (Architecture <behavioral>).
+Analyzing generic Entity <contatore_modulo_2n.2> in library <work> (Architecture <Behavioral>).
 	width = 3
 Entity <contatore_modulo_2n.2> analyzed. Unit <contatore_modulo_2n.2> generated.
 
-Analyzing generic Entity <boundary_scan_chain.1> in library <work> (Architecture <structural>).
+Analyzing generic Entity <boundary_scan_chain.1> in library <work> (Architecture <Structural>).
 	n = 9
 Entity <boundary_scan_chain.1> analyzed. Unit <boundary_scan_chain.1> generated.
 
 Analyzing Entity <mux2_1> in library <work> (Architecture <dataflow>).
 Entity <mux2_1> analyzed. Unit <mux2_1> generated.
 
-Analyzing generic Entity <boundary_scan_chain.2> in library <work> (Architecture <structural>).
+Analyzing generic Entity <boundary_scan_chain.2> in library <work> (Architecture <Structural>).
 	n = 8
 Entity <boundary_scan_chain.2> analyzed. Unit <boundary_scan_chain.2> generated.
 
@@ -351,12 +381,8 @@ Entity <full_adder> analyzed. Unit <full_adder> generated.
 Analyzing Entity <half_adder> in library <work> (Architecture <dataflow>).
 Entity <half_adder> analyzed. Unit <half_adder> generated.
 
-Analyzing generic Entity <latch_d_en.2> in library <work> (Architecture <behavioral>).
+Analyzing generic Entity <latch_d_en.3> in library <work> (Architecture <Behavioral>).
 	width = 16
-Entity <latch_d_en.2> analyzed. Unit <latch_d_en.2> generated.
-
-Analyzing generic Entity <latch_d_en.3> in library <work> (Architecture <behavioral>).
-	width = 1
 Entity <latch_d_en.3> analyzed. Unit <latch_d_en.3> generated.
 
 Analyzing generic Entity <display_top_level> in library <work> (Architecture <structural>).
@@ -364,14 +390,14 @@ Analyzing generic Entity <display_top_level> in library <work> (Architecture <st
 	freq_hit = 250
 Entity <display_top_level> analyzed. Unit <display_top_level> generated.
 
-Analyzing Entity <display_on_board> in library <work> (Architecture <behavioral>).
+Analyzing Entity <display_on_board> in library <work> (Architecture <Behavioral>).
 Entity <display_on_board> analyzed. Unit <display_on_board> generated.
 
-Analyzing generic Entity <edge_triggered_d_n.1> in library <work> (Architecture <behavioral>).
+Analyzing generic Entity <edge_triggered_d_n.1> in library <work> (Architecture <Behavioral>).
 	width = 16
 Entity <edge_triggered_d_n.1> analyzed. Unit <edge_triggered_d_n.1> generated.
 
-Analyzing generic Entity <edge_triggered_d_n.2> in library <work> (Architecture <behavioral>).
+Analyzing generic Entity <edge_triggered_d_n.2> in library <work> (Architecture <Behavioral>).
 	width = 4
 Entity <edge_triggered_d_n.2> analyzed. Unit <edge_triggered_d_n.2> generated.
 
@@ -380,12 +406,12 @@ Analyzing generic Entity <display> in library <work> (Architecture <structural>)
 	freq_hit = 250
 Entity <display> analyzed. Unit <display> generated.
 
-Analyzing generic Entity <clock_filter> in library <work> (Architecture <behavioral>).
+Analyzing generic Entity <clock_filter> in library <work> (Architecture <Behavioral>).
 	freq_clock = 50000000
 	freq_hit = 250
 Entity <clock_filter> analyzed. Unit <clock_filter> generated.
 
-Analyzing generic Entity <counter_mod2n> in library <work> (Architecture <behavioral>).
+Analyzing generic Entity <counter_mod2n> in library <work> (Architecture <Behavioral>).
 	width = 2
 Entity <counter_mod2n> analyzed. Unit <counter_mod2n> generated.
 
@@ -396,7 +422,7 @@ Analyzing generic Entity <muxn_1> in library <work> (Architecture <dataflow>).
 	address_width = 2
 Entity <muxn_1> analyzed. Unit <muxn_1> generated.
 
-Analyzing Entity <cathode_encoder> in library <work> (Architecture <behavioral>).
+Analyzing Entity <cathode_encoder> in library <work> (Architecture <Behavioral>).
 INFO:Xst:1561 - "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/cathode_encoder.vhd" line 97: Mux is complete : default of case is discarded
 Entity <cathode_encoder> analyzed. Unit <cathode_encoder> generated.
 
@@ -444,6 +470,14 @@ Synthesizing Unit <latch_d_en_1>.
 Unit <latch_d_en_1> synthesized.
 
 
+Synthesizing Unit <latch_d_en_2>.
+    Related source file is "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/latch_d_en.vhd".
+    Found 1-bit register for signal <q<0>>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <latch_d_en_2> synthesized.
+
+
 Synthesizing Unit <Serial_Booth_PC_Moore>.
     Related source file is "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/Serial_Booth_PC_Moore.vhd".
 WARNING:Xst:1780 - Signal <q_val> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
@@ -484,19 +518,11 @@ Synthesizing Unit <contatore_modulo_2n_2>.
 Unit <contatore_modulo_2n_2> synthesized.
 
 
-Synthesizing Unit <latch_d_en_2>.
+Synthesizing Unit <latch_d_en_3>.
     Related source file is "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/latch_d_en.vhd".
     Found 16-bit register for signal <q>.
     Summary:
 	inferred  16 D-type flip-flop(s).
-Unit <latch_d_en_2> synthesized.
-
-
-Synthesizing Unit <latch_d_en_3>.
-    Related source file is "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/latch_d_en.vhd".
-    Found 1-bit register for signal <q<0>>.
-    Summary:
-	inferred   1 D-type flip-flop(s).
 Unit <latch_d_en_3> synthesized.
 
 
@@ -636,13 +662,10 @@ Unit <Booth_multiplier> synthesized.
 
 Synthesizing Unit <tester_dispositivi>.
     Related source file is "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/tester_dispositivi.vhd".
-WARNING:Xst:1306 - Output <led<5:2>> is never assigned.
-WARNING:Xst:646 - Signal <value> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:1780 - Signal <hit> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <en_mul> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:653 - Signal <en_m> is used but never assigned. This sourceless signal will be automatically connected to value 0.
-WARNING:Xst:1780 - Signal <en_c1> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:1780 - Signal <check_start> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1306 - Output <led<5:3>> is never assigned.
+WARNING:Xst:653 - Signal <check_start<0>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+    Register <en_m> equivalent to <en_c1> has been removed
+WARNING:Xst:737 - Found 1-bit latch for signal <en_c1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 Unit <tester_dispositivi> synthesized.
 
 
@@ -654,19 +677,19 @@ Macro Statistics
  16x7-bit ROM                                          : 1
 # Adders/Subtractors                                   : 1
  2-bit adder                                           : 1
-# Counters                                             : 4
+# Counters                                             : 5
  18-bit up counter                                     : 1
- 2-bit up counter                                      : 1
+ 2-bit up counter                                      : 2
  20-bit up counter                                     : 1
  3-bit up counter                                      : 1
-# Registers                                            : 34
- 1-bit register                                        : 23
+# Registers                                            : 36
+ 1-bit register                                        : 25
  16-bit register                                       : 3
  2-bit register                                        : 1
  4-bit register                                        : 4
  8-bit register                                        : 3
-# Latches                                              : 2
- 1-bit latch                                           : 2
+# Latches                                              : 3
+ 1-bit latch                                           : 3
 # Multiplexers                                         : 6
  1-bit 4-to-1 multiplexer                              : 6
 # Xors                                                 : 25
@@ -689,17 +712,7 @@ Optimizing FSM <booth/cu/current_state/FSM> on signal <current_state[1:5]> with 
  inits  | 01000
  shift  | 10000
 --------------------
-WARNING:Xst:524 - All outputs of the instance <mul1> of the block <latch_d_en_1> are unconnected in block <tester_dispositivi>.
-   This instance will be removed from the design along with all underlying logic
-WARNING:Xst:524 - All outputs of the instance <mul2> of the block <latch_d_en_1> are unconnected in block <tester_dispositivi>.
-   This instance will be removed from the design along with all underlying logic
-WARNING:Xst:1710 - FF/Latch <q_0> (without init value) has a constant value of 0 in block <m>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <q_2> (without init value) has a constant value of 0 in block <m>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <q_3> (without init value) has a constant value of 0 in block <m>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <q_4> (without init value) has a constant value of 0 in block <m>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <q_5> (without init value) has a constant value of 0 in block <m>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <q_6> (without init value) has a constant value of 0 in block <m>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <q_7> (without init value) has a constant value of 0 in block <m>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q_0> (without init value) has a constant value of 0 in block <ch_st>. This FF/Latch will be trimmed during the optimization process.
 
 =========================================================================
 Advanced HDL Synthesis Report
@@ -710,15 +723,15 @@ Macro Statistics
  16x7-bit ROM                                          : 1
 # Adders/Subtractors                                   : 1
  2-bit adder                                           : 1
-# Counters                                             : 4
+# Counters                                             : 5
  18-bit up counter                                     : 1
- 2-bit up counter                                      : 1
+ 2-bit up counter                                      : 2
  20-bit up counter                                     : 1
  3-bit up counter                                      : 1
-# Registers                                            : 97
- Flip-Flops                                            : 97
-# Latches                                              : 2
- 1-bit latch                                           : 2
+# Registers                                            : 115
+ Flip-Flops                                            : 115
+# Latches                                              : 3
+ 1-bit latch                                           : 3
 # Multiplexers                                         : 6
  1-bit 4-to-1 multiplexer                              : 6
 # Xors                                                 : 25
@@ -729,15 +742,16 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-INFO:Xst:2261 - The FF/Latch <q_0> in Unit <latch_d_en_1> is equivalent to the following 6 FFs/Latches, which will be removed : <q_2> <q_3> <q_4> <q_5> <q_6> <q_7> 
-WARNING:Xst:1710 - FF/Latch <q_0> (without init value) has a constant value of 0 in block <latch_d_en_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ch_st/q_0> (without init value) has a constant value of 0 in block <tester_dispositivi>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <selettore/hit> of sequential type is unconnected in block <tester_dispositivi>.
 
 Optimizing unit <tester_dispositivi> ...
 
+Optimizing unit <latch_d_en_1> ...
+
 Optimizing unit <Serial_Booth_PC_Moore> ...
 
-Optimizing unit <latch_d_en_2> ...
+Optimizing unit <latch_d_en_3> ...
 
 Optimizing unit <edge_triggered_d_n_1> ...
 
@@ -755,7 +769,8 @@ Optimizing unit <Booth_multiplier> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block tester_dispositivi, actual ratio is 9.
+Found area constraint ratio of 100 (+ 5) on block tester_dispositivi, actual ratio is 11.
+Latch en_c1 has been replicated 1 time(s) to handle iob=true attribute.
 
 Final Macro Processing ...
 
@@ -763,8 +778,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 137
- Flip-Flops                                            : 137
+# Registers                                            : 163
+ Flip-Flops                                            : 163
 
 =========================================================================
 
@@ -793,31 +808,36 @@ Design Statistics
 # IOs                              : 49
 
 Cell Usage :
-# BELS                             : 208
+# BELS                             : 248
 #      GND                         : 1
-#      INV                         : 6
+#      INV                         : 7
 #      LUT1                        : 36
-#      LUT2                        : 9
-#      LUT3                        : 28
-#      LUT4                        : 37
-#      LUT4_D                      : 1
+#      LUT2                        : 17
+#      LUT2_D                      : 1
+#      LUT3                        : 51
+#      LUT3_D                      : 2
+#      LUT3_L                      : 1
+#      LUT4                        : 36
+#      LUT4_D                      : 3
+#      LUT4_L                      : 2
 #      MUXCY                       : 41
-#      MUXF5                       : 10
+#      MUXF5                       : 11
 #      VCC                         : 1
 #      XORCY                       : 38
-# FlipFlops/Latches                : 139
+# FlipFlops/Latches                : 167
 #      FD                          : 2
-#      FDC                         : 48
-#      FDCE                        : 64
-#      FDE                         : 2
+#      FDC                         : 46
+#      FDCE                        : 93
+#      FDE                         : 1
 #      FDP                         : 1
 #      FDRE                        : 20
 #      LD                          : 2
+#      LDPE                        : 2
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 44
+# IO Buffers                       : 45
 #      IBUF                        : 12
-#      OBUF                        : 32
+#      OBUF                        : 33
 =========================================================================
 
 Device utilization summary:
@@ -825,11 +845,12 @@ Device utilization summary:
 
 Selected Device : 3s100etq144-5 
 
- Number of Slices:                       89  out of    960     9%  
- Number of Slice Flip Flops:            139  out of   1920     7%  
- Number of 4 input LUTs:                117  out of   1920     6%  
+ Number of Slices:                      113  out of    960    11%  
+ Number of Slice Flip Flops:            166  out of   1920     8%  
+ Number of 4 input LUTs:                156  out of   1920     8%  
  Number of IOs:                          49
- Number of bonded IOBs:                  45  out of    108    41%  
+ Number of bonded IOBs:                  46  out of    108    42%  
+    IOB Flip Flops:                       1
  Number of GCLKs:                         1  out of     24     4%  
 
 ---------------------------
@@ -853,7 +874,8 @@ Clock Information:
 ---------------------------------------------------+-------------------------+-------+
 Clock Signal                                       | Clock buffer(FF name)   | Load  |
 ---------------------------------------------------+-------------------------+-------+
-clock                                              | BUFGP                   | 135   |
+counter/hit                                        | NONE(en_c1)             | 2     |
+clock                                              | BUFGP                   | 161   |
 deb/result                                         | NONE(selettore/count_0) | 2     |
 booth/cu/en_a_0_not0001(booth/cu/en_a_0_not00011:O)| NONE(*)(booth/cu/en_q_0)| 2     |
 ---------------------------------------------------+-------------------------+-------+
@@ -864,18 +886,20 @@ INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered
 
 Asynchronous Control Signals Information:
 ----------------------------------------
------------------------------------+------------------------+-------+
-Control Signal                     | Buffer(FF name)        | Load  |
------------------------------------+------------------------+-------+
-button<3>                          | IBUF                   | 113   |
------------------------------------+------------------------+-------+
+---------------------------------------+------------------------+-------+
+Control Signal                         | Buffer(FF name)        | Load  |
+---------------------------------------+------------------------+-------+
+button<3>                              | IBUF                   | 137   |
+counter/reset_inv(counter/reset_inv1:O)| NONE(counter/count_0)  | 3     |
+en_c1_and0000(en_c1_and00001:O)        | NONE(en_c1)            | 2     |
+---------------------------------------+------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -5
 
-   Minimum period: 4.255ns (Maximum Frequency: 234.996MHz)
-   Minimum input arrival time before clock: 3.929ns
+   Minimum period: 5.448ns (Maximum Frequency: 183.560MHz)
+   Minimum input arrival time before clock: 3.846ns
    Maximum output required time after clock: 7.356ns
    Maximum combinational path delay: No path found
 
@@ -885,34 +909,35 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clock'
-  Clock period: 4.255ns (frequency: 234.996MHz)
-  Total number of paths / destination ports: 698 / 190
+  Clock period: 5.448ns (frequency: 183.560MHz)
+  Total number of paths / destination ports: 864 / 208
 -------------------------------------------------------------------------
-Delay:               4.255ns (Levels of Logic = 3)
+Delay:               5.448ns (Levels of Logic = 4)
   Source:            booth/q/chain_gen[1].sc_ch.inst_edge_triggered/q_0 (FF)
-  Destination:       booth/a/chain_gen[4].sc_ch.inst_edge_triggered/q_0 (FF)
+  Destination:       booth/a/chain_gen[7].sc_in.inst_edge_triggered/q_0 (FF)
   Source Clock:      clock rising
   Destination Clock: clock rising
 
-  Data Path: booth/q/chain_gen[1].sc_ch.inst_edge_triggered/q_0 to booth/a/chain_gen[4].sc_ch.inst_edge_triggered/q_0
+  Data Path: booth/q/chain_gen[1].sc_ch.inst_edge_triggered/q_0 to booth/a/chain_gen[7].sc_in.inst_edge_triggered/q_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q            15   0.514   0.867  booth/q/chain_gen[1].sc_ch.inst_edge_triggered/q_0 (booth/q/chain_gen[1].sc_ch.inst_edge_triggered/q_0)
-     LUT4_D:I3->O          2   0.612   0.410  booth/gestore_shift/rca/carry<8>51 (booth/gestore_shift/rca/carry<8>_bdd8)
-     LUT3:I2->O            1   0.612   0.360  booth/gestore_shift/rca/carry<8>41 (booth/gestore_shift/rca/carry<8>_bdd6)
-     LUT4:I3->O            1   0.612   0.000  booth/a/chain_gen[4].sc_ch.inst_mux2_1/X (booth/a/x<4>)
-     FDCE:D                    0.268          booth/a/chain_gen[4].sc_ch.inst_edge_triggered/q_0
+     FDCE:C->Q            21   0.514   0.962  booth/q/chain_gen[1].sc_ch.inst_edge_triggered/q_0 (booth/q/chain_gen[1].sc_ch.inst_edge_triggered/q_0)
+     LUT4:I3->O            1   0.612   0.360  booth/a/chain_gen[7].sc_in.inst_mux2_1/X42_SW1_SW0 (N71)
+     LUT4_D:I3->O          1   0.612   0.509  booth/a/chain_gen[7].sc_in.inst_mux2_1/X42_SW1 (N49)
+     LUT3:I0->O            1   0.612   0.387  booth/gestore_shift/rca/carry<8>21_SW3 (N61)
+     LUT4:I2->O            1   0.612   0.000  booth/a/chain_gen[7].sc_in.inst_mux2_1/X87 (booth/a/x<7>)
+     FDCE:D                    0.268          booth/a/chain_gen[7].sc_in.inst_edge_triggered/q_0
     ----------------------------------------
-    Total                      4.255ns (2.618ns logic, 1.637ns route)
-                                       (61.5% logic, 38.5% route)
+    Total                      5.448ns (3.230ns logic, 2.218ns route)
+                                       (59.3% logic, 40.7% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'deb/result'
-  Clock period: 2.202ns (frequency: 454.060MHz)
+  Clock period: 2.394ns (frequency: 417.632MHz)
   Total number of paths / destination ports: 3 / 2
 -------------------------------------------------------------------------
-Delay:               2.202ns (Levels of Logic = 1)
+Delay:               2.394ns (Levels of Logic = 1)
   Source:            selettore/count_0 (FF)
   Destination:       selettore/count_0 (FF)
   Source Clock:      deb/result rising
@@ -922,18 +947,18 @@ Delay:               2.202ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              3   0.514   0.451  selettore/count_0 (selettore/count_0)
-     INV:I->O              1   0.612   0.357  selettore/Mcount_count_xor<0>11_INV_0 (Result<0>1)
-     FDC:D                     0.268          selettore/count_0
+     FDCE:C->Q             8   0.514   0.643  selettore/count_0 (selettore/count_0)
+     INV:I->O              1   0.612   0.357  selettore/Mcount_count_xor<0>11_INV_0 (Result<0>2)
+     FDCE:D                    0.268          selettore/count_0
     ----------------------------------------
-    Total                      2.202ns (1.394ns logic, 0.808ns route)
-                                       (63.3% logic, 36.7% route)
+    Total                      2.394ns (1.394ns logic, 1.000ns route)
+                                       (58.2% logic, 41.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
-  Total number of paths / destination ports: 50 / 34
+  Total number of paths / destination ports: 65 / 49
 -------------------------------------------------------------------------
-Offset:              3.929ns (Levels of Logic = 2)
+Offset:              3.846ns (Levels of Logic = 2)
   Source:            button<2> (PAD)
   Destination:       gest_disp/inst_on_board/value_reg_15 (FF)
   Destination Clock: clock rising
@@ -942,12 +967,12 @@ Offset:              3.929ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             9   1.106   0.849  button_2_IBUF (button_2_IBUF)
-     LUT2:I0->O           16   0.612   0.879  gest_disp/inst_on_board/value_reg_not00011 (gest_disp/inst_on_board/value_reg_not0001)
+     IBUF:I->O             9   1.106   0.766  button_2_IBUF (button_2_IBUF)
+     LUT2:I1->O           16   0.612   0.879  gest_disp/inst_on_board/value_reg_not00011 (gest_disp/inst_on_board/value_reg_not0001)
      FDCE:CE                   0.483          gest_disp/inst_on_board/value_reg_0
     ----------------------------------------
-    Total                      3.929ns (2.201ns logic, 1.728ns route)
-                                       (56.0% logic, 44.0% route)
+    Total                      3.846ns (2.201ns logic, 1.645ns route)
+                                       (57.2% logic, 42.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
@@ -975,7 +1000,7 @@ Offset:              7.356ns (Levels of Logic = 4)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'deb/result'
   Total number of paths / destination ports: 2 / 2
 -------------------------------------------------------------------------
-Offset:              4.134ns (Levels of Logic = 1)
+Offset:              4.326ns (Levels of Logic = 1)
   Source:            selettore/count_0 (FF)
   Destination:       led<6> (PAD)
   Source Clock:      deb/result rising
@@ -984,24 +1009,43 @@ Offset:              4.134ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              3   0.514   0.451  selettore/count_0 (selettore/count_0)
+     FDCE:C->Q             8   0.514   0.643  selettore/count_0 (selettore/count_0)
      OBUF:I->O                 3.169          led_6_OBUF (led<6>)
     ----------------------------------------
-    Total                      4.134ns (3.683ns logic, 0.451ns route)
-                                       (89.1% logic, 10.9% route)
+    Total                      4.326ns (3.683ns logic, 0.643ns route)
+                                       (85.1% logic, 14.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'counter/hit'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.114ns (Levels of Logic = 1)
+  Source:            en_c1_1 (LATCH)
+  Destination:       led<0> (PAD)
+  Source Clock:      counter/hit falling
+
+  Data Path: en_c1_1 to led<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDPE:G->Q             1   0.588   0.357  en_c1_1 (en_c1_1)
+     OBUF:I->O                 3.169          led_0_OBUF (led<0>)
+    ----------------------------------------
+    Total                      4.114ns (3.757ns logic, 0.357ns route)
+                                       (91.3% logic, 8.7% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 3.50 secs
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 3.73 secs
  
 --> 
 
 
-Total memory usage is 521984 kilobytes
+Total memory usage is 522704 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   38 (   0 filtered)
-Number of infos    :    5 (   0 filtered)
+Number of warnings :   27 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
 

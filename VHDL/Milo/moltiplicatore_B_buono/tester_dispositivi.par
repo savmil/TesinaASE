@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-debian::  Thu Jan 04 14:10:33 2018
+debian::  Fri Jan 05 01:46:21 2018
 
 par -w -intstyle ise -ol high -t 1 tester_dispositivi_map.ncd
 tester_dispositivi.ncd tester_dispositivi.pcf 
@@ -25,7 +25,7 @@ Device speed data version:  "PRODUCTION 1.27 2013-10-13".
 
 Design Summary Report:
 
- Number of External IOBs                          45 out of 108    41%
+ Number of External IOBs                          46 out of 108    42%
 
    Number of External Input IOBs                 13
 
@@ -33,17 +33,17 @@ Design Summary Report:
         Number of LOCed External Input IBUFs     13 out of 13    100%
 
 
-   Number of External Output IOBs                32
+   Number of External Output IOBs                33
 
-      Number of External Output IOBs             32
-        Number of LOCed External Output IOBs     16 out of 32     50%
+      Number of External Output IOBs             33
+        Number of LOCed External Output IOBs     17 out of 33     51%
 
 
    Number of External Bidir IOBs                  0
 
 
    Number of BUFGMUXs                        1 out of 24      4%
-   Number of Slices                         99 out of 960    10%
+   Number of Slices                        129 out of 960    13%
       Number of SLICEMs                      0 out of 480     0%
 
 
@@ -62,48 +62,48 @@ Total REAL time at the beginning of Placer: 1 secs
 Total CPU  time at the beginning of Placer: 0 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:282fee42) REAL time: 1 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:1713882c) REAL time: 1 secs 
 
 Phase 2.7  Design Feasibility Check
-INFO:Place:834 - Only a subset of IOs are locked. Out of 32 IOs, 16 are locked and 16 are not locked. If you would like
+INFO:Place:834 - Only a subset of IOs are locked. Out of 33 IOs, 17 are locked and 16 are not locked. If you would like
    to print the names of these IOs, please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
-Phase 2.7  Design Feasibility Check (Checksum:282fee42) REAL time: 1 secs 
+Phase 2.7  Design Feasibility Check (Checksum:1713882c) REAL time: 1 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:282fee42) REAL time: 1 secs 
+Phase 3.31  Local Placement Optimization (Checksum:1713882c) REAL time: 1 secs 
 
 Phase 4.2  Initial Clock and IO Placement
-.......
-Phase 4.2  Initial Clock and IO Placement (Checksum:2ce77787) REAL time: 2 secs 
+......
+Phase 4.2  Initial Clock and IO Placement (Checksum:1a34cb55) REAL time: 2 secs 
 
 Phase 5.30  Global Clock Region Assignment
-Phase 5.30  Global Clock Region Assignment (Checksum:2ce77787) REAL time: 2 secs 
+Phase 5.30  Global Clock Region Assignment (Checksum:1a34cb55) REAL time: 2 secs 
 
 Phase 6.36  Local Placement Optimization
-Phase 6.36  Local Placement Optimization (Checksum:2ce77787) REAL time: 2 secs 
+Phase 6.36  Local Placement Optimization (Checksum:1a34cb55) REAL time: 2 secs 
 
 Phase 7.3  Local Placement Optimization
 ......
-Phase 7.3  Local Placement Optimization (Checksum:79b5de23) REAL time: 2 secs 
+Phase 7.3  Local Placement Optimization (Checksum:449a22e9) REAL time: 2 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:79b5de23) REAL time: 2 secs 
+Phase 8.5  Local Placement Optimization (Checksum:449a22e9) REAL time: 2 secs 
 
 Phase 9.8  Global Placement
-....
-..
-Phase 9.8  Global Placement (Checksum:700431f) REAL time: 2 secs 
+..........
+..........
+Phase 9.8  Global Placement (Checksum:b173e8a4) REAL time: 2 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:700431f) REAL time: 2 secs 
+Phase 10.5  Local Placement Optimization (Checksum:b173e8a4) REAL time: 2 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:c8928e0) REAL time: 2 secs 
+Phase 11.18  Placement Optimization (Checksum:f5d956d0) REAL time: 3 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:c8928e0) REAL time: 2 secs 
+Phase 12.5  Local Placement Optimization (Checksum:f5d956d0) REAL time: 3 secs 
 
-Total REAL time to Placer completion: 2 secs 
+Total REAL time to Placer completion: 3 secs 
 Total CPU  time to Placer completion: 2 secs 
 Writing design to file tester_dispositivi.ncd
 
@@ -112,21 +112,21 @@ Writing design to file tester_dispositivi.ncd
 Starting Router
 
 
-Phase  1  : 617 unrouted;      REAL time: 3 secs 
+Phase  1  : 805 unrouted;      REAL time: 3 secs 
 
-Phase  2  : 541 unrouted;      REAL time: 3 secs 
+Phase  2  : 707 unrouted;      REAL time: 3 secs 
 
-Phase  3  : 71 unrouted;      REAL time: 3 secs 
+Phase  3  : 107 unrouted;      REAL time: 3 secs 
 
-Phase  4  : 101 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  4  : 119 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
 Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
 Updating file: tester_dispositivi.ncd with current fully routed design.
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
 
 Updating file: tester_dispositivi.ncd with current fully routed design.
 
@@ -139,11 +139,11 @@ Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 5
 Phase 11  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
 
 Phase 12  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
-WARNING:Route:455 - CLK Net:deb/result may have excessive skew because 
-      1 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:counter/hit may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
 
 Total REAL time to Router completion: 5 secs 
-Total CPU time to Router completion: 4 secs 
+Total CPU time to Router completion: 5 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -161,12 +161,14 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|         clock_BUFGP |  BUFGMUX_X1Y0| No   |   73 |  0.029     |  0.064      |
+|         clock_BUFGP |  BUFGMUX_X1Y0| No   |   90 |  0.028     |  0.061      |
++---------------------+--------------+------+------+------------+-------------+
+|         counter/hit |         Local|      |    3 |  0.014     |  1.543      |
 +---------------------+--------------+------+------+------------+-------------+
 |booth/cu/en_a_0_not0 |              |      |      |            |             |
-|                 001 |         Local|      |    2 |  0.027     |  1.275      |
+|                 001 |         Local|      |    2 |  0.016     |  1.225      |
 +---------------------+--------------+------+------+------------+-------------+
-|          deb/result |         Local|      |    4 |  0.000     |  2.223      |
+|          deb/result |         Local|      |    1 |  0.000     |  2.039      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -186,11 +188,11 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clo | SETUP       |         N/A|     3.584ns|     N/A|           0
-  ck_BUFGP                                  | HOLD        |     0.838ns|            |       0|           0
+  Autotimespec constraint for clock net clo | SETUP       |         N/A|     4.760ns|     N/A|           0
+  ck_BUFGP                                  | HOLD        |     0.805ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net deb | SETUP       |         N/A|     1.642ns|     N/A|           0
-  /result                                   | HOLD        |     1.058ns|            |       0|           0
+  Autotimespec constraint for clock net deb | SETUP       |         N/A|     1.823ns|     N/A|           0
+  /result                                   | HOLD        |     1.021ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -209,7 +211,7 @@ All signals are completely routed.
 Total REAL time to PAR completion: 6 secs 
 Total CPU time to PAR completion: 5 secs 
 
-Peak Memory Usage:  551 MB
+Peak Memory Usage:  552 MB
 
 Placement: Completed - No errors found.
 Routing: Completed - No errors found.
