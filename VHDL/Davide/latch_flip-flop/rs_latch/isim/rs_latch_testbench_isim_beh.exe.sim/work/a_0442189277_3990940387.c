@@ -10,7 +10,7 @@
 /*  \___\/\___\                                                    */
 /***********************************************************************/
 
-/* This file is designed for use with ISim build 0x7708f090 */
+/* This file is designed for use with ISim build 0x8ef4fb42 */
 
 #define XSI_HIDE_SYMBOL_SPEC true
 #include "xsi.h"
@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/DAVIDE/ASE/Esercizi/ISE/rs_latch/nor_gate.vhd";
+static const char *ng0 = "C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/latch_flip-flop/rs_latch/nor_gate.vhd";
 extern char *IEEE_P_2592010699;
 
 unsigned char ieee_p_2592010699_sub_2115884226_503743352(char *, unsigned char , unsigned char );
@@ -43,22 +43,22 @@ static void work_a_0442189277_3990940387_p_0(char *t0)
 
 LAB0:    xsi_set_current_line(42, ng0);
 
-LAB3:    t1 = (t0 + 1032U);
+LAB3:    t1 = (t0 + 592U);
     t2 = *((char **)t1);
     t3 = *((unsigned char *)t2);
-    t1 = (t0 + 1192U);
+    t1 = (t0 + 684U);
     t4 = *((char **)t1);
     t5 = *((unsigned char *)t4);
     t6 = ieee_p_2592010699_sub_2115884226_503743352(IEEE_P_2592010699, t3, t5);
-    t1 = (t0 + 2912);
-    t7 = (t1 + 56U);
+    t1 = (t0 + 1676);
+    t7 = (t1 + 32U);
     t8 = *((char **)t7);
-    t9 = (t8 + 56U);
+    t9 = (t8 + 40U);
     t10 = *((char **)t9);
     *((unsigned char *)t10) = t6;
     xsi_driver_first_trans_fast_port(t1);
 
-LAB2:    t11 = (t0 + 2832);
+LAB2:    t11 = (t0 + 1632);
     *((int *)t11) = 1;
 
 LAB1:    return;

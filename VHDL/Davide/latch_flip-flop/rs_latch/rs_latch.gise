@@ -15,7 +15,7 @@
 
   <!--                                                          -->
 
-  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+  <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved. -->
 
   <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
 
@@ -49,8 +49,8 @@
     <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/par/rs_latch_timesim.nlf"/>
     <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_SDF" xil_pn:name="netgen/par/rs_latch_timesim.sdf"/>
     <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/par/rs_latch_timesim.vhd"/>
-    <file xil_pn:branch="PostSynthSim" xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/synthesis/rs_latch_synthesis.nlf"/>
-    <file xil_pn:branch="PostSynthSim" xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/synthesis/rs_latch_synthesis.vhd"/>
+    <file xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/synthesis/rs_latch_synthesis.nlf"/>
+    <file xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/synthesis/rs_latch_synthesis.vhd"/>
     <file xil_pn:branch="PostTranslateSimulation" xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/translate/rs_latch_translate.nlf"/>
     <file xil_pn:branch="PostTranslateSimulation" xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/translate/rs_latch_translate.vhd"/>
     <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="nor_gate.vhi"/>
@@ -91,7 +91,6 @@
     <file xil_pn:branch="PostMapSimulation" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="rs_latch_testbench_isim_map.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="rs_latch_testbench_isim_map.wdb"/>
     <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="rs_latch_testbench_isim_par.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="rs_latch_testbench_isim_par.wdb"/>
     <file xil_pn:branch="PostTranslateSimulation" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="rs_latch_testbench_isim_translate.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="rs_latch_testbench_isim_translate.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="rs_latch_testbench_map.prj"/>
@@ -117,13 +116,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1515188561" xil_pn:in_ck="9218806550557402878" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1515188561">
+    <transform xil_pn:end_ts="1515372412" xil_pn:in_ck="9218806550557402878" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1515372411">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="nor_gate.vhd"/>
       <outfile xil_pn:name="rs_latch.vhd"/>
       <outfile xil_pn:name="rs_latch_testbench.vhd"/>
@@ -140,25 +135,17 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1515188561" xil_pn:in_ck="9218806550557402878" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1515188561">
+    <transform xil_pn:end_ts="1515372412" xil_pn:in_ck="9218806550557402878" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1515372412">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="nor_gate.vhd"/>
       <outfile xil_pn:name="rs_latch.vhd"/>
       <outfile xil_pn:name="rs_latch_testbench.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1515188563" xil_pn:in_ck="9218806550557402878" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="7320881767462535308" xil_pn:start_ts="1515188561">
+    <transform xil_pn:end_ts="1515372426" xil_pn:in_ck="9218806550557402878" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="7320881767462535308" xil_pn:start_ts="1515372412">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
@@ -167,10 +154,9 @@
       <outfile xil_pn:name="rs_latch_testbench_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1515188564" xil_pn:in_ck="4575887309224238526" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="6461109591599221305" xil_pn:start_ts="1515188563">
+    <transform xil_pn:end_ts="1515372432" xil_pn:in_ck="4575887309224238526" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="6461109591599221305" xil_pn:start_ts="1515372426">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="isim.cmd"/>
@@ -295,14 +281,9 @@
       <outfile xil_pn:name="rs_latch_testbench_par.prj"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1515194354" xil_pn:in_ck="4575887327160107730" xil_pn:name="TRAN_ISimulatePostPlace&amp;RouteModel" xil_pn:prop_ck="-914768165908430982" xil_pn:start_ts="1515194354">
-      <status xil_pn:value="SuccessfullyRun"/>
+    <transform xil_pn:end_ts="1515372697" xil_pn:in_ck="4575887327160107730" xil_pn:name="TRAN_ISimulatePostPlace&amp;RouteModel" xil_pn:prop_ck="-914768165908430982" xil_pn:start_ts="1515372696">
+      <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="isim.cmd"/>
-      <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="rs_latch_testbench_isim_par.wdb"/>
     </transform>
     <transform xil_pn:end_ts="1515184048" xil_pn:in_ck="5942496996817993459" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1515184046">
       <status xil_pn:value="SuccessfullyRun"/>

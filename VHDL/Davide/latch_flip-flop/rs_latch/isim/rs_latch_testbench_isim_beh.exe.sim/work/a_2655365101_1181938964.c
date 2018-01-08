@@ -10,7 +10,7 @@
 /*  \___\/\___\                                                    */
 /***********************************************************************/
 
-/* This file is designed for use with ISim build 0x7708f090 */
+/* This file is designed for use with ISim build 0x8ef4fb42 */
 
 #define XSI_HIDE_SYMBOL_SPEC true
 #include "xsi.h"
@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/DAVIDE/ASE/Esercizi/ISE/rs_latch/rs_latch.vhd";
+static const char *ng0 = "C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/latch_flip-flop/rs_latch/rs_latch.vhd";
 
 
 
@@ -38,18 +38,18 @@ static void work_a_2655365101_1181938964_p_0(char *t0)
 
 LAB0:    xsi_set_current_line(65, ng0);
 
-LAB3:    t1 = (t0 + 1672U);
+LAB3:    t1 = (t0 + 960U);
     t2 = *((char **)t1);
     t3 = *((unsigned char *)t2);
-    t1 = (t0 + 3656);
-    t4 = (t1 + 56U);
+    t1 = (t0 + 2104);
+    t4 = (t1 + 32U);
     t5 = *((char **)t4);
-    t6 = (t5 + 56U);
+    t6 = (t5 + 40U);
     t7 = *((char **)t6);
     *((unsigned char *)t7) = t3;
     xsi_driver_first_trans_fast_port(t1);
 
-LAB2:    t8 = (t0 + 3560);
+LAB2:    t8 = (t0 + 2052);
     *((int *)t8) = 1;
 
 LAB1:    return;
@@ -70,18 +70,18 @@ static void work_a_2655365101_1181938964_p_1(char *t0)
 
 LAB0:    xsi_set_current_line(66, ng0);
 
-LAB3:    t1 = (t0 + 1832U);
+LAB3:    t1 = (t0 + 1052U);
     t2 = *((char **)t1);
     t3 = *((unsigned char *)t2);
-    t1 = (t0 + 3720);
-    t4 = (t1 + 56U);
+    t1 = (t0 + 2140);
+    t4 = (t1 + 32U);
     t5 = *((char **)t4);
-    t6 = (t5 + 56U);
+    t6 = (t5 + 40U);
     t7 = *((char **)t6);
     *((unsigned char *)t7) = t3;
     xsi_driver_first_trans_fast_port(t1);
 
-LAB2:    t8 = (t0 + 3576);
+LAB2:    t8 = (t0 + 2060);
     *((int *)t8) = 1;
 
 LAB1:    return;

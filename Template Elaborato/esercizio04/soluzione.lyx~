@@ -841,8 +841,8 @@ status open
 
 
 \backslash
-lstinputlisting [language=VHDL,caption={Definizione del componente Clock
- FIlter}] {esercizio04/codice/display.vhd}
+lstinputlisting [language=VHDL,caption={Definizione del componente Display}]
+ {esercizio04/codice/display.vhd}
 \end_layout
 
 \end_inset

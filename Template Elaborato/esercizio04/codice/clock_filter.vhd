@@ -14,7 +14,7 @@ end clock_filter;
 architecture Behavioral of clock_filter is
 constant freq_ratio : NATURAL := freq_clock/freq_hit;
 begin
--- Ho bisogno di un contatore N e non modulo N
+-- Ho bisogno di un contatore N
 	hit_counter_n : process(clk, reset_n)
 	variable count : NATURAL := 0;
 	begin

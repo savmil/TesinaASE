@@ -2,14 +2,14 @@ Command line:
    rs_latch_testbench_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  49333
+     -socket  49206
 
-Fri Jan 05 22:42:45 2018
+Mon Jan 08 01:47:27 2018
 
 
- Elaboration Time: 0.0312 sec
+ Elaboration Time: 0.0624 sec
 
- Current Memory Usage: 666.644 Meg
+ Current Memory Usage: 489.656 Meg
 
  Total Signals          : 16
  Total Nets             : 6
@@ -21,9 +21,9 @@ Fri Jan 05 22:42:45 2018
  Total Scalar Nets and Variables : 366
 Total Line Count : 7
 
- Total Simulation Time: 0.0468 sec
+ Total Simulation Time: 0.124802 sec
 
- Current Memory Usage: 666.644 Meg
+ Current Memory Usage: 489.656 Meg
 
-Fri Jan 05 22:42:57 2018
+Mon Jan 08 01:49:46 2018
 
