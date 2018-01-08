@@ -267,6 +267,9 @@ neg Q)$
  di simulazione non avanza e viene generato un errore che indica che si
  è raggiunto il limite di iterazioni, dovuto al fatto che il sistema non
  riesce a raggiungere uno stato stabile.
+ Queste oscillazioni invece sono visibili nella simulazione Post-Map, in
+ cui vengono introdotti i ritardi dei componenti di libreria ma non quelli
+ relativi alle loro connessioni.
 \end_layout
 
 \begin_layout Standard
@@ -432,12 +435,20 @@ RS_Latch_Clocked
 \end_layout
 
 \begin_layout Standard
-Tale componente è stato realizzato con un'architettura Structural, connettendo
- le uscite di due porte AND, realizzate tramite il componente 
+Tale componente è stato realizzato con un'architettura Structural, connettendo,
+ tramite i due segnali 
+\shape italic
+r_clocked
+\shape default
+ ed 
+\shape italic
+s_clocked
+\shape default
+, le uscite di due porte AND, realizzate con il componente 
 \shape italic
 and_gate
 \shape default
-, agli ingressi S e R del componente 
+, agli ingressi R ed S del componente 
 \shape italic
 rs_latch
 \shape default
@@ -451,6 +462,16 @@ reference "rs_latch"
 ).
  Ovviamente in ingresso alle porte AND ci saranno i segnali di set e reset,
  nonché un clock che funge da segnale di abilitazione.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "rs_latch_clk"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -567,8 +588,21 @@ reference "fig:RS_clk_post-route"
  Come si è verificato per il lactch RS, anche qui, utilizzando i componenti
  della libreria Xilinx e considerando i loro ritardi e quelli delle connessioni,
  si osserva che la simulazione continua e non si arresta, grazie al fatto
- che vengono forzati dei valori in uscita dovuti all'asimmetria introdotta
- dopo l'operazione di Place & Route.
+ che vengono forzati dei valori in uscita (Q=1 e 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+lnot$
+\end_layout
+
+\end_inset
+
+Q=0 a 55ns) dovuti all'asimmetria introdotta dopo l'operazione di Place
+ & Route.
  
 \end_layout
 
@@ -624,23 +658,350 @@ end{figure}
 \end_layout
 
 \begin_layout Section
-Latch D
+Latch D abilitato
+\end_layout
+
+\begin_layout Subsection
+Schematico
+\end_layout
+
+\begin_layout Standard
+Il latch D abilitato può essere realizzato a partire da un latch RS abilitato
+ i cui ingressi R ed S corrispondono al valore D in ingresso rispettivamente
+ una volta negato tramite una porta NOT e una volta no.
+ Questo latch permette di avere in uscita Q il valore D in ingresso, ma
+ ritardato di un certo 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+Delta$
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Codice
+\end_layout
+
+\begin_layout Subsubsection
+D_Latch_Clocked
+\end_layout
+
+\begin_layout Standard
+Questo componente è stato creato come un'architettura Structural a partire
+ dal componente 
+\shape italic
+rs_latch_clocked
+\shape default
+ visto in precedenza (componente 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rs_latch_clk"
+
+\end_inset
+
+).
+ L'ingresso D viene colleggato all'ingresso S del latch rs abilitato e viene
+ utilizzato un segnale 
+\shape italic
+notd
+\shape default
+ per negare D e collegarlo all'ingresso R.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting [language=VHDL,caption={Definizione del componente D-latch
+ clocked}] {esercizio03/codice/d_latch_clocked.vhd}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Simulazione
+\end_layout
+
+\begin_layout Subsubsection
+Behavioral
+\end_layout
+
+\begin_layout Standard
+Come si nota dalla simulazione behavioral di Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:D_clk_behavioral"
+
+\end_inset
+
+ quando D e il clock sono alti il segnale in uscita Q è alto, altrimenti
+ o viene mantenuto lo stato precedente quando il clock è basso oppure quando
+ D è basso e il clock è altro, sarà l'uscita 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+lnot$
+\end_layout
+
+\end_inset
+
+ Q ad essere alta.
+ Anche in questo caso come in quelli precedenti, la simulazione si arresta
+ a 40 ns a causa di un errore che indica il raggiungimento del limite di
+ iterazioni dovuto alla gerazioni di cicli di delta cycle, che non permettono
+ di giungere ad uno stato stabile.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[H]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+includegraphics[scale=0.8]{esercizio03/images/d_latch_clocked_behavioral.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+caption{Simulazione del latch D abilitato Behavioral}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+label{fig:D_clk_behavioral}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Post-Sintesi
+\end_layout
+
+\begin_layout Standard
+In Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:D_clk_post-route"
+
+\end_inset
+
+ è rappresentata la simulazione Post-Route del componente.
+ Grazie all'introduzione dei ritardi dei componenti della libreria Xilinx
+ e a quelli relatvi ai collegamenti tra gli stessi, la simulazione è in
+ grado di continuare senza bloccarsi; ovviamente questo comporta un ritardo
+ nella generazione delle uscite che commutano un po' dopo a
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[H]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+includegraphics[scale=0.8]{esercizio03/images/d_latch_clocked_post-route.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+caption{Simulazione del latch D abilitato Post-Route}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+label{fig:D_clk_post-route}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
 Latch T
 \end_layout
 
+\begin_layout Subsection
+Schematico
+\end_layout
+
+\begin_layout Subsection
+Codice
+\end_layout
+
+\begin_layout Subsubsection
+D_Latch_Clocked
+\end_layout
+
+\begin_layout Subsection
+Simulazione
+\end_layout
+
+\begin_layout Subsubsection
+Behavioral
+\end_layout
+
+\begin_layout Subsubsection
+Post-Sintesi
+\end_layout
+
 \begin_layout Section
 Latch JK
+\end_layout
+
+\begin_layout Subsection
+Schematico
+\end_layout
+
+\begin_layout Subsection
+Codice
+\end_layout
+
+\begin_layout Subsubsection
+D_Latch_Clocked
+\end_layout
+
+\begin_layout Subsection
+Simulazione
+\end_layout
+
+\begin_layout Subsubsection
+Behavioral
+\end_layout
+
+\begin_layout Subsubsection
+Post-Sintesi
 \end_layout
 
 \begin_layout Section
 Flip-Flop D edge triggered
 \end_layout
 
+\begin_layout Subsection
+Schematico
+\end_layout
+
+\begin_layout Subsection
+Codice
+\end_layout
+
+\begin_layout Subsubsection
+D_Latch_Clocked
+\end_layout
+
+\begin_layout Subsection
+Simulazione
+\end_layout
+
+\begin_layout Subsubsection
+Behavioral
+\end_layout
+
+\begin_layout Subsubsection
+Post-Sintesi
+\end_layout
+
 \begin_layout Section
 Flip-Flop D Master Slave
+\end_layout
+
+\begin_layout Subsection
+Schematico
+\end_layout
+
+\begin_layout Subsection
+Codice
+\end_layout
+
+\begin_layout Subsubsection
+D_Latch_Clocked
+\end_layout
+
+\begin_layout Subsection
+Simulazione
+\end_layout
+
+\begin_layout Subsubsection
+Behavioral
+\end_layout
+
+\begin_layout Subsubsection
+Post-Sintesi
 \end_layout
 
 \end_body
