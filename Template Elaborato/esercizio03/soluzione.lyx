@@ -151,9 +151,9 @@ Schematico
 \begin_layout Standard
 Si è scelto di implementare il latch RS in logica 1-attiva con due porte
  NOR, questo implica che, quando S=1 e R=0, l'uscita Q è alta, che lo stato
- neutro degli ingressi è S=R=0 e quello non ammesso è S=R=1, il quale produce
- un'uscita non stabile e soggetta ad un transitorio, che può portare ad
- alee e quindi a corse.
+ neutro degli ingressi è S=R=0 e quello non ammesso è S=R=1, il quale, seguito
+ dal passaggio allo stato neutro, produce un'uscita non stabile e soggetta
+ ad un transitorio, che può portare ad alee e quindi a corse.
  Dualmente, grazie alla simmetria del circuito, è possibile cambiare la
  logica in 0-attiva utilizzando due porte NAND.
 \end_layout
@@ -343,8 +343,8 @@ reference "fig:RS_post-route"
  Proprio grazie a questi ritardi la simulazione continua e non si blocca
  come quella precedente quando gli ingressi passano dal valore R=S=1 a R=S=0,
  ma vengono introdotte delle asimmetrie nel circuito che portano le uscite
- ad assumere dei valori che rispettano i vincoli, nel nostro caso sono Q=1
- e 
+ ad assumere dei valori che rispettano i vincoli logici, nel nostro caso
+ sono Q=1 e 
 \begin_inset ERT
 status open
 
@@ -358,6 +358,10 @@ lnot$
 \end_inset
 
 Q=0 a 86 ns.
+ Però è importante sottolineare che questi valori prodotti in uscita non
+ sono deterministici, perchè generati da corse e quindi è preferibile non
+ ottenerli rispettando il vincolo che proibisce l'utilizzo di entrambi gli
+ ingressi alti.
 \end_layout
 
 \begin_layout Standard
@@ -903,12 +907,19 @@ Latch T
 Schematico
 \end_layout
 
+\begin_layout Standard
+Il latch T può essere realizzato similmente al latch RS abilitato, solo
+ che, in ingresso alle porte AND, vanno le uscite retroazionate al posto
+ degli ingressi di reset e set e il segnale T che, quando è abilitato, non
+ fa altro che commutare l'uscita Q.
+\end_layout
+
 \begin_layout Subsection
 Codice
 \end_layout
 
 \begin_layout Subsubsection
-D_Latch_Clocked
+T_Latch
 \end_layout
 
 \begin_layout Subsection
@@ -931,12 +942,21 @@ Latch JK
 Schematico
 \end_layout
 
+\begin_layout Standard
+Il latch JK è strutturato in maniera simile al latch RS abilitato, ciò che
+ cambia è che le porte AND prendono in ingresso le uscite retroazionate,
+ così come avviene per il latch T, e due segnali J e K.
+ In base alla configurazione di questi due segnali cambia il funzionamento
+ del latch, poiché se K=J=1, esso si comporta come un latch T, altrimenti
+ si comporta come un latch RS in cui R=K e S=J.
+\end_layout
+
 \begin_layout Subsection
 Codice
 \end_layout
 
 \begin_layout Subsubsection
-D_Latch_Clocked
+JK_Latch
 \end_layout
 
 \begin_layout Subsection
@@ -952,11 +972,165 @@ Post-Sintesi
 \end_layout
 
 \begin_layout Section
-Flip-Flop D edge triggered
+Flip-Flop D Edge Triggered
 \end_layout
 
 \begin_layout Subsection
 Schematico
+\end_layout
+
+\begin_layout Standard
+Un Flip-Flop D Edge Triggered che commuta sul fronte di discesa del clock
+ può essere realizzato, così come si evince dalla Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ffd"
+
+\end_inset
+
+, attraverso 6 porte NOR opportunamente interconnesse.
+ Quando il clock è alto, l'uscita delle porte G2 e G3 viene forzata a 0,
+ quindi il latch 3 mantiene il proprio stato delle uscite e il latch 1 e
+ il latch 2 seguono il valore D e 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+lnot$
+\end_layout
+
+\end_inset
+
+D rispettivamente.
+ All'atto della transizione del clock dal valore alto a quello basso, i
+ valori di D e 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+lnot$
+\end_layout
+
+\end_inset
+
+D vengono propagati agli ingressi del latch 3 e quindi in uscita.
+ Considerando 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+tau$
+\end_layout
+
+\end_inset
+
+ il ritardo di ogni porta, la rete impiega 5
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+tau$
+\end_layout
+
+\end_inset
+
+ per commutare.
+ Si noti inoltre, un ulteriore ingresso alla porta G2, che non è altro che
+ l'uscita della porta G1 retroazionata; questo elemento, può sembrare ridondante
+, in realtà evita il presentarsi di un'alea che, all'atto della transizione
+ del clock 1->0, causerebbe un valore inatteso all'uscita della porta G2,
+ dovuto al ritardo di 3
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+tau$
+\end_layout
+
+\end_inset
+
+ per propagare l'ingresso R1a, infatti l'uscita della porta G1 ha lo stesso
+ valore dell'uscita della porta G3, solo che è possibile ottenerla con un
+ ritardo pari solo a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+tau$
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[H]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+includegraphics[scale=0.8]{esercizio03/images/ffd.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+caption{Schematico Flip-Flop D Edge Triggered}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+label{fig:ffd}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -964,7 +1138,34 @@ Codice
 \end_layout
 
 \begin_layout Subsubsection
-D_Latch_Clocked
+Flip_Flop_D_edge
+\end_layout
+
+\begin_layout Standard
+Il Flip-Flop D Edge Triggered è stato realizzato con un'architettura Structural
+ componendo 6 porte NOR, opportunamente connesse con dei segnali da G1 a
+ G6 che rappresentano le uscite delle omonime porte.
+ Si noti che per settare l'uscita della porta NOR G2, che ha tre ingressi,
+ è stata applicata una porta NOT al risultato dell'OR tra l'uscita della
+ porta G3, il clock e l'uscita della porta G1, utilizzata per eliminare
+ l'alea.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting [language=VHDL,caption={Definizione del componente Flip-Flop
+ D Edge}] {esercizio03/codice/flipflop_d_edge.vhd}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -975,12 +1176,158 @@ Simulazione
 Behavioral
 \end_layout
 
+\begin_layout Standard
+Nella simulazione Behavioral di Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ffd_behavioral"
+
+\end_inset
+
+ si osserva il funzionamento del Flip Flop D.
+ Come si nota la commutazione delle uscite avviene in corrispondenza del
+ fronte di discesa del clock in maniera istantanea, non avendo usato a questo
+ livello i componenti della libreria Xilinx.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[H]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+includegraphics[scale=0.8]{esercizio03/images/flipflop_d_edge_behavioral.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+caption{Simulazione del Flip-Flop D Edge Triggered Behavioral}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+label{fig:ffd_behavioral}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection
 Post-Sintesi
 \end_layout
 
+\begin_layout Standard
+In Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ffd_post-route"
+
+\end_inset
+
+ è rappresetata una simulazione Post-Route del Flip-Flop D.
+ Come c'era da aspettarsi, tenendo in considerazione i ritardi dei componenti
+ utilizzati e quelli relativi al routing, la commutazione delle uscite non
+ avviene istantanemente rispetto al fronte di discesa del clock, ma con
+ un ritardo che è circa 6 ns, che quindi è in linea con il ritardo di 5
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+tau$
+\end_layout
+
+\end_inset
+
+ predetto precedentemente.
+ Si noti inoltre l'assenza di alee grazie all'aggiunta del collegamento
+ dell'uscita della porta G1 all'ingresso della porta G2.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[H]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+includegraphics[scale=0.8]{esercizio03/images/flipflop_d_edge_post-route.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+caption{Simulazione del Flip-Flop D Edge Triggered Post-Route}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+label{fig:ffd_post-route}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
-Flip-Flop D Master Slave
+Flip-Flop RS Master Slave
 \end_layout
 
 \begin_layout Subsection
@@ -992,7 +1339,7 @@ Codice
 \end_layout
 
 \begin_layout Subsubsection
-D_Latch_Clocked
+Flip_Flop_RS_ms
 \end_layout
 
 \begin_layout Subsection

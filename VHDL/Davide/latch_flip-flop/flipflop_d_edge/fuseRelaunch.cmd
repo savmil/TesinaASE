@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/flipflop_d_edge/flipflop_d_edge_testbench_isim_par.exe" -prj "C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/flipflop_d_edge/flipflop_d_edge_testbench_par.prj" "work.flipflop_d_edge_testbench" 

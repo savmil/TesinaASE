@@ -1,0 +1,29 @@
+Command line:
+   flipflop_d_edge_testbench_isim_translate.exe
+     -simmode  gui
+     -simrunnum  1
+     -socket  49528
+
+Tue Jan 09 16:40:53 2018
+
+
+ Elaboration Time: 0.0312 sec
+
+ Current Memory Usage: 666.968 Meg
+
+ Total Signals          : 91
+ Total Nets             : 58
+ Total Signal Drivers   : 35
+ Total Blocks           : 28
+ Total Primitive Blocks : 17
+ Total Processes        : 35
+ Total Traceable Variables  : 168
+ Total Scalar Nets and Variables : 4784
+Total Line Count : 128
+
+ Total Simulation Time: 0.0312 sec
+
+ Current Memory Usage: 981.541 Meg
+
+Tue Jan 09 16:42:00 2018
+
