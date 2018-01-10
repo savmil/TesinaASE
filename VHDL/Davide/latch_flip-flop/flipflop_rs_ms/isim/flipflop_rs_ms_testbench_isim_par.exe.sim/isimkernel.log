@@ -1,0 +1,31 @@
+Command line:
+   flipflop_rs_ms_testbench_isim_par.exe
+     -simmode  gui
+     -sdfmax  /uut/=netgen/par/flipflop_rs_ms_timesim.sdf
+     -sdfroot  /uut
+     -simrunnum  1
+     -socket  49614
+
+Wed Jan 10 01:43:44 2018
+
+
+ Elaboration Time: 0.031201 sec
+
+ Current Memory Usage: 666.964 Meg
+
+ Total Signals          : 109
+ Total Nets             : 67
+ Total Signal Drivers   : 44
+ Total Blocks           : 39
+ Total Primitive Blocks : 23
+ Total Processes        : 43
+ Total Traceable Variables  : 192
+ Total Scalar Nets and Variables : 4830
+Total Line Count : 206
+
+ Total Simulation Time: 0.046801 sec
+
+ Current Memory Usage: 666.964 Meg
+
+Wed Jan 10 01:47:28 2018
+

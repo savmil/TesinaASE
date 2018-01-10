@@ -522,7 +522,7 @@ reference "fig:RS_clk_behavioral"
  delle oscillazioni non osservabili in questo tipo di simulazione e che
  probabilmente sono causate dal successivo abbassamento del segnale di clock
  alla soglia dei 50 ns, che porterebbe il sistema a conservare lo stato
- precedente.
+ precedente forzando i valori di ingresso R=S=0.
 \end_layout
 
 \begin_layout Standard
@@ -771,7 +771,7 @@ lnot$
  Q ad essere alta.
  Anche in questo caso come in quelli precedenti, la simulazione si arresta
  a 40 ns a causa di un errore che indica il raggiungimento del limite di
- iterazioni dovuto alla gerazioni di cicli di delta cycle, che non permettono
+ iterazioni dovuto alla generazione di cicli di delta cycle, che non permettono
  di giungere ad uno stato stabile.
 \end_layout
 
@@ -1327,11 +1327,19 @@ end{figure}
 \end_layout
 
 \begin_layout Section
-Flip-Flop RS Master Slave
+Flip-Flop RS Master-Slave
 \end_layout
 
 \begin_layout Subsection
 Schematico
+\end_layout
+
+\begin_layout Standard
+Un Flip-Flop RS Master-Slave viene realizzato collegando in cascata due
+ latch RS abilitati da un segnale di clock nel caso del primo latch (master)
+ è affermato, mentre nel caso del secondo (slave) è negato.
+ Questo comporta che i due latch non funzionano contemporaneamente ma quando
+ uno è attivo l'altro è disattivo e viceversa.
 \end_layout
 
 \begin_layout Subsection
@@ -1342,6 +1350,49 @@ Codice
 Flip_Flop_RS_ms
 \end_layout
 
+\begin_layout Standard
+Il componente 
+\shape italic
+flipflop_rs_ms
+\shape default
+ è stato realizzato con un approccio Structural, poichè sono stati utilizzati
+ due componenti rs_latch_clocked visti in precedeza (componente 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rs_latch_clk"
+
+\end_inset
+
+), collegati tramite i due segnali 
+\shape italic
+q_master
+\shape default
+ e 
+\shape italic
+notq_master
+\shape default
+ che vanno in ingresso rispettivamente al set e al reset del latch slave.
+ Infine è stata utilizzata una porta NOT per negare il segnale di clock
+ che è stato poi collegato al secondo latch.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting [language=VHDL,caption={Definizione del componente Flip-Flop
+ RS Master-Slave}] {esercizio03/codice/flipflop_rs_ms.vhd}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Simulazione
 \end_layout
@@ -1350,8 +1401,173 @@ Simulazione
 Behavioral
 \end_layout
 
+\begin_layout Standard
+In Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ffrs_behavioral"
+
+\end_inset
+
+ viene mostrata la simulazione Behavioral quindi il funzionamento di questo
+ tipo di circuito.
+ Come si nota, quello che di fatto realizza è un flip-flop RS pilotato sul
+ fronte di discesa del clock, in corrispondeza del quale avviene la commutazione
+ delle uscite Q e 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+lnot$
+\end_layout
+
+\end_inset
+
+Q.
+ In questo caso la simulazione continua fino alla fine poichè non è stata
+ utilizzata la configurazione R=S=1 non ammessa e quindi non si sono generati
+ eventi oscillatori.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[H]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+includegraphics[scale=0.8]{esercizio03/images/flipflop_rs_ms_behavioral.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+caption{Simulazione del Flip-Flop RS Master-Slave Behavioral}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+label{fig:ffrs_behavioral}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection
 Post-Sintesi
+\end_layout
+
+\begin_layout Standard
+Nella simulazione Post-Route di Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ffd_post-route"
+
+\end_inset
+
+, come nei casi precedenti notiamo che la commutazione delle uscite avviene
+ con circa 5-6 ns di ritardo, dovuto all'utilizzo dei componenti della libreria
+ Xilinx e ai ritardi dei loro collegamenti.
+ Fortunatamente, in questo caso, il ritardo della porta NOT sembra non pregiudic
+are il funzionamento del sistema, infatti il master e lo slave funzionano
+ alternativamente, cosa che potrebbe non accadere se il ritardo della porta
+ NOT fosse troppo grande e quindi non si riuscisse a determinare l'uscita.
+ Questo però è un caso limite poiché di solito il ritardo della porta NOT
+ è un 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+tau$
+\end_layout
+
+\end_inset
+
+ piccolissimo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[H]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+includegraphics[scale=0.8]{esercizio03/images/flipflop_rs_ms_post-route.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+caption{Simulazione del Flip-Flop RS Master-Slave Post-Route}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+label{fig:ffd_post-route}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body

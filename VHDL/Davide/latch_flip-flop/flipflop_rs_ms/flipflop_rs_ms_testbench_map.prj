@@ -1,0 +1,2 @@
+vhdl work "netgen/map/flipflop_rs_ms_map.vhd"
+vhdl work "flipflop_rs_ms_testbench.vhd"

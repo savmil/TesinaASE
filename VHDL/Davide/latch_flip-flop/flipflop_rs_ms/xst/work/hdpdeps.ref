@@ -1,0 +1,36 @@
+V3 19
+FL C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/flipflop_rs_ms/and_gate.vhd 2018/01/06.21:06:12 P.20131013
+EN work/and_gate 1515542083 \
+      FL C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/flipflop_rs_ms/and_gate.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/and_gate/Dataflow 1515542084 \
+      FL C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/flipflop_rs_ms/and_gate.vhd \
+      EN work/and_gate 1515542083
+FL C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/flipflop_rs_ms/flipflop_rs_ms.vhd 2018/01/10.00:50:59 P.20131013
+EN work/flipflop_rs_ms 1515542089 \
+      FL C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/flipflop_rs_ms/flipflop_rs_ms.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/flipflop_rs_ms/Structural 1515542090 \
+      FL C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/flipflop_rs_ms/flipflop_rs_ms.vhd \
+      EN work/flipflop_rs_ms 1515542089 CP rs_latch_clocked
+FL C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/flipflop_rs_ms/nor_gate.vhd 2018/01/07.18:38:07 P.20131013
+EN work/nor_gate 1515542081 \
+      FL C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/flipflop_rs_ms/nor_gate.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/nor_gate/Dataflow 1515542082 \
+      FL C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/flipflop_rs_ms/nor_gate.vhd \
+      EN work/nor_gate 1515542081
+FL C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/flipflop_rs_ms/rs_latch.vhd 2018/01/05.19:21:39 P.20131013
+EN work/rs_latch 1515542085 \
+      FL C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/flipflop_rs_ms/rs_latch.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/rs_latch/Structural 1515542086 \
+      FL C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/flipflop_rs_ms/rs_latch.vhd \
+      EN work/rs_latch 1515542085 CP nor_gate
+FL C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/flipflop_rs_ms/rs_latch_clocked.vhd 2018/01/06.21:26:27 P.20131013
+EN work/rs_latch_clocked 1515542087 \
+      FL C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/flipflop_rs_ms/rs_latch_clocked.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/rs_latch_clocked/Structural 1515542088 \
+      FL C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/flipflop_rs_ms/rs_latch_clocked.vhd \
+      EN work/rs_latch_clocked 1515542087 CP and_gate CP rs_latch
