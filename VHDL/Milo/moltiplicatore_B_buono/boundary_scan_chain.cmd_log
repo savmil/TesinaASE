@@ -1,1 +1,4 @@
 vhdtdtfi -prj moltiplicatore_booth -o /home/sav/ASE/moltiplicatore_booth/boundary_scan_chain.vhi -module boundary_scan_chain -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work mux2_1.vhd -lib work edge_triggered_d_n.vhd -lib work boundary_scan_chain.vhd 
+xst -intstyle ise -ifn "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/boundary_scan_chain.xst" -ofn "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/boundary_scan_chain.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-tq144-5 boundary_scan_chain.ngc boundary_scan_chain.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o boundary_scan_chain_map.ncd boundary_scan_chain.ngd boundary_scan_chain.pcf 

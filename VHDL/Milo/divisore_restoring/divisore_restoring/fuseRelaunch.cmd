@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "/media/sf_ASE/VHDL/Milo/divisore_restoring/divisore_restoring/Divisore_restoring_testbench_isim_beh.exe" -prj "/media/sf_ASE/VHDL/Milo/divisore_restoring/divisore_restoring/Divisore_restoring_testbench_beh.prj" "work.Divisore_restoring_testbench" 
+-intstyle "ise" -incremental -o "/media/sf_ASE/VHDL/Milo/divisore_restoring/divisore_restoring/Booth_multiplier_isim_par.exe" -prj "/media/sf_ASE/VHDL/Milo/divisore_restoring/divisore_restoring/Booth_multiplier_par.prj" "Booth_multiplier" 

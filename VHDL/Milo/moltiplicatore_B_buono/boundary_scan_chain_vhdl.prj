@@ -1,0 +1,3 @@
+vhdl work "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/mux2_1.vhd"
+vhdl work "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/latch_d_en.vhd"
+vhdl work "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/boundary_scan_chain.vhd"

@@ -1,0 +1,31 @@
+Command line:
+   Booth_testbench_isim_par.exe
+     -simmode  gui
+     -sdfmax  /uut/=netgen/par/Booth_multiplier_timesim.sdf
+     -sdfroot  /uut
+     -simrunnum  0
+     -socket  57165
+
+Wed Jan 10 11:04:22 2018
+
+
+ Elaboration Time: 0.24 sec
+
+ Current Memory Usage: 214.598 Meg
+
+ Total Signals          : 3193
+ Total Nets             : 2016
+ Total Signal Drivers   : 1978
+ Total Blocks           : 846
+ Total Primitive Blocks : 454
+ Total Processes        : 1976
+ Total Traceable Variables  : 4754
+ Total Scalar Nets and Variables : 18829
+Total Line Count : 7095
+
+ Total Simulation Time: 0.36 sec
+
+ Current Memory Usage: 223.113 Meg
+
+Wed Jan 10 11:04:53 2018
+

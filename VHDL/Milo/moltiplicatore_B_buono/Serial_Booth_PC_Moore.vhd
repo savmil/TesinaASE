@@ -34,7 +34,6 @@ entity Serial_Booth_PC_Moore is
 			  start: in STD_LOGIC;
 			  pair_of_bits :in STD_LOGIC_VECTOR(1 downto 0);
 			  reset : in STD_LOGIC:='0';
-			  --reset_a : out STD_LOGIC;
 			  en_a : out  STD_LOGIC_VECTOR(0 downto 0);
            en_m : out  STD_LOGIC;
 			  en_q : out STD_LOGIC_VECTOR(0 downto 0);
@@ -46,10 +45,10 @@ end Serial_Booth_PC_Moore;
 
 architecture Behavioral of Serial_Booth_PC_Moore is
 type state is (idle,getseq,init,inits,shift);
-signal current_state, next_state:state;
+signal current_state:state;
 signal a_val,q_val,en_q_val,en_a_val:STD_LOGIC:='0';
 begin
-	synchronous_process: process (clk,reset)
+	change_state: process (clk,reset)
 	begin
 		if (reset = '0') then
 			current_state <= idle;

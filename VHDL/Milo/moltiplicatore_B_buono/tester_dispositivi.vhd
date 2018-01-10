@@ -88,27 +88,45 @@ COMPONENT contatore_modulo_2n
 		);
 	END COMPONENT;
 	signal sel :STD_LOGIC_VECTOR(1 downto 0):=(others=>'0');
+	signal scelta: STD_LOGIC_VECTOR( 3 downto 0):=(others=>'0');
 	signal value,prod:STD_LOGIC_VECTOR(15 downto 0) := (others=>'0');
 	signal s,check_start,check: STD_LOGIC_VECTOR( 0 downto 0) := (others=>'0');
-	signal en_mul1,en_mul2,en_mul,en_c,en_m,en_ck,hit,en_c1,reset_c :STD_LOGIC:='0';
+	signal en_mul1,en_mul2,en_mul,en_c,en_m,en_ck,hit,en_c1,reset_c,reset_m :STD_LOGIC:='0';
 begin
 	deb:debounce port map(clock,button(0),en_c);
+	change: process (clock,en_c)
+	begin
+	if rising_edge(clock) then
+		if en_c='1' then
+			case sel is
+				when "00" => scelta<="0001";
+				when "01" => scelta<="0010";
+				when "10" => scelta<="0100";
+				when "11" => scelta<="1000";
+				when others => scelta<="1111";
+			end case;
+		else
+			scelta<="0000";
+		end if;
+	end if;
+	end process;
+	--reset_m<=(not(sel(1)) and not(sel(0)));
 	selettore: contatore_modulo_2n port map(en_c,'1',not( button(3)),open,sel);
-	en_mul1<=(not(sel(1)) and sel(0));
-	mul1 : latch_d_en port map(clock,not(button(3)),en_mul1,in_byte(7 downto 0),value(7 downto 0));
-	en_mul2<=(sel(1) and not(sel(0)));
-	mul2 : latch_d_en port map(clock,not(button(3)),en_mul2,in_byte(7 downto 0),value(15 downto 8));
-	en_mul<=(sel(1) and sel(0));
+	--en_mul1<=(not(sel(1)) and sel(0));
+	mul1 : latch_d_en port map(clock,not(button(3)),scelta(1),in_byte(7 downto 0),value(7 downto 0));
+	--en_mul2<=(sel(1) and not(sel(0)));
+	mul2 : latch_d_en port map(clock,not(button(3)),scelta(2),in_byte(7 downto 0),value(15 downto 8));
+	--en_mul<=(sel(1) and sel(0));
 	ch_st: latch_d_en generic map (width=>1) port map(clock,not(button(3)),en_ck,check_start,check);
 	counter: contatore_modulo_2n port map(clock,en_c1,reset_c,hit,open);
-	st: process(en_mul,clock,hit)
+	st: process(scelta,clock,hit)
 		begin
 		en_ck<='1';
 		reset_c<='1';
-			if en_mul='1' and hit='0' then
+			if scelta(3)='1' and hit='0' then
 				en_m<='1';
 				en_c1<='1';
-			elsif en_mul='1' and hit='1' then
+			elsif scelta(3)='1' and hit='1' then
 				en_c1<='0';
 				en_m<='0';
 			else
@@ -120,7 +138,7 @@ begin
 	led(6)<=sel(0);
 	led(1)<=s(0);
 	led(2)<=check(0);
-	booth : Booth_multiplier port map(value(7 downto 0),value(15 downto 8),en_m,clock,not(button(3)),s,prod);
+	booth : Booth_multiplier port map(value(7 downto 0),value(15 downto 8),en_m,clock,not(scelta(0)),s,prod);
 	gest_disp : display_top_level port map(clock,button(3),button(2),button(1),prod,in_byte,anodes,cathodes);
 	produ<=prod;
 end Behavioral;

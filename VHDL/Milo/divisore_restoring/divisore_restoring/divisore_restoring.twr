@@ -1,0 +1,111 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 5 -n
+3 -fastpaths -xml divisore_restoring.twx divisore_restoring.ncd -o
+divisore_restoring.twr divisore_restoring.pcf
+
+Design file:              divisore_restoring.ncd
+Physical constraint file: divisore_restoring.pcf
+Device,package,speed:     xc3s100e,tq144,-5 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+dividendo<0>|    0.517(R)|    0.677(R)|clk_BUFGP         |   0.000|
+dividendo<1>|    0.715(R)|    0.519(R)|clk_BUFGP         |   0.000|
+dividendo<2>|    0.510(R)|    0.683(R)|clk_BUFGP         |   0.000|
+dividendo<3>|    0.625(R)|    0.590(R)|clk_BUFGP         |   0.000|
+dividendo<4>|    0.635(R)|    0.582(R)|clk_BUFGP         |   0.000|
+dividendo<5>|    0.617(R)|    0.598(R)|clk_BUFGP         |   0.000|
+dividendo<6>|    0.516(R)|    0.677(R)|clk_BUFGP         |   0.000|
+dividendo<7>|    0.583(R)|    0.624(R)|clk_BUFGP         |   0.000|
+divisore<0> |    0.420(R)|    0.756(R)|clk_BUFGP         |   0.000|
+divisore<1> |    0.382(R)|    0.787(R)|clk_BUFGP         |   0.000|
+divisore<2> |    0.423(R)|    0.754(R)|clk_BUFGP         |   0.000|
+divisore<3> |    0.387(R)|    0.783(R)|clk_BUFGP         |   0.000|
+divisore<4> |    0.655(R)|    0.567(R)|clk_BUFGP         |   0.000|
+divisore<5> |    0.105(R)|    1.007(R)|clk_BUFGP         |   0.000|
+divisore<6> |    0.117(R)|    0.997(R)|clk_BUFGP         |   0.000|
+divisore<7> |   -0.161(R)|    1.220(R)|clk_BUFGP         |   0.000|
+reset       |    2.427(R)|   -0.668(R)|clk_BUFGP         |   0.000|
+start       |    3.772(R)|    0.975(R)|clk_BUFGP         |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+finish      |    7.384(R)|clk_BUFGP         |   0.000|
+quoziente<0>|    7.159(R)|clk_BUFGP         |   0.000|
+quoziente<1>|    7.107(R)|clk_BUFGP         |   0.000|
+quoziente<2>|    7.135(R)|clk_BUFGP         |   0.000|
+quoziente<3>|    7.323(R)|clk_BUFGP         |   0.000|
+quoziente<4>|    7.363(R)|clk_BUFGP         |   0.000|
+quoziente<5>|    7.161(R)|clk_BUFGP         |   0.000|
+quoziente<6>|    7.438(R)|clk_BUFGP         |   0.000|
+quoziente<7>|    7.726(R)|clk_BUFGP         |   0.000|
+resto<0>    |    7.341(R)|clk_BUFGP         |   0.000|
+resto<1>    |    7.371(R)|clk_BUFGP         |   0.000|
+resto<2>    |    6.669(R)|clk_BUFGP         |   0.000|
+resto<3>    |    7.097(R)|clk_BUFGP         |   0.000|
+resto<4>    |    7.152(R)|clk_BUFGP         |   0.000|
+resto<5>    |    6.614(R)|clk_BUFGP         |   0.000|
+resto<6>    |    7.075(R)|clk_BUFGP         |   0.000|
+resto<7>    |    6.617(R)|clk_BUFGP         |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    6.322|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Wed Jan 10 09:38:05 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 333 MB
+
+
+

@@ -1,0 +1,2 @@
+vhdl work "netgen/par/tester_dispositivi_timesim.vhd"
+vhdl work "tester_disp_test.vhd"
