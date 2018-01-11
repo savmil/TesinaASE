@@ -1,0 +1,2 @@
+vhdl work "netgen/map/generazione_valori_RSA_map.vhd"
+vhdl work "generazione_valore_RSA_testbench.vhd"

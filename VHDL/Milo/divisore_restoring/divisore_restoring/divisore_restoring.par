@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-debian::  Wed Jan 10 09:37:53 2018
+debian::  Wed Jan 10 23:53:00 2018
 
 par -w -intstyle ise -ol high -t 1 divisore_restoring_map.ncd
 divisore_restoring.ncd divisore_restoring.pcf 
@@ -55,7 +55,7 @@ Finished initial Timing Analysis.  REAL time: 1 secs
 
 Starting Placer
 Total REAL time at the beginning of Placer: 1 secs 
-Total CPU  time at the beginning of Placer: 1 secs 
+Total CPU  time at the beginning of Placer: 0 secs 
 
 Phase 1.1  Initial Placement Analysis
 Phase 1.1  Initial Placement Analysis (Checksum:1afc) REAL time: 1 secs 
@@ -78,26 +78,26 @@ Phase 6.36  Local Placement Optimization (Checksum:1d56b0e) REAL time: 1 secs
 
 Phase 7.3  Local Placement Optimization
 ........
-Phase 7.3  Local Placement Optimization (Checksum:726d566d) REAL time: 1 secs 
+Phase 7.3  Local Placement Optimization (Checksum:33c5fb5) REAL time: 1 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:726d566d) REAL time: 1 secs 
+Phase 8.5  Local Placement Optimization (Checksum:33c5fb5) REAL time: 1 secs 
 
 Phase 9.8  Global Placement
-...
-Phase 9.8  Global Placement (Checksum:a5784dd1) REAL time: 3 secs 
+.......
+Phase 9.8  Global Placement (Checksum:f566d25a) REAL time: 2 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:a5784dd1) REAL time: 3 secs 
+Phase 10.5  Local Placement Optimization (Checksum:f566d25a) REAL time: 2 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:9f901df0) REAL time: 3 secs 
+Phase 11.18  Placement Optimization (Checksum:f21d47a3) REAL time: 3 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:9f901df0) REAL time: 3 secs 
+Phase 12.5  Local Placement Optimization (Checksum:f21d47a3) REAL time: 3 secs 
 
 Total REAL time to Placer completion: 3 secs 
-Total CPU  time to Placer completion: 3 secs 
+Total CPU  time to Placer completion: 2 secs 
 Writing design to file divisore_restoring.ncd
 
 
@@ -105,13 +105,13 @@ Writing design to file divisore_restoring.ncd
 Starting Router
 
 
-Phase  1  : 624 unrouted;      REAL time: 4 secs 
+Phase  1  : 627 unrouted;      REAL time: 3 secs 
 
-Phase  2  : 583 unrouted;      REAL time: 4 secs 
+Phase  2  : 585 unrouted;      REAL time: 3 secs 
 
-Phase  3  : 140 unrouted;      REAL time: 4 secs 
+Phase  3  : 122 unrouted;      REAL time: 3 secs 
 
-Phase  4  : 159 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
+Phase  4  : 154 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
 Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
@@ -119,7 +119,7 @@ Updating file: divisore_restoring.ncd with current fully routed design.
 
 Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
 
 Updating file: divisore_restoring.ncd with current fully routed design.
 
@@ -130,13 +130,11 @@ Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 6
 Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
 
 Phase 11  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
-
-Phase 12  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
 WARNING:Route:455 - CLK Net:cu/current_state_FSM_FFd6 may have excessive skew because 
       1 CLK pins and 15 NON_CLK pins failed to route using a CLK template.
 
 Total REAL time to Router completion: 6 secs 
-Total CPU time to Router completion: 6 secs 
+Total CPU time to Router completion: 5 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -154,10 +152,10 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|           clk_BUFGP | BUFGMUX_X2Y10| No   |   40 |  0.016     |  0.050      |
+|           clk_BUFGP | BUFGMUX_X2Y10| No   |   41 |  0.021     |  0.054      |
 +---------------------+--------------+------+------+------------+-------------+
 |cu/current_state_FSM |              |      |      |            |             |
-|               _FFd6 |         Local|      |   16 |  0.000     |  1.493      |
+|               _FFd6 |         Local|      |   16 |  0.000     |  1.887      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -177,8 +175,8 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|     6.322ns|     N/A|           0
-  _BUFGP                                    | HOLD        |     0.935ns|            |       0|           0
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     6.528ns|     N/A|           0
+  _BUFGP                                    | HOLD        |     0.834ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -194,10 +192,10 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 7 secs 
+Total REAL time to PAR completion: 6 secs 
 Total CPU time to PAR completion: 6 secs 
 
-Peak Memory Usage:  550 MB
+Peak Memory Usage:  548 MB
 
 Placement: Completed - No errors found.
 Routing: Completed - No errors found.

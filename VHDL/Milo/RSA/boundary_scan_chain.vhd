@@ -46,13 +46,13 @@ end boundary_scan_chain;
 
 architecture Structural of boundary_scan_chain is
 
-	component edge_triggered_d_n is
-		generic(width : natural := 1);
-		Port ( d : in  STD_LOGIC_VECTOR (width-1 downto 0);
-				 clk : in  STD_LOGIC;
-				 reset_n : in  STD_LOGIC;
-				 q : out  STD_LOGIC_VECTOR (width-1 downto 0)
-		);
+	component latch_d_en is
+	generic(width:natural:=1);
+    Port ( clk : in  STD_LOGIC;
+           reset : in  STD_LOGIC;
+           en : in  STD_LOGIC;
+           d : in  STD_LOGIC_VECTOR (width-1 downto 0);
+           q : out  STD_LOGIC_VECTOR (width-1 downto 0));
 	end component;
 	
 	component mux2_1 is 
@@ -66,6 +66,7 @@ architecture Structural of boundary_scan_chain is
 signal q : std_logic_vector(n-1 downto 0) := (others => '0');
 signal x,dinapp : std_logic_vector(n-1 downto 0) := (others => '0');
 signal s_out: std_logic:='0';
+signal scelta,e: std_logic_vector(0 downto 0):="0";
 begin
 	chain_gen: for i in 0 to n-1 generate
 		sc_in: if i=n-1 generate
@@ -76,10 +77,11 @@ begin
 						 X => x(i)
 			);
 			
-		inst_edge_triggered: edge_triggered_d_n generic map(width =>1)
-			Port map( d(0) => x(i),
-						 clk => clk,
-						 reset_n => reset_n,
+		inst_edge_triggered: latch_d_en generic map(width =>1)
+			Port map( clk => clk,
+						 reset => reset_n,
+						 en => '1',
+						 d(0) => x(i),
 						 q(0) => q(i-1)			
 			);
 		end generate sc_in;
@@ -91,12 +93,13 @@ begin
 							X => x(i)
 				);
 			
-			inst_edge_triggered: edge_triggered_d_n generic map(width =>1)
-				Port map( d(0) => x(i),
-							clk => clk,
-							reset_n => reset_n,
-							q(0) => q(i-1)			
-				);
+			inst_edge_triggered: latch_d_en generic map(width =>1)
+				Port map( clk => clk,
+						 reset => reset_n,
+						 en => '1',
+						 d(0) => x(i),
+						 q(0) => q(i-1)			
+			);
 			end generate sc_ch;
 		sc_out: if i=0 generate
 		inst_mux2_1: mux2_1 
@@ -106,15 +109,17 @@ begin
 						 X => x(i)
 			);
 			
-		inst_edge_triggered: edge_triggered_d_n generic map(width =>1)
-			Port map( d(0) => x(i),
-						 clk => clk,
-						 reset_n => reset_n,
+		inst_edge_triggered: latch_d_en generic map(width =>1)
+			Port map( clk => clk,
+						 reset => reset_n,
+						 en => '1',
+						 d(0) => x(i),
 						 q(0) => s_out			
 			);
 		end generate sc_out;
 	end generate;
 	dout<=	q(n-2 downto 0) & s_out;
+	--edge_triggered: latch_d_en generic map (width=>1) port map (clk,reset_n,en(0),"1",scelta);
 	with en select dinapp<=
 		din when '0',
 		q(n-2 downto 0) & s_out when others;

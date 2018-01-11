@@ -64,17 +64,23 @@ COMPONENT funzione_hash_moltiplicazione
 		q : OUT std_logic_vector(width-1 downto 0)
 		);
 	END COMPONENT;
+	COMPONENT latch_d_en
+	generic(width:NATURAL:=32);
+	 Port ( clk : in  STD_LOGIC;
+           reset : in  STD_LOGIC;
+           en : in  STD_LOGIC;
+           d : in  STD_LOGIC_VECTOR (width-1 downto 0);
+           q : out  STD_LOGIC_VECTOR (width-1 downto 0));
+	END COMPONENT;
 	COMPONENT Booth_multiplier
 	 generic (width : NATURAL:=32);
-	PORT(
-		mul1 : IN std_logic_vector(width-1 downto 0);
-		mul2 : IN std_logic_vector(width-1 downto 0);
-		start : IN std_logic;
-		clk : IN std_logic;
-		reset : IN std_logic;    
-		finished : OUT std_logic;
-		product : OUT std_logic_vector(2*width-1 downto 0)
-		);
+    Port ( mul1 : in  STD_LOGIC_VECTOR (width-1 downto 0):=(others=>'0');
+           mul2 : in  STD_LOGIC_VECTOR (width-1 downto 0);
+           start : in  STD_LOGIC;
+			  clk: in STD_LOGIC;
+			  reset : in STD_LOGIC;
+			  fin: out STD_LOGIC_VECTOR(0 downto 0);
+           product : out  STD_LOGIC_VECTOR (2*width-1 downto 0));
 	END COMPONENT;
 	COMPONENT mod_exp
 	PORT(
@@ -90,7 +96,7 @@ COMPONENT funzione_hash_moltiplicazione
 	END COMPONENT;
 	COMPONENT gestore_generatore_valori_RSA
 	PORT(
-		fin_n : IN std_logic;
+		fin_n : IN std_logic_vector(0 downto 0);
 		fin_h : IN std_logic;
 		fin_exp : IN std_logic;
 		start : IN std_logic;
@@ -115,7 +121,8 @@ signal nval,m_e,msg_h,msg_exp,m_e_e,m_e_d,msg_1: STD_LOGIC_VECTOR(31 downto 0) :
 signal exp,e_val,d_val: STD_LOGIC_VECTOR(31 downto 0):=(others=>'0');
 signal pval,qval:STD_LOGIC_VECTOR(31 downto 0):=(others=>'0');
 signal n_prod: STD_LOGIC_VECTOR(63 downto 0):=(others=>'0');
-signal en_n,fin_n,en_h,fin_h,fin_exp,en_exp,en_pr,en_pu,reset_exp:STD_LOGIC;
+signal fin_n: STD_LOGIC_VECTOR(0 downto 0):=(others=>'0');
+signal en_n,en_h,fin_h,fin_exp,en_exp,en_pr,en_pu,reset_exp:STD_LOGIC;
 begin
 	e_val(15 downto 0)<=e;
 	d_val(15 downto 0)<=d;
@@ -123,13 +130,13 @@ begin
 	p_val: edge_triggered_d_n port map (p,clk,reset,pval(7 downto 0));
 	q_val: edge_triggered_d_n port map (q,clk,reset,qval(7 downto 0));
 	n_calc: Booth_multiplier port map (pval,qval,en_n,clk,reset,fin_n,n_prod);
-	pr: edge_triggered_d_n generic map (width=>32) port map (m_e,en_pr,reset,m_e_e);
-	pu:edge_triggered_d_n generic map (width=>32) port map (m_e,en_pu,reset,m_e_d);
+	pr: latch_d_en  port map (clk,reset,en_pr,m_e,m_e_e);
+	pu:latch_d_en port map (clk,reset,en_pu,m_e,m_e_d);
 	hash: funzione_hash_moltiplicazione port map(clk,msg,x"AAAA0000",en_h,reset,"0000010",msg_h,fin_h);
-	n_val: edge_triggered_d_n generic map(width=>32) port map (n_prod(31 downto 0),clk,reset,nval);
+	n_val: edge_triggered_d_n generic map (width=>32) port map (n_prod(31 downto 0),clk,reset,nval);
 	m_e_exp: mod_exp port map (clk,en_exp,reset_exp,msg_exp,exp,nval,fin_exp,m_e);
 	--m_d_exp: mod_exp port map (clk,en_pu,reset,m_e_e,dval,nval,fin_pu,m_d_e);
-	g_g_v_rsa: gestore_generatore_valori_RSA port map(fin_n,fin_h,fin_exp,start,reset,clk,msg_1,m_e,e_val,d_val,msg_exp,exp,en_n,en_h,en_exp,reset_exp,en_pr,en_pu);
+	g_g_v_rsa: gestore_generatore_valori_RSA port map(fin_n,fin_h,fin_exp,start,reset,clk,msg_1,m_e_e,e_val,d_val,msg_exp,exp,en_n,en_h,en_exp,reset_exp,en_pr,en_pu);
 	msg_r<=m_e_d;
 end Behavioral;
 

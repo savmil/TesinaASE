@@ -30,7 +30,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity gestore_generatore_valori_RSA is
-    Port ( fin_n : in  STD_LOGIC;
+    Port ( fin_n : in  STD_LOGIC_VECTOR(0 downto 0);
            fin_h : in  STD_LOGIC;
            fin_exp : in  STD_LOGIC;
 			  start: in STD_LOGIC;
@@ -51,24 +51,48 @@ entity gestore_generatore_valori_RSA is
 end gestore_generatore_valori_RSA;
 
 architecture Behavioral of gestore_generatore_valori_RSA is
-type state is (idle,calc_n,wait_n,hashing,wait_hashing,calc_pr,wait_pr,calc_pu,wait_pu);
-signal current_state, next_state:state;
+type state is (idle,calc_n,wait_n,hashing,wait_hashing,calc_pr,wait_pr,calc_pu,wait_pu,res);
+signal current_state:state;
 begin
-	synchronous_process: process (clk)
+	change_state: process (clk,reset)
 	begin
-		if rising_edge(clk) then	
 		if (reset = '0') then
-				current_state <= idle;
-			else
-				current_state <= next_state;
-		end if;
+			current_state <= idle;
+		elsif rising_edge(clk) then
+		case current_state is
+			when idle=>	if start='1' then
+								current_state <= calc_n;
+							end if;
+			when calc_n=> current_state<=wait_n;
+			when wait_n=> if fin_n(0)='1' then
+									current_state<=hashing;
+								 end if;
+			when hashing=> current_state<=wait_hashing;
+			when wait_hashing=> if fin_h='1' then
+											current_state<=calc_pr;
+									  end if;
+			when calc_pr => current_state<=wait_pr;
+			when wait_pr => if fin_exp='1' then
+									current_state<=res;
+								 end if;
+			when res => current_state<=calc_pu;
+			when calc_pu => current_state<=wait_pu;
+			when wait_pu => if fin_exp='1' then
+									current_state<=idle;
+								 end if;		
+		end case;
 		end if;
 	end process;
 
 
-	gestore_mul: process (current_state,start,fin_n,fin_h,exp_e,exp_d,msg,fin_exp,msg_pr)
+	gestore_RSA: process (current_state,start,fin_n,fin_h,exp_e,exp_d,msg,fin_exp,msg_pr)
 		begin
 		reset_exp<='1';
+		en_n<='0';
+		en_h<='0';
+		en_pr<='0';
+		en_pu<='0';
+		en_exp<='0';
 			case current_state is
 				when idle =>
 					en_n<='0';
@@ -76,49 +100,51 @@ begin
 					en_pr<='0';
 					en_pu<='0';
 					en_exp<='0';
-					if start='1' then
-						next_state<=calc_n;
-					end if;
+--					if start='1' then
+--						next_state<=calc_n;
+--					end if;
 				when calc_n =>
 					en_n<='1';
-					next_state<=wait_n;
+					--next_state<=wait_n;
 				when wait_n =>
 					en_n<='0';
-					if fin_n='1' then
-						next_state<=hashing;
-					end if;
+					--if fin_n(0)='1' then
+						--next_state<=hashing;
+					--end if;
 				when hashing =>
 					en_h<='1';
-					next_state<=wait_hashing;
+					--next_state<=wait_hashing;
 				when wait_hashing =>
 					en_h<='0';
-					if fin_h='1' then
-						next_state<=calc_pr;
-					end if;
+--					if fin_h='1' then
+--						next_state<=calc_pr;
+--					end if;
 					
 				when calc_pr=>
 					exp<=exp_e;
 					msg_exp<=msg;
 					en_exp<='1';
-					next_state<=wait_pr;
+					--next_state<=wait_pr;
 				when wait_pr =>
 					en_exp<='0';
 					if fin_exp='1' then
 						en_pr<='1';
-						reset_exp<='0';
-						next_state<=calc_pu;
+						
+						--next_state<=res;
 					end if;
+				when res=>reset_exp<='0';
+							 --next_state<=calc_pu;
 				when calc_pu=>
 					exp<=exp_d;
 					msg_exp<=msg_pr;
 					en_pr<='0';
 					en_exp<='1';
-					next_state<=wait_pu;
+					--next_state<=wait_pu;
 				when wait_pu=>
 					en_exp<='0';
 					if fin_exp='1' then
 						en_pu<='1';
-						next_state<=idle;
+						--next_state<=idle;
 					end if;		
 
 			end case;

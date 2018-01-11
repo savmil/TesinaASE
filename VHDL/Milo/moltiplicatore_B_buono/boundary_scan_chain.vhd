@@ -36,7 +36,7 @@ entity boundary_scan_chain is
 			  scan_in : in STD_LOGIC;
            clk : in  STD_LOGIC;
 			  reset_n : in STD_LOGIC;
-			  en: in STD_LOGIC_VECTOR(0 downto 0);
+			  en: in STD_LOGIC;
            din : in  STD_LOGIC_VECTOR (n-1 downto 0);
            scan_en : in  STD_LOGIC;
            scan_out : out  STD_LOGIC;
@@ -121,7 +121,7 @@ begin
 	dout<=	q(n-2 downto 0) & s_out;
 	--edge_triggered: latch_d_en generic map (width=>1) port map (clk,reset_n,en(0),"1",scelta);
 	with en select dinapp<=
-		din when "0",
+		din when '0',
 		q(n-2 downto 0) & s_out when others;
 	scan_out<=s_out;
 end Structural;

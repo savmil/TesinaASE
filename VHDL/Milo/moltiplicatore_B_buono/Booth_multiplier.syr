@@ -4,14 +4,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.04 secs
  
 --> 
@@ -118,8 +118,7 @@ Architecture dataflow of Entity mux2_1 is up to date.
 Compiling vhdl file "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/latch_d_en.vhd" in Library work.
 Architecture behavioral of Entity latch_d_en is up to date.
 Compiling vhdl file "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/Serial_Booth_PC_Moore.vhd" in Library work.
-Entity <serial_booth_pc_moore> compiled.
-Entity <serial_booth_pc_moore> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity serial_booth_pc_moore is up to date.
 Compiling vhdl file "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/contatore_modulo_4.vhd" in Library work.
 Architecture behavioral of Entity contatore_modulo_2n is up to date.
 Compiling vhdl file "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/boundary_scan_chain.vhd" in Library work.
@@ -127,7 +126,8 @@ Architecture structural of Entity boundary_scan_chain is up to date.
 Compiling vhdl file "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/add_sub.vhd" in Library work.
 Architecture structural of Entity add_sub is up to date.
 Compiling vhdl file "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/Booth_multiplier.vhd" in Library work.
-Architecture structural of Entity booth_multiplier is up to date.
+Entity <booth_multiplier> compiled.
+Entity <booth_multiplier> (Architecture <structural>) compiled.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -250,9 +250,9 @@ WARNING:Xst:1780 - Signal <a_val> is never used or assigned. This unconnected si
     | Encoding           | automatic                                      |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-WARNING:Xst:737 - Found 1-bit latch for signal <en_a_0>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <en_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
-WARNING:Xst:737 - Found 1-bit latch for signal <en_q_0>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <en_a>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
     Summary:
 	inferred   1 Finite State Machine(s).
@@ -505,12 +505,12 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
----------------------------------------+------------------------+-------+
-Clock Signal                           | Clock buffer(FF name)  | Load  |
----------------------------------------+------------------------+-------+
-clk                                    | BUFGP                  | 51    |
-cu/en_a_0_not0001(cu/en_a_0_not00011:O)| NONE(*)(cu/en_a_0)     | 2     |
----------------------------------------+------------------------+-------+
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 51    |
+cu/en_q_not0001(cu/en_q_not00011:O)| NONE(*)(cu/en_q)       | 2     |
+-----------------------------------+------------------------+-------+
 (*) This 1 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
@@ -605,13 +605,13 @@ Offset:              4.672ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 3.44 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 3.42 secs
  
 --> 
 
 
-Total memory usage is 515836 kilobytes
+Total memory usage is 515828 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   17 (   0 filtered)

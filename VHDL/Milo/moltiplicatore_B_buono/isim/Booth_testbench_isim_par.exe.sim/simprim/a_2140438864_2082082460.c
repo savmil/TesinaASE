@@ -536,27 +536,6 @@ extern void simprim_a_2600439023_2082082460_init()
 	xsi_register_executes(pe);
 }
 
-extern void simprim_a_0489946780_2082082460_init()
-{
-	static char *pe[] = {(void *)simprim_a_2140438864_2082082460_p_0,(void *)simprim_a_2140438864_2082082460_p_1};
-	xsi_register_didat("simprim_a_0489946780_2082082460", "isim/Booth_testbench_isim_par.exe.sim/simprim/a_0489946780_2082082460.didat");
-	xsi_register_executes(pe);
-}
-
-extern void simprim_a_0142194163_2082082460_init()
-{
-	static char *pe[] = {(void *)simprim_a_2140438864_2082082460_p_0,(void *)simprim_a_2140438864_2082082460_p_1};
-	xsi_register_didat("simprim_a_0142194163_2082082460", "isim/Booth_testbench_isim_par.exe.sim/simprim/a_0142194163_2082082460.didat");
-	xsi_register_executes(pe);
-}
-
-extern void simprim_a_0879846786_2082082460_init()
-{
-	static char *pe[] = {(void *)simprim_a_2140438864_2082082460_p_0,(void *)simprim_a_2140438864_2082082460_p_1};
-	xsi_register_didat("simprim_a_0879846786_2082082460", "isim/Booth_testbench_isim_par.exe.sim/simprim/a_0879846786_2082082460.didat");
-	xsi_register_executes(pe);
-}
-
 extern void simprim_a_1073211267_2082082460_init()
 {
 	static char *pe[] = {(void *)simprim_a_2140438864_2082082460_p_0,(void *)simprim_a_2140438864_2082082460_p_1};
@@ -606,17 +585,24 @@ extern void simprim_a_1755865367_2082082460_init()
 	xsi_register_executes(pe);
 }
 
-extern void simprim_a_4197341195_2082082460_init()
+extern void simprim_a_0489946780_2082082460_init()
 {
 	static char *pe[] = {(void *)simprim_a_2140438864_2082082460_p_0,(void *)simprim_a_2140438864_2082082460_p_1};
-	xsi_register_didat("simprim_a_4197341195_2082082460", "isim/Booth_testbench_isim_par.exe.sim/simprim/a_4197341195_2082082460.didat");
+	xsi_register_didat("simprim_a_0489946780_2082082460", "isim/Booth_testbench_isim_par.exe.sim/simprim/a_0489946780_2082082460.didat");
 	xsi_register_executes(pe);
 }
 
-extern void simprim_a_0518386524_2082082460_init()
+extern void simprim_a_0142194163_2082082460_init()
 {
 	static char *pe[] = {(void *)simprim_a_2140438864_2082082460_p_0,(void *)simprim_a_2140438864_2082082460_p_1};
-	xsi_register_didat("simprim_a_0518386524_2082082460", "isim/Booth_testbench_isim_par.exe.sim/simprim/a_0518386524_2082082460.didat");
+	xsi_register_didat("simprim_a_0142194163_2082082460", "isim/Booth_testbench_isim_par.exe.sim/simprim/a_0142194163_2082082460.didat");
+	xsi_register_executes(pe);
+}
+
+extern void simprim_a_0879846786_2082082460_init()
+{
+	static char *pe[] = {(void *)simprim_a_2140438864_2082082460_p_0,(void *)simprim_a_2140438864_2082082460_p_1};
+	xsi_register_didat("simprim_a_0879846786_2082082460", "isim/Booth_testbench_isim_par.exe.sim/simprim/a_0879846786_2082082460.didat");
 	xsi_register_executes(pe);
 }
 
@@ -631,6 +617,20 @@ extern void simprim_a_2411054976_2082082460_init()
 {
 	static char *pe[] = {(void *)simprim_a_2140438864_2082082460_p_0,(void *)simprim_a_2140438864_2082082460_p_1};
 	xsi_register_didat("simprim_a_2411054976_2082082460", "isim/Booth_testbench_isim_par.exe.sim/simprim/a_2411054976_2082082460.didat");
+	xsi_register_executes(pe);
+}
+
+extern void simprim_a_4197341195_2082082460_init()
+{
+	static char *pe[] = {(void *)simprim_a_2140438864_2082082460_p_0,(void *)simprim_a_2140438864_2082082460_p_1};
+	xsi_register_didat("simprim_a_4197341195_2082082460", "isim/Booth_testbench_isim_par.exe.sim/simprim/a_4197341195_2082082460.didat");
+	xsi_register_executes(pe);
+}
+
+extern void simprim_a_0518386524_2082082460_init()
+{
+	static char *pe[] = {(void *)simprim_a_2140438864_2082082460_p_0,(void *)simprim_a_2140438864_2082082460_p_1};
+	xsi_register_didat("simprim_a_0518386524_2082082460", "isim/Booth_testbench_isim_par.exe.sim/simprim/a_0518386524_2082082460.didat");
 	xsi_register_executes(pe);
 }
 

@@ -1,0 +1,21 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /media/sf_ASE/VHDL/Milo/divisore_restoring/divisore_restoring/Divisore_restoring_testbench_isim_par.exe -prj /media/sf_ASE/VHDL/Milo/divisore_restoring/divisore_restoring/Divisore_restoring_testbench_par.prj work.Divisore_restoring_testbench 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Determining compilation order of HDL files
+Parsing VHDL file "/media/sf_ASE/VHDL/Milo/divisore_restoring/divisore_restoring/Divisore_restoring_testbench.vhd" into library work
+Starting static elaboration
+WARNING:HDLCompiler:89 - "/media/sf_ASE/VHDL/Milo/divisore_restoring/divisore_restoring/Divisore_restoring_testbench.vhd" Line 74: <divisore_restoring> remains a black-box since it has no binding entity.
+Completed static elaboration
+Fuse Memory Usage: 94080 KB
+Fuse CPU Usage: 1080 ms
+WARNING:Simulator:648 - "/media/sf_ASE/VHDL/Milo/divisore_restoring/divisore_restoring/Divisore_restoring_testbench.vhd" Line 74. Instance divisore_restoring is unbound
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture behavior of entity divisore_restoring_testbench
+Time Resolution for simulation is 1ps.
+Compiled 3 VHDL Units
+Built simulation executable /media/sf_ASE/VHDL/Milo/divisore_restoring/divisore_restoring/Divisore_restoring_testbench_isim_par.exe
+Fuse Memory Usage: 102700 KB
+Fuse CPU Usage: 1110 ms
+GCC CPU Usage: 120 ms

@@ -36,9 +36,10 @@ entity divisore_restoring is
            start : in  STD_LOGIC;
 			  clk: in STD_LOGIC;
 			  reset : in STD_LOGIC;
-			  finish: out STD_LOGIC;
-           quoziente : out  STD_LOGIC_VECTOR (width-1 downto 0);
-			  resto : out  STD_LOGIC_VECTOR (width-1 downto 0));
+			  finish: out STD_LOGIC_VECTOR(0 downto 0);
+           --quoziente : out  STD_LOGIC_VECTOR (width-1 downto 0);
+			  --resto : out  STD_LOGIC_VECTOR (width-1 downto 0)
+			  res:out STD_LOGIC_VECTOR(2*width-1 downto 0));
 end divisore_restoring;
 
 architecture Structural of divisore_restoring is
@@ -63,13 +64,14 @@ COMPONENT contatore_modulo_2n
 		output : OUT std_logic_vector(width-1 downto 0)
 		);
 	END COMPONENT;
-	COMPONENT latch_d
+	COMPONENT latch_d_en
 	generic(width: NATURAL:=64);
 	PORT(
-		input : IN std_logic_vector(width-1 downto 0);
-		enable : IN std_logic;
-		reset : IN std_logic;          
-		output : OUT std_logic_vector(width-1 downto 0)
+		clk : IN std_logic;
+		reset : IN std_logic;
+		en : IN std_logic;
+		d : IN std_logic_vector(width-1 downto 0);          
+		q : OUT std_logic_vector(width-1 downto 0)
 		);
 	END COMPONENT;
 	COMPONENT serial_div_restoring
@@ -77,7 +79,7 @@ COMPONENT contatore_modulo_2n
 			  clk: in STD_LOGIC;
 			  start: in STD_LOGIC;
 			  neg : in STD_LOGIC; 
-			  --set_q :out STD_LOGIC;
+			  reset: in STD_LOGIC;
 			  en_div:out STD_LOGIC;
 			  add_sub : out  STD_LOGIC;
            en_shift : out  STD_LOGIC;
@@ -85,7 +87,7 @@ COMPONENT contatore_modulo_2n
 			  en_r : out STD_LOGIC;
 			  en_q : out STD_LOGIC;
 			  bit_q: out STD_LOGIC;
-			  finish: out STD_LOGIC;
+			  en_res: out STD_LOGIC;
            stop : in  STD_LOGIC);
 	END COMPONENT;
 	component shifter_a_sinistra 
@@ -101,19 +103,28 @@ COMPONENT contatore_modulo_2n
            dout : out  STD_LOGIC_VECTOR (n-1 downto 0)
 	 );
 	end component;
-	signal div,suma,sum1,quoz:STD_LOGIC_VECTOR(width-1 downto 0):=(others=>'0');
-	signal en_div,en_c,en_r,en_q,en_sh,bit_shift,a_s,stop,bit_q1,fin:STD_LOGIC:='0';
+	signal div,suma,sum1,quoz,quoz_1,rest:STD_LOGIC_VECTOR(width-1 downto 0):=(others=>'0');
+	signal q_r:STD_LOGIC_VECTOR(2*width-1 downto 0):=(others=>'0');
+	signal fint_stop: STD_LOGIC_VECTOR( 0 downto 0):="0";
+	signal en_div,en_c,en_r,en_q,en_sh,bit_shift,a_s,stop,bit_q1,en_res:STD_LOGIC:='0';
 begin
-	cu: serial_div_restoring port map(clk,start,sum1(width-1),en_div,a_s,en_sh,en_c,en_r,en_q,bit_q1,fin,stop);
+	cu: serial_div_restoring port map(clk,start,sum1(width-1),reset,en_div,a_s,en_sh,en_c,en_r,en_q,bit_q1,en_res,stop);
 	operation_counter: contatore_modulo_2n port map(clk,en_c,reset,stop,open);
 	remainder: shifter_a_sinistra port map(bit_shift,clk,reset,en_r,sum1,en_sh,open,suma);
-	divisor: latch_d port map(divisore,en_div,reset,div);
+	divisor: latch_d_en port map(clk,reset,en_div,divisore,div);
 	quotient: shifter_a_sinistra port map(bit_q1,clk,reset,en_q,dividendo,en_sh,bit_shift,quoz);
 	gestore_shift: add_sub port map(suma,div,a_s,sum1,open,open);
-	with bit_q1 select resto <=
+	with bit_q1 select rest<= -- not perchè se risulta sottr. positivo 
 		suma when '0',
 		sum1 when others;
-	quoziente<=quoz(width-2 downto 0) & bit_q1;
-	finish<=fin;
+	quoz_1<=quoz(width-2 downto 0) & bit_q1;
+	q_r<=quoz_1& rest;
+	q_r_l:latch_d_en generic map(width=>128) port map(clk,reset,en_res,q_r,res); 
+	--r:latch_d_en port map(clk,reset,en_res,rest,resto); 
+	f_s:latch_d_en generic map (width=>1) port map(clk,reset,en_res,fint_stop,finish); 
+	fint_stop(0)<=stop;
+	-- bit q1 mi indica se la sottrazione mi ha dato valore positivo o negativo, essendo l' ultima operazione una sottrazione non salvo
+	--il valore nel registro, prendo valore sottrattore come resto se questo è positivo, perchè il resto cambia, altrimenti quello della
+	--iterazione precedente nel registrp
 end Structural;
 

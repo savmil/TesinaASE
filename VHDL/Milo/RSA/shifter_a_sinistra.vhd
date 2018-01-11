@@ -46,14 +46,15 @@ end shifter_a_sinistra;
 
 architecture Structural of shifter_a_sinistra is
 
-	component edge_triggered_d_n is
-		generic(width : natural := 1);
-		Port ( d : in  STD_LOGIC_VECTOR (width-1 downto 0);
-				 clk : in  STD_LOGIC;
-				 reset_n : in  STD_LOGIC;
-				 q : out  STD_LOGIC_VECTOR (width-1 downto 0)
-		);
+	component latch_d_en is
+	generic(width:natural:=1);
+    Port ( clk : in  STD_LOGIC;
+           reset : in  STD_LOGIC;
+           en : in  STD_LOGIC;
+           d : in  STD_LOGIC_VECTOR (width-1 downto 0);
+           q : out  STD_LOGIC_VECTOR (width-1 downto 0));
 	end component;
+
 	
 	component mux2_1 is 
 		Port ( SEL : in STD_LOGIC;
@@ -76,12 +77,14 @@ begin
 						 X => x(i)
 			);
 			
-		inst_edge_triggered: edge_triggered_d_n generic map(width =>1)
-			Port map( d(0) => x(i),
-						 clk => clk,
-						 reset_n => reset_n,
+		inst_edge_triggered: latch_d_en generic map(width =>1)
+			Port map( clk => clk,
+						 reset => reset_n,
+						 en => '1',
+						 d(0) => x(i),
 						 q(0) => q(i)			
 			);
+
 		end generate sc_in;
 		sc_ch: if i>0 and i <n-1 generate
 			inst_mux2_1: mux2_1 
@@ -91,12 +94,14 @@ begin
 							X => x(i)
 				);
 			
-			inst_edge_triggered: edge_triggered_d_n generic map(width =>1)
-				Port map( d(0) => x(i),
-							clk => clk,
-							reset_n => reset_n,
-							q(0) => q(i)			
-				);
+			inst_edge_triggered: latch_d_en generic map(width =>1)
+			Port map( clk => clk,
+						 reset => reset_n,
+						 en => '1',
+						 d(0) => x(i),
+						 q(0) => q(i)			
+			);
+
 			end generate sc_ch;
 		sc_out: if i=n-1 generate
 		inst_mux2_1: mux2_1 
@@ -106,12 +111,14 @@ begin
 						 X => x(i)
 			);
 			
-		inst_edge_triggered: edge_triggered_d_n generic map(width =>1)
-			Port map( d(0) => x(i),
-						 clk => clk,
-						 reset_n => reset_n,
+		inst_edge_triggered: latch_d_en generic map(width =>1)
+			Port map( clk => clk,
+						 reset => reset_n,
+						 en => '1',
+						 d(0) => x(i),
 						 q(0) => s_out			
 			);
+
 		end generate sc_out;
 	end generate;
 	dout<=	s_out & q(n-2 downto 0);

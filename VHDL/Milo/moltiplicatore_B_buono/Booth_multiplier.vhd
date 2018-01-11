@@ -77,9 +77,9 @@ COMPONENT contatore_modulo_2n
 			  start: in STD_LOGIC;
 			  pair_of_bits :in STD_LOGIC_VECTOR(1 downto 0);
 			  reset : in STD_LOGIC:='0';
-			  en_a : out  STD_LOGIC_VECTOR(0 downto 0);
+			  en_a : out  STD_LOGIC;
            en_m : out  STD_LOGIC;
-			  en_q : out STD_LOGIC_VECTOR(0 downto 0);
+			  en_q : out STD_LOGIC;
 			  en_c : out STD_LOGIC;
            en_shift : out  STD_LOGIC;
 			  en_p1 : out STD_LOGIC;
@@ -102,7 +102,7 @@ COMPONENT contatore_modulo_2n
 			  scan_in : in STD_LOGIC;
            clk : in  STD_LOGIC;
 			  reset_n : in STD_LOGIC;
-			  en: in STD_LOGIC_VECTOR(0 downto 0);
+			  en: in STD_LOGIC;
            din : in  STD_LOGIC_VECTOR (n-1 downto 0);
            scan_en : in  STD_LOGIC;
            scan_out : out  STD_LOGIC;
@@ -113,8 +113,8 @@ COMPONENT contatore_modulo_2n
 	signal moltiplicatore,molt2,suma,sum1:STD_LOGIC_VECTOR(width-1 downto 0):=(others=>'0');
 	signal prod:STD_LOGIC_VECTOR(2*width-1 downto 0):=(others=>'0');
 	signal fint_stop: STD_LOGIC_VECTOR(0 downto 0);
-	signal stop,en_m,en_c,en_sh,en_p1,bit_shift:STD_LOGIC:='0';
-	signal en_q,en_a:STD_LOGIC_VECTOR(0 downto 0):="0";
+	signal stop,en_m,en_c,en_sh,en_p1,bit_shift,en_q,en_a:STD_LOGIC:='0';
+	--signal en_q,en_a:STD_LOGIC_VECTOR(0 downto 0):="0";
 begin
 	-- conto per il numero di bit, abilito i registri, vedo i bit, 00 11 solo shift, 01 - mul2 poi prodotto shift
 	--10 + mul2 shift

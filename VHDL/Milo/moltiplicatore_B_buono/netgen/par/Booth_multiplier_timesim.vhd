@@ -7,7 +7,7 @@
 -- \   \   \/     Version: P.20131013
 --  \   \         Application: netgen
 --  /   /         Filename: Booth_multiplier_timesim.vhd
--- /___/   /\     Timestamp: Wed Jan 10 11:03:08 2018
+-- /___/   /\     Timestamp: Wed Jan 10 20:20:20 2018
 -- \   \  /  \ 
 --  \___\/\___\
 --             
@@ -54,6 +54,7 @@ end Booth_multiplier;
 architecture Structure of Booth_multiplier is
   signal a_chain_gen_4_sc_ch_inst_edge_triggered_q_0_Q : STD_LOGIC; 
   signal cu_current_state_FSM_FFd2_612 : STD_LOGIC; 
+  signal cu_en_a_613 : STD_LOGIC; 
   signal a_chain_gen_5_sc_ch_inst_edge_triggered_q_0_Q : STD_LOGIC; 
   signal N31_0 : STD_LOGIC; 
   signal N30_0 : STD_LOGIC; 
@@ -62,6 +63,7 @@ architecture Structure of Booth_multiplier is
   signal N10 : STD_LOGIC; 
   signal q_chain_gen_5_sc_ch_inst_edge_triggered_q_0_Q : STD_LOGIC; 
   signal q_chain_gen_4_sc_ch_inst_edge_triggered_q_0_Q : STD_LOGIC; 
+  signal cu_en_q_622 : STD_LOGIC; 
   signal mul2_3_IBUF_623 : STD_LOGIC; 
   signal a_chain_gen_2_sc_ch_inst_edge_triggered_q_0_Q : STD_LOGIC; 
   signal q_chain_gen_1_sc_ch_inst_edge_triggered_q_0_Q : STD_LOGIC; 
@@ -119,11 +121,11 @@ architecture Structure of Booth_multiplier is
   signal N55_0 : STD_LOGIC; 
   signal operation_counter_hit_716 : STD_LOGIC; 
   signal cu_current_state_FSM_FFd5_717 : STD_LOGIC; 
-  signal cu_en_a_0_not0001_0 : STD_LOGIC; 
-  signal q_chain_gen_0_sc_out_inst_edge_triggered_q_0_Q : STD_LOGIC; 
+  signal cu_en_q_not0001_0 : STD_LOGIC; 
   signal a_chain_gen_7_sc_in_inst_mux2_1_X84_0 : STD_LOGIC; 
-  signal N01 : STD_LOGIC; 
+  signal q_chain_gen_0_sc_out_inst_edge_triggered_q_0_Q : STD_LOGIC; 
   signal N4 : STD_LOGIC; 
+  signal N01 : STD_LOGIC; 
   signal N52 : STD_LOGIC; 
   signal N14 : STD_LOGIC; 
   signal q_chain_gen_3_sc_ch_inst_edge_triggered_q_0_Q : STD_LOGIC; 
@@ -295,24 +297,24 @@ architecture Structure of Booth_multiplier is
   signal cu_current_state_FSM_FFd3_In : STD_LOGIC; 
   signal cu_current_state_FSM_FFd4_SRINVNOT : STD_LOGIC; 
   signal cu_current_state_FSM_FFd4_CLKINV_1954 : STD_LOGIC; 
-  signal cu_en_a_0_not0001 : STD_LOGIC; 
+  signal cu_en_q_not0001 : STD_LOGIC; 
   signal cu_current_state_FSM_FFd5_DYMUX_2006 : STD_LOGIC; 
   signal cu_current_state_FSM_FFd5_In : STD_LOGIC; 
   signal cu_current_state_FSM_FFd5_CLKINV_1997 : STD_LOGIC; 
+  signal a_chain_gen_7_sc_in_inst_mux2_1_X84_2048 : STD_LOGIC; 
+  signal cu_en_q_DYMUX_2039 : STD_LOGIC; 
+  signal cu_en_q_mux0001 : STD_LOGIC; 
+  signal cu_en_q_CLKINVNOT : STD_LOGIC; 
   signal gestore_shift_b_add_sub_2_Q : STD_LOGIC; 
-  signal q_chain_gen_0_sc_out_inst_edge_triggered_q_0_DYMUX_2040 : STD_LOGIC; 
-  signal q_chain_gen_0_sc_out_inst_edge_triggered_q_0_CLKINV_2031 : STD_LOGIC; 
-  signal a_chain_gen_7_sc_in_inst_mux2_1_X84_2083 : STD_LOGIC; 
-  signal cu_en_q_0_DYMUX_2074 : STD_LOGIC; 
-  signal cu_en_q_0_mux0001 : STD_LOGIC; 
-  signal cu_en_q_0_CLKINVNOT : STD_LOGIC; 
-  signal cu_en_a_0_DXMUX_2112 : STD_LOGIC; 
-  signal cu_en_a_0_mux0003_2109 : STD_LOGIC; 
-  signal N01_pack_1 : STD_LOGIC; 
-  signal cu_en_a_0_CLKINVNOT : STD_LOGIC; 
-  signal q_chain_gen_7_sc_ch_inst_edge_triggered_q_0_DXMUX_2144 : STD_LOGIC; 
+  signal q_chain_gen_0_sc_out_inst_edge_triggered_q_0_DYMUX_2070 : STD_LOGIC; 
+  signal q_chain_gen_0_sc_out_inst_edge_triggered_q_0_CLKINV_2061 : STD_LOGIC; 
+  signal q_chain_gen_7_sc_ch_inst_edge_triggered_q_0_DXMUX_2114 : STD_LOGIC; 
   signal N4_pack_2 : STD_LOGIC; 
-  signal q_chain_gen_7_sc_ch_inst_edge_triggered_q_0_CLKINV_2126 : STD_LOGIC; 
+  signal q_chain_gen_7_sc_ch_inst_edge_triggered_q_0_CLKINV_2096 : STD_LOGIC; 
+  signal cu_en_a_DXMUX_2147 : STD_LOGIC; 
+  signal cu_en_a_mux0003_2144 : STD_LOGIC; 
+  signal N01_pack_1 : STD_LOGIC; 
+  signal cu_en_a_CLKINVNOT : STD_LOGIC; 
   signal a_chain_gen_7_sc_in_inst_edge_triggered_q_0_DXMUX_2179 : STD_LOGIC; 
   signal a_x_7_Q : STD_LOGIC; 
   signal N52_pack_1 : STD_LOGIC; 
@@ -366,9 +368,6 @@ architecture Structure of Booth_multiplier is
   signal prod1_q_9_CEINV_2511 : STD_LOGIC; 
   signal q_chain_gen_5_sc_ch_inst_edge_triggered_q_0_FFX_RSTAND_1021 : STD_LOGIC; 
   signal q_chain_gen_4_sc_ch_inst_edge_triggered_q_0_FFX_RSTAND_785 : STD_LOGIC; 
-  signal a_chain_gen_0_sc_out_inst_edge_triggered_q_0_FFX_RSTAND_1617 : STD_LOGIC; 
-  signal a_chain_gen_1_sc_ch_inst_edge_triggered_q_0_FFX_RSTAND_1652 : STD_LOGIC; 
-  signal q_chain_gen_1_sc_ch_inst_edge_triggered_q_0_FFX_RSTAND_1687 : STD_LOGIC; 
   signal q_chain_gen_8_sc_in_inst_edge_triggered_q_0_FFX_RSTAND_1108 : STD_LOGIC; 
   signal q_chain_gen_6_sc_ch_inst_edge_triggered_q_0_FFX_RSTAND_1171 : STD_LOGIC; 
   signal a_chain_gen_2_sc_ch_inst_edge_triggered_q_0_FFX_RSTAND_1520 : STD_LOGIC; 
@@ -376,17 +375,18 @@ architecture Structure of Booth_multiplier is
   signal cu_current_state_FSM_FFd5_FFY_SET : STD_LOGIC; 
   signal a_chain_gen_4_sc_ch_inst_edge_triggered_q_0_FFX_RSTAND_2314 : STD_LOGIC; 
   signal q_chain_gen_3_sc_ch_inst_edge_triggered_q_0_FFX_RSTAND_2373 : STD_LOGIC; 
-  signal q_chain_gen_0_sc_out_inst_edge_triggered_q_0_FFY_RSTAND_2045 : STD_LOGIC; 
-  signal q_chain_gen_7_sc_ch_inst_edge_triggered_q_0_FFX_RSTAND_2149 : STD_LOGIC; 
+  signal a_chain_gen_0_sc_out_inst_edge_triggered_q_0_FFX_RSTAND_1617 : STD_LOGIC; 
+  signal a_chain_gen_1_sc_ch_inst_edge_triggered_q_0_FFX_RSTAND_1652 : STD_LOGIC; 
+  signal q_chain_gen_1_sc_ch_inst_edge_triggered_q_0_FFX_RSTAND_1687 : STD_LOGIC; 
   signal a_chain_gen_7_sc_in_inst_edge_triggered_q_0_FFX_RSTAND_2184 : STD_LOGIC; 
   signal q_chain_gen_2_sc_ch_inst_edge_triggered_q_0_FFX_RSTAND_2279 : STD_LOGIC; 
+  signal q_chain_gen_0_sc_out_inst_edge_triggered_q_0_FFY_RSTAND_2075 : STD_LOGIC; 
+  signal q_chain_gen_7_sc_ch_inst_edge_triggered_q_0_FFX_RSTAND_2119 : STD_LOGIC; 
   signal f_q_0_FFY_RSTAND_2446 : STD_LOGIC; 
   signal VCC : STD_LOGIC; 
   signal GND : STD_LOGIC; 
-  signal NlwInverterSignal_cu_en_q_0_CLK : STD_LOGIC; 
-  signal NlwInverterSignal_cu_en_a_0_CLK : STD_LOGIC; 
-  signal cu_en_a : STD_LOGIC_VECTOR ( 0 downto 0 ); 
-  signal cu_en_q : STD_LOGIC_VECTOR ( 0 downto 0 ); 
+  signal NlwInverterSignal_cu_en_q_CLK : STD_LOGIC; 
+  signal NlwInverterSignal_cu_en_a_CLK : STD_LOGIC; 
   signal m_q : STD_LOGIC_VECTOR ( 7 downto 0 ); 
   signal operation_counter_count : STD_LOGIC_VECTOR ( 2 downto 0 ); 
   signal prod1_q : STD_LOGIC_VECTOR ( 15 downto 0 ); 
@@ -460,7 +460,7 @@ begin
       ADR0 => VCC,
       ADR1 => q_chain_gen_4_sc_ch_inst_edge_triggered_q_0_Q,
       ADR2 => mul2_3_IBUF_623,
-      ADR3 => cu_en_q(0),
+      ADR3 => cu_en_q_622,
       O => N10_pack_2
     );
   N68_XUSED : X_BUF
@@ -799,7 +799,7 @@ begin
       ADR0 => q_chain_gen_5_sc_ch_inst_edge_triggered_q_0_Q,
       ADR1 => VCC,
       ADR2 => mul2_4_IBUF_654,
-      ADR3 => cu_en_q(0),
+      ADR3 => cu_en_q_622,
       O => N8_pack_2
     );
   prod1_q_13_DXMUX : X_BUF
@@ -911,7 +911,7 @@ begin
     )
     port map (
       ADR0 => mul2_7_IBUF_664,
-      ADR1 => cu_en_q(0),
+      ADR1 => cu_en_q_622,
       ADR2 => VCC,
       ADR3 => q_chain_gen_8_sc_in_inst_edge_triggered_q_0_Q,
       O => N2_pack_2
@@ -995,7 +995,7 @@ begin
     )
     port map (
       ADR0 => q_chain_gen_6_sc_ch_inst_edge_triggered_q_0_Q,
-      ADR1 => cu_en_q(0),
+      ADR1 => cu_en_q_622,
       ADR2 => VCC,
       ADR3 => mul2_5_IBUF_669,
       O => N6_pack_2
@@ -1583,7 +1583,7 @@ begin
       ADR0 => gestore_shift_b_add_sub_2_0,
       ADR1 => a_chain_gen_2_sc_ch_inst_edge_triggered_q_0_Q,
       ADR2 => gestore_shift_rca_carry_8_bdd10_0,
-      ADR3 => cu_en_a(0),
+      ADR3 => cu_en_a_613,
       O => a_chain_gen_2_sc_ch_inst_mux2_1_X1
     );
   N43_XUSED : X_BUF
@@ -1770,7 +1770,7 @@ begin
     )
     port map (
       ADR0 => gestore_shift_rca_carry_8_bdd12,
-      ADR1 => cu_en_a(0),
+      ADR1 => cu_en_a_613,
       ADR2 => m_q(1),
       ADR3 => q_chain_gen_1_sc_ch_inst_edge_triggered_q_0_Q,
       O => a_chain_gen_1_sc_ch_inst_mux2_1_X_SW2_O_pack_2
@@ -1808,7 +1808,7 @@ begin
       LOC => "SLICE_X3Y17"
     )
     port map (
-      ADR0 => cu_en_q(0),
+      ADR0 => cu_en_q_622,
       ADR1 => q_chain_gen_1_sc_ch_inst_edge_triggered_q_0_Q,
       ADR2 => VCC,
       ADR3 => mul2_0_IBUF_671,
@@ -1901,7 +1901,7 @@ begin
       ADR0 => cu_current_state_FSM_FFd2_612,
       ADR1 => N62_0,
       ADR2 => m_q(7),
-      ADR3 => cu_en_a(0),
+      ADR3 => cu_en_a_613,
       O => N40_pack_1
     );
   gestore_shift_rca_carry_8_bdd10_XUSED : X_BUF
@@ -2018,7 +2018,7 @@ begin
       LOC => "SLICE_X3Y14"
     )
     port map (
-      ADR0 => cu_en_a(0),
+      ADR0 => cu_en_a_613,
       ADR1 => a_chain_gen_6_sc_ch_inst_edge_triggered_q_0_Q,
       ADR2 => cu_current_state_FSM_FFd2_612,
       ADR3 => a_chain_gen_5_sc_ch_inst_edge_triggered_q_0_Q,
@@ -2183,8 +2183,8 @@ begin
       PATHPULSE => 555 ps
     )
     port map (
-      I => cu_en_a_0_not0001,
-      O => cu_en_a_0_not0001_0
+      I => cu_en_q_not0001,
+      O => cu_en_q_not0001_0
     );
   cu_current_state_FSM_FFd5_DYMUX : X_BUF
     generic map(
@@ -2216,6 +2216,45 @@ begin
       ADR3 => cu_current_state_FSM_FFd1_645,
       O => cu_current_state_FSM_FFd5_In
     );
+  cu_en_q_XUSED : X_BUF
+    generic map(
+      LOC => "SLICE_X2Y20",
+      PATHPULSE => 555 ps
+    )
+    port map (
+      I => a_chain_gen_7_sc_in_inst_mux2_1_X84_2048,
+      O => a_chain_gen_7_sc_in_inst_mux2_1_X84_0
+    );
+  cu_en_q_DYMUX : X_BUF
+    generic map(
+      LOC => "SLICE_X2Y20",
+      PATHPULSE => 555 ps
+    )
+    port map (
+      I => cu_en_q_mux0001,
+      O => cu_en_q_DYMUX_2039
+    );
+  cu_en_q_CLKINV : X_INV
+    generic map(
+      LOC => "SLICE_X2Y20",
+      PATHPULSE => 555 ps
+    )
+    port map (
+      I => cu_en_q_not0001_0,
+      O => cu_en_q_CLKINVNOT
+    );
+  cu_en_q_mux00011 : X_LUT4
+    generic map(
+      INIT => X"FFFE",
+      LOC => "SLICE_X2Y20"
+    )
+    port map (
+      ADR0 => cu_current_state_FSM_FFd3_635,
+      ADR1 => cu_current_state_FSM_FFd2_612,
+      ADR2 => cu_current_state_FSM_FFd1_645,
+      ADR3 => cu_current_state_FSM_FFd4_631,
+      O => cu_en_q_mux0001
+    );
   q_chain_gen_0_sc_out_inst_edge_triggered_q_0_XUSED : X_BUF
     generic map(
       LOC => "SLICE_X0Y20",
@@ -2232,7 +2271,7 @@ begin
     )
     port map (
       I => q_x(0),
-      O => q_chain_gen_0_sc_out_inst_edge_triggered_q_0_DYMUX_2040
+      O => q_chain_gen_0_sc_out_inst_edge_triggered_q_0_DYMUX_2070
     );
   q_chain_gen_0_sc_out_inst_edge_triggered_q_0_CLKINV : X_BUF
     generic map(
@@ -2241,7 +2280,7 @@ begin
     )
     port map (
       I => clk_BUFGP,
-      O => q_chain_gen_0_sc_out_inst_edge_triggered_q_0_CLKINV_2031
+      O => q_chain_gen_0_sc_out_inst_edge_triggered_q_0_CLKINV_2061
     );
   q_chain_gen_0_sc_out_inst_mux2_1_X1 : X_LUT4
     generic map(
@@ -2249,89 +2288,11 @@ begin
       LOC => "SLICE_X0Y20"
     )
     port map (
-      ADR0 => cu_en_q(0),
+      ADR0 => cu_en_q_622,
       ADR1 => cu_current_state_FSM_FFd2_612,
       ADR2 => q_chain_gen_1_sc_ch_inst_edge_triggered_q_0_Q,
       ADR3 => q_chain_gen_0_sc_out_inst_edge_triggered_q_0_Q,
       O => q_x(0)
-    );
-  cu_en_q_0_XUSED : X_BUF
-    generic map(
-      LOC => "SLICE_X2Y20",
-      PATHPULSE => 555 ps
-    )
-    port map (
-      I => a_chain_gen_7_sc_in_inst_mux2_1_X84_2083,
-      O => a_chain_gen_7_sc_in_inst_mux2_1_X84_0
-    );
-  cu_en_q_0_DYMUX : X_BUF
-    generic map(
-      LOC => "SLICE_X2Y20",
-      PATHPULSE => 555 ps
-    )
-    port map (
-      I => cu_en_q_0_mux0001,
-      O => cu_en_q_0_DYMUX_2074
-    );
-  cu_en_q_0_CLKINV : X_INV
-    generic map(
-      LOC => "SLICE_X2Y20",
-      PATHPULSE => 555 ps
-    )
-    port map (
-      I => cu_en_a_0_not0001_0,
-      O => cu_en_q_0_CLKINVNOT
-    );
-  cu_en_q_0_mux00011 : X_LUT4
-    generic map(
-      INIT => X"FFFE",
-      LOC => "SLICE_X2Y20"
-    )
-    port map (
-      ADR0 => cu_current_state_FSM_FFd3_635,
-      ADR1 => cu_current_state_FSM_FFd2_612,
-      ADR2 => cu_current_state_FSM_FFd1_645,
-      ADR3 => cu_current_state_FSM_FFd4_631,
-      O => cu_en_q_0_mux0001
-    );
-  cu_en_a_0_DXMUX : X_BUF
-    generic map(
-      LOC => "SLICE_X0Y22",
-      PATHPULSE => 555 ps
-    )
-    port map (
-      I => cu_en_a_0_mux0003_2109,
-      O => cu_en_a_0_DXMUX_2112
-    );
-  cu_en_a_0_YUSED : X_BUF
-    generic map(
-      LOC => "SLICE_X0Y22",
-      PATHPULSE => 555 ps
-    )
-    port map (
-      I => N01_pack_1,
-      O => N01
-    );
-  cu_en_a_0_CLKINV : X_INV
-    generic map(
-      LOC => "SLICE_X0Y22",
-      PATHPULSE => 555 ps
-    )
-    port map (
-      I => cu_en_a_0_not0001_0,
-      O => cu_en_a_0_CLKINVNOT
-    );
-  cu_en_a_0_mux0003_SW0 : X_LUT4
-    generic map(
-      INIT => X"FFFC",
-      LOC => "SLICE_X0Y22"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => cu_current_state_FSM_FFd2_612,
-      ADR2 => cu_current_state_FSM_FFd1_645,
-      ADR3 => cu_current_state_FSM_FFd4_631,
-      O => N01_pack_1
     );
   q_chain_gen_7_sc_ch_inst_edge_triggered_q_0_DXMUX : X_BUF
     generic map(
@@ -2340,7 +2301,7 @@ begin
     )
     port map (
       I => q_x(7),
-      O => q_chain_gen_7_sc_ch_inst_edge_triggered_q_0_DXMUX_2144
+      O => q_chain_gen_7_sc_ch_inst_edge_triggered_q_0_DXMUX_2114
     );
   q_chain_gen_7_sc_ch_inst_edge_triggered_q_0_YUSED : X_BUF
     generic map(
@@ -2358,7 +2319,7 @@ begin
     )
     port map (
       I => clk_BUFGP,
-      O => q_chain_gen_7_sc_ch_inst_edge_triggered_q_0_CLKINV_2126
+      O => q_chain_gen_7_sc_ch_inst_edge_triggered_q_0_CLKINV_2096
     );
   q_chain_gen_7_sc_ch_inst_mux2_1_X_SW0 : X_LUT4
     generic map(
@@ -2368,9 +2329,48 @@ begin
     port map (
       ADR0 => mul2_6_IBUF_674,
       ADR1 => VCC,
-      ADR2 => cu_en_q(0),
+      ADR2 => cu_en_q_622,
       ADR3 => q_chain_gen_7_sc_ch_inst_edge_triggered_q_0_Q,
       O => N4_pack_2
+    );
+  cu_en_a_DXMUX : X_BUF
+    generic map(
+      LOC => "SLICE_X0Y22",
+      PATHPULSE => 555 ps
+    )
+    port map (
+      I => cu_en_a_mux0003_2144,
+      O => cu_en_a_DXMUX_2147
+    );
+  cu_en_a_YUSED : X_BUF
+    generic map(
+      LOC => "SLICE_X0Y22",
+      PATHPULSE => 555 ps
+    )
+    port map (
+      I => N01_pack_1,
+      O => N01
+    );
+  cu_en_a_CLKINV : X_INV
+    generic map(
+      LOC => "SLICE_X0Y22",
+      PATHPULSE => 555 ps
+    )
+    port map (
+      I => cu_en_q_not0001_0,
+      O => cu_en_a_CLKINVNOT
+    );
+  cu_en_a_mux0003_SW0 : X_LUT4
+    generic map(
+      INIT => X"FFFC",
+      LOC => "SLICE_X0Y22"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => cu_current_state_FSM_FFd2_612,
+      ADR2 => cu_current_state_FSM_FFd1_645,
+      ADR3 => cu_current_state_FSM_FFd4_631,
+      O => N01_pack_1
     );
   a_chain_gen_7_sc_in_inst_edge_triggered_q_0_DXMUX : X_BUF
     generic map(
@@ -2532,7 +2532,7 @@ begin
     )
     port map (
       ADR0 => mul2_1_IBUF_672,
-      ADR1 => cu_en_q(0),
+      ADR1 => cu_en_q_622,
       ADR2 => VCC,
       ADR3 => q_chain_gen_2_sc_ch_inst_edge_triggered_q_0_Q,
       O => N14_pack_2
@@ -2642,7 +2642,7 @@ begin
       ADR0 => q_chain_gen_3_sc_ch_inst_edge_triggered_q_0_Q,
       ADR1 => mul2_2_IBUF_673,
       ADR2 => VCC,
-      ADR3 => cu_en_q(0),
+      ADR3 => cu_en_q_622,
       O => N12_pack_2
     );
   prod1_q_1_DXMUX : X_BUF
@@ -2903,7 +2903,7 @@ begin
       LOC => "SLICE_X3Y18"
     )
     port map (
-      ADR0 => cu_en_a(0),
+      ADR0 => cu_en_a_613,
       ADR1 => a_chain_gen_5_sc_ch_inst_edge_triggered_q_0_Q,
       ADR2 => cu_current_state_FSM_FFd2_612,
       ADR3 => a_chain_gen_4_sc_ch_inst_edge_triggered_q_0_Q,
@@ -3091,7 +3091,7 @@ begin
       LOC => "SLICE_X3Y16"
     )
     port map (
-      ADR0 => cu_en_a(0),
+      ADR0 => cu_en_a_613,
       ADR1 => a_chain_gen_7_sc_in_inst_edge_triggered_q_0_Q,
       ADR2 => cu_current_state_FSM_FFd2_612,
       ADR3 => a_chain_gen_6_sc_ch_inst_edge_triggered_q_0_Q,
@@ -3194,120 +3194,6 @@ begin
       SET => GND,
       RST => operation_counter_count_0_SRINVNOT,
       O => operation_counter_count(0)
-    );
-  a_chain_gen_0_sc_out_inst_edge_triggered_q_0 : X_FF
-    generic map(
-      LOC => "SLICE_X0Y21",
-      INIT => '0'
-    )
-    port map (
-      I => a_chain_gen_0_sc_out_inst_edge_triggered_q_0_DXMUX_1612,
-      CE => VCC,
-      CLK => a_chain_gen_0_sc_out_inst_edge_triggered_q_0_CLKINV_1594,
-      SET => GND,
-      RST => a_chain_gen_0_sc_out_inst_edge_triggered_q_0_FFX_RSTAND_1617,
-      O => a_chain_gen_0_sc_out_inst_edge_triggered_q_0_Q
-    );
-  a_chain_gen_0_sc_out_inst_edge_triggered_q_0_FFX_RSTAND : X_INV
-    generic map(
-      LOC => "SLICE_X0Y21",
-      PATHPULSE => 555 ps
-    )
-    port map (
-      I => reset_IBUF_618,
-      O => a_chain_gen_0_sc_out_inst_edge_triggered_q_0_FFX_RSTAND_1617
-    );
-  a_chain_gen_1_sc_ch_inst_mux2_1_X : X_LUT4
-    generic map(
-      INIT => X"BE14",
-      LOC => "SLICE_X0Y23"
-    )
-    port map (
-      ADR0 => cu_current_state_FSM_FFd2_612,
-      ADR1 => a_chain_gen_1_sc_ch_inst_edge_triggered_q_0_Q,
-      ADR2 => a_chain_gen_1_sc_ch_inst_mux2_1_X_SW2_O,
-      ADR3 => a_chain_gen_2_sc_ch_inst_edge_triggered_q_0_Q,
-      O => a_x_1_Q
-    );
-  a_chain_gen_1_sc_ch_inst_edge_triggered_q_0 : X_FF
-    generic map(
-      LOC => "SLICE_X0Y23",
-      INIT => '0'
-    )
-    port map (
-      I => a_chain_gen_1_sc_ch_inst_edge_triggered_q_0_DXMUX_1647,
-      CE => VCC,
-      CLK => a_chain_gen_1_sc_ch_inst_edge_triggered_q_0_CLKINV_1631,
-      SET => GND,
-      RST => a_chain_gen_1_sc_ch_inst_edge_triggered_q_0_FFX_RSTAND_1652,
-      O => a_chain_gen_1_sc_ch_inst_edge_triggered_q_0_Q
-    );
-  a_chain_gen_1_sc_ch_inst_edge_triggered_q_0_FFX_RSTAND : X_INV
-    generic map(
-      LOC => "SLICE_X0Y23",
-      PATHPULSE => 555 ps
-    )
-    port map (
-      I => reset_IBUF_618,
-      O => a_chain_gen_1_sc_ch_inst_edge_triggered_q_0_FFX_RSTAND_1652
-    );
-  q_chain_gen_1_sc_ch_inst_mux2_1_X : X_LUT4
-    generic map(
-      INIT => X"A0AF",
-      LOC => "SLICE_X3Y17"
-    )
-    port map (
-      ADR0 => q_chain_gen_2_sc_ch_inst_edge_triggered_q_0_Q,
-      ADR1 => VCC,
-      ADR2 => cu_current_state_FSM_FFd2_612,
-      ADR3 => q_chain_gen_1_sc_ch_inst_mux2_1_X_SW0_O,
-      O => q_x(1)
-    );
-  q_chain_gen_1_sc_ch_inst_edge_triggered_q_0 : X_FF
-    generic map(
-      LOC => "SLICE_X3Y17",
-      INIT => '0'
-    )
-    port map (
-      I => q_chain_gen_1_sc_ch_inst_edge_triggered_q_0_DXMUX_1682,
-      CE => VCC,
-      CLK => q_chain_gen_1_sc_ch_inst_edge_triggered_q_0_CLKINV_1664,
-      SET => GND,
-      RST => q_chain_gen_1_sc_ch_inst_edge_triggered_q_0_FFX_RSTAND_1687,
-      O => q_chain_gen_1_sc_ch_inst_edge_triggered_q_0_Q
-    );
-  q_chain_gen_1_sc_ch_inst_edge_triggered_q_0_FFX_RSTAND : X_INV
-    generic map(
-      LOC => "SLICE_X3Y17",
-      PATHPULSE => 555 ps
-    )
-    port map (
-      I => reset_IBUF_618,
-      O => q_chain_gen_1_sc_ch_inst_edge_triggered_q_0_FFX_RSTAND_1687
-    );
-  gestore_shift_rca_carry_8_21_SW0 : X_LUT4
-    generic map(
-      INIT => X"F690",
-      LOC => "SLICE_X2Y17"
-    )
-    port map (
-      ADR0 => gestore_shift_b_add_sub_6_Q,
-      ADR1 => N42,
-      ADR2 => N36,
-      ADR3 => N37_0,
-      O => N48
-    );
-  gestore_shift_rca_carry_8_21_SW1 : X_LUT4
-    generic map(
-      INIT => X"DE84",
-      LOC => "SLICE_X0Y17"
-    )
-    port map (
-      ADR0 => gestore_shift_b_add_sub_6_Q,
-      ADR1 => N36,
-      ADR2 => N43,
-      ADR3 => N37_0,
-      O => N49
     );
   q_chain_gen_8_sc_in_inst_mux2_1_X : X_LUT4
     generic map(
@@ -3480,93 +3366,8 @@ begin
       ADR0 => a_chain_gen_1_sc_ch_inst_edge_triggered_q_0_Q,
       ADR1 => a_chain_gen_0_sc_out_inst_edge_triggered_q_0_Q,
       ADR2 => cu_current_state_FSM_FFd2_612,
-      ADR3 => cu_en_a(0),
+      ADR3 => cu_en_a_613,
       O => a_chain_gen_0_sc_out_inst_mux2_1_X
-    );
-  gestore_shift_rca_carry_8_21_SW2 : X_LUT4
-    generic map(
-      INIT => X"FC30",
-      LOC => "SLICE_X2Y16"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => N42,
-      ADR2 => N39_0,
-      ADR3 => N40,
-      O => N51
-    );
-  gestore_shift_rca_carry_8_61 : X_LUT4
-    generic map(
-      INIT => X"F660",
-      LOC => "SLICE_X1Y19"
-    )
-    port map (
-      ADR0 => m_q(1),
-      ADR1 => q_chain_gen_1_sc_ch_inst_edge_triggered_q_0_Q,
-      ADR2 => a_chain_gen_1_sc_ch_inst_edge_triggered_q_0_Q,
-      ADR3 => gestore_shift_rca_carry_8_bdd12,
-      O => gestore_shift_rca_carry_8_bdd10
-    );
-  a_chain_gen_7_sc_in_inst_mux2_1_X42_SW0 : X_LUT4
-    generic map(
-      INIT => X"84A5",
-      LOC => "SLICE_X2Y19"
-    )
-    port map (
-      ADR0 => m_q(7),
-      ADR1 => cu_current_state_FSM_FFd2_612,
-      ADR2 => a_chain_gen_7_sc_in_inst_mux2_1_X42_SW0_SW0_O,
-      ADR3 => cu_en_a(0),
-      O => N39
-    );
-  gestore_shift_rca_carry_8_31_SW2 : X_LUT4
-    generic map(
-      INIT => X"DE84",
-      LOC => "SLICE_X2Y14"
-    )
-    port map (
-      ADR0 => N64_0,
-      ADR1 => N34,
-      ADR2 => m_q(5),
-      ADR3 => N33,
-      O => N54
-    );
-  gestore_shift_rca_carry_8_31_SW3 : X_LUT4
-    generic map(
-      INIT => X"B8E2",
-      LOC => "SLICE_X3Y14"
-    )
-    port map (
-      ADR0 => N33,
-      ADR1 => m_q(5),
-      ADR2 => N34,
-      ADR3 => N66_0,
-      O => N55
-    );
-  operation_counter_hit : X_FF
-    generic map(
-      LOC => "SLICE_X1Y29",
-      INIT => '0'
-    )
-    port map (
-      I => operation_counter_count_2_DYMUX_1879,
-      CE => operation_counter_count_2_CEINV_1868,
-      CLK => operation_counter_count_2_CLKINV_1869,
-      SET => GND,
-      RST => operation_counter_count_2_SRINVNOT,
-      O => operation_counter_hit_716
-    );
-  operation_counter_Mcount_count_xor_2_11 : X_LUT4
-    generic map(
-      INIT => X"5FA0",
-      LOC => "SLICE_X1Y29"
-    )
-    port map (
-      ADR0 => operation_counter_count(1),
-      ADR1 => VCC,
-      ADR2 => operation_counter_count(0),
-      ADR3 => operation_counter_count(2),
-      O => Result(2)
     );
   operation_counter_count_2 : X_FF
     generic map(
@@ -3679,7 +3480,7 @@ begin
       I => reset_IBUF_618,
       O => cu_current_state_FSM_FFd5_FFY_SET
     );
-  cu_en_a_0_not00011 : X_LUT4
+  cu_en_q_not00011 : X_LUT4
     generic map(
       INIT => X"F0FF",
       LOC => "SLICE_X1Y24"
@@ -3689,7 +3490,7 @@ begin
       ADR1 => VCC,
       ADR2 => start_IBUF_677,
       ADR3 => cu_current_state_FSM_FFd5_717,
-      O => cu_en_a_0_not0001
+      O => cu_en_q_not0001
     );
   a_chain_gen_4_sc_ch_inst_mux2_1_X : X_LUT4
     generic map(
@@ -3734,7 +3535,7 @@ begin
       ADR0 => a_chain_gen_3_sc_ch_inst_edge_triggered_q_0_Q,
       ADR1 => a_chain_gen_4_sc_ch_inst_edge_triggered_q_0_Q,
       ADR2 => cu_current_state_FSM_FFd2_612,
-      ADR3 => cu_en_a(0),
+      ADR3 => cu_en_a_613,
       O => N28
     );
   q_chain_gen_3_sc_ch_inst_mux2_1_X : X_LUT4
@@ -3797,123 +3598,204 @@ begin
       RST => prod1_q_1_SRINVNOT,
       O => prod1_q(1)
     );
-  q_chain_gen_0_sc_out_inst_edge_triggered_q_0 : X_FF
+  gestore_shift_rca_carry_8_21_SW2 : X_LUT4
     generic map(
-      LOC => "SLICE_X0Y20",
-      INIT => '0'
-    )
-    port map (
-      I => q_chain_gen_0_sc_out_inst_edge_triggered_q_0_DYMUX_2040,
-      CE => VCC,
-      CLK => q_chain_gen_0_sc_out_inst_edge_triggered_q_0_CLKINV_2031,
-      SET => GND,
-      RST => q_chain_gen_0_sc_out_inst_edge_triggered_q_0_FFY_RSTAND_2045,
-      O => q_chain_gen_0_sc_out_inst_edge_triggered_q_0_Q
-    );
-  q_chain_gen_0_sc_out_inst_edge_triggered_q_0_FFY_RSTAND : X_INV
-    generic map(
-      LOC => "SLICE_X0Y20",
-      PATHPULSE => 555 ps
-    )
-    port map (
-      I => reset_IBUF_618,
-      O => q_chain_gen_0_sc_out_inst_edge_triggered_q_0_FFY_RSTAND_2045
-    );
-  gestore_shift_Mxor_b_add_sub_2_Result1 : X_LUT4
-    generic map(
-      INIT => X"55AA",
-      LOC => "SLICE_X0Y20"
-    )
-    port map (
-      ADR0 => m_q(2),
-      ADR1 => VCC,
-      ADR2 => VCC,
-      ADR3 => q_chain_gen_1_sc_ch_inst_edge_triggered_q_0_Q,
-      O => gestore_shift_b_add_sub_2_Q
-    );
-  cu_en_q_0 : X_LATCHE
-    generic map(
-      LOC => "SLICE_X2Y20",
-      INIT => '0'
-    )
-    port map (
-      I => cu_en_q_0_DYMUX_2074,
-      GE => VCC,
-      CLK => NlwInverterSignal_cu_en_q_0_CLK,
-      SET => GND,
-      RST => GND,
-      O => cu_en_q(0)
-    );
-  a_chain_gen_7_sc_in_inst_mux2_1_X84 : X_LUT4
-    generic map(
-      INIT => X"3000",
-      LOC => "SLICE_X2Y20"
+      INIT => X"FC30",
+      LOC => "SLICE_X2Y16"
     )
     port map (
       ADR0 => VCC,
+      ADR1 => N42,
+      ADR2 => N39_0,
+      ADR3 => N40,
+      O => N51
+    );
+  gestore_shift_rca_carry_8_61 : X_LUT4
+    generic map(
+      INIT => X"F660",
+      LOC => "SLICE_X1Y19"
+    )
+    port map (
+      ADR0 => m_q(1),
+      ADR1 => q_chain_gen_1_sc_ch_inst_edge_triggered_q_0_Q,
+      ADR2 => a_chain_gen_1_sc_ch_inst_edge_triggered_q_0_Q,
+      ADR3 => gestore_shift_rca_carry_8_bdd12,
+      O => gestore_shift_rca_carry_8_bdd10
+    );
+  a_chain_gen_7_sc_in_inst_mux2_1_X42_SW0 : X_LUT4
+    generic map(
+      INIT => X"84A5",
+      LOC => "SLICE_X2Y19"
+    )
+    port map (
+      ADR0 => m_q(7),
       ADR1 => cu_current_state_FSM_FFd2_612,
-      ADR2 => a_chain_gen_7_sc_in_inst_edge_triggered_q_0_Q,
-      ADR3 => cu_en_a(0),
-      O => a_chain_gen_7_sc_in_inst_mux2_1_X84_2083
+      ADR2 => a_chain_gen_7_sc_in_inst_mux2_1_X42_SW0_SW0_O,
+      ADR3 => cu_en_a_613,
+      O => N39
     );
-  cu_en_a_0_mux0003 : X_LUT4
+  gestore_shift_rca_carry_8_31_SW2 : X_LUT4
     generic map(
-      INIT => X"ECDC",
-      LOC => "SLICE_X0Y22"
+      INIT => X"DE84",
+      LOC => "SLICE_X2Y14"
     )
     port map (
-      ADR0 => q_chain_gen_0_sc_out_inst_edge_triggered_q_0_Q,
-      ADR1 => N01,
-      ADR2 => cu_current_state_FSM_FFd3_635,
-      ADR3 => q_chain_gen_1_sc_ch_inst_edge_triggered_q_0_Q,
-      O => cu_en_a_0_mux0003_2109
+      ADR0 => N64_0,
+      ADR1 => N34,
+      ADR2 => m_q(5),
+      ADR3 => N33,
+      O => N54
     );
-  cu_en_a_0 : X_LATCHE
+  gestore_shift_rca_carry_8_31_SW3 : X_LUT4
     generic map(
-      LOC => "SLICE_X0Y22",
+      INIT => X"B8E2",
+      LOC => "SLICE_X3Y14"
+    )
+    port map (
+      ADR0 => N33,
+      ADR1 => m_q(5),
+      ADR2 => N34,
+      ADR3 => N66_0,
+      O => N55
+    );
+  operation_counter_hit : X_FF
+    generic map(
+      LOC => "SLICE_X1Y29",
       INIT => '0'
     )
     port map (
-      I => cu_en_a_0_DXMUX_2112,
-      GE => VCC,
-      CLK => NlwInverterSignal_cu_en_a_0_CLK,
+      I => operation_counter_count_2_DYMUX_1879,
+      CE => operation_counter_count_2_CEINV_1868,
+      CLK => operation_counter_count_2_CLKINV_1869,
       SET => GND,
-      RST => GND,
-      O => cu_en_a(0)
+      RST => operation_counter_count_2_SRINVNOT,
+      O => operation_counter_hit_716
     );
-  q_chain_gen_7_sc_ch_inst_mux2_1_X : X_LUT4
+  operation_counter_Mcount_count_xor_2_11 : X_LUT4
     generic map(
-      INIT => X"C0CF",
-      LOC => "SLICE_X3Y13"
+      INIT => X"5FA0",
+      LOC => "SLICE_X1Y29"
     )
     port map (
-      ADR0 => VCC,
-      ADR1 => q_chain_gen_8_sc_in_inst_edge_triggered_q_0_Q,
-      ADR2 => cu_current_state_FSM_FFd2_612,
-      ADR3 => N4,
-      O => q_x(7)
+      ADR0 => operation_counter_count(1),
+      ADR1 => VCC,
+      ADR2 => operation_counter_count(0),
+      ADR3 => operation_counter_count(2),
+      O => Result(2)
     );
-  q_chain_gen_7_sc_ch_inst_edge_triggered_q_0 : X_FF
+  a_chain_gen_0_sc_out_inst_edge_triggered_q_0 : X_FF
     generic map(
-      LOC => "SLICE_X3Y13",
+      LOC => "SLICE_X0Y21",
       INIT => '0'
     )
     port map (
-      I => q_chain_gen_7_sc_ch_inst_edge_triggered_q_0_DXMUX_2144,
+      I => a_chain_gen_0_sc_out_inst_edge_triggered_q_0_DXMUX_1612,
       CE => VCC,
-      CLK => q_chain_gen_7_sc_ch_inst_edge_triggered_q_0_CLKINV_2126,
+      CLK => a_chain_gen_0_sc_out_inst_edge_triggered_q_0_CLKINV_1594,
       SET => GND,
-      RST => q_chain_gen_7_sc_ch_inst_edge_triggered_q_0_FFX_RSTAND_2149,
-      O => q_chain_gen_7_sc_ch_inst_edge_triggered_q_0_Q
+      RST => a_chain_gen_0_sc_out_inst_edge_triggered_q_0_FFX_RSTAND_1617,
+      O => a_chain_gen_0_sc_out_inst_edge_triggered_q_0_Q
     );
-  q_chain_gen_7_sc_ch_inst_edge_triggered_q_0_FFX_RSTAND : X_INV
+  a_chain_gen_0_sc_out_inst_edge_triggered_q_0_FFX_RSTAND : X_INV
     generic map(
-      LOC => "SLICE_X3Y13",
+      LOC => "SLICE_X0Y21",
       PATHPULSE => 555 ps
     )
     port map (
       I => reset_IBUF_618,
-      O => q_chain_gen_7_sc_ch_inst_edge_triggered_q_0_FFX_RSTAND_2149
+      O => a_chain_gen_0_sc_out_inst_edge_triggered_q_0_FFX_RSTAND_1617
+    );
+  a_chain_gen_1_sc_ch_inst_mux2_1_X : X_LUT4
+    generic map(
+      INIT => X"BE14",
+      LOC => "SLICE_X0Y23"
+    )
+    port map (
+      ADR0 => cu_current_state_FSM_FFd2_612,
+      ADR1 => a_chain_gen_1_sc_ch_inst_edge_triggered_q_0_Q,
+      ADR2 => a_chain_gen_1_sc_ch_inst_mux2_1_X_SW2_O,
+      ADR3 => a_chain_gen_2_sc_ch_inst_edge_triggered_q_0_Q,
+      O => a_x_1_Q
+    );
+  a_chain_gen_1_sc_ch_inst_edge_triggered_q_0 : X_FF
+    generic map(
+      LOC => "SLICE_X0Y23",
+      INIT => '0'
+    )
+    port map (
+      I => a_chain_gen_1_sc_ch_inst_edge_triggered_q_0_DXMUX_1647,
+      CE => VCC,
+      CLK => a_chain_gen_1_sc_ch_inst_edge_triggered_q_0_CLKINV_1631,
+      SET => GND,
+      RST => a_chain_gen_1_sc_ch_inst_edge_triggered_q_0_FFX_RSTAND_1652,
+      O => a_chain_gen_1_sc_ch_inst_edge_triggered_q_0_Q
+    );
+  a_chain_gen_1_sc_ch_inst_edge_triggered_q_0_FFX_RSTAND : X_INV
+    generic map(
+      LOC => "SLICE_X0Y23",
+      PATHPULSE => 555 ps
+    )
+    port map (
+      I => reset_IBUF_618,
+      O => a_chain_gen_1_sc_ch_inst_edge_triggered_q_0_FFX_RSTAND_1652
+    );
+  q_chain_gen_1_sc_ch_inst_mux2_1_X : X_LUT4
+    generic map(
+      INIT => X"A0AF",
+      LOC => "SLICE_X3Y17"
+    )
+    port map (
+      ADR0 => q_chain_gen_2_sc_ch_inst_edge_triggered_q_0_Q,
+      ADR1 => VCC,
+      ADR2 => cu_current_state_FSM_FFd2_612,
+      ADR3 => q_chain_gen_1_sc_ch_inst_mux2_1_X_SW0_O,
+      O => q_x(1)
+    );
+  q_chain_gen_1_sc_ch_inst_edge_triggered_q_0 : X_FF
+    generic map(
+      LOC => "SLICE_X3Y17",
+      INIT => '0'
+    )
+    port map (
+      I => q_chain_gen_1_sc_ch_inst_edge_triggered_q_0_DXMUX_1682,
+      CE => VCC,
+      CLK => q_chain_gen_1_sc_ch_inst_edge_triggered_q_0_CLKINV_1664,
+      SET => GND,
+      RST => q_chain_gen_1_sc_ch_inst_edge_triggered_q_0_FFX_RSTAND_1687,
+      O => q_chain_gen_1_sc_ch_inst_edge_triggered_q_0_Q
+    );
+  q_chain_gen_1_sc_ch_inst_edge_triggered_q_0_FFX_RSTAND : X_INV
+    generic map(
+      LOC => "SLICE_X3Y17",
+      PATHPULSE => 555 ps
+    )
+    port map (
+      I => reset_IBUF_618,
+      O => q_chain_gen_1_sc_ch_inst_edge_triggered_q_0_FFX_RSTAND_1687
+    );
+  gestore_shift_rca_carry_8_21_SW0 : X_LUT4
+    generic map(
+      INIT => X"F690",
+      LOC => "SLICE_X2Y17"
+    )
+    port map (
+      ADR0 => gestore_shift_b_add_sub_6_Q,
+      ADR1 => N42,
+      ADR2 => N36,
+      ADR3 => N37_0,
+      O => N48
+    );
+  gestore_shift_rca_carry_8_21_SW1 : X_LUT4
+    generic map(
+      INIT => X"DE84",
+      LOC => "SLICE_X0Y17"
+    )
+    port map (
+      ADR0 => gestore_shift_b_add_sub_6_Q,
+      ADR1 => N36,
+      ADR2 => N43,
+      ADR3 => N37_0,
+      O => N49
     );
   a_chain_gen_7_sc_in_inst_mux2_1_X87 : X_LUT4
     generic map(
@@ -4021,44 +3903,123 @@ begin
       I => reset_IBUF_618,
       O => q_chain_gen_2_sc_ch_inst_edge_triggered_q_0_FFX_RSTAND_2279
     );
-  prod1_q_7 : X_FF
+  cu_en_q : X_LATCHE
     generic map(
-      LOC => "SLICE_X0Y12",
+      LOC => "SLICE_X2Y20",
       INIT => '0'
     )
     port map (
-      I => prod1_q_7_DXMUX_2496,
-      CE => prod1_q_7_CEINV_2483,
-      CLK => prod1_q_7_CLKINV_2484,
+      I => cu_en_q_DYMUX_2039,
+      GE => VCC,
+      CLK => NlwInverterSignal_cu_en_q_CLK,
       SET => GND,
-      RST => prod1_q_7_SRINVNOT,
-      O => prod1_q(7)
+      RST => GND,
+      O => cu_en_q_622
     );
-  prod1_q_8 : X_FF
+  a_chain_gen_7_sc_in_inst_mux2_1_X84 : X_LUT4
     generic map(
-      LOC => "SLICE_X2Y15",
-      INIT => '0'
+      INIT => X"3000",
+      LOC => "SLICE_X2Y20"
     )
     port map (
-      I => prod1_q_9_DYMUX_2515,
-      CE => prod1_q_9_CEINV_2511,
-      CLK => prod1_q_9_CLKINV_2512,
-      SET => GND,
-      RST => prod1_q_9_SRINVNOT,
-      O => prod1_q(8)
+      ADR0 => VCC,
+      ADR1 => cu_current_state_FSM_FFd2_612,
+      ADR2 => a_chain_gen_7_sc_in_inst_edge_triggered_q_0_Q,
+      ADR3 => cu_en_a_613,
+      O => a_chain_gen_7_sc_in_inst_mux2_1_X84_2048
     );
-  prod1_q_9 : X_FF
+  q_chain_gen_0_sc_out_inst_edge_triggered_q_0 : X_FF
     generic map(
-      LOC => "SLICE_X2Y15",
+      LOC => "SLICE_X0Y20",
       INIT => '0'
     )
     port map (
-      I => prod1_q_9_DXMUX_2524,
-      CE => prod1_q_9_CEINV_2511,
-      CLK => prod1_q_9_CLKINV_2512,
+      I => q_chain_gen_0_sc_out_inst_edge_triggered_q_0_DYMUX_2070,
+      CE => VCC,
+      CLK => q_chain_gen_0_sc_out_inst_edge_triggered_q_0_CLKINV_2061,
       SET => GND,
-      RST => prod1_q_9_SRINVNOT,
-      O => prod1_q(9)
+      RST => q_chain_gen_0_sc_out_inst_edge_triggered_q_0_FFY_RSTAND_2075,
+      O => q_chain_gen_0_sc_out_inst_edge_triggered_q_0_Q
+    );
+  q_chain_gen_0_sc_out_inst_edge_triggered_q_0_FFY_RSTAND : X_INV
+    generic map(
+      LOC => "SLICE_X0Y20",
+      PATHPULSE => 555 ps
+    )
+    port map (
+      I => reset_IBUF_618,
+      O => q_chain_gen_0_sc_out_inst_edge_triggered_q_0_FFY_RSTAND_2075
+    );
+  gestore_shift_Mxor_b_add_sub_2_Result1 : X_LUT4
+    generic map(
+      INIT => X"55AA",
+      LOC => "SLICE_X0Y20"
+    )
+    port map (
+      ADR0 => m_q(2),
+      ADR1 => VCC,
+      ADR2 => VCC,
+      ADR3 => q_chain_gen_1_sc_ch_inst_edge_triggered_q_0_Q,
+      O => gestore_shift_b_add_sub_2_Q
+    );
+  q_chain_gen_7_sc_ch_inst_mux2_1_X : X_LUT4
+    generic map(
+      INIT => X"C0CF",
+      LOC => "SLICE_X3Y13"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => q_chain_gen_8_sc_in_inst_edge_triggered_q_0_Q,
+      ADR2 => cu_current_state_FSM_FFd2_612,
+      ADR3 => N4,
+      O => q_x(7)
+    );
+  q_chain_gen_7_sc_ch_inst_edge_triggered_q_0 : X_FF
+    generic map(
+      LOC => "SLICE_X3Y13",
+      INIT => '0'
+    )
+    port map (
+      I => q_chain_gen_7_sc_ch_inst_edge_triggered_q_0_DXMUX_2114,
+      CE => VCC,
+      CLK => q_chain_gen_7_sc_ch_inst_edge_triggered_q_0_CLKINV_2096,
+      SET => GND,
+      RST => q_chain_gen_7_sc_ch_inst_edge_triggered_q_0_FFX_RSTAND_2119,
+      O => q_chain_gen_7_sc_ch_inst_edge_triggered_q_0_Q
+    );
+  q_chain_gen_7_sc_ch_inst_edge_triggered_q_0_FFX_RSTAND : X_INV
+    generic map(
+      LOC => "SLICE_X3Y13",
+      PATHPULSE => 555 ps
+    )
+    port map (
+      I => reset_IBUF_618,
+      O => q_chain_gen_7_sc_ch_inst_edge_triggered_q_0_FFX_RSTAND_2119
+    );
+  cu_en_a_mux0003 : X_LUT4
+    generic map(
+      INIT => X"ECDC",
+      LOC => "SLICE_X0Y22"
+    )
+    port map (
+      ADR0 => q_chain_gen_0_sc_out_inst_edge_triggered_q_0_Q,
+      ADR1 => N01,
+      ADR2 => cu_current_state_FSM_FFd3_635,
+      ADR3 => q_chain_gen_1_sc_ch_inst_edge_triggered_q_0_Q,
+      O => cu_en_a_mux0003_2144
+    );
+  cu_en_a : X_LATCHE
+    generic map(
+      LOC => "SLICE_X0Y22",
+      INIT => '0'
+    )
+    port map (
+      I => cu_en_a_DXMUX_2147,
+      GE => VCC,
+      CLK => NlwInverterSignal_cu_en_a_CLK,
+      SET => GND,
+      RST => GND,
+      O => cu_en_a_613
     );
   prod1_q_2 : X_FF
     generic map(
@@ -4146,6 +4107,45 @@ begin
       SET => GND,
       RST => prod1_q_7_SRINVNOT,
       O => prod1_q(6)
+    );
+  prod1_q_7 : X_FF
+    generic map(
+      LOC => "SLICE_X0Y12",
+      INIT => '0'
+    )
+    port map (
+      I => prod1_q_7_DXMUX_2496,
+      CE => prod1_q_7_CEINV_2483,
+      CLK => prod1_q_7_CLKINV_2484,
+      SET => GND,
+      RST => prod1_q_7_SRINVNOT,
+      O => prod1_q(7)
+    );
+  prod1_q_8 : X_FF
+    generic map(
+      LOC => "SLICE_X2Y15",
+      INIT => '0'
+    )
+    port map (
+      I => prod1_q_9_DYMUX_2515,
+      CE => prod1_q_9_CEINV_2511,
+      CLK => prod1_q_9_CLKINV_2512,
+      SET => GND,
+      RST => prod1_q_9_SRINVNOT,
+      O => prod1_q(8)
+    );
+  prod1_q_9 : X_FF
+    generic map(
+      LOC => "SLICE_X2Y15",
+      INIT => '0'
+    )
+    port map (
+      I => prod1_q_9_DXMUX_2524,
+      CE => prod1_q_9_CEINV_2511,
+      CLK => prod1_q_9_CLKINV_2512,
+      SET => GND,
+      RST => prod1_q_9_SRINVNOT,
+      O => prod1_q(9)
     );
   en_i_OUTPUT_OFF_OMUX : X_BUF
     generic map(
@@ -4317,15 +4317,15 @@ begin
     port map (
       O => GND
     );
-  NlwInverterBlock_cu_en_q_0_CLK : X_INV
+  NlwInverterBlock_cu_en_q_CLK : X_INV
     port map (
-      I => cu_en_q_0_CLKINVNOT,
-      O => NlwInverterSignal_cu_en_q_0_CLK
+      I => cu_en_q_CLKINVNOT,
+      O => NlwInverterSignal_cu_en_q_CLK
     );
-  NlwInverterBlock_cu_en_a_0_CLK : X_INV
+  NlwInverterBlock_cu_en_a_CLK : X_INV
     port map (
-      I => cu_en_a_0_CLKINVNOT,
-      O => NlwInverterSignal_cu_en_a_0_CLK
+      I => cu_en_a_CLKINVNOT,
+      O => NlwInverterSignal_cu_en_a_CLK
     );
   NlwBlockROC : X_ROC
     generic map (ROC_WIDTH => 100 ns)

@@ -30,7 +30,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity tester_dispositivi is
-    Port ( clk : in  STD_LOGIC;
+    Port ( clock : in  STD_LOGIC;
            reset : in  STD_LOGIC;
            load_conf : in  STD_LOGIC;
            load_value : in  STD_LOGIC;
@@ -52,14 +52,13 @@ COMPONENT contatore_modulo_2n
 		output : OUT std_logic_vector(width-1 downto 0)
 		);
 	END COMPONENT;
-	COMPONENT latch_d
-	generic(width: NATURAL:=8);
-	PORT(
-		input : IN std_logic_vector(width-1 downto 0);
-		enable : IN std_logic;
-		reset : IN std_logic;          
-		output : OUT std_logic_vector(width-1 downto 0)
-		);
+	COMPONENT latch_d_en
+	generic(width:NATURAL:=8);
+	 Port ( clk : in  STD_LOGIC;
+           reset : in  STD_LOGIC;
+           en : in  STD_LOGIC;
+           d : in  STD_LOGIC_VECTOR (width-1 downto 0);
+           q : out  STD_LOGIC_VECTOR (width-1 downto 0));
 	END COMPONENT;
 	COMPONENT generazione_valori_RSA
 	PORT(
@@ -94,44 +93,63 @@ COMPONENT contatore_modulo_2n
 		);
 	END COMPONENT;
 	signal sel :STD_LOGIC_VECTOR(2 downto 0):=(others=>'0');
+	signal scelta: STD_LOGIC_VECTOR( 7 downto 0):=( others=>'0');
 	signal e_v,d_v:STD_LOGIC_VECTOR(15 downto 0) := (others=>'0');
 	signal p_v,q_v,msg_v:STD_LOGIC_VECTOR(7 downto 0):=(others=>'0');
 	signal msg_r,msg_p:STD_LOGIC_VECTOR(31 downto 0):=(others=>'0');
-	signal en_p,en_q,start,en_msg,en_e,en_d,en_c,hit,check_start,en_rsa :STD_LOGIC:='0';
+	signal en_c1,hit,en_c,reset_c,start :STD_LOGIC:='0';
 begin
-	deb:debounce port map(clk,button(0),en_c);
-	selettore: contatore_modulo_2n port map(en_c,'1',not( button(3)),open,sel);
-	en_p<=(not (sel(2)) and not(sel(1)) and sel(0));
-	p_val : latch_d port map(x"03",en_p,not(button(3)),p_v);
-	en_q<=(not (sel(2)) and sel(1) and not(sel(0)));
-	q_val : latch_d port map(x"0B",en_q,not(button(3)),q_v);
-	en_msg<=(not (sel(2)) and sel(1) and sel(0));
-	message: latch_d port map(x"0F",en_msg,not(button(3)),msg_v);
-	en_e<=(sel(2) and not(sel(1)) and not(sel(0)));
-	e_val: latch_d port map(x"07",en_e,not(button(3)),e_v(7 downto 0));
-	en_d<=(sel(2) and not(sel(1)) and sel(0));
-	d_val: latch_d port map(x"03",en_d,not(button(3)),d_v(7 downto 0));
-	start<=(sel(2) and sel(1) and not(sel(0)));
-	st: process(clk,start,check_start)
+	deb:debounce port map(clock,button(0),en_c);
+	change: process (clock,en_c)
 	begin
-	 if start='1' and msg_r=x"00000000" then
-		en_rsa<='1';
-		check_start<='1';
-	 else
-		en_rsa<='0';
-	 end if;
-		if start='0' then
-		 check_start<='0';
+	if rising_edge(clock) then
+		if en_c='1' then
+			case sel is
+				when "000" => scelta<="00000001";
+				when "001" => scelta<="00000010";
+				when "010" => scelta<="00000100";
+				when "011" => scelta<="00001000";
+				when "100" => scelta<="00010000";
+				when "101" => scelta<="00100000";
+				when "110" => scelta<="01000000";
+				when others => scelta<="11111111";
+			end case;
+		else
+			scelta<="00000000";
 		end if;
+	end if;
 	end process;
-	led(0)<=check_start;
+	selettore: contatore_modulo_2n port map(en_c,'1',not( button(3)),open,sel);
+	--en_p<=(not (sel(2)) and not(sel(1)) and sel(0));
+	p_val : latch_d_en port map(clock,not(button(3)),scelta(0),x"03",p_v);
+	--en_q<=(not (sel(2)) and sel(1) and not(sel(0)));
+	q_val : latch_d_en port map(clock,not(button(3)),scelta(1),x"0B",q_v);
+	--en_msg<=(not (sel(2)) and sel(1) and sel(0));
+	message: latch_d_en port map(clock,not(button(3)),scelta(2),x"0F",msg_v);
+	--en_e<=(sel(2) and not(sel(1)) and not(sel(0)));
+	e_val: latch_d_en port map(clock,not(button(3)),scelta(3),x"07",e_v(7 downto 0));
+	--en_d<=(sel(2) and not(sel(1)) and sel(0));
+	d_val: latch_d_en port map(clock,not(button(3)),scelta(4),x"03",d_v(7 downto 0));
+	--start<=(sel(2) and sel(1) and not(sel(0)));
+	counter: contatore_modulo_2n port map(clock,en_c1,reset_c,hit,open);
+	st: process(scelta,clock,hit)
+		begin
+		reset_c<='1';
+			if scelta(5)='1' and hit='0' then
+				start<='1';
+				en_c1<='1';
+			elsif scelta(5)='1' and hit='1' then
+				en_c1<='0';
+				start<='0';
+			else
+				reset_c<='0';
+			end if;
+		end process;
 	led(1)<=msg_r(0);
-	led(2)<=start;
-	led(3)<=en_rsa;
 	led(7)<=sel(2);
 	led(6)<=sel(1);
 	led(5)<=sel(0);
-	RSA : generazione_valori_RSA port map(clk,en_rsa,not(button(3)),p_v,q_v,msg_v,e_v,d_v,msg_r);
-	gest_disp : display_top_level port map(clk,button(3),button(2),button(1),msg_r(15 downto 0),in_byte,anodes,cathodes);
+	RSA : generazione_valori_RSA port map(clock,start,not(button(3)),p_v,q_v,msg_v,e_v,d_v,msg_r);
+	gest_disp : display_top_level port map(clock,button(3),button(2),button(1),msg_r(15 downto 0),in_byte,anodes,cathodes);
 end Behavioral;
 

@@ -1,0 +1,10 @@
+Command line:
+   Divisore_restoring_testbench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  48010
+
+Thu Jan 11 00:16:17 2018
+
+
+ Elaboration Time: 0.05 sec

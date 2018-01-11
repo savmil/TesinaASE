@@ -2,7 +2,7 @@
 -- Company: 
 -- Engineer:
 --
--- Create Date:   16:24:08 12/23/2017
+-- Create Date:   23:55:47 01/10/2018
 -- Design Name:   
 -- Module Name:   /media/sf_ASE/VHDL/Milo/divisore_restoring/divisore_restoring/Divisore_restoring_testbench.vhd
 -- Project Name:  divisore_restoring
@@ -10,7 +10,7 @@
 -- Tool versions:  
 -- Description:   
 -- 
--- VHDL Test Bench Created by ISE for module: Booth_multiplier
+-- VHDL Test Bench Created by ISE for module: divisore_restoring
 -- 
 -- Dependencies:
 -- 
@@ -46,7 +46,7 @@ ARCHITECTURE behavior OF Divisore_restoring_testbench IS
          start : IN  std_logic;
          clk : IN  std_logic;
          reset : IN  std_logic;
-			finish: out STD_LOGIC;
+         finish : OUT  std_logic;
          quoziente : OUT  std_logic_vector(7 downto 0);
          resto : OUT  std_logic_vector(7 downto 0)
         );
@@ -61,7 +61,7 @@ ARCHITECTURE behavior OF Divisore_restoring_testbench IS
    signal reset : std_logic := '0';
 
  	--Outputs
-	signal finish : std_logic;
+   signal finish : std_logic;
    signal quoziente : std_logic_vector(7 downto 0);
    signal resto : std_logic_vector(7 downto 0);
 
@@ -77,7 +77,7 @@ BEGIN
           start => start,
           clk => clk,
           reset => reset,
-			 finish => finish,
+          finish => finish,
           quoziente => quoziente,
           resto => resto
         );
@@ -96,7 +96,7 @@ BEGIN
    stim_proc: process
    begin		
       -- hold reset state for 100 ns.
-		start<='1';
+     start<='1';
 		
 		reset<='1';
 		dividendo<=x"8A";
@@ -105,8 +105,6 @@ BEGIN
 		start<='0';
       wait for 100 ns;	
 		wait until finish='1';
-		
-
       -- insert stimulus here 
 
       wait;

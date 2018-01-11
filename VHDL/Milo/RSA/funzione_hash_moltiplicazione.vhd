@@ -43,15 +43,13 @@ end funzione_hash_moltiplicazione;
 architecture Behavioral of funzione_hash_moltiplicazione is
 COMPONENT Booth_multiplier
 	 generic (width : NATURAL:=32);
-	PORT(
-		mul1 : IN std_logic_vector(width-1 downto 0);
-		mul2 : IN std_logic_vector(width-1 downto 0);
-		start : IN std_logic;
-		clk : IN std_logic;
-		reset : IN std_logic;    
-		finished : OUT std_logic;
-		product : OUT std_logic_vector(2*width-1 downto 0)
-		);
+    Port ( mul1 : in  STD_LOGIC_VECTOR (width-1 downto 0):=(others=>'0');
+           mul2 : in  STD_LOGIC_VECTOR (width-1 downto 0);
+           start : in  STD_LOGIC;
+			  clk: in STD_LOGIC;
+			  reset : in STD_LOGIC;
+			  fin: out STD_LOGIC_VECTOR(0 downto 0);
+           product : out  STD_LOGIC_VECTOR (2*width-1 downto 0));
 	END COMPONENT;
 	COMPONENT boundary_scan_chain
 	generic (n: NATURAL:=32);
@@ -68,17 +66,18 @@ COMPONENT Booth_multiplier
 	END COMPONENT;
 	COMPONENT gestore_hash
 	PORT(clk : IN std_logic;
+		  start: IN std_logic;
 		  reset : IN std_logic;
 		  shift_r : OUT std_logic;
 		  shift_l : OUT std_logic;
-		  start_sh : IN std_logic;
+		  start_sh : IN std_logic_vector(0 downto 0);
 		  en_i_r : OUT std_logic;
 		  en_i_l : OUT std_logic;
 		  en_c_r : OUT std_logic;
 		  en_c_l: out STD_LOGIC;
 		  stop_r : IN std_logic;
 		  stop_l : in STD_LOGIC;
-		  hashed : OUT std_logic
+		  hashed : OUT std_logic_vector(0 downto 0)
 		);
 	END COMPONENT;
 	COMPONENT contatore_modulo_2n
@@ -104,19 +103,29 @@ COMPONENT Booth_multiplier
 		dout : OUT std_logic_vector(n-1 downto 0)
 		);
 	END COMPONENT;
+	component latch_d_en is
+	generic(width:natural:=1);
+    Port ( clk : in  STD_LOGIC;
+           reset : in  STD_LOGIC;
+           en : in  STD_LOGIC;
+           d : in  STD_LOGIC_VECTOR (width-1 downto 0);
+           q : out  STD_LOGIC_VECTOR (width-1 downto 0));
+	end component;
 	signal product: STD_LOGIC_VECTOR(63 downto 0):=(others=>'0');
 	signal result_product,shifted_r,shifted_l,moltiplicatore: STD_LOGIC_VECTOR(31 downto 0):=(others=>'0');
-	signal fin,en_s_r,en_s_l,en_c_r,en_c_l,hit_r,hit_l,finish,en_i_r,en_i_l:STD_LOGIC:='0';
+	signal en_s_r,en_s_l,en_c_r,en_c_l,hit_r,hit_l,en_i_r,en_i_l:STD_LOGIC:='0';
+	signal fin,hashed,finish:STD_LOGIC_VECTOR(0 downto 0):="0";
 begin
 	moltiplicatore(7 downto 0)<=data;
 	counter_s_r:contatore_modulo_2n port map(clk,en_c_r,reset,hit_r,open);
 	counter_s_l:contatore_modulo_2n generic map (width=>4) port map(clk,en_c_l,reset,hit_l,open);
-	g_h:gestore_hash port map(clk,reset,en_s_r,en_s_l,fin,en_i_r,en_i_l,en_c_r,en_c_l,hit_r,hit_l,finish);
+	g_h:gestore_hash port map(clk,start,reset,en_s_r,en_s_l,fin,en_i_r,en_i_l,en_c_r,en_c_l,hit_r,hit_l,finish);
 	mul: Booth_multiplier port map(moltiplicatore,moltiplicando,start,clk,reset,fin,product);
 	result_product<=product(31 downto 0);
 	sh_d: boundary_scan_chain port map('0',clk,reset,en_i_r,result_product,en_s_r,open,shifted_r);
 	sh_r:shifter_a_sinistra port map('0',clk,reset,en_i_l,shifted_r,en_s_l,open,shifted_l);
 	dato_hashed<=shifted_l(31 downto 0);
-	finished<=finish;
+	end_h: latch_d_en port map (clk,reset,finish(0),finish,hashed);
+	finished<=hashed(0);
 end Behavioral;
 

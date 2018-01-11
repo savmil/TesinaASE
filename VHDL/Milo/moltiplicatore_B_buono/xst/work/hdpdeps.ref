@@ -1,70 +1,70 @@
 V3 91
 FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/add_sub.vhd 2017/12/01.17:30:46 P.20131013
-EN work/add_sub 1515598895 \
+EN work/add_sub 1515612004 \
       FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/add_sub.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/add_sub/structural 1515598896 \
+AR work/add_sub/structural 1515612005 \
       FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/add_sub.vhd \
-      EN work/add_sub 1515598895 CP ripple_carry_adder
+      EN work/add_sub 1515612004 CP ripple_carry_adder
 FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/anode_manager.vhd 2017/12/04.10:53:22 P.20131013
-EN work/anode_manager 1515598875 \
+EN work/anode_manager 1515611809 \
       FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/anode_manager.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/anode_manager/structural 1515598876 \
+AR work/anode_manager/structural 1515611810 \
       FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/anode_manager.vhd \
-      EN work/anode_manager 1515598875 CP muxn_1 CP demux1_n
-FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/Booth_multiplier.vhd 2018/01/04.11:55:57 P.20131013
-EN work/Booth_multiplier 1515598899 \
+      EN work/anode_manager 1515611809 CP muxn_1 CP demux1_n
+FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/Booth_multiplier.vhd 2018/01/10.20:19:44 P.20131013
+EN work/Booth_multiplier 1515612006 \
       FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/Booth_multiplier.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/Booth_multiplier/Structural 1515598900 \
+AR work/Booth_multiplier/Structural 1515612007 \
       FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/Booth_multiplier.vhd \
-      EN work/Booth_multiplier 1515598899 CP Serial_Booth_PC_Moore \
+      EN work/Booth_multiplier 1515612006 CP Serial_Booth_PC_Moore \
       CP contatore_modulo_2n CP boundary_scan_chain CP latch_d_en CP add_sub
-FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/boundary_scan_chain.vhd 2018/01/04.12:37:45 P.20131013
-EN work/boundary_scan_chain 1515598893 \
+FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/boundary_scan_chain.vhd 2018/01/10.20:16:51 P.20131013
+EN work/boundary_scan_chain 1515612002 \
       FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/boundary_scan_chain.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177
-AR work/boundary_scan_chain/Structural 1515598894 \
+AR work/boundary_scan_chain/Structural 1515612003 \
       FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/boundary_scan_chain.vhd \
-      EN work/boundary_scan_chain 1515598893 CP mux2_1 CP latch_d_en
+      EN work/boundary_scan_chain 1515612002 CP mux2_1 CP latch_d_en
 FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/cathode_encoder.vhd 2017/12/04.10:53:21 P.20131013
-EN work/cathode_encoder 1515598865 \
+EN work/cathode_encoder 1515611799 \
       FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/cathode_encoder.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/cathode_encoder/Behavioral 1515598866 \
+AR work/cathode_encoder/Behavioral 1515611800 \
       FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/cathode_encoder.vhd \
-      EN work/cathode_encoder 1515598865
+      EN work/cathode_encoder 1515611799
 FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/cathode_manager.vhd 2017/12/04.10:53:22 P.20131013
-EN work/cathode_manager 1515598873 \
+EN work/cathode_manager 1515611807 \
       FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/cathode_manager.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/cathode_manager/structural 1515598874 \
+AR work/cathode_manager/structural 1515611808 \
       FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/cathode_manager.vhd \
-      EN work/cathode_manager 1515598873 CP muxn_1 CP cathode_encoder
+      EN work/cathode_manager 1515611807 CP muxn_1 CP cathode_encoder
 FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/clock_filter.vhd 2017/12/04.10:53:21 P.20131013
-EN work/clock_filter 1515598869 \
+EN work/clock_filter 1515611803 \
       FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/clock_filter.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
       PB ieee/MATH_REAL 1381692182
-AR work/clock_filter/Behavioral 1515598870 \
+AR work/clock_filter/Behavioral 1515611804 \
       FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/clock_filter.vhd \
-      EN work/clock_filter 1515598869
+      EN work/clock_filter 1515611803
 FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/contatore_modulo_4.vhd 2018/01/05.01:39:39 P.20131013
-EN work/contatore_modulo_2n 1515598891 \
+EN work/contatore_modulo_2n 1515612000 \
       FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/contatore_modulo_4.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/contatore_modulo_2n/Behavioral 1515598892 \
+AR work/contatore_modulo_2n/Behavioral 1515612001 \
       FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/contatore_modulo_4.vhd \
-      EN work/contatore_modulo_2n 1515598891
+      EN work/contatore_modulo_2n 1515612000
 FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/counter_mod2n.vhd 2017/12/04.10:53:22 P.20131013
-EN work/counter_mod2n 1515598871 \
+EN work/counter_mod2n 1515611805 \
       FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/counter_mod2n.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/counter_mod2n/Behavioral 1515598872 \
+AR work/counter_mod2n/Behavioral 1515611806 \
       FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/counter_mod2n.vhd \
-      EN work/counter_mod2n 1515598871
+      EN work/counter_mod2n 1515611805
 FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/debounce.vhd 2018/01/03.13:22:30 P.20131013
 EN work/debounce 1515598897 \
       FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/debounce.vhd \
@@ -73,28 +73,28 @@ AR work/debounce/logic 1515598898 \
       FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/debounce.vhd \
       EN work/debounce 1515598897
 FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/demux1_n.vhd 2017/12/04.10:53:21 P.20131013
-EN work/demux1_n 1515598863 \
+EN work/demux1_n 1515611797 \
       FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/demux1_n.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
       PB ieee/std_logic_arith 1381692177
-AR work/demux1_n/dataflow 1515598864 \
+AR work/demux1_n/dataflow 1515611798 \
       FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/demux1_n.vhd \
-      EN work/demux1_n 1515598863
+      EN work/demux1_n 1515611797
 FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/display.vhd 2017/12/04.10:53:22 P.20131013
-EN work/display 1515598887 \
+EN work/display 1515611821 \
       FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/display.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/display/structural 1515598888 \
+AR work/display/structural 1515611822 \
       FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/display.vhd \
-      EN work/display 1515598887 CP clock_filter CP counter_mod2n \
+      EN work/display 1515611821 CP clock_filter CP counter_mod2n \
       CP cathode_manager CP anode_manager
 FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/display_on_board.vhd 2017/12/04.10:53:21 P.20131013
-EN work/display_on_board 1515598885 \
+EN work/display_on_board 1515611819 \
       FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/display_on_board.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/display_on_board/Behavioral 1515598886 \
+AR work/display_on_board/Behavioral 1515611820 \
       FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/display_on_board.vhd \
-      EN work/display_on_board 1515598885 CP edge_triggered_d_n
+      EN work/display_on_board 1515611819 CP edge_triggered_d_n
 FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/display_top_level.vhd 2017/12/04.10:53:21 P.20131013
 EN work/display_top_level 1515598901 \
       FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/display_top_level.vhd \
@@ -103,59 +103,59 @@ AR work/display_top_level/structural 1515598902 \
       FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/display_top_level.vhd \
       EN work/display_top_level 1515598901 CP display_on_board CP display
 FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/edge_triggered_d_n.vhd 2017/12/02.12:34:28 P.20131013
-EN work/edge_triggered_d_n 1515598877 \
+EN work/edge_triggered_d_n 1515611811 \
       FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/edge_triggered_d_n.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/edge_triggered_d_n/Behavioral 1515598878 \
+AR work/edge_triggered_d_n/Behavioral 1515611812 \
       FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/edge_triggered_d_n.vhd \
-      EN work/edge_triggered_d_n 1515598877
+      EN work/edge_triggered_d_n 1515611811
 FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/full_adder.vhd 2017/12/01.17:30:46 P.20131013
-EN work/full_adder 1515598867 \
+EN work/full_adder 1515611990 \
       FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/full_adder.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/full_adder/structural 1515598868 \
+AR work/full_adder/structural 1515611991 \
       FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/full_adder.vhd \
-      EN work/full_adder 1515598867 CP half_adder
+      EN work/full_adder 1515611990 CP half_adder
 FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/half_adder.vhd 2017/12/01.17:30:46 P.20131013
-EN work/half_adder 1515598859 \
+EN work/half_adder 1515611988 \
       FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/half_adder.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/half_adder/dataflow 1515598860 \
+AR work/half_adder/dataflow 1515611989 \
       FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/half_adder.vhd \
-      EN work/half_adder 1515598859
+      EN work/half_adder 1515611988
 FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/latch_d_en.vhd 2018/01/04.11:20:07 P.20131013
-EN work/latch_d_en 1515598883 \
+EN work/latch_d_en 1515611996 \
       FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/latch_d_en.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/latch_d_en/Behavioral 1515598884 \
+AR work/latch_d_en/Behavioral 1515611997 \
       FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/latch_d_en.vhd \
-      EN work/latch_d_en 1515598883
+      EN work/latch_d_en 1515611996
 FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/mux2_1.vhd 2017/12/01.17:30:46 P.20131013
-EN work/mux2_1 1515598881 \
+EN work/mux2_1 1515611994 \
       FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/mux2_1.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/mux2_1/dataflow 1515598882 \
-      FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/mux2_1.vhd EN work/mux2_1 1515598881
+AR work/mux2_1/dataflow 1515611995 \
+      FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/mux2_1.vhd EN work/mux2_1 1515611994
 FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/muxn_1.vhd 2017/12/04.10:53:21 P.20131013
-EN work/muxn_1 1515598861 \
+EN work/muxn_1 1515611795 \
       FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/muxn_1.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/muxn_1/dataflow 1515598862 \
-      FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/muxn_1.vhd EN work/muxn_1 1515598861
+AR work/muxn_1/dataflow 1515611796 \
+      FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/muxn_1.vhd EN work/muxn_1 1515611795
 FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/ripple_carry_adder.vhd 2017/12/01.17:30:46 P.20131013
-EN work/ripple_carry_adder 1515598879 \
+EN work/ripple_carry_adder 1515611992 \
       FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/ripple_carry_adder.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177
-AR work/ripple_carry_adder/structural 1515598880 \
+AR work/ripple_carry_adder/structural 1515611993 \
       FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/ripple_carry_adder.vhd \
-      EN work/ripple_carry_adder 1515598879 CP full_adder
-FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/Serial_Booth_PC_Moore.vhd 2018/01/09.16:18:42 P.20131013
-EN work/Serial_Booth_PC_Moore 1515598889 \
+      EN work/ripple_carry_adder 1515611992 CP full_adder
+FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/Serial_Booth_PC_Moore.vhd 2018/01/10.20:16:18 P.20131013
+EN work/Serial_Booth_PC_Moore 1515611998 \
       FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/Serial_Booth_PC_Moore.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/Serial_Booth_PC_Moore/Behavioral 1515598890 \
+AR work/Serial_Booth_PC_Moore/Behavioral 1515611999 \
       FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/Serial_Booth_PC_Moore.vhd \
-      EN work/Serial_Booth_PC_Moore 1515598889
+      EN work/Serial_Booth_PC_Moore 1515611998
 FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/tester_dispositivi.vhd 2018/01/10.16:40:40 P.20131013
 EN work/tester_dispositivi 1515598903 \
       FL /media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/tester_dispositivi.vhd \

@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-debian::  Wed Jan 10 11:02:55 2018
+debian::  Wed Jan 10 20:20:06 2018
 
 par -w -intstyle ise -ol high -t 1 Booth_multiplier_map.ncd
 Booth_multiplier.ncd Booth_multiplier.pcf 
@@ -85,16 +85,16 @@ Phase 8.5  Local Placement Optimization (Checksum:63c1729) REAL time: 1 secs
 
 Phase 9.8  Global Placement
 ..
-Phase 9.8  Global Placement (Checksum:128fb126) REAL time: 3 secs 
+Phase 9.8  Global Placement (Checksum:128f5159) REAL time: 2 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:128fb126) REAL time: 3 secs 
+Phase 10.5  Local Placement Optimization (Checksum:128f5159) REAL time: 2 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:14881d4d) REAL time: 3 secs 
+Phase 11.18  Placement Optimization (Checksum:14853804) REAL time: 3 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:14881d4d) REAL time: 3 secs 
+Phase 12.5  Local Placement Optimization (Checksum:14853804) REAL time: 3 secs 
 
 Total REAL time to Placer completion: 3 secs 
 Total CPU  time to Placer completion: 2 secs 
@@ -113,7 +113,7 @@ Phase  3  : 59 unrouted;      REAL time: 3 secs
 
 Phase  4  : 72 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
 Updating file: Booth_multiplier.ncd with current fully routed design.
 
@@ -134,7 +134,7 @@ Phase 11  : 0 unrouted; (Par is working to improve performance)     REAL time: 5
 Phase 12  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
 
 Total REAL time to Router completion: 5 secs 
-Total CPU time to Router completion: 5 secs 
+Total CPU time to Router completion: 4 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -154,7 +154,7 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |           clk_BUFGP | BUFGMUX_X2Y10| No   |   34 |  0.009     |  0.042      |
 +---------------------+--------------+------+------+------------+-------------+
-|   cu/en_a_0_not0001 |         Local|      |    2 |  0.032     |  1.473      |
+|     cu/en_q_not0001 |         Local|      |    2 |  0.032     |  1.473      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing

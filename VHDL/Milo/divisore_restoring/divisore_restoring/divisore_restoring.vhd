@@ -104,6 +104,7 @@ COMPONENT contatore_modulo_2n
 	end component;
 	signal div,suma,sum1,quoz,quoz_1,rest:STD_LOGIC_VECTOR(width-1 downto 0):=(others=>'0');
 	signal en_div,en_c,en_r,en_q,en_sh,bit_shift,a_s,stop,bit_q1,fin,en_res:STD_LOGIC:='0';
+	signal en_res1,en_res2:STD_LOGIC_VECTOR(0 downto 0):="0";
 begin
 	cu: serial_div_restoring port map(clk,start,sum1(width-1),reset,en_div,a_s,en_sh,en_c,en_r,en_q,bit_q1,en_res,stop);
 	operation_counter: contatore_modulo_2n port map(clk,en_c,reset,stop,open);
@@ -117,10 +118,12 @@ begin
 	quoz_1<=quoz(width-2 downto 0) & bit_q1;
 	q:latch_d_en port map(clk,reset,en_res,quoz_1,quoziente); 
 	r:latch_d_en port map(clk,reset,en_res,rest,resto); 
+	en_res1(0)<=en_res;
+	end_f:latch_d_en generic map (width=>1) port map(clk,reset,en_res,en_res1,en_res2); 
 	-- bit q1 mi indica se la sottrazione mi ha dato valore positivo o negativo, essendo l' ultima operazione una sottrazione non salvo
 	--il valore nel registro, prendo valore sottrattore come resto se questo è positivo, perchè il resto cambia, altrimenti quello della
 	--iterazione precedente nel registrp
 																													
-	finish<=stop;
+	finish<=en_res2(0);
 end Structural;
 

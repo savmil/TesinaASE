@@ -34,9 +34,9 @@ entity Serial_Booth_PC_Moore is
 			  start: in STD_LOGIC;
 			  pair_of_bits :in STD_LOGIC_VECTOR(1 downto 0);
 			  reset : in STD_LOGIC:='0';
-			  en_a : out  STD_LOGIC_VECTOR(0 downto 0);
+			  en_a : out  STD_LOGIC;
            en_m : out  STD_LOGIC;
-			  en_q : out STD_LOGIC_VECTOR(0 downto 0);
+			  en_q : out STD_LOGIC;
 			  en_c : out STD_LOGIC;
            en_shift : out  STD_LOGIC;
 			  en_p1 : out STD_LOGIC;
@@ -77,29 +77,29 @@ begin
 			case current_state is 
 				when idle =>
 								if start='1' then
-									en_q(0)<='0';
-									en_a(0)<='0';
+									en_q<='0';
+									en_a<='0';
 									en_p1<='0';
 								end if;
 				when init => en_m<='1';
-								 en_q(0)<='1';
-								 en_a(0)<='1';-- questa prima abilitazione mi fa caricare il moltiplicatore in a
+								 en_q<='1';
+								 en_a<='1';-- questa prima abilitazione mi fa caricare il moltiplicatore in a
 				when getseq =>	en_c<='1';
-									en_q(0)<='1';
-									en_a(0)<='1';
+									en_q<='1';
+									en_a<='1';
 									if (pair_of_bits="00" or pair_of_bits="11") then
-										en_a(0)<='1';
+										en_a<='1';
 									elsif pair_of_bits="01" then
-										en_a(0)<='0'; -- serve a dire che voglio shiftare la somma, non il valore salvato nella scan_chain
+										en_a<='0'; -- serve a dire che voglio shiftare la somma, non il valore salvato nella scan_chain
 									elsif pair_of_bits="10" then
-										en_a(0)<='0';
+										en_a<='0';
 									end if;
 				when inits =>  en_shift<='1';
-									en_q(0)<='1';
-									en_a(0)<='1';
-				when shift =>  en_q(0)<='1';
+									en_q<='1';
+									en_a<='1';
+				when shift =>  en_q<='1';
 									en_shift<='0';
-								   en_a(0)<='1';
+								   en_a<='1';
 									en_p1<='1';-- mi rimango il valore nella scan chain
 
 			end case;

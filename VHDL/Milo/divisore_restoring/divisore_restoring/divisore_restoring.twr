@@ -45,24 +45,24 @@ Setup/Hold to clock clk
             |Max Setup to|Max Hold to |                  | Clock  |
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
-dividendo<0>|    0.517(R)|    0.677(R)|clk_BUFGP         |   0.000|
-dividendo<1>|    0.715(R)|    0.519(R)|clk_BUFGP         |   0.000|
-dividendo<2>|    0.510(R)|    0.683(R)|clk_BUFGP         |   0.000|
-dividendo<3>|    0.625(R)|    0.590(R)|clk_BUFGP         |   0.000|
-dividendo<4>|    0.635(R)|    0.582(R)|clk_BUFGP         |   0.000|
-dividendo<5>|    0.617(R)|    0.598(R)|clk_BUFGP         |   0.000|
-dividendo<6>|    0.516(R)|    0.677(R)|clk_BUFGP         |   0.000|
-dividendo<7>|    0.583(R)|    0.624(R)|clk_BUFGP         |   0.000|
-divisore<0> |    0.420(R)|    0.756(R)|clk_BUFGP         |   0.000|
-divisore<1> |    0.382(R)|    0.787(R)|clk_BUFGP         |   0.000|
-divisore<2> |    0.423(R)|    0.754(R)|clk_BUFGP         |   0.000|
-divisore<3> |    0.387(R)|    0.783(R)|clk_BUFGP         |   0.000|
-divisore<4> |    0.655(R)|    0.567(R)|clk_BUFGP         |   0.000|
-divisore<5> |    0.105(R)|    1.007(R)|clk_BUFGP         |   0.000|
-divisore<6> |    0.117(R)|    0.997(R)|clk_BUFGP         |   0.000|
-divisore<7> |   -0.161(R)|    1.220(R)|clk_BUFGP         |   0.000|
-reset       |    2.427(R)|   -0.668(R)|clk_BUFGP         |   0.000|
-start       |    3.772(R)|    0.975(R)|clk_BUFGP         |   0.000|
+dividendo<0>|    0.355(R)|    0.807(R)|clk_BUFGP         |   0.000|
+dividendo<1>|    0.355(R)|    0.807(R)|clk_BUFGP         |   0.000|
+dividendo<2>|    0.649(R)|    0.572(R)|clk_BUFGP         |   0.000|
+dividendo<3>|    0.442(R)|    0.738(R)|clk_BUFGP         |   0.000|
+dividendo<4>|    0.561(R)|    0.642(R)|clk_BUFGP         |   0.000|
+dividendo<5>|    0.607(R)|    0.605(R)|clk_BUFGP         |   0.000|
+dividendo<6>|    0.779(R)|    0.468(R)|clk_BUFGP         |   0.000|
+dividendo<7>|    0.905(R)|    0.368(R)|clk_BUFGP         |   0.000|
+divisore<0> |    0.711(R)|    0.522(R)|clk_BUFGP         |   0.000|
+divisore<1> |    0.166(R)|    0.958(R)|clk_BUFGP         |   0.000|
+divisore<2> |    0.812(R)|    0.446(R)|clk_BUFGP         |   0.000|
+divisore<3> |    0.923(R)|    0.357(R)|clk_BUFGP         |   0.000|
+divisore<4> |    0.310(R)|    0.848(R)|clk_BUFGP         |   0.000|
+divisore<5> |    0.612(R)|    0.607(R)|clk_BUFGP         |   0.000|
+divisore<6> |    1.138(R)|    0.186(R)|clk_BUFGP         |   0.000|
+divisore<7> |    0.455(R)|    0.732(R)|clk_BUFGP         |   0.000|
+reset       |    3.220(R)|   -1.302(R)|clk_BUFGP         |   0.000|
+start       |    4.835(R)|    0.645(R)|clk_BUFGP         |   0.000|
 ------------+------------+------------+------------------+--------+
 
 Clock clk to Pad
@@ -70,23 +70,23 @@ Clock clk to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-finish      |    7.384(R)|clk_BUFGP         |   0.000|
-quoziente<0>|    7.159(R)|clk_BUFGP         |   0.000|
-quoziente<1>|    7.107(R)|clk_BUFGP         |   0.000|
-quoziente<2>|    7.135(R)|clk_BUFGP         |   0.000|
-quoziente<3>|    7.323(R)|clk_BUFGP         |   0.000|
-quoziente<4>|    7.363(R)|clk_BUFGP         |   0.000|
-quoziente<5>|    7.161(R)|clk_BUFGP         |   0.000|
-quoziente<6>|    7.438(R)|clk_BUFGP         |   0.000|
-quoziente<7>|    7.726(R)|clk_BUFGP         |   0.000|
-resto<0>    |    7.341(R)|clk_BUFGP         |   0.000|
-resto<1>    |    7.371(R)|clk_BUFGP         |   0.000|
-resto<2>    |    6.669(R)|clk_BUFGP         |   0.000|
-resto<3>    |    7.097(R)|clk_BUFGP         |   0.000|
-resto<4>    |    7.152(R)|clk_BUFGP         |   0.000|
-resto<5>    |    6.614(R)|clk_BUFGP         |   0.000|
-resto<6>    |    7.075(R)|clk_BUFGP         |   0.000|
-resto<7>    |    6.617(R)|clk_BUFGP         |   0.000|
+finish      |    7.681(R)|clk_BUFGP         |   0.000|
+quoziente<0>|    6.662(R)|clk_BUFGP         |   0.000|
+quoziente<1>|    6.610(R)|clk_BUFGP         |   0.000|
+quoziente<2>|    6.605(R)|clk_BUFGP         |   0.000|
+quoziente<3>|    7.135(R)|clk_BUFGP         |   0.000|
+quoziente<4>|    6.660(R)|clk_BUFGP         |   0.000|
+quoziente<5>|    6.608(R)|clk_BUFGP         |   0.000|
+quoziente<6>|    6.662(R)|clk_BUFGP         |   0.000|
+quoziente<7>|    7.090(R)|clk_BUFGP         |   0.000|
+resto<0>    |    7.569(R)|clk_BUFGP         |   0.000|
+resto<1>    |    7.769(R)|clk_BUFGP         |   0.000|
+resto<2>    |    7.587(R)|clk_BUFGP         |   0.000|
+resto<3>    |    7.262(R)|clk_BUFGP         |   0.000|
+resto<4>    |    7.139(R)|clk_BUFGP         |   0.000|
+resto<5>    |    7.086(R)|clk_BUFGP         |   0.000|
+resto<6>    |    7.597(R)|clk_BUFGP         |   0.000|
+resto<7>    |    7.699(R)|clk_BUFGP         |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
@@ -94,11 +94,11 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    6.322|         |         |         |
+clk            |    6.528|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Wed Jan 10 09:38:05 2018 
+Analysis completed Wed Jan 10 23:53:09 2018 
 --------------------------------------------------------------------------------
 
 Trace Settings:

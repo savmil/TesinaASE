@@ -30,13 +30,13 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity Booth_multiplier is
-	 generic (width : NATURAL:=8);
+	 generic (width : NATURAL:=32);
     Port ( mul1 : in  STD_LOGIC_VECTOR (width-1 downto 0):=(others=>'0');
            mul2 : in  STD_LOGIC_VECTOR (width-1 downto 0);
            start : in  STD_LOGIC;
 			  clk: in STD_LOGIC;
 			  reset : in STD_LOGIC;
-			  finished: out STD_LOGIC;
+			  fin: out STD_LOGIC_VECTOR(0 downto 0);
            product : out  STD_LOGIC_VECTOR (2*width-1 downto 0));
 end Booth_multiplier;
 
@@ -62,27 +62,26 @@ COMPONENT contatore_modulo_2n
 		output : OUT std_logic_vector(width-1 downto 0)
 		);
 	END COMPONENT;
-	COMPONENT latch_d
-	generic(width: NATURAL:=32);
-	PORT(
-		input : IN std_logic_vector(width-1 downto 0);
-		enable : IN std_logic;
-		reset : IN std_logic;          
-		output : OUT std_logic_vector(width-1 downto 0)
-		);
-	END COMPONENT;
+	component latch_d_en is
+	generic(width:natural:=32);
+    Port ( clk : in  STD_LOGIC;
+           reset : in  STD_LOGIC;
+           en : in  STD_LOGIC;
+           d : in  STD_LOGIC_VECTOR (width-1 downto 0);
+           q : out  STD_LOGIC_VECTOR (width-1 downto 0));
+	end component;
 	COMPONENT Serial_Booth_PC_Moore
 	PORT(
 		clk: in STD_LOGIC;
 			  start: in STD_LOGIC;
 			  pair_of_bits :in STD_LOGIC_VECTOR(1 downto 0);
-			  reset: in STD_LOGIC;
+			  reset : in STD_LOGIC:='0';
 			  en_a : out  STD_LOGIC;
            en_m : out  STD_LOGIC;
 			  en_q : out STD_LOGIC;
 			  en_c : out STD_LOGIC;
            en_shift : out  STD_LOGIC;
-			  finished : out STD_LOGIC;
+			  en_p1 : out STD_LOGIC;
            stop : in  STD_LOGIC);
 	END COMPONENT;
 	component boundary_scan_chain 
@@ -99,31 +98,24 @@ COMPONENT contatore_modulo_2n
 	 );
 	end component;
 	signal q_val,q_val_2:STD_LOGIC_VECTOR(width downto 0):=(others=>'0');
-	signal moltiplicatore,suma,sum1:STD_LOGIC_VECTOR(width-1 downto 0):=(others=>'0');
-	signal stop,en_m,en_c,en_a,en_q,en_sh,bit_shift,fin:STD_LOGIC:='0';
+	signal moltiplicatore,molt2,suma,sum1:STD_LOGIC_VECTOR(width-1 downto 0):=(others=>'0');
+	signal prod:STD_LOGIC_VECTOR(2*width-1 downto 0):=(others=>'0');
+	signal fint_stop: STD_LOGIC_VECTOR(0 downto 0);
+	signal stop,en_m,en_c,en_sh,en_p1,bit_shift,en_q,en_a:STD_LOGIC:='0';
+	--signal en_q,en_a:STD_LOGIC_VECTOR(0 downto 0):="0";
 begin
 	-- conto per il numero di bit, abilito i registri, vedo i bit, 00 11 solo shift, 01 - mul2 poi prodotto shift
 	--10 + mul2 shift
 	q_val_2<=mul2 & '0';
-	cu: Serial_Booth_PC_Moore port map(clk,start,q_val(1 downto 0),reset,en_a,en_m,en_q,en_c,en_sh,fin,stop);
+	cu: Serial_Booth_PC_Moore port map(clk,start,q_val(1 downto 0),reset,en_a,en_m,en_q,en_c,en_sh,en_p1,stop);
 	operation_counter: contatore_modulo_2n port map(clk,en_c,reset,stop,open);--inserire segnale stop per po
 	q: boundary_scan_chain generic map (n=> width+1) port map(bit_shift,clk,reset,en_q,q_val_2,en_sh,open,q_val);
-	m: latch_d port map(mul1,en_m,reset,moltiplicatore);
+	m: latch_d_en port map(clk,reset,en_m,mul1,moltiplicatore);
 	a: boundary_scan_chain port map(sum1(width-1),clk,reset,en_a,sum1,en_sh,bit_shift,suma);
-	--q_val(width)<=sum(0);
-	--q_val_2(width-1 downto 0)<=q_val(width-1 downto 0);
-	--sum1(2*width-1 downto width)<=moltiplicando;-- abilito i due registri per fare prodotto enable gestisce po e carico moltiplicando in sum1
 	gestore_shift: add_sub port map(suma,moltiplicatore,q_val(1),sum1,open,open);-- bisogna inserire il segno 
-	product<= suma & q_val(width downto 1);
-	finished<=fin;
-	--prodotto: latch_d generic map(width=>17) port map (sum1,start,reset,start,sum1(width-1),moltiplicatore); --segnale di shifting
-	--i(2*width-1 downto 9)<=sum1(6 downto 0);
-	--i(8 downto 0)<=q_val;
-	--shifter: registro_a_scorrimento port map(i,en_sh,reset,sum(7),ou);
-	--shifter: boundary_scan_chain port	map('1',clk,reset,i,en_sh,bit_shift,ou);
-	--abilito dato che quando faccio solo shift non devo fare nessuna somma abilito prima un registro tutti 0 e poi
-	-- un il registro con il moltiplicando quando mi serve
-	--sum1<=ou(2*width-1 downto 8);
-	--q_val_2(7 downto 0)<=ou(7 downto 0);
+	prod<= suma & q_val(width downto 1);
+	prod1:latch_d_en generic map (width=>64) port map(clk,reset,en_p1,prod,product);
+	fint_stop(0)<=stop;
+	f: latch_d_en generic map (width=>1) port map(clk,reset,en_p1,fint_stop,fin);
 end Structural;
 

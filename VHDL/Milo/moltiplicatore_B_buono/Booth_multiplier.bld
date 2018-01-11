@@ -27,10 +27,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 387616 kilobytes
+Total memory usage is 387612 kilobytes
 
 Writing NGD file "Booth_multiplier.ngd" ...
 Total REAL time to NGDBUILD completion:  2 sec
-Total CPU time to NGDBUILD completion:   2 sec
+Total CPU time to NGDBUILD completion:   1 sec
 
 Writing NGDBUILD log file "Booth_multiplier.bld"...
