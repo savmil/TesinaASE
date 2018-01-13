@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Michele/Documents/uni/VHDL/ISE/JKFlipFlop/jk_flipflop_testbench_isim_translate.exe" -prj "C:/Users/Michele/Documents/uni/VHDL/ISE/JKFlipFlop/jk_flipflop_testbench_translate.prj" "work.jk_flipflop_testbench" 

@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="JKFlipFlop.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd">
+      <branch xil_pn:name="BehavioralSim"/>
+      <branch xil_pn:name="PostTranslateSimulation"/>
+      <branch xil_pn:name="PostRouteSimulation"/>
+    </file>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log">
+      <branch xil_pn:name="BehavioralSim"/>
+      <branch xil_pn:name="PostTranslateSimulation"/>
+      <branch xil_pn:name="PostRouteSimulation"/>
+    </file>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="jk_flipflop.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="jk_flipflop.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="jk_flipflop.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="jk_flipflop.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="jk_flipflop.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="jk_flipflop.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="jk_flipflop.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="jk_flipflop.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="jk_flipflop.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="jk_flipflop.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="jk_flipflop.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="jk_flipflop.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="jk_flipflop.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="jk_flipflop.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="jk_flipflop.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="jk_flipflop.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="jk_flipflop.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="jk_flipflop.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="jk_flipflop.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="jk_flipflop_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="jk_flipflop_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="jk_flipflop_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="jk_flipflop_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="jk_flipflop_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="jk_flipflop_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="jk_flipflop_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="jk_flipflop_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="jk_flipflop_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="jk_flipflop_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="jk_flipflop_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="jk_flipflop_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="jk_flipflop_summary.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="jk_flipflop_testbench_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="jk_flipflop_testbench_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="jk_flipflop_testbench_isim_beh.wdb"/>
+    <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="jk_flipflop_testbench_isim_par.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="jk_flipflop_testbench_isim_par.wdb"/>
+    <file xil_pn:branch="PostTranslateSimulation" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="jk_flipflop_testbench_isim_translate.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="jk_flipflop_testbench_isim_translate.wdb"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="jk_flipflop_testbench_par.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="jk_flipflop_testbench_stx_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="jk_flipflop_testbench_translate.prj"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="jk_flipflop_usage.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="jk_flipflop_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="jk_flipflop_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="netgen"/>
+    <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/par/jk_flipflop_timesim.nlf"/>
+    <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_SDF" xil_pn:name="netgen/par/jk_flipflop_timesim.sdf"/>
+    <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/par/jk_flipflop_timesim.vhd"/>
+    <file xil_pn:branch="PostTranslateSimulation" xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/translate/jk_flipflop_translate.nlf"/>
+    <file xil_pn:branch="PostTranslateSimulation" xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/translate/jk_flipflop_translate.vhd"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini">
+      <branch xil_pn:name="BehavioralSim"/>
+      <branch xil_pn:name="PostTranslateSimulation"/>
+      <branch xil_pn:name="PostRouteSimulation"/>
+    </file>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1515872608" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1515872608">
+      <status xil_pn:value="SuccessfullyRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1515874704" xil_pn:in_ck="6708568046900555167" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1515874704">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="jk_flipflop.vhd"/>
+      <outfile xil_pn:name="jk_flipflop_testbench.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1515872901" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-1970413059558672507" xil_pn:start_ts="1515872901">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1515872901" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="950706718489248967" xil_pn:start_ts="1515872901">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1515872608" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-9151848413054514924" xil_pn:start_ts="1515872608">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1515874708" xil_pn:in_ck="6708568046900555167" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1515874708">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="jk_flipflop.vhd"/>
+      <outfile xil_pn:name="jk_flipflop_testbench.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1515874712" xil_pn:in_ck="6708568046900555167" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-2725889558517974868" xil_pn:start_ts="1515874708">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="jk_flipflop_testbench_beh.prj"/>
+      <outfile xil_pn:name="jk_flipflop_testbench_isim_beh.exe"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1515874713" xil_pn:in_ck="6518292162077136062" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-5149710415122655239" xil_pn:start_ts="1515874712">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="jk_flipflop_testbench_isim_beh.wdb"/>
+    </transform>
+    <transform xil_pn:end_ts="1515872849" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1515872849">
+      <status xil_pn:value="SuccessfullyRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1515872849" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-4290392171337663531" xil_pn:start_ts="1515872849">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1515872849" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-9151848413054514924" xil_pn:start_ts="1515872849">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1515872849" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1515872849">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1515872849" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="4128280262236092499" xil_pn:start_ts="1515872849">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1515872849" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="2988080280842703814" xil_pn:start_ts="1515872849">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1515872849" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="3850625158891363166" xil_pn:start_ts="1515872849">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1515874627" xil_pn:in_ck="5051437428540815520" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="6574916654634692549" xil_pn:start_ts="1515874617">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name=".lso"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="jk_flipflop.lso"/>
+      <outfile xil_pn:name="jk_flipflop.ngc"/>
+      <outfile xil_pn:name="jk_flipflop.ngr"/>
+      <outfile xil_pn:name="jk_flipflop.prj"/>
+      <outfile xil_pn:name="jk_flipflop.stx"/>
+      <outfile xil_pn:name="jk_flipflop.syr"/>
+      <outfile xil_pn:name="jk_flipflop.xst"/>
+      <outfile xil_pn:name="jk_flipflop_testbench_beh.prj"/>
+      <outfile xil_pn:name="jk_flipflop_testbench_par.prj"/>
+      <outfile xil_pn:name="jk_flipflop_testbench_stx_beh.prj"/>
+      <outfile xil_pn:name="jk_flipflop_testbench_translate.prj"/>
+      <outfile xil_pn:name="jk_flipflop_vhdl.prj"/>
+      <outfile xil_pn:name="jk_flipflop_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1515873047" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-1097170474726203096" xil_pn:start_ts="1515873047">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1515874635" xil_pn:in_ck="5051437428540806774" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="6269170417787547745" xil_pn:start_ts="1515874627">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="jk_flipflop.bld"/>
+      <outfile xil_pn:name="jk_flipflop.ngd"/>
+      <outfile xil_pn:name="jk_flipflop_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1515874643" xil_pn:in_ck="5051437428540806775" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-6349267131326700252" xil_pn:start_ts="1515874635">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="jk_flipflop.pcf"/>
+      <outfile xil_pn:name="jk_flipflop_map.map"/>
+      <outfile xil_pn:name="jk_flipflop_map.mrp"/>
+      <outfile xil_pn:name="jk_flipflop_map.ncd"/>
+      <outfile xil_pn:name="jk_flipflop_map.ngm"/>
+      <outfile xil_pn:name="jk_flipflop_map.xrpt"/>
+      <outfile xil_pn:name="jk_flipflop_summary.xml"/>
+      <outfile xil_pn:name="jk_flipflop_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1515874661" xil_pn:in_ck="7142013378308000016" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="1934304854298957634" xil_pn:start_ts="1515874643">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="jk_flipflop.ncd"/>
+      <outfile xil_pn:name="jk_flipflop.pad"/>
+      <outfile xil_pn:name="jk_flipflop.par"/>
+      <outfile xil_pn:name="jk_flipflop.ptwx"/>
+      <outfile xil_pn:name="jk_flipflop.unroutes"/>
+      <outfile xil_pn:name="jk_flipflop.xpi"/>
+      <outfile xil_pn:name="jk_flipflop_pad.csv"/>
+      <outfile xil_pn:name="jk_flipflop_pad.txt"/>
+      <outfile xil_pn:name="jk_flipflop_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1515874669" xil_pn:in_ck="5051437428540806643" xil_pn:name="TRAN_postParSimModel" xil_pn:prop_ck="-2176953593386639933" xil_pn:start_ts="1515874661">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="netgen"/>
+      <outfile xil_pn:name="netgen/par/jk_flipflop_timesim.nlf"/>
+      <outfile xil_pn:name="netgen/par/jk_flipflop_timesim.sdf"/>
+      <outfile xil_pn:name="netgen/par/jk_flipflop_timesim.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1515874964" xil_pn:in_ck="-834768269845890452" xil_pn:name="TRAN_copyPost-ParAbstractToPreSimulation" xil_pn:start_ts="1515874964">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="jk_flipflop_testbench.vhd"/>
+      <outfile xil_pn:name="netgen/par/jk_flipflop_timesim.sdf"/>
+      <outfile xil_pn:name="netgen/par/jk_flipflop_timesim.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1515874978" xil_pn:in_ck="7912595700874330584" xil_pn:name="TRAN_ISimulatePostPlace&amp;RouteModelRunFuse" xil_pn:prop_ck="5194692718651945036" xil_pn:start_ts="1515874964">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="jk_flipflop_testbench_isim_par.exe"/>
+      <outfile xil_pn:name="jk_flipflop_testbench_par.prj"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1515874979" xil_pn:in_ck="6518292180013005266" xil_pn:name="TRAN_ISimulatePostPlace&amp;RouteModel" xil_pn:prop_ck="-4863609962540526374" xil_pn:start_ts="1515874978">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="jk_flipflop_testbench_isim_par.wdb"/>
+    </transform>
+    <transform xil_pn:end_ts="1515874661" xil_pn:in_ck="5051437428540806643" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1515874655">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="jk_flipflop.twr"/>
+      <outfile xil_pn:name="jk_flipflop.twx"/>
+    </transform>
+    <transform xil_pn:end_ts="1515875046" xil_pn:in_ck="5051437428540806775" xil_pn:name="TRAN_postXlateSimModel" xil_pn:prop_ck="-6071482085575736233" xil_pn:start_ts="1515875043">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="netgen"/>
+      <outfile xil_pn:name="netgen/translate/jk_flipflop_translate.nlf"/>
+      <outfile xil_pn:name="netgen/translate/jk_flipflop_translate.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1515875053" xil_pn:in_ck="2532305922298818617" xil_pn:name="TRAN_copyPost-TranslateAbstractToPreSimulation" xil_pn:start_ts="1515875053">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="jk_flipflop_testbench.vhd"/>
+      <outfile xil_pn:name="netgen/translate/jk_flipflop_translate.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1515875067" xil_pn:in_ck="2532305922298818617" xil_pn:name="TRAN_ISimulatePostTranslateModelRunFuse" xil_pn:prop_ck="5194692718651945036" xil_pn:start_ts="1515875053">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="jk_flipflop_testbench_isim_translate.exe"/>
+      <outfile xil_pn:name="jk_flipflop_testbench_translate.prj"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1515875070" xil_pn:in_ck="-34104710749998339" xil_pn:name="TRAN_ISimulatePostTranslateModel" xil_pn:prop_ck="-6290366601764507942" xil_pn:start_ts="1515875067">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="jk_flipflop_testbench_isim_translate.wdb"/>
+    </transform>
+  </transforms>
+
+</generated_project>

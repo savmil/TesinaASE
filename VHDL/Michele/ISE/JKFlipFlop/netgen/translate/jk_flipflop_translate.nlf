@@ -1,0 +1,21 @@
+Release 14.4 - netgen P.49d (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: netgen -intstyle ise -rpw 100 -tpw 0 -ar Structure -tm
+jk_flipflop -w -dir netgen/translate -ofmt vhdl -sim jk_flipflop.ngd
+jk_flipflop_translate.vhd  
+
+Reading design 'jk_flipflop.ngd' ...
+Flattening design ...
+Processing design ... 
+  Preping design's networks ...
+  Preping design's macros ...
+Writing VHDL netlist
+'C:\Users\Michele\Documents\uni\VHDL\ISE\JKFlipFlop\netgen\translate\jk_flipflop
+_translate.vhd' ...
+INFO:NetListWriters:635 - The generated VHDL netlist contains Xilinx SIMPRIM
+   simulation primitives and has to be used with SIMPRIM library for correct
+   compilation and simulation. 
+Number of warnings: 0
+Number of info messages: 1
+Total memory usage is 106540 kilobytes

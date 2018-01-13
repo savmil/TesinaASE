@@ -1,0 +1,2 @@
+vhdl work "netgen/par/jk_flipflop_timesim.vhd"
+vhdl work "jk_flipflop_testbench.vhd"
