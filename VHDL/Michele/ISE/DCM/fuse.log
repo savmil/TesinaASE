@@ -1,0 +1,53 @@
+Running: C:\Xilinx\14.4\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Michele/Documents/uni/VHDL/ISE/DCM/display_cu_testbench_isim_beh.exe -prj C:/Users/Michele/Documents/uni/VHDL/ISE/DCM/display_cu_testbench_beh.prj work.display_cu_testbench 
+ISim P.49d (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Michele/Documents/uni/VHDL/ISE/DCM/muxn_1.vhd" into library work
+Parsing VHDL file "C:/Users/Michele/Documents/uni/VHDL/ISE/DCM/demux1_n.vhd" into library work
+Parsing VHDL file "C:/Users/Michele/Documents/uni/VHDL/ISE/DCM/counter_mod2n.vhd" into library work
+Parsing VHDL file "C:/Users/Michele/Documents/uni/VHDL/ISE/DCM/cathode_encoder.vhd" into library work
+Parsing VHDL file "C:/Users/Michele/Documents/uni/VHDL/ISE/DCM/cathode_manager.vhd" into library work
+Parsing VHDL file "C:/Users/Michele/Documents/uni/VHDL/ISE/DCM/anode_manager.vhd" into library work
+Parsing VHDL file "C:/Users/Michele/Documents/uni/VHDL/ISE/DCM/dcm.vhd" into library work
+Parsing VHDL file "C:/Users/Michele/Documents/uni/VHDL/ISE/DCM/edge_triggered_d_n.vhd" into library work
+Parsing VHDL file "C:/Users/Michele/Documents/uni/VHDL/ISE/DCM/display.vhd" into library work
+Parsing VHDL file "C:/Users/Michele/Documents/uni/VHDL/ISE/DCM/display_cu.vhd" into library work
+Parsing VHDL file "C:/Users/Michele/Documents/uni/VHDL/ISE/DCM/display_cu_testbench.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 112820 KB
+Fuse CPU Usage: 826 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package vcomponents
+Compiling package textio
+Compiling package vital_timing
+Compiling package vital_primitives
+Compiling package vpkg
+Compiling architecture bufg_v of entity BUFG [bufg_default]
+Compiling architecture ibufg_v of entity IBUFG [\IBUFG("DONT_CARE","0",true,"DEF...]
+Compiling architecture dcm_sp_clock_divide_by_2_v of entity dcm_sp_clock_divide_by_2 [dcm_sp_clock_divide_by_2_default]
+Compiling architecture dcm_sp_maximum_period_check_v of entity dcm_sp_maximum_period_check [\dcm_sp_maximum_period_check("*"...]
+Compiling architecture dcm_sp_maximum_period_check_v of entity dcm_sp_maximum_period_check [\dcm_sp_maximum_period_check("*"...]
+Compiling architecture dcm_sp_clock_lost_v of entity dcm_sp_clock_lost [dcm_sp_clock_lost_default]
+Compiling architecture dcm_sp_v of entity DCM_SP [\DCM_SP(true,"*",true,false,2.0,...]
+Compiling architecture behavioral of entity dcm [dcm_default]
+Compiling architecture behavioral of entity edge_triggered_d_n [\edge_triggered_d_n(8)\]
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity counter_mod2n [\counter_mod2n(2)\]
+Compiling architecture dataflow of entity muxn_1 [\muxn_1(2)\]
+Compiling architecture behavioral of entity cathode_encoder [cathode_encoder_default]
+Compiling architecture structural of entity cathode_manager [cathode_manager_default]
+Compiling architecture dataflow of entity demux1_n [\demux1_n(2)\]
+Compiling architecture structural of entity anode_manager [anode_manager_default]
+Compiling architecture structural of entity display [display_default]
+Compiling architecture structural of entity display_cu [display_cu_default]
+Compiling architecture behavior of entity display_cu_testbench
+Time Resolution for simulation is 1ps.
+Compiled 45 VHDL Units
+Built simulation executable C:/Users/Michele/Documents/uni/VHDL/ISE/DCM/display_cu_testbench_isim_beh.exe
+Fuse Memory Usage: 144804 KB
+Fuse CPU Usage: 1575 ms

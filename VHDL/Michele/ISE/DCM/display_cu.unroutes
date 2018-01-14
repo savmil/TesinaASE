@@ -1,0 +1,73 @@
+Release 14.4 - par P.49d (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Mon Jan 15 00:06:00 2018
+
+62 signals are not completely routed.
+
+WARNING:ParHelpers:360 - Design is not completely routed.
+
+   GLOBAL_LOGIC0
+   GLOBAL_LOGIC1
+   anodes_n_0_OBUF
+   anodes_n_1_OBUF
+   anodes_n_2_OBUF
+   anodes_n_3_OBUF
+   cathodes_0_OBUF
+   cathodes_1_OBUF
+   cathodes_2_OBUF
+   cathodes_3_OBUF
+   cathodes_4_OBUF
+   cathodes_5_OBUF
+   cathodes_6_OBUF
+   cathodes_7_OBUF
+   clk0
+   clkfx
+   digital_clock_manager/CLK0_BUF
+   digital_clock_manager/CLKFX_BUF
+   digital_clock_manager/CLKIN_IBUFG
+   edge_triggered_en_dots/q<0>
+   edge_triggered_en_dots/q<1>
+   edge_triggered_en_dots/q<2>
+   edge_triggered_en_dots/q<3>
+   edge_triggered_en_dots/q<4>
+   edge_triggered_en_dots/q<5>
+   edge_triggered_en_dots/q<6>
+   edge_triggered_en_dots/q<7>
+   edge_triggered_en_dots/reset_n_inv
+   edge_triggered_lsbvalues/q<0>
+   edge_triggered_lsbvalues/q<1>
+   edge_triggered_lsbvalues/q<2>
+   edge_triggered_lsbvalues/q<3>
+   edge_triggered_lsbvalues/q<4>
+   edge_triggered_lsbvalues/q<5>
+   edge_triggered_lsbvalues/q<6>
+   edge_triggered_lsbvalues/q<7>
+   edge_triggered_msbvalues/q<0>
+   edge_triggered_msbvalues/q<1>
+   edge_triggered_msbvalues/q<2>
+   edge_triggered_msbvalues/q<3>
+   edge_triggered_msbvalues/q<4>
+   edge_triggered_msbvalues/q<5>
+   edge_triggered_msbvalues/q<6>
+   edge_triggered_msbvalues/q<7>
+   input_byte_0_IBUF
+   input_byte_1_IBUF
+   input_byte_2_IBUF
+   input_byte_3_IBUF
+   input_byte_4_IBUF
+   input_byte_5_IBUF
+   input_byte_6_IBUF
+   input_byte_7_IBUF
+   inst_display/inst_anode_manager/enable_anode
+   inst_display/inst_cathode_manager/nibble<0>
+   inst_display/inst_cathode_manager/nibble<1>
+   inst_display/inst_cathode_manager/nibble<2>
+   inst_display/inst_cathode_manager/nibble<3>
+   inst_display/inst_counter/count<0>
+   inst_display/inst_counter/count<1>
+   loader_0_IBUF
+   loader_1_IBUF
+   loader_2_IBUF
+
+

@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-01-03T18:18:24</DateModified>
-  <ModuleName>tester_dispositivi</ModuleName>
+  <DateModified>2018-01-14T21:45:19</DateModified>
+  <ModuleName>generazione_valori_RSA</ModuleName>
   <SummaryTimeStamp>2018-01-03T18:14:03</SummaryTimeStamp>
-  <SavedFilePath>/media/sf_ASE/VHDL/Milo/RSA/iseconfig/generazione_valori_RSA.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/media/sf_ASE/VHDL/Milo/RSA</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/Michele/Documents/TesinaASE/VHDL/Milo/RSA/iseconfig/generazione_valori_RSA.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Michele/Documents/TesinaASE/VHDL/Milo/RSA\</ImplementationReportsDirectory>
   <DateInitialized>2018-01-03T18:18:24</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

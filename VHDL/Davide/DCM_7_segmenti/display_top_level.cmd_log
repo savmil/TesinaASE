@@ -35,3 +35,7 @@ xst -intstyle ise -ifn "C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/display_top_le
 ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BasysRevEGeneral.ucf -p xc3s100e-tq144-5 display_top_level.ngc display_top_level.ngd  
 map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o display_top_level_map.ncd display_top_level.ngd display_top_level.pcf 
 par -w -intstyle ise -ol high -t 1 display_top_level_map.ncd display_top_level.ncd display_top_level.pcf 
+xst -intstyle ise -ifn "C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/DCM_7_segmenti/display_top_level.xst" -ofn "C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/DCM_7_segmenti/display_top_level.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BasysRevEGeneral.ucf -p xc3s100e-tq144-5 display_top_level.ngc display_top_level.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o display_top_level_map.ncd display_top_level.ngd display_top_level.pcf 
+par -w -intstyle ise -ol high -t 1 display_top_level_map.ncd display_top_level.ncd display_top_level.pcf 

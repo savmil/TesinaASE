@@ -1,85 +1,20 @@
-V3 63
-FL C:/DAVIDE/ASE/Esercizi/ISE/cathode_manager/cathode_encoder.vhd 2017/11/13.15:38:47 P.20131013
-FL C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/anodes_manager.vhd 2017/11/14.00:37:10 P.20131013
-EN work/anodes_manager 1514472809 \
-      FL C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/anodes_manager.vhd \
-      PB ieee/std_logic_1164 1381692176
-AR work/anodes_manager/Structural 1514472810 \
-      FL C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/anodes_manager.vhd \
-      EN work/anodes_manager 1514472809 CP muxn_1 CP demux1_n
-FL C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/cathode_encoder.vhd 2017/11/15.16:16:55 P.20131013
-EN work/cathode_encoder 1514472803 \
-      FL C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/cathode_encoder.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/cathode_encoder/Behavioral 1514472804 \
-      FL C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/cathode_encoder.vhd \
-      EN work/cathode_encoder 1514472803
-FL C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/cathode_manager.vhd 2017/11/13.17:48:22 P.20131013
-EN work/cathode_manager 1514472807 \
-      FL C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/cathode_manager.vhd \
-      PB ieee/std_logic_1164 1381692176
-AR work/cathode_manager/Structural 1514472808 \
-      FL C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/cathode_manager.vhd \
-      EN work/cathode_manager 1514472807 CP muxn_1 CP cathode_encoder
-FL C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/counter_mod_2n.vhd 2017/12/28.13:54:43 P.20131013
-EN work/counter_mod_2n 1514472805 \
-      FL C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/counter_mod_2n.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/counter_mod_2n/Behavioral 1514472806 \
-      FL C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/counter_mod_2n.vhd \
-      EN work/counter_mod_2n 1514472805
-FL C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/dcm.vhd 2017/12/28.13:28:04 P.20131013
-EN work/dcm 1514472813 FL C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/dcm.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
-      PH unisim/VCOMPONENTS 1381692182
-AR work/dcm/BEHAVIORAL 1514472814 \
-      FL C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/dcm.vhd EN work/dcm 1514472813 \
-      CP BUFG CP IBUFG CP DCM_SP
-FL C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/demux1_n.vhd 2017/11/15.16:16:03 P.20131013
-EN work/demux1_n 1514472801 \
-      FL C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/demux1_n.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
-      PB ieee/std_logic_arith 1381692177
-AR work/demux1_n/dataflow 1514472802 \
-      FL C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/demux1_n.vhd EN work/demux1_n 1514472801
-FL C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/display.vhd 2017/12/28.15:53:03 P.20131013
-EN work/display 1514472817 \
-      FL C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/display.vhd \
-      PB ieee/std_logic_1164 1381692176
-AR work/display/structural 1514472818 \
-      FL C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/display.vhd EN work/display 1514472817 \
-      CP counter_mod_2n CP cathode_manager CP anodes_manager
-FL C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/display_on_board.vhd 2017/11/15.18:07:32 P.20131013
-EN work/display_on_board 1514472815 \
-      FL C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/display_on_board.vhd \
-      PB ieee/std_logic_1164 1381692176
-AR work/display_on_board/Structural 1514472816 \
-      FL C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/display_on_board.vhd \
-      EN work/display_on_board 1514472815 CP edge_triggered_d_n
-FL C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/display_top_level.vhd 2017/12/28.15:38:54 P.20131013
-EN work/display_top_level 1514472819 \
-      FL C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/display_top_level.vhd \
-      PB ieee/std_logic_1164 1381692176
-AR work/display_top_level/structural 1514472820 \
-      FL C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/display_top_level.vhd \
-      EN work/display_top_level 1514472819 CP dcm CP display_on_board CP display
-FL C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/edge_triggered_d_n.vhd 2017/11/15.18:08:31 P.20131013
-EN work/edge_triggered_d_n 1514472811 \
-      FL C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/edge_triggered_d_n.vhd \
-      PB ieee/std_logic_1164 1381692176
-AR work/edge_triggered_d_n/Behavioral 1514472812 \
-      FL C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/edge_triggered_d_n.vhd \
-      EN work/edge_triggered_d_n 1514472811
-FL C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/muxn_1.vhd 2017/11/13.23:42:58 P.20131013
-EN work/muxn_1 1514472799 FL C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/muxn_1.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/muxn_1/dataflow 1514472800 \
-      FL C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/muxn_1.vhd EN work/muxn_1 1514472799
-FL C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/anodes_manager.vhd 2017/11/14.00:37:10 P.20131013
-FL C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/cathode_encoder.vhd 2017/11/15.16:16:55 P.20131013
-FL C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/cathode_manager.vhd 2017/11/13.17:48:22 P.20131013
-FL C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/clock_filter.vhd 2017/11/15.18:49:18 P.20131013
+V3 74
+FL C:/DAVIDE/ASE/Esercizi/ISE/cathode_manager/cathode_encoder.vhd 2017/11/13.15:38:47 P.49d
+FL C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/anodes_manager.vhd 2017/11/14.00:37:10 P.49d
+FL C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/cathode_encoder.vhd 2017/11/15.16:16:55 P.49d
+FL C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/cathode_manager.vhd 2017/11/13.17:48:22 P.49d
+FL C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/counter_mod_2n.vhd 2017/12/28.13:54:43 P.49d
+FL C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/dcm.vhd 2017/12/28.13:28:04 P.49d
+FL C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/demux1_n.vhd 2017/11/15.16:16:03 P.49d
+FL C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/display.vhd 2017/12/28.15:53:03 P.49d
+FL C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/display_on_board.vhd 2017/11/15.18:07:32 P.49d
+FL C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/display_top_level.vhd 2017/12/28.15:38:54 P.49d
+FL C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/edge_triggered_d_n.vhd 2017/11/15.18:08:31 P.49d
+FL C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/muxn_1.vhd 2017/11/13.23:42:58 P.49d
+FL C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/anodes_manager.vhd 2017/11/14.00:37:10 P.49d
+FL C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/cathode_encoder.vhd 2017/11/15.16:16:55 P.49d
+FL C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/cathode_manager.vhd 2017/11/13.17:48:22 P.49d
+FL C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/clock_filter.vhd 2017/11/15.18:49:18 P.49d
 EN work/clock_filter 1510783474 \
       FL C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/clock_filter.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
@@ -87,12 +22,93 @@ EN work/clock_filter 1510783474 \
 AR work/clock_filter/Behavioral 1510783475 \
       FL C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/clock_filter.vhd \
       EN work/clock_filter 1510783474
-FL C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/counter_mod_2n.vhd 2017/11/13.16:14:42 P.20131013
-FL C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/demux1_n.vhd 2017/11/15.16:16:03 P.20131013
-FL C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/display.vhd 2017/11/15.18:31:36 P.20131013
-FL C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/display_on_board.vhd 2017/11/15.18:07:32 P.20131013
-FL C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/display_top_level.vhd 2017/11/15.23:04:22 P.20131013
-FL C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/edge_triggered_d_n.vhd 2017/11/15.18:08:31 P.20131013
-FL C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/muxn_1.vhd 2017/11/13.23:42:58 P.20131013
-FL C:/DAVIDE/ASE/Esercizi/VHDL/multiplexer-demultiplexer/Demux1xN/demux1_n.vhd 2017/11/15.16:06:11 P.20131013
-FL C:/DAVIDE/ASE/Esercizi/VHDL/multiplexer-demultiplexer/MuxNx1/muxn_1.vhd 2017/11/13.23:42:58 P.20131013
+FL C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/counter_mod_2n.vhd 2017/11/13.16:14:42 P.49d
+FL C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/demux1_n.vhd 2017/11/15.16:16:03 P.49d
+FL C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/display.vhd 2017/11/15.18:31:36 P.49d
+FL C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/display_on_board.vhd 2017/11/15.18:07:32 P.49d
+FL C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/display_top_level.vhd 2017/11/15.23:04:22 P.49d
+FL C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/edge_triggered_d_n.vhd 2017/11/15.18:08:31 P.49d
+FL C:/DAVIDE/ASE/Esercizi/ISE/display_seven_segments/muxn_1.vhd 2017/11/13.23:42:58 P.49d
+FL C:/DAVIDE/ASE/Esercizi/VHDL/multiplexer-demultiplexer/Demux1xN/demux1_n.vhd 2017/11/15.16:06:11 P.49d
+FL C:/DAVIDE/ASE/Esercizi/VHDL/multiplexer-demultiplexer/MuxNx1/muxn_1.vhd 2017/11/13.23:42:58 P.49d
+FL C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/DCM_7_segmenti/anodes_manager.vhd 2017/12/29.13:55:44 P.49d
+EN work/anodes_manager 1515928801 \
+      FL C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/DCM_7_segmenti/anodes_manager.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/anodes_manager/Structural 1515928802 \
+      FL C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/DCM_7_segmenti/anodes_manager.vhd \
+      EN work/anodes_manager 1515928801 CP muxn_1 CP demux1_n
+FL C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/DCM_7_segmenti/cathode_encoder.vhd 2017/12/29.13:55:44 P.49d
+EN work/cathode_encoder 1515928795 \
+      FL C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/DCM_7_segmenti/cathode_encoder.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/cathode_encoder/Behavioral 1515928796 \
+      FL C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/DCM_7_segmenti/cathode_encoder.vhd \
+      EN work/cathode_encoder 1515928795
+FL C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/DCM_7_segmenti/cathode_manager.vhd 2017/12/29.13:55:44 P.49d
+EN work/cathode_manager 1515928799 \
+      FL C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/DCM_7_segmenti/cathode_manager.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/cathode_manager/Structural 1515928800 \
+      FL C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/DCM_7_segmenti/cathode_manager.vhd \
+      EN work/cathode_manager 1515928799 CP muxn_1 CP cathode_encoder
+FL C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/DCM_7_segmenti/counter_mod_2n.vhd 2017/12/29.13:55:44 P.49d
+EN work/counter_mod_2n 1515928797 \
+      FL C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/DCM_7_segmenti/counter_mod_2n.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/counter_mod_2n/Behavioral 1515928798 \
+      FL C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/DCM_7_segmenti/counter_mod_2n.vhd \
+      EN work/counter_mod_2n 1515928797
+FL C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/DCM_7_segmenti/dcm.vhd 2017/12/29.13:55:45 P.49d
+EN work/dcm 1515928805 \
+      FL C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/DCM_7_segmenti/dcm.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/dcm/BEHAVIORAL 1515928806 \
+      FL C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/DCM_7_segmenti/dcm.vhd \
+      EN work/dcm 1515928805 CP BUFG CP IBUFG CP DCM_SP
+FL C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/DCM_7_segmenti/demux1_n.vhd 2017/12/29.13:55:45 P.49d
+EN work/demux1_n 1515928793 \
+      FL C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/DCM_7_segmenti/demux1_n.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/std_logic_arith 1381692177
+AR work/demux1_n/dataflow 1515928794 \
+      FL C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/DCM_7_segmenti/demux1_n.vhd \
+      EN work/demux1_n 1515928793
+FL C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/DCM_7_segmenti/display.vhd 2017/12/29.13:55:45 P.49d
+EN work/display 1515928809 \
+      FL C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/DCM_7_segmenti/display.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/display/structural 1515928810 \
+      FL C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/DCM_7_segmenti/display.vhd \
+      EN work/display 1515928809 CP counter_mod_2n CP cathode_manager \
+      CP anodes_manager
+FL C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/DCM_7_segmenti/display_on_board.vhd 2017/12/29.13:55:45 P.49d
+EN work/display_on_board 1515928807 \
+      FL C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/DCM_7_segmenti/display_on_board.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/display_on_board/Structural 1515928808 \
+      FL C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/DCM_7_segmenti/display_on_board.vhd \
+      EN work/display_on_board 1515928807 CP edge_triggered_d_n
+FL C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/DCM_7_segmenti/display_top_level.vhd 2017/12/29.13:55:45 P.49d
+EN work/display_top_level 1515928811 \
+      FL C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/DCM_7_segmenti/display_top_level.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/display_top_level/structural 1515928812 \
+      FL C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/DCM_7_segmenti/display_top_level.vhd \
+      EN work/display_top_level 1515928811 CP dcm CP display_on_board CP display
+FL C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/DCM_7_segmenti/edge_triggered_d_n.vhd 2017/12/29.13:55:45 P.49d
+EN work/edge_triggered_d_n 1515928803 \
+      FL C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/DCM_7_segmenti/edge_triggered_d_n.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/edge_triggered_d_n/Behavioral 1515928804 \
+      FL C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/DCM_7_segmenti/edge_triggered_d_n.vhd \
+      EN work/edge_triggered_d_n 1515928803
+FL C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/DCM_7_segmenti/muxn_1.vhd 2017/12/29.13:55:46 P.49d
+EN work/muxn_1 1515928791 \
+      FL C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/DCM_7_segmenti/muxn_1.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/muxn_1/dataflow 1515928792 \
+      FL C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/DCM_7_segmenti/muxn_1.vhd \
+      EN work/muxn_1 1515928791

@@ -1,0 +1,19 @@
+xst -intstyle ise -ifn "C:/Users/Michele/Documents/uni/VHDL/ISE/DCM/display_cu.xst" -ofn "C:/Users/Michele/Documents/uni/VHDL/ISE/DCM/display_cu.syr" 
+xst -intstyle ise -ifn "C:/Users/Michele/Documents/uni/VHDL/ISE/DCM/display_cu.xst" -ofn "C:/Users/Michele/Documents/uni/VHDL/ISE/DCM/display_cu.syr" 
+xst -intstyle ise -ifn "C:/Users/Michele/Documents/uni/VHDL/ISE/DCM/display_cu.xst" -ofn "C:/Users/Michele/Documents/uni/VHDL/ISE/DCM/display_cu.syr" 
+xst -intstyle ise -ifn "C:/Users/Michele/Documents/uni/VHDL/ISE/DCM/display_cu.xst" -ofn "C:/Users/Michele/Documents/uni/VHDL/ISE/DCM/display_cu.syr" 
+xst -intstyle ise -ifn "C:/Users/Michele/Documents/uni/VHDL/ISE/DCM/display_cu.xst" -ofn "C:/Users/Michele/Documents/uni/VHDL/ISE/DCM/display_cu.syr" 
+xst -intstyle ise -ifn "C:/Users/Michele/Documents/uni/VHDL/ISE/DCM/display_cu.xst" -ofn "C:/Users/Michele/Documents/uni/VHDL/ISE/DCM/display_cu.syr" 
+xst -intstyle ise -ifn "C:/Users/Michele/Documents/uni/VHDL/ISE/DCM/display_cu.xst" -ofn "C:/Users/Michele/Documents/uni/VHDL/ISE/DCM/display_cu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BasysRevEGeneral.ucf -p xc3s100e-tq144-5 display_cu.ngc display_cu.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o display_cu_map.ncd display_cu.ngd display_cu.pcf 
+par -w -intstyle ise -ol high -t 1 display_cu_map.ncd display_cu.ncd display_cu.pcf 
+xst -intstyle ise -ifn "C:/Users/Michele/Documents/uni/VHDL/ISE/DCM/display_cu.xst" -ofn "C:/Users/Michele/Documents/uni/VHDL/ISE/DCM/display_cu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BasysRevEGeneral.ucf -p xc3s100e-tq144-5 display_cu.ngc display_cu.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o display_cu_map.ncd display_cu.ngd display_cu.pcf 
+par -w -intstyle ise -ol high -t 1 display_cu_map.ncd display_cu.ncd display_cu.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BasysRevEGeneral.ucf -p xc3s100e-tq144-5 display_cu.ngc display_cu.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o display_cu_map.ncd display_cu.ngd display_cu.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BasysRevEGeneral.ucf -p xc3s100e-tq144-5 display_cu.ngc display_cu.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o display_cu_map.ncd display_cu.ngd display_cu.pcf 
+par -w -intstyle ise -ol high -t 1 display_cu_map.ncd display_cu.ncd display_cu.pcf 

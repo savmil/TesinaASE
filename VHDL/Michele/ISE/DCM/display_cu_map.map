@@ -1,0 +1,71 @@
+Release 14.4 Map P.49d (nt)
+Xilinx Map Application Log File for Design 'display_cu'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off
+-c 100 -o display_cu_map.ncd display_cu.ngd display_cu.pcf 
+Target Device  : xc3s100e
+Target Package : tq144
+Target Speed   : -5
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Mon Jan 15 00:05:33 2018
+
+Mapping design into LUTs...
+WARNING:LIT:178 - Clock buffer BUFGMUX symbol
+   "physical_group_clkfx/digital_clock_manager/CLKFX_BUFG_INST" (output
+   signal=clkfx) does not drive clock loads. Driving only non-clock loads with a
+   clock buffer will cause ALL of the dedicated clock routing resources for this
+   buffer to be wasted. The non-clock loads are:
+   Pin CE of inst_display/inst_counter/count_0
+   Pin CE of inst_display/inst_counter/count_1
+Running directed packing...
+Running delay-based LUT packing...
+Running related packing...
+Updating timing models...
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:    1
+Logic Utilization:
+  Number of Slice Flip Flops:            26 out of   1,920    1%
+  Number of 4 input LUTs:                24 out of   1,920    1%
+Logic Distribution:
+  Number of occupied Slices:             25 out of     960    2%
+    Number of Slices containing only related logic:      25 out of      25 100%
+    Number of Slices containing unrelated logic:          0 out of      25   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:          24 out of   1,920    1%
+  Number of bonded IOBs:                 25 out of     108   23%
+  Number of BUFGMUXs:                     2 out of      24    8%
+  Number of DCMs:                         1 out of       2   50%
+
+Average Fanout of Non-Clock Nets:                3.07
+
+Peak Memory Usage:  180 MB
+Total REAL time to MAP completion:  5 secs 
+Total CPU time to MAP completion:   2 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Mapping completed.
+See MAP report file "display_cu_map.mrp" for details.

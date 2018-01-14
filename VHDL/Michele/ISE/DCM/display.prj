@@ -1,0 +1,8 @@
+vhdl work "muxn_1.vhd"
+vhdl work "demux1_n.vhd"
+vhdl work "dcm.vhd"
+vhdl work "counter_mod2n.vhd"
+vhdl work "cathode_manager.vhd"
+vhdl work "anode_manager.vhd"
+vhdl work "display.vhd"
+vhdl work "cathode_encoder.vhd"
