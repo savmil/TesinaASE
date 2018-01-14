@@ -1,0 +1,29 @@
+V3 15
+FL C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/jk_latch_clocked/and_gate.vhd 2018/01/14.13:09:40 P.20131013
+EN work/and_gate 1515952516 \
+      FL C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/jk_latch_clocked/and_gate.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/and_gate/Dataflow 1515952517 \
+      FL C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/jk_latch_clocked/and_gate.vhd \
+      EN work/and_gate 1515952516
+FL C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/jk_latch_clocked/jk_latch.vhd 2018/01/14.13:09:40 P.20131013
+EN work/jk_latch 1515952520 \
+      FL C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/jk_latch_clocked/jk_latch.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/jk_latch/Structural 1515952521 \
+      FL C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/jk_latch_clocked/jk_latch.vhd \
+      EN work/jk_latch 1515952520 CP and_gate CP rs_latch
+FL C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/jk_latch_clocked/nor_gate.vhd 2018/01/14.13:09:40 P.20131013
+EN work/nor_gate 1515952514 \
+      FL C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/jk_latch_clocked/nor_gate.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/nor_gate/Dataflow 1515952515 \
+      FL C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/jk_latch_clocked/nor_gate.vhd \
+      EN work/nor_gate 1515952514
+FL C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/jk_latch_clocked/rs_latch.vhd 2018/01/14.13:09:40 P.20131013
+EN work/rs_latch 1515952518 \
+      FL C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/jk_latch_clocked/rs_latch.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/rs_latch/Structural 1515952519 \
+      FL C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/jk_latch_clocked/rs_latch.vhd \
+      EN work/rs_latch 1515952518 CP nor_gate

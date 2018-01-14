@@ -191,22 +191,13 @@ Questo componente è stato realizzato con un'architettura di tipo Structural,
 \shape italic
 nor_gate
 \shape default
-, che non fanno altro che fare la NOR dei due ingressi.
+, che non fanno altro che la NOR dei due ingressi.
  Le uscite di ogni porta nor viene poi retroazionata all'ingresso dell'altra
  porta.
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset label
-LatexCommand label
-name "rs_latch"
-
+\begin_inset Newline newline
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
+Il componente in questione è osservabile a questo link: 
 \begin_inset ERT
 status open
 
@@ -214,8 +205,9 @@ status open
 
 
 \backslash
-lstinputlisting [language=VHDL,caption={Definizione del componente RS-latch}]
- {esercizio03/codice/rs_latch.vhd}
+href{run:esercizio03/codice/rs_latch.vhd}{RS
+\backslash
+_Latch}
 \end_layout
 
 \end_inset
@@ -457,28 +449,6 @@ and_gate
 rs_latch
 \shape default
  visto precedentemente (componente 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "rs_latch"
-
-\end_inset
-
-).
- Ovviamente in ingresso alle porte AND ci saranno i segnali di set e reset,
- nonché un clock che funge da segnale di abilitazione.
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset label
-LatexCommand label
-name "rs_latch_clk"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -486,8 +456,26 @@ status open
 
 
 \backslash
-lstinputlisting [language=VHDL,caption={Definizione del componente RS-latch
- clocked}] {esercizio03/codice/rs_latch_clocked.vhd}
+href{run:esercizio03/codice/rs_latch.vhd}{RS_Latch}
+\end_layout
+
+\end_inset
+
+).
+ Ovviamente in ingresso alle porte AND ci saranno i segnali di set e reset,
+ nonché un clock che funge da segnale di abilitazione.
+\begin_inset Newline newline
+\end_inset
+
+Il componente in questione è osservabile a questo link: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+href{run:esercizio03/codice/rs_latch_clocked.vhd}{RS_Latch_Clocked}
 \end_layout
 
 \end_inset
@@ -705,9 +693,15 @@ Questo componente è stato creato come un'architettura Structural a partire
 rs_latch_clocked
 \shape default
  visto in precedenza (componente 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "rs_latch_clk"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+href{run:esercizio03/codice/rs_latch_clocked.vhd}{RS_Latch_Clocked}
+\end_layout
 
 \end_inset
 
@@ -718,9 +712,10 @@ reference "rs_latch_clk"
 notd
 \shape default
  per negare D e collegarlo all'ingresso R.
-\end_layout
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout Standard
+Il componente in questione è osservabile a questo link: 
 \begin_inset ERT
 status open
 
@@ -728,8 +723,7 @@ status open
 
 
 \backslash
-lstinputlisting [language=VHDL,caption={Definizione del componente D-latch
- clocked}] {esercizio03/codice/d_latch_clocked.vhd}
+href{run:esercizio03/codice/d_latch_clocked.vhd}{D_latch_Clocked}
 \end_layout
 
 \end_inset
@@ -768,7 +762,7 @@ lnot$
 
 \end_inset
 
- Q ad essere alta.
+Q ad essere alta.
  Anche in questo caso come in quelli precedenti, la simulazione si arresta
  a 40 ns a causa di un errore che indica il raggiungimento del limite di
  iterazioni dovuto alla generazione di cicli di delta cycle, che non permettono
@@ -922,6 +916,75 @@ Codice
 T_Latch
 \end_layout
 
+\begin_layout Standard
+L'approccio utilizzato per la realizzazione di questo tipo di latch è quello
+ strutturale, in base al quale, a partire dal componente 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+href{run:esercizio03/codice/rs_latch.vhd}{RS_Latch}
+\end_layout
+
+\end_inset
+
+ visto in precedenza, sono state aggiunte due porte AND, in ingresso alle
+ quali vanno il segnale T e le uscite Q e 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+lnot$
+\end_layout
+
+\end_inset
+
+Q del latch RS retroazionate.
+ Per fare questo sono stati utilizzati quattro segnali: due (
+\shape italic
+retro_q
+\shape default
+ e 
+\shape italic
+retro_notq
+\shape default
+) utilizzati per le uscite del latch e altri due (
+\shape italic
+retro_q_delayed
+\shape default
+ e 
+\shape italic
+retro_notq_delayed
+\shape default
+) utilizzati per ritardare, tramite la parola chiave after, tali uscite
+ in modo che possano essere utilizzate in ingresso alle porte AND, questo
+ perchè altrimenti le uscite non riescono a commutare.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Il componente in questione è osservabile a questo link: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+href{run:esercizio03/codice/t_latch.vhd}{T_latch}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Simulazione
 \end_layout
@@ -930,12 +993,95 @@ Simulazione
 Behavioral
 \end_layout
 
+\begin_layout Standard
+In figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:t_behavioral"
+
+\end_inset
+
+ si osserva la simulazione Behavioral del latch_t.
+ Così come si nota quando T è alto possono avvenire una o più commutazione
+ delle uscite in base alla sua durata, infatti T dovrebbe essere alto per
+ un tempo sufficientemente grande affinchè avvenga una commutazione ma sufficien
+temente piccolo affinchè non ne avvengano altre.
+ Si noti inoltre, che quando T è basso, il sistema mantine lo stato precedente.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[H]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+includegraphics[scale=0.8]{esercizio03/images/t_latch_behavioral.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+caption{Simulazione del latch T Behavioral}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+label{fig:t_behavioral}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection
 Post-Sintesi
 \end_layout
 
+\begin_layout Standard
+Nella simulazione Post-Sintesi invece, dato che la parola chiave after,
+ usata precedentemente per permettere la commutazione delle uscite, non
+ è sintetizzabile, allora le uscite non cambiano stato e permangono per
+ tutta la durata della simulazione in uno stato 
+\begin_inset Quotes eld
+\end_inset
+
+uninitialized
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Section
-Latch JK
+Latch JK abilitato
 \end_layout
 
 \begin_layout Subsection
@@ -945,7 +1091,7 @@ Schematico
 \begin_layout Standard
 Il latch JK è strutturato in maniera simile al latch RS abilitato, ciò che
  cambia è che le porte AND prendono in ingresso le uscite retroazionate,
- così come avviene per il latch T, e due segnali J e K.
+ così come avviene per il latch T, il clock e due segnali J e K.
  In base alla configurazione di questi due segnali cambia il funzionamento
  del latch, poiché se K=J=1, esso si comporta come un latch T, altrimenti
  si comporta come un latch RS in cui R=K e S=J.
@@ -959,6 +1105,79 @@ Codice
 JK_Latch
 \end_layout
 
+\begin_layout Standard
+Questo tipo di componente è stato realizzato con un'architettura Structural,
+ in cui si antepongono ad un latch RS (componente 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+href{run:esercizio03/codice/rs_latch.vhd}{RS_Latch}
+\end_layout
+
+\end_inset
+
+), due porte AND a tre ingressi, cioè il clock, K o J, e una delle due uscite
+ retroazionata.
+ Questo avviene tramite l'utilizzo di quattro segnali, ovvero 
+\shape italic
+q_feedback
+\shape default
+ e 
+\shape italic
+notq_feedback
+\shape default
+, utilizzati per le uscite del latch RS, e 
+\shape italic
+q_feedback_delayed
+\shape default
+ e 
+\shape italic
+notq_feedback_delayed
+\shape default
+, utilizzati per ritardare tali segnali, in modo che possano essere retroazionat
+i in ingresso alle porte AND e quindi permettere la commutazione.
+ Sono presenti inoltre due ingressi di 
+\shape italic
+clear
+\shape default
+ e 
+\shape italic
+preset
+\shape default
+, messi in OR con le uscite delle porte AND, in modo da inizializzare il
+ dispositivo, tramite i segnali 
+\shape italic
+in_latch_r
+\shape default
+ e 
+\shape italic
+in_latch_s
+\shape default
+, messi in ingresso al latch RS.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Il componente in questione è osservabile a questo link: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+href{run:esercizio03/codice/jk_latch.vhd}{JK_latch}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Simulazione
 \end_layout
@@ -967,8 +1186,158 @@ Simulazione
 Behavioral
 \end_layout
 
+\begin_layout Standard
+In Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:jk_clk_behavioral"
+
+\end_inset
+
+ è rappresentata la simulazione Behavioral del funzionamento del latch JK
+ abilitato.
+ Si nota che, così come ci aspettiamo, quando J è alto, Q è alto, mentre
+ quando K è alto, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+lnot$
+\end_layout
+
+\end_inset
+
+Q è alto; quando invece sia J che K sono alti, il sistema funziona come
+ un latch T e quindi le uscite commutano un certo numero di volte, che dipende
+ dalla durata dello stato J=K=1.
+ Ovviamente quando sia J che K sono bassi oppure il clock è basso, il sistema
+ permane nello stato precedente.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[H]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+includegraphics[scale=0.8]{esercizio03/images/jk_latch_clocked_behavioral.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+caption{Simulazione del latch JK abilitato Behavioral}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+label{fig:jk_clk_behavioral}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection
 Post-Sintesi
+\end_layout
+
+\begin_layout Standard
+Nella simulazione Post-Route di Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:jk_clk_post-route"
+
+\end_inset
+
+ vengono utilizzati i componenti della libreria Xilinx con i relativi ritardi
+ e quelli dovuti ai collegamenti tra gli stessi e quindi notiamo un certo
+ delay nella commutazione delle uscite rispetto al caso Behavioral.
+ Si nota inoltre che in seguito alla fine della condizione in cui J=K=1,
+ anzichè permanere in uno stato, le uscite commutano sempre, probabilmente
+ a causa di alcune asimmetrie introdotte nel circuito dalla fase di sintesi.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[H]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+includegraphics[scale=0.8]{esercizio03/images/jk_latch_clocked_post-route.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+caption{Simulazione del latch JK abilitato Post-Route}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+label{fig:jk_clk_post-route}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -1138,7 +1507,7 @@ Codice
 \end_layout
 
 \begin_layout Subsubsection
-Flip_Flop_D_edge
+FlipFlop_D_edge
 \end_layout
 
 \begin_layout Standard
@@ -1149,9 +1518,10 @@ Il Flip-Flop D Edge Triggered è stato realizzato con un'architettura Structural
  è stata applicata una porta NOT al risultato dell'OR tra l'uscita della
  porta G3, il clock e l'uscita della porta G1, utilizzata per eliminare
  l'alea.
-\end_layout
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout Standard
+Il componente in questione è osservabile a questo link: 
 \begin_inset ERT
 status open
 
@@ -1159,8 +1529,7 @@ status open
 
 
 \backslash
-lstinputlisting [language=VHDL,caption={Definizione del componente Flip-Flop
- D Edge}] {esercizio03/codice/flipflop_d_edge.vhd}
+href{run:esercizio03/codice/flipflop_d_edge.vhd}{FlipFlop_D_Edge}
 \end_layout
 
 \end_inset
@@ -1347,7 +1716,7 @@ Codice
 \end_layout
 
 \begin_layout Subsubsection
-Flip_Flop_RS_ms
+FlipFlop_RS_MS
 \end_layout
 
 \begin_layout Standard
@@ -1357,9 +1726,15 @@ flipflop_rs_ms
 \shape default
  è stato realizzato con un approccio Structural, poichè sono stati utilizzati
  due componenti rs_latch_clocked visti in precedeza (componente 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "rs_latch_clk"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+href{run:esercizio03/codice/rs_latch_clocked.vhd}{RS_Latch_Clocked}
+\end_layout
 
 \end_inset
 
@@ -1374,9 +1749,10 @@ notq_master
  che vanno in ingresso rispettivamente al set e al reset del latch slave.
  Infine è stata utilizzata una porta NOT per negare il segnale di clock
  che è stato poi collegato al secondo latch.
-\end_layout
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout Standard
+Il componente in questione è osservabile a questo link: 
 \begin_inset ERT
 status open
 
@@ -1384,8 +1760,7 @@ status open
 
 
 \backslash
-lstinputlisting [language=VHDL,caption={Definizione del componente Flip-Flop
- RS Master-Slave}] {esercizio03/codice/flipflop_rs_ms.vhd}
+href{run:esercizio03/codice/flipflop_rs_ms.vhd}{FlipFlop_RS_MS}
 \end_layout
 
 \end_inset
@@ -1500,8 +1875,23 @@ reference "fig:ffd_post-route"
  Xilinx e ai ritardi dei loro collegamenti.
  Fortunatamente, in questo caso, il ritardo della porta NOT sembra non pregiudic
 are il funzionamento del sistema, infatti il master e lo slave funzionano
- alternativamente, cosa che potrebbe non accadere se il ritado della porta
- NOT fosse troppo grande
+ alternativamente, cosa che potrebbe non accadere se il ritardo della porta
+ NOT fosse troppo grande e quindi non si riuscisse a determinare l'uscita.
+ Questo però è un caso limite poiché di solito il ritardo della porta NOT
+ è un 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+tau$
+\end_layout
+
+\end_inset
+
+ piccolissimo.
 \end_layout
 
 \begin_layout Standard
