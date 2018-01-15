@@ -40,6 +40,7 @@ end counter_2n_down;
 
 architecture Behavioral of counter_2n_down is
 signal count:STD_LOGIC_VECTOR(width-1 downto 0):=(others=>'1');
+--signal en_hit:STD_LOGIC:='0';
 begin
 process (clk, reset) 
 begin
@@ -47,10 +48,11 @@ begin
       count <= (others => '1');
 		hit<='0';
    elsif (rising_edge(clk) and enable='1') then
-         count <= std_logic_vector(unsigned(count) -1);
+		count <= std_logic_vector(unsigned(count) -1);
 			if count=(width-1 downto 0=>'0') then
 				hit<='1';
-			else 
+			else
+				
 				hit<='0';
 			end if;
    end if;

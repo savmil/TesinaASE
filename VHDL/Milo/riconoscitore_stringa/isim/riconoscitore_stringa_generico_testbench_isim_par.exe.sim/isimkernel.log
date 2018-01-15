@@ -1,0 +1,31 @@
+Command line:
+   riconoscitore_stringa_generico_testbench_isim_par.exe
+     -simmode  gui
+     -sdfmax  /uut/=netgen/par/riconoscitore_stringa_generico_timesim.sdf
+     -sdfroot  /uut
+     -simrunnum  0
+     -socket  34378
+
+Sat Jan 13 12:19:43 2018
+
+
+ Elaboration Time: 0.09 sec
+
+ Current Memory Usage: 204.173 Meg
+
+ Total Signals          : 1059
+ Total Nets             : 659
+ Total Signal Drivers   : 628
+ Total Blocks           : 281
+ Total Primitive Blocks : 152
+ Total Processes        : 627
+ Total Traceable Variables  : 1547
+ Total Scalar Nets and Variables : 9242
+Total Line Count : 2178
+
+ Total Simulation Time: 0.11 sec
+
+ Current Memory Usage: 212.693 Meg
+
+Sat Jan 13 12:20:58 2018
+

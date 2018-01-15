@@ -30,7 +30,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity Booth_multiplier is
-	 generic (width : NATURAL:=8);
+	 generic (width : NATURAL:=32);
     Port ( mul1 : in  STD_LOGIC_VECTOR (width-1 downto 0):=(others=>'0');
            mul2 : in  STD_LOGIC_VECTOR (width-1 downto 0);
            start : in  STD_LOGIC;
@@ -43,7 +43,7 @@ end Booth_multiplier;
 
 architecture Structural of Booth_multiplier is
 COMPONENT add_sub
-	generic (width : NATURAL:=8);
+	generic (width : NATURAL:=32);
 	PORT(
 		a : IN std_logic_vector(width-1 downto 0);
 		b : IN std_logic_vector(width-1 downto 0);
@@ -54,7 +54,7 @@ COMPONENT add_sub
 		);
 	END COMPONENT;
 COMPONENT contatore_modulo_2n
-	generic (width : NATURAL :=3);
+	generic (width : NATURAL :=5);
 	PORT(
 		clk : IN std_logic;
 		enable : IN std_logic;
@@ -64,7 +64,7 @@ COMPONENT contatore_modulo_2n
 		);
 	END COMPONENT;
 	component latch_d_en is
-	generic(width:natural:=8);
+	generic(width:natural:=32);
     Port ( clk : in  STD_LOGIC;
            reset : in  STD_LOGIC;
            en : in  STD_LOGIC;
@@ -85,19 +85,8 @@ COMPONENT contatore_modulo_2n
 			  en_p1 : out STD_LOGIC;
            stop : in  STD_LOGIC);
 	END COMPONENT;
-	COMPONENT registro_a_scorrimento
-	generic (width:NATUrAL:=8);
-	PORT(
-		input : IN std_logic_VECTOR(width-1 downto 0);
-		enable : IN std_logic;
-		shift : in  STD_LOGIC;
-		reset : IN std_logic;       
-		shift_bit : IN std_logic;
-		output:out STD_LOGIC_VECTOR(width-1 downto 0)
-		);
-	END COMPONENT;
 	component boundary_scan_chain 
-	generic(n : natural := 8);
+	generic(n : natural := 32);
     Port ( --state_vector : in  STD_LOGIC_VECTOR (n-1 downto 0);
 			  scan_in : in STD_LOGIC;
            clk : in  STD_LOGIC;
@@ -126,7 +115,7 @@ begin
 	a: boundary_scan_chain port map(sum1(width-1),clk,reset,en_a,sum1,en_sh,bit_shift,suma);
 	gestore_shift: add_sub port map(suma,moltiplicatore,q_val(1),sum1,open,open);-- bisogna inserire il segno 
 	prod<= suma & q_val(width downto 1);
-	prod1:latch_d_en generic map (width=>16) port map(clk,reset,en_p1,prod,product);
+	prod1:latch_d_en generic map (width=>64) port map(clk,reset,en_p1,prod,product);
 	fint_stop(0)<=stop;
 	en_i<=en_p1;
 	f: latch_d_en generic map (width=>1) port map(clk,reset,en_p1,fint_stop,fin);

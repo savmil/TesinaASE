@@ -46,49 +46,68 @@ entity riconoscitore_stringa is
 end riconoscitore_stringa;
 
 architecture Behavioral of riconoscitore_stringa is
-type state is (idle,riconosci_bit,shifting);
-signal current_state,next_state : state;
+type state is (idle,riconosci_bit,shifting,carica_stringa);
+signal current_state : state;
 signal n:STD_LOGIC_VECTOR(natural(ceil(log2(real(width)))) downto 0):=(others=>'0');
 begin
-change_state: process (clk)
+change_state: process (clk,reset)
 	begin
-		if rising_edge(clk) then	
-			if (reset = '0') then
-				current_state <= idle;
-			else
-				current_state <= next_state;
-			end if;
+		if (reset = '0') then
+			current_state <= idle;
+		elsif rising_edge(clk) then
+		case current_state is
+			when idle=>	if start='1' then
+								current_state <= carica_stringa;
+							end if;
+			when carica_stringa=> current_state<=shifting;
+			when shifting=> current_state<=riconosci_bit;
+			when riconosci_bit=> if i=std_logic_vector(to_unsigned(width,n'length)) then
+											current_state<=idle;
+										elsif data(to_integer(unsigned(i)))=data_in then
+											current_state<=shifting;
+										elsif data(to_integer(unsigned(i)))/=data_in then
+											current_state<=idle;
+										end if;
+		end case;
 		end if;
 	end process;
-	recognize_bit: process(clk)
+	recognize_bit: process(clk,current_state,i,data_in,start)
 	 begin
 	 shift<='0';
+	 correct<='0';
+	 bad<='0';
+	 en_c<='0';
+	 en_i<='0';
 		case current_state is
 			when idle =>
 				shift<='0';
-				en_i<='0';
-				n<=std_logic_vector(to_unsigned(width,n'length));
+				--n<=std_logic_vector(to_unsigned(width,n'length));
 				if start='1' then
 					correct<='0';
 					bad<='0';
 					en_i<='1';
-					next_state<=shifting;
+					shift<='1';
+					--next_state<=shifting;
 				end if;
+			when carica_stringa =>
+				  en_i<='0';
 			when shifting =>
+				  en_i<='1';
 				  shift<='0';
 				  en_c<='0';
-				  next_state<=riconosci_bit;
+				  --next_state<=riconosci_bit;
 			when riconosci_bit =>
-				  if i=n then
+				  en_i<='1';
+				  if i=std_logic_vector(to_unsigned(width,n'length)) then
 					correct<='1';
-					next_state<=idle;
+					--next_state<=idle;
 				  elsif data(to_integer(unsigned(i)))=data_in then
 					en_c<='1';
 				   shift<='1';
-					next_state<=shifting;
+					--next_state<=shifting;
 				  else 
 					bad<='1';
-					next_state<=idle;
+					--next_state<=idle;
 				  end if;
 		end case;
 	end process;

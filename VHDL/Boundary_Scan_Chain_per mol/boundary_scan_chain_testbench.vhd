@@ -41,13 +41,14 @@ ARCHITECTURE behavior OF boundary_scan_chain_testbench IS
  
     COMPONENT boundary_scan_chain
     PORT(
-         scan_in : IN  std_logic;
-         clk : IN  std_logic;
-         reset_n : IN  std_logic;
-         din : IN  std_logic_vector(3 downto 0);
-         scan_en : IN  std_logic;
-         scan_out : OUT  std_logic;
-         dout : OUT  std_logic_vector(3 downto 0)
+         scan_in : in STD_LOGIC;
+           clk : in  STD_LOGIC;
+			  reset_n : in STD_LOGIC;
+			  en: in STD_LOGIC;
+           din : in  STD_LOGIC_VECTOR (3 downto 0);
+           scan_en : in  STD_LOGIC;
+           scan_out : out  STD_LOGIC;
+           dout : out  STD_LOGIC_VECTOR (3 downto 0)
         );
     END COMPONENT;
     
@@ -55,7 +56,8 @@ ARCHITECTURE behavior OF boundary_scan_chain_testbench IS
    --Inputs
    signal scan_in : std_logic :='0';
    signal clk : std_logic := '0';
-   signal reset_n : std_logic := '1';
+	signal en: std_logic := '0';
+   signal reset_n : std_logic := '0';
    signal din : std_logic_vector(3 downto 0) := (others => '0');
    signal scan_en : std_logic := '0';
 
@@ -72,6 +74,7 @@ BEGIN
    uut: boundary_scan_chain PORT MAP (
           scan_in => scan_in,
           clk => clk,
+			 en => en,
           reset_n => reset_n,
           din => din,
           scan_en => scan_en,
@@ -92,16 +95,17 @@ BEGIN
    -- Stimulus process
    stim_proc: process
    begin		
-      -- hold reset state for 100 ns.
-      wait for 100 ns;	
-
-      --wait for clk_period*10;
-
-      -- insert stimulus here
-		din <= "0101";
+		wait for 100 ns;
+		reset_n<='1';
+		en<='1';
+		wait until clk'event and clk='1';
+		scan_en <= '1';
+		wait until clk'event and clk='1';
+		scan_in <= '1';
+		wait until clk'event and clk='1';
+		scan_in <= '1';
 		wait until clk'event and clk='1';
 		scan_in <= '0';
-		scan_en <= '1';
 		wait until clk'event and clk='1';
 		scan_in <= '0';
 		wait until clk'event and clk='1';
@@ -109,10 +113,17 @@ BEGIN
 --		wait until clk'event and clk='1';
 --		scan_in <= '0';
 --		wait until clk'event and clk='1';
-		
-		scan_en <= '0';
+		scan_en<='0';
 		wait until clk'event and clk='1';
 		scan_en <= '1';
+		wait until clk'event and clk='1';
+		scan_in <= '1';
+		wait until clk'event and clk='1';
+		scan_in <= '1';
+		wait until clk'event and clk='1';
+		scan_in <= '0';
+		wait until clk'event and clk='1';
+		scan_in <= '1';
 		wait until clk'event and clk='1';
 		scan_en <='0';
       wait;

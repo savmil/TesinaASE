@@ -74,6 +74,8 @@ begin
 		en_shift<='0';
 		en_c<='0';
 		en_p1<='0'; 
+		en_q<='0';
+		en_a<='0';
 			case current_state is 
 				when idle =>
 								if start='1' then

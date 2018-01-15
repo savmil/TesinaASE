@@ -38,20 +38,23 @@ entity gestore_generatore_valori_RSA is
            clk : in  STD_LOGIC;
 			  msg: in STD_LOGIC_VECTOR(31 downto 0);
 			  msg_pr: in STD_LOGIC_VECTOR(31 downto 0);
-			  exp_e: in STD_LOGIC_VECTOR(31 downto 0);
-			  exp_d: in STD_LOGIC_VECTOR(31 downto 0);
-			  msg_exp: out STD_LOGIC_VECTOR(31 downto 0);
-			  exp: out STD_LOGIC_VECTOR(31 downto 0);
+			  msg_t_h: in STD_LOGIC_VECTOR(31 downto 0);
+			  msg_r_h: in STD_LOGIC_VECTOR(31 downto 0);
+			  correct:out STD_LOGIC_VECTOR(0 downto 0);
+			  en_correct: out STD_LOGIC;
+			  check_exp: out STD_LOGIC_VECTOR(0 downto 0);
+			  check_hash: out STD_LOGIC_VECTOR(0 downto 0);
            en_n : out  STD_LOGIC;
            en_h : out  STD_LOGIC;
 			  en_exp: out STD_LOGIC;
 			  reset_exp: out STD_LOGIC;
+			  reset_hash: out STD_LOGIC;
            en_pr : out  STD_LOGIC;
            en_pu : out  STD_LOGIC);
 end gestore_generatore_valori_RSA;
 
 architecture Behavioral of gestore_generatore_valori_RSA is
-type state is (idle,calc_n,wait_n,hashing,wait_hashing,calc_pr,wait_pr,calc_pu,wait_pu,res);
+type state is (idle,calc_n,wait_n,hashing,wait_hashing,calc_pr,wait_pr,calc_pu,wait_pu,res_exp,check_msg,wait_check,check,res_h);
 signal current_state:state;
 begin
 	change_state: process (clk,reset)
@@ -73,26 +76,36 @@ begin
 									  end if;
 			when calc_pr => current_state<=wait_pr;
 			when wait_pr => if fin_exp='1' then
-									current_state<=res;
+									current_state<=res_exp;
 								 end if;
-			when res => current_state<=calc_pu;
+			when res_exp => current_state<=calc_pu;
 			when calc_pu => current_state<=wait_pu;
 			when wait_pu => if fin_exp='1' then
-									current_state<=idle;
+									current_state<=res_h;
 								 end if;		
+			when res_h => current_state<=check_msg;
+			when check_msg => current_state<=wait_check;
+			when wait_check=>if fin_h='1' then
+											current_state<=check;
+									  end if;
+			when check => current_state<=idle;
 		end case;
 		end if;
 	end process;
 
 
-	gestore_RSA: process (current_state,start,fin_n,fin_h,exp_e,exp_d,msg,fin_exp,msg_pr)
+	gestore_RSA: process (current_state,start,fin_n,fin_h,msg,fin_exp,msg_pr)
 		begin
 		reset_exp<='1';
+		reset_hash<='1';
 		en_n<='0';
 		en_h<='0';
 		en_pr<='0';
 		en_pu<='0';
 		en_exp<='0';
+		check_exp(0)<='0';
+	   check_hash(0)<='0';
+		en_correct<='0';
 			case current_state is
 				when idle =>
 					en_n<='0';
@@ -100,9 +113,11 @@ begin
 					en_pr<='0';
 					en_pu<='0';
 					en_exp<='0';
---					if start='1' then
---						next_state<=calc_n;
---					end if;
+					
+					if start='1' then
+						reset_exp<='0';
+						reset_hash<='0';
+					end if;
 				when calc_n =>
 					en_n<='1';
 					--next_state<=wait_n;
@@ -121,8 +136,6 @@ begin
 --					end if;
 					
 				when calc_pr=>
-					exp<=exp_e;
-					msg_exp<=msg;
 					en_exp<='1';
 					--next_state<=wait_pr;
 				when wait_pr =>
@@ -132,11 +145,10 @@ begin
 						
 						--next_state<=res;
 					end if;
-				when res=>reset_exp<='0';
+				when res_exp=>reset_exp<='0';
 							 --next_state<=calc_pu;
 				when calc_pu=>
-					exp<=exp_d;
-					msg_exp<=msg_pr;
+					check_exp(0)<='1';
 					en_pr<='0';
 					en_exp<='1';
 					--next_state<=wait_pu;
@@ -146,7 +158,18 @@ begin
 						en_pu<='1';
 						--next_state<=idle;
 					end if;		
-
+				when res_h =>
+					reset_hash<='0';
+				when check_msg=>
+					check_hash(0)<='1';
+					en_h<='1';
+				when wait_check=>
+					en_h<='0';
+				when check => 
+					en_correct<='1';
+					if msg_t_h=msg_r_h then
+						correct(0)<='1';
+					end if;
 			end case;
 		end process;
 end Behavioral;

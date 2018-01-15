@@ -30,7 +30,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity Booth_multiplier is
-	 generic (width : NATURAL:=32);
+	 generic (width : NATURAL:=8);
     Port ( mul1 : in  STD_LOGIC_VECTOR (width-1 downto 0):=(others=>'0');
            mul2 : in  STD_LOGIC_VECTOR (width-1 downto 0);
            start : in  STD_LOGIC;

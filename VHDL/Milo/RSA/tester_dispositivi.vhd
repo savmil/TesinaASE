@@ -70,7 +70,8 @@ COMPONENT contatore_modulo_2n
 		msg : IN std_logic_vector(7 downto 0);
 		e : IN std_logic_vector(15 downto 0);
 		d : IN std_logic_vector(15 downto 0);
-		msg_r : out STD_LOGIC_VECTOR (31 downto 0)
+		correct: OUT STD_LOGIC_VECTOR (0 downto 0);
+		msg_r : out STD_LOGIC_VECTOR (15 downto 0)
 		);
 	END COMPONENT;
 	COMPONENT display_top_level
@@ -96,11 +97,12 @@ COMPONENT contatore_modulo_2n
 	signal scelta: STD_LOGIC_VECTOR( 7 downto 0):=( others=>'0');
 	signal e_v,d_v:STD_LOGIC_VECTOR(15 downto 0) := (others=>'0');
 	signal p_v,q_v,msg_v:STD_LOGIC_VECTOR(7 downto 0):=(others=>'0');
-	signal msg_r,msg_p:STD_LOGIC_VECTOR(31 downto 0):=(others=>'0');
+	signal msg_r,msg_p:STD_LOGIC_VECTOR(15 downto 0):=(others=>'0');
 	signal en_c1,hit,en_c,reset_c,start :STD_LOGIC:='0';
+	signal correct: STD_LOGIC_VECTOR (0 downto 0):="0";
 begin
 	deb:debounce port map(clock,button(0),en_c);
-	change: process (clock,en_c)
+	change: process (clock,button(0))
 	begin
 	if rising_edge(clock) then
 		if en_c='1' then
@@ -112,7 +114,7 @@ begin
 				when "100" => scelta<="00010000";
 				when "101" => scelta<="00100000";
 				when "110" => scelta<="01000000";
-				when others => scelta<="11111111";
+				when others => scelta<="00000000";
 			end case;
 		else
 			scelta<="00000000";
@@ -125,7 +127,7 @@ begin
 	--en_q<=(not (sel(2)) and sel(1) and not(sel(0)));
 	q_val : latch_d_en port map(clock,not(button(3)),scelta(1),x"0B",q_v);
 	--en_msg<=(not (sel(2)) and sel(1) and sel(0));
-	message: latch_d_en port map(clock,not(button(3)),scelta(2),x"0F",msg_v);
+	message: latch_d_en port map(clock,not(button(3)),scelta(2),in_byte,msg_v);
 	--en_e<=(sel(2) and not(sel(1)) and not(sel(0)));
 	e_val: latch_d_en port map(clock,not(button(3)),scelta(3),x"07",e_v(7 downto 0));
 	--en_d<=(sel(2) and not(sel(1)) and sel(0));
@@ -145,11 +147,12 @@ begin
 				reset_c<='0';
 			end if;
 		end process;
-	led(1)<=msg_r(0);
+	led(0)<=correct(0);
 	led(7)<=sel(2);
 	led(6)<=sel(1);
 	led(5)<=sel(0);
-	RSA : generazione_valori_RSA port map(clock,start,not(button(3)),p_v,q_v,msg_v,e_v,d_v,msg_r);
-	gest_disp : display_top_level port map(clock,button(3),button(2),button(1),msg_r(15 downto 0),in_byte,anodes,cathodes);
+	RSA : generazione_valori_RSA port map(clock,start,not(scelta(0)),p_v,q_v,msg_v,e_v,d_v,correct,msg_r);
+	--msg_r( 7 downto 0)<=msg_v;
+	gest_disp : display_top_level port map(clock,button(3),button(2),button(1),msg_r,in_byte,anodes,cathodes);
 end Behavioral;
 

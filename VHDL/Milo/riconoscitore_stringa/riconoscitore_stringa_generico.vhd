@@ -36,6 +36,7 @@ entity riconoscitore_stringa_generico is
 			  start: in STD_LOGIC;
 			  data : in  STD_LOGIC_VECTOR (width-1 downto 0);
            bad:out STD_LOGIC;
+			  d_o: out STD_LOGIC;
 			  correct:out STD_LOGIC);
 end riconoscitore_stringa_generico;
 
@@ -83,7 +84,7 @@ COMPONENT boundary_scan_chain
 	signal en_i,en_s,next_bit,stop,en_c:STD_LOGIC:='0';
 	signal i:STD_LOGIC_VECTOR(natural(ceil(log2(real(width)))) downto 0);
 begin
-	input: boundary_scan_chain port map('0',clk,reset,en_i,"00001101",en_s,next_bit,open);
+	input: boundary_scan_chain port map('0',clk,reset,en_i,"10001101",en_s,next_bit,open);
 	r_s:riconoscitore_stringa port map (clk,start,reset,data,next_bit,stop,i,en_s,en_i,en_c,bad,correct);
 	counter: contatore_modulo_2n port map(clk,en_c,reset,stop,i);
 end Behavioral;

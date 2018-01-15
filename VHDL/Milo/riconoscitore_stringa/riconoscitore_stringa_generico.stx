@@ -1,0 +1,50 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/mux2_1.vhd" in Library work.
+Architecture dataflow of Entity mux2_1 is up to date.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/edge_triggered_d_n.vhd" in Library work.
+Architecture behavioral of Entity edge_triggered_d_n is up to date.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/boundary_scan_chain.vhd" in Library work.
+Architecture structural of Entity boundary_scan_chain is up to date.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/riconoscitore_stringa.vhd" in Library work.
+Entity <riconoscitore_stringa> compiled.
+Entity <riconoscitore_stringa> (Architecture <behavioral>) compiled.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/contatore_modulo_4.vhd" in Library work.
+Architecture behavioral of Entity contatore_modulo_2n is up to date.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/riconoscitore_stringa_generico.vhd" in Library work.
+Entity <riconoscitore_stringa_generico> compiled.
+Entity <riconoscitore_stringa_generico> (Architecture <behavioral>) compiled.
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+
+
+Total memory usage is 469232 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

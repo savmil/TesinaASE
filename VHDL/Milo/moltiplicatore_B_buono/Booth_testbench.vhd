@@ -41,27 +41,27 @@ ARCHITECTURE behavior OF Booth_testbench IS
  
     COMPONENT Booth_multiplier
     PORT(
-         mul1 : IN  std_logic_vector(7 downto 0);
-         mul2 : IN  std_logic_vector(7 downto 0);
+         mul1 : IN  std_logic_vector(31 downto 0);
+         mul2 : IN  std_logic_vector(31 downto 0);
          start : IN  std_logic;
          clk : IN  std_logic;
          reset : IN  std_logic;
 			fin: out STD_LOGIC_VECTOR(0 downto 0);
-         product : OUT  std_logic_vector(15 downto 0)
+         product : OUT  std_logic_vector(63 downto 0)
         );
     END COMPONENT;
     
 
    --Inputs
-   signal mul1 : std_logic_vector(7 downto 0) := (others => '0');
-   signal mul2 : std_logic_vector(7 downto 0) := (others => '0');
+   signal mul1 : std_logic_vector(31 downto 0) := (others => '0');
+   signal mul2 : std_logic_vector(31 downto 0) := (others => '0');
    signal start : std_logic := '0';
    signal clk : std_logic := '0';
    signal reset : std_logic := '0';
 
  	--Outputs
 	signal fin: std_logic_vector(0 downto 0);
-   signal product : std_logic_vector(15 downto 0);
+   signal product : std_logic_vector(63 downto 0);
 
    -- Clock period definitions
    constant clk_period : time := 10 ns;
@@ -96,15 +96,8 @@ BEGIN
 		
       wait for 100 ns;	
 		reset<='1';
-		mul1<="00000111";
-		mul2<="00000011";
-		wait for 1 ns;
-		start<='1';
-		wait for 11 ns;
-		start<='0';
-      wait for clk_period*1000;
-		mul1<="00000011";
-		mul2<="00000011";
+		mul1<=x"00000001";
+		mul2<=x"00000001";
 		wait for 1 ns;
 		start<='1';
 		wait for 11 ns;

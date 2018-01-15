@@ -49,7 +49,8 @@ ARCHITECTURE behavior OF generazione_valore_RSA_testbench IS
          msg : IN  std_logic_vector(7 downto 0);
          e : IN  std_logic_vector(15 downto 0);
          d : IN  std_logic_vector(15 downto 0);
-			msg_r : out STD_LOGIC_VECTOR (31 downto 0)
+			correct: OUT STD_LOGIC_VECTOR (0 downto 0);
+			msg_r : out STD_LOGIC_VECTOR (15 downto 0)
         );
     END COMPONENT;
     
@@ -63,7 +64,9 @@ ARCHITECTURE behavior OF generazione_valore_RSA_testbench IS
    signal msg : std_logic_vector(7 downto 0) := (others => '0');
    signal e : std_logic_vector(15 downto 0) := (others => '0');
    signal d : std_logic_vector(15 downto 0) := (others => '0');
-	signal msg_r: std_logic_vector(31 downto 0);
+	
+	signal correct: STD_LOGIC_VECTOR (0 downto 0);
+	signal msg_r: std_logic_vector(15 downto 0);
    -- Clock period definitions
    constant clk_period : time := 10 ns;
  
@@ -79,6 +82,7 @@ BEGIN
           msg => msg,
           e => e,
           d => d,
+			 correct=> correct,
 			 msg_r=> msg_r
         );
 
@@ -95,15 +99,16 @@ BEGIN
    -- Stimulus process
    stim_proc: process
    begin		
-	reset<='1';
+	
+      wait for 100 ns;
+		reset<='1';
       -- hold reset state for 100 ns.
 		p<=x"03";
 		q<=x"0B";
 		e<=x"0007";
 		d<=x"0003";
-		msg<=x"0F";
-      wait for 100 ns;
-		
+		msg<=x"08";
+		wait for 1 ns;
 		start<='1';
 		wait for 11 ns;
 		start<='0';

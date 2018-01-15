@@ -1,0 +1,37 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/riconoscitore_stringa_generico_testbench_isim_par.exe -prj /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/riconoscitore_stringa_generico_testbench_par.prj work.riconoscitore_stringa_generico_testbench 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Determining compilation order of HDL files
+Parsing VHDL file "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/netgen/par/riconoscitore_stringa_generico_timesim.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/riconoscitore_stringa_generico_testbench.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 143560 KB
+Fuse CPU Usage: 1550 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package textio
+Compiling package vital_timing
+Compiling package vcomponents
+Compiling package vital_primitives
+Compiling package vpackage
+Compiling architecture x_buf_v of entity X_BUF [\X_BUF(true,true,"UNPLACED",(0,0...]
+Compiling architecture x_mux2_v of entity X_MUX2 [\X_MUX2(true,true,"UNPLACED",(0,...]
+Compiling architecture x_lut4_v of entity X_LUT4 [\X_LUT4(true,true,"UNPLACED",(0,...]
+Compiling architecture x_obuf_v of entity X_OBUF [\X_OBUF(true,true,"DONT_CARE",12...]
+Compiling architecture x_bufgmux_v of entity X_BUFGMUX [\X_BUFGMUX(true,"*",true,false,"...]
+Compiling architecture x_inv_v of entity X_INV [\X_INV(true,true,"BUFGMUX_X2Y10"...]
+Compiling architecture x_ff_v of entity X_FF [\X_FF(true,true,true,"UNPLACED",...]
+Compiling architecture x_one_v of entity X_ONE [\X_ONE("UNPLACED")(1,8)\]
+Compiling architecture x_zero_v of entity X_ZERO [\X_ZERO("UNPLACED")(1,8)\]
+Compiling architecture x_roc_v of entity X_ROC [\X_ROC("UNPLACED",100000,"*")(1,...]
+Compiling architecture x_toc_v of entity X_TOC [\X_TOC("UNPLACED",0,"*")(1,8,1,1...]
+Compiling architecture structure of entity riconoscitore_stringa_generico [riconoscitore_stringa_generico_d...]
+Compiling architecture behavior of entity riconoscitore_stringa_generico_t...
+Time Resolution for simulation is 1ps.
+Compiled 186 VHDL Units
+Built simulation executable /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/riconoscitore_stringa_generico_testbench_isim_par.exe
+Fuse Memory Usage: 162888 KB
+Fuse CPU Usage: 2040 ms
+GCC CPU Usage: 1100 ms

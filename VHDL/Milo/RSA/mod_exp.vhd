@@ -87,7 +87,7 @@ COMPONENT counter_2n_down
 	Port ( start : in  STD_LOGIC;
            clk : in  STD_LOGIC;
            reset : in  STD_LOGIC;
-           hit_o : in  STD_LOGIC;
+           counter : in  STD_LOGIC_VECTOR(4 downto 0);
            fin_m : in  STD_LOGIC_VECTOR(0 downto 0);
            fin_div : in STD_LOGIC_VECTOR(0 downto 0);
 			  exp: in STD_LOGIC;
@@ -114,18 +114,18 @@ COMPONENT counter_2n_down
 	signal d,d1,module,rema,d_res,p_d1:STD_LOGIC_VECTOR(63 downto 0):=(others=>'0');
 	signal v_m1,v_m:STD_LOGIC_VECTOR( 1 downto 0):=(others=>'0');
 	signal d_v:STD_LOGIC_VECTOR(127 downto 0):=(others=>'0');
-	signal val_mul,val_mul1:STD_LOGIC_VECTOR(31 downto 0):=(others=>'0');
+	signal val_mul2,val_mul1:STD_LOGIC_VECTOR(31 downto 0):=(others=>'0');
 	signal counter:STD_LOGIC_VECTOR(4 downto 0):=(others=>'0');
 begin
  module(31 downto 0)<=modulo;
  counter_o: counter_2n_down port map (clk,en_o,reset,hit_o,counter);
- d1_val: latch_d_en port map (clk,reset,en_d1,p_d1,d1);
+ --d1_val: latch_d_en port map (clk,reset,en_d1,p_d1,d1);
  d_val: latch_d_en port map (clk,reset,en_d,d_res,d);
  fin_exp(0)<=finish;
  selettore_mul: latch_d_en generic map (width=>2) port map (clk,reset,en_v_m,v_m1,v_m);
  end_exp: latch_d_en generic map (width=>1) port map (clk,reset,en_res,fin_exp,fin_exp1);
  finished<=fin_exp1(0);
- with v_m select val_mul<=
+ with v_m select val_mul2<=
 	x"00000001" when "00",
 	d(31 downto 0) when "01",
 	base when "10",
@@ -135,8 +135,8 @@ begin
 	d(31 downto 0) when "01",
 	d(31 downto 0) when "10",
 	x"00000000" when others ;
- mul: Booth_multiplier port map(val_mul1,val_mul,en_m,clk,reset_m,fin_m,p_d1);
- div: divisore_restoring port map (d1,module,en_div,clk,reset_div,fin_div,d_v);
+ mul: Booth_multiplier port map(val_mul1,val_mul2,en_m,clk,reset_m,fin_m,p_d1);
+ div: divisore_restoring port map (d,module,en_div,clk,reset_div,fin_div,d_v);
  with counter select exp_bit<=
 	esponente(31) when "11111",
 	esponente(30) when "11110",
@@ -170,8 +170,8 @@ begin
 	esponente(2) when "00010",
 	esponente(1) when "00001",
 	esponente(0) when others;
- m_e_g: mod_exp_gestore port map(start,clk,reset,hit_o,fin_m,fin_div,exp_bit,base,d,modulo,d1,d_v(63 downto 0),d_res,en_o,en_d1,en_d,en_m,reset_m,en_div,reset_div,en_res,en_v_m,v_m1,finish);
- m_exp:latch_d_en generic map (width=>32) port map (clk,reset,en_res,d_res(31 downto 0),m_e);
+ m_e_g: mod_exp_gestore port map(start,clk,reset,counter,fin_m,fin_div,exp_bit,base,d,modulo,p_d1,d_v(63 downto 0),d_res,en_o,en_d1,en_d,en_m,reset_m,en_div,reset_div,en_res,en_v_m,v_m1,finish);
+ m_exp:latch_d_en generic map (width=>32) port map (clk,reset,en_res,d(31 downto 0),m_e);
 -- mod_e:process(clk)
 -- variable base1,modulo1,n_o_d,check_esp,check_first:integer:=0;
 -- variable indice:natural:=31;

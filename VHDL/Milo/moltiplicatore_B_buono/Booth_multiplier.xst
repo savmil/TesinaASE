@@ -25,7 +25,7 @@ run
 -verilog2001 YES
 -fsm_extract YES -fsm_encoding Auto
 -safe_implementation No
--fsm_style LUT
+-fsm_style Bram
 -ram_extract Yes
 -ram_style Auto
 -rom_extract Yes

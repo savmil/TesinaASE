@@ -1,0 +1,2 @@
+vhdl work "netgen/map/Booth_multiplier_map.vhd"
+vhdl work "Booth_testbench.vhd"

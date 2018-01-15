@@ -98,9 +98,9 @@ BEGIN
       -- hold reset state for 100 ns.
       wait for 100 ns;	
 		reset<='1';
-		base<=x"000000F0";
-		esponente<=x"0000000F";
-		modulo<=x"000000FF";
+		base<=x"00000003";
+		esponente<=x"00000003";
+		modulo<=x"00000021";
 		wait for 1 ns;
 		start<='1';
 		wait for 11 ns;

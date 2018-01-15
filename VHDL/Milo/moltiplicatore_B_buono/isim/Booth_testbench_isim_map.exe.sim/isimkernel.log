@@ -1,0 +1,31 @@
+Command line:
+   Booth_testbench_isim_map.exe
+     -simmode  gui
+     -sdfmax  /uut/=netgen/map/Booth_multiplier_map.sdf
+     -sdfroot  /uut
+     -simrunnum  0
+     -socket  50746
+
+Fri Jan 12 19:11:06 2018
+
+
+ Elaboration Time: 0.17 sec
+
+ Current Memory Usage: 245.42 Meg
+
+ Total Signals          : 11479
+ Total Nets             : 7140
+ Total Signal Drivers   : 7054
+ Total Blocks           : 3076
+ Total Primitive Blocks : 1629
+ Total Processes        : 7052
+ Total Traceable Variables  : 16847
+ Total Scalar Nets and Variables : 54932
+Total Line Count : 25107
+
+ Total Simulation Time: 0.66 sec
+
+ Current Memory Usage: 253.94 Meg
+
+Fri Jan 12 19:11:14 2018
+

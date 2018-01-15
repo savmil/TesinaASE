@@ -1,0 +1,5 @@
+set -tmpdir "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/xst/projnav.tmp"
+set -xsthdpdir "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/xst"
+elaborate
+-ifn riconoscitore_stringa_generico.prj
+-ifmt mixed
