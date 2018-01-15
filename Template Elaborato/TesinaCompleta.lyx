@@ -224,6 +224,7 @@ morecomment=[s]{--}
 \usepackage[italian]{varioref}
 \usepackage{caption}
 \captionsetup{tableposition=top,figureposition=bottom,font=small,format=hang,labelfont={sf,bf}}
+\usepackage{hyperref}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false

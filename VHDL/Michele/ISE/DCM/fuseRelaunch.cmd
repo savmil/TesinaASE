@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/media/sf_ASE/VHDL/Michele/ISE/DCM/display_cu_testbench_isim_beh.exe" -prj "/media/sf_ASE/VHDL/Michele/ISE/DCM/display_cu_testbench_beh.prj" "work.display_cu_testbench" 

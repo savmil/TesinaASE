@@ -1,0 +1,10 @@
+Command line:
+   jk_latch_testbench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49417
+
+Sun Jan 14 18:48:10 2018
+
+
+ Elaboration Time: 0.0312 sec

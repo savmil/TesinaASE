@@ -1,0 +1,2 @@
+vhdl work "netgen/translate/jk_flipflop_translate.vhd"
+vhdl work "jk_flipflop_testbench.vhd"

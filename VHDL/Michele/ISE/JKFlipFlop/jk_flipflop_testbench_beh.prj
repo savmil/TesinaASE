@@ -1,0 +1,2 @@
+vhdl work "jk_flipflop.vhd"
+vhdl work "jk_flipflop_testbench.vhd"

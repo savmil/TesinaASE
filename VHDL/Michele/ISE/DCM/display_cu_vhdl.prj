@@ -1,0 +1,7 @@
+vhdl work "/media/sf_ASE/VHDL/Michele/ISE/DCM/counter_mod2n.vhd"
+vhdl work "/media/sf_ASE/VHDL/Michele/ISE/DCM/cathode_manager.vhd"
+vhdl work "/media/sf_ASE/VHDL/Michele/ISE/DCM/anode_manager.vhd"
+vhdl work "/media/sf_ASE/VHDL/Michele/ISE/DCM/dcm.vhd"
+vhdl work "/media/sf_ASE/VHDL/Michele/ISE/DCM/edge_triggered_d_n.vhd"
+vhdl work "/media/sf_ASE/VHDL/Michele/ISE/DCM/display.vhd"
+vhdl work "/media/sf_ASE/VHDL/Michele/ISE/DCM/display_cu.vhd"

@@ -1,0 +1,8 @@
+AR rs_latch structural C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/jk_latch_clocked/rs_latch.vhd sub00/vhpl05 1515952519
+AR jk_latch structural C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/jk_latch_clocked/jk_latch.vhd sub00/vhpl07 1515952521
+AR nor_gate dataflow C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/jk_latch_clocked/nor_gate.vhd sub00/vhpl01 1515952515
+EN jk_latch NULL C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/jk_latch_clocked/jk_latch.vhd sub00/vhpl06 1515952520
+EN rs_latch NULL C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/jk_latch_clocked/rs_latch.vhd sub00/vhpl04 1515952518
+AR and_gate dataflow C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/jk_latch_clocked/and_gate.vhd sub00/vhpl03 1515952517
+EN nor_gate NULL C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/jk_latch_clocked/nor_gate.vhd sub00/vhpl00 1515952514
+EN and_gate NULL C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/jk_latch_clocked/and_gate.vhd sub00/vhpl02 1515952516

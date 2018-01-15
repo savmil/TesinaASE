@@ -1,0 +1,31 @@
+Command line:
+   jk_flipflop_testbench_isim_par.exe
+     -simmode  gui
+     -sdfmax  /uut/=netgen/par/jk_flipflop_timesim.sdf
+     -sdfroot  /uut
+     -simrunnum  0
+     -socket  49409
+
+Sat Jan 13 21:23:08 2018
+
+
+ Elaboration Time: 0.0624 sec
+
+ Current Memory Usage: 489.665 Meg
+
+ Total Signals          : 160
+ Total Nets             : 105
+ Total Signal Drivers   : 81
+ Total Blocks           : 50
+ Total Primitive Blocks : 30
+ Total Processes        : 80
+ Total Traceable Variables  : 265
+ Total Scalar Nets and Variables : 4986
+Total Line Count : 330
+
+ Total Simulation Time: 0.078 sec
+
+ Current Memory Usage: 490.713 Meg
+
+Sat Jan 13 21:23:38 2018
+

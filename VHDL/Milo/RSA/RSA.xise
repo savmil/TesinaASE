@@ -9,10 +9,10 @@
     <!-- along with the project source files, is sufficient to open and    -->
     <!-- implement in ISE Project Navigator.                               -->
     <!--                                                                   -->
-    <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+    <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved. -->
   </header>
 
-  <version xil_pn:ise_version="14.7" xil_pn:schema_version="2"/>
+  <version xil_pn:ise_version="14.4" xil_pn:schema_version="2"/>
 
   <files>
     <file xil_pn:name="gestore_RSA.vhd" xil_pn:type="FILE_VHDL">
@@ -480,8 +480,13 @@
     <property xil_pn:name="PROP_PostSynthSimTop" xil_pn:value="" xil_pn:valueState="default"/>
     <property xil_pn:name="PROP_PostXlateSimTop" xil_pn:value="Architecture|generazione_valore_RSA_testbench|behavior" xil_pn:valueState="non-default"/>
     <property xil_pn:name="PROP_PreSynthesis" xil_pn:value="PreSynthesis" xil_pn:valueState="default"/>
+<<<<<<< HEAD
     <property xil_pn:name="PROP_intProjectCreationTimestamp" xil_pn:value="2018-01-13T17:39:20" xil_pn:valueState="non-default"/>
     <property xil_pn:name="PROP_intWbtProjectID" xil_pn:value="8048887C6B399181DAA68353B85AE582" xil_pn:valueState="non-default"/>
+=======
+    <property xil_pn:name="PROP_intProjectCreationTimestamp" xil_pn:value="2018-01-14T21:45:14" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="PROP_intWbtProjectID" xil_pn:value="A70EEE9C768D4B4FBFEC325BD39137D5" xil_pn:valueState="non-default"/>
+>>>>>>> dc57f98edcb1586ebbed7c40d81fc62d5f5066b2
     <property xil_pn:name="PROP_intWorkingDirLocWRTProjDir" xil_pn:value="Same" xil_pn:valueState="non-default"/>
     <property xil_pn:name="PROP_intWorkingDirUsed" xil_pn:value="No" xil_pn:valueState="non-default"/>
   </properties>

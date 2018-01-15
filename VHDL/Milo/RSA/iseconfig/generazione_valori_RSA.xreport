@@ -1,12 +1,21 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
+<<<<<<< HEAD
   <DateModified>2018-01-13T21:42:04</DateModified>
   <ModuleName>mod_exp</ModuleName>
   <SummaryTimeStamp>2018-01-13T21:39:14</SummaryTimeStamp>
   <SavedFilePath>/media/sf_ASE/VHDL/Milo/RSA/iseconfig/generazione_valori_RSA.xreport</SavedFilePath>
   <ImplementationReportsDirectory>/media/sf_ASE/VHDL/Milo/RSA/</ImplementationReportsDirectory>
   <DateInitialized>2018-01-13T21:42:04</DateInitialized>
+=======
+  <DateModified>2018-01-14T21:45:19</DateModified>
+  <ModuleName>generazione_valori_RSA</ModuleName>
+  <SummaryTimeStamp>2018-01-03T18:14:03</SummaryTimeStamp>
+  <SavedFilePath>C:/Users/Michele/Documents/TesinaASE/VHDL/Milo/RSA/iseconfig/generazione_valori_RSA.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Michele/Documents/TesinaASE/VHDL/Milo/RSA\</ImplementationReportsDirectory>
+  <DateInitialized>2018-01-03T18:18:24</DateInitialized>
+>>>>>>> dc57f98edcb1586ebbed7c40d81fc62d5f5066b2
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>
