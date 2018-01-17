@@ -4,22 +4,22 @@
      changes made to this file may result in unpredictable
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
-<DeviceUsageSummary rev="1">
-<DesignStatistics TimeStamp="Thu Dec 28 00:31:18 2017"><group name="MiscellaneousStatistics">
-<item name="AGG_BONDED_IO" rev="1">
-<attrib name="value" value="48"/></item>
-<item name="AGG_IO" rev="1">
-<attrib name="value" value="48"/></item>
-<item name="AGG_SLICE" rev="1">
-<attrib name="value" value="65"/></item>
-<item name="NUM_4_INPUT_LUT" rev="1">
-<attrib name="value" value="128"/></item>
-<item name="NUM_BONDED_IBUF" rev="1">
-<attrib name="value" value="32"/></item>
-<item name="NUM_BONDED_IOB" rev="1">
-<attrib name="value" value="16"/></item>
-<item name="NUM_SLICEL" rev="1">
-<attrib name="value" value="65"/></item>
+<DeviceUsageSummary rev="7">
+<DesignStatistics TimeStamp="Wed Jan 17 20:33:28 2018"><group name="MiscellaneousStatistics">
+<item name="AGG_BONDED_IO" rev="7">
+<attrib name="value" value="12"/></item>
+<item name="AGG_IO" rev="7">
+<attrib name="value" value="12"/></item>
+<item name="AGG_SLICE" rev="7">
+<attrib name="value" value="4"/></item>
+<item name="NUM_4_INPUT_LUT" rev="7">
+<attrib name="value" value="8"/></item>
+<item name="NUM_BONDED_IBUF" rev="7">
+<attrib name="value" value="8"/></item>
+<item name="NUM_BONDED_IOB" rev="7">
+<attrib name="value" value="4"/></item>
+<item name="NUM_SLICEL" rev="7">
+<attrib name="value" value="4"/></item>
 </group>
 </DesignStatistics>
 <CmdHistory>

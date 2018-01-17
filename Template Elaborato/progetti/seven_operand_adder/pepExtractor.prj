@@ -1,0 +1,7 @@
+work	"RippleCarryAdder.vhd"
+work	"full_adder_half.vhdl"
+work	"half_adder.vhdl"
+work	"partial_sum_2.vhd"
+work	"partial_sum_3.vhd"
+work	"seven_operand_adder.vhd"
+work	"sevent_to_threee.vhd"

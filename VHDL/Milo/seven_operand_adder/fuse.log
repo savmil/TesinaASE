@@ -1,0 +1,33 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /media/sf_ASE/VHDL/Milo/seven_operand_adder/seven_operand_adder_testbench_isim_beh.exe -prj /media/sf_ASE/VHDL/Milo/seven_operand_adder/seven_operand_adder_testbench_beh.prj work.seven_operand_adder_testbench 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Determining compilation order of HDL files
+Parsing VHDL file "/media/sf_ASE/VHDL/Milo/seven_operand_adder/half_adder.vhdl" into library work
+Parsing VHDL file "/media/sf_ASE/VHDL/Milo/seven_operand_adder/full_adder_half.vhdl" into library work
+Parsing VHDL file "/media/sf_ASE/VHDL/Milo/seven_operand_adder/sevent_to_threee.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/VHDL/Milo/seven_operand_adder/RippleCarryAdder.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/VHDL/Milo/seven_operand_adder/partial_sum_3.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/VHDL/Milo/seven_operand_adder/partial_sum_2.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/VHDL/Milo/seven_operand_adder/seven_operand_adder.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/VHDL/Milo/seven_operand_adder/seven_operand_adder_testbench.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 94640 KB
+Fuse CPU Usage: 1150 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture dataflow of entity half_adder [half_adder_default]
+Compiling architecture register_transfer of entity full_adder_half [full_adder_half_default]
+Compiling architecture structural of entity sevent_to_three [sevent_to_three_default]
+Compiling architecture behavioral of entity partial_sum_3 [\partial_sum_3(8)\]
+Compiling architecture behavioral of entity partial_sum_2 [\partial_sum_2(10)\]
+Compiling architecture structural of entity RippleCarryAdder [\RippleCarryAdder(11)\]
+Compiling architecture behavioral of entity seven_operand_adder [\seven_operand_adder(8)\]
+Compiling architecture behavior of entity seven_operand_adder_testbench
+Time Resolution for simulation is 1ps.
+Compiled 17 VHDL Units
+Built simulation executable /media/sf_ASE/VHDL/Milo/seven_operand_adder/seven_operand_adder_testbench_isim_beh.exe
+Fuse Memory Usage: 103232 KB
+Fuse CPU Usage: 1190 ms
+GCC CPU Usage: 620 ms

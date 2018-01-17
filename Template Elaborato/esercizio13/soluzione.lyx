@@ -171,123 +171,248 @@ Segue un esempio di inclusione di codice
 
 \end_layout
 
-\begin_layout Subsubsection
-Bit String Comparator
-\end_layout
-
 \begin_layout Standard
-Il componente Top Module è ottenuto con costrutto 
-\emph on
-Generate
-\emph default
- e le connessioni sono fatte sfruttando tre array monodimensionali (aGT,
- aLT, aEQ).
-\end_layout
-
-\begin_layout Standard
-I valori MSB di questi array sono posti a (0,0,1) rispettivamente per garantire
- che sui bit più significativi della stringa in ingresso sia fatta una comparazi
-one assoluta, e non relativa.
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
+\begin_inset Float table
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-
-
-\backslash
-begin{lstlisting}[language=VHDL,caption={Definizione del componente Bit
- String Comparator Generic}] 
-\end_layout
-
-\begin_layout Plain Layout
-
-library IEEE; use IEEE.STD_LOGIC_1164.ALL;
-\end_layout
-
-\begin_layout Plain Layout
-
-entity cathode_manager is     Port ( counter : in STD_LOGIC_VECTOR (1 downto
- 0); 		     values : in STD_LOGIC_VECTOR (15 downto 0); 		     dots : in
-  STD_LOGIC_VECTOR (3 downto 0);            cathodes : out  STD_LOGIC_VECTOR
- (7 downto 0) 		  ); end cathode_manager;
-\end_layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
 
 \begin_layout Plain Layout
-
-architecture structural of cathode_manager is
-\end_layout
-
-\begin_layout Plain Layout
-
-component muxn_1 is 	generic(address_width : NATURAL := 3); 	port ( 		SEL
- : in STD_LOGIC_VECTOR(address_width-1 downto 0); 		 A : in STD_LOGIC_VECTOR(2**
-address_width-1 downto 0); 		 X : out STD_LOGIC 	); end component;
-\end_layout
-
-\begin_layout Plain Layout
-
-component cathode_encoder is     Port ( nibble : in  STD_LOGIC_VECTOR (3
- downto 0);            cathodes : out  STD_LOGIC_VECTOR (6 downto 0) 		);
- end component; for all : cathode_encoder use entity WORK.cathode_encoder(behavio
-ral);
-\end_layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
 
 \begin_layout Plain Layout
-
-signal nibble : STD_LOGIC_VECTOR (3 downto 0) := (others => '0'); alias
- digit0 : STD_LOGIC_VECTOR(3 downto 0) is values(3 downto 0); alias digit1
- : STD_LOGIC_VECTOR(3 downto 0) is values(7 downto 4); alias digit2 : STD_LOGIC_
-VECTOR(3 downto 0) is values(11 downto 8); alias digit3 : STD_LOGIC_VECTOR(3
- downto 0) is values(15 downto 12); signal in_mux : STD_LOGIC_VECTOR (15
- downto 0) := (others => '0'); --per ordinare i valori da porre in ingresso
- ai mux 4x1
+Numero di bit operandi
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
 
-begin 
+\begin_layout Plain Layout
+Numero di slice
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
 
-	mux16_4 : for i in 0 to 3 generate 		in_mux((i*4+3) downto i*4) <= (digit3(i),
- digit2(i), digit1(i), digit0(i)); 		-- i=0 --> in_mux(3 downto 0) 		--
- i=1 --> in_mux(7 downto 4) 		-- i=2 --> in_mux(11 downto 8) 		-- i=3 -->
- in_mux(15 downto 12) 		inst_mux4_1 : muxn_1 			generic map ( address_width
- => 2 ) 			port map ( SEL => counter, 						A => in_mux((i*4+3) downto i*4),
- 					   X => nibble(i) 					 ); 	end generate; 
+\begin_layout Plain Layout
+Numero di four LUT
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
 
-	inst_encoder : cathode_encoder 		port map ( nibble => nibble, 				   cathodes
- => cathodes (6 downto 0) 				 ); 				  	inst_dots_manager : muxn_1 		generic
- map ( address_width => 2 ) 			port map ( SEL => counter, 					   A => dots,
- 					   X => cathodes(7) 					 ); 
+\begin_layout Plain Layout
+Tempo di calcolo
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
 
-end structural;
+\begin_layout Plain Layout
+2x2
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
 
+\begin_layout Plain Layout
+4
 \end_layout
 
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
 \begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8,978 ps
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4x4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+17
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+32
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14,557 ps
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8x8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+65
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+128
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25,026 ps
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16x16
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+256
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+512
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+51,175 ps
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
 
 
-\backslash
-end{lstlisting}
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Bit String Comparator
 \end_layout
 
 \end_body

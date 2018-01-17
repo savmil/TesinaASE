@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/riconoscitore_stringa_generico_testbench_isim_par.exe" -prj "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/riconoscitore_stringa_generico_testbench_par.prj" "work.riconoscitore_stringa_generico_testbench" 
+-intstyle "ise" -incremental -o "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/riconoscitore_stringa_generico_testbench_isim_beh.exe" -prj "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/riconoscitore_stringa_generico_testbench_beh.prj" "work.riconoscitore_stringa_generico_testbench" 

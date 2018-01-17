@@ -1,4 +1,0 @@
-vhdl isim_temp "../../half_adder/half_adder.vhdl"
-vhdl isim_temp "../../full_adder_half/full_adder_half.vhdl"
-vhdl isim_temp "RippleCarryAdder.vhd"
-vhdl isim_temp "RippleCarryAdder_testbench.vhd"

@@ -1,0 +1,1 @@
+vhdtdtfi -prj Carry_Look_A-head_Adder -o /home/sav/ASE/Carry_Look_A-head_Adder/mux2_1.vhi -module mux2_1 -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work mux2_1.vhd 

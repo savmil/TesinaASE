@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -o "/home/sav/ASE/prova1/comparatore_isim_beh.exe" -prj "/home/sav/ASE/prova1/comparatore_beh.prj" "work.comparatore" 

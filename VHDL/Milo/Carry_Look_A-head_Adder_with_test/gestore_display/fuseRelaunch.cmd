@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -o "/home/sav/ASE/gestore_display/gestore_display_testbench_isim_beh.exe" -prj "/home/sav/ASE/gestore_display/gestore_display_testbench_beh.prj" "work.gestore_display_testbench" 

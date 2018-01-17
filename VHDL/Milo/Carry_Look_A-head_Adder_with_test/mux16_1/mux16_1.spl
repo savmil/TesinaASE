@@ -1,6 +1,0 @@
-[Inputs]
-=SEL[3:0]=
-=X[15:0]=
-[Outputs]
-O
-[BiDir]

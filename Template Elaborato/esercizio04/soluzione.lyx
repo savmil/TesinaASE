@@ -232,7 +232,7 @@ end{figure}
 \end_layout
 
 \begin_layout Standard
-Gli input sono rappresentati da un segnale di clock, uno di reset in logica
+Gli input sono rappresentati da: un segnale di clock, uno di reset in logica
  0 attiva, le abilitazioni per le quattro cifre del display, i valori che
  le stesse cifre devono assumere e l'eventuale posizione dei punti da accendere.
  Gli output sono costituiti dai segnali degli anodi comuni ai sette segmenti,

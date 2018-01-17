@@ -4,15 +4,15 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.02 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.02 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Reading design: RippleCarryAdder.prj
@@ -71,7 +71,7 @@ Automatic Register Balancing       : No
 
 ---- Target Options
 Add IO Buffers                     : YES
-Global Maximum Fanout              : 500
+Global Maximum Fanout              : 100000
 Add Generic Clock Buffer(BUFG)     : 24
 Register Duplication               : YES
 Slice Packing                      : YES
@@ -107,18 +107,21 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "/home/sav/half_adder/half_adder.vhdl" in Library work.
-Architecture dataflow of Entity half_adder is up to date.
+Compiling vhdl file "/home/sav/full_adder_half/half_adder.vhdl" in Library work.
+Entity <half_adder> compiled.
+Entity <half_adder> (Architecture <dataflow>) compiled.
 Compiling vhdl file "/home/sav/full_adder_half/full_adder_half.vhdl" in Library work.
-Architecture register_transfer of Entity full_adder_half is up to date.
-Compiling vhdl file "/home/sav/ASE/RippleCarryAdder/RippleCarryAdder.vhd" in Library work.
-Architecture structural of Entity ripplecarryadder is up to date.
+Entity <full_adder_half> compiled.
+Entity <full_adder_half> (Architecture <register_transfer>) compiled.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/RippleCarryAdder/RippleCarryAdder.vhd" in Library work.
+Entity <RippleCarryAdder> compiled.
+Entity <RippleCarryAdder> (Architecture <structural>) compiled.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
 Analyzing hierarchy for entity <RippleCarryAdder> in library <work> (architecture <structural>) with generics.
-	N = 8
+	N = 4
 
 Analyzing hierarchy for entity <full_adder_half> in library <work> (architecture <register_transfer>).
 
@@ -129,7 +132,7 @@ Analyzing hierarchy for entity <half_adder> in library <work> (architecture <dat
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing generic Entity <RippleCarryAdder> in library <work> (Architecture <structural>).
-	N = 8
+	N = 4
 Entity <RippleCarryAdder> analyzed. Unit <RippleCarryAdder> generated.
 
 Analyzing Entity <full_adder_half> in library <work> (Architecture <register_transfer>).
@@ -146,7 +149,7 @@ Entity <half_adder> analyzed. Unit <half_adder> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <half_adder>.
-    Related source file is "/home/sav/half_adder/half_adder.vhdl".
+    Related source file is "/home/sav/full_adder_half/half_adder.vhdl".
     Found 1-bit xor2 for signal <S>.
 Unit <half_adder> synthesized.
 
@@ -157,10 +160,7 @@ Unit <full_adder_half> synthesized.
 
 
 Synthesizing Unit <RippleCarryAdder>.
-    Related source file is "/home/sav/ASE/RippleCarryAdder/RippleCarryAdder.vhd".
-WARNING:Xst:653 - Signal <carry_rappresentation> is used but never assigned. This sourceless signal will be automatically connected to value 0.
-WARNING:Xst:653 - Signal <carry<7>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
-WARNING:Xst:646 - Signal <carry<6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Related source file is "/media/sf_ASE/VHDL/Milo/RippleCarryAdder/RippleCarryAdder.vhd".
 Unit <RippleCarryAdder> synthesized.
 
 
@@ -168,8 +168,8 @@ Unit <RippleCarryAdder> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Xors                                                 : 16
- 1-bit xor2                                            : 16
+# Xors                                                 : 8
+ 1-bit xor2                                            : 8
 
 =========================================================================
 
@@ -182,8 +182,8 @@ Macro Statistics
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Xors                                                 : 16
- 1-bit xor2                                            : 16
+# Xors                                                 : 8
+ 1-bit xor2                                            : 8
 
 =========================================================================
 
@@ -227,17 +227,14 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 25
+# IOs                              : 14
 
 Cell Usage :
-# BELS                             : 15
-#      LUT2                        : 3
-#      LUT3                        : 7
-#      LUT4                        : 4
-#      MUXF5                       : 1
-# IO Buffers                       : 25
-#      IBUF                        : 16
-#      OBUF                        : 9
+# BELS                             : 8
+#      LUT3                        : 8
+# IO Buffers                       : 14
+#      IBUF                        : 9
+#      OBUF                        : 5
 =========================================================================
 
 Device utilization summary:
@@ -245,10 +242,10 @@ Device utilization summary:
 
 Selected Device : 3s100etq144-5 
 
- Number of Slices:                        8  out of    960     0%  
- Number of 4 input LUTs:                 14  out of   1920     0%  
- Number of IOs:                          25
- Number of bonded IOBs:                  25  out of    108    23%  
+ Number of Slices:                        4  out of    960     0%  
+ Number of 4 input LUTs:                  8  out of   1920     0%  
+ Number of IOs:                          14
+ Number of bonded IOBs:                  14  out of    108    12%  
 
 ---------------------------
 Partition Resource Summary:
@@ -281,7 +278,7 @@ Speed Grade: -5
    Minimum period: No path found
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: No path found
-   Maximum combinational path delay: 9.981ns
+   Maximum combinational path delay: 8.959ns
 
 Timing Detail:
 --------------
@@ -289,39 +286,38 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 64 / 9
+  Total number of paths / destination ports: 33 / 5
 -------------------------------------------------------------------------
-Delay:               9.981ns (Levels of Logic = 7)
-  Source:            adder1<1> (PAD)
-  Destination:       sum<5> (PAD)
+Delay:               8.959ns (Levels of Logic = 6)
+  Source:            adder2<0> (PAD)
+  Destination:       last_carry (PAD)
 
-  Data Path: adder1<1> to sum<5>
+  Data Path: adder2<0> to last_carry
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             2   1.106   0.532  adder1_1_IBUF (adder1_1_IBUF)
-     LUT4:I0->O            2   0.612   0.449  RippleCarryAdder[1].intermataded_adder.adder/COUT1 (carry<1>)
+     IBUF:I->O             2   1.106   0.532  adder2_0_IBUF (adder2_0_IBUF)
+     LUT3:I0->O            2   0.612   0.449  RippleCarryAdder[0].first_adder.adder/COUT1 (carry<0>)
+     LUT3:I1->O            2   0.612   0.449  RippleCarryAdder[1].intermataded_adder.adder/COUT1 (carry<1>)
      LUT3:I1->O            2   0.612   0.449  RippleCarryAdder[2].intermataded_adder.adder/COUT1 (carry<2>)
-     LUT3:I1->O            2   0.612   0.449  RippleCarryAdder[3].intermataded_adder.adder/COUT1 (carry<3>)
-     LUT3:I1->O            2   0.612   0.410  RippleCarryAdder[4].intermataded_adder.adder/COUT1 (carry<4>)
-     LUT3:I2->O            1   0.612   0.357  RippleCarryAdder[5].intermataded_adder.adder/half_adder2/Mxor_S_Result1 (sum_5_OBUF)
-     OBUF:I->O                 3.169          sum_5_OBUF (sum<5>)
+     LUT3:I1->O            1   0.612   0.357  RippleCarryAdder[3].last_adder.adder/COUT1 (last_carry_OBUF)
+     OBUF:I->O                 3.169          last_carry_OBUF (last_carry)
     ----------------------------------------
-    Total                      9.981ns (7.335ns logic, 2.646ns route)
-                                       (73.5% logic, 26.5% route)
+    Total                      8.959ns (6.723ns logic, 2.236ns route)
+                                       (75.0% logic, 25.0% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 3.00 secs
-Total CPU time to Xst completion: 2.97 secs
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 3.83 secs
  
 --> 
 
 
-Total memory usage is 509156 kilobytes
+Total memory usage is 508892 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    3 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

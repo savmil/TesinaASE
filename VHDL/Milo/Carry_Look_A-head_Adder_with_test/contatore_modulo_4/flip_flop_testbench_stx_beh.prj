@@ -1,2 +1,0 @@
-vhdl isim_temp "../registro/flip_flop_rising_edge.vhd"
-vhdl isim_temp "flip_flop_testbench.vhd"

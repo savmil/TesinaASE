@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "/media/sf_ASE/VHDL/Milo/seven_operand_adder/seven_operand_adder_testbench_isim_beh.exe" -prj "/media/sf_ASE/VHDL/Milo/seven_operand_adder/seven_operand_adder_testbench_beh.prj" "seven_operand_adder_testbench" 
+-intstyle "ise" -incremental -o "/media/sf_ASE/VHDL/Milo/seven_operand_adder/seven_operand_adder_testbench_isim_beh.exe" -prj "/media/sf_ASE/VHDL/Milo/seven_operand_adder/seven_operand_adder_testbench_beh.prj" "work.seven_operand_adder_testbench" 

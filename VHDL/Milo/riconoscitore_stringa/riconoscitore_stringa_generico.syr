@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Reading design: riconoscitore_stringa_generico.prj
@@ -50,7 +50,7 @@ Target Device                      : xc3s100e-5-tq144
 ---- Source Options
 Top Module Name                    : riconoscitore_stringa_generico
 Automatic FSM Extraction           : YES
-FSM Encoding Algorithm             : Auto
+FSM Encoding Algorithm             : Speed1
 Safe Implementation                : No
 FSM Style                          : LUT
 RAM Extraction                     : Yes
@@ -103,6 +103,8 @@ Slice Utilization Ratio Delta      : 5
 
 =========================================================================
 
+Setting FSM Encoding Algorithm to : Speed1
+
 
 =========================================================================
 *                          HDL Compilation                              *
@@ -114,8 +116,7 @@ Architecture behavioral of Entity edge_triggered_d_n is up to date.
 Compiling vhdl file "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/boundary_scan_chain.vhd" in Library work.
 Architecture structural of Entity boundary_scan_chain is up to date.
 Compiling vhdl file "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/riconoscitore_stringa.vhd" in Library work.
-Entity <riconoscitore_stringa> compiled.
-Entity <riconoscitore_stringa> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity riconoscitore_stringa is up to date.
 Compiling vhdl file "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/contatore_modulo_4.vhd" in Library work.
 Architecture behavioral of Entity contatore_modulo_2n is up to date.
 Compiling vhdl file "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/riconoscitore_stringa_generico.vhd" in Library work.
@@ -147,7 +148,7 @@ Analyzing hierarchy for entity <edge_triggered_d_n> in library <work> (architect
 =========================================================================
 Analyzing generic Entity <riconoscitore_stringa_generico> in library <work> (Architecture <behavioral>).
 	width = 8
-WARNING:Xst:753 - "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/riconoscitore_stringa_generico.vhd" line 88: Unconnected output port 'dout' of component 'boundary_scan_chain'.
+WARNING:Xst:753 - "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/riconoscitore_stringa_generico.vhd" line 87: Unconnected output port 'dout' of component 'boundary_scan_chain'.
 Entity <riconoscitore_stringa_generico> analyzed. Unit <riconoscitore_stringa_generico> generated.
 
 Analyzing generic Entity <boundary_scan_chain> in library <work> (Architecture <structural>).
@@ -163,9 +164,9 @@ Entity <edge_triggered_d_n> analyzed. Unit <edge_triggered_d_n> generated.
 
 Analyzing generic Entity <riconoscitore_stringa> in library <work> (Architecture <behavioral>).
 	width = 8
-WARNING:Xst:790 - "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/riconoscitore_stringa.vhd" line 66: Index value(s) does not match array range, simulation mismatch.
-WARNING:Xst:790 - "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/riconoscitore_stringa.vhd" line 68: Index value(s) does not match array range, simulation mismatch.
-WARNING:Xst:790 - "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/riconoscitore_stringa.vhd" line 104: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/riconoscitore_stringa.vhd" line 65: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/riconoscitore_stringa.vhd" line 67: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/riconoscitore_stringa.vhd" line 102: Index value(s) does not match array range, simulation mismatch.
 Entity <riconoscitore_stringa> analyzed. Unit <riconoscitore_stringa> generated.
 
 Analyzing generic Entity <contatore_modulo_2n> in library <work> (Architecture <behavioral>).
@@ -194,11 +195,11 @@ WARNING:Xst:1780 - Signal <n> is never used or assigned. This unconnected signal
     | Reset type         | asynchronous                                   |
     | Reset State        | idle                                           |
     | Power Up State     | idle                                           |
-    | Encoding           | automatic                                      |
+    | Encoding           | speed1                                         |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 1-bit xor2 for signal <bad$xor0000> created at line 104.
-    Found 1-bit 8-to-1 multiplexer for signal <data$mux0000> created at line 66.
+    Found 1-bit xor2 for signal <bad$xor0000> created at line 102.
+    Found 1-bit 8-to-1 multiplexer for signal <data$mux0000> created at line 65.
     Summary:
 	inferred   1 Finite State Machine(s).
 	inferred   1 Multiplexer(s).
@@ -236,6 +237,7 @@ Unit <boundary_scan_chain> synthesized.
 
 Synthesizing Unit <riconoscitore_stringa_generico>.
     Related source file is "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/riconoscitore_stringa_generico.vhd".
+WARNING:Xst:1306 - Output <d_o> is never assigned.
 Unit <riconoscitore_stringa_generico> synthesized.
 
 
@@ -258,15 +260,14 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-Analyzing FSM <FSM_0> for best encoding.
-Optimizing FSM <r_s/current_state/FSM> on signal <current_state[1:2]> with sequential encoding.
+Optimizing FSM <r_s/current_state/FSM> on signal <current_state[1:4]> with speed1 encoding.
 ----------------------------
  State          | Encoding
 ----------------------------
- idle           | 00
- riconosci_bit  | 11
- shifting       | 10
- carica_stringa | 01
+ idle           | 1000
+ riconosci_bit  | 0001
+ shifting       | 0010
+ carica_stringa | 0100
 ----------------------------
 
 =========================================================================
@@ -306,8 +307,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 14
- Flip-Flops                                            : 14
+# Registers                                            : 16
+ Flip-Flops                                            : 16
 
 =========================================================================
 
@@ -336,25 +337,23 @@ Design Statistics
 # IOs                              : 14
 
 Cell Usage :
-# BELS                             : 35
+# BELS                             : 44
 #      INV                         : 2
-#      LUT2                        : 2
-#      LUT2_L                      : 1
-#      LUT3                        : 9
-#      LUT3_D                      : 1
-#      LUT3_L                      : 1
-#      LUT4                        : 13
-#      LUT4_D                      : 2
-#      MUXF5                       : 3
+#      LUT2                        : 6
+#      LUT3                        : 7
+#      LUT4                        : 22
+#      LUT4_L                      : 2
+#      MUXF5                       : 4
 #      MUXF6                       : 1
-# FlipFlops/Latches                : 14
-#      FDC                         : 10
+# FlipFlops/Latches                : 16
+#      FDC                         : 11
 #      FDCE                        : 4
+#      FDP                         : 1
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 13
+# IO Buffers                       : 12
 #      IBUF                        : 10
-#      OBUF                        : 3
+#      OBUF                        : 2
 =========================================================================
 
 Device utilization summary:
@@ -362,11 +361,11 @@ Device utilization summary:
 
 Selected Device : 3s100etq144-5 
 
- Number of Slices:                       15  out of    960     1%  
- Number of Slice Flip Flops:             14  out of   1920     0%  
- Number of 4 input LUTs:                 31  out of   1920     1%  
+ Number of Slices:                       19  out of    960     1%  
+ Number of Slice Flip Flops:             16  out of   1920     0%  
+ Number of 4 input LUTs:                 39  out of   1920     2%  
  Number of IOs:                          14
- Number of bonded IOBs:                  14  out of    108    12%  
+ Number of bonded IOBs:                  13  out of    108    12%  
  Number of GCLKs:                         1  out of     24     4%  
 
 ---------------------------
@@ -390,7 +389,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 14    |
+clk                                | BUFGP                  | 16    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -398,17 +397,17 @@ Asynchronous Control Signals Information:
 --------------------------------------------------------------+------------------------+-------+
 Control Signal                                                | Buffer(FF name)        | Load  |
 --------------------------------------------------------------+------------------------+-------+
-counter/reset_inv(r_s/current_state_FSM_Acst_FSM_inv1_INV_0:O)| NONE(counter/count_0)  | 14    |
+counter/reset_inv(r_s/current_state_FSM_Acst_FSM_inv1_INV_0:O)| NONE(counter/count_0)  | 16    |
 --------------------------------------------------------------+------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -5
 
-   Minimum period: 5.235ns (Maximum Frequency: 191.031MHz)
-   Minimum input arrival time before clock: 5.609ns
-   Maximum output required time after clock: 7.248ns
-   Maximum combinational path delay: 7.622ns
+   Minimum period: 5.411ns (Maximum Frequency: 184.805MHz)
+   Minimum input arrival time before clock: 5.785ns
+   Maximum output required time after clock: 7.327ns
+   Maximum combinational path delay: 7.701ns
 
 Timing Detail:
 --------------
@@ -416,59 +415,59 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 5.235ns (frequency: 191.031MHz)
-  Total number of paths / destination ports: 243 / 18
+  Clock period: 5.411ns (frequency: 184.805MHz)
+  Total number of paths / destination ports: 253 / 20
 -------------------------------------------------------------------------
-Delay:               5.235ns (Levels of Logic = 5)
+Delay:               5.411ns (Levels of Logic = 5)
   Source:            counter/count_0 (FF)
-  Destination:       input/chain_gen[7].sc_in.inst_edge_triggered/q_0 (FF)
+  Destination:       input/chain_gen[0].sc_out.inst_edge_triggered/q_0 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: counter/count_0 to input/chain_gen[7].sc_in.inst_edge_triggered/q_0
+  Data Path: counter/count_0 to input/chain_gen[0].sc_out.inst_edge_triggered/q_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDCE:C->Q             9   0.514   0.727  counter/count_0 (counter/count_0)
      LUT3:I2->O            1   0.612   0.000  r_s/Mmux_data_mux0000_4 (r_s/Mmux_data_mux0000_4)
      MUXF5:I1->O           1   0.278   0.000  r_s/Mmux_data_mux0000_3_f5 (r_s/Mmux_data_mux0000_3_f5)
-     MUXF6:I1->O           4   0.451   0.529  r_s/Mmux_data_mux0000_2_f6 (r_s/data_mux0000)
-     LUT4_D:I2->O          7   0.612   0.632  r_s/shift1 (en_s)
-     LUT3:I2->O            1   0.612   0.000  input/chain_gen[7].sc_in.inst_mux2_1/X_and00011 (input/chain_gen[7].sc_in.inst_mux2_1/X_and0001)
-     FDC:D                     0.268          input/chain_gen[7].sc_in.inst_edge_triggered/q_0
+     MUXF6:I1->O           5   0.451   0.541  r_s/Mmux_data_mux0000_2_f6 (r_s/data_mux0000)
+     LUT4:I3->O           11   0.612   0.796  r_s/en_c1 (en_c)
+     LUT4:I3->O            1   0.612   0.000  input/chain_gen[6].sc_ch.inst_mux2_1/X1 (input/x<6>)
+     FDC:D                     0.268          input/chain_gen[6].sc_ch.inst_edge_triggered/q_0
     ----------------------------------------
-    Total                      5.235ns (3.347ns logic, 1.888ns route)
-                                       (63.9% logic, 36.1% route)
+    Total                      5.411ns (3.347ns logic, 2.064ns route)
+                                       (61.9% logic, 38.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 129 / 14
+  Total number of paths / destination ports: 133 / 15
 -------------------------------------------------------------------------
-Offset:              5.609ns (Levels of Logic = 6)
+Offset:              5.785ns (Levels of Logic = 6)
   Source:            data<1> (PAD)
-  Destination:       input/chain_gen[7].sc_in.inst_edge_triggered/q_0 (FF)
+  Destination:       input/chain_gen[0].sc_out.inst_edge_triggered/q_0 (FF)
   Destination Clock: clk rising
 
-  Data Path: data<1> to input/chain_gen[7].sc_in.inst_edge_triggered/q_0
+  Data Path: data<1> to input/chain_gen[0].sc_out.inst_edge_triggered/q_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             1   1.106   0.509  data_1_IBUF (data_1_IBUF)
      LUT3:I0->O            1   0.612   0.000  r_s/Mmux_data_mux0000_6 (r_s/Mmux_data_mux0000_6)
      MUXF5:I0->O           1   0.278   0.000  r_s/Mmux_data_mux0000_4_f5 (r_s/Mmux_data_mux0000_4_f5)
-     MUXF6:I0->O           4   0.451   0.529  r_s/Mmux_data_mux0000_2_f6 (r_s/data_mux0000)
-     LUT4_D:I2->O          7   0.612   0.632  r_s/shift1 (en_s)
-     LUT3:I2->O            1   0.612   0.000  input/chain_gen[7].sc_in.inst_mux2_1/X_and00011 (input/chain_gen[7].sc_in.inst_mux2_1/X_and0001)
-     FDC:D                     0.268          input/chain_gen[7].sc_in.inst_edge_triggered/q_0
+     MUXF6:I0->O           5   0.451   0.541  r_s/Mmux_data_mux0000_2_f6 (r_s/data_mux0000)
+     LUT4:I3->O           11   0.612   0.796  r_s/en_c1 (en_c)
+     LUT4:I3->O            1   0.612   0.000  input/chain_gen[6].sc_ch.inst_mux2_1/X1 (input/x<6>)
+     FDC:D                     0.268          input/chain_gen[6].sc_ch.inst_edge_triggered/q_0
     ----------------------------------------
-    Total                      5.609ns (3.939ns logic, 1.670ns route)
-                                       (70.2% logic, 29.8% route)
+    Total                      5.785ns (3.939ns logic, 1.846ns route)
+                                       (68.1% logic, 31.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 28 / 3
+  Total number of paths / destination ports: 18 / 2
 -------------------------------------------------------------------------
-Offset:              7.248ns (Levels of Logic = 5)
+Offset:              7.327ns (Levels of Logic = 5)
   Source:            counter/count_0 (FF)
   Destination:       bad (PAD)
   Source Clock:      clk rising
@@ -480,18 +479,18 @@ Offset:              7.248ns (Levels of Logic = 5)
      FDCE:C->Q             9   0.514   0.727  counter/count_0 (counter/count_0)
      LUT3:I2->O            1   0.612   0.000  r_s/Mmux_data_mux0000_4 (r_s/Mmux_data_mux0000_4)
      MUXF5:I1->O           1   0.278   0.000  r_s/Mmux_data_mux0000_3_f5 (r_s/Mmux_data_mux0000_3_f5)
-     MUXF6:I1->O           4   0.451   0.499  r_s/Mmux_data_mux0000_2_f6 (r_s/data_mux0000)
-     MUXF5:S->O            1   0.641   0.357  r_s/bad_f5 (bad_OBUF)
+     MUXF6:I1->O           5   0.451   0.607  r_s/Mmux_data_mux0000_2_f6 (r_s/data_mux0000)
+     LUT4:I1->O            1   0.612   0.357  r_s/bad1 (bad_OBUF)
      OBUF:I->O                 3.169          bad_OBUF (bad)
     ----------------------------------------
-    Total                      7.248ns (5.665ns logic, 1.583ns route)
-                                       (78.2% logic, 21.8% route)
+    Total                      7.327ns (5.636ns logic, 1.691ns route)
+                                       (76.9% logic, 23.1% route)
 
 =========================================================================
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 8 / 1
 -------------------------------------------------------------------------
-Delay:               7.622ns (Levels of Logic = 6)
+Delay:               7.701ns (Levels of Logic = 6)
   Source:            data<1> (PAD)
   Destination:       bad (PAD)
 
@@ -502,25 +501,25 @@ Delay:               7.622ns (Levels of Logic = 6)
      IBUF:I->O             1   1.106   0.509  data_1_IBUF (data_1_IBUF)
      LUT3:I0->O            1   0.612   0.000  r_s/Mmux_data_mux0000_6 (r_s/Mmux_data_mux0000_6)
      MUXF5:I0->O           1   0.278   0.000  r_s/Mmux_data_mux0000_4_f5 (r_s/Mmux_data_mux0000_4_f5)
-     MUXF6:I0->O           4   0.451   0.499  r_s/Mmux_data_mux0000_2_f6 (r_s/data_mux0000)
-     MUXF5:S->O            1   0.641   0.357  r_s/bad_f5 (bad_OBUF)
+     MUXF6:I0->O           5   0.451   0.607  r_s/Mmux_data_mux0000_2_f6 (r_s/data_mux0000)
+     LUT4:I1->O            1   0.612   0.357  r_s/bad1 (bad_OBUF)
      OBUF:I->O                 3.169          bad_OBUF (bad)
     ----------------------------------------
-    Total                      7.622ns (6.257ns logic, 1.365ns route)
-                                       (82.1% logic, 17.9% route)
+    Total                      7.701ns (6.228ns logic, 1.473ns route)
+                                       (80.9% logic, 19.1% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 3.34 secs
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.49 secs
  
 --> 
 
 
-Total memory usage is 512040 kilobytes
+Total memory usage is 511688 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    8 (   0 filtered)
+Number of warnings :    9 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

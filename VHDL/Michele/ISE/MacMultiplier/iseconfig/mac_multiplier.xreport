@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-12-29T20:12:07</DateModified>
+  <DateModified>2018-01-17T20:32:46</DateModified>
   <ModuleName>mac_multiplier</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/MacMultiplier/iseconfig/mac_multiplier.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/MacMultiplier</ImplementationReportsDirectory>
-  <DateInitialized>2017-12-29T20:12:06</DateInitialized>
+  <SummaryTimeStamp>2018-01-17T20:29:20</SummaryTimeStamp>
+  <SavedFilePath>/media/sf_ASE/VHDL/Michele/ISE/MacMultiplier/iseconfig/mac_multiplier.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/media/sf_ASE/VHDL/Michele/ISE/MacMultiplier/</ImplementationReportsDirectory>
+  <DateInitialized>2018-01-17T19:54:41</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>

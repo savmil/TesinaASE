@@ -1,18 +1,21 @@
-Release 14.4 - xst P.49d (nt)
-Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to xst/projnav.tmp
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total CPU time to Xst completion: 0.05 secs
  
---> Parameter xsthdpdir set to xst
+--> 
+Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total CPU time to Xst completion: 0.05 secs
  
---> Reading design: mac_multiplier.prj
+--> 
+Reading design: mac_multiplier.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -68,7 +71,7 @@ Automatic Register Balancing       : No
 
 ---- Target Options
 Add IO Buffers                     : YES
-Global Maximum Fanout              : 500
+Global Maximum Fanout              : 100000
 Add Generic Clock Buffer(BUFG)     : 24
 Register Duplication               : YES
 Slice Packing                      : YES
@@ -104,16 +107,13 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/MacMultiplier/half_adder.vhd" in Library work.
-Entity <half_adder> compiled.
-Entity <half_adder> (Architecture <dataflow>) compiled.
-Compiling vhdl file "C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/MacMultiplier/full_adder.vhd" in Library work.
-Entity <full_adder> compiled.
-Entity <full_adder> (Architecture <structural>) compiled.
-Compiling vhdl file "C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/MacMultiplier/mac_cell.vhd" in Library work.
-Entity <mac_cell> compiled.
-Entity <mac_cell> (Architecture <structural>) compiled.
-Compiling vhdl file "C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/MacMultiplier/mac_multiplier.vhd" in Library work.
+Compiling vhdl file "/media/sf_ASE/VHDL/Michele/ISE/MacMultiplier/half_adder.vhd" in Library work.
+Architecture dataflow of Entity half_adder is up to date.
+Compiling vhdl file "/media/sf_ASE/VHDL/Michele/ISE/MacMultiplier/full_adder.vhd" in Library work.
+Architecture structural of Entity full_adder is up to date.
+Compiling vhdl file "/media/sf_ASE/VHDL/Michele/ISE/MacMultiplier/mac_cell.vhd" in Library work.
+Architecture structural of Entity mac_cell is up to date.
+Compiling vhdl file "/media/sf_ASE/VHDL/Michele/ISE/MacMultiplier/mac_multiplier.vhd" in Library work.
 Entity <mac_multiplier> compiled.
 Entity <mac_multiplier> (Architecture <structural>) compiled.
 
@@ -121,8 +121,8 @@ Entity <mac_multiplier> (Architecture <structural>) compiled.
 *                     Design Hierarchy Analysis                         *
 =========================================================================
 Analyzing hierarchy for entity <mac_multiplier> in library <work> (architecture <structural>) with generics.
-	M = 8
-	N = 8
+	M = 2
+	N = 2
 
 Analyzing hierarchy for entity <mac_cell> in library <work> (architecture <structural>).
 
@@ -135,8 +135,8 @@ Analyzing hierarchy for entity <half_adder> in library <work> (architecture <dat
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing generic Entity <mac_multiplier> in library <work> (Architecture <structural>).
-	M = 8
-	N = 8
+	M = 2
+	N = 2
 Entity <mac_multiplier> analyzed. Unit <mac_multiplier> generated.
 
 Analyzing Entity <mac_cell> in library <work> (Architecture <structural>).
@@ -156,25 +156,25 @@ Entity <half_adder> analyzed. Unit <half_adder> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <half_adder>.
-    Related source file is "C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/MacMultiplier/half_adder.vhd".
+    Related source file is "/media/sf_ASE/VHDL/Michele/ISE/MacMultiplier/half_adder.vhd".
     Found 1-bit xor2 for signal <s>.
 Unit <half_adder> synthesized.
 
 
 Synthesizing Unit <full_adder>.
-    Related source file is "C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/MacMultiplier/full_adder.vhd".
+    Related source file is "/media/sf_ASE/VHDL/Michele/ISE/MacMultiplier/full_adder.vhd".
 Unit <full_adder> synthesized.
 
 
 Synthesizing Unit <mac_cell>.
-    Related source file is "C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/MacMultiplier/mac_cell.vhd".
+    Related source file is "/media/sf_ASE/VHDL/Michele/ISE/MacMultiplier/mac_cell.vhd".
 Unit <mac_cell> synthesized.
 
 
 Synthesizing Unit <mac_multiplier>.
-    Related source file is "C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/MacMultiplier/mac_multiplier.vhd".
+    Related source file is "/media/sf_ASE/VHDL/Michele/ISE/MacMultiplier/mac_multiplier.vhd".
 WARNING:Xst:1780 - Signal <partial_sum<0><0>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:1780 - Signal <carry<8>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <carry<2>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 Unit <mac_multiplier> synthesized.
 
 
@@ -182,8 +182,8 @@ Unit <mac_multiplier> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Xors                                                 : 128
- 1-bit xor2                                            : 128
+# Xors                                                 : 8
+ 1-bit xor2                                            : 8
 
 =========================================================================
 
@@ -196,8 +196,8 @@ Macro Statistics
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Xors                                                 : 128
- 1-bit xor2                                            : 128
+# Xors                                                 : 8
+ 1-bit xor2                                            : 8
 
 =========================================================================
 
@@ -209,7 +209,7 @@ Optimizing unit <mac_multiplier> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block mac_multiplier, actual ratio is 7.
+Found area constraint ratio of 100 (+ 5) on block mac_multiplier, actual ratio is 0.
 
 Final Macro Processing ...
 
@@ -241,14 +241,14 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 48
+# IOs                              : 12
 
 Cell Usage :
-# BELS                             : 128
-#      LUT4                        : 128
-# IO Buffers                       : 48
-#      IBUF                        : 32
-#      OBUF                        : 16
+# BELS                             : 8
+#      LUT4                        : 8
+# IO Buffers                       : 12
+#      IBUF                        : 8
+#      OBUF                        : 4
 =========================================================================
 
 Device utilization summary:
@@ -256,10 +256,10 @@ Device utilization summary:
 
 Selected Device : 3s100etq144-5 
 
- Number of Slices:                       74  out of    960     7%  
- Number of 4 input LUTs:                128  out of   1920     6%  
- Number of IOs:                          48
- Number of bonded IOBs:                  48  out of    108    44%  
+ Number of Slices:                        4  out of    960     0%  
+ Number of 4 input LUTs:                  8  out of   1920     0%  
+ Number of IOs:                          12
+ Number of bonded IOBs:                  12  out of    108    11%  
 
 ---------------------------
 Partition Resource Summary:
@@ -292,7 +292,7 @@ Speed Grade: -5
    Minimum period: No path found
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: No path found
-   Maximum combinational path delay: 29.983ns
+   Maximum combinational path delay: 8.824ns
 
 Timing Detail:
 --------------
@@ -300,53 +300,36 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 2709631 / 16
+  Total number of paths / destination ports: 52 / 4
 -------------------------------------------------------------------------
-Delay:               29.983ns (Levels of Logic = 24)
+Delay:               8.824ns (Levels of Logic = 6)
   Source:            a<0> (PAD)
-  Destination:       ris<14> (PAD)
+  Destination:       ris<3> (PAD)
 
-  Data Path: a<0> to ris<14>
+  Data Path: a<0> to ris<3>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            16   1.106   0.948  a_0_IBUF (a_0_IBUF)
-     LUT4:I1->O            2   0.612   0.532  mac_matrix[0].mac_row[0].mac/fa/c1 (carry<0><1>)
-     LUT4:I0->O            2   0.612   0.532  mac_matrix[0].mac_row[1].mac/fa/c1 (carry<0><2>)
-     LUT4:I0->O            2   0.612   0.532  mac_matrix[0].mac_row[2].mac/fa/c1 (carry<0><3>)
-     LUT4:I0->O            2   0.612   0.532  mac_matrix[0].mac_row[3].mac/fa/c1 (carry<0><4>)
-     LUT4:I0->O            2   0.612   0.532  mac_matrix[0].mac_row[4].mac/fa/c1 (carry<0><5>)
-     LUT4:I0->O            2   0.612   0.532  mac_matrix[0].mac_row[5].mac/fa/c1 (carry<0><6>)
-     LUT4:I0->O            2   0.612   0.449  mac_matrix[0].mac_row[6].mac/fa/c1 (carry<0><7>)
-     LUT4:I1->O            2   0.612   0.532  mac_matrix[0].mac_row[7].mac/fa/ha2/Mxor_s_Result1 (partial_sum<1><7>)
-     LUT4:I0->O            2   0.612   0.532  mac_matrix[1].mac_row[6].mac/fa/ha2/Mxor_s_Result1 (partial_sum<2><6>)
-     LUT4:I0->O            2   0.612   0.532  mac_matrix[2].mac_row[5].mac/fa/ha2/Mxor_s_Result1 (partial_sum<3><5>)
-     LUT4:I0->O            2   0.612   0.532  mac_matrix[3].mac_row[4].mac/fa/ha2/Mxor_s_Result1 (partial_sum<4><4>)
-     LUT4:I0->O            2   0.612   0.532  mac_matrix[4].mac_row[3].mac/fa/ha2/Mxor_s_Result1 (partial_sum<5><3>)
-     LUT4:I0->O            2   0.612   0.532  mac_matrix[5].mac_row[2].mac/fa/ha2/Mxor_s_Result1 (partial_sum<6><2>)
-     LUT4:I0->O            2   0.612   0.383  mac_matrix[6].mac_row[1].mac/fa/ha2/Mxor_s_Result1 (partial_sum<7><1>)
-     LUT4:I3->O            2   0.612   0.532  mac_matrix[7].mac_row[0].mac/fa/c1 (carry<7><1>)
-     LUT4:I0->O            2   0.612   0.532  mac_matrix[7].mac_row[1].mac/fa/c1 (carry<7><2>)
-     LUT4:I0->O            2   0.612   0.532  mac_matrix[7].mac_row[2].mac/fa/c1 (carry<7><3>)
-     LUT4:I0->O            2   0.612   0.532  mac_matrix[7].mac_row[3].mac/fa/c1 (carry<7><4>)
-     LUT4:I0->O            2   0.612   0.532  mac_matrix[7].mac_row[4].mac/fa/c1 (carry<7><5>)
-     LUT4:I0->O            2   0.612   0.532  mac_matrix[7].mac_row[5].mac/fa/c1 (carry<7><6>)
-     LUT4:I0->O            2   0.612   0.532  mac_matrix[7].mac_row[6].mac/fa/c1 (carry<7><7>)
-     LUT4:I0->O            1   0.612   0.357  mac_matrix[7].mac_row[7].mac/fa/ha2/Mxor_s_Result1 (ris_14_OBUF)
-     OBUF:I->O                 3.169          ris_14_OBUF (ris<14>)
+     IBUF:I->O             4   1.106   0.568  a_0_IBUF (a_0_IBUF)
+     LUT4:I1->O            2   0.612   0.410  mac_matrix[0].mac_row[0].mac/fa/c1 (carry<0><1>)
+     LUT4:I2->O            2   0.612   0.383  mac_matrix[0].mac_row[1].mac/fa/ha2/Mxor_s_Result1 (partial_sum<1><1>)
+     LUT4:I3->O            2   0.612   0.383  mac_matrix[1].mac_row[0].mac/fa/c1 (carry<1><1>)
+     LUT4:I3->O            1   0.612   0.357  mac_matrix[1].mac_row[1].mac/fa/c1 (ris_3_OBUF)
+     OBUF:I->O                 3.169          ris_3_OBUF (ris<3>)
     ----------------------------------------
-    Total                     29.983ns (17.739ns logic, 12.244ns route)
-                                       (59.2% logic, 40.8% route)
+    Total                      8.824ns (6.723ns logic, 2.101ns route)
+                                       (76.2% logic, 23.8% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 20.00 secs
-Total CPU time to Xst completion: 19.91 secs
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 3.75 secs
  
 --> 
 
-Total memory usage is 202976 kilobytes
+
+Total memory usage is 509268 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    2 (   0 filtered)

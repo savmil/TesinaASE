@@ -1,2 +1,0 @@
-vhdtdtfi -prj tester_dispositivi -o /home/sav/ASE/tester_dispositivi/latch_d.vhi -module latch_d -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work latch_d.vhd 
-vhdtdtfi -prj tester_dispositivi -o /home/sav/ASE/tester_dispositivi/latch_d.vhi -module latch_d -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work latch_d.vhd 

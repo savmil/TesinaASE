@@ -1,44 +1,139 @@
-V3 23
+V3 74
+FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/anode_manager.vhd 2017/12/04.10:53:22 P.20131013
+EN work/anode_manager 1516100135 \
+      FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/anode_manager.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/anode_manager/structural 1516100136 \
+      FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/anode_manager.vhd \
+      EN work/anode_manager 1516100135 CP muxn_1 CP demux1_n
 FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/boundary_scan_chain.vhd 2017/12/27.11:10:56 P.20131013
-EN work/boundary_scan_chain 1515842539 \
+EN work/boundary_scan_chain 1516101178 \
       FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/boundary_scan_chain.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177
-AR work/boundary_scan_chain/Structural 1515842540 \
+AR work/boundary_scan_chain/Structural 1516101179 \
       FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/boundary_scan_chain.vhd \
-      EN work/boundary_scan_chain 1515842539 CP mux2_1 CP edge_triggered_d_n
+      EN work/boundary_scan_chain 1516101178 CP mux2_1 CP edge_triggered_d_n
+FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/cathode_encoder.vhd 2017/12/04.10:53:21 P.20131013
+EN work/cathode_encoder 1516100127 \
+      FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/cathode_encoder.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/cathode_encoder/Behavioral 1516100128 \
+      FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/cathode_encoder.vhd \
+      EN work/cathode_encoder 1516100127
+FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/cathode_manager.vhd 2017/12/04.10:53:22 P.20131013
+EN work/cathode_manager 1516100133 \
+      FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/cathode_manager.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/cathode_manager/structural 1516100134 \
+      FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/cathode_manager.vhd \
+      EN work/cathode_manager 1516100133 CP muxn_1 CP cathode_encoder
+FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/clock_filter.vhd 2017/12/04.10:53:21 P.20131013
+EN work/clock_filter 1516100129 \
+      FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/clock_filter.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB ieee/MATH_REAL 1381692182
+AR work/clock_filter/Behavioral 1516100130 \
+      FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/clock_filter.vhd \
+      EN work/clock_filter 1516100129
 FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/contatore_modulo_4.vhd 2018/01/13.10:24:59 P.20131013
-EN work/contatore_modulo_2n 1515842543 \
+EN work/contatore_modulo_2n 1516101184 \
       FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/contatore_modulo_4.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/contatore_modulo_2n/Behavioral 1515842544 \
+AR work/contatore_modulo_2n/Behavioral 1516101185 \
       FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/contatore_modulo_4.vhd \
-      EN work/contatore_modulo_2n 1515842543
+      EN work/contatore_modulo_2n 1516101184
+FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/counter_mod2n.vhd 2017/12/04.10:53:22 P.20131013
+EN work/counter_mod2n 1516100131 \
+      FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/counter_mod2n.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/counter_mod2n/Behavioral 1516100132 \
+      FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/counter_mod2n.vhd \
+      EN work/counter_mod2n 1516100131
+FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/debounce.vhd 2018/01/03.13:22:30 P.20131013
+EN work/debounce 1516101186 \
+      FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/debounce.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/debounce/logic 1516101187 \
+      FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/debounce.vhd \
+      EN work/debounce 1516101186
+FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/demux1_n.vhd 2017/12/04.10:53:21 P.20131013
+EN work/demux1_n 1516100125 \
+      FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/demux1_n.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/std_logic_arith 1381692177
+AR work/demux1_n/dataflow 1516100126 \
+      FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/demux1_n.vhd \
+      EN work/demux1_n 1516100125
+FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/display.vhd 2017/12/04.10:53:22 P.20131013
+EN work/display 1516100143 \
+      FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/display.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/display/structural 1516100144 \
+      FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/display.vhd \
+      EN work/display 1516100143 CP clock_filter CP counter_mod2n \
+      CP cathode_manager CP anode_manager
+FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/display_on_board.vhd 2017/12/04.10:53:21 P.20131013
+EN work/display_on_board 1516100141 \
+      FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/display_on_board.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/display_on_board/Behavioral 1516100142 \
+      FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/display_on_board.vhd \
+      EN work/display_on_board 1516100141 CP edge_triggered_d_n
+FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/display_top_level.vhd 2017/12/04.10:53:21 P.20131013
+EN work/display_top_level 1516100157 \
+      FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/display_top_level.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/display_top_level/structural 1516100158 \
+      FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/display_top_level.vhd \
+      EN work/display_top_level 1516100157 CP display_on_board CP display
 FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/edge_triggered_d_n.vhd 2017/12/02.12:34:28 P.20131013
-EN work/edge_triggered_d_n 1515842537 \
+EN work/edge_triggered_d_n 1516101176 \
       FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/edge_triggered_d_n.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/edge_triggered_d_n/Behavioral 1515842538 \
+AR work/edge_triggered_d_n/Behavioral 1516101177 \
       FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/edge_triggered_d_n.vhd \
-      EN work/edge_triggered_d_n 1515842537
+      EN work/edge_triggered_d_n 1516101176
+FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/latch_d_en.vhd 2018/01/04.11:20:07 P.20131013
+EN work/latch_d_en 1516101182 \
+      FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/latch_d_en.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/latch_d_en/Behavioral 1516101183 \
+      FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/latch_d_en.vhd \
+      EN work/latch_d_en 1516101182
 FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/mux2_1.vhd 2017/12/01.17:30:46 P.20131013
-EN work/mux2_1 1515842535 \
+EN work/mux2_1 1516101174 \
       FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/mux2_1.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/mux2_1/dataflow 1515842536 \
-      FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/mux2_1.vhd EN work/mux2_1 1515842535
-FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/riconoscitore_stringa.vhd 2018/01/13.12:22:09 P.20131013
-EN work/riconoscitore_stringa 1515842541 \
+AR work/mux2_1/dataflow 1516101175 \
+      FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/mux2_1.vhd EN work/mux2_1 1516101174
+FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/muxn_1.vhd 2017/12/04.10:53:21 P.20131013
+EN work/muxn_1 1516100123 \
+      FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/muxn_1.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/muxn_1/dataflow 1516100124 \
+      FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/muxn_1.vhd EN work/muxn_1 1516100123
+FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/riconoscitore_stringa.vhd 2018/01/16.12:10:36 P.20131013
+EN work/riconoscitore_stringa 1516101180 \
       FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/riconoscitore_stringa.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/MATH_REAL 1381692182 \
       PB ieee/NUMERIC_STD 1381692181
-AR work/riconoscitore_stringa/Behavioral 1515842542 \
+AR work/riconoscitore_stringa/Behavioral 1516101181 \
       FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/riconoscitore_stringa.vhd \
-      EN work/riconoscitore_stringa 1515842541
-FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/riconoscitore_stringa_generico.vhd 2018/01/13.12:21:48 P.20131013
-EN work/riconoscitore_stringa_generico 1515842545 \
+      EN work/riconoscitore_stringa 1516101180
+FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/riconoscitore_stringa_generico.vhd 2018/01/16.12:12:41 P.20131013
+EN work/riconoscitore_stringa_generico 1516101188 \
       FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/riconoscitore_stringa_generico.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/MATH_REAL 1381692182
-AR work/riconoscitore_stringa_generico/Behavioral 1515842546 \
+AR work/riconoscitore_stringa_generico/Behavioral 1516101189 \
       FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/riconoscitore_stringa_generico.vhd \
-      EN work/riconoscitore_stringa_generico 1515842545 CP boundary_scan_chain \
-      CP riconoscitore_stringa CP contatore_modulo_2n
+      EN work/riconoscitore_stringa_generico 1516101188 CP boundary_scan_chain \
+      CP riconoscitore_stringa CP latch_d_en CP contatore_modulo_2n
+FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/tester_dispositivi.vhd 2018/01/16.12:05:11 P.20131013
+EN work/tester_dispositivi 1516101190 \
+      FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/tester_dispositivi.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/tester_dispositivi/Behavioral 1516101191 \
+      FL /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/tester_dispositivi.vhd \
+      EN work/tester_dispositivi 1516101190 CP debounce CP contatore_modulo_2n \
+      CP latch_d_en CP riconoscitore_stringa_generico

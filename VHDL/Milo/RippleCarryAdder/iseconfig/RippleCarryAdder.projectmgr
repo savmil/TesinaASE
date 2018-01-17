@@ -9,14 +9,16 @@
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/RippleCarryAdder - structural |home|sav|ASE|RippleCarryAdder|RippleCarryAdder.vhd/adder - full_adder_half - register_transfer</ClosedNode>
          <ClosedNode>/RippleCarryAdder - structural |media|sf_ASE|VHDL|Milo|RippleCarryAdder|RippleCarryAdder.vhd</ClosedNode>
-         <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|VHDL|Milo|RippleCarryAdder|tester_dispositivi.vhd</ClosedNode>
+         <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|VHDL|Milo|RippleCarryAdder|tester_dispositivi.vhd/gest_disp - display_top_level - structural</ClosedNode>
+         <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|VHDL|Milo|RippleCarryAdder|tester_dispositivi.vhd/r_c_a - RippleCarryAdder - structural/adder - full_adder_half - register_transfer</ClosedNode>
+         <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|VHDL|Milo|RippleCarryAdder|tester_dispositivi.vhd/r_c_a - add_sub - structural/r_c_a - RippleCarryAdder - structural</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
          <SelectedItem>tester_dispositivi - Behavioral (/media/sf_ASE/VHDL/Milo/RippleCarryAdder/tester_dispositivi.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001a3000000020000000000000000000000000200000064ffffffff000000810000000300000002000001a30000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000227000000020000000000000000000000000200000064ffffffff000000810000000300000002000002270000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
       <CurrentItem>tester_dispositivi - Behavioral (/media/sf_ASE/VHDL/Milo/RippleCarryAdder/tester_dispositivi.vhd)</CurrentItem>
    </ItemView>
@@ -62,17 +64,19 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
          <ClosedNode>Configure Target Device</ClosedNode>
          <ClosedNode>Implement Design/Map</ClosedNode>
-         <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
-         <ClosedNode>Implement Design/Translate</ClosedNode>
+         <ClosedNode>Implement Design/Map/Generate Post-Map Static Timing</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route/Back-annotate Pin Locations</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route/Generate IBIS Model</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route/Generate Post-Place &amp; Route Static Timing</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Generate Programming File</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >11</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001af000000010000000100000000000000000000000064ffffffff000000810000000000000001000001af0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Generate Programming File</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
@@ -81,13 +85,18 @@
          <ClosedNode>/RippleCarryAdder_testbench - behavior |home|sav|ASE|RippleCarryAdder|RippleCarryAdder_testbench.vhd/uut - RippleCarryAdder - structural</ClosedNode>
          <ClosedNode>/RippleCarryAdder_testbench - behavior |media|sf_ASE|VHDL|Milo|RippleCarryAdder|RippleCarryAdder_testbench.vhd/uut - RippleCarryAdder - structural</ClosedNode>
          <ClosedNode>/gest_disp - behavior |media|sf_ASE|VHDL|Milo|RippleCarryAdder|gest_disp.vhd</ClosedNode>
+         <ClosedNode>/prova_per_64_bit_adder - behavior |media|sf_ASE|VHDL|Milo|RippleCarryAdder|prova_per_64_bit_adder.vhd</ClosedNode>
+         <ClosedNode>/prova_per_64_bit_adder - behavior |media|sf_ASE|VHDL|Milo|RippleCarryAdder|prova_per_64_bit_adder.vhd/uut - tester_dispositivi - Behavioral/gest_disp - display_top_level - structural</ClosedNode>
+         <ClosedNode>/prova_per_64_bit_adder - behavior |media|sf_ASE|VHDL|Milo|RippleCarryAdder|prova_per_64_bit_adder.vhd/uut - tester_dispositivi - Behavioral/r_c_a - add_sub - structural/r_c_a - RippleCarryAdder - structural</ClosedNode>
+         <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|VHDL|Milo|RippleCarryAdder|tester_dispositivi.vhd/gest_disp - display_top_level - structural</ClosedNode>
+         <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|VHDL|Milo|RippleCarryAdder|tester_dispositivi.vhd/r_c_a - RippleCarryAdder - structural</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
          <SelectedItem>RippleCarryAdder_testbench - behavior (/media/sf_ASE/VHDL/Milo/RippleCarryAdder/RippleCarryAdder_testbench.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000002b5000000020000000000000000000000000200000064ffffffff000000810000000300000002000002b50000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000021b000000020000000000000000000000000200000064ffffffff0000008100000003000000020000021b0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
       <CurrentItem>RippleCarryAdder_testbench - behavior (/media/sf_ASE/VHDL/Milo/RippleCarryAdder/RippleCarryAdder_testbench.vhd)</CurrentItem>
    </ItemView>
@@ -97,27 +106,83 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001be000000010000000100000000000000000000000064ffffffff000000810000000000000001000001be0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001be000000010000000100000000000000000000000064ffffffff000000810000000000000001000001be0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff0000000000000002000001440000011d01000000060100000002</SourceProcessView>
    <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="PostRouteSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/RippleCarryAdder_testbench - behavior |media|sf_ASE|VHDL|Milo|RippleCarryAdder|RippleCarryAdder_testbench.vhd/uut - RippleCarryAdder - Structure</ClosedNode>
+         <ClosedNode>/prova_per_64_bit_adder - behavior |media|sf_ASE|VHDL|Milo|RippleCarryAdder|prova_per_64_bit_adder.vhd/uut - tester_dispositivi - Structure</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>RippleCarryAdder_testbench - behavior (/media/sf_ASE/VHDL/Milo/RippleCarryAdder/RippleCarryAdder_testbench.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000021b000000020000000000000000000000000200000064ffffffff0000008100000003000000020000021b0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>RippleCarryAdder_testbench - behavior (/media/sf_ASE/VHDL/Milo/RippleCarryAdder/RippleCarryAdder_testbench.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="PostRouteSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001be000000010000000100000000000000000000000064ffffffff000000810000000000000001000001be0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="PostRouteSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001be000000010000000100000000000000000000000064ffffffff000000810000000000000001000001be0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001be000000010000000100000000000000000000000064ffffffff000000810000000000000001000001be0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
 </Project>

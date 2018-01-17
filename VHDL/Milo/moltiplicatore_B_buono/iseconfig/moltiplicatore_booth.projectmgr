@@ -25,13 +25,13 @@
          <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|VHDL|Milo|moltiplicatore_B_buono|tester_dispositivi.vhd/gest_disp - display_top_level - structural/inst_display - display - structural/inst_cathode_manager - cathode_manager - structural</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>inst_edge_triggered_value - edge_triggered_d_n - Behavioral (/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/edge_triggered_d_n.vhd)</SelectedItem>
+         <SelectedItem>tester_dispositivi - Behavioral (/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/tester_dispositivi.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000002b5000000020000000000000000000000000200000064ffffffff000000810000000300000002000002b50000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>inst_edge_triggered_value - edge_triggered_d_n - Behavioral (/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/edge_triggered_d_n.vhd)</CurrentItem>
+      <CurrentItem>tester_dispositivi - Behavioral (/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/tester_dispositivi.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
@@ -105,7 +105,7 @@
       <SelectedItems>
          <SelectedItem>Booth_testbench - behavior (/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/Booth_testbench.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >2</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000023b000000020000000000000000000000000200000064ffffffff0000008100000003000000020000023b0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
@@ -139,7 +139,7 @@
       <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff0000000000000002000001440000011d01000000060100000002</SourceProcessView>
-   <CurrentView>Implementation</CurrentView>
+   <CurrentView>Behavioral Simulation</CurrentView>
    <ItemView engineview="PostRouteSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>

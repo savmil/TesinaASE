@@ -1,6 +1,0 @@
-AR mux16_1 structural /home/sav/ASE/mux16_1/mux16_1.vhd sub00/vhpl05 1509127769
-AR mux2_1 dataflow /media/sf_ASE/VHDL/Mux4x1/mux2_1.vhd sub00/vhpl02 1509127765
-EN mux2_1 NULL /media/sf_ASE/VHDL/Mux4x1/mux2_1.vhd sub00/vhpl01 1509127764
-AR mux4_1 structural /media/sf_ASE/VHDL/Mux4x1/mux4_1.vhd sub00/vhpl04 1509127767
-EN mux4_1 NULL /media/sf_ASE/VHDL/Mux4x1/mux4_1.vhd sub00/vhpl03 1509127766
-EN mux16_1 NULL /home/sav/ASE/mux16_1/mux16_1.vhd sub00/vhpl00 1509127768

@@ -31,9 +31,6 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity tester_dispositivi is
     Port ( clock : in  STD_LOGIC;
-           reset : in  STD_LOGIC;
-           load_conf : in  STD_LOGIC;
-           load_value : in  STD_LOGIC;
 			  button : in STD_LOGIC_VECTOR (3 downto 0);
 			  led : out STD_LOGIC_VECTOR (7 downto 0);
            in_byte : in  STD_LOGIC_VECTOR (7 downto 0);
@@ -43,12 +40,13 @@ end tester_dispositivi;
 
 architecture Behavioral of tester_dispositivi is
 COMPONENT contatore_modulo_2n
+	generic(width: natural:=3);
 	PORT(
 		clk : IN std_logic;
 		enable : IN std_logic;
 		reset : IN std_logic;          
 		hit : OUT std_logic;
-		output : OUT std_logic_vector(1 downto 0)
+		output : OUT std_logic_vector(width-1 downto 0)
 		);
 	END COMPONENT;
 	COMPONENT latch_d
@@ -60,13 +58,18 @@ COMPONENT contatore_modulo_2n
 		output : OUT std_logic_vector(width-1 downto 0)
 		);
 	END COMPONENT;
-	COMPONENT RippleCarryAdder is 
-	 generic ( N : natural:= 8);
-    Port ( adder1 : in  STD_LOGIC_VECTOR(N-1 downto 0);
-           adder2 : in  STD_LOGIC_VECTOR(N-1 downto 0);
-           sum : out  STD_LOGIC_VECTOR(N-1 downto 0);
-           last_carry : out  STD_LOGIC);
-	end COMPONENT;
+	COMPONENT add_sub
+	generic ( N : natural:= 8);
+	PORT(
+		a : IN std_logic_vector(N-1 downto 0);
+		b : IN std_logic_vector(N-1 downto 0);
+		add_sub_n : IN std_logic;          
+		carry_in: IN std_logic;
+		s : OUT std_logic_vector(N-1 downto 0);
+		cout : OUT std_logic;
+		overflow : OUT std_logic
+		);
+	END COMPONENT;
 	COMPONENT display_top_level
 	PORT(
 		clock : IN std_logic;
@@ -79,19 +82,30 @@ COMPONENT contatore_modulo_2n
 		cathodes : OUT std_logic_vector(7 downto 0)
 		);
 	END COMPONENT;
-	signal sel :STD_LOGIC_VECTOR(1 downto 0):=(others=>'0');
-	signal value,sum1:STD_LOGIC_VECTOR(15 downto 0) := (others=>'0');
-	signal en_ad1,en_ad2,en_cla :STD_LOGIC:='0';
+	COMPONENT debounce
+	PORT(
+		clk : IN std_logic;
+		button : IN std_logic;          
+		result : OUT std_logic
+		);
+	END COMPONENT;
+	signal sel :STD_LOGIC_VECTOR(2 downto 0):=(others=>'0');
+	signal value:STD_LOGIC_VECTOR(15 downto 0) := (others=>'0');
+	signal en_ad1,en_ad2,en_c,en_carry,en_sub,reset_c :STD_LOGIC:='0';
 begin
-	selettore: contatore_modulo_2n port map(button(0),'1',not( button(3)),open,sel);
-	en_ad1<=(not(sel(1)) and sel(0));
+	deb:debounce port map(clock,button(0),en_c);
+	reset_c<=(not( button(3) ) or not(sel(2) and not(sel(1)) and sel(0)));
+	selettore: contatore_modulo_2n port map(en_c,'1',reset_c,open,sel);
+	en_ad1<=(not(sel(2)) and not(sel(1)) and sel(0));
 	adder1 : latch_d port map(in_byte(7 downto 0),en_ad1,not(button(3)),value(7 downto 0));
-	en_ad2<=(sel(1) and not(sel(0)));
+	en_ad2<=(not(sel(2)) and sel(1) and not(sel(0)));
 	adder2 : latch_d port map(in_byte(7 downto 0),en_ad2,not(button(3)),value(15 downto 8));
-	en_cla<=(sel(1) and sel(0));
-	led(7)<=sel(1);
-	led(6)<=sel(0);
-	r_c_a : RippleCarryAdder port map(value(7 downto 0),value(15 downto 8),sum1(7 downto 0),led(0));
+	en_carry<=(not(sel(2)) and sel(1) and sel(0));
+	en_sub<=(sel(2) and not(sel(1)) and not(sel(0)));
+	led(7)<=sel(2);
+	led(6)<=sel(1);
+	led(5)<=sel(0);
+	r_c_a : add_sub port map(value(7 downto 0),value(15 downto 8),en_sub,en_carry,sum1(7 downto 0),led(0),led(1));
 	gest_disp : display_top_level port map(clock,button(3),button(2),button(1),sum1,in_byte,anodes,cathodes);
 end Behavioral;
 

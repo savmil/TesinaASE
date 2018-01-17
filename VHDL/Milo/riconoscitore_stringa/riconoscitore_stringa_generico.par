@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-debian::  Sat Jan 13 12:17:10 2018
+debian::  Mon Jan 15 18:40:32 2018
 
 par -w -intstyle ise -ol high -t 1 riconoscitore_stringa_generico_map.ncd
 riconoscitore_stringa_generico.ncd riconoscitore_stringa_generico.pcf 
@@ -25,21 +25,23 @@ Device speed data version:  "PRODUCTION 1.27 2013-10-13".
 
 Design Summary Report:
 
- Number of External IOBs                          14 out of 108    12%
+ Number of External IOBs                          13 out of 108    12%
 
    Number of External Input IOBs                 11
 
       Number of External Input IBUFs             11
+        Number of LOCed External Input IBUFs      1 out of 11      9%
 
-   Number of External Output IOBs                 3
 
-      Number of External Output IOBs              3
+   Number of External Output IOBs                 2
+
+      Number of External Output IOBs              2
 
    Number of External Bidir IOBs                  0
 
 
    Number of BUFGMUXs                        1 out of 24      4%
-   Number of Slices                         15 out of 960     1%
+   Number of Slices                         19 out of 960     1%
       Number of SLICEMs                      0 out of 480     0%
 
 
@@ -55,46 +57,46 @@ Finished initial Timing Analysis.  REAL time: 1 secs
 
 Starting Placer
 Total REAL time at the beginning of Placer: 1 secs 
-Total CPU  time at the beginning of Placer: 0 secs 
+Total CPU  time at the beginning of Placer: 1 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:1b8) REAL time: 1 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:303a4d) REAL time: 1 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:1b8) REAL time: 1 secs 
+Phase 2.7  Design Feasibility Check (Checksum:303a4d) REAL time: 1 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:1b8) REAL time: 1 secs 
+Phase 3.31  Local Placement Optimization (Checksum:303a4d) REAL time: 1 secs 
 
 Phase 4.2  Initial Clock and IO Placement
 .............
-Phase 4.2  Initial Clock and IO Placement (Checksum:e74347) REAL time: 1 secs 
+Phase 4.2  Initial Clock and IO Placement (Checksum:d9822e) REAL time: 3 secs 
 
 Phase 5.30  Global Clock Region Assignment
-Phase 5.30  Global Clock Region Assignment (Checksum:e74347) REAL time: 1 secs 
+Phase 5.30  Global Clock Region Assignment (Checksum:d9822e) REAL time: 3 secs 
 
 Phase 6.36  Local Placement Optimization
-Phase 6.36  Local Placement Optimization (Checksum:e74347) REAL time: 1 secs 
+Phase 6.36  Local Placement Optimization (Checksum:d9822e) REAL time: 3 secs 
 
 Phase 7.3  Local Placement Optimization
-.............
-Phase 7.3  Local Placement Optimization (Checksum:19f3bbec) REAL time: 1 secs 
+............
+Phase 7.3  Local Placement Optimization (Checksum:16927ba6) REAL time: 3 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:19f3bbec) REAL time: 1 secs 
+Phase 8.5  Local Placement Optimization (Checksum:16927ba6) REAL time: 3 secs 
 
 Phase 9.8  Global Placement
 ..
-Phase 9.8  Global Placement (Checksum:4b0482f5) REAL time: 3 secs 
+Phase 9.8  Global Placement (Checksum:5b4df936) REAL time: 3 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:4b0482f5) REAL time: 3 secs 
+Phase 10.5  Local Placement Optimization (Checksum:5b4df936) REAL time: 3 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:4b3a8963) REAL time: 3 secs 
+Phase 11.18  Placement Optimization (Checksum:59836a78) REAL time: 3 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:4b3a8963) REAL time: 3 secs 
+Phase 12.5  Local Placement Optimization (Checksum:59836a78) REAL time: 3 secs 
 
 Total REAL time to Placer completion: 3 secs 
 Total CPU  time to Placer completion: 2 secs 
@@ -105,21 +107,23 @@ Writing design to file riconoscitore_stringa_generico.ncd
 Starting Router
 
 
-Phase  1  : 129 unrouted;      REAL time: 3 secs 
+Phase  1  : 164 unrouted;      REAL time: 3 secs 
 
-Phase  2  : 119 unrouted;      REAL time: 3 secs 
+Phase  2  : 152 unrouted;      REAL time: 3 secs 
 
-Phase  3  : 9 unrouted;      REAL time: 3 secs 
+Phase  3  : 26 unrouted;      REAL time: 3 secs 
 
-Phase  4  : 32 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  4  : 42 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
 Updating file: riconoscitore_stringa_generico.ncd with current fully routed design.
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
 Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
+
+Updating file: riconoscitore_stringa_generico.ncd with current fully routed design.
 
 Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
@@ -127,8 +131,12 @@ Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 4
 
 Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
+Phase 11  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
+
+Phase 12  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
+
 Total REAL time to Router completion: 4 secs 
-Total CPU time to Router completion: 3 secs 
+Total CPU time to Router completion: 4 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -146,7 +154,7 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|           clk_BUFGP | BUFGMUX_X2Y10| No   |    9 |  0.009     |  0.042      |
+|           clk_BUFGP |  BUFGMUX_X1Y0| No   |   11 |  0.005     |  0.049      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -166,8 +174,8 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|     4.710ns|     N/A|           0
-  _BUFGP                                    | HOLD        |     1.149ns|            |       0|           0
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     4.290ns|     N/A|           0
+  _BUFGP                                    | HOLD        |     0.932ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 

@@ -1,4 +1,0 @@
-work	"../../full_adder_half/full_adder_half.vhdl"
-work	"../../full_adder_half/half_adder.vhdl"
-work	"carry_save_adder.vhd"
-work	"carry_save_cell.vhd"

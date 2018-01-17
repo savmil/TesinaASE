@@ -1,6 +1,0 @@
-vhdl isim_temp "../../full_adder_half/half_adder.vhdl"
-vhdl isim_temp "../../full_adder_half/full_adder_half.vhdl"
-vhdl isim_temp "../RippleCarryAdder/RippleCarryAdder.vhd"
-vhdl isim_temp "../registro/flip_flop_rising_edge.vhd"
-vhdl isim_temp "contatore_modulo_4.vhd"
-vhdl isim_temp "contatore_modulo_4_testbench.vhd"

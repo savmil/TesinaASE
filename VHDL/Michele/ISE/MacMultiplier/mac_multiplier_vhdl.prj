@@ -1,4 +1,4 @@
-vhdl work "C:\Users\Michele\Documents\TesinaASE\VHDL\Michele\ISE\MacMultiplier\half_adder.vhd"
-vhdl work "C:\Users\Michele\Documents\TesinaASE\VHDL\Michele\ISE\MacMultiplier\full_adder.vhd"
-vhdl work "C:\Users\Michele\Documents\TesinaASE\VHDL\Michele\ISE\MacMultiplier\mac_cell.vhd"
-vhdl work "C:\Users\Michele\Documents\TesinaASE\VHDL\Michele\ISE\MacMultiplier\mac_multiplier.vhd"
+vhdl work "/media/sf_ASE/VHDL/Michele/ISE/MacMultiplier/half_adder.vhd"
+vhdl work "/media/sf_ASE/VHDL/Michele/ISE/MacMultiplier/full_adder.vhd"
+vhdl work "/media/sf_ASE/VHDL/Michele/ISE/MacMultiplier/mac_cell.vhd"
+vhdl work "/media/sf_ASE/VHDL/Michele/ISE/MacMultiplier/mac_multiplier.vhd"

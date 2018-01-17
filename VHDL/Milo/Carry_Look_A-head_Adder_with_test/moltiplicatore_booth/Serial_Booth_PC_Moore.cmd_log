@@ -1,1 +1,0 @@
-vhdtdtfi -prj moltiplicatore_booth -o /home/sav/ASE/moltiplicatore_booth/Serial_Booth_PC_Moore.vhi -module Serial_Booth_PC_Moore -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Serial_Booth_PC_Moore.vhd 

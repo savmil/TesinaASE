@@ -36,8 +36,8 @@ entity riconoscitore_stringa is
 			  reset : in STD_LOGIC;
 			  data : in STD_LOGIC_VECTOR(width-1 downto 0);
 			  data_in : in  STD_LOGIC;
-			  stop : in STD_LOGIC;
 			  i: in STD_LOGIC_VECTOR(natural(ceil(log2(real(width)))) downto 0);
+			  en_res : out STD_LOGIC;
            shift : out STD_LOGIC;
            en_i : out  STD_LOGIC;
 			  en_c : out STD_LOGIC;
@@ -78,6 +78,7 @@ change_state: process (clk,reset)
 	 bad<='0';
 	 en_c<='0';
 	 en_i<='0';
+	 en_res<='0';
 		case current_state is
 			when idle =>
 				shift<='0';
@@ -100,6 +101,7 @@ change_state: process (clk,reset)
 				  en_i<='1';
 				  if i=std_logic_vector(to_unsigned(width,n'length)) then
 					correct<='1';
+					en_res<='1';
 					--next_state<=idle;
 				  elsif data(to_integer(unsigned(i)))=data_in then
 					en_c<='1';
@@ -107,6 +109,7 @@ change_state: process (clk,reset)
 					--next_state<=shifting;
 				  else 
 					bad<='1';
+					en_res<='1';
 					--next_state<=idle;
 				  end if;
 		end case;

@@ -1,4 +1,4 @@
-vhdl work "../../half_adder/half_adder.vhdl"
-vhdl work "../../full_adder_half/full_adder_half.vhdl"
+vhdl work "../../../../../home/sav/full_adder_half/half_adder.vhdl"
+vhdl work "../../../../../home/sav/full_adder_half/full_adder_half.vhdl"
 vhdl work "RippleCarryAdder.vhd"
 vhdl work "RippleCarryAdder_testbench.vhd"
