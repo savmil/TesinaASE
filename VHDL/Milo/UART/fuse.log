@@ -1,0 +1,39 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /media/sf_ASE/VHDL/Milo/UART/Sender_Receiver_testbench_isim_beh.exe -prj /media/sf_ASE/VHDL/Milo/UART/Sender_Receiver_testbench_beh.prj work.Sender_Receiver_testbench 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Determining compilation order of HDL files
+Parsing VHDL file "/media/sf_ASE/VHDL/Milo/UART/mux2_1.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/VHDL/Milo/UART/edge_triggered_d_n.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/VHDL/Milo/UART/Transmitter.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/VHDL/Milo/UART/Receiver.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/VHDL/Milo/UART/latch_d_en.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/VHDL/Milo/UART/contatore_modulo_4.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/VHDL/Milo/UART/boundary_scan_chain.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/VHDL/Milo/UART/Sender_receiver.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/VHDL/Milo/UART/Sender_Receiver_testbench.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 97140 KB
+Fuse CPU Usage: 1320 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package std_logic_arith
+Compiling architecture behavioral of entity contatore_modulo_2n [\contatore_modulo_2n(3)\]
+Compiling architecture behavioral of entity contatore_modulo_2n [\contatore_modulo_2n(4)\]
+Compiling architecture behavioral of entity Transmitter [transmitter_default]
+Compiling architecture behavioral of entity latch_d_en [\latch_d_en(1)\]
+Compiling architecture dataflow of entity mux2_1 [mux2_1_default]
+Compiling architecture behavioral of entity edge_triggered_d_n [\edge_triggered_d_n(1)\]
+Compiling architecture structural of entity boundary_scan_chain [\boundary_scan_chain(11)\]
+Compiling architecture structural of entity boundary_scan_chain [\boundary_scan_chain(8)\]
+Compiling architecture behavioral of entity Receiver [receiver_default]
+Compiling architecture behavioral of entity Sender_receiver [\Sender_receiver(9600,8)\]
+Compiling architecture behavior of entity sender_receiver_testbench
+Time Resolution for simulation is 1ps.
+Compiled 25 VHDL Units
+Built simulation executable /media/sf_ASE/VHDL/Milo/UART/Sender_Receiver_testbench_isim_beh.exe
+Fuse Memory Usage: 114148 KB
+Fuse CPU Usage: 1460 ms
+GCC CPU Usage: 410 ms

@@ -30,7 +30,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity Booth_multiplier is
-	 generic (width : NATURAL:=32);
+	 generic (width : NATURAL:=8);
     Port ( mul1 : in  STD_LOGIC_VECTOR (width-1 downto 0):=(others=>'0');
            mul2 : in  STD_LOGIC_VECTOR (width-1 downto 0);
            start : in  STD_LOGIC;
@@ -43,7 +43,7 @@ end Booth_multiplier;
 
 architecture Structural of Booth_multiplier is
 COMPONENT add_sub
-	generic (width : NATURAL:=32);
+	generic (width : NATURAL:=8);
 	PORT(
 		a : IN std_logic_vector(width-1 downto 0);
 		b : IN std_logic_vector(width-1 downto 0);
@@ -54,7 +54,7 @@ COMPONENT add_sub
 		);
 	END COMPONENT;
 COMPONENT contatore_modulo_2n
-	generic (width : NATURAL :=5);
+	generic (width : NATURAL :=3);
 	PORT(
 		clk : IN std_logic;
 		enable : IN std_logic;
@@ -64,7 +64,7 @@ COMPONENT contatore_modulo_2n
 		);
 	END COMPONENT;
 	component latch_d_en is
-	generic(width:natural:=32);
+	generic(width:natural:=8);
     Port ( clk : in  STD_LOGIC;
            reset : in  STD_LOGIC;
            en : in  STD_LOGIC;
@@ -86,7 +86,7 @@ COMPONENT contatore_modulo_2n
            stop : in  STD_LOGIC);
 	END COMPONENT;
 	component boundary_scan_chain 
-	generic(n : natural := 32);
+	generic(n : natural := 8);
     Port ( --state_vector : in  STD_LOGIC_VECTOR (n-1 downto 0);
 			  scan_in : in STD_LOGIC;
            clk : in  STD_LOGIC;
@@ -99,11 +99,10 @@ COMPONENT contatore_modulo_2n
 	 );
 	end component;
 	signal q_val,q_val_2:STD_LOGIC_VECTOR(width downto 0):=(others=>'0');
-	signal moltiplicatore,molt2,suma,sum1:STD_LOGIC_VECTOR(width-1 downto 0):=(others=>'0');
+	signal moltiplicatore,suma,sum1:STD_LOGIC_VECTOR(width-1 downto 0):=(others=>'0');
 	signal prod:STD_LOGIC_VECTOR(2*width-1 downto 0):=(others=>'0');
 	signal fint_stop: STD_LOGIC_VECTOR(0 downto 0);
 	signal stop,en_m,en_c,en_sh,en_p1,bit_shift,en_q,en_a:STD_LOGIC:='0';
-	--signal en_q,en_a:STD_LOGIC_VECTOR(0 downto 0):="0";
 begin
 	-- conto per il numero di bit, abilito i registri, vedo i bit, 00 11 solo shift, 01 - mul2 poi prodotto shift
 	--10 + mul2 shift
@@ -115,7 +114,7 @@ begin
 	a: boundary_scan_chain port map(sum1(width-1),clk,reset,en_a,sum1,en_sh,bit_shift,suma);
 	gestore_shift: add_sub port map(suma,moltiplicatore,q_val(1),sum1,open,open);-- bisogna inserire il segno 
 	prod<= suma & q_val(width downto 1);
-	prod1:latch_d_en generic map (width=>64) port map(clk,reset,en_p1,prod,product);
+	prod1:latch_d_en generic map (width=>16) port map(clk,reset,en_p1,prod,product);
 	fint_stop(0)<=stop;
 	en_i<=en_p1;
 	f: latch_d_en generic map (width=>1) port map(clk,reset,en_p1,fint_stop,fin);

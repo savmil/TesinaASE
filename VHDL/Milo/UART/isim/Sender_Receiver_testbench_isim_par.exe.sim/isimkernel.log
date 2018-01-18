@@ -1,0 +1,31 @@
+Command line:
+   Sender_Receiver_testbench_isim_par.exe
+     -simmode  gui
+     -sdfmax  /uut/=netgen/par/Sender_receiver_timesim.sdf
+     -sdfroot  /uut
+     -simrunnum  0
+     -socket  56283
+
+Thu Jan 18 18:30:30 2018
+
+
+ Elaboration Time: 0.2 sec
+
+ Current Memory Usage: 211.956 Meg
+
+ Total Signals          : 2513
+ Total Nets             : 1601
+ Total Signal Drivers   : 1570
+ Total Blocks           : 657
+ Total Primitive Blocks : 356
+ Total Processes        : 1569
+ Total Traceable Variables  : 3769
+ Total Scalar Nets and Variables : 15576
+Total Line Count : 5719
+
+ Total Simulation Time: 2.01 sec
+
+ Current Memory Usage: 220.471 Meg
+
+Thu Jan 18 18:30:52 2018
+

@@ -108,16 +108,15 @@ Slice Utilization Ratio Delta      : 5
 *                          HDL Compilation                              *
 =========================================================================
 Compiling vhdl file "/media/sf_ASE/DUE_UART/RS232RefComp.vhd" in Library work.
-Entity <Rs232RefComp> compiled.
-Entity <Rs232RefComp> (Architecture <Behavioral>) compiled.
+Entity <rs232refcomp> compiled.
+Entity <rs232refcomp> (Architecture <behavioral>) compiled.
 Compiling vhdl file "/media/sf_ASE/DUE_UART/due_uart.vhd" in Library work.
-Entity <due_uart> compiled.
-Entity <due_uart> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity due_uart is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
-Analyzing hierarchy for entity <due_uart> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <due_uart> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <Rs232RefComp> in library <work> (architecture <Behavioral>).
 
@@ -125,7 +124,7 @@ Analyzing hierarchy for entity <Rs232RefComp> in library <work> (architecture <B
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
-Analyzing Entity <due_uart> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <due_uart> in library <work> (Architecture <behavioral>).
 Entity <due_uart> analyzed. Unit <due_uart> generated.
 
 Analyzing Entity <Rs232RefComp> in library <work> (Architecture <Behavioral>).
@@ -682,12 +681,12 @@ Offset:              4.283ns (Levels of Logic = 1)
 
 
 Total REAL time to Xst completion: 3.00 secs
-Total CPU time to Xst completion: 3.21 secs
+Total CPU time to Xst completion: 3.20 secs
  
 --> 
 
 
-Total memory usage is 518084 kilobytes
+Total memory usage is 518120 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   77 (   0 filtered)

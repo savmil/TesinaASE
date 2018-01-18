@@ -30,7 +30,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity divisore_restoring is
-	 generic (width : NATURAL:=64);
+	 generic (width : NATURAL:=8);
     Port ( dividendo : in  STD_LOGIC_VECTOR (width-1 downto 0):=(others=>'0');
            divisore : in  STD_LOGIC_VECTOR (width-1 downto 0);
            start : in  STD_LOGIC;
@@ -44,7 +44,7 @@ end divisore_restoring;
 
 architecture Structural of divisore_restoring is
 COMPONENT add_sub
-	generic (width : NATURAL:=64);
+	generic (width : NATURAL:=8);
 	PORT(
 		a : IN std_logic_vector(width-1 downto 0);
 		b : IN std_logic_vector(width-1 downto 0);
@@ -55,7 +55,7 @@ COMPONENT add_sub
 		);
 	END COMPONENT;
 COMPONENT contatore_modulo_2n
-	generic (width : NATURAL :=6);
+	generic (width : NATURAL :=3);
 	PORT(
 		clk : IN std_logic;
 		enable : IN std_logic;
@@ -65,7 +65,7 @@ COMPONENT contatore_modulo_2n
 		);
 	END COMPONENT;
 	COMPONENT latch_d_en
-	generic(width: NATURAL:=64);
+	generic(width: NATURAL:=8);
 	PORT(
 		clk : IN std_logic;
 		reset : IN std_logic;
@@ -91,7 +91,7 @@ COMPONENT contatore_modulo_2n
            stop : in  STD_LOGIC);
 	END COMPONENT;
 	component boundary_scan_chain 
-	generic(n : natural := 64);
+	generic(n : natural := 8);
     Port ( --state_vector : in  STD_LOGIC_VECTOR (n-1 downto 0);
 			  scan_in : in STD_LOGIC;
            clk : in  STD_LOGIC;
@@ -114,13 +114,12 @@ begin
 	divisor: latch_d_en port map(clk,reset,en_div,divisore,div);
 	quotient: boundary_scan_chain port map(bit_q1,clk,reset,en_q,dividendo,en_sh,bit_shift,quoz);
 	gestore_shift: add_sub port map(suma,div,a_s,sum1,open,open);
-	with bit_q1 select rest<= -- not perchè se risulta sottr. positivo 
+	with bit_q1 select rest<= 
 		suma when '0',
 		sum1 when others;
 	quoz_1<=quoz(width-2 downto 0) & bit_q1;
 	q_r<=quoz_1& rest;
-	q_r_l:latch_d_en generic map(width=>128) port map(clk,reset,en_res,q_r,res); 
-	--r:latch_d_en port map(clk,reset,en_res,rest,resto); 
+	q_r_l:latch_d_en generic map(width=>16) port map(clk,reset,en_res,q_r,res); 
 	f_s:latch_d_en generic map (width=>1) port map(clk,reset,en_res,fint_stop,finish); 
 	fint_stop(0)<=stop;
 	-- bit q1 mi indica se la sottrazione mi ha dato valore positivo o negativo, essendo l' ultima operazione una sottrazione non salvo

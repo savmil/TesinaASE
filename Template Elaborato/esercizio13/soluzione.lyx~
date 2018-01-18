@@ -148,46 +148,8 @@ Descrivere la soluzione relizzata per mezzo di schematici e riportare il
 Schematici
 \end_layout
 
-\begin_layout Subsection
-Codice
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Nell'eventialità in cui alcuni componenti sia stati utilizzati in altri
- esercizi inserire solo un riferimento (es.
- Multiplexer Generico - traccia n° 1)
-\end_layout
-
-\begin_layout Plain Layout
-Segue un esempio di inclusione di codice
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsubsection
-Bit String Comparator
-\end_layout
-
-\begin_layout Standard
-Il componente Top Module è ottenuto con costrutto 
-\emph on
-Generate
-\emph default
- e le connessioni sono fatte sfruttando tre array monodimensionali (aGT,
- aLT, aEQ).
-\end_layout
-
-\begin_layout Standard
-I valori MSB di questi array sono posti a (0,0,1) rispettivamente per garantire
- che sui bit più significativi della stringa in ingresso sia fatta una comparazi
-one assoluta, e non relativa.
+Moltiplicatore a celle Mac
 \end_layout
 
 \begin_layout Standard
@@ -198,91 +160,470 @@ status open
 
 
 \backslash
-begin{lstlisting}[language=VHDL,caption={Definizione del componente Bit
- String Comparator Generic}] 
+begin{figure}[H]
 \end_layout
 
 \begin_layout Plain Layout
 
-library IEEE; use IEEE.STD_LOGIC_1164.ALL;
-\end_layout
-
-\begin_layout Plain Layout
-
-entity cathode_manager is     Port ( counter : in STD_LOGIC_VECTOR (1 downto
- 0); 		     values : in STD_LOGIC_VECTOR (15 downto 0); 		     dots : in
-  STD_LOGIC_VECTOR (3 downto 0);            cathodes : out  STD_LOGIC_VECTOR
- (7 downto 0) 		  ); end cathode_manager;
-\end_layout
-
-\begin_layout Plain Layout
-
-architecture structural of cathode_manager is
-\end_layout
-
-\begin_layout Plain Layout
-
-component muxn_1 is 	generic(address_width : NATURAL := 3); 	port ( 		SEL
- : in STD_LOGIC_VECTOR(address_width-1 downto 0); 		 A : in STD_LOGIC_VECTOR(2**
-address_width-1 downto 0); 		 X : out STD_LOGIC 	); end component;
-\end_layout
-
-\begin_layout Plain Layout
-
-component cathode_encoder is     Port ( nibble : in  STD_LOGIC_VECTOR (3
- downto 0);            cathodes : out  STD_LOGIC_VECTOR (6 downto 0) 		);
- end component; for all : cathode_encoder use entity WORK.cathode_encoder(behavio
-ral);
-\end_layout
-
-\begin_layout Plain Layout
-
-signal nibble : STD_LOGIC_VECTOR (3 downto 0) := (others => '0'); alias
- digit0 : STD_LOGIC_VECTOR(3 downto 0) is values(3 downto 0); alias digit1
- : STD_LOGIC_VECTOR(3 downto 0) is values(7 downto 4); alias digit2 : STD_LOGIC_
-VECTOR(3 downto 0) is values(11 downto 8); alias digit3 : STD_LOGIC_VECTOR(3
- downto 0) is values(15 downto 12); signal in_mux : STD_LOGIC_VECTOR (15
- downto 0) := (others => '0'); --per ordinare i valori da porre in ingresso
- ai mux 4x1
-\end_layout
-
-\begin_layout Plain Layout
-
-begin 
-\end_layout
-
-\begin_layout Plain Layout
-
-	mux16_4 : for i in 0 to 3 generate 		in_mux((i*4+3) downto i*4) <= (digit3(i),
- digit2(i), digit1(i), digit0(i)); 		-- i=0 --> in_mux(3 downto 0) 		--
- i=1 --> in_mux(7 downto 4) 		-- i=2 --> in_mux(11 downto 8) 		-- i=3 -->
- in_mux(15 downto 12) 		inst_mux4_1 : muxn_1 			generic map ( address_width
- => 2 ) 			port map ( SEL => counter, 						A => in_mux((i*4+3) downto i*4),
- 					   X => nibble(i) 					 ); 	end generate; 
-\end_layout
-
-\begin_layout Plain Layout
-
-	inst_encoder : cathode_encoder 		port map ( nibble => nibble, 				   cathodes
- => cathodes (6 downto 0) 				 ); 				  	inst_dots_manager : muxn_1 		generic
- map ( address_width => 2 ) 			port map ( SEL => counter, 					   A => dots,
- 					   X => cathodes(7) 					 ); 
-\end_layout
-
-\begin_layout Plain Layout
-
-end structural;
-\end_layout
-
-\begin_layout Plain Layout
-
+	
+\backslash
+centering
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-end{lstlisting}
+includegraphics[scale=0.7]{esercizio13/images/mac_mul.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+caption{Mac Multiplier}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Viene mostrato un esempio di moltiplicatore a celle MAC 2x2 (purtroppo lo
+ schematico se preso tutto non rendeva visibili i segnali), per la gestione
+ dei segnali di interconnessione si è ricorso all' uso di un costrutto matrix,
+ data la simmetria del circuito in cui vengono vestiti i vari carry e somma
+ parziali di ingresso ed uscita, si è scelto di instanziare prima le righe,
+ gestendo le somme parziali in ingresso ed in carry in uscita ed alla successiva
+ riga invece vanno gestiti i carry in ingresso e le somme in uscita.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Numero di bit operandi
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Numero di slice
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Numero di four LUT
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tempo di calcolo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tempo di calcolo stimato per cella
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2x2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8,978 ps
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,122 ps
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4x4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+17
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+32
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14,557 ps
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,7278 ps
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8x8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+65
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+128
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25,026 ps
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,579 ps
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16x16
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+256
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+512
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+51,175 ps
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,556 ps
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Possiamo riscontrare che il sintettizzatore, mette in ogni slice una cella
+ MAC, lo spazio occupato quindi per ogni raddoppio di riga e di colonna
+ diventa quattro volte tanto come anche il numero di LUT quadruplica, per
+ il numero minimale di slice presente sulla BASYS non è possibile sintetizzare
+ un 32x32.
+ I tempi di calcolo teoricamente dovrebbero essere pari a 
+\begin_inset Formula $6(n-1)T+2T$
+\end_inset
+
+ (dove 
+\begin_inset Formula $n$
+\end_inset
+
+ numero o di riga o di colonna essendo il moltiplicatore simmettrico e 
+\begin_inset Formula $T$
+\end_inset
+
+ ritardo di una porta), se dalla formula ricaviamo 
+\begin_inset Formula $T$
+\end_inset
+
+ al variare di 
+\begin_inset Formula $n$
+\end_inset
+
+ notiamo che il tempo per cella descresce, in realtà le celle vengono messe
+ sempre più vicine durate l' operazione di place and routing, riducendo
+ così la distanza fra di esse ed il tempo di propagazione dei segnali.
+\end_layout
+
+\begin_layout Subsubsection
+Moltiplicatore di Booth
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[H]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[scale=0.7]{esercizio13/images/Booth_mul.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+caption{Booth Multiplier}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Per realizzare il motiplicatore (che utilizza la codifica Booth2), si è
+ utilizzato una macchina a stati finiti con i seguenti stati: idle, stato
+ in cui la macchina non oper; init, vi è una inizializzazione dei registri
+ e delle scan chain, il moltiplicatore va in un registro latch, nella scan
+ chain q il moltiplicando e a viene settata a 0; in getseq vengono letti
+ gli ultimi due bit in uscita dalla scan chain q, in base ai valori ne si
+ ricava la codifica di Booth e si decide se sommare, sottrarre o solo shiftare;
+ in inits si abilita lo shifting che verrà effettuato al passaggio nel successiv
+o stato shift.
+\end_layout
+
+\begin_layout Standard
+La scan chain da anche la possibilità di essere usata come semplice registro,
+ difatti viene sfruttato nel caso in cui avvenga una somma o una sottrazione,
+ perchè prima di fare lo shiting viene caricato il risultato di tale operazione
+ in a e poi shiftato.
+\end_layout
+
+\begin_layout Subsection
+Codice
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+href{run:progetti/MacMultiplier/MacMultiplier.xise}{Mac ISE}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Moltiplicatore a celle Mac
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting [language=VHDL,caption={Definizione della carry save cell}]
+ {progetti/MacMultiplier/mac_multiplier.vhd}
 \end_layout
 
 \end_inset

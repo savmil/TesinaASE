@@ -1,0 +1,8 @@
+vhdl work "mux2_1.vhd"
+vhdl work "edge_triggered_d_n.vhd"
+vhdl work "Transmitter.vhd"
+vhdl work "Receiver.vhd"
+vhdl work "latch_d_en.vhd"
+vhdl work "contatore_modulo_4.vhd"
+vhdl work "boundary_scan_chain.vhd"
+vhdl work "Sender_receiver.vhd"

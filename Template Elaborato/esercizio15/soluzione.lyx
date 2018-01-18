@@ -1,7 +1,9 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass book
 \begin_preamble
 \usepackage{listings,xcolor,courier,bookmark}
@@ -60,16 +62,16 @@ morecomment=[s]{--}
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
-
+\font_sf_scale 100 100
+\font_tt_scale 100 100
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -80,15 +82,24 @@ morecomment=[s]{--}
 \use_hyperref false
 \papersize default
 \use_geometry true
-\use_amsmath 1
-\use_esint 1
-\use_mhchem 1
-\use_mathdots 1
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 1
 \index Index
 \shortcut idx
@@ -137,6 +148,111 @@ Descrivere la soluzione relizzata per mezzo di schematici e riportare il
 Schematici
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[H]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[scale=0.7]{esercizio15/images/UART.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+caption{UART}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si è realizzata una versione di UART secondo lo schema PO/PC, i componenti
+ principali solo le due macchine a stati finiti: il trasmitter che consiste
+ di cinque stati: idle, rimane in attesa fino a che non si decide di avviare
+ una trasmissione, send_start invia il segnale di start; wait_for_next attende
+ fino a che il contatore counter_t non genera un segnale di counter hit,
+ per far sì prima che venga inviata la successiva informazione, quella attuale
+ venga sorretta per sedici colpi di clock; send che fa shiftare la scan
+ chain con il dato ingresso per invare il successivo bit, send_stop che
+ invia il bit di stop, si abilita questo stato quando il numero di bit trasmetti
+ è pari ad otto (il conteggio è fissato da un contatore).
+ Il ricevitore invece è composto solo da quattro stati: idle che permane
+ fino a quando la linea dei dati in ingresso è alta; sfasamento che fa in
+ modo di posizionare l' evento di lettura del dato a metà del tempo di attesa,
+ così da essere sicuri di leggere correttamente il bit; wait_for_next dove
+ si attende per leggere il successivo bit; receive dopo si legge il bit
+ in ingresso, anche il ricevitore ha un contatore che conta il numero di
+ bit letti così dopo aver letto l' ottavo si ritorna in idle, che conta
+ il numero di cicli di clock per lo sfasamento ed il numero di colpi di
+ clock da attendere prima di leggere il successivo dato.
+ I dati in input ed in output sono sorretti da due scan chain come quelle
+ utilizzate in Booth 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{Booth}
+\end_layout
+
+\end_inset
+
+, quella dell' input è più grande di bit perchè vi è un primo bit alto per
+ indicare che non vi è trasmissione di dati fino a che non vi è un invio
+ di dati, il secondo è il bit di start ed il terzo messo in coda ai dati
+ è quello di stop.
+\end_layout
+
+\begin_layout Standard
+Premettendo che la soluzione di Digilent effettua vari controlli sulla trasmissi
+one qui non effettuati, la riteniamo di non facile comprensione, scrivere
+ in un unico file VHDL sia il ricevitore, trasmettitore, i contatori e tutti
+ gli altri componenti a supporto non permette di rendere chiara la lettura,
+ non è lampante quali parti siano a supporto del ricevitore e quali del
+ ricevitore, non permettendo così una modifica veloce nel caso in cui volessimo
+ attendere ad esempio trentadue cicli di clock prima di inviare ricevere
+ un altro dato o estrapolare uno solo dei due componenti e riutilizzarlo
+ (pensiamo al caso in cui dobbiamo solo inviare i dati e non riceverli),
+ invece nella nostra soluzione possiamo estrapolare una delle due macchine
+ a stati finiti all' occorrenza e nell' unico file in cui sono riacchiusi
+ i componenti a corredo capire quali ci occorrono ed ricopiarli, oppure
+ in base ai segnali in ingresso alle due macchine sequenziali capire quali
+ segnali ci possano occorrere, altro punto a sfavore è la realizzazione
+ di diversi process per fare andare la macchina ad una frequenza voluta
+ per trasmettere ricevere ad un determinato baud rate, soluzione migliore
+ consisterebbe di utilizzare un DCM e cambiare la frequenza in base alla
+ necessità.
+\end_layout
+
 \begin_layout Subsection
 Codice
 \end_layout
@@ -153,257 +269,6 @@ Nell'eventialità in cui alcuni componenti sia stati utilizzati in altri
 
 \begin_layout Plain Layout
 Segue un esempio di inclusione di codice
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Bit String Comparator
-\end_layout
-
-\begin_layout Standard
-Il componente Top Module è ottenuto con costrutto 
-\emph on
-Generate
-\emph default
- e le connessioni sono fatte sfruttando tre array monodimensionali (aGT,
- aLT, aEQ).
-\end_layout
-
-\begin_layout Standard
-I valori MSB di questi array sono posti a (0,0,1) rispettivamente per garantire
- che sui bit più significativi della stringa in ingresso sia fatta una comparazi
-one assoluta, e non relativa.
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{lstlisting}[language=VHDL,caption={Definizione del componente Bit
- String Comparator Generic}] 
-\end_layout
-
-\begin_layout Plain Layout
-
-library IEEE;
-\end_layout
-
-\begin_layout Plain Layout
-
-use IEEE.STD_LOGIC_1164.ALL;
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-entity bit_string_comparator is
-\end_layout
-
-\begin_layout Plain Layout
-
-GENERIC(N: Integer:=4);
-\end_layout
-
-\begin_layout Plain Layout
-
-    Port ( a : in  STD_LOGIC_VECTOR (N-1 downto 0);
-\end_layout
-
-\begin_layout Plain Layout
-
-           b : in  STD_LOGIC_VECTOR (N-1 downto 0);
-\end_layout
-
-\begin_layout Plain Layout
-
-           aGTb : out  STD_LOGIC;
-\end_layout
-
-\begin_layout Plain Layout
-
-           aEQb : out  STD_LOGIC;
-\end_layout
-
-\begin_layout Plain Layout
-
-           aLTb : out  STD_LOGIC);
-\end_layout
-
-\begin_layout Plain Layout
-
-end bit_string_comparator;
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-architecture Structural of bit_string_comparator is
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-component bit_comparator_comp
-\end_layout
-
-\begin_layout Plain Layout
-
-    Port ( a : in  STD_LOGIC;
-\end_layout
-
-\begin_layout Plain Layout
-
-           b : in  STD_LOGIC;
-\end_layout
-
-\begin_layout Plain Layout
-
-           aEQ_INb : in  STD_LOGIC;
-\end_layout
-
-\begin_layout Plain Layout
-
-           aLT_INb : in  STD_LOGIC;
-\end_layout
-
-\begin_layout Plain Layout
-
-           aGT_INb : in  STD_LOGIC;
-\end_layout
-
-\begin_layout Plain Layout
-
-           aEQb : out  STD_LOGIC;
-\end_layout
-
-\begin_layout Plain Layout
-
-           aLTb : out  STD_LOGIC;
-\end_layout
-
-\begin_layout Plain Layout
-
-           aGTb : out  STD_LOGIC);
-\end_layout
-
-\begin_layout Plain Layout
-
-end component bit_comparator_comp;
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-for all: bit_comparator_comp use entity WORK.bit_comparator(Dataflow);
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-signal aGT, aLT, aEQ: STD_LOGIC_VECTOR(N downto 0); --Array di GT, LT ed
- EQ per la propagazione
-\end_layout
-
-\begin_layout Plain Layout
-
-begin
-\end_layout
-
-\begin_layout Plain Layout
-
-aGT(N)<='0';
-\end_layout
-
-\begin_layout Plain Layout
-
-aLT(N)<='0';
-\end_layout
-
-\begin_layout Plain Layout
-
-aEQ(N)<='1'; --Altrimenti non vengono riconosciute mai come uguali!!!
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-aGTb<=aGT(0);
-\end_layout
-
-\begin_layout Plain Layout
-
-aEQb<=aEQ(0);
-\end_layout
-
-\begin_layout Plain Layout
-
-aLTb<=aLT(0);
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-one_bcc: for i in N-1 downto 0 GENERATE begin
-\end_layout
-
-\begin_layout Plain Layout
-
-	bit_comparator: bit_comparator_comp port map(a(i), b(i), aEQ(i+1), aLT(i+1),
- aGT(i+1),aEQ(i), aLT(i), aGT(i));
-\end_layout
-
-\begin_layout Plain Layout
-
-end GENERATE one_bcc;
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-end Structural;
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{lstlisting}
 \end_layout
 
 \end_inset

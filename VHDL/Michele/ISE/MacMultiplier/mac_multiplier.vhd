@@ -3,8 +3,8 @@ use ieee.std_logic_1164.all;
 
 entity mac_multiplier is
 	generic(
-		N : natural := 2;
-		M : natural := 2
+		N : natural := 4;
+		M : natural := 4
 	);
 	port(
 		a : in std_logic_vector(N-1 downto 0);
@@ -34,15 +34,14 @@ signal partial_sum : matrix := (others => (others => '0'));-- (0,0) non usato
 
 begin
 	inizializza_carry : for i in 0 to M-1 generate
-		carry(i,0) <= c_in(i);
+		carry(i,0) <= c_in(i); -- setto i carry in ingresso pari a cin, per moltiplicare li dovrei settare a 0
 	end generate;
 	inizializza_sum : for j in 0 to N-1 generate
-		partial_sum(0,j+1) <= s_in(j);
+		partial_sum(0,j+1) <= s_in(j); -- le prime cell mac della riga non hanno in ingresso una somma parzia
 	end generate;
 	
-	--partial_sum(1 to M,N) <= carry(0 to M-1, N);
-	--ris <= partial_sum(M,N downto 0) & partial_sum(M-1 downto 1,0); strongly typed
-	mac_matrix : for i in 0 to M-1 generate -- si genera una riga per tutte le colonne si gestiscono le somme parziali e i carry in uscita
+	
+	mac_matrix : for i in 0 to M-1 generate -- si genera una riga, si gestiscono le somme parziali e i carry in uscita
 		mac_row : for j in 0 to N-1 generate -- dopodichè si procede alla successiva riga	
 			mac : mac_cell
 				port map(

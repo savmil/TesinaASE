@@ -1,0 +1,3 @@
+vhdtdtfi -lib work counter_one_start.vhd -prj UART -o counter_one_start.spl -module counter_one_start -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+vhdtdtfi -prj UART -o /media/sf_ASE/VHDL/Milo/UART/counter_one_start.vhi -module counter_one_start -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work counter_one_start.vhd 
+spl2sym -intstyle ise -family spartan3e counter_one_start.spl /media/sf_ASE/VHDL/Milo/UART/counter_one_start.sym 

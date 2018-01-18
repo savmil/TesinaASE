@@ -1,32 +1,28 @@
-Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /media/sf_ASE/VHDL/Michele/ISE/MacMultiplier/tb_mac_multiplier_isim_par.exe -prj /media/sf_ASE/VHDL/Michele/ISE/MacMultiplier/tb_mac_multiplier_par.prj work.tb_mac_multiplier 
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /media/sf_ASE/VHDL/Michele/ISE/MacMultiplier/tb_mac_multiplier_isim_beh.exe -prj /media/sf_ASE/VHDL/Michele/ISE/MacMultiplier/tb_mac_multiplier_beh.prj work.tb_mac_multiplier 
 ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 1
 Turning on mult-threading, number of parallel sub-compilation jobs: 0 
 Determining compilation order of HDL files
-Parsing VHDL file "/media/sf_ASE/VHDL/Michele/ISE/MacMultiplier/netgen/par/mac_multiplier_timesim.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/VHDL/Michele/ISE/MacMultiplier/half_adder.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/VHDL/Michele/ISE/MacMultiplier/full_adder.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/VHDL/Michele/ISE/MacMultiplier/mac_cell.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/VHDL/Michele/ISE/MacMultiplier/mac_multiplier.vhd" into library work
 Parsing VHDL file "/media/sf_ASE/VHDL/Michele/ISE/MacMultiplier/tb_mac_multiplier.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 138236 KB
-Fuse CPU Usage: 1580 ms
+Fuse Memory Usage: 95684 KB
+Fuse CPU Usage: 1190 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
-Compiling package textio
-Compiling package vital_timing
-Compiling package vcomponents
-Compiling package vital_primitives
-Compiling package vpackage
-Compiling architecture x_buf_v of entity X_BUF [\X_BUF(true,true,"UNPLACED",(0,0...]
-Compiling architecture x_obuf_v of entity X_OBUF [\X_OBUF(true,true,"DONT_CARE",12...]
-Compiling architecture x_lut4_v of entity X_LUT4 [\X_LUT4(true,true,"UNPLACED",(0,...]
-Compiling architecture x_roc_v of entity X_ROC [\X_ROC("UNPLACED",100000,"*")(1,...]
-Compiling architecture x_toc_v of entity X_TOC [\X_TOC("UNPLACED",0,"*")(1,8,1,1...]
-Compiling architecture structure of entity mac_multiplier [mac_multiplier_default]
+Compiling architecture dataflow of entity half_adder [half_adder_default]
+Compiling architecture structural of entity full_adder [full_adder_default]
+Compiling architecture structural of entity mac_cell [mac_cell_default]
+Compiling architecture structural of entity mac_multiplier [\mac_multiplier(4,4)\]
 Compiling architecture behavioral of entity tb_mac_multiplier
 Time Resolution for simulation is 1ps.
-Compiled 65 VHDL Units
-Built simulation executable /media/sf_ASE/VHDL/Michele/ISE/MacMultiplier/tb_mac_multiplier_isim_par.exe
-Fuse Memory Usage: 163500 KB
-Fuse CPU Usage: 1930 ms
-GCC CPU Usage: 5050 ms
+Compiled 12 VHDL Units
+Built simulation executable /media/sf_ASE/VHDL/Michele/ISE/MacMultiplier/tb_mac_multiplier_isim_beh.exe
+Fuse Memory Usage: 110512 KB
+Fuse CPU Usage: 1340 ms
+GCC CPU Usage: 1610 ms

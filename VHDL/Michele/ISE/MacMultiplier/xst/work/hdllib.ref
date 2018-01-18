@@ -1,8 +1,0 @@
-AR full_adder structural /media/sf_ASE/VHDL/Michele/ISE/MacMultiplier/full_adder.vhd sub00/vhpl03 1516217595
-AR mac_cell structural /media/sf_ASE/VHDL/Michele/ISE/MacMultiplier/mac_cell.vhd sub00/vhpl05 1516217597
-EN half_adder NULL /media/sf_ASE/VHDL/Michele/ISE/MacMultiplier/half_adder.vhd sub00/vhpl00 1516217592
-EN mac_multiplier NULL /media/sf_ASE/VHDL/Michele/ISE/MacMultiplier/mac_multiplier.vhd sub00/vhpl06 1516217598
-AR mac_multiplier structural /media/sf_ASE/VHDL/Michele/ISE/MacMultiplier/mac_multiplier.vhd sub00/vhpl07 1516217599
-AR half_adder dataflow /media/sf_ASE/VHDL/Michele/ISE/MacMultiplier/half_adder.vhd sub00/vhpl01 1516217593
-EN mac_cell NULL /media/sf_ASE/VHDL/Michele/ISE/MacMultiplier/mac_cell.vhd sub00/vhpl04 1516217596
-EN full_adder NULL /media/sf_ASE/VHDL/Michele/ISE/MacMultiplier/full_adder.vhd sub00/vhpl02 1516217594

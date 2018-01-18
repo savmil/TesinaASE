@@ -12,15 +12,15 @@ component mac_multiplier is
 	--	M : natural := 8
 	--);
 	port(
-		a : in std_logic_vector(2-1 downto 0);
-		b : in std_logic_vector(2-1 downto 0);
-		s_in : in std_logic_vector(2-1 downto 0);
-		c_in : in std_logic_vector(2-1 downto 0);
-		ris : out std_logic_vector(2+2-1 downto 0)
+		a : in std_logic_vector(4-1 downto 0);
+		b : in std_logic_vector(4-1 downto 0);
+		s_in : in std_logic_vector(4-1 downto 0);
+		c_in : in std_logic_vector(4-1 downto 0);
+		ris : out std_logic_vector(4+4-1 downto 0)
 	);
 end component;
-constant column : natural := 2;
-constant row : natural := 2;
+constant column : natural := 4;
+constant row : natural := 4;
 signal A : std_logic_vector(column-1 downto 0) := (others => '0');
 signal SIN : std_logic_vector(column-1 downto 0) := (others => '0');
 signal B : std_logic_vector(row-1 downto 0) := (others => '0');
@@ -42,9 +42,9 @@ begin
 	stimulus : process
 	begin
 		--for i in 0 to 2**column-1 loop
-			A <= "11";
+			A <= "0111";
 			--for j in 0 to 2**row-1 loop
-				B <= "11";
+				B <= "0011";
 				--wait for 10 ns;
 			--end loop;
 		--end loop;

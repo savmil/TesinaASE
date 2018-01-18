@@ -1,1 +1,0 @@
-vhdtdtfi -prj divisore_restoring -o /media/sf_ASE/VHDL/Milo/divisore_restoring/divisore_restoring/latch_d_en.vhi -module latch_d_en -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work latch_d_en.vhd 

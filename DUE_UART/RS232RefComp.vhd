@@ -118,10 +118,10 @@ begin
 
 --Clock Dividing Functions--
 
-	process (CLK, clkDiv)	    						--set up clock divide for rClk
-		begin
+	process (CLK, clkDiv) -- divide la frequenza del clock del dispositivo affinche il baud rate sia di 9600 ed un bit permanga per 16 colpi di clock	    						--set up clock divide for rClk 
+		begin	
 			if (Clk = '1' and Clk'event) then
-				if (clkDiv = baudDivide) then --1/16 del numero di clock che entrano in un baud rate
+				if (clkDiv = baudDivide) then 
 					clkDiv <= "000000000";
 				else
 					clkDiv <= clkDiv +1;
@@ -129,8 +129,8 @@ begin
 			end if;
 		end process;
 
-	process (clkDiv, rClk, CLK)	 					--Define rClk
-	begin
+	process (clkDiv, rClk, CLK)	 					--Define rClk 
+	begin														-- genera un segnale di clock di durata descritta dal process sovrastante
 		if CLK = '1' and CLK'Event then
 			if clkDiv = baudDivide then
 				rClk <= not rClk;
@@ -191,7 +191,7 @@ begin
 		end process;
 
 	--This process controls the receiving shift register--
-	process (rClk, rShift)
+	process (rClk, rShift) -- effettua uno shifting sui dati ricevuti dopo 16 colpi di clock del ricevitore per salvare i dati
 		begin
 			if rClk = '1' and rClk'Event then
 				if rShift = '1' then
@@ -201,7 +201,7 @@ begin
 		end process;
 
 	--This process controls the dataCtr to keep track of shifted values--
- 	process (rClk, dataRST)
+ 	process (rClk, dataRST) -- conta il numero di bit letti
 		begin
 			if (rClk = '1' and rClk'event) then
 				if dataRST = '1' then
@@ -236,7 +236,7 @@ begin
 					dataRst <= '0';
 				
 					CE <= '0';
-					if RXD = '0' then
+					if RXD = '0' then -- indica che è iniziata la trasmissione
 						ctRst <= '1';
 						strNext <= strEightDelay;
 					else
@@ -244,7 +244,7 @@ begin
 						strNext <= strIdle;
 					end if;
 				
-				when strEightDelay => 
+				when strEightDelay => -- aspetta che passino 8 cicli di clock per sfasarsi
 					dataIncr <= '0';
 					rShift <= '0';
 					CE <= '0';
@@ -262,7 +262,7 @@ begin
 				when strGetData =>	
 					CE <= '0';
 					dataRst <= '0';
-					if ctr(3 downto 0) = "1111" then
+					if ctr(3 downto 0) = "1111" then -- quando arriva il sedicesimo clock di clock salva il dato e conta i bit letti
 						ctRst <= '1';
 						dataIncr <= '1';
 						rShift <= '1';
@@ -278,7 +278,7 @@ begin
 						strNext <= strGetData;
 					end if;
 				
-				when strCheckStop =>
+				when strCheckStop => -- dopo aver inviato il decimo dato invia lo stop
 					dataIncr <= '0';
 					rShift <= '0';
 					dataRst <= '0';
@@ -367,9 +367,9 @@ begin
 				end if;
 			end if;
 		end process;
-		
+		-- il ricevitore fa uso di un regitro per mantenere i dati permaneti ed uno in cui mette i dati da inviare
 	--  This process generates the sequence of steps needed transfer the data--
-	process (sttCur, tfCtr, tfReg, TBE, tclk)
+	process (sttCur, tfCtr, tfReg, TBE, tclk) -- mette i bit pronti per essere inviati nel registro di trasfemento
 		begin   	   
 
 			case sttCur is

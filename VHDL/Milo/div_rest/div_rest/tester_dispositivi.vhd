@@ -60,16 +60,17 @@ COMPONENT contatore_modulo_2n
            q : out  STD_LOGIC_VECTOR (width-1 downto 0));
 	end component;
 	COMPONENT divisore_restoring
+	generic (width : NATURAL:=8);
 	PORT(
-		dividendo : IN std_logic_vector(7 downto 0);
-		divisore : IN std_logic_vector(7 downto 0);
+		dividendo : IN std_logic_vector(width-1 downto 0);
+		divisore : IN std_logic_vector(width-1 downto 0);
 		start : IN std_logic;
 		clk : IN std_logic;
 		reset : IN std_logic;          
 		finish: out STD_LOGIC_VECTOR(0 downto 0);
 		--quoziente : OUT std_logic_vector(7 downto 0);
 		--resto : OUT std_logic_vector(7 downto 0)
-		res:out STD_LOGIC_VECTOR(15 downto 0)
+		res:out STD_LOGIC_VECTOR(2*width-1 downto 0)
 		);
 	END COMPONENT;
 	COMPONENT display_top_level
@@ -124,7 +125,6 @@ begin
 	--en_div2<=(sel(1) and not(sel(0)));
 	div2 : latch_d_en port map(clock,not(button(3)),scelta(2),in_byte(7 downto 0),value(15 downto 8));
 	--en_div<=(sel(1) and sel(0));
-	--ch_st: latch_d_en generic map (width=>4) port map(clock,not(button(3)),en_c,sc,scelta);
 	counter: contatore_modulo_2n  port map(clock,en_c1,reset_c,hit,open);
 	st: process(scelta,clock,hit)
 		begin
@@ -140,17 +140,10 @@ begin
 				reset_c<='0'; 
 			end if;
 		end process;
-	led(0)<=en_d;
+	led(0)<=s(0);
 	led(7)<=sel(1);
 	led(6)<=sel(0);
-	led(1)<=s(0);
-	led(2)<=check(0);
-	div_rest : divisore_restoring port map(value(15 downto 8),value(7 downto 0),en_d,clock,not(scelta(0)),s,q_r);
-	--a<=x"00" & quoz;
-	--quoziente<=quoz;
-	--resto<=rest;
-	--q_r<=rest & quoz;
-	--fin<=s;
+	div_rest : divisore_restoring port map(value(7 downto 0),value(15 downto 8),en_d,clock,not(scelta(0)),s,q_r);
 	gest_disp : display_top_level port map(clock,button(3),button(2),button(1),q_r,in_byte,anodes,cathodes);
 end Behavioral;
 
