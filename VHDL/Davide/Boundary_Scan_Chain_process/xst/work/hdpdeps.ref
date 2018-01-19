@@ -1,0 +1,48 @@
+V3 25
+FL C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain/boundary_scan_chain.vhd 2017/11/20.16:23:14 P.20131013
+FL C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain/counter_mod_2n.vhd 2017/11/20.13:53:50 P.20131013
+EN work/counter_mod_2n 1511194203 \
+      FL C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain/counter_mod_2n.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/counter_mod_2n/Behavioral 1511194204 \
+      FL C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain/counter_mod_2n.vhd \
+      EN work/counter_mod_2n 1511194203
+FL C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain/edge_triggered_d.vhd 2017/11/20.01:19:43 P.20131013
+EN work/edge_triggered_d 1511172758 \
+      FL C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain/edge_triggered_d.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/edge_triggered_d/Behavioral 1511172759 \
+      FL C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain/edge_triggered_d.vhd \
+      EN work/edge_triggered_d 1511172758
+FL C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain/edge_triggered_d_n.vhd 2017/11/15.18:08:31 P.20131013
+FL C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain/mux2_1.vhd 2017/11/19.20:10:57 P.20131013
+FL C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain/test_counter_mod_2n.vhd 2017/11/20.17:00:48 P.20131013
+EN work/test_counter_mod_2n 1511194207 \
+      FL C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain/test_counter_mod_2n.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/test_counter_mod_2n/Structural 1511194208 \
+      FL C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain/test_counter_mod_2n.vhd \
+      EN work/test_counter_mod_2n 1511194207 CP counter_mod_2n \
+      CP boundary_scan_chain
+FL C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain_process/boundary_scan_chain.vhd 2018/01/15.12:11:34 P.20131013
+EN work/boundary_scan_chain 1516014701 \
+      FL C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain_process/boundary_scan_chain.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177
+AR work/boundary_scan_chain/Structural 1516014702 \
+      FL C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain_process/boundary_scan_chain.vhd \
+      EN work/boundary_scan_chain 1516014701 CP mux2_1 CP edge_triggered_d_n
+FL C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain_process/edge_triggered_d_n.vhd 2017/11/15.18:08:31 P.20131013
+EN work/edge_triggered_d_n 1516014699 \
+      FL C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain_process/edge_triggered_d_n.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/edge_triggered_d_n/Behavioral 1516014700 \
+      FL C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain_process/edge_triggered_d_n.vhd \
+      EN work/edge_triggered_d_n 1516014699
+FL C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain_process/mux2_1.vhd 2017/11/19.20:10:57 P.20131013
+EN work/mux2_1 1516014697 \
+      FL C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain_process/mux2_1.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/mux2_1/dataflow 1516014698 \
+      FL C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain_process/mux2_1.vhd \
+      EN work/mux2_1 1516014697

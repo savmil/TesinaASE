@@ -1,0 +1,4 @@
+vhdl isim_temp "mux2_1.vhd"
+vhdl isim_temp "latch_d_en.vhd"
+vhdl isim_temp "boundary_scan_chain.vhd"
+vhdl isim_temp "boundary_scan_chain_testbench.vhd"

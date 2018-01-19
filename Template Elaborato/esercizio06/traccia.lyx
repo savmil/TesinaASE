@@ -78,62 +78,23 @@ Traccia
 \end_layout
 
 \begin_layout Standard
-Progettare una cella di un comparatore a maggioranza (magnitude comparator)
- ad 1 bit la cui tabella di verità è riportata in fig.
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Tabella-di-verità"
+Progettare una rete composta da una serie di N Flip Flop D abilitati ad
+ operare nei seguenti due modi:
+\end_layout
 
-\end_inset
+\begin_layout Enumerate
+Modalità normale: l’array si comporta come un registro di N posizioni;
+\end_layout
 
-.
- La sintesi è basata sull'uso di una porta NXOR come mostrato in fig.
+\begin_layout Enumerate
+Modalità controllo: i flip flop possono essere scritti e letti individualmente
+ configurandoli in cascata come uno shift register.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/traccia/tab-ver-bit-comparator.png
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Tabella-di-verità"
-
-\end_inset
-
-Tabella di verità magnitude comparator
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Descrivere il circuito in VHDL e simularlo nell'ambiente Xilinx ISE costruendo
- un ambiente di test per verificarne tutte le funzionalità e gli aspetti
- di tempificazione.
+Utilizzare una rete di controllo in grado di alimentare il primo stadio
+ con un valore e generare tanti colpi di clock quanto è la distanza del
+ primo stadio dalla cella da raggiungere.
 \end_layout
 
 \end_body

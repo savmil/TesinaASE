@@ -100,10 +100,16 @@ Questo dispositivo di GPIO è stato utilizzato per pilotare quattro led su
 \end_layout
 
 \begin_layout Standard
-Facendo riferimento al codice: 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "GPIO_code"
+Facendo riferimento al codice presente al seguente link: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+href{run:esercizio16/codice/gpio.vhd}{GPIO Code}
+\end_layout
 
 \end_inset
 

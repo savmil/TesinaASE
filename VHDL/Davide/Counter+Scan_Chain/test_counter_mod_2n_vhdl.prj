@@ -1,0 +1,5 @@
+vhdl work "C:\Users\Davide\Desktop\Boundary_Scan_Chain\mux2_1.vhd"
+vhdl work "C:\Users\Davide\Desktop\Boundary_Scan_Chain\latch_d_en.vhd"
+vhdl work "C:\Users\Davide\Desktop\Boundary_Scan_Chain\counter_mod_2n.vhd"
+vhdl work "C:\Users\Davide\Desktop\Boundary_Scan_Chain\boundary_scan_chain.vhd"
+vhdl work "C:\Users\Davide\Desktop\Boundary_Scan_Chain\test_counter_mod_2n.vhd"

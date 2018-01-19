@@ -1,0 +1,10 @@
+Command line:
+   test_counter_mod_2n_testbench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49522
+
+Mon Jan 15 01:16:41 2018
+
+
+ Elaboration Time: 0.0468 sec

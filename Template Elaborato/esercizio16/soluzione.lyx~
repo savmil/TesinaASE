@@ -238,7 +238,7 @@ reference "fig:GPIO_schematics"
 
 \end_inset
 
-decide se l'operazione da effettuare è di scrittura o di lettura in base
+ decide se l'operazione da effettuare è di scrittura o di lettura in base
  al valore del segnale di enable.
  Quando enable è alto, si effettua una scrittura e il segnale di input/output
  

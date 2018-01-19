@@ -1,0 +1,10 @@
+EN boundary_scan_chain NULL C:/Users/Davide/Desktop/Boundary_Scan_Chain/boundary_scan_chain.vhd sub00/vhpl06 1515974104
+AR test_counter_mod_2n structural C:/Users/Davide/Desktop/Boundary_Scan_Chain/test_counter_mod_2n.vhd sub00/vhpl09 1515974107
+AR boundary_scan_chain structural C:/Users/Davide/Desktop/Boundary_Scan_Chain/boundary_scan_chain.vhd sub00/vhpl07 1515974105
+EN test_counter_mod_2n NULL C:/Users/Davide/Desktop/Boundary_Scan_Chain/test_counter_mod_2n.vhd sub00/vhpl08 1515974106
+AR counter_mod_2n behavioral C:/Users/Davide/Desktop/Boundary_Scan_Chain/counter_mod_2n.vhd sub00/vhpl05 1515974103
+EN latch_d_en NULL C:/Users/Davide/Desktop/Boundary_Scan_Chain/latch_d_en.vhd sub00/vhpl02 1515974100
+AR mux2_1 dataflow C:/Users/Davide/Desktop/Boundary_Scan_Chain/mux2_1.vhd sub00/vhpl01 1515974099
+EN mux2_1 NULL C:/Users/Davide/Desktop/Boundary_Scan_Chain/mux2_1.vhd sub00/vhpl00 1515974098
+AR latch_d_en behavioral C:/Users/Davide/Desktop/Boundary_Scan_Chain/latch_d_en.vhd sub00/vhpl03 1515974101
+EN counter_mod_2n NULL C:/Users/Davide/Desktop/Boundary_Scan_Chain/counter_mod_2n.vhd sub00/vhpl04 1515974102

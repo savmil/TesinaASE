@@ -253,16 +253,12 @@ viene caricato con il valore del segnale di input, poi trasferito al segnale
  Questo comportamento è modellato tramite un costrutto dataflow 
 \shape italic
 with-select.
-\end_layout
+\shape default
 
-\begin_layout Standard
-\begin_inset VSpace bigskip
+\begin_inset Newline newline
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
+Il componente in questione è osservabile a questo link: 
 \begin_inset ERT
 status open
 
@@ -270,31 +266,9 @@ status open
 
 
 \backslash
-lstinputlisting [language=VHDL,caption={Definizione del componente Pad}]
- {esercizio16/codice/pad.vhd}
+href{run:esercizio16/codice/pad.vhd}{Pad}
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace bigskip
 \end_inset
 
 
@@ -311,31 +285,10 @@ for-generate,
 \shape default
 una serie di pad, il cui numero è settato tramite un generic.
  
-\begin_inset VSpace bigskip
+\begin_inset Newline newline
 \end_inset
 
-
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset label
-LatexCommand label
-name "GPIO_code"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
+Il componente in questione è osservabile a questo link: 
 \begin_inset ERT
 status open
 
@@ -343,8 +296,7 @@ status open
 
 
 \backslash
-lstinputlisting [language=VHDL,caption={Definizione del componente GPIO}]
- {esercizio16/codice/gpio.vhd}
+href{run:esercizio16/codice/gpio.vhd}{GPIO}
 \end_layout
 
 \end_inset

@@ -1,0 +1,10 @@
+Command line:
+   boundary_scan_chain_testbench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49498
+
+Mon Jan 15 00:32:56 2018
+
+
+ Elaboration Time: 0.0312 sec

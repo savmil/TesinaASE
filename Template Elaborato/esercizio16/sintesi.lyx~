@@ -94,7 +94,45 @@ Indicare la soluzione adottata per interfacciare il design realizzato con
 \end_layout
 
 \begin_layout Standard
+Questo dispositivo di GPIO è stato utilizzato per pilotare quattro led su
+ una board Basys.
+ 
+\end_layout
+
+\begin_layout Standard
 Facendo riferimento al codice: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+href{run:esercizio16/codice/gpio.vhd}{GPIO Code}
+\end_layout
+
+\end_inset
+
+, la sintesi di questo componente è stata realizzata facendo corrispondere
+ al segnale di input/output 
+\shape italic
+pads, 
+\shape default
+quattro 6-pin connectors; al segnale 
+\shape italic
+inputs
+\shape default
+ i quattro switch meno significativi, per determinare l'accensione o lo
+ spegnimento dei led; il segnale 
+\shape italic
+enable
+\shape default
+ è stato collegato ai quattro switch più significativi, per abilitare la
+ scrittura o la lettura dei valori di input e infine il segnale 
+\shape italic
+outputs 
+\shape default
+è stato collegato ai primi quattro degli otto led della board.
 \end_layout
 
 \end_body

@@ -1,0 +1,37 @@
+V3 19
+FL C:/Users/Davide/Desktop/Boundary_Scan_Chain/boundary_scan_chain.vhd 2018/01/14.21:15:48 P.20131013
+EN work/boundary_scan_chain 1515974104 \
+      FL C:/Users/Davide/Desktop/Boundary_Scan_Chain/boundary_scan_chain.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177
+AR work/boundary_scan_chain/Structural 1515974105 \
+      FL C:/Users/Davide/Desktop/Boundary_Scan_Chain/boundary_scan_chain.vhd \
+      EN work/boundary_scan_chain 1515974104 CP mux2_1 CP latch_d_en
+FL C:/Users/Davide/Desktop/Boundary_Scan_Chain/counter_mod_2n.vhd 2017/12/28.15:06:47 P.20131013
+EN work/counter_mod_2n 1515974102 \
+      FL C:/Users/Davide/Desktop/Boundary_Scan_Chain/counter_mod_2n.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/counter_mod_2n/Behavioral 1515974103 \
+      FL C:/Users/Davide/Desktop/Boundary_Scan_Chain/counter_mod_2n.vhd \
+      EN work/counter_mod_2n 1515974102
+FL C:/Users/Davide/Desktop/Boundary_Scan_Chain/latch_d_en.vhd 2018/01/04.15:15:21 P.20131013
+EN work/latch_d_en 1515974100 \
+      FL C:/Users/Davide/Desktop/Boundary_Scan_Chain/latch_d_en.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/latch_d_en/Behavioral 1515974101 \
+      FL C:/Users/Davide/Desktop/Boundary_Scan_Chain/latch_d_en.vhd \
+      EN work/latch_d_en 1515974100
+FL C:/Users/Davide/Desktop/Boundary_Scan_Chain/mux2_1.vhd 2017/12/28.15:06:48 P.20131013
+EN work/mux2_1 1515974098 \
+      FL C:/Users/Davide/Desktop/Boundary_Scan_Chain/mux2_1.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/mux2_1/dataflow 1515974099 \
+      FL C:/Users/Davide/Desktop/Boundary_Scan_Chain/mux2_1.vhd EN work/mux2_1 1515974098
+FL C:/Users/Davide/Desktop/Boundary_Scan_Chain/test_counter_mod_2n.vhd 2018/01/15.00:44:12 P.20131013
+EN work/test_counter_mod_2n 1515974106 \
+      FL C:/Users/Davide/Desktop/Boundary_Scan_Chain/test_counter_mod_2n.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/test_counter_mod_2n/Structural 1515974107 \
+      FL C:/Users/Davide/Desktop/Boundary_Scan_Chain/test_counter_mod_2n.vhd \
+      EN work/test_counter_mod_2n 1515974106 CP counter_mod_2n \
+      CP boundary_scan_chain

@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/Davide/Desktop/Boundary_Scan_Chain/test_counter_mod_2n.xst" -ofn "C:/Users/Davide/Desktop/Boundary_Scan_Chain/test_counter_mod_2n.syr" 
+xst -intstyle ise -ifn "C:/Users/Davide/Desktop/Boundary_Scan_Chain/test_counter_mod_2n.xst" -ofn "C:/Users/Davide/Desktop/Boundary_Scan_Chain/test_counter_mod_2n.syr" 

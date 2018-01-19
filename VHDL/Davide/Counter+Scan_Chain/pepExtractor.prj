@@ -1,0 +1,3 @@
+work	"boundary_scan_chain.vhd"
+work	"latch_d_en.vhd"
+work	"mux2_1.vhd"
