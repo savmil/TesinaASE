@@ -1,0 +1,17 @@
+V3 9
+FL C:/DAVIDE/ASE/Esercizi/ISE/GPIO/gpio.vhd 2017/12/28.19:37:34 P.49d
+FL C:/DAVIDE/ASE/Esercizi/ISE/GPIO/pad.vhd 2017/12/28.19:26:29 P.49d
+FL C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/GPIO/gpio.vhd 2017/12/29.13:55:46 P.49d
+EN work/gpio 1514577259 \
+      FL C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/GPIO/gpio.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/gpio/Structural 1514577260 \
+      FL C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/GPIO/gpio.vhd \
+      EN work/gpio 1514577259 CP pad
+FL C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/GPIO/pad.vhd 2017/12/29.13:55:46 P.49d
+EN work/pad 1514577257 \
+      FL C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/GPIO/pad.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/pad/Behavioral 1514577258 \
+      FL C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/GPIO/pad.vhd \
+      EN work/pad 1514577257

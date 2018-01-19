@@ -1,0 +1,29 @@
+Command line:
+   gpio_testbench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49294
+
+Thu Dec 28 20:16:46 2017
+
+
+ Elaboration Time: 0.0468 sec
+
+ Current Memory Usage: 666.644 Meg
+
+ Total Signals          : 24
+ Total Nets             : 16
+ Total Signal Drivers   : 10
+ Total Blocks           : 11
+ Total Primitive Blocks : 5
+ Total Processes        : 9
+ Total Traceable Variables  : 13
+ Total Scalar Nets and Variables : 381
+Total Line Count : 27
+
+ Total Simulation Time: 0.1092 sec
+
+ Current Memory Usage: 666.644 Meg
+
+Thu Dec 28 20:17:15 2017
+

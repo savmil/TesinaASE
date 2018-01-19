@@ -1,0 +1,100 @@
+(DELAYFILE
+  (SDFVERSION "3.0")
+  (DESIGN "d_latch_clocked")
+  (DATE "Mon Jan 08 12:47:28 2018")
+  (VENDOR "Xilinx")
+  (PROGRAM "Xilinx SDF Writer")
+  (VERSION "P.20131013")
+  (DIVIDER /)
+  (VOLTAGE 1.14)
+  (TEMPERATURE 85)
+  (TIMESCALE 1 ps)
+  (CELL (CELLTYPE "X_OBUF")
+    (INSTANCE q_OBUF)
+      (DELAY
+        (ABSOLUTE
+          (PORT I ( 599 ))
+          (IOPATH I O ( 2041 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_OBUF")
+    (INSTANCE notq_OBUF)
+      (DELAY
+        (ABSOLUTE
+          (PORT I ( 599 ))
+          (IOPATH I O ( 2041 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE clock_IBUF)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 87 )( 87 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE d_IBUF)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 87 )( 87 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE q_OBUF_XUSED)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 174 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE clock_IFF_IMUX)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 1044 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE d_IFF_IMUX)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 1044 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_LUT4")
+    (INSTANCE Inst_rs_latch_clocked_Inst_rs_latch_Inst_nor_gate1_f1)
+      (DELAY
+        (ABSOLUTE
+          (PORT ADR0 ( 407 ))
+          (PORT ADR1 ( 328 ))
+          (PORT ADR3 ( 285 ))
+          (IOPATH ADR0 O ( 486 )( 486 ))
+          (IOPATH ADR1 O ( 486 )( 486 ))
+          (IOPATH ADR2 O ( 486 )( 486 ))
+          (IOPATH ADR3 O ( 486 )( 486 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE q_OUTPUT_OFF_OMUX)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 998 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_INV")
+    (INSTANCE notq_OUTPUT_OFF_OMUX)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 998 ))
+        )
+      )
+  )
+)

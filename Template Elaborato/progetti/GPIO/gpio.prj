@@ -1,0 +1,2 @@
+vhdl work "pad.vhd"
+vhdl work "gpio.vhd"

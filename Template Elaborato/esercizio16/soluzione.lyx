@@ -174,7 +174,7 @@ centering
 
 	
 \backslash
-includegraphics[scale=0.8]{esercizio16/images/GPIO.pdf}
+includegraphics[scale=0.7]{esercizio16/images/GPIO.png}
 \end_layout
 
 \begin_layout Plain Layout
@@ -208,8 +208,25 @@ Codice
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
+Progetto ISE: 
+\begin_inset ERT
 status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+href{run:progetti/GPIO/GPIO.xise}{GPIO ISE}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
 
 \begin_layout Plain Layout
 Nell'eventialità in cui alcuni componenti sia stati utilizzati in altri
@@ -266,7 +283,7 @@ status open
 
 
 \backslash
-href{run:esercizio16/codice/pad.vhd}{Pad}
+href{run:progetti/GPIO/pad.vhd}{Pad}
 \end_layout
 
 \end_inset
@@ -296,7 +313,7 @@ status open
 
 
 \backslash
-href{run:esercizio16/codice/gpio.vhd}{GPIO}
+href{run:progetti/GPIO/gpio.vhd}{GPIO}
 \end_layout
 
 \end_inset

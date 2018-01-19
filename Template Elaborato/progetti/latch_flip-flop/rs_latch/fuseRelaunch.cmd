@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/latch_flip-flop/rs_latch/rs_latch_testbench_isim_beh.exe" -prj "C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/latch_flip-flop/rs_latch/rs_latch_testbench_beh.prj" "work.rs_latch_testbench" 

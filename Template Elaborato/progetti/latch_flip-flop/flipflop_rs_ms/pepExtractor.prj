@@ -1,0 +1,5 @@
+work	"and_gate.vhd"
+work	"flipflop_rs_ms.vhd"
+work	"nor_gate.vhd"
+work	"rs_latch.vhd"
+work	"rs_latch_clocked.vhd"

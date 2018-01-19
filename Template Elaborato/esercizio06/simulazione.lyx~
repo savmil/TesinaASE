@@ -93,7 +93,7 @@ status open
 
 
 \backslash
-href{esercizio06/codice/boundary_scan_chain_testbench.vhd}{Boundary
+href{run:esercizio06/codice/boundary_scan_chain_testbench.vhd}{Boundary
 \backslash
 _Scan
 \backslash
@@ -105,8 +105,12 @@ _Testbench}
 \end_inset
 
 .
- Come si nota è stata abilitata la modalità shift register ponendo ad 1
- sia 
+ 
+\begin_inset Newline newline
+\end_inset
+
+Come si nota è stata abilitata la modalità shift register ponendo ad 1 sia
+ 
 \shape italic
 en
 \shape default

@@ -1,0 +1,2 @@
+vhdl work "netgen/translate/rs_latch_clocked_translate.vhd"
+vhdl work "rs_latch_clocked_testbench.vhd"

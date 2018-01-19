@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/t_latch/t_latch_testbench_isim_par.exe" -prj "C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/t_latch/t_latch_testbench_par.prj" "work.t_latch_testbench" 

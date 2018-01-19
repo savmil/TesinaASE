@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/flipflop_rs_ms/flipflop_rs_ms_testbench_isim_map.exe" -prj "C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/flipflop_rs_ms/flipflop_rs_ms_testbench_map.prj" "work.flipflop_rs_ms_testbench" 

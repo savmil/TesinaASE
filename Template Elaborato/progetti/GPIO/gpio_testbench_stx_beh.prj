@@ -1,0 +1,3 @@
+vhdl isim_temp "pad.vhd"
+vhdl isim_temp "gpio.vhd"
+vhdl isim_temp "gpio_testbench.vhd"

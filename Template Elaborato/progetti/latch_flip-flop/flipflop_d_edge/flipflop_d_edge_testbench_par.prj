@@ -1,0 +1,2 @@
+vhdl work "netgen/par/flipflop_d_edge_timesim.vhd"
+vhdl work "flipflop_d_edge_testbench.vhd"

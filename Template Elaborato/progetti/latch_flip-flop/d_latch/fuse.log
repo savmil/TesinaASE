@@ -1,0 +1,30 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/d_latch/d_latch_clocked_testbench_isim_par.exe -prj C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/d_latch/d_latch_clocked_testbench_par.prj work.d_latch_clocked_testbench 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/d_latch/netgen/par/d_latch_clocked_timesim.vhd" into library work
+Parsing VHDL file "C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/d_latch/d_latch_clocked_testbench.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package textio
+Compiling package vital_timing
+Compiling package vcomponents
+Compiling package vital_primitives
+Compiling package vpackage
+Compiling architecture x_obuf_v of entity X_OBUF [\X_OBUF(true,true,"DONT_CARE",12...]
+Compiling architecture x_buf_v of entity X_BUF [\X_BUF(true,true,"UNPLACED",(0,0...]
+Compiling architecture x_lut4_v of entity X_LUT4 [\X_LUT4(true,true,"UNPLACED",(0,...]
+Compiling architecture x_inv_v of entity X_INV [\X_INV(true,true,"PAD52",(0,0),(...]
+Compiling architecture x_one_v of entity X_ONE [\X_ONE("UNPLACED")(1,8)\]
+Compiling architecture x_roc_v of entity X_ROC [\X_ROC("UNPLACED",100000,"*")(1,...]
+Compiling architecture x_toc_v of entity X_TOC [\X_TOC("UNPLACED",0,"*")(1,8,1,1...]
+Compiling architecture structure of entity d_latch_clocked [d_latch_clocked_default]
+Compiling architecture behavior of entity d_latch_clocked_testbench
+Time Resolution for simulation is 1ps.
+Compiled 32 VHDL Units
+Built simulation executable C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/d_latch/d_latch_clocked_testbench_isim_par.exe
+Fuse Memory Usage: 78172 KB
+Fuse CPU Usage: 795 ms

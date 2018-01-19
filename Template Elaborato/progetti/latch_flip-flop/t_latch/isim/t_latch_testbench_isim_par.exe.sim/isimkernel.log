@@ -1,0 +1,12 @@
+Command line:
+   t_latch_testbench_isim_par.exe
+     -simmode  gui
+     -sdfmax  /uut/=netgen/par/t_latch_timesim.sdf
+     -sdfroot  /uut
+     -simrunnum  1
+     -socket  49374
+
+Sun Jan 14 13:49:36 2018
+
+
+ Elaboration Time: 0.0468 sec

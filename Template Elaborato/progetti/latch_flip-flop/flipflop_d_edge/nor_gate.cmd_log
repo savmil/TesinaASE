@@ -1,0 +1,1 @@
+vhdtdtfi -prj flipflop_d_edge -o C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/flipflop_d_edge/nor_gate.vhi -module nor_gate -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work nor_gate.vhd 

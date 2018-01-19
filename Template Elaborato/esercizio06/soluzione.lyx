@@ -226,6 +226,24 @@ Codice
 \end_layout
 
 \begin_layout Standard
+Progetto ISE: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+href{run:progetti/Boundary_Scan_Chain/Boundary_Scan_Chain.xise}{Boundary
+ Scan Chain ISE}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status collapsed
 
@@ -292,7 +310,7 @@ q
 \begin_inset Newline newline
 \end_inset
 
-Il componente in questione è osservabile a questo link: 
+
 \begin_inset ERT
 status open
 
@@ -300,11 +318,8 @@ status open
 
 
 \backslash
-href{run:esercizio06/codice/boundary_scan_chain.vhd}{Boundary
-\backslash
-_Scan
-\backslash
-_Chain}
+lstinputlisting [language=VHDL,caption={Definizione della Boundary Scan
+ Chain}] {progetti/Boundary_Scan_Chain/boundary_scan_chain.vhd}
 \end_layout
 
 \end_inset

@@ -197,7 +197,8 @@ nor_gate
 \begin_inset Newline newline
 \end_inset
 
-Il componente in questione è osservabile a questo link: 
+Il progetto ISE del componente in questione è osservabile a questo link:
+ 
 \begin_inset ERT
 status open
 
@@ -205,9 +206,9 @@ status open
 
 
 \backslash
-href{run:esercizio03/codice/rs_latch.vhd}{RS
+href{run:progetti/latch_flip-flop/rs_latch/rs_latch.xise}{RS
 \backslash
-_Latch}
+_Latch ISE}
 \end_layout
 
 \end_inset
@@ -456,7 +457,9 @@ status open
 
 
 \backslash
-href{run:esercizio03/codice/rs_latch.vhd}{RS_Latch}
+href{run:progetti/latch_flip-flop/rs_latch_clocked/rs_latch.vhd}{RS
+\backslash
+_Latch}
 \end_layout
 
 \end_inset
@@ -467,7 +470,8 @@ href{run:esercizio03/codice/rs_latch.vhd}{RS_Latch}
 \begin_inset Newline newline
 \end_inset
 
-Il componente in questione è osservabile a questo link: 
+Il progetto ISE del componente in questione è osservabile a questo link:
+ 
 \begin_inset ERT
 status open
 
@@ -475,7 +479,11 @@ status open
 
 
 \backslash
-href{run:esercizio03/codice/rs_latch_clocked.vhd}{RS_Latch_Clocked}
+href{run:progetti/latch_flip-flop/rs_latch_clocked/rs_latch_clocked.xise}{RS
+\backslash
+_Latch
+\backslash
+_Clocked ISE}
 \end_layout
 
 \end_inset
@@ -700,7 +708,11 @@ status open
 
 
 \backslash
-href{run:esercizio03/codice/rs_latch_clocked.vhd}{RS_Latch_Clocked}
+href{run:progetti/latch_flip-flop/d_latch/rs_latch_clocked.vhd}{RS
+\backslash
+_Latch
+\backslash
+_Clocked}
 \end_layout
 
 \end_inset
@@ -715,7 +727,8 @@ notd
 \begin_inset Newline newline
 \end_inset
 
-Il componente in questione è osservabile a questo link: 
+Il progetto ISE del componente in questione è osservabile a questo link:
+ 
 \begin_inset ERT
 status open
 
@@ -723,7 +736,11 @@ status open
 
 
 \backslash
-href{run:esercizio03/codice/d_latch_clocked.vhd}{D_latch_Clocked}
+href{run:progetti/latch_flip-flop/d_latch/d_latch.xise}{D
+\backslash
+_latch
+\backslash
+_Clocked ISE}
 \end_layout
 
 \end_inset
@@ -926,7 +943,9 @@ status open
 
 
 \backslash
-href{run:esercizio03/codice/rs_latch.vhd}{RS_Latch}
+href{run:progetti/latch_flip-flop/t_latch/rs_latch.vhd}{RS
+\backslash
+_Latch}
 \end_layout
 
 \end_inset
@@ -969,7 +988,8 @@ retro_notq_delayed
 \begin_inset Newline newline
 \end_inset
 
-Il componente in questione è osservabile a questo link: 
+Il progetto ISE del componente in questione è osservabile a questo link:
+ 
 \begin_inset ERT
 status open
 
@@ -977,7 +997,9 @@ status open
 
 
 \backslash
-href{run:esercizio03/codice/t_latch.vhd}{T_latch}
+href{run:progetti/latch_flip-flop/t_latch/t_latch.xise}{T
+\backslash
+_Latch ISE}
 \end_layout
 
 \end_inset
@@ -1102,7 +1124,7 @@ Codice
 \end_layout
 
 \begin_layout Subsubsection
-JK_Latch
+JK_Latch_Clocked
 \end_layout
 
 \begin_layout Standard
@@ -1115,7 +1137,9 @@ status open
 
 
 \backslash
-href{run:esercizio03/codice/rs_latch.vhd}{RS_Latch}
+href{run:progetti/latch_flip-flop/jk_latch/rs_latch.vhd}{RS
+\backslash
+_Latch}
 \end_layout
 
 \end_inset
@@ -1162,7 +1186,8 @@ in_latch_s
 \begin_inset Newline newline
 \end_inset
 
-Il componente in questione è osservabile a questo link: 
+Il progetto ISE del componente in questione è osservabile a questo link:
+ 
 \begin_inset ERT
 status open
 
@@ -1170,7 +1195,9 @@ status open
 
 
 \backslash
-href{run:esercizio03/codice/jk_latch.vhd}{JK_latch}
+href{run:progetti/latch_flip-flop/jk_latch/jk_latch_clocked.xise}{JK
+\backslash
+_Latch ISE}
 \end_layout
 
 \end_inset
@@ -1521,7 +1548,8 @@ Il Flip-Flop D Edge Triggered è stato realizzato con un'architettura Structural
 \begin_inset Newline newline
 \end_inset
 
-Il componente in questione è osservabile a questo link: 
+Il progetto ISE del componente in questione è osservabile a questo link:
+ 
 \begin_inset ERT
 status open
 
@@ -1529,7 +1557,11 @@ status open
 
 
 \backslash
-href{run:esercizio03/codice/flipflop_d_edge.vhd}{FlipFlop_D_Edge}
+href{run:progetti/latch_flip-flop/flipflop_d_edge/flipflop_d_edge.xise}{FlipFlop
+\backslash
+_D
+\backslash
+_Edge ISE}
 \end_layout
 
 \end_inset
@@ -1733,7 +1765,11 @@ status open
 
 
 \backslash
-href{run:esercizio03/codice/rs_latch_clocked.vhd}{RS_Latch_Clocked}
+href{run:progetti/latch_flip-flop/flipflop_rs_ms/rs_latch_clocked.vhd}{RS
+\backslash
+_Latch
+\backslash
+_Clocked}
 \end_layout
 
 \end_inset
@@ -1760,7 +1796,11 @@ status open
 
 
 \backslash
-href{run:esercizio03/codice/flipflop_rs_ms.vhd}{FlipFlop_RS_MS}
+href{run:progetti/latch_flip-flop/flipflop_rs_ms/flipflop_rs_ms.xise}{FlipFlop
+\backslash
+_RS
+\backslash
+_MS ISE}
 \end_layout
 
 \end_inset

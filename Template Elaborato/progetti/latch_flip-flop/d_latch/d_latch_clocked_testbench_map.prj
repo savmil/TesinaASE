@@ -1,0 +1,2 @@
+vhdl work "netgen/map/d_latch_clocked_map.vhd"
+vhdl work "d_latch_clocked_testbench.vhd"

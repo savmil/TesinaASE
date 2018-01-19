@@ -1,0 +1,10 @@
+Command line:
+   d_latch_clocked_testbench_isim_translate.exe
+     -simmode  gui
+     -simrunnum  1
+     -socket  49217
+
+Mon Jan 08 13:01:16 2018
+
+
+ Elaboration Time: 0.046801 sec

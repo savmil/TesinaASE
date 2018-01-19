@@ -1,0 +1,4 @@
+AR flipflop_d_edge structural C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/flipflop_d_edge/flipflop_d_edge.vhd sub00/vhpl03 1515511869
+AR nor_gate dataflow C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/flipflop_d_edge/nor_gate.vhd sub00/vhpl01 1515511867
+EN flipflop_d_edge NULL C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/flipflop_d_edge/flipflop_d_edge.vhd sub00/vhpl02 1515511868
+EN nor_gate NULL C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/flipflop_d_edge/nor_gate.vhd sub00/vhpl00 1515511866
