@@ -112,7 +112,7 @@ centering
 
 
 \backslash
-includegraphics[scale=0.7]{esercizio10/images/carry_save_adder_testbench.png}
+includegraphics[scale=0.55]{esercizio10/images/carry_save_adder_testbench.png}
 \end_layout
 
 \begin_layout Plain Layout

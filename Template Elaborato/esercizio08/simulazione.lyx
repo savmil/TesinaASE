@@ -112,7 +112,7 @@ centering
 
 
 \backslash
-includegraphics[scale=0.7]{esercizio08/images/ripple_carry_adder_testbench.png}
+includegraphics[scale=0.5]{esercizio08/images/ripple_carry_adder_testbench.png}
 \end_layout
 
 \begin_layout Plain Layout

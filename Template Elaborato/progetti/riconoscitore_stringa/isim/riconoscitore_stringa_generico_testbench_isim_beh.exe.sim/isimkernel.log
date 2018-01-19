@@ -1,0 +1,29 @@
+Command line:
+   riconoscitore_stringa_generico_testbench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50497
+
+Tue Jan 16 12:14:14 2018
+
+
+ Elaboration Time: 0.03 sec
+
+ Current Memory Usage: 199.922 Meg
+
+ Total Signals          : 131
+ Total Nets             : 78
+ Total Signal Drivers   : 38
+ Total Blocks           : 43
+ Total Primitive Blocks : 24
+ Total Processes        : 29
+ Total Traceable Variables  : 66
+ Total Scalar Nets and Variables : 724
+Total Line Count : 104
+
+ Total Simulation Time: 0.05 sec
+
+ Current Memory Usage: 208.314 Meg
+
+Tue Jan 16 12:36:11 2018
+

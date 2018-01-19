@@ -144,17 +144,6 @@ Descrivere la soluzione relizzata per mezzo di schematici e riportare il
 
 \end_layout
 
-\begin_layout Standard
-Utilizzando il wizard di xilinx per la creazione degli ip core, possiamo
- chiedere di creare un DCM che con un a frequenza in input di 50 MHz ci
- restituisca in uscita un segnale periodico con frequenza di 5 MHz, la frequenza
- desiderata è molto alta rispetto a quella che basterebbe per visualizzare
- le cifre sul display, infatti si notano alcuni sfarfalii, si potrebbe risolvere
- utilizzando una struttura a doppio DCM, per far si che il numero di possibili
- frequenze a disposizioni aumentino, ci accontentiamo della soluzione ad
- un singolo DCM essendo le cifre visibili sul display.
-\end_layout
-
 \begin_layout Subsection
 Schematici
 \end_layout
@@ -181,7 +170,7 @@ centering
 
 	
 \backslash
-includegraphics[scale=0.7]{esercizio05/images/DCM_display.png}
+includegraphics[scale=0.6]{esercizio05/images/DCM_display.png}
 \end_layout
 
 \begin_layout Plain Layout
@@ -208,6 +197,17 @@ end{figure}
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Utilizzando il wizard di xilinx per la creazione degli ip core, possiamo
+ chiedere di creare un DCM che con un a frequenza in input di 50 MHz ci
+ restituisca in uscita un segnale periodico con frequenza di 5 MHz, la frequenza
+ desiderata è molto alta rispetto a quella che basterebbe per visualizzare
+ le cifre sul display, infatti si notano alcuni sfarfalii, si potrebbe risolvere
+ utilizzando una struttura a doppio DCM, per far si che il numero di possibili
+ frequenze a disposizioni aumentino, ci accontentiamo della soluzione ad
+ un singolo DCM essendo le cifre visibili sul display.
 \end_layout
 
 \begin_layout Subsection

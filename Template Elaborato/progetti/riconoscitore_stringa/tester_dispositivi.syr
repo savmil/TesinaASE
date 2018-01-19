@@ -1,0 +1,666 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Reading design: tester_dispositivi.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "tester_dispositivi.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "tester_dispositivi"
+Output Format                      : NGC
+Target Device                      : xc3s100e-5-tq144
+
+---- Source Options
+Top Module Name                    : tester_dispositivi
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Speed1
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+Setting FSM Encoding Algorithm to : Speed1
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/mux2_1.vhd" in Library work.
+Architecture dataflow of Entity mux2_1 is up to date.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/edge_triggered_d_n.vhd" in Library work.
+Architecture behavioral of Entity edge_triggered_d_n is up to date.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/boundary_scan_chain.vhd" in Library work.
+Architecture structural of Entity boundary_scan_chain is up to date.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/riconoscitore_stringa.vhd" in Library work.
+Architecture behavioral of Entity riconoscitore_stringa is up to date.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/latch_d_en.vhd" in Library work.
+Architecture behavioral of Entity latch_d_en is up to date.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/contatore_modulo_4.vhd" in Library work.
+Architecture behavioral of Entity contatore_modulo_2n is up to date.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/debounce.vhd" in Library work.
+Architecture logic of Entity debounce is up to date.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/riconoscitore_stringa_generico.vhd" in Library work.
+Entity <riconoscitore_stringa_generico> compiled.
+Entity <riconoscitore_stringa_generico> (Architecture <behavioral>) compiled.
+Compiling vhdl file "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/tester_dispositivi.vhd" in Library work.
+Architecture behavioral of Entity tester_dispositivi is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <tester_dispositivi> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <debounce> in library <work> (architecture <logic>) with generics.
+	counter_size = 19
+
+Analyzing hierarchy for entity <contatore_modulo_2n> in library <work> (architecture <behavioral>) with generics.
+	width = 2
+
+Analyzing hierarchy for entity <latch_d_en> in library <work> (architecture <behavioral>) with generics.
+	width = 8
+
+Analyzing hierarchy for entity <riconoscitore_stringa_generico> in library <work> (architecture <behavioral>) with generics.
+	width = 8
+
+Analyzing hierarchy for entity <boundary_scan_chain> in library <work> (architecture <structural>) with generics.
+	n = 8
+
+Analyzing hierarchy for entity <riconoscitore_stringa> in library <work> (architecture <behavioral>) with generics.
+	width = 8
+
+Analyzing hierarchy for entity <latch_d_en> in library <work> (architecture <behavioral>) with generics.
+	width = 1
+
+Analyzing hierarchy for entity <latch_d_en> in library <work> (architecture <behavioral>) with generics.
+	width = 1
+
+Analyzing hierarchy for entity <contatore_modulo_2n> in library <work> (architecture <behavioral>) with generics.
+	width = 4
+
+Analyzing hierarchy for entity <mux2_1> in library <work> (architecture <dataflow>).
+
+Analyzing hierarchy for entity <edge_triggered_d_n> in library <work> (architecture <behavioral>) with generics.
+	width = 1
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <tester_dispositivi> in library <work> (Architecture <behavioral>).
+INFO:Xst:1561 - "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/tester_dispositivi.vhd" line 101: Mux is complete : default of case is discarded
+WARNING:Xst:753 - "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/tester_dispositivi.vhd" line 109: Unconnected output port 'hit' of component 'contatore_modulo_2n'.
+WARNING:Xst:753 - "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/tester_dispositivi.vhd" line 112: Unconnected output port 'output' of component 'contatore_modulo_2n'.
+Entity <tester_dispositivi> analyzed. Unit <tester_dispositivi> generated.
+
+Analyzing generic Entity <debounce> in library <work> (Architecture <logic>).
+	counter_size = 19
+Entity <debounce> analyzed. Unit <debounce> generated.
+
+Analyzing generic Entity <contatore_modulo_2n.1> in library <work> (Architecture <behavioral>).
+	width = 2
+Entity <contatore_modulo_2n.1> analyzed. Unit <contatore_modulo_2n.1> generated.
+
+Analyzing generic Entity <latch_d_en.1> in library <work> (Architecture <behavioral>).
+	width = 8
+Entity <latch_d_en.1> analyzed. Unit <latch_d_en.1> generated.
+
+Analyzing generic Entity <riconoscitore_stringa_generico> in library <work> (Architecture <behavioral>).
+	width = 8
+WARNING:Xst:753 - "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/riconoscitore_stringa_generico.vhd" line 96: Unconnected output port 'dout' of component 'boundary_scan_chain'.
+WARNING:Xst:753 - "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/riconoscitore_stringa_generico.vhd" line 102: Unconnected output port 'hit' of component 'contatore_modulo_2n'.
+Entity <riconoscitore_stringa_generico> analyzed. Unit <riconoscitore_stringa_generico> generated.
+
+Analyzing generic Entity <boundary_scan_chain> in library <work> (Architecture <structural>).
+	n = 8
+Entity <boundary_scan_chain> analyzed. Unit <boundary_scan_chain> generated.
+
+Analyzing Entity <mux2_1> in library <work> (Architecture <dataflow>).
+Entity <mux2_1> analyzed. Unit <mux2_1> generated.
+
+Analyzing generic Entity <edge_triggered_d_n> in library <work> (Architecture <behavioral>).
+	width = 1
+Entity <edge_triggered_d_n> analyzed. Unit <edge_triggered_d_n> generated.
+
+Analyzing generic Entity <riconoscitore_stringa> in library <work> (Architecture <behavioral>).
+	width = 8
+WARNING:Xst:790 - "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/riconoscitore_stringa.vhd" line 65: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/riconoscitore_stringa.vhd" line 67: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/riconoscitore_stringa.vhd" line 104: Index value(s) does not match array range, simulation mismatch.
+Entity <riconoscitore_stringa> analyzed. Unit <riconoscitore_stringa> generated.
+
+Analyzing generic Entity <latch_d_en.2> in library <work> (Architecture <behavioral>).
+	width = 1
+Entity <latch_d_en.2> analyzed. Unit <latch_d_en.2> generated.
+
+Analyzing generic Entity <contatore_modulo_2n.2> in library <work> (Architecture <behavioral>).
+	width = 4
+Entity <contatore_modulo_2n.2> analyzed. Unit <contatore_modulo_2n.2> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <debounce>.
+    Related source file is "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/debounce.vhd".
+    Found 1-bit register for signal <result>.
+    Found 20-bit up counter for signal <counter_out>.
+    Found 1-bit xor2 for signal <counter_set>.
+    Found 2-bit register for signal <flipflops>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   3 D-type flip-flop(s).
+Unit <debounce> synthesized.
+
+
+Synthesizing Unit <contatore_modulo_2n_1>.
+    Related source file is "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/contatore_modulo_4.vhd".
+    Found 1-bit register for signal <hit>.
+    Found 2-bit up counter for signal <count>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <contatore_modulo_2n_1> synthesized.
+
+
+Synthesizing Unit <latch_d_en_1>.
+    Related source file is "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/latch_d_en.vhd".
+    Found 8-bit register for signal <q>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <latch_d_en_1> synthesized.
+
+
+Synthesizing Unit <riconoscitore_stringa>.
+    Related source file is "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/riconoscitore_stringa.vhd".
+WARNING:Xst:1780 - Signal <n> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_0> for signal <current_state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 9                                              |
+    | Inputs             | 4                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | reset                     (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | speed1                                         |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit xor2 for signal <bad$xor0000> created at line 104.
+    Found 1-bit 8-to-1 multiplexer for signal <data$mux0000> created at line 65.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Multiplexer(s).
+Unit <riconoscitore_stringa> synthesized.
+
+
+Synthesizing Unit <latch_d_en_2>.
+    Related source file is "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/latch_d_en.vhd".
+    Found 1-bit register for signal <q<0>>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <latch_d_en_2> synthesized.
+
+
+Synthesizing Unit <contatore_modulo_2n_2>.
+    Related source file is "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/contatore_modulo_4.vhd".
+    Found 1-bit register for signal <hit>.
+    Found 4-bit up counter for signal <count>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <contatore_modulo_2n_2> synthesized.
+
+
+Synthesizing Unit <mux2_1>.
+    Related source file is "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/mux2_1.vhd".
+Unit <mux2_1> synthesized.
+
+
+Synthesizing Unit <edge_triggered_d_n>.
+    Related source file is "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/edge_triggered_d_n.vhd".
+    Found 1-bit register for signal <q<0>>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <edge_triggered_d_n> synthesized.
+
+
+Synthesizing Unit <boundary_scan_chain>.
+    Related source file is "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/boundary_scan_chain.vhd".
+WARNING:Xst:1780 - Signal <q<7>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <boundary_scan_chain> synthesized.
+
+
+Synthesizing Unit <riconoscitore_stringa_generico>.
+    Related source file is "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/riconoscitore_stringa_generico.vhd".
+Unit <riconoscitore_stringa_generico> synthesized.
+
+
+Synthesizing Unit <tester_dispositivi>.
+    Related source file is "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/tester_dispositivi.vhd".
+WARNING:Xst:647 - Input <button<2:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1306 - Output <led<5:2>> is never assigned.
+    Register <en_ric> equivalent to <en_c1> has been removed
+WARNING:Xst:737 - Found 1-bit latch for signal <en_c1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 4-bit register for signal <scelta>.
+    Found 1-of-4 decoder for signal <scelta$mux0002> created at line 97.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+	inferred   1 Decoder(s).
+Unit <tester_dispositivi> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 4
+ 2-bit up counter                                      : 2
+ 20-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 19
+ 1-bit register                                        : 16
+ 4-bit register                                        : 1
+ 8-bit register                                        : 2
+# Latches                                              : 1
+ 1-bit latch                                           : 1
+# Multiplexers                                         : 1
+ 1-bit 8-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+# Xors                                                 : 2
+ 1-bit xor2                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Optimizing FSM <ric_stringa_generico/r_s/current_state/FSM> on signal <current_state[1:4]> with speed1 encoding.
+----------------------------
+ State          | Encoding
+----------------------------
+ idle           | 1000
+ riconosci_bit  | 0001
+ shifting       | 0010
+ carica_stringa | 0100
+----------------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Counters                                             : 4
+ 2-bit up counter                                      : 2
+ 20-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 36
+ Flip-Flops                                            : 36
+# Latches                                              : 1
+ 1-bit latch                                           : 1
+# Multiplexers                                         : 1
+ 1-bit 8-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+# Xors                                                 : 2
+ 1-bit xor2                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <selettore/hit> of sequential type is unconnected in block <tester_dispositivi>.
+WARNING:Xst:2677 - Node <ric_stringa_generico/counter/hit> of sequential type is unconnected in block <tester_dispositivi>.
+
+Optimizing unit <tester_dispositivi> ...
+
+Optimizing unit <riconoscitore_stringa> ...
+
+Optimizing unit <boundary_scan_chain> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block tester_dispositivi, actual ratio is 4.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 66
+ Flip-Flops                                            : 66
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : tester_dispositivi.ngr
+Top Level Output File Name         : tester_dispositivi
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 21
+
+Cell Usage :
+# BELS                             : 120
+#      GND                         : 1
+#      INV                         : 7
+#      LUT1                        : 19
+#      LUT2                        : 13
+#      LUT3                        : 17
+#      LUT3_D                      : 1
+#      LUT3_L                      : 1
+#      LUT4                        : 15
+#      LUT4_D                      : 1
+#      LUT4_L                      : 1
+#      MUXCY                       : 19
+#      MUXF5                       : 3
+#      MUXF6                       : 1
+#      VCC                         : 1
+#      XORCY                       : 20
+# FlipFlops/Latches                : 67
+#      FD                          : 2
+#      FDC                         : 11
+#      FDCE                        : 27
+#      FDE                         : 1
+#      FDP                         : 1
+#      FDR                         : 4
+#      FDRE                        : 20
+#      LDPE                        : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 14
+#      IBUF                        : 10
+#      OBUF                        : 4
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100etq144-5 
+
+ Number of Slices:                       44  out of    960     4%  
+ Number of Slice Flip Flops:             67  out of   1920     3%  
+ Number of 4 input LUTs:                 75  out of   1920     3%  
+ Number of IOs:                          21
+ Number of bonded IOBs:                  15  out of    108    13%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clock                              | BUFGP                  | 64    |
+counter/hit                        | NONE(en_c1)            | 1     |
+deb/result                         | NONE(selettore/count_0)| 2     |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------------+-------------------------------------+-------+
+Control Signal                               | Buffer(FF name)                     | Load  |
+---------------------------------------------+-------------------------------------+-------+
+button<3>                                    | IBUF                                | 18    |
+scelta_0(scelta_0:Q)                         | NONE(ric_stringa_generico/bad_l/q_0)| 18    |
+counter/reset_inv(counter/reset_inv1_INV_0:O)| NONE(counter/count_0)               | 3     |
+en_c1_and0000(en_c1_and00001:O)              | NONE(en_c1)                         | 1     |
+---------------------------------------------+-------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 5.442ns (Maximum Frequency: 183.766MHz)
+   Minimum input arrival time before clock: 1.754ns
+   Maximum output required time after clock: 4.285ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 5.442ns (frequency: 183.766MHz)
+  Total number of paths / destination ports: 746 / 110
+-------------------------------------------------------------------------
+Delay:               5.442ns (Levels of Logic = 5)
+  Source:            ric_stringa_generico/counter/count_0 (FF)
+  Destination:       ric_stringa_generico/input/chain_gen[0].sc_out.inst_edge_triggered/q_0 (FF)
+  Source Clock:      clock rising
+  Destination Clock: clock rising
+
+  Data Path: ric_stringa_generico/counter/count_0 to ric_stringa_generico/input/chain_gen[0].sc_out.inst_edge_triggered/q_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             9   0.514   0.727  ric_stringa_generico/counter/count_0 (ric_stringa_generico/counter/count_0)
+     LUT3:I2->O            1   0.612   0.000  ric_stringa_generico/r_s/Mmux_data_mux0000_4 (ric_stringa_generico/r_s/Mmux_data_mux0000_4)
+     MUXF5:I1->O           1   0.278   0.000  ric_stringa_generico/r_s/Mmux_data_mux0000_3_f5 (ric_stringa_generico/r_s/Mmux_data_mux0000_3_f5)
+     MUXF6:I1->O           6   0.451   0.572  ric_stringa_generico/r_s/Mmux_data_mux0000_2_f6 (ric_stringa_generico/r_s/data_mux0000)
+     LUT4:I3->O           11   0.612   0.796  ric_stringa_generico/r_s/en_c1 (ric_stringa_generico/en_c)
+     LUT4:I3->O            1   0.612   0.000  ric_stringa_generico/input/chain_gen[6].sc_ch.inst_mux2_1/X (ric_stringa_generico/input/x<6>)
+     FDC:D                     0.268          ric_stringa_generico/input/chain_gen[6].sc_ch.inst_edge_triggered/q_0
+    ----------------------------------------
+    Total                      5.442ns (3.347ns logic, 2.095ns route)
+                                       (61.5% logic, 38.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'deb/result'
+  Clock period: 2.353ns (frequency: 425.026MHz)
+  Total number of paths / destination ports: 3 / 2
+-------------------------------------------------------------------------
+Delay:               2.353ns (Levels of Logic = 1)
+  Source:            selettore/count_0 (FF)
+  Destination:       selettore/count_0 (FF)
+  Source Clock:      deb/result rising
+  Destination Clock: deb/result rising
+
+  Data Path: selettore/count_0 to selettore/count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             7   0.514   0.602  selettore/count_0 (selettore/count_0)
+     INV:I->O              1   0.612   0.357  selettore/Mcount_count_xor<0>11_INV_0 (Result<0>2)
+     FDCE:D                    0.268          selettore/count_0
+    ----------------------------------------
+    Total                      2.353ns (1.394ns logic, 0.959ns route)
+                                       (59.2% logic, 40.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
+  Total number of paths / destination ports: 17 / 17
+-------------------------------------------------------------------------
+Offset:              1.754ns (Levels of Logic = 1)
+  Source:            in_byte<7> (PAD)
+  Destination:       stinga/q_7 (FF)
+  Destination Clock: clock rising
+
+  Data Path: in_byte<7> to stinga/q_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.106   0.380  in_byte_7_IBUF (in_byte_7_IBUF)
+     FDCE:D                    0.268          stinga/q_7
+    ----------------------------------------
+    Total                      1.754ns (1.374ns logic, 0.380ns route)
+                                       (78.3% logic, 21.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'deb/result'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              4.285ns (Levels of Logic = 1)
+  Source:            selettore/count_0 (FF)
+  Destination:       led<6> (PAD)
+  Source Clock:      deb/result rising
+
+  Data Path: selettore/count_0 to led<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             7   0.514   0.602  selettore/count_0 (selettore/count_0)
+     OBUF:I->O                 3.169          led_6_OBUF (led<6>)
+    ----------------------------------------
+    Total                      4.285ns (3.683ns logic, 0.602ns route)
+                                       (86.0% logic, 14.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              4.040ns (Levels of Logic = 1)
+  Source:            ric_stringa_generico/bad_l/q_0 (FF)
+  Destination:       led<1> (PAD)
+  Source Clock:      clock rising
+
+  Data Path: ric_stringa_generico/bad_l/q_0 to led<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             1   0.514   0.357  ric_stringa_generico/bad_l/q_0 (ric_stringa_generico/bad_l/q_0)
+     OBUF:I->O                 3.169          led_1_OBUF (led<1>)
+    ----------------------------------------
+    Total                      4.040ns (3.683ns logic, 0.357ns route)
+                                       (91.2% logic, 8.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 3.58 secs
+ 
+--> 
+
+
+Total memory usage is 513944 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   14 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

@@ -366,7 +366,11 @@ dots
 
 
 \emph default
-), ma notiamo una commutazione al variare di values sulla prima cifra (
+), ma notiamo una commutazione al variare di 
+\emph on
+values
+\emph default
+ sulla prima cifra (
 \emph on
 x
 \begin_inset Quotes erd

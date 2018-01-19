@@ -463,7 +463,7 @@ status open
 
 
 \backslash
-ref{Dati_ripple_carry}
+ref{Dati ripple carry}
 \end_layout
 
 \end_inset
@@ -487,7 +487,7 @@ status open
 
 \backslash
 href{run:progetti/Carry_Look_A-head_Adder_with_test/Carry_Look_A-head_Adder.xise}
-{Carry_Look_A_head_Adder_ISE}
+{Carry Look A Head ISE}
 \end_layout
 
 \end_inset

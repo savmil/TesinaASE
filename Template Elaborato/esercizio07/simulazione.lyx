@@ -112,7 +112,7 @@ centering
 
 	
 \backslash
-includegraphics[scale=0.8]{esercizio07/images/correct.png}
+includegraphics[scale=0.5]{esercizio07/images/correct.png}
 \end_layout
 
 \begin_layout Plain Layout
@@ -156,7 +156,7 @@ centering
 
 	
 \backslash
-includegraphics[scale=0.8]{esercizio07/images/bad.png}
+includegraphics[scale=0.5]{esercizio07/images/bad.png}
 \end_layout
 
 \begin_layout Plain Layout

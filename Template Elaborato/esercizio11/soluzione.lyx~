@@ -149,6 +149,55 @@ Schematici
 \end_layout
 
 \begin_layout Standard
+Il sommattore essenzialmente è costituito da un numero di carry select cell,
+ di dimensione identiche (è possibile scegliere la dimensione della cella)
+ che calcolano le somma parziali e propagano i riporti alle celle successive,
+ il numero di celle da istanziare è data dalla sua dimensione e dal numero
+ di bit su cui viene effettuata la somma, una cella è costituita da due
+ Ripple Carry Adder uno avente carry in ingresso pari ad uno ed un altro
+ pari a zero, di seguito si determinano valori caratteristici del sommatore
+ considerando una carry select cell di dimensione pari a quattro bit.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[H]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[scale=0.7]{esercizio11/images/carry_select.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+caption{Carry Select Adder}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
 \begin_inset Float table
 wide false
 sideways false
@@ -233,7 +282,7 @@ Tempo di calcolo
 \begin_inset Text
 
 \begin_layout Plain Layout
-4
+5
 \end_layout
 
 \end_inset
@@ -242,7 +291,7 @@ Tempo di calcolo
 \begin_inset Text
 
 \begin_layout Plain Layout
-7
+10
 \end_layout
 
 \end_inset
@@ -251,7 +300,7 @@ Tempo di calcolo
 \begin_inset Text
 
 \begin_layout Plain Layout
-6,966 ps
+6,853 ps
 \end_layout
 
 \end_inset
@@ -271,7 +320,7 @@ Tempo di calcolo
 \begin_inset Text
 
 \begin_layout Plain Layout
-10
+12
 \end_layout
 
 \end_inset
@@ -280,7 +329,7 @@ Tempo di calcolo
 \begin_inset Text
 
 \begin_layout Plain Layout
-17
+21
 \end_layout
 
 \end_inset
@@ -289,7 +338,7 @@ Tempo di calcolo
 \begin_inset Text
 
 \begin_layout Plain Layout
-7,444 ps
+7,467 ps
 \end_layout
 
 \end_inset
@@ -309,7 +358,7 @@ Tempo di calcolo
 \begin_inset Text
 
 \begin_layout Plain Layout
-19
+24
 \end_layout
 
 \end_inset
@@ -318,7 +367,7 @@ Tempo di calcolo
 \begin_inset Text
 
 \begin_layout Plain Layout
-33
+43
 \end_layout
 
 \end_inset
@@ -327,7 +376,7 @@ Tempo di calcolo
 \begin_inset Text
 
 \begin_layout Plain Layout
-8,918 ps
+8,521 ps
 \end_layout
 
 \end_inset
@@ -356,7 +405,7 @@ Tempo di calcolo
 \begin_inset Text
 
 \begin_layout Plain Layout
-64
+87
 \end_layout
 
 \end_inset
@@ -365,7 +414,7 @@ Tempo di calcolo
 \begin_inset Text
 
 \begin_layout Plain Layout
-8,918 ps
+9,984 ps
 \end_layout
 
 \end_inset
@@ -388,8 +437,52 @@ Tempo di calcolo
 
 \end_layout
 
+\begin_layout Standard
+Confrontando i risultati con il sommatore Ripple Carry Adder, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{Dati ripple carry}
+\end_layout
+
+\end_inset
+
+ il numero di slice occupate è pressochè lo stesso tranne nel primo caso,
+ invece il numero delle LUT è maggiore, dovute alle interconnessioni che
+ permettono ai Ripple Carry Adder di avere carry in ingresso pari ad uno
+ o zero e a quelle per collegare i vari carry in uscita.
+ I tempi di calolo sono migliori in tutti i casi tranne che nell 'ultimo
+ che sono pressoché gli stessi, l' uguaglianza del tempo di calcolo nell'
+ ultimo caso con quello del Ripple Carry Adder è dovuto che il carry select
+ avendo una cella di dimensione quattro all' aumentare del numero di operandi,
+ aumentano il numero di celle istanziate il tempo di attesa dell l' ultima
+ cella diventa sempre maggiore e tende ad essere comparabile con quello
+ di un Ripple Carry Adder.
+\end_layout
+
 \begin_layout Subsection
 Codice
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+href{run:progetti/carry_select_adder/carry_select_adder.xise}{Carry Select
+ Adder ISE}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -409,10 +502,6 @@ Segue un esempio di inclusione di codice
 \end_inset
 
 
-\end_layout
-
-\begin_layout Subsubsection
-Bit String Comparator
 \end_layout
 
 \end_body

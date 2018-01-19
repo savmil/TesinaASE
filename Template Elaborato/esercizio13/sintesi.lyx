@@ -134,7 +134,20 @@ ref{tester dispositivi seriali}
 \end_inset
 
 , dove l' accensione del led zero indica la fine dell' operazione ed il
- led uno non viene utilizzato.
+ led uno non viene utilizzato e viene utilizzato il display come in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{Sintesi ripple carry}
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \end_body

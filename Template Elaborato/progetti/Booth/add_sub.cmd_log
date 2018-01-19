@@ -1,0 +1,1 @@
+vhdtdtfi -prj moltiplicatore_booth -o /home/sav/ASE/moltiplicatore_booth/add_sub.vhi -module add_sub -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work half_adder.vhd -lib work full_adder.vhd -lib work ripple_carry_adder.vhd -lib work add_sub.vhd 

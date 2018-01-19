@@ -104,10 +104,6 @@ begin
 				enable_reg <= in_byte (7 downto 4);
 			elsif	( load_value='1') then
 				value_reg<=number;
---			elsif (load_msb_value = '1') then
---				value_reg (15 downto 8) <= in_byte;
---			elsif (load_lsb_value = '1') then
---				value_reg (7 downto 0) <= in_byte;
 			end if;
 		end if;
 	end process;

@@ -35,9 +35,6 @@ entity display_top_level is
 				);
     Port ( clock : in  STD_LOGIC;
            reset : in  STD_LOGIC;
---           load_lsb_value : in  STD_LOGIC;
---           load_msb_value : in  STD_LOGIC;
---           load_dots_enable : in  STD_LOGIC;
 			  load_conf :in STD_LOGIC;
 			  load_value : in STD_LOGIC; 
 			  number: in STD_LOGIC_VECTOR (15 downto 0);
@@ -51,9 +48,6 @@ architecture structural of display_top_level is
 component display_on_board is
     Port ( clock : in  STD_LOGIC;
            reset : in  STD_LOGIC;
---           load_lsb_value : in  STD_LOGIC;
---           load_msb_value : in  STD_LOGIC;
---           load_dots_enable : in  STD_LOGIC;
 			  load_conf :in STD_LOGIC;
 			  load_value : in STD_LOGIC; 
 			  number: in STD_LOGIC_VECTOR (15 downto 0);
@@ -95,9 +89,6 @@ begin
 	inst_on_board : display_on_board
 		port map ( clock => clock,
 					  reset => reset,
---					  load_lsb_value => load_lsb_value,
---					  load_msb_value => load_msb_value,
---					  load_dots_enable => load_dots_enable,
 					  load_conf => load_conf,
 					  load_value => load_value,
 					  number => number,

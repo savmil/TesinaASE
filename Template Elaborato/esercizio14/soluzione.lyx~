@@ -149,6 +149,50 @@ Schematici
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[H]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[scale=0.7]{esercizio14/images/div_restoring.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+caption{Mac Multiplier}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Il circuito è molto simile a quello utilizzato per sviluppare un moltiplicatore
  di Booth 
 \begin_inset ERT
@@ -172,15 +216,29 @@ ref{Booth}
  dati shiftano a destra); sub in cui viene effettuata la sottrazione, nel
  caso il risultato sia un numero negativo si ritorna in shift altrimenti,
  si procede nello stato set_1 che setta ad uno il bit da dover shiftare
- all' interno di q, tale shift avverrà in shift1
+ all' interno di q, tale shift avverrà nello stato shift1.
+ Il segnale di terminazione della computazione viene attivato quando il
+ contatore segnale un numero di operazioni pari al numero di bit del dividendo.
 \end_layout
 
 \begin_layout Subsection
 Codice
 \end_layout
 
-\begin_layout Subsubsection
-Bit String Comparator
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+href{run:progetti/div_rest/div_rest.xise}{Divisore Restoring ISE}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body

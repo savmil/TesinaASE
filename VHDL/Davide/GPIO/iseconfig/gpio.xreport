@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-12-29T20:55:34</DateModified>
+  <DateModified>2018-01-19T14:25:40</DateModified>
   <ModuleName>gpio</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/GPIO/iseconfig/gpio.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/GPIO\</ImplementationReportsDirectory>
+  <SavedFilePath>/media/sf_ASE/VHDL/Davide/GPIO/iseconfig/gpio.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/media/sf_ASE/VHDL/Davide/GPIO/</ImplementationReportsDirectory>
   <DateInitialized>2017-12-28T20:18:11</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

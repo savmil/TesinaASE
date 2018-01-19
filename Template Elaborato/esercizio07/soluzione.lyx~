@@ -198,13 +198,6 @@ caption{Architettura del display a sette segmenti}
 
 \begin_layout Plain Layout
 
-	
-\backslash
-label{fig:display}
-\end_layout
-
-\begin_layout Plain Layout
-
 
 \backslash
 end{figure}
@@ -266,7 +259,8 @@ Voglio far notare che tutti i segnali di uscita, per le varie abilitazioni,
  far si che il sintetizzatore di xilinx, non rilevi dei latch durante la
  sua esecuzione, (ciò può essere dovuto al fatto che i segnali non essendo
  fissati in dei registri il sintetizzatore vuole salvarli così da poter
- effettuare una corretta sintesi del codice).
+ effettuare una corretta sintesi del codice, questo vale anche per le altre
+ macchine a stati finiti sviluppate successivamente).
 \end_layout
 
 \begin_layout Standard
@@ -337,6 +331,53 @@ Frequenza massima
 
 \begin_layout Plain Layout
 One-hot
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+19
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+37
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+184.805MHz
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Speed1
 \end_layout
 
 \end_inset
@@ -520,7 +561,7 @@ Gray
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -529,7 +570,7 @@ Johnson
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -538,7 +579,7 @@ Johnson
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -547,7 +588,7 @@ Johnson
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -556,58 +597,11 @@ Johnson
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-180.665MHz
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Speed1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-19
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-16
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-37
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-184.805MHz
+180.665MHz
 \end_layout
 
 \end_inset
@@ -618,6 +612,34 @@ Speed1
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Dato il numero di stati molto ridotto, i risultati ottenuti utilizzando
+ le varie codifiche in alcuni casi sono risultati perfettamente gli stessi,
+ le codifiche che hanno dato gli stessi risultato sono state messe una successiv
+amente all' altra, difatti notiamo che One-hot e Speed1 ottengono gli stessi
+ risultati, facendo riferimento alla manuale di XST di xilinx la codifica
+ Speed1 è orientata alla velocità ma i bit usati per identificare lo stato
+ di solito sono in numero maggiore al numero degli stati della macchina,
+ quindi il sintetizzatore alla fine si riconduce alla codica One-hot ed
+ è quello che occupa maggior area, dato che utilizza un singolo flip flop
+ per codificare ogni stato quindi la sua velocità al crescere degli stati
+ e indipendete, anche se l' area occupata crescerà linearmente con il numero
+ di stati; compact è quella che richiede meno spazio cerca di utilizzare
+ il minore numero di bit possibili per codificare gli stati, in questo caso
+ risulta la più efficiente, perchè oltre ad essere minore lo spazio occupato
+ essendo il numero di stati davvero esiguo il tutto riesce ad essere mappato
+ in slice presenti nella stessa CLB, rendendo la frequenza massima operativa
+ maggiore; Sequential utilizzato un approccio radix-two su path di logica
+ combinatoriale molto lunghi, ma essendo solo due stati il sintetizzatore
+ si riconduce ad una soluzione compact; Gray permetteno di far variare un
+ solo bit alla volta occupa lo stesso spazio della compact, ma la logica
+ combinatoriale per far variare tra gli stati e più complessa ed implica
+ anche una minore frequenza operativa, per rendere sicuro il cambio di stato;
+ Johnson comunque permette la variazione di un solo bit alla volta, ma in
+ questo caso coincide con la codifica di gray, anche se di solito i bit
+ per la rappresentazione sono maggiori.
 \end_layout
 
 \end_body

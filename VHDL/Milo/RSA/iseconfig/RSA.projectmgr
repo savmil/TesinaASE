@@ -15,7 +15,6 @@
          <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|VHDL|Milo|RSA|tester_dispositivi.vhd/RSA - generazione_valori_RSA - Behavioral/hash - funzione_hash_moltiplicazione - Behavioral/mul - Booth_multiplier - Structural/q - boundary_scan_chain - Structural</ClosedNode>
          <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|VHDL|Milo|RSA|tester_dispositivi.vhd/RSA - generazione_valori_RSA - Behavioral/hash - funzione_hash_moltiplicazione - Behavioral/sh_d - boundary_scan_chain - Structural</ClosedNode>
          <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|VHDL|Milo|RSA|tester_dispositivi.vhd/RSA - generazione_valori_RSA - Behavioral/hash - funzione_hash_moltiplicazione - Behavioral/sh_r - shifter_a_sinistra - Structural</ClosedNode>
-         <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|VHDL|Milo|RSA|tester_dispositivi.vhd/RSA - generazione_valori_RSA - Behavioral/m_e_exp - mod_exp - Behavioral</ClosedNode>
          <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|VHDL|Milo|RSA|tester_dispositivi.vhd/RSA - generazione_valori_RSA - Behavioral/m_e_exp - mod_exp - Behavioral/div - divisore_restoring - Structural</ClosedNode>
          <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|VHDL|Milo|RSA|tester_dispositivi.vhd/RSA - generazione_valori_RSA - Behavioral/m_e_exp - mod_exp - Behavioral/div - divisore_restoring - Structural/gestore_shift - add_sub - structural</ClosedNode>
          <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|VHDL|Milo|RSA|tester_dispositivi.vhd/RSA - generazione_valori_RSA - Behavioral/m_e_exp - mod_exp - Behavioral/div - divisore_restoring - Structural/quotient - shifter_a_sinistra - Structural</ClosedNode>
@@ -28,7 +27,8 @@
          <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|VHDL|Milo|RSA|tester_dispositivi.vhd/RSA - generazione_valori_RSA - Behavioral/n_calc - Booth_multiplier - Structural/a - boundary_scan_chain - Structural</ClosedNode>
          <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|VHDL|Milo|RSA|tester_dispositivi.vhd/RSA - generazione_valori_RSA - Behavioral/n_calc - Booth_multiplier - Structural/gestore_shift - add_sub - structural</ClosedNode>
          <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|VHDL|Milo|RSA|tester_dispositivi.vhd/RSA - generazione_valori_RSA - Behavioral/n_calc - Booth_multiplier - Structural/q - boundary_scan_chain - Structural</ClosedNode>
-         <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|VHDL|Milo|RSA|tester_dispositivi.vhd/gest_disp - display_top_level - structural</ClosedNode>
+         <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|VHDL|Milo|RSA|tester_dispositivi.vhd/gest_disp - display_top_level - structural/inst_display - display - structural</ClosedNode>
+         <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|VHDL|Milo|RSA|tester_dispositivi.vhd/gest_disp - display_top_level - structural/inst_on_board - display_on_board - Behavioral</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
          <SelectedItem>tester_dispositivi - Behavioral (/media/sf_ASE/VHDL/Milo/RSA/tester_dispositivi.vhd)</SelectedItem>
@@ -48,13 +48,12 @@
          <ClosedNode>Implement Design/Place &amp; Route/Generate IBIS Model</ClosedNode>
          <ClosedNode>Implement Design/Place &amp; Route/Generate Post-Place &amp; Route Static Timing</ClosedNode>
          <ClosedNode>Implement Design/Translate</ClosedNode>
-         <ClosedNode>Synthesize - XST</ClosedNode>
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
          <SelectedItem>Generate Programming File</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >15</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001af000000010000000100000000000000000000000064ffffffff000000810000000000000001000001af0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
@@ -79,7 +78,7 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000124000000010001000100000000000000000000000064ffffffff000000810000000000000001000001240000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000001be000000010001000100000000000000000000000064ffffffff000000810000000000000001000001be0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>work</CurrentItem>
    </ItemView>
@@ -116,7 +115,7 @@
       <SelectedItems>
          <SelectedItem>generazione_valore_RSA_testbench - behavior (/media/sf_ASE/VHDL/Milo/RSA/generazione_valore_RSA_testbench.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >4</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000002c4000000020000000000000000000000000200000064ffffffff000000810000000300000002000002c40000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
@@ -128,13 +127,13 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001be000000010000000100000000000000000000000064ffffffff000000810000000000000001000001be0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView engineview="PostRouteSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
@@ -259,13 +258,13 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001be000000010000000100000000000000000000000064ffffffff000000810000000000000001000001be0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView engineview="PostMapSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
@@ -302,12 +301,12 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>ISim Simulator</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001be000000010000000100000000000000000000000064ffffffff000000810000000000000001000001be0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>ISim Simulator</CurrentItem>
    </ItemView>
 </Project>

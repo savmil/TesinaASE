@@ -35,7 +35,6 @@ entity tester_dispositivi is
 			  led : out STD_LOGIC_VECTOR (7 downto 0);
            in_byte : in  STD_LOGIC_VECTOR (7 downto 0);
            anodes : out  STD_LOGIC_VECTOR (3 downto 0);
-			  produ : out STD_LOGIC_VECTOR (15 downto 0);
            cathodes : out  STD_LOGIC_VECTOR (7 downto 0));
 end tester_dispositivi;
 

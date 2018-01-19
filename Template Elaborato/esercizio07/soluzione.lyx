@@ -144,22 +144,6 @@ Descrivere la soluzione relizzata per mezzo di schematici e riportare il
 
 \end_layout
 
-\begin_layout Standard
-La macchina è composta semplicente da quattro stati: idle, in cui la macchina
- permane fintantoché non viene avviata la procedura di riconoscimento; carica_st
-ringa, in cui viene salvato in una scan chain il valore della stringa da
- riconoscere; shifting, in cui viene fatto shiftare il bit della stringa
- e far si ponga in uscita alla scan_chain; riconosci_bit, si determina se
- il bit in uscita della scan_chain è uguale al bit della stringa da riconoscere
- ( quest' ultimo identificato dal valore di un contatore che opportunamente
- identifica il valore del bit da confrontare): se i due bit sono uguali,
- si procedere allo shifting ed al riconoscimento fino a quando non vengono
- confrontati tutti i bit ed un segnale indica che la stringa riconosciuta
- è proprio quella voluta; altrimenti viene abilitato un segnale che indica
- il fallimento della comparazione indicando la dissimilirità della stringa
- messa in ingresso da quella che si vuole riconoscere.
-\end_layout
-
 \begin_layout Subsection
 Schematici
 \end_layout
@@ -186,14 +170,14 @@ centering
 
 	
 \backslash
-includegraphics[scale=0.7]{esercizio07/images/riconoscitore_stringa.png}
+includegraphics[scale=0.6]{esercizio07/images/riconoscitore_stringa.png}
 \end_layout
 
 \begin_layout Plain Layout
 
 	
 \backslash
-caption{Architettura del display a sette segmenti}
+caption{Riconoscitore di stringa}
 \end_layout
 
 \begin_layout Plain Layout
@@ -206,6 +190,22 @@ end{figure}
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+La macchina è composta semplicente da quattro stati: idle, in cui la macchina
+ permane fintantoché non viene avviata la procedura di riconoscimento; carica_st
+ringa, in cui viene salvato in una scan chain il valore della stringa da
+ riconoscere; shifting, in cui viene fatto shiftare il bit della stringa
+ e far si ponga in uscita alla scan_chain; riconosci_bit, si determina se
+ il bit in uscita della scan_chain è uguale al bit della stringa da riconoscere
+ ( quest' ultimo identificato dal valore di un contatore che opportunamente
+ identifica il valore del bit da confrontare): se i due bit sono uguali,
+ si procedere allo shifting ed al riconoscimento fino a quando non vengono
+ confrontati tutti i bit ed un segnale indica che la stringa riconosciuta
+ è proprio quella voluta; altrimenti viene abilitato un segnale che indica
+ il fallimento della comparazione indicando la dissimilirità della stringa
+ messa in ingresso da quella che si vuole riconoscere.
 \end_layout
 
 \begin_layout Subsection
@@ -243,8 +243,8 @@ status open
 
 
 \backslash
-lstinputlisting [language=VHDL,caption={Definizione del componente Cathode
- Manager}] {esercizio07/codici/riconoscitore_stringa.vhd}
+lstinputlisting [language=VHDL,caption={Definizione della macchina a stati
+ finiti},firstline=32] {progetti/riconoscitore_stringa/riconoscitore_stringa.vhd}
 \end_layout
 
 \end_inset
@@ -270,6 +270,25 @@ Di seguito vengono riportati i differenti risultati operativi nel caso in
 \end_layout
 
 \begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
 \begin_inset Tabular
 <lyxtabular version="3" rows="7" columns="5">
 <features tabularvalignment="middle">
@@ -608,6 +627,11 @@ Johnson
 </cell>
 </row>
 </lyxtabular>
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 

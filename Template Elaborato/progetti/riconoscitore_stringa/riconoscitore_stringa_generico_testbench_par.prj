@@ -1,0 +1,2 @@
+vhdl work "netgen/par/riconoscitore_stringa_generico_timesim.vhd"
+vhdl work "riconoscitore_stringa_generico_testbench.vhd"

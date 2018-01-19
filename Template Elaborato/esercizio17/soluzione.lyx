@@ -1,7 +1,9 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass book
 \begin_preamble
 \usepackage{listings,xcolor,courier,bookmark}
@@ -60,16 +62,16 @@ morecomment=[s]{--}
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
-
+\font_sf_scale 100 100
+\font_tt_scale 100 100
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -80,15 +82,24 @@ morecomment=[s]{--}
 \use_hyperref false
 \papersize default
 \use_geometry true
-\use_amsmath 1
-\use_esint 1
-\use_mhchem 1
-\use_mathdots 1
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 1
 \index Index
 \shortcut idx
@@ -137,8 +148,246 @@ Descrivere la soluzione relizzata per mezzo di schematici e riportare il
 Schematici
 \end_layout
 
+\begin_layout Standard
+Il seguente circuito implementa l' algortimo RSA per la firma di un messaggio,
+ applica una funzione di hash sul messaggio e verifica che il messaggio
+ ricevuto sia coretto.
+ Il tutto avviene nel seguente modo: dopo aver scelto i valori caratteristici
+ per inviare il dato (p pari a 3, q 11, e 7 e d 3) ed il messaggio da inviare,
+ viene prima effettuato l' hashing del messaggio, utilizzando il metodo
+ della moltiplicazione, dopodichè sul messaggio originale viene applicata
+ la chiave privata, il trasmettitore invia i due dati appena calcolati.
+ Il ricevitore applica la chiave pubblica sul messaggio firmato, ne effettua
+ l' hashing e verifica se la sua versione del messaggio a cui è stato applicato
+ l' hashing è identico a quello che è stato ricevuto.
+\end_layout
+
+\begin_layout Standard
+Di seguito vengono descritte le varie componenti che vengono utilizzate
+ per effettuare l' hashing e firmare il messaggio.
+\end_layout
+
+\begin_layout Subsubsection
+Funzione hash
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[H]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+includegraphics[scale=0.6]{esercizio17/images/hash.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+caption{hasher}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+label{fig:Mod_exp}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+Il circuito utilizza una macchina a stati finiti descritta da cinque stati:
+ idle, stato di riposo dell' automa; init in cui si attende che il moltiplicator
+e termini il suo compito; shifting_r in cui il valore della moltiplicazione
+ viene shiftato a destra; shifting_l il valore viene shiftato a sinistra;
+ ended per comunicare la fine dell' operazione di hash.
+ Il circito è così descritto perché tale forma di hashing prevedere di moltiplic
+are il dato per un valore A il quale è un numero compreso tra 0 ed 1, di
+ cui il denominatore è un multiplo di due, per tale ragione di è scelto
+ di moltiplicare per un valore W ed infine di shiftare a destra un numero
+ di volte pari al valore dell' esponente, tale numero è la parte decimale
+ del valore del dato per W (perché quando shiftiamo inseriamo degli zero
+ fittizzi), dopodichè si effettua uno shifting a sinistra di un numero pari
+ di volte affinché la nostra parte deciamale rientri nella parte del registro
+ da inviare, nel nostro caso avendo un dato da otto bit e dovendolo trasformare
+ in un messaggio da trentadue non compaiono questi problemi.
+\end_layout
+
+\begin_layout Subsubsection
+Esponenziatore
+\end_layout
+
+\begin_layout Standard
+Per effettuare l' elevazione a potenza con il modulo, ci siamo riferiti
+ a questo algoritmo :
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[H]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+includegraphics[scale=0.8]{esercizio17/images/mod_exp.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+caption{Algoritmo per modular exponentiational di un messaggio}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+label{fig:Mod_exp}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+L ' algoritmo cicla sul numero di bit dell ' esponente, moltiplica il valore
+ d prima per se stesso e ne fa il modulo, questo stesso valore di d per
+ la base quando il valore dell' esponente in forma binaria assume valore
+ uno e ne effettua il modulo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[H]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+includegraphics[scale=0.6]{esercizio17/images/exp.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+caption{Hardware Exponentiational}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Abbiamo deciso di utilizzare quest' ultimo perché ci permette di riutilizzare
+ componenti già sviluppati negli esercizi precedenti, difatti osservando
+ lo schematico, vi è presente un moltiplicatore di Booth e il divisore restoring
+ per le varie operazioni prodotto e modulo, un contatore down per indicare
+ quale dei bit dell' esponente dobbiamo analizzare e dei selettori descritti
+ con il costrutto with select per selezionare quali valori devono essere
+ moltiplicati.
+ La macchina a stati finiti non fa altro che eseguire i vari passi dell'
+ algoritmo, però per problemi relativi al timing è stata realizzata alla
+ fine con un singolo process, difatti una prima realizzazione con due process
+ determinava che alcuni registri contenti i dati dell' operazione assumessero
+ un valore indefinito.
+ 
+\end_layout
+
+\begin_layout Standard
+Per problemi di spazio, si è ricorsi a componenti per la moltiplicazione
+ e divisione seriali, oltre ad riutilizzarli all' interno dello stesso progetto
+ difatti il moltiplicatore di Booth è stato utilizzato per: calcolare il
+ prodotto di pq, per la funzione di hashing ed l' esponenziazione.
+\end_layout
+
 \begin_layout Subsection
 Codice
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+href{run:progetti/RSA/RSA.xise}{RSA ISE}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -153,257 +402,6 @@ Nell'eventialità in cui alcuni componenti sia stati utilizzati in altri
 
 \begin_layout Plain Layout
 Segue un esempio di inclusione di codice
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Bit String Comparator
-\end_layout
-
-\begin_layout Standard
-Il componente Top Module è ottenuto con costrutto 
-\emph on
-Generate
-\emph default
- e le connessioni sono fatte sfruttando tre array monodimensionali (aGT,
- aLT, aEQ).
-\end_layout
-
-\begin_layout Standard
-I valori MSB di questi array sono posti a (0,0,1) rispettivamente per garantire
- che sui bit più significativi della stringa in ingresso sia fatta una comparazi
-one assoluta, e non relativa.
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{lstlisting}[language=VHDL,caption={Definizione del componente Bit
- String Comparator Generic}] 
-\end_layout
-
-\begin_layout Plain Layout
-
-library IEEE;
-\end_layout
-
-\begin_layout Plain Layout
-
-use IEEE.STD_LOGIC_1164.ALL;
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-entity bit_string_comparator is
-\end_layout
-
-\begin_layout Plain Layout
-
-GENERIC(N: Integer:=4);
-\end_layout
-
-\begin_layout Plain Layout
-
-    Port ( a : in  STD_LOGIC_VECTOR (N-1 downto 0);
-\end_layout
-
-\begin_layout Plain Layout
-
-           b : in  STD_LOGIC_VECTOR (N-1 downto 0);
-\end_layout
-
-\begin_layout Plain Layout
-
-           aGTb : out  STD_LOGIC;
-\end_layout
-
-\begin_layout Plain Layout
-
-           aEQb : out  STD_LOGIC;
-\end_layout
-
-\begin_layout Plain Layout
-
-           aLTb : out  STD_LOGIC);
-\end_layout
-
-\begin_layout Plain Layout
-
-end bit_string_comparator;
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-architecture Structural of bit_string_comparator is
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-component bit_comparator_comp
-\end_layout
-
-\begin_layout Plain Layout
-
-    Port ( a : in  STD_LOGIC;
-\end_layout
-
-\begin_layout Plain Layout
-
-           b : in  STD_LOGIC;
-\end_layout
-
-\begin_layout Plain Layout
-
-           aEQ_INb : in  STD_LOGIC;
-\end_layout
-
-\begin_layout Plain Layout
-
-           aLT_INb : in  STD_LOGIC;
-\end_layout
-
-\begin_layout Plain Layout
-
-           aGT_INb : in  STD_LOGIC;
-\end_layout
-
-\begin_layout Plain Layout
-
-           aEQb : out  STD_LOGIC;
-\end_layout
-
-\begin_layout Plain Layout
-
-           aLTb : out  STD_LOGIC;
-\end_layout
-
-\begin_layout Plain Layout
-
-           aGTb : out  STD_LOGIC);
-\end_layout
-
-\begin_layout Plain Layout
-
-end component bit_comparator_comp;
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-for all: bit_comparator_comp use entity WORK.bit_comparator(Dataflow);
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-signal aGT, aLT, aEQ: STD_LOGIC_VECTOR(N downto 0); --Array di GT, LT ed
- EQ per la propagazione
-\end_layout
-
-\begin_layout Plain Layout
-
-begin
-\end_layout
-
-\begin_layout Plain Layout
-
-aGT(N)<='0';
-\end_layout
-
-\begin_layout Plain Layout
-
-aLT(N)<='0';
-\end_layout
-
-\begin_layout Plain Layout
-
-aEQ(N)<='1'; --Altrimenti non vengono riconosciute mai come uguali!!!
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-aGTb<=aGT(0);
-\end_layout
-
-\begin_layout Plain Layout
-
-aEQb<=aEQ(0);
-\end_layout
-
-\begin_layout Plain Layout
-
-aLTb<=aLT(0);
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-one_bcc: for i in N-1 downto 0 GENERATE begin
-\end_layout
-
-\begin_layout Plain Layout
-
-	bit_comparator: bit_comparator_comp port map(a(i), b(i), aEQ(i+1), aLT(i+1),
- aGT(i+1),aEQ(i), aLT(i), aGT(i));
-\end_layout
-
-\begin_layout Plain Layout
-
-end GENERATE one_bcc;
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-end Structural;
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{lstlisting}
 \end_layout
 
 \end_inset

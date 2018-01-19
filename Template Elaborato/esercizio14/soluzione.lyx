@@ -170,14 +170,14 @@ centering
 
 
 \backslash
-includegraphics[scale=0.7]{esercizio14/images/div_restoring.png}
+includegraphics[scale=0.6]{esercizio14/images/div_restoring.png}
 \end_layout
 
 \begin_layout Plain Layout
 
 	
 \backslash
-caption{Mac Multiplier}
+caption{Divisore restoring}
 \end_layout
 
 \begin_layout Plain Layout
@@ -225,8 +225,20 @@ ref{Booth}
 Codice
 \end_layout
 
-\begin_layout Subsubsection
-Bit String Comparator
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+href{run:progetti/div_rest/div_rest.xise}{Divisore Restoring ISE}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body

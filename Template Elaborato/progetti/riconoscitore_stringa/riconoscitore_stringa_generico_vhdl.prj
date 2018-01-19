@@ -1,0 +1,6 @@
+vhdl work "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/mux2_1.vhd"
+vhdl work "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/edge_triggered_d_n.vhd"
+vhdl work "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/riconoscitore_stringa.vhd"
+vhdl work "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/contatore_modulo_4.vhd"
+vhdl work "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/boundary_scan_chain.vhd"
+vhdl work "/media/sf_ASE/VHDL/Milo/riconoscitore_stringa/riconoscitore_stringa_generico.vhd"

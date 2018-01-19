@@ -110,7 +110,20 @@ ref{tester dispositivi seriali}
 , dove l' accensione del led zero indica la fine dell' operazione ed il
  led uno non viene utilizzato, viene caricato prima il dividendo e poi il
  divisore, infine le prime due cifre del display indicano il quoziente le
- seconde il resto.
+ seconde il resto ed è utilizzato come descritto qui 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{Sintesi ripple carry}
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \end_body

@@ -101,8 +101,9 @@ status open
 
 
 \backslash
-lstinputlisting [language=VHDL,caption={Definizione del componente Clock
- Filter}] {esercizio07/codice/tester_dispositivi.vhd}
+lstinputlisting [language=VHDL,caption={Definizione del componente che gestisce
+ il caricamento dei dati},firstline=32] {/progetti/riconoscitore_stringa/tester_
+dispositivi.vhd}
 \end_layout
 
 \end_inset
@@ -116,9 +117,9 @@ status open
 
 \begin_layout Plain Layout
 
-	
+
 \backslash
-label{fig:tester_dispositivi_seriali}
+label{tester dispositivi seriali}
 \end_layout
 
 \end_inset
@@ -140,7 +141,13 @@ i computerebbe in ogni momento, ma deve essere dato per un tempo necessario
 Vengono utilizzati gli switch per inserire sia la stringa da riconoscere,
  oltre a quella con cui si deve effettuare il confronto, i valori sono sorretti
  da registri così il dispositivo sa su quali dati operare, mentre invece
- il led 0 si attiva se il riconoscimento
+ il led 0 si attiva se il riconoscimento è andata a buon fine il led 1 nel
+ caso contrario, i led 6 e 7 occorrono a capire se si sta salvando i dati
+ nei registri, si è avviata la computazione o nel caso in cui si resetti
+ il dispositivo per effettuare una successiva computazione, per effettuare
+ il reset degli altri componenti invece basta premere il pulsante 3, invece
+ il pulsante 0 permette la selezione dei registri e l' avvio della macchina
+ a stati finiti.
 \end_layout
 
 \end_body

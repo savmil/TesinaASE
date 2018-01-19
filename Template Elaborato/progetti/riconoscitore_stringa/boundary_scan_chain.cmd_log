@@ -1,0 +1,1 @@
+vhdtdtfi -prj riconoscitore_stringa -o /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/boundary_scan_chain.vhi -module boundary_scan_chain -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work boundary_scan_chain.vhd 

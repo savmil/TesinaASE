@@ -101,8 +101,9 @@ status open
 
 
 \backslash
-lstinputlisting [language=VHDL,caption={Definizione del componente Clock
- Filter}] {esercizio07/codici/tester_dispositivi.vhd}
+lstinputlisting [language=VHDL,caption={Definizione del componente che gestisce
+ il caricamento dei dati},firstline=32] {/progetti/riconoscitore_stringa/tester_
+dispositivi.vhd}
 \end_layout
 
 \end_inset

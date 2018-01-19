@@ -112,14 +112,14 @@ centering
 
 
 \backslash
-includegraphics[scale=0.7]{esercizio11/images/carry_select_testbench.png}
+includegraphics[scale=0.55]{esercizio11/images/carry_select_testbench.png}
 \end_layout
 
 \begin_layout Plain Layout
 
 	
 \backslash
-caption{Carry Select Adder testbench}
+caption{Carry Select Adder}
 \end_layout
 
 \begin_layout Plain Layout

@@ -1,0 +1,6 @@
+vhdl work "mux2_1.vhd"
+vhdl work "edge_triggered_d_n.vhd"
+vhdl work "riconoscitore_stringa.vhd"
+vhdl work "contatore_modulo_4.vhd"
+vhdl work "boundary_scan_chain.vhd"
+vhdl work "riconoscitore_stringa_generico.vhd"
