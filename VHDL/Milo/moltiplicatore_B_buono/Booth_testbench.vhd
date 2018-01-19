@@ -96,14 +96,7 @@ BEGIN
 		
       wait for 100 ns;	
 		reset<='1';
-		mul1<="00000111";
-		mul2<="00000011";
-		wait for 1 ns;
-		start<='1';
-		wait for 11 ns;
-		start<='0';
-      wait for clk_period*1000;
-		mul1<="00000011";
+		mul1<="00000101";
 		mul2<="00000011";
 		wait for 1 ns;
 		start<='1';

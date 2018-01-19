@@ -36,10 +36,12 @@ entity Transmitter is
 			  c_s: in STD_LOGIC;
 			  send_s: in STD_LOGIC;
 			  data_in : in  STD_LOGIC;
+			  fin: in STD_LOGIC;
 			  shift : out STD_LOGIC;
 			  en_c: out STD_LOGIC;
            en_i: out STD_LOGIC;
 			  en_b: out STD_LOGIC;
+			  end_t: out STD_LOGIC_VECTOR(0 downto 0);
            data_out : out  STD_LOGIC);
 end Transmitter;
 
@@ -47,65 +49,65 @@ architecture Behavioral of Transmitter is
 type state is (idle,send_start,send,wait_for_next,send_stop);
 signal number_of_bits: STD_LOGIC_VECTOR(3 downto 0):=(others=>'0');
 signal current_state, next_state:state;
-signal end_t: STD_LOGIC:='0';
 begin
-        change_state: process (clk)
-        begin
-                if rising_edge(clk) then
-                      if (reset = '0') then
-                              current_state <= idle;
-                      else
-                                current_state <= next_state;
-                       end if;
-                end if;
-        end process;
+        change_state: process (clk,reset)
+			begin
+			if (reset = '0') then
+				current_state <= idle;
+			elsif rising_edge(clk) then
+			case current_state is
+				when idle=>	if start='1' then
+									current_state <= send_start;
+								end if;
+				when send_start=> current_state<=wait_for_next;
+				when wait_for_next=>if c_s='1' and fin='1' then
+														 current_state<=idle;
+											elsif c_s='1' and send_s='0' then
+														 current_state <=send;
+											elsif c_s='1' and send_s='1' then
+														 current_state<=send_stop;
+											end if;
+				when send=> current_state<=wait_for_next;
+				when send_stop=> current_state<=wait_for_next;
+								
+			end case;
+			end if;
+			end process;
 		  transmission : process (clk)
 		  begin
 		  shift<='0';
 		  en_b<='0';
+		  en_c<='0';
+		  en_i<='0';
+		  end_t(0)<='0';
+		  data_out<=data_in;
 				case current_state is
 						when idle => 
-										 data_out<='1';
 										 en_c<='0';
 										 en_i<='0';
-										 end_t<='0';
+										
 										 if start='1' then
-											next_state<= send_start;
+											--next_state<= send_start;
 										 end if;
-						when send_start => data_out<='0';
+						when send_start => shift<='1';
 												 en_i<='1';
 												 en_c<='1';
-												 next_state<= wait_for_next;
-						when wait_for_next => if c_s='1' and end_t='1' then
-														 next_state<=idle;
-													 elsif c_s='1' and send_s='0' then
+												 --next_state<= wait_for_next;
+						when wait_for_next =>en_c<='1';
+													en_i<='1';
+													 if c_s='1' and send_s='0' then
 														en_b<='1';
 														en_c<='0';
-														next_state <=send;
-													 elsif c_s='1' and send_s='1' then
-														next_state<=send_stop;
+														--next_state <=send;
 													 end if;
---						when wait_for_next => en_c<='1';
---													  next_state<= count;
---						when count => en_c<='0';
---										  if c_s='1' and send_s='0' then
---													en_b<='1';
---													next_state <=send;
---										  elsif c_s='1' and send_s='1' then
---												next_state<=idle;
---										  else 
---														next_state<= wait_for_next;
---													 end if;
-										 
-						when send =>
-										 data_out<=data_in;
-										 en_c<='1';
+						when send => en_c<='1';
+										 en_i<='1';
 										 shift<='1';
-										 next_state <= wait_for_next;
-						when send_stop => data_out<='1';
-												end_t<='1';
+										 --next_state <= wait_for_next;
+						when send_stop => shift<='1';
+												end_t(0)<='1';
 												en_c<='1';
-											  next_state<=wait_for_next;
+											 -- next_state<=wait_for_next;
 				end case;								
 			end process;
 end Behavioral;

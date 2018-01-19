@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -o "/media/sf_ASE/VHDL/Milo/divisore_restoring/divisore_restoring/Divisore_restoring_testbench_isim_par.exe" -prj "/media/sf_ASE/VHDL/Milo/divisore_restoring/divisore_restoring/Divisore_restoring_testbench_par.prj" "work.Divisore_restoring_testbench" 

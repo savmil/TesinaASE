@@ -1,0 +1,1 @@
+vhdtdtfi -prj Carry_Look_A-head_Adder -o /media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/debounce.vhi -module debounce -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work debounce.vhd 

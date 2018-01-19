@@ -1,0 +1,2 @@
+vhdl work "netgen/par/Sender_receiver_timesim.vhd"
+vhdl work "Sender_Receiver_testbench.vhd"

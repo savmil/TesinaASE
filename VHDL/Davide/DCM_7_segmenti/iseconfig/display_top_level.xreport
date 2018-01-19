@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-12-28T12:41:50</DateModified>
+  <DateModified>2018-01-14T19:36:05</DateModified>
   <ModuleName>display_top_level</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/iseconfig/display_top_level.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/DCM_7_segmenti/iseconfig/display_top_level.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/DCM_7_segmenti\</ImplementationReportsDirectory>
   <DateInitialized>2017-11-15T20:43:44</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

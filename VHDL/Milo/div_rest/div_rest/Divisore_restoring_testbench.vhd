@@ -41,22 +41,22 @@ ARCHITECTURE behavior OF Divisore_restoring_testbench IS
  
     COMPONENT divisore_restoring
     PORT(
-         dividendo : IN  std_logic_vector(63 downto 0);
-         divisore : IN  std_logic_vector(63 downto 0);
+         dividendo : IN  std_logic_vector(7 downto 0);
+         divisore : IN  std_logic_vector(7 downto 0);
          start : IN  std_logic;
          clk : IN  std_logic;
          reset : IN  std_logic;
 			finish: out STD_LOGIC_VECTOR(0 downto 0);
          --quoziente : OUT  std_logic_vector(7 downto 0);
          --resto : OUT  std_logic_vector(7 downto 0)
-			res:out STD_LOGIC_VECTOR(127 downto 0)
+			res:out STD_LOGIC_VECTOR(15 downto 0)
         );
     END COMPONENT;
     
 
    --Inputs
-   signal dividendo : std_logic_vector(63 downto 0) := (others => '0');
-   signal divisore : std_logic_vector(63 downto 0) := (others => '0');
+   signal dividendo : std_logic_vector(7 downto 0) := (others => '0');
+   signal divisore : std_logic_vector(7 downto 0) := (others => '0');
    signal start : std_logic := '0';
    signal clk : std_logic := '0';
    signal reset : std_logic := '0';
@@ -65,7 +65,7 @@ ARCHITECTURE behavior OF Divisore_restoring_testbench IS
 	signal finish : std_logic_vector(0 downto 0);
    --signal quoziente : std_logic_vector(7 downto 0);
    --signal resto : std_logic_vector(7 downto 0);
-	signal res :std_logic_vector(127 downto 0);
+	signal res :std_logic_vector(15 downto 0);
    -- Clock period definitions
    constant clk_period : time := 10 ns;
  
@@ -102,8 +102,8 @@ BEGIN
 		wait for 100 ns;
 		reset<='1';
 		
-		dividendo<=x"000000000000e100";
-		divisore<=x"00000000000000ff";
+		dividendo<=x"10";
+		divisore<=x"03";
 		wait for 1 ns;
 		start<='1';
 		wait for 11 ns;

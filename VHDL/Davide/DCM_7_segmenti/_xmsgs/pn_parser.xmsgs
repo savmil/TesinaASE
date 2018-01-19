@@ -5,10 +5,28 @@
 <!--     behavior or data corruption.  It is strongly advised that -->
 <!--     users do not edit the contents of this file.              -->
 <!--                                                               -->
-<!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
+<!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/DAVIDE/ASE/Esercizi/ISE/DCM_7_segmenti/display.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/DCM_7_segmenti/anodes_manager_testbench.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/DCM_7_segmenti/cathode_manager_testbench.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/DCM_7_segmenti/counter_mod_2n_testbench.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/DCM_7_segmenti/display_on_board_testbench.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/DCM_7_segmenti/display_testbench.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/DCM_7_segmenti/display_top_level_testbench.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Michele/Documents/TesinaASE/VHDL/Davide/DCM_7_segmenti/netgen/translate/counter_mod_2n_translate.vhd&quot; into library work</arg>
 </msg>
 
 </messages>

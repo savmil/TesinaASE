@@ -1,5 +1,0 @@
-set -tmpdir "/home/sav/ASE/tester_dispositivi/xst/projnav.tmp"
-set -xsthdpdir "/home/sav/ASE/tester_dispositivi/xst"
-elaborate
--ifn latch_d.prj
--ifmt mixed

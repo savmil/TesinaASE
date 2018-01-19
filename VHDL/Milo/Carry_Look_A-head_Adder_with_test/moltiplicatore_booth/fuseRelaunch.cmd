@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -o "/home/sav/ASE/moltiplicatore_booth/Booth_testbench_isim_beh.exe" -prj "/home/sav/ASE/moltiplicatore_booth/Booth_testbench_beh.prj" "work.Booth_testbench" 

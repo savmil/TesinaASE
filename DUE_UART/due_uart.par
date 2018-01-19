@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-debian::  Tue Dec 26 15:33:42 2017
+debian::  Thu Jan 18 17:49:50 2018
 
 par -w -intstyle ise -ol high -t 1 due_uart_map.ncd due_uart.ncd due_uart.pcf 
 
@@ -137,7 +137,7 @@ WARNING:Route:455 - CLK Net:tx/rClkDiv<3> may have excessive skew because
       0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
 
 Total REAL time to Router completion: 5 secs 
-Total CPU time to Router completion: 5 secs 
+Total CPU time to Router completion: 4 secs 
 
 Partition Implementation Status
 -------------------------------

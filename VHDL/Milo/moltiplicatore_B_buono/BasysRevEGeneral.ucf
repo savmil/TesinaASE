@@ -56,8 +56,8 @@
 # NET "led<3>"    LOC = "P7";  # Bank = 3, Pin name = IO_L3P_3,            Sch name = LD3
 # NET "led<4>"    LOC = "P5";  # Bank = 3, Pin name = IO_L2N_3/VREF_3,     Sch name = LD4
 # NET "led<5>"    LOC = "P4";  # Bank = 3, Pin name = IO_L2P_3,            Sch name = LD5
- NET "led<6>"    LOC = "P3";  # Bank = 3, Pin name = IO_L1N_3,            Sch name = LD6
- NET "led<7>"    LOC = "P2";  # Bank = 3, Pin name = IO_L1P_3,            Sch name = LD7
+# NET "led<6>"    LOC = "P3";  # Bank = 3, Pin name = IO_L1N_3,            Sch name = LD6
+# NET "led<7>"    LOC = "P2";  # Bank = 3, Pin name = IO_L1P_3,            Sch name = LD7
 #                                                                                                                        
 # Switches                                                                                                                        
  NET "in_byte<0>"     LOC = "P38"; # Bank = 2, Pin name = IP,                  Sch name = SW0

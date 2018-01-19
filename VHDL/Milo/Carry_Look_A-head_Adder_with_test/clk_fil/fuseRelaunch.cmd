@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -o "/home/sav/ASE/clk_fil/clk_fil_testbench_isim_beh.exe" -prj "/home/sav/ASE/clk_fil/clk_fil_testbench_beh.prj" "work.clk_fil_testbench" 

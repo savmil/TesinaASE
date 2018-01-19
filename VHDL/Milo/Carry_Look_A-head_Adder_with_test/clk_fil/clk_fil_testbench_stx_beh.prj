@@ -1,2 +1,0 @@
-vhdl isim_temp "clk_fil.vhd"
-vhdl isim_temp "contatore_modulo_2n_testbench.vhd"

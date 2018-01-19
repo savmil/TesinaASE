@@ -9,7 +9,7 @@ Target Device  : xc3s250e
 Target Package : tq144
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Tue Dec 26 15:33:37 2017
+Mapped Date    : Thu Jan 18 17:49:45 2018
 
 Mapping design into LUTs...
 Running directed packing...

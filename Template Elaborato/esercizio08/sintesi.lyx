@@ -1,7 +1,9 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass book
 \use_default_options true
 \master Tesina.lyx
@@ -10,16 +12,16 @@
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
-
+\font_sf_scale 100 100
+\font_tt_scale 100 100
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -30,15 +32,24 @@
 \use_hyperref false
 \papersize default
 \use_geometry false
-\use_amsmath 1
-\use_esint 1
-\use_mhchem 1
-\use_mathdots 1
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 1
 \index Index
 \shortcut idx
@@ -80,6 +91,55 @@ Indicare la soluzione adottata per interfacciare il design realizzato con
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{Sintesi ripple carry}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Per la sintesi si è utilizzato un tester simile a questo 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{tester dispositivi seriali}
+\end_layout
+
+\end_inset
+
+, con la differenza che non vi è un process per la gestione dello start,
+ essendo il componente da testare combinatoriale, gli switch occorrono per
+ l' inserimento degli operandi i led 7, 6 e 5 indicano nel caso in cui o
+ il led 5 o il led 6 sia acceso che abbiamo selezionato un registro per
+ caricare i dati, se sono accessi entrambi stiamo assegnando il valore uno
+ al carry in ingresso, se si abilita il led 7 utilizziamo l' addizionatore
+ come sottrattore, mentre l' accensione del led 0 determina se è presente
+ il carry in uscita o meno, quella del led 1 che vi è una situazione d'
+ errore dovuta al sottrattore, a dispetto del tester messo in riferimento,
+ qui viene anche utilizzato il display per visualizzare il risultato, per
+ decidere quante cifre del display vogliamo utilizzare basta alzare gli
+ ultimi quattro switch (a partire dal quinto all' ottavo questi accenderanno
+ dalla prima alla quarta cifra) e premere il pulsante 2, se abbiamo bisogno
+ dei punti questi vengono abilitati dai primi quattro switch (stesso ragionament
+o fatto per le cifre) dopodichè bisogna sempre premere il pulsante 2, per
+ visionare la somma bisogna premere il pulsante 1.
 \end_layout
 
 \end_body

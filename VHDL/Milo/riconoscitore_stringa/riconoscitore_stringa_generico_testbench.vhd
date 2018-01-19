@@ -2,7 +2,7 @@
 -- Company: 
 -- Engineer:
 --
--- Create Date:   12:34:33 12/27/2017
+-- Create Date:   12:04:10 01/16/2018
 -- Design Name:   
 -- Module Name:   /media/sf_ASE/VHDL/Milo/riconoscitore_stringa/riconoscitore_stringa_generico_testbench.vhd
 -- Project Name:  riconoscitore_stringa
@@ -45,6 +45,7 @@ ARCHITECTURE behavior OF riconoscitore_stringa_generico_testbench IS
          reset : IN  std_logic;
          start : IN  std_logic;
          data : IN  std_logic_vector(7 downto 0);
+         stringa : IN  std_logic_vector(7 downto 0);
          bad : OUT  std_logic;
          correct : OUT  std_logic
         );
@@ -56,6 +57,7 @@ ARCHITECTURE behavior OF riconoscitore_stringa_generico_testbench IS
    signal reset : std_logic := '0';
    signal start : std_logic := '0';
    signal data : std_logic_vector(7 downto 0) := (others => '0');
+   signal stringa : std_logic_vector(7 downto 0) := (others => '0');
 
  	--Outputs
    signal bad : std_logic;
@@ -72,6 +74,7 @@ BEGIN
           reset => reset,
           start => start,
           data => data,
+          stringa => stringa,
           bad => bad,
           correct => correct
         );
@@ -89,14 +92,15 @@ BEGIN
    -- Stimulus process
    stim_proc: process
    begin		
-      -- hold reset state for 100 ns.	
-		reset<='1';
+      -- hold reset state for 100 ns.
       wait for 100 ns;	
-		
+		reset<='1';
+		stringa<=x"04";
+		data<=x"03";
 		start<='1';
-		data<="10001101";
 		wait for 10 ns;
 		start<='0';
+		
       wait for clk_period*10;
 
       -- insert stimulus here 

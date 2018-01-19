@@ -454,8 +454,11 @@ Il clock filter riceve in ingresso un segnale di reset in logica 0 attiva
  Il rapporto tra le due frequenze rappresenta il numero di conteggi da effettuar
 e dopo il quale il filtro deve alzare hit (nemero di colpi di clock in un
  periodo di hit).
- Non si è potuto sfruttare un contatore modulo N perchè non è detto che
- il conteggio sia potenza di 2.
+ Non si è potuto sfruttare un contatore modulo 
+\begin_inset Formula $2^{N}$
+\end_inset
+
+ perché non è detto che il conteggio sia potenza di 2.
 \end_layout
 
 \begin_layout Standard

@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-01-10T22:02:37</DateModified>
-  <ModuleName>mod_exp</ModuleName>
+  <DateModified>2018-01-13T09:48:27</DateModified>
+  <ModuleName>tester_dispositivi</ModuleName>
   <SummaryTimeStamp>2018-01-10T22:00:52</SummaryTimeStamp>
   <SavedFilePath>/media/sf_ASE/VHDL/Milo/RSA/iseconfig/tester_dispositivi.xreport</SavedFilePath>
   <ImplementationReportsDirectory>/media/sf_ASE/VHDL/Milo/RSA/</ImplementationReportsDirectory>

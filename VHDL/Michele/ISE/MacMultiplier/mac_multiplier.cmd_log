@@ -1,5 +1,0 @@
-xst -intstyle ise -ifn "C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/MacMultiplier/mac_multiplier.xst" -ofn "C:/Users/Michele/Documents/TesinaASE/VHDL/Michele/ISE/MacMultiplier/mac_multiplier.syr" 
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-tq144-5 mac_multiplier.ngc mac_multiplier.ngd  
-map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o mac_multiplier_map.ncd mac_multiplier.ngd mac_multiplier.pcf 
-par -w -intstyle ise -ol high -t 1 mac_multiplier_map.ncd mac_multiplier.ncd mac_multiplier.pcf 
-trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mac_multiplier.twx mac_multiplier.ncd -o mac_multiplier.twr mac_multiplier.pcf 

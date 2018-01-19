@@ -1,0 +1,1 @@
+vhdtdtfi -prj CarrySaveAdder -o /media/sf_ASE/VHDL/Milo/CarrySaveAdder/debounce.vhi -module debounce -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work debounce.vhd 

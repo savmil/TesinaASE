@@ -1,6 +1,1 @@
-work	"../../../../../home/sav/full_adder_half/full_adder_half.vhdl"
-work	"../../../../../home/sav/mux4_1/mux2_1.vhd"
-work	"../RippleCarryAdder/RippleCarryAdder.vhd"
-work	"carry_select.vhd"
-work	"carry_select_cell.vhd"
-work	"half_adder.vhdl"
+work	"debounce.vhd"

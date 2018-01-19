@@ -30,10 +30,10 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity RippleCarryAdder is 
-	 generic ( N : natural:= 2);
+	 generic ( N : natural:= 8);
     Port ( adder1 : in  STD_LOGIC_VECTOR(N-1 downto 0);
            adder2 : in  STD_LOGIC_VECTOR(N-1 downto 0);
-			  cin : IN STD_LOGIC;
+			  cin : in STD_LOGIC;
            sum : out  STD_LOGIC_VECTOR(N-1 downto 0);
            last_carry : out  STD_LOGIC);
 end RippleCarryAdder;
@@ -47,7 +47,6 @@ architecture structural of RippleCarryAdder is
 			COUT: out STD_LOGIC
 		);
 	end component;
-	signal carry_rappresentation:STD_LOGIC:='0';
 	signal carry: STD_LOGIC_VECTOR(N-2 downto 0) :=(others => '0');
 begin 
 	RippleCarryAdder: for i in 0 to N-1 generate

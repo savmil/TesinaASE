@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "/media/sf_ASE/VHDL/Milo/RSA/generazione_valore_RSA_testbench_isim_map.exe" -prj "/media/sf_ASE/VHDL/Milo/RSA/generazione_valore_RSA_testbench_map.prj" "work.generazione_valore_RSA_testbench" 
+-intstyle "ise" -incremental -o "/media/sf_ASE/VHDL/Milo/RSA/generazione_valore_RSA_testbench_isim_beh.exe" -prj "/media/sf_ASE/VHDL/Milo/RSA/generazione_valore_RSA_testbench_beh.prj" "work.generazione_valore_RSA_testbench" 

@@ -1,0 +1,4 @@
+work	"full_adder.vhd"
+work	"half_adder.vhd"
+work	"mac_cell.vhd"
+work	"mac_multiplier.vhd"

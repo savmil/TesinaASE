@@ -1,29 +1,29 @@
 Command line:
    RippleCarryAdder_testbench_isim_beh.exe
      -simmode  gui
-     -simrunnum  1
-     -socket  46581
+     -simrunnum  0
+     -socket  57525
 
-Tue Oct 31 23:12:51 2017
+Tue Jan 16 18:38:36 2018
 
 
- Elaboration Time: 0.02 sec
+ Elaboration Time: 0.03 sec
 
- Current Memory Usage: 199.786 Meg
+ Current Memory Usage: 199.782 Meg
 
- Total Signals          : 42
- Total Nets             : 15
- Total Signal Drivers   : 12
- Total Blocks           : 14
- Total Primitive Blocks : 6
- Total Processes        : 11
- Total Traceable Variables  : 17
- Total Scalar Nets and Variables : 502
-Total Line Count : 17
+ Total Signals          : 139
+ Total Nets             : 57
+ Total Signal Drivers   : 43
+ Total Blocks           : 44
+ Total Primitive Blocks : 18
+ Total Processes        : 41
+ Total Traceable Variables  : 23
+ Total Scalar Nets and Variables : 550
+Total Line Count : 45
 
  Total Simulation Time: 0.03 sec
 
- Current Memory Usage: 208.179 Meg
+ Current Memory Usage: 208.175 Meg
 
-Tue Oct 31 23:15:27 2017
+Tue Jan 16 18:39:42 2018
 

@@ -33,7 +33,7 @@ USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
  
 ENTITY RippleCarryAdder_testbench IS
-	generic ( N : natural :=2 );
+	generic ( N : natural :=8 );
 END RippleCarryAdder_testbench;
  
 ARCHITECTURE behavior OF RippleCarryAdder_testbench IS 
@@ -44,6 +44,7 @@ ARCHITECTURE behavior OF RippleCarryAdder_testbench IS
     PORT(
          adder1 : IN  std_logic_vector(N-1 downto 0);
          adder2 : IN  std_logic_vector(N-1 downto 0);
+			cin : in STD_LOGIC;
          sum : OUT  std_logic_vector(N-1 downto 0);
          last_carry : OUT  std_logic
         );
@@ -53,7 +54,7 @@ ARCHITECTURE behavior OF RippleCarryAdder_testbench IS
    --Inputs
    signal adder1 : std_logic_vector(N-1 downto 0) := (others => '0');
    signal adder2 : std_logic_vector(N-1 downto 0) := (others => '0');
-
+	signal cin : std_logic:='0';
  	--Outputs
    signal sum : std_logic_vector(N-1 downto 0);
    signal last_carry : std_logic;
@@ -66,6 +67,7 @@ BEGIN
    uut: RippleCarryAdder PORT MAP (
           adder1 => adder1,
           adder2 => adder2,
+			 cin => cin,
           sum => sum,
           last_carry => last_carry
         );
@@ -74,13 +76,16 @@ BEGIN
    begin		
       -- hold reset state for 100 ns.
       wait for 100 ns;	
-
-      for i in 0 to 2**N-1 loop
-			wait for 1 ns;
-			adder1<=STD_LOGIC_VECTOR(to_unsigned(i,adder1'length));
-			wait for 1 ns;
-			adder2<=STD_LOGIC_VECTOR(to_unsigned(i,adder2'length));
-		end loop;
+		cin<='1';
+		adder1<=x"05";
+		adder2<=x"05";
+--      for i in 0 to 2**N-1 loop
+--			
+--			wait for 1 ns;
+--			adder1<=STD_LOGIC_VECTOR(to_unsigned(i,adder1'length));
+--			wait for 1 ns;
+--			adder2<=STD_LOGIC_VECTOR(to_unsigned(i,adder2'length));
+--		end loop;
 
       -- insert stimulus here 
 

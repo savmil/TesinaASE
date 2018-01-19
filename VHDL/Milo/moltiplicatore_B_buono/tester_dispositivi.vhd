@@ -58,14 +58,15 @@ COMPONENT contatore_modulo_2n
            q : out  STD_LOGIC_VECTOR (width-1 downto 0));
 	end component;
 	COMPONENT Booth_multiplier
+	 generic (width : NATURAL:=8);
 	PORT(
-		mul1 : IN std_logic_vector(7 downto 0);
-		mul2 : IN std_logic_vector(7 downto 0);
+		mul1 : IN std_logic_vector(width-1 downto 0);
+		mul2 : IN std_logic_vector(width-1 downto 0);
 		start : IN std_logic;
 		clk : IN std_logic;
 		reset : IN std_logic;
 		fin: out STD_LOGIC_vector(0 downto 0);
-		product : OUT std_logic_vector(15 downto 0)
+		product : OUT std_logic_vector(2*width-1 downto 0)
 		);
 	END COMPONENT;
 	COMPONENT display_top_level
@@ -90,8 +91,8 @@ COMPONENT contatore_modulo_2n
 	signal sel :STD_LOGIC_VECTOR(1 downto 0):=(others=>'0');
 	signal scelta: STD_LOGIC_VECTOR( 3 downto 0):=(others=>'0');
 	signal value,prod:STD_LOGIC_VECTOR(15 downto 0) := (others=>'0');
-	signal s,check_start,check: STD_LOGIC_VECTOR( 0 downto 0) := (others=>'0');
-	signal en_mul1,en_mul2,en_mul,en_c,en_m,en_ck,hit,en_c1,reset_c,reset_m :STD_LOGIC:='0';
+	signal s: STD_LOGIC_VECTOR( 0 downto 0) := (others=>'0');
+	signal en_c,en_m,hit,en_c1,reset_c :STD_LOGIC:='0';
 begin
 	deb:debounce port map(clock,button(0),en_c);
 	change: process (clock,en_c)
@@ -117,11 +118,9 @@ begin
 	--en_mul2<=(sel(1) and not(sel(0)));
 	mul2 : latch_d_en port map(clock,not(button(3)),scelta(2),in_byte(7 downto 0),value(15 downto 8));
 	--en_mul<=(sel(1) and sel(0));
-	ch_st: latch_d_en generic map (width=>1) port map(clock,not(button(3)),en_ck,check_start,check);
 	counter: contatore_modulo_2n port map(clock,en_c1,reset_c,hit,open);
 	st: process(scelta,clock,hit)
 		begin
-		en_ck<='1';
 		reset_c<='1';
 			if scelta(3)='1' and hit='0' then
 				en_m<='1';
@@ -133,11 +132,9 @@ begin
 				reset_c<='0';
 			end if;
 		end process;
-	led(0)<=en_m;
+	led(0)<=s(0);
 	led(7)<=sel(1);
 	led(6)<=sel(0);
-	led(1)<=s(0);
-	led(2)<=check(0);
 	booth : Booth_multiplier port map(value(7 downto 0),value(15 downto 8),en_m,clock,not(scelta(0)),s,prod);
 	gest_disp : display_top_level port map(clock,button(3),button(2),button(1),prod,in_byte,anodes,cathodes);
 	produ<=prod;

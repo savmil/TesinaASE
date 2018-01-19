@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-01-02T18:52:38</DateModified>
+  <DateModified>2018-01-15T14:42:55</DateModified>
   <ModuleName>gestore_display</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/Michele/Documents/TesinaASE/VHDL/Milo/gestore_display/iseconfig/gestore_display.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Michele/Documents/TesinaASE/VHDL/Milo/gestore_display\</ImplementationReportsDirectory>
+  <SavedFilePath>/media/sf_ASE/VHDL/Milo/gestore_display/iseconfig/gestore_display.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/media/sf_ASE/VHDL/Milo/gestore_display/</ImplementationReportsDirectory>
   <DateInitialized>2017-11-12T10:06:48</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

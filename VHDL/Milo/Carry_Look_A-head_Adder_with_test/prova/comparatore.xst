@@ -1,5 +1,0 @@
-set -tmpdir "/home/sav/ASE/prova/xst/projnav.tmp"
-set -xsthdpdir "/home/sav/ASE/prova/xst"
-elaborate
--ifn comparatore.prj
--ifmt mixed

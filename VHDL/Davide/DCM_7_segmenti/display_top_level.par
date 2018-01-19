@@ -1,14 +1,14 @@
-Release 14.7 par P.20131013 (nt64)
-Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Release 14.4 par P.49d (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-DAVIDE-PC::  Thu Dec 28 15:54:02 2017
+WIN-OQ3GFLCOVAE::  Sun Jan 14 12:20:38 2018
 
 par -w -intstyle ise -ol high -t 1 display_top_level_map.ncd
 display_top_level.ncd display_top_level.pcf 
 
 
 Constraints file: display_top_level.pcf.
-Loading device for application Rf_Device from file '3s100e.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+Loading device for application Rf_Device from file '3s100e.nph' in environment C:\Xilinx\14.4\ISE_DS\ISE\.
    "display_top_level" is an NCD, version 3.2, device xc3s100e, package tq144, speed -5
 
 Initializing temperature to 85.000 Celsius. (default - Range: -40.000 to 100.000 Celsius)
@@ -20,7 +20,7 @@ INFO:Par:282 - No user timing constraints were detected or you have set the opti
    reported in the PAR report in this mode. The PAR timing summary will list the performance achieved for each clock.
    Note: For the fastest runtime, set the effort level to "std".  For best performance, set the effort level to "high".
 
-Device speed data version:  "PRODUCTION 1.27 2013-10-13".
+Device speed data version:  "PRODUCTION 1.27 2012-12-04".
 
 
 Design Summary Report:
@@ -59,17 +59,17 @@ Finished initial Timing Analysis.  REAL time: 2 secs
 
 
 Starting Placer
-Total REAL time at the beginning of Placer: 3 secs 
+Total REAL time at the beginning of Placer: 2 secs 
 Total CPU  time at the beginning of Placer: 1 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:6b1aba7) REAL time: 4 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:6b1aba7) REAL time: 3 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:6b1aba7) REAL time: 5 secs 
+Phase 2.7  Design Feasibility Check (Checksum:6b1aba7) REAL time: 3 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:6b1aba7) REAL time: 5 secs 
+Phase 3.31  Local Placement Optimization (Checksum:6b1aba7) REAL time: 3 secs 
 
 Phase 4.2  Initial Clock and IO Placement
 
@@ -86,10 +86,10 @@ ERROR:Place:1012 - A clock IOB / DCM component pair have been found that are not
    < NET "clock" CLOCK_DEDICATED_ROUTE = FALSE; >
    < PIN "Inst_dcm/DCM_SP_INST.CLKIN" CLOCK_DEDICATED_ROUTE = FALSE; >
 
-Phase 4.2  Initial Clock and IO Placement (Checksum:a773455) REAL time: 7 secs 
+Phase 4.2  Initial Clock and IO Placement (Checksum:a773455) REAL time: 5 secs 
 
-Total REAL time to Placer completion: 7 secs 
-Total CPU  time to Placer completion: 3 secs 
+Total REAL time to Placer completion: 5 secs 
+Total CPU  time to Placer completion: 4 secs 
 
 
 Partition Implementation Status
@@ -132,10 +132,10 @@ WARNING:Par:100 - Design is not completely routed. There are 88 signals that are
    indicate why these nets are unroutable. These nets can also be evaluated
    in FPGA Editor by selecting "Unrouted Nets" in the List Window.
 
-Total REAL time to PAR completion: 7 secs 
-Total CPU time to PAR completion: 3 secs 
+Total REAL time to PAR completion: 6 secs 
+Total CPU time to PAR completion: 4 secs 
 
-Peak Memory Usage:  262 MB
+Peak Memory Usage:  187 MB
 
 Placement: Completed - errors found.
 Routing: Completed - errors found.

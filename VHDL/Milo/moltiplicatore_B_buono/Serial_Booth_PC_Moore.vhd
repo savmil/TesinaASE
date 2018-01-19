@@ -46,7 +46,6 @@ end Serial_Booth_PC_Moore;
 architecture Behavioral of Serial_Booth_PC_Moore is
 type state is (idle,getseq,init,inits,shift);
 signal current_state:state;
-signal a_val,q_val,en_q_val,en_a_val:STD_LOGIC:='0';
 begin
 	change_state: process (clk,reset)
 	begin
@@ -61,10 +60,10 @@ begin
 			when getseq=>current_state<=inits;
 			when inits=> current_state<=shift;
 			when shift=> if (stop='0') then
-												current_state<=getseq;
-											 elsif (stop='1') then
-												current_state<=idle;
-											 end if;
+								current_state<=getseq;
+							 elsif (stop='1') then
+								current_state<=idle;
+							end if;
 		end case;
 		end if;
 	end process;
@@ -74,6 +73,8 @@ begin
 		en_shift<='0';
 		en_c<='0';
 		en_p1<='0'; 
+		en_q<='0';
+		en_a<='0';
 			case current_state is 
 				when idle =>
 								if start='1' then

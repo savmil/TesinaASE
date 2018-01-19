@@ -1,2 +1,0 @@
-vhdtdtfi -prj moltiplicatore_booth -o /home/sav/ASE/moltiplicatore_booth/registro_a_scorrimento.vhi -module registro_a_scorrimento -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work registro_a_scorrimento.vhd 
-vhdtdtfi -prj moltiplicatore_booth -o /home/sav/ASE/moltiplicatore_booth/registro_a_scorrimento.vhi -module registro_a_scorrimento -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work registro_a_scorrimento.vhd 

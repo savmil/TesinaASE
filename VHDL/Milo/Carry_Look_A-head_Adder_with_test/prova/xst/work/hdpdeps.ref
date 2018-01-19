@@ -1,6 +1,0 @@
-V3 3
-FL /home/sav/ASE/prova/comparatore.vhd 2017/10/11.13:45:49 P.20131013
-EN work/comparatore 1507722586 FL /home/sav/ASE/prova/comparatore.vhd \
-      PB ieee/std_logic_1164 1381692176
-AR work/comparatore/Behavioral_comp 1507722587 \
-      FL /home/sav/ASE/prova/comparatore.vhd EN work/comparatore 1507722586

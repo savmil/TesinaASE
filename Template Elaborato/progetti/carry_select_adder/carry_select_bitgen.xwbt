@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/media/sf_ASE/VHDL/Milo/carry_select_adder/carry_select.ncd
+OUTFILE=/media/sf_ASE/VHDL/Milo/carry_select_adder/carry_select.bit
+FAMILY=Spartan3E
+PART=xc3s100e-5tq144
+WORKINGDIR=/media/sf_ASE/VHDL/Milo/carry_select_adder
+LICENSE=WebPack
+USER_INFO=211407724_0_0_917

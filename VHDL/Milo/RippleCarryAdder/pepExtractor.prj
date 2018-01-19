@@ -1,3 +1,4 @@
-work	"../../full_adder_half/full_adder_half.vhdl"
-work	"../../half_adder/half_adder.vhdl"
+work	"../../../../../home/sav/full_adder_half/full_adder_half.vhdl"
+work	"../../../../../home/sav/full_adder_half/half_adder.vhdl"
 work	"RippleCarryAdder.vhd"
+work	"add_sub.vhd"

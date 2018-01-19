@@ -1,0 +1,29 @@
+Command line:
+   seven_operand_adder_testbench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  32963
+
+Wed Jan 17 16:36:32 2018
+
+
+ Elaboration Time: 0.03 sec
+
+ Current Memory Usage: 201.474 Meg
+
+ Total Signals          : 968
+ Total Nets             : 438
+ Total Signal Drivers   : 285
+ Total Blocks           : 213
+ Total Primitive Blocks : 107
+ Total Processes        : 279
+ Total Traceable Variables  : 41
+ Total Scalar Nets and Variables : 831
+Total Line Count : 281
+
+ Total Simulation Time: 0.04 sec
+
+ Current Memory Usage: 209.867 Meg
+
+Wed Jan 17 20:01:10 2018
+

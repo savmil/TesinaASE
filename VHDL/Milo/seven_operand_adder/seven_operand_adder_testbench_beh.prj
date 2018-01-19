@@ -1,0 +1,8 @@
+vhdl work "half_adder.vhdl"
+vhdl work "full_adder_half.vhdl"
+vhdl work "sevent_to_threee.vhd"
+vhdl work "RippleCarryAdder.vhd"
+vhdl work "partial_sum_3.vhd"
+vhdl work "partial_sum_2.vhd"
+vhdl work "seven_operand_adder.vhd"
+vhdl work "seven_operand_adder_testbench.vhd"

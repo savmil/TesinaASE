@@ -85,17 +85,6 @@ COMPONENT contatore_modulo_2n
 			  en_p1 : out STD_LOGIC;
            stop : in  STD_LOGIC);
 	END COMPONENT;
-	COMPONENT registro_a_scorrimento
-	generic (width:NATUrAL:=8);
-	PORT(
-		input : IN std_logic_VECTOR(width-1 downto 0);
-		enable : IN std_logic;
-		shift : in  STD_LOGIC;
-		reset : IN std_logic;       
-		shift_bit : IN std_logic;
-		output:out STD_LOGIC_VECTOR(width-1 downto 0)
-		);
-	END COMPONENT;
 	component boundary_scan_chain 
 	generic(n : natural := 8);
     Port ( --state_vector : in  STD_LOGIC_VECTOR (n-1 downto 0);
@@ -110,11 +99,10 @@ COMPONENT contatore_modulo_2n
 	 );
 	end component;
 	signal q_val,q_val_2:STD_LOGIC_VECTOR(width downto 0):=(others=>'0');
-	signal moltiplicatore,molt2,suma,sum1:STD_LOGIC_VECTOR(width-1 downto 0):=(others=>'0');
+	signal moltiplicatore,suma,sum1:STD_LOGIC_VECTOR(width-1 downto 0):=(others=>'0');
 	signal prod:STD_LOGIC_VECTOR(2*width-1 downto 0):=(others=>'0');
 	signal fint_stop: STD_LOGIC_VECTOR(0 downto 0);
 	signal stop,en_m,en_c,en_sh,en_p1,bit_shift,en_q,en_a:STD_LOGIC:='0';
-	--signal en_q,en_a:STD_LOGIC_VECTOR(0 downto 0):="0";
 begin
 	-- conto per il numero di bit, abilito i registri, vedo i bit, 00 11 solo shift, 01 - mul2 poi prodotto shift
 	--10 + mul2 shift

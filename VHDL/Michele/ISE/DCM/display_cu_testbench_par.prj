@@ -1,0 +1,2 @@
+vhdl work "netgen/par/display_cu_timesim.vhd"
+vhdl work "display_cu_testbench.vhd"

@@ -1,26 +1,26 @@
-Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/sav/ASE/RippleCarryAdder/RippleCarryAdder_testbench_isim_beh.exe -prj /home/sav/ASE/RippleCarryAdder/RippleCarryAdder_testbench_beh.prj work.RippleCarryAdder_testbench 
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /media/sf_ASE/VHDL/Milo/RippleCarryAdder/RippleCarryAdder_testbench_isim_beh.exe -prj /media/sf_ASE/VHDL/Milo/RippleCarryAdder/RippleCarryAdder_testbench_beh.prj work.RippleCarryAdder_testbench 
 ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 1
 Turning on mult-threading, number of parallel sub-compilation jobs: 0 
 Determining compilation order of HDL files
-Parsing VHDL file "/home/sav/ASE/RippleCarryAdder/../../half_adder/half_adder.vhdl" into library work
-Parsing VHDL file "/home/sav/ASE/RippleCarryAdder/../../full_adder_half/full_adder_half.vhdl" into library work
-Parsing VHDL file "/home/sav/ASE/RippleCarryAdder/RippleCarryAdder.vhd" into library work
-Parsing VHDL file "/home/sav/ASE/RippleCarryAdder/RippleCarryAdder_testbench.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/VHDL/Milo/RippleCarryAdder/../../../../../home/sav/full_adder_half/half_adder.vhdl" into library work
+Parsing VHDL file "/media/sf_ASE/VHDL/Milo/RippleCarryAdder/../../../../../home/sav/full_adder_half/full_adder_half.vhdl" into library work
+Parsing VHDL file "/media/sf_ASE/VHDL/Milo/RippleCarryAdder/RippleCarryAdder.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/VHDL/Milo/RippleCarryAdder/RippleCarryAdder_testbench.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 95652 KB
-Fuse CPU Usage: 1040 ms
+Fuse Memory Usage: 95648 KB
+Fuse CPU Usage: 1430 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
 Compiling architecture dataflow of entity half_adder [half_adder_default]
 Compiling architecture register_transfer of entity full_adder_half [full_adder_half_default]
-Compiling architecture structural of entity RippleCarryAdder [\RippleCarryAdder(2)\]
+Compiling architecture structural of entity RippleCarryAdder [\RippleCarryAdder(8)\]
 Compiling architecture behavior of entity ripplecarryadder_testbench
 Time Resolution for simulation is 1ps.
 Compiled 10 VHDL Units
-Built simulation executable /home/sav/ASE/RippleCarryAdder/RippleCarryAdder_testbench_isim_beh.exe
-Fuse Memory Usage: 110332 KB
-Fuse CPU Usage: 1100 ms
-GCC CPU Usage: 150 ms
+Built simulation executable /media/sf_ASE/VHDL/Milo/RippleCarryAdder/RippleCarryAdder_testbench_isim_beh.exe
+Fuse Memory Usage: 110360 KB
+Fuse CPU Usage: 1540 ms
+GCC CPU Usage: 2070 ms

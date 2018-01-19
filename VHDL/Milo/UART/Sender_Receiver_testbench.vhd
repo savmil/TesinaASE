@@ -2,7 +2,7 @@
 -- Company: 
 -- Engineer:
 --
--- Create Date:   11:17:13 12/26/2017
+-- Create Date:   17:24:01 01/18/2018
 -- Design Name:   
 -- Module Name:   /media/sf_ASE/VHDL/Milo/UART/Sender_Receiver_testbench.vhd
 -- Project Name:  UART
@@ -45,6 +45,7 @@ ARCHITECTURE behavior OF Sender_Receiver_testbench IS
          start : IN  std_logic;
          reset : IN  std_logic;
          data : IN  std_logic_vector(7 downto 0);
+         data_t : OUT  std_logic;
          received : OUT  std_logic_vector(7 downto 0)
         );
     END COMPONENT;
@@ -57,6 +58,7 @@ ARCHITECTURE behavior OF Sender_Receiver_testbench IS
    signal data : std_logic_vector(7 downto 0) := (others => '0');
 
  	--Outputs
+   signal data_t : std_logic;
    signal received : std_logic_vector(7 downto 0);
 
    -- Clock period definitions
@@ -70,6 +72,7 @@ BEGIN
           start => start,
           reset => reset,
           data => data,
+          data_t => data_t,
           received => received
         );
 

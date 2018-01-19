@@ -1,5 +1,0 @@
-set -tmpdir "/home/sav/ASE/contatore_modulo_4/xst/projnav.tmp"
-set -xsthdpdir "/home/sav/ASE/contatore_modulo_4/xst"
-elaborate
--ifn RippleCarryAdder.prj
--ifmt mixed

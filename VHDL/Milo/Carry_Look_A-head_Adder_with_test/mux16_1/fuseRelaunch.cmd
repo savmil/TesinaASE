@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -o "/home/sav/ASE/mux16_1/mux16_1_testbench_isim_beh.exe" -prj "/home/sav/ASE/mux16_1/mux16_1_testbench_beh.prj" "work.mux16_1_testbench" 
