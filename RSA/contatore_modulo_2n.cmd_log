@@ -1,0 +1,3 @@
+vhdtdtfi -prj RSA -o /media/sf_ASE/VHDL/Milo/RSA/contatore_modulo_2n.vhi -module contatore_modulo_2n -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work contatore_modulo_4.vhd 
+vhdtdtfi -prj RSA -o /media/sf_ASE/VHDL/Milo/RSA/contatore_modulo_2n.vhi -module contatore_modulo_2n -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work contatore_modulo_4.vhd 
+vhdtdtfi -prj RSA -o /media/sf_ASE/VHDL/Milo/RSA/contatore_modulo_2n.vhi -module contatore_modulo_2n -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work contatore_modulo_4.vhd 

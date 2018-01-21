@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-01-19T16:11:06</DateModified>
+  <DateModified>2018-01-20T07:37:05</DateModified>
   <ModuleName>tester_dispositivi</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>/media/sf_ASE/VHDL/DCM/iseconfig/tester_dispositivi.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/media/sf_ASE/VHDL/DCM</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>/media/sf_ASE/VHDL/DCM/</ImplementationReportsDirectory>
   <DateInitialized>2018-01-19T16:03:57</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

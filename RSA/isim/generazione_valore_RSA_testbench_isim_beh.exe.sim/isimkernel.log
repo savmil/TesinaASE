@@ -1,0 +1,10 @@
+Command line:
+   generazione_valore_RSA_testbench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  56899
+
+Sun Jan 21 12:19:20 2018
+
+
+ Elaboration Time: 0.09 sec

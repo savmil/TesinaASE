@@ -1,0 +1,72 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /media/sf_ASE/RSA/generazione_valore_RSA_testbench_isim_beh.exe -prj /media/sf_ASE/RSA/generazione_valore_RSA_testbench_beh.prj work.generazione_valore_RSA_testbench 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Determining compilation order of HDL files
+Parsing VHDL file "/media/sf_ASE/RSA/half_adder.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/RSA/full_adder.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/RSA/ripple_carry_adder.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/RSA/mux2_1.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/RSA/latch_d_en.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/RSA/shifter_a_sinistra.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/RSA/serial_div_restoring.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/RSA/Serial_Booth_PC_Moore.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/RSA/contatore_modulo_4.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/RSA/boundary_scan_chain.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/RSA/add_sub.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/RSA/mod_exp_gestore.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/RSA/divisore_restoring.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/RSA/counter_2n_down.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/RSA/Booth_multiplier.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/RSA/mod_exp.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/RSA/gestore_generatore_valori_RSA.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/RSA/funzione_hash_moltiplicazione.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/RSA/edge_triggered_d_n.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/RSA/generazione_valori_RSA.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/RSA/generazione_valore_RSA_testbench.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 100924 KB
+Fuse CPU Usage: 1450 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package textio
+Compiling package std_logic_textio
+Compiling architecture behavioral of entity edge_triggered_d_n [\edge_triggered_d_n(8)\]
+Compiling package std_logic_arith
+Compiling architecture behavioral of entity Serial_Booth_PC_Moore [serial_booth_pc_moore_default]
+Compiling architecture behavioral of entity contatore_modulo_2n [\contatore_modulo_2n(5)\]
+Compiling architecture dataflow of entity mux2_1 [mux2_1_default]
+Compiling architecture behavioral of entity latch_d_en [\latch_d_en(1)\]
+Compiling architecture structural of entity boundary_scan_chain [\boundary_scan_chain(33)\]
+Compiling architecture behavioral of entity latch_d_en [\latch_d_en(32)\]
+Compiling architecture structural of entity boundary_scan_chain [\boundary_scan_chain(32)\]
+Compiling architecture dataflow of entity half_adder [half_adder_default]
+Compiling architecture structural of entity full_adder [full_adder_default]
+Compiling architecture structural of entity ripple_carry_adder [\ripple_carry_adder(32)\]
+Compiling architecture structural of entity add_sub [\add_sub(32)\]
+Compiling architecture behavioral of entity latch_d_en [\latch_d_en(64)\]
+Compiling architecture structural of entity Booth_multiplier [\Booth_multiplier(32)\]
+Compiling architecture behavioral of entity funzione_hash_moltiplicazione [funzione_hash_moltiplicazione_de...]
+Compiling architecture behavioral of entity edge_triggered_d_n [\edge_triggered_d_n(32)\]
+Compiling architecture behavioral of entity counter_2n_down [\counter_2n_down(5)\]
+Compiling architecture behavioral of entity latch_d_en [\latch_d_en(2)\]
+Compiling architecture behavioral of entity serial_div_restoring [serial_div_restoring_default]
+Compiling architecture behavioral of entity contatore_modulo_2n [\contatore_modulo_2n(6)\]
+Compiling architecture structural of entity shifter_a_sinistra [\shifter_a_sinistra(64)\]
+Compiling architecture structural of entity ripple_carry_adder [\ripple_carry_adder(64)\]
+Compiling architecture structural of entity add_sub [\add_sub(64)\]
+Compiling architecture behavioral of entity latch_d_en [\latch_d_en(128)\]
+Compiling architecture structural of entity divisore_restoring [\divisore_restoring(64)\]
+Compiling architecture behavioral of entity mod_exp_gestore [mod_exp_gestore_default]
+Compiling architecture behavioral of entity mod_exp [mod_exp_default]
+Compiling architecture behavioral of entity gestore_generatore_valori_RSA [gestore_generatore_valori_rsa_de...]
+Compiling architecture behavioral of entity generazione_valori_RSA [generazione_valori_rsa_default]
+Compiling architecture behavior of entity generazione_valore_rsa_testbench
+Time Resolution for simulation is 1ps.
+Compiled 65 VHDL Units
+Built simulation executable /media/sf_ASE/RSA/generazione_valore_RSA_testbench_isim_beh.exe
+Fuse Memory Usage: 121948 KB
+Fuse CPU Usage: 1840 ms
+GCC CPU Usage: 1620 ms

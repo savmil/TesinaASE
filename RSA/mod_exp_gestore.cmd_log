@@ -1,0 +1,2 @@
+vhdtdtfi -prj RSA -o /media/sf_ASE/VHDL/Milo/RSA/mod_exp_gestore.vhi -module mod_exp_gestore -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work mod_exp_gestore.vhd 
+vhdtdtfi -prj RSA -o /media/sf_ASE/VHDL/Milo/RSA/mod_exp_gestore.vhi -module mod_exp_gestore -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work mod_exp_gestore.vhd 
