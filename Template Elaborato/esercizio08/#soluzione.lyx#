@@ -170,7 +170,7 @@ centering
 
 	
 \backslash
-includegraphics[scale=0.7]{esercizio08/images/ripple_carry_adder.png}
+includegraphics[scale=0.4]{esercizio08/images/ripple_carry_adder.png}
 \end_layout
 
 \begin_layout Plain Layout
@@ -197,12 +197,13 @@ Per realizzare il circuito si è ricorsi al costrutto for generate, per collegga
 e i vari full adder per far sì che i riporti generati dal full adder precedente
  vengano propagati al successivo, purtroppo dallo schematico non è evidente,
  perché i costrutti di questo tipo quando viene chiesto ad ISE di creare
- lo schematico non esplode tutti si singoli full_adder, ma ne crea uno solo
- che però ha in ingresso ed uscita un vettore di bit.
+ lo schematico non lo espande mostrando tutti i singoli full_adder, ma ne
+ crea uno solo che però ha in ingresso ed uscita un vettore di bit.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float table
+placement H
 wide false
 sideways false
 status open
@@ -466,33 +467,34 @@ label{Dati ripple carry}
 \end_layout
 
 \begin_layout Standard
-Secondo le formule dell' area e del ritardo, l' area è pari a cinque 
+Secondo le formule dell' area e del ritardo, l' area è pari a 5
 \begin_inset Formula $n$
 \end_inset
 
- volte(dove 
+ (dove 
 \begin_inset Formula $n$
 \end_inset
 
  indica il numero di full-adder) , ed 2
-\begin_inset Formula $/delta$
+\begin_inset Formula $\delta$
 \end_inset
 
- 
+
 \begin_inset Formula $n$
 \end_inset
 
- per il ritardo, la realizzazione per FPGA invece ci da dimensioni e ritardi
- diversi, difatti l' area raddoppia se raddoppiano il numero di bit per
- la somma, molto probabilmente perché essendoci un full_adder in ogni slice
- utilizzerà di ognuna di esse un full_adder, invece il tempo di calcolo
- all' aumentare del numero di bit cresce ma meno che linearmente, determinante
- dal fatto che il sintetizzatore riuscirà a disporre le slice molto vicine
- tra di loro e il tempo di propagazione dei riporti diverrà molto piccolo,
- si nota però che da 8 a 16 bit il tempo di calcolo incrementa di una quantitò
- relativamente più grande rispetto tra 4 e 8 o 16 e 32, forse perchè le
- connessione non avvengono tra CLB vicine tra loro, per determinare il tempo
- si è scelto come input sempre il massimo valore accettabile in ingresso.
+ per il ritardo, la realizzazione per FPGA invece presenta dimensioni e
+ ritardi diversi, difatti l' area raddoppia se raddoppiano il numero di
+ bit per la somma, molto probabilmente perché essendoci un full_adder in
+ ogni slice utilizzerà di ognuna di esse un full_adder, invece il tempo
+ di calcolo all' aumentare del numero di bit cresce ma meno che linearmente,
+ determinante dal fatto che il sintetizzatore riuscirà a disporre le slice
+ molto vicine tra di loro e il tempo di propagazione dei riporti diverrà
+ molto piccolo, si nota però che da 8 a 16 bit il tempo di calcolo incrementa
+ di una quantitò relativamente più grande rispetto tra 4 e 8 o 16 e 32,
+ forse perchè le connessione non avvengono tra CLB vicine tra loro, per
+ determinare il tempo si è scelto come input sempre il massimo valore accettabil
+e in ingresso.
 \end_layout
 
 \begin_layout Standard

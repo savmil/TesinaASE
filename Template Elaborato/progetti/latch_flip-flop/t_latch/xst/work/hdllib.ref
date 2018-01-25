@@ -1,8 +1,8 @@
-AR rs_latch structural C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/t_latch/rs_latch.vhd sub00/vhpl05 1515934136
-EN t_latch NULL C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/t_latch/t_latch.vhd sub00/vhpl06 1515934137
-AR nor_gate dataflow C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/t_latch/nor_gate.vhd sub00/vhpl01 1515934132
-EN rs_latch NULL C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/t_latch/rs_latch.vhd sub00/vhpl04 1515934135
-AR and_gate dataflow C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/t_latch/and_gate.vhd sub00/vhpl03 1515934134
-AR t_latch structural C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/t_latch/t_latch.vhd sub00/vhpl07 1515934138
-EN nor_gate NULL C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/t_latch/nor_gate.vhd sub00/vhpl00 1515934131
-EN and_gate NULL C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/t_latch/and_gate.vhd sub00/vhpl02 1515934133
+AR rs_latch structural "/media/sf_ASE/Template Elaborato/progetti/latch_flip-flop/t_latch/rs_latch.vhd" sub00/vhpl05 1516902586
+EN t_latch NULL "/media/sf_ASE/Template Elaborato/progetti/latch_flip-flop/t_latch/t_latch.vhd" sub00/vhpl06 1516902587
+AR nor_gate dataflow "/media/sf_ASE/Template Elaborato/progetti/latch_flip-flop/t_latch/nor_gate.vhd" sub00/vhpl01 1516902582
+EN rs_latch NULL "/media/sf_ASE/Template Elaborato/progetti/latch_flip-flop/t_latch/rs_latch.vhd" sub00/vhpl04 1516902585
+AR and_gate dataflow "/media/sf_ASE/Template Elaborato/progetti/latch_flip-flop/t_latch/and_gate.vhd" sub00/vhpl03 1516902584
+AR t_latch structural "/media/sf_ASE/Template Elaborato/progetti/latch_flip-flop/t_latch/t_latch.vhd" sub00/vhpl07 1516902588
+EN nor_gate NULL "/media/sf_ASE/Template Elaborato/progetti/latch_flip-flop/t_latch/nor_gate.vhd" sub00/vhpl00 1516902581
+EN and_gate NULL "/media/sf_ASE/Template Elaborato/progetti/latch_flip-flop/t_latch/and_gate.vhd" sub00/vhpl02 1516902583

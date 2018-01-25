@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.02 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> 
 Reading design: tester_dispositivi.prj
@@ -51,7 +51,7 @@ Target Device                      : xc3s100e-5-tq144
 Top Module Name                    : tester_dispositivi
 Automatic FSM Extraction           : YES
 FSM Encoding Algorithm             : Auto
-Safe Implementation                : No
+Safe Implementation                : Yes
 FSM Style                          : LUT
 RAM Extraction                     : Yes
 RAM Style                          : Auto
@@ -152,8 +152,7 @@ Architecture structural of Entity booth_multiplier is up to date.
 Compiling vhdl file "/media/sf_ASE/RSA/divisore_restoring.vhd" in Library work.
 Architecture structural of Entity divisore_restoring is up to date.
 Compiling vhdl file "/media/sf_ASE/RSA/mod_exp_gestore.vhd" in Library work.
-Entity <mod_exp_gestore> compiled.
-Entity <mod_exp_gestore> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity mod_exp_gestore is up to date.
 Compiling vhdl file "/media/sf_ASE/RSA/display_on_board.vhd" in Library work.
 Architecture behavioral of Entity display_on_board is up to date.
 Compiling vhdl file "/media/sf_ASE/RSA/display.vhd" in Library work.
@@ -161,11 +160,9 @@ Architecture structural of Entity display is up to date.
 Compiling vhdl file "/media/sf_ASE/RSA/funzione_hash_moltiplicazione.vhd" in Library work.
 Architecture behavioral of Entity funzione_hash_moltiplicazione is up to date.
 Compiling vhdl file "/media/sf_ASE/RSA/mod_exp.vhd" in Library work.
-Entity <mod_exp> compiled.
-Entity <mod_exp> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity mod_exp is up to date.
 Compiling vhdl file "/media/sf_ASE/RSA/gestore_generatore_valori_RSA.vhd" in Library work.
-Entity <gestore_generatore_valori_rsa> compiled.
-Entity <gestore_generatore_valori_rsa> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity gestore_generatore_valori_rsa is up to date.
 Compiling vhdl file "/media/sf_ASE/RSA/debounce.vhd" in Library work.
 Architecture logic of Entity debounce is up to date.
 Compiling vhdl file "/media/sf_ASE/RSA/generazione_valori_RSA.vhd" in Library work.
@@ -1501,6 +1498,7 @@ WARNING:Xst:1305 - Output <correct> is never assigned. Tied to value 0.
     | Reset type         | asynchronous                                   |
     | Reset State        | idle                                           |
     | Power Up State     | idle                                           |
+    | Recovery State     | idle                                           |
     | Encoding           | automatic                                      |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
@@ -1532,6 +1530,7 @@ Synthesizing Unit <Serial_Booth_PC_Moore>.
     | Reset type         | asynchronous                                   |
     | Reset State        | idle                                           |
     | Power Up State     | idle                                           |
+    | Recovery State     | idle                                           |
     | Encoding           | automatic                                      |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
@@ -1610,6 +1609,7 @@ WARNING:Xst:647 - Input <base> is never used. This port will be preserved and le
     | Reset type         | asynchronous                                   |
     | Reset State        | idle                                           |
     | Power Up State     | idle                                           |
+    | Recovery State     | idle                                           |
     | Encoding           | automatic                                      |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
@@ -1652,6 +1652,7 @@ Synthesizing Unit <serial_div_restoring>.
     | Reset type         | asynchronous                                   |
     | Reset State        | idle                                           |
     | Power Up State     | idle                                           |
+    | Recovery State     | idle                                           |
     | Encoding           | automatic                                      |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
@@ -1918,16 +1919,16 @@ Macro Statistics
 =========================================================================
 
 Analyzing FSM <FSM_3> for best encoding.
-Optimizing FSM <RSA/m_e_exp/div/cu/current_state/FSM> on signal <current_state[1:6]> with one-hot encoding.
+Optimizing FSM <RSA/m_e_exp/div/cu/current_state/FSM> on signal <current_state[1:3]> with gray encoding.
 --------------------
  State  | Encoding
 --------------------
- idle   | 000001
- init   | 000010
- sub    | 001000
- set_1  | 010000
- shift  | 000100
- shift1 | 100000
+ idle   | 000
+ init   | 001
+ sub    | 010
+ set_1  | 110
+ shift  | 011
+ shift1 | 111
 --------------------
 Analyzing FSM <FSM_2> for best encoding.
 Optimizing FSM <RSA/m_e_exp/m_e_g/current_state/FSM> on signal <current_state[1:4]> with gray encoding.
@@ -1948,37 +1949,37 @@ Optimizing FSM <RSA/m_e_exp/m_e_g/current_state/FSM> on signal <current_state[1:
  wait_d        | 1100
 ---------------------------
 Analyzing FSM <FSM_1> for best encoding.
-Optimizing FSM <RSA/m_e_exp/mul/cu/current_state/FSM> on signal <current_state[1:5]> with one-hot encoding.
-Optimizing FSM <RSA/n_calc/cu/current_state/FSM> on signal <current_state[1:5]> with one-hot encoding.
+Optimizing FSM <RSA/m_e_exp/mul/cu/current_state/FSM> on signal <current_state[1:3]> with gray encoding.
+Optimizing FSM <RSA/n_calc/cu/current_state/FSM> on signal <current_state[1:3]> with gray encoding.
 --------------------
  State  | Encoding
 --------------------
- idle   | 00001
- getseq | 00100
- init   | 00010
- inits  | 01000
- shift  | 10000
+ idle   | 000
+ getseq | 011
+ init   | 001
+ inits  | 010
+ shift  | 110
 --------------------
 Analyzing FSM <FSM_0> for best encoding.
-Optimizing FSM <RSA/g_g_v_rsa/current_state/FSM> on signal <current_state[1:14]> with one-hot encoding.
---------------------------------
+Optimizing FSM <RSA/g_g_v_rsa/current_state/FSM> on signal <current_state[1:4]> with gray encoding.
+--------------------------
  State        | Encoding
---------------------------------
- idle         | 00000000000001
- calc_n       | 00000000000010
- wait_n       | 00000000000100
- hashing      | 00000000001000
- wait_hashing | 00000000010000
- calc_pr      | 00000000100000
- wait_pr      | 00000001000000
- calc_pu      | 00000100000000
- wait_pu      | 00001000000000
- res_exp      | 00000010000000
- check_msg    | 00100000000000
- wait_check   | 01000000000000
- check        | 10000000000000
- res_h        | 00010000000000
---------------------------------
+--------------------------
+ idle         | 0000
+ calc_n       | 0001
+ wait_n       | 0011
+ hashing      | 0010
+ wait_hashing | 0110
+ calc_pr      | 0111
+ wait_pr      | 0101
+ calc_pu      | 1100
+ wait_pu      | 1101
+ res_exp      | 0100
+ check_msg    | 1110
+ wait_check   | 1010
+ check        | 1011
+ res_h        | 1111
+--------------------------
 WARNING:Xst:1710 - FF/Latch <q_11> (without init value) has a constant value of 0 in block <msg_hashed>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <q_12> (without init value) has a constant value of 0 in block <msg_hashed>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <q_13> (without init value) has a constant value of 0 in block <msg_hashed>. This FF/Latch will be trimmed during the optimization process.
@@ -2621,18 +2622,17 @@ WARNING:Xst:2677 - Node <RSA/pu/q_31> of sequential type is unconnected in block
 
 Mapping all equations...
 Building and optimizing final netlist ...
-INFO:Xst:2261 - The FF/Latch <q_val/q_3> in Unit <tester_dispositivi> is equivalent to the following 2 FFs/Latches, which will be removed : <q_val/q_1> <q_val/q_0> 
 INFO:Xst:2261 - The FF/Latch <p_val/q_1> in Unit <tester_dispositivi> is equivalent to the following FF/Latch, which will be removed : <p_val/q_0> 
-INFO:Xst:2261 - The FF/Latch <d_val/q_1> in Unit <tester_dispositivi> is equivalent to the following FF/Latch, which will be removed : <d_val/q_0> 
 INFO:Xst:2261 - The FF/Latch <e_val/q_2> in Unit <tester_dispositivi> is equivalent to the following 2 FFs/Latches, which will be removed : <e_val/q_1> <e_val/q_0> 
-INFO:Xst:2261 - The FF/Latch <RSA/q_val/q_0> in Unit <tester_dispositivi> is equivalent to the following 2 FFs/Latches, which will be removed : <RSA/q_val/q_1> <RSA/q_val/q_3> 
+INFO:Xst:2261 - The FF/Latch <q_val/q_3> in Unit <tester_dispositivi> is equivalent to the following 2 FFs/Latches, which will be removed : <q_val/q_1> <q_val/q_0> 
+INFO:Xst:2261 - The FF/Latch <d_val/q_1> in Unit <tester_dispositivi> is equivalent to the following FF/Latch, which will be removed : <d_val/q_0> 
 INFO:Xst:2261 - The FF/Latch <RSA/p_val/q_0> in Unit <tester_dispositivi> is equivalent to the following FF/Latch, which will be removed : <RSA/p_val/q_1> 
+INFO:Xst:2261 - The FF/Latch <RSA/q_val/q_0> in Unit <tester_dispositivi> is equivalent to the following 2 FFs/Latches, which will be removed : <RSA/q_val/q_1> <RSA/q_val/q_3> 
 INFO:Xst:2261 - The FF/Latch <RSA/n_calc/m/q_1> in Unit <tester_dispositivi> is equivalent to the following FF/Latch, which will be removed : <RSA/n_calc/m/q_0> 
-Found area constraint ratio of 100 (+ 5) on block tester_dispositivi, actual ratio is 86.
+Found area constraint ratio of 100 (+ 5) on block tester_dispositivi, actual ratio is 85.
 FlipFlop RSA/m_e_exp/div/cu/current_state_FSM_FFd1 has been replicated 3 time(s)
+FlipFlop RSA/m_e_exp/div/cu/current_state_FSM_FFd2 has been replicated 3 time(s)
 FlipFlop RSA/m_e_exp/div/cu/current_state_FSM_FFd3 has been replicated 3 time(s)
-FlipFlop RSA/m_e_exp/div/cu/current_state_FSM_FFd4 has been replicated 3 time(s)
-FlipFlop RSA/m_e_exp/mul/q/chain_gen[1].sc_ch.inst_edge_triggered/q_0 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -2640,8 +2640,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 959
- Flip-Flops                                            : 959
+# Registers                                            : 941
+ Flip-Flops                                            : 941
 
 =========================================================================
 
@@ -2670,29 +2670,28 @@ Design Statistics
 # IOs                              : 33
 
 Cell Usage :
-# BELS                             : 1898
+# BELS                             : 1857
 #      GND                         : 1
 #      INV                         : 18
 #      LUT1                        : 36
-#      LUT2                        : 104
-#      LUT3                        : 350
-#      LUT3_D                      : 33
-#      LUT3_L                      : 7
-#      LUT4                        : 869
-#      LUT4_D                      : 81
-#      LUT4_L                      : 17
+#      LUT2                        : 75
+#      LUT3                        : 306
+#      LUT3_D                      : 50
+#      LUT3_L                      : 10
+#      LUT4                        : 881
+#      LUT4_D                      : 70
+#      LUT4_L                      : 43
 #      MUXCY                       : 89
-#      MUXF5                       : 252
-#      MUXF6                       : 1
+#      MUXF5                       : 236
+#      MUXF6                       : 2
 #      MUXF7                       : 1
 #      VCC                         : 1
 #      XORCY                       : 38
-# FlipFlops/Latches                : 991
+# FlipFlops/Latches                : 973
 #      FD                          : 2
-#      FDC                         : 115
+#      FDC                         : 101
 #      FDCE                        : 722
 #      FDE                         : 84
-#      FDP                         : 4
 #      FDPE                        : 5
 #      FDR                         : 7
 #      FDRE                        : 20
@@ -2714,8 +2713,8 @@ Device utilization summary:
 Selected Device : 3s100etq144-5 
 
  Number of Slices:                      931  out of    960    96%  
- Number of Slice Flip Flops:            991  out of   1920    51%  
- Number of 4 input LUTs:               1515  out of   1920    78%  
+ Number of Slice Flip Flops:            973  out of   1920    50%  
+ Number of 4 input LUTs:               1489  out of   1920    77%  
  Number of IOs:                          33
  Number of bonded IOBs:                  29  out of    108    26%  
  Number of MULT18X18SIOs:                 1  out of      4    25%  
@@ -2742,7 +2741,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clock                              | BUFGP                  | 956   |
+clock                              | BUFGP                  | 938   |
 counter/hit                        | NONE(en_c1)            | 1     |
 deb/result                         | NONE(selettore/count_0)| 3     |
 RSA/g_g_v_rsa/en_h1                | BUFG                   | 31    |
@@ -2754,9 +2753,9 @@ Asynchronous Control Signals Information:
 -------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------+-------+
 Control Signal                                                                                                                                   | Buffer(FF name)                                                    | Load  |
 -------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------+-------+
-RSA/m_e_exp/div/cu/current_state_FSM_Acst_FSM_inv(RSA/m_e_exp/div/remainder/chain_gen[0].sc_in.inst_edge_triggered/reset_inv1_INV_0:O)           | NONE(RSA/m_e_exp/div/cu/current_state_FSM_FFd1)                    | 247   |
-scelta_6(scelta_6:Q)                                                                                                                             | NONE(RSA/c_e/q_0)                                                  | 230   |
-RSA/m_e_exp/mul/a/chain_gen[0].sc_out.inst_edge_triggered/reset_inv(RSA/m_e_exp/mul/q/chain_gen[0].sc_out.inst_edge_triggered/reset_inv1_INV_0:O)| NONE(RSA/m_e_exp/mul/a/chain_gen[0].sc_out.inst_edge_triggered/q_0)| 174   |
+RSA/m_e_exp/div/cu/current_state_FSM_Acst_FSM_inv(RSA/m_e_exp/div/remainder/chain_gen[0].sc_in.inst_edge_triggered/reset_inv1_INV_0:O)           | NONE(RSA/m_e_exp/div/cu/current_state_FSM_FFd1)                    | 244   |
+scelta_6(scelta_6:Q)                                                                                                                             | NONE(RSA/c_e/q_0)                                                  | 218   |
+RSA/m_e_exp/mul/a/chain_gen[0].sc_out.inst_edge_triggered/reset_inv(RSA/m_e_exp/mul/q/chain_gen[0].sc_out.inst_edge_triggered/reset_inv1_INV_0:O)| NONE(RSA/m_e_exp/mul/a/chain_gen[0].sc_out.inst_edge_triggered/q_0)| 171   |
 RSA/m_e_exp/counter_o/reset_inv(RSA/m_e_exp/m_exp/reset_inv1_INV_0:O)                                                                            | NONE(RSA/m_e_exp/counter_o/count_0)                                | 108   |
 button<3>                                                                                                                                        | IBUF                                                               | 83    |
 RSA/hash/dato_hashed_0_0_not0000(RSA/hash/dato_hashed_0_0_not00001_INV_0:O)                                                                      | NONE(RSA/hash/dato_hashed_17)                                      | 31    |
@@ -2768,7 +2767,7 @@ Timing Summary:
 ---------------
 Speed Grade: -5
 
-   Minimum period: 12.738ns (Maximum Frequency: 78.508MHz)
+   Minimum period: 13.879ns (Maximum Frequency: 72.049MHz)
    Minimum input arrival time before clock: 3.846ns
    Maximum output required time after clock: 7.356ns
    Maximum combinational path delay: No path found
@@ -2779,34 +2778,35 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clock'
-  Clock period: 12.738ns (frequency: 78.508MHz)
-  Total number of paths / destination ports: 267851 / 1466
+  Clock period: 13.879ns (frequency: 72.049MHz)
+  Total number of paths / destination ports: 231415 / 1449
 -------------------------------------------------------------------------
-Delay:               12.738ns (Levels of Logic = 10)
-  Source:            RSA/m_e_exp/div/cu/current_state_FSM_FFd3_3 (FF)
-  Destination:       RSA/m_e_exp/div/q_r_l/q_0 (FF)
+Delay:               13.879ns (Levels of Logic = 11)
+  Source:            RSA/m_e_exp/div/cu/current_state_FSM_FFd1_2 (FF)
+  Destination:       RSA/m_e_exp/div/q_r_l/q_23 (FF)
   Source Clock:      clock rising
   Destination Clock: clock rising
 
-  Data Path: RSA/m_e_exp/div/cu/current_state_FSM_FFd3_3 to RSA/m_e_exp/div/q_r_l/q_0
+  Data Path: RSA/m_e_exp/div/cu/current_state_FSM_FFd1_2 to RSA/m_e_exp/div/q_r_l/q_23
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             16   0.514   0.948  RSA/m_e_exp/div/cu/current_state_FSM_FFd3_3 (RSA/m_e_exp/div/cu/current_state_FSM_FFd3_3)
-     LUT4_D:I1->O          2   0.612   0.410  RSA/m_e_exp/div/gestore_shift/Mxor_b_add_sub<27>_Result1 (RSA/m_e_exp/div/gestore_shift/b_add_sub<27>)
-     LUT4:I2->O            2   0.612   0.532  RSA/m_e_exp/div/gestore_shift/rca/rca[26].fa/c1_SW0 (N691)
-     LUT3:I0->O            3   0.612   0.481  RSA/m_e_exp/div/gestore_shift/rca/rca[25].fa/c1_SW1 (N761)
-     LUT3:I2->O            2   0.612   0.532  RSA/m_e_exp/div/gestore_shift/rca/rca[23].fa/c1_SW0_SW0_SW1 (N1015)
-     LUT3:I0->O            1   0.612   0.509  RSA/m_e_exp/div/gestore_shift/rca/rca[23].fa/c1_SW0 (N956)
-     LUT3:I0->O            7   0.612   0.605  RSA/m_e_exp/div/gestore_shift/rca/rca[31].fa/c1 (RSA/m_e_exp/div/gestore_shift/rca/carry<32>)
-     LUT4_D:I3->LO         1   0.612   0.103  RSA/m_e_exp/div/gestore_shift/rca/rca[53].fa/c1 (N1628)
-     LUT4:I3->O            7   0.612   0.605  RSA/m_e_exp/div/gestore_shift/rca/rca[61].fa/c1 (RSA/m_e_exp/div/gestore_shift/rca/carry<62>)
-     LUT4_D:I3->O         62   0.612   1.111  RSA/m_e_exp/div/rest<0>21 (RSA/m_e_exp/div/N11)
-     LUT4:I2->O            1   0.612   0.000  RSA/m_e_exp/div/rest<8>1 (RSA/m_e_exp/div/rest<8>)
-     FDCE:D                    0.268          RSA/m_e_exp/div/q_r_l/q_8
+     FDC:C->Q             15   0.514   0.933  RSA/m_e_exp/div/cu/current_state_FSM_FFd1_2 (RSA/m_e_exp/div/cu/current_state_FSM_FFd1_2)
+     LUT4_D:I1->O          3   0.612   0.481  RSA/m_e_exp/div/gestore_shift/Mxor_b_add_sub<5>_Result1 (RSA/m_e_exp/div/gestore_shift/b_add_sub<5>)
+     LUT4:I2->O            2   0.612   0.532  RSA/m_e_exp/div/gestore_shift/rca/rca[4].fa/c1_SW0 (N940)
+     LUT3:I0->O            1   0.612   0.509  RSA/m_e_exp/div/gestore_shift/rca/rca[5].fa/c1_SW0 (N992)
+     LUT3:I0->O            6   0.612   0.599  RSA/m_e_exp/div/gestore_shift/rca/rca[7].fa/c1 (RSA/m_e_exp/div/gestore_shift/rca/carry<8>)
+     LUT3_D:I2->O          6   0.612   0.599  RSA/m_e_exp/div/gestore_shift/rca/rca[15].fa/c1 (RSA/m_e_exp/div/gestore_shift/rca/carry<16>)
+     LUT3_D:I2->LO         1   0.612   0.103  RSA/m_e_exp/div/gestore_shift/rca/rca[31].fa/c1 (N1698)
+     LUT4:I3->O            8   0.612   0.646  RSA/m_e_exp/div/gestore_shift/rca/rca[37].fa/c1 (RSA/m_e_exp/div/gestore_shift/rca/carry<38>)
+     LUT4_D:I3->O          9   0.612   0.700  RSA/m_e_exp/div/gestore_shift/rca/rca[57].fa/c1 (RSA/m_e_exp/div/gestore_shift/rca/carry<58>)
+     LUT4_D:I3->O          2   0.612   0.410  RSA/m_e_exp/div/gestore_shift/rca/rca[63].fa/ha2/Mxor_s_Result1_1 (RSA/m_e_exp/div/gestore_shift/rca/rca[63].fa/ha2/Mxor_s_Result1)
+     LUT3_D:I2->O         14   0.612   0.853  RSA/m_e_exp/div/rest<62>1_SW0 (N899)
+     LUT4:I3->O            1   0.612   0.000  RSA/m_e_exp/div/rest<59>1 (RSA/m_e_exp/div/rest<59>)
+     FDCE:D                    0.268          RSA/m_e_exp/div/q_r_l/q_59
     ----------------------------------------
-    Total                     12.738ns (6.902ns logic, 5.836ns route)
-                                       (54.2% logic, 45.8% route)
+    Total                     13.879ns (7.514ns logic, 6.365ns route)
+                                       (54.1% logic, 45.9% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'deb/result'
@@ -2915,13 +2915,13 @@ Offset:              4.476ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 18.00 secs
-Total CPU time to Xst completion: 15.05 secs
+Total REAL time to Xst completion: 27.00 secs
+Total CPU time to Xst completion: 20.58 secs
  
 --> 
 
 
-Total memory usage is 592224 kilobytes
+Total memory usage is 592704 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  593 (   0 filtered)

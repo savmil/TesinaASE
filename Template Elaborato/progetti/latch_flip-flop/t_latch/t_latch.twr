@@ -1,9 +1,9 @@
 --------------------------------------------------------------------------------
-Release 14.7 Trace  (nt64)
+Release 14.7 Trace  (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
--n 3 -fastpaths -xml t_latch.twx t_latch.ncd -o t_latch.twr t_latch.pcf
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 5 -n
+3 -fastpaths -xml t_latch.twx t_latch.ncd -o t_latch.twr t_latch.pcf
 
 Design file:              t_latch.ncd
 Physical constraint file: t_latch.pcf
@@ -48,14 +48,14 @@ t              |q              |    5.527|
 ---------------+---------------+---------+
 
 
-Analysis completed Sun Jan 14 13:49:24 2018 
+Analysis completed Thu Jan 25 18:50:09 2018 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 149 MB
+Peak Memory Usage: 332 MB
 
 
 

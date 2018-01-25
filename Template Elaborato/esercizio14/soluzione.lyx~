@@ -170,14 +170,14 @@ centering
 
 
 \backslash
-includegraphics[scale=0.7]{esercizio14/images/div_restoring.png}
+includegraphics[scale=0.6]{esercizio14/images/div_restoring.png}
 \end_layout
 
 \begin_layout Plain Layout
 
 	
 \backslash
-caption{Mac Multiplier}
+caption{Divisore restoring}
 \end_layout
 
 \begin_layout Plain Layout

@@ -1,7 +1,7 @@
 (DELAYFILE
   (SDFVERSION "3.0")
   (DESIGN "t_latch")
-  (DATE "Sun Jan 14 13:49:27 2018")
+  (DATE "Thu Jan 25 18:50:13 2018")
   (VENDOR "Xilinx")
   (PROGRAM "Xilinx SDF Writer")
   (VERSION "P.20131013")
@@ -23,6 +23,14 @@
       (DELAY
         (ABSOLUTE
           (IOPATH I O ( 87 )( 87 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE t_IFF_IMUX)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 1044 ))
         )
       )
   )
@@ -48,14 +56,6 @@
       (DELAY
         (ABSOLUTE
           (IOPATH I O ( 126 ))
-        )
-      )
-  )
-  (CELL (CELLTYPE "X_BUF")
-    (INSTANCE t_IFF_IMUX)
-      (DELAY
-        (ABSOLUTE
-          (IOPATH I O ( 1044 ))
         )
       )
   )

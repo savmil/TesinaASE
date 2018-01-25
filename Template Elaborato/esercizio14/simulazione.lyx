@@ -137,7 +137,7 @@ end{figure}
 \begin_layout Standard
 Il quoziente ed il resto vengono espresse in un unica stringa da 16 bit
  dove la metà superiore della stringa è il quoziente la metà inferiore il
- resto, questo per facilitare successivamente la lettura sul display.
+ resto, questo per facilitare successivamente la scrittura sul display.
 \end_layout
 
 \end_body

@@ -1,4 +1,4 @@
-vhdl work "C:\DAVIDE\ASE\Esercizi\ISE\latch_flip-flop\t_latch\nor_gate.vhd"
-vhdl work "C:\DAVIDE\ASE\Esercizi\ISE\latch_flip-flop\t_latch\rs_latch.vhd"
-vhdl work "C:\DAVIDE\ASE\Esercizi\ISE\latch_flip-flop\t_latch\and_gate.vhd"
-vhdl work "C:\DAVIDE\ASE\Esercizi\ISE\latch_flip-flop\t_latch\t_latch.vhd"
+vhdl work "/media/sf_ASE/Template Elaborato/progetti/latch_flip-flop/t_latch/nor_gate.vhd"
+vhdl work "/media/sf_ASE/Template Elaborato/progetti/latch_flip-flop/t_latch/rs_latch.vhd"
+vhdl work "/media/sf_ASE/Template Elaborato/progetti/latch_flip-flop/t_latch/and_gate.vhd"
+vhdl work "/media/sf_ASE/Template Elaborato/progetti/latch_flip-flop/t_latch/t_latch.vhd"

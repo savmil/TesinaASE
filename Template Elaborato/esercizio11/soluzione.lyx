@@ -152,11 +152,12 @@ Schematici
 Il sommattore essenzialmente è costituito da un numero di carry select cell,
  di dimensione identiche (è possibile scegliere la dimensione della cella)
  che calcolano le somma parziali e propagano i riporti alle celle successive,
- il numero di celle da istanziare è data dalla sua dimensione e dal numero
- di bit su cui viene effettuata la somma, una cella è costituita da due
- Ripple Carry Adder uno avente carry in ingresso pari ad uno ed un altro
- pari a zero, di seguito si determinano valori caratteristici del sommatore
- considerando una carry select cell di dimensione pari a quattro bit.
+ il numero di celle da istanziare è data dalla dimensione della cella e
+ dal numero di bit su cui viene effettuata la somma, una cella è costituita
+ da due Ripple Carry Adder uno avente carry in ingresso pari ad uno ed un
+ altro pari a zero, di seguito si determinano valori caratteristici del
+ sommatore considerando una carry select cell di dimensione pari a quattro
+ bit.
 \begin_inset ERT
 status open
 
@@ -460,7 +461,7 @@ ref{Dati ripple carry}
  che sono pressoché gli stessi, l' uguaglianza del tempo di calcolo nell'
  ultimo caso con quello del Ripple Carry Adder è dovuto che il carry select
  avendo una cella di dimensione quattro all' aumentare del numero di operandi,
- aumentano il numero di celle istanziate il tempo di attesa dell l' ultima
+ aumentano il numero di celle istanziate, il tempo di attesa dell' ultima
  cella diventa sempre maggiore e tende ad essere comparabile con quello
  di un Ripple Carry Adder.
 \end_layout

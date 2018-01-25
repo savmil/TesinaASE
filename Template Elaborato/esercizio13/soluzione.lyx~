@@ -198,16 +198,18 @@ end{figure}
 
 \begin_layout Standard
 Viene mostrato un esempio di moltiplicatore a celle MAC 2x2 (purtroppo lo
- schematico se preso tutto non rendeva visibili i segnali), per la gestione
- dei segnali di interconnessione si è ricorso all' uso di un costrutto matrix,
- data la simmetria del circuito in cui vengono vestiti i vari carry e somma
- parziali di ingresso ed uscita, si è scelto di instanziare prima le righe,
- gestendo le somme parziali in ingresso ed in carry in uscita ed alla successiva
- riga invece vanno gestiti i carry in ingresso e le somme in uscita.
+ schematico se preso nella sua interezza non rendeva visibili i segnali),
+ per la gestione dei segnali di interconnessione si è ricorso all' uso di
+ un costrutto matrix, data la simmetria del circuito in cui vengono gestiti
+ i vari carry e somme parziali di ingresso ed uscita, si è scelto di instanziare
+ prima le righe, gestendo le somme parziali in ingresso ed in carry in uscita,
+ alla successiva riga invece vanno gestiti i carry in ingresso e le somme
+ in uscita.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float table
+placement H
 wide false
 sideways false
 status open
@@ -499,10 +501,13 @@ calcolo per cella(stimato)
 \begin_layout Standard
 Possiamo riscontrare che il sintettizzatore, mette in ogni slice una cella
  MAC, lo spazio occupato quindi per ogni raddoppio di riga e di colonna
- diventa quattro volte tanto come anche il numero di LUT quadruplica, per
- il numero minimale di slice presente sulla BASYS non è possibile sintetizzare
- un 32x32.
- I tempi di calcolo teoricamente dovrebbero essere pari a 
+ diventa quattro volte maggiore come anche il numero di LUT quadruplica,
+ per il numero minimale di slice presente sulla BASYS non è possibile sintetizza
+re un 32x32.
+\end_layout
+
+\begin_layout Standard
+I tempi di calcolo teoricamente dovrebbero essere pari a 
 \begin_inset Formula $6(n-1)T+2T$
 \end_inset
 
@@ -523,8 +528,9 @@ Possiamo riscontrare che il sintettizzatore, mette in ogni slice una cella
 \end_inset
 
  notiamo che il tempo per cella descresce, in realtà le celle vengono messe
- sempre più vicine durate l' operazione di place and routing, riducendo
- così la distanza fra di esse ed il tempo di propagazione dei segnali.
+ sempre più vicine durate l' operazione di place and routing, dato che il
+ loro numero aumenta e lo spazio diminuisce, riducendo così la distanza
+ fra di esse ed il tempo di propagazione dei segnali.
 \end_layout
 
 \begin_layout Subsubsection
@@ -592,19 +598,26 @@ label{Booth}
 \end_layout
 
 \begin_layout Standard
-Per realizzare il motiplicatore (che utilizza la codifica Booth2), si è
+Per realizzare il motiplicatore (che utilizza la codifica Booth-1), si è
  utilizzato una macchina a stati finiti con i seguenti stati: idle, stato
- in cui la macchina non oper; init, vi è una inizializzazione dei registri
- e delle scan chain, il moltiplicatore va in un registro latch, nella scan
- chain q il moltiplicando e a viene settata a 0; in getseq vengono letti
- gli ultimi due bit in uscita dalla scan chain q, in base ai valori ne si
- ricava la codifica di Booth e si decide se sommare, sottrarre o solo shiftare;
- in inits si abilita lo shifting che verrà effettuato al passaggio nel successiv
-o stato shift.
+ in cui la macchina non opera; init, vi è l' inizializzazione dei registri
+ e delle scan chain, il moltiplicatore va salvato in un registro, nella
+ scan chain q il moltiplicando e a viene settata a 0; 
 \end_layout
 
 \begin_layout Standard
-La scan chain da anche la possibilità di essere usata come semplice registro,
+in getseq vengono letti gli ultimi due bit in uscita dalla scan chain q,
+ in base ai valori ne si ricava la codifica di Booth e si decide se sommare,
+ sottrarre prima di effettuare lo shifting o solo effettuare quest' ultimo;
+\end_layout
+
+\begin_layout Standard
+in inits si abilita lo shifting che verrà effettuato al passaggio nel successivo
+ stato shift.
+\end_layout
+
+\begin_layout Standard
+La scan chain dà anche la possibilità di essere usata come semplice registro,
  difatti viene sfruttato nel caso in cui avvenga una somma o una sottrazione,
  perchè prima di fare lo shiting viene caricato il risultato di tale operazione
  in a e poi shiftato.

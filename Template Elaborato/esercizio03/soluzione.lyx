@@ -667,8 +667,8 @@ Schematico
 
 \begin_layout Standard
 Il latch D abilitato può essere realizzato a partire da un latch RS abilitato
- i cui ingressi R ed S corrispondono al valore D in ingresso rispettivamente
- una volta negato tramite una porta NOT e una volta no.
+ i cui ingressi R ed S vengono fatti corrispondere al valore D in ingresso,
+ rispettivamente una volta negato tramite una porta NOT e una volta no.
  Questo latch permette di avere in uscita Q il valore D in ingresso, ma
  ritardato di un certo 
 \begin_inset ERT
@@ -745,7 +745,7 @@ _Clocked ISE}
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Subsection

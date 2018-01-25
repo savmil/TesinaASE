@@ -1,18 +1,21 @@
-Release 14.7 - xst P.20131013 (nt64)
+Release 14.7 - xst P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to xst/projnav.tmp
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.04 secs
  
---> Parameter xsthdpdir set to xst
+--> 
+Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.04 secs
  
---> Reading design: t_latch.prj
+--> 
+Reading design: t_latch.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -68,7 +71,7 @@ Automatic Register Balancing       : No
 
 ---- Target Options
 Add IO Buffers                     : YES
-Global Maximum Fanout              : 500
+Global Maximum Fanout              : 100000
 Add Generic Clock Buffer(BUFG)     : 24
 Register Duplication               : YES
 Slice Packing                      : YES
@@ -104,44 +107,41 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/t_latch/nor_gate.vhd" in Library work.
-Entity <nor_gate> compiled.
-Entity <nor_gate> (Architecture <Dataflow>) compiled.
-Compiling vhdl file "C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/t_latch/and_gate.vhd" in Library work.
-Entity <and_gate> compiled.
-Entity <and_gate> (Architecture <Dataflow>) compiled.
-Compiling vhdl file "C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/t_latch/rs_latch.vhd" in Library work.
-Entity <rs_latch> compiled.
-Entity <rs_latch> (Architecture <Structural>) compiled.
-Compiling vhdl file "C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/t_latch/t_latch.vhd" in Library work.
+Compiling vhdl file "/media/sf_ASE/Template Elaborato/progetti/latch_flip-flop/t_latch/nor_gate.vhd" in Library work.
+Architecture dataflow of Entity nor_gate is up to date.
+Compiling vhdl file "/media/sf_ASE/Template Elaborato/progetti/latch_flip-flop/t_latch/and_gate.vhd" in Library work.
+Architecture dataflow of Entity and_gate is up to date.
+Compiling vhdl file "/media/sf_ASE/Template Elaborato/progetti/latch_flip-flop/t_latch/rs_latch.vhd" in Library work.
+Architecture structural of Entity rs_latch is up to date.
+Compiling vhdl file "/media/sf_ASE/Template Elaborato/progetti/latch_flip-flop/t_latch/t_latch.vhd" in Library work.
 Entity <t_latch> compiled.
-Entity <t_latch> (Architecture <Structural>) compiled.
+Entity <t_latch> (Architecture <structural>) compiled.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
-Analyzing hierarchy for entity <t_latch> in library <work> (architecture <Structural>).
+Analyzing hierarchy for entity <t_latch> in library <work> (architecture <structural>).
 
-Analyzing hierarchy for entity <and_gate> in library <work> (architecture <Dataflow>).
+Analyzing hierarchy for entity <and_gate> in library <work> (architecture <dataflow>).
 
-Analyzing hierarchy for entity <rs_latch> in library <work> (architecture <Structural>).
+Analyzing hierarchy for entity <rs_latch> in library <work> (architecture <structural>).
 
-Analyzing hierarchy for entity <nor_gate> in library <work> (architecture <Dataflow>).
+Analyzing hierarchy for entity <nor_gate> in library <work> (architecture <dataflow>).
 
 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
-Analyzing Entity <t_latch> in library <work> (Architecture <Structural>).
+Analyzing Entity <t_latch> in library <work> (Architecture <structural>).
 Entity <t_latch> analyzed. Unit <t_latch> generated.
 
-Analyzing Entity <and_gate> in library <work> (Architecture <Dataflow>).
+Analyzing Entity <and_gate> in library <work> (Architecture <dataflow>).
 Entity <and_gate> analyzed. Unit <and_gate> generated.
 
-Analyzing Entity <rs_latch> in library <work> (Architecture <Structural>).
+Analyzing Entity <rs_latch> in library <work> (Architecture <structural>).
 Entity <rs_latch> analyzed. Unit <rs_latch> generated.
 
-Analyzing Entity <nor_gate> in library <work> (Architecture <Dataflow>).
+Analyzing Entity <nor_gate> in library <work> (Architecture <dataflow>).
 Entity <nor_gate> analyzed. Unit <nor_gate> generated.
 
 
@@ -152,22 +152,22 @@ Entity <nor_gate> analyzed. Unit <nor_gate> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <and_gate>.
-    Related source file is "C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/t_latch/and_gate.vhd".
+    Related source file is "/media/sf_ASE/Template Elaborato/progetti/latch_flip-flop/t_latch/and_gate.vhd".
 Unit <and_gate> synthesized.
 
 
 Synthesizing Unit <nor_gate>.
-    Related source file is "C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/t_latch/nor_gate.vhd".
+    Related source file is "/media/sf_ASE/Template Elaborato/progetti/latch_flip-flop/t_latch/nor_gate.vhd".
 Unit <nor_gate> synthesized.
 
 
 Synthesizing Unit <rs_latch>.
-    Related source file is "C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/t_latch/rs_latch.vhd".
+    Related source file is "/media/sf_ASE/Template Elaborato/progetti/latch_flip-flop/t_latch/rs_latch.vhd".
 Unit <rs_latch> synthesized.
 
 
 Synthesizing Unit <t_latch>.
-    Related source file is "C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/t_latch/t_latch.vhd".
+    Related source file is "/media/sf_ASE/Template Elaborato/progetti/latch_flip-flop/t_latch/t_latch.vhd".
 Unit <t_latch> synthesized.
 
 
@@ -191,8 +191,8 @@ Found no macro
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:2170 - Unit t_latch : the following signal(s) form a combinatorial loop: Inst_rs_latch/Inst_nor_gate2/f_or0000.
 WARNING:Xst:2170 - Unit t_latch : the following signal(s) form a combinatorial loop: Inst_rs_latch/Inst_nor_gate1/f_or0000.
+WARNING:Xst:2170 - Unit t_latch : the following signal(s) form a combinatorial loop: Inst_rs_latch/Inst_nor_gate2/f_or0000.
 
 Optimizing unit <t_latch> ...
 
@@ -312,12 +312,13 @@ Delay:               7.933ns (Levels of Logic = 5)
 =========================================================================
 
 
-Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 4.74 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 3.15 secs
  
 --> 
 
-Total memory usage is 256044 kilobytes
+
+Total memory usage is 508964 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    2 (   0 filtered)

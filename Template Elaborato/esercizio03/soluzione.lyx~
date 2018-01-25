@@ -1137,7 +1137,7 @@ status open
 
 
 \backslash
-href{run:progetti/latch_flip-flop/jk_latch/rs_latch.vhd}{RS
+href{run:progetti/latch_flip-flop/jk_latch_clocked/rs_latch.vhd}{RS
 \backslash
 _Latch}
 \end_layout
@@ -1195,7 +1195,7 @@ status open
 
 
 \backslash
-href{run:progetti/latch_flip-flop/jk_latch/jk_latch_clocked.xise}{JK
+href{run:progetti/latch_flip-flop/jk_latch_clocked/jk_latch_clocked.xise}{JK
 \backslash
 _Latch ISE}
 \end_layout

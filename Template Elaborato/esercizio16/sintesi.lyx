@@ -118,7 +118,7 @@ href{run:progetti/GPIO/gpio.vhd}{GPIO Code}
 \shape italic
 pads, 
 \shape default
-quattro 6-pin connectors; al segnale 
+quattro pin di un 6-pin connectors; al segnale 
 \shape italic
 inputs
 \shape default
@@ -128,7 +128,7 @@ inputs
 enable
 \shape default
  è stato collegato ai quattro switch più significativi, per abilitare la
- scrittura o la lettura dei valori di input e infine il segnale 
+ scrittura o la lettura dei valori di input ed infine il segnale 
 \shape italic
 outputs 
 \shape default

@@ -184,10 +184,10 @@ backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
-In riferimento alla Tabella 
+In riferimento a 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "esercizio_1_minimizzazione"
+reference "subsec:min1"
 
 \end_inset
 
@@ -235,10 +235,10 @@ backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
-In riferimento alla Tabella 
+In riferimento a 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "esercizio_2_minimizzazione"
+reference "subsec:min2"
 
 \end_inset
 
@@ -286,10 +286,10 @@ backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
-In riferimento alla Tabella 
+In riferimento a 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "esercizio_3_minimizzazione"
+reference "subsec:min3"
 
 \end_inset
 
@@ -337,10 +337,10 @@ backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
-In riferimento alla Tabella 
+In riferimento a 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "esercizio_4_minimizzazione"
+reference "subsec:min4"
 
 \end_inset
 
@@ -381,6 +381,10 @@ full_simplify
 .
  Effettuando due diversi tipi di mapping, i valori di area e ritardo variano
  secondo le esigenze esposte.
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -429,6 +433,13 @@ centering
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
  
@@ -454,6 +465,13 @@ And
 Not
 \series default
  ad esempio, i risultati non variano.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -497,6 +515,13 @@ centering
 	scale 60
 	rotateOrigin center
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
 \end_inset
 
 
@@ -568,6 +593,13 @@ centering
 \begin_inset Graphics
 	filename images/minimizzazione2espresso.PNG
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
 \end_inset
 
 
@@ -654,7 +686,14 @@ espresso
 mcnc
 \emph default
 .
- Ottimizzando l'aria occupata:
+ Ottimizzando l'area occupata:
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -699,6 +738,13 @@ centering
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -729,6 +775,13 @@ noindent
 
 \begin_layout Standard
 Ottimizzando il ritardo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -767,6 +820,13 @@ centering
 \begin_inset Graphics
 	filename images/minimizzazione2m1.PNG
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
 \end_inset
 
 
@@ -837,6 +897,10 @@ Proviamo ad applicare il rugged-script ad un rete multi-uscita:
 \end_layout
 
 \begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -878,6 +942,13 @@ centering
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -901,7 +972,14 @@ noindent
  il rugged-script si rivela una buona sequenza per le trasformazioni da
  applicare alla rete.
  Rimappiamo la nostra rete su un fpga avente componenti elementari a quattro
- ingressi:
+ ingressi.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -946,6 +1024,13 @@ centering
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -971,21 +1056,10 @@ noindent
  Il numero di nodi utilizzati per sintetizzare la rete è diminuito e il
  numero di letterali è aumentato di 7 unità: un nodo è stato eliminato sostituen
 do la sua espressione nei nodi a valle.
- Ciò ha consentito un risparmio di area, in termini di celle Xilinx, e probabilm
-ente un ritardo inferiore granzie ad una dipendenza più diretta dagli input
- primari.
+ Ciò ha consentito un risparmio di area, in termini di celle, ed eventualmente
+ anche di tempo, grazie ad una dipendenza più diretta dei nodi a valle dagli
+ input primari.
  
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-anche se nel caso delle FPGA, ogni nodo ha un tempo di calcolo costante
- quindi si sono avuti sia miglioramenti di area che di tempo.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_body

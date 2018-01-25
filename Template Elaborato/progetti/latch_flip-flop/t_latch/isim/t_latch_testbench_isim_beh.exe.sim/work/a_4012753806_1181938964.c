@@ -10,7 +10,7 @@
 /*  \___\/\___\                                                    */
 /***********************************************************************/
 
-/* This file is designed for use with ISim build 0x7708f090 */
+/* This file is designed for use with ISim build 0xfbc00daa */
 
 #define XSI_HIDE_SYMBOL_SPEC true
 #include "xsi.h"
@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/t_latch/t_latch.vhd";
+static const char *ng0 = "/media/sf_ASE/Template Elaborato/progetti/latch_flip-flop/t_latch/t_latch.vhd";
 
 
 
@@ -41,7 +41,7 @@ LAB0:    xsi_set_current_line(66, ng0);
 LAB3:    t1 = (t0 + 1512U);
     t2 = *((char **)t1);
     t3 = *((unsigned char *)t2);
-    t1 = (t0 + 4664);
+    t1 = (t0 + 4656);
     t4 = (t1 + 56U);
     t5 = *((char **)t4);
     t6 = (t5 + 56U);
@@ -49,7 +49,7 @@ LAB3:    t1 = (t0 + 1512U);
     *((unsigned char *)t7) = t3;
     xsi_driver_first_trans_fast_port(t1);
 
-LAB2:    t8 = (t0 + 4536);
+LAB2:    t8 = (t0 + 4528);
     *((int *)t8) = 1;
 
 LAB1:    return;
@@ -73,7 +73,7 @@ LAB0:    xsi_set_current_line(67, ng0);
 LAB3:    t1 = (t0 + 1832U);
     t2 = *((char **)t1);
     t3 = *((unsigned char *)t2);
-    t1 = (t0 + 4728);
+    t1 = (t0 + 4720);
     t4 = (t1 + 56U);
     t5 = *((char **)t4);
     t6 = (t5 + 56U);
@@ -81,7 +81,7 @@ LAB3:    t1 = (t0 + 1832U);
     *((unsigned char *)t7) = t3;
     xsi_driver_first_trans_fast_port(t1);
 
-LAB2:    t8 = (t0 + 4552);
+LAB2:    t8 = (t0 + 4544);
     *((int *)t8) = 1;
 
 LAB1:    return;
@@ -108,17 +108,17 @@ LAB3:    t1 = (20 * 1000LL);
     t2 = (t0 + 1512U);
     t3 = *((char **)t2);
     t4 = *((unsigned char *)t3);
-    t2 = (t0 + 4792);
+    t2 = (t0 + 4784);
     t5 = (t2 + 56U);
     t6 = *((char **)t5);
     t7 = (t6 + 56U);
     t8 = *((char **)t7);
     *((unsigned char *)t8) = t4;
     xsi_driver_first_trans_delta(t2, 0U, 1, t1);
-    t9 = (t0 + 4792);
+    t9 = (t0 + 4784);
     xsi_driver_intertial_reject(t9, t1, t1);
 
-LAB2:    t10 = (t0 + 4568);
+LAB2:    t10 = (t0 + 4560);
     *((int *)t10) = 1;
 
 LAB1:    return;
@@ -145,17 +145,17 @@ LAB3:    t1 = (20 * 1000LL);
     t2 = (t0 + 1832U);
     t3 = *((char **)t2);
     t4 = *((unsigned char *)t3);
-    t2 = (t0 + 4856);
+    t2 = (t0 + 4848);
     t5 = (t2 + 56U);
     t6 = *((char **)t5);
     t7 = (t6 + 56U);
     t8 = *((char **)t7);
     *((unsigned char *)t8) = t4;
     xsi_driver_first_trans_delta(t2, 0U, 1, t1);
-    t9 = (t0 + 4856);
+    t9 = (t0 + 4848);
     xsi_driver_intertial_reject(t9, t1, t1);
 
-LAB2:    t10 = (t0 + 4584);
+LAB2:    t10 = (t0 + 4576);
     *((int *)t10) = 1;
 
 LAB1:    return;

@@ -170,14 +170,14 @@ centering
 
 
 \backslash
-includegraphics[scale=0.7]{esercizio11/images/seven_operation_adder.png}
+includegraphics[scale=0.45]{esercizio12/images/seven_operation_adder.png}
 \end_layout
 
 \begin_layout Plain Layout
 
 	
 \backslash
-caption{Seven Adder}
+caption{Seven Operand Adder}
 \end_layout
 
 \begin_layout Plain Layout
@@ -194,19 +194,41 @@ end{figure}
 
 \begin_layout Standard
 L' addizionatore è costituito dapprima da un dispositivo che trasforma i
- sette input in ingresso in soli tre input da nove bit ognugno, questo è
- dovuto al componente seven to three, che conta il numero di uno presenti
- in ingresso, di questi ne sono presenti otto ognugno ha in ingresso bit
- dello stesso peso appartenenti a ciascuno operando, i valori in uscita
- di tali componenti prima di essere passati al successivo vengono incollonati
- introducendo degli zero fittizzi per rispettare il perso dei bit.
+ sette input in ingresso in soli tre input da nove bit ognugno, grazie al
+ componente seven to three il quale conta il numero di uno presenti in ingresso,
+ di questi ne sono presenti otto ed ognugno ha in ingresso bit dello stesso
+ peso appartenenti a ciascuno operando, i valori in uscita di tali componenti
+ prima di essere passati al successivo vengono incolonnati introducendo
+ degli zero fittizzi per fa sì che le tre stringhe di bit in uscita abbiano
+ lo stesso peso(se pensiamo al primo seven to three genera un bit di peso
+ zero, uno di peso uno e l' ultimo di peso due, questi vanno associati a
+ tre strighe diverse ma le stringhe con il bit di peso uno e due hanno bisogno
+ di zero antecedenti per poter incollonare le somme).
  Il partial sum due non sono altro che dei full adder, utilizzati come carry
  save, i valori in uscita prima di essere fatti sommare da dei Ripple Carry
- Adder vengono incollonnati allo 
+ Adder vengono incollonnati con lo stesso ragionamento effetuato nel passaggio
+ precendete.
 \end_layout
 
 \begin_layout Subsection
 Codice
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+href{run:progetti/carry_select_adder/carry_seven_adder.xise}{Seven Adder
+ ISE}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -226,10 +248,6 @@ Segue un esempio di inclusione di codice
 \end_inset
 
 
-\end_layout
-
-\begin_layout Subsubsection
-Bit String Comparator
 \end_layout
 
 \end_body

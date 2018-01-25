@@ -194,25 +194,82 @@ end{figure}
 
 \begin_layout Standard
 Si è realizzata una versione di UART secondo lo schema PO/PC, i componenti
- principali solo le due macchine a stati finiti: il trasmitter che consiste
- di cinque stati: idle, rimane in attesa fino a che non si decide di avviare
- una trasmissione, send_start invia il segnale di start; wait_for_next attende
- fino a che il contatore counter_t non genera un segnale di counter hit,
- per far sì prima che venga inviata la successiva informazione, quella attuale
- venga sorretta per sedici colpi di clock; send che fa shiftare la scan
- chain con il dato ingresso per invare il successivo bit, send_stop che
- invia il bit di stop, si abilita questo stato quando il numero di bit trasmetti
- è pari ad otto (il conteggio è fissato da un contatore).
- Il ricevitore invece è composto solo da quattro stati: idle che permane
- fino a quando la linea dei dati in ingresso è alta; sfasamento che fa in
- modo di posizionare l' evento di lettura del dato a metà del tempo di attesa,
- così da essere sicuri di leggere correttamente il bit; wait_for_next dove
- si attende per leggere il successivo bit; receive dopo si legge il bit
- in ingresso, anche il ricevitore ha un contatore che conta il numero di
- bit letti così dopo aver letto l' ottavo si ritorna in idle, che conta
- il numero di cicli di clock per lo sfasamento ed il numero di colpi di
- clock da attendere prima di leggere il successivo dato.
- I dati in input ed in output sono sorretti da due scan chain come quelle
+ principali solo le due macchine a stati finiti:
+\end_layout
+
+\begin_layout Itemize
+il trasmitter che consiste di cinque stati: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+idle, rimane in attesa fino a che non si decide di avviare una trasmissione;
+\end_layout
+
+\begin_layout Itemize
+send_start invia il segnale di start; 
+\end_layout
+
+\begin_layout Itemize
+wait_for_next attende fino a che il contatore counter_t non genera un segnale
+ di counter hit, per far sì prima che venga inviata la successiva informazione,
+ quella attuale venga sorretta per sedici colpi di clock; 
+\end_layout
+
+\begin_layout Itemize
+send che abilita lo shifting della scan chain con il dato ingresso per invare
+ il successivo bit;
+\end_layout
+
+\begin_layout Itemize
+send_stop che invia il bit di stop, si abilita questo stato quando il numero
+ di bit trasmetti è pari ad otto (il conteggio è fissato da un contatore).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Il ricevitore invece è composto solo da quattro stati: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+idle, si permane in questo stato fino a quando la linea dei dati in ingresso
+ è alta; 
+\end_layout
+
+\begin_layout Itemize
+sfasamento fa in modo di posizionare l' evento di lettura del dato a metà
+ del tempo per il quale è sorretto il dato, così da essere sicuri di leggere
+ correttamente il bit;
+\end_layout
+
+\begin_layout Itemize
+wait_for_next dove si attende per leggere il successivo bit; 
+\end_layout
+
+\begin_layout Itemize
+receive dopo si effettua la lettura del bit in ingresso.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Il ricevitore ha diversi contatori, uno che tiene in conto del numero di
+ bit letti affinchè dopo aver letto l' ottavo si ritorna in idle, un altro
+ che conta il numero di cicli di clock per lo sfasamento ed infine uno che
+ conta il numero di colpi di clock da attendere prima di leggere il successivo
+ dato.
+ 
+\end_layout
+
+\begin_layout Standard
+I dati in input ed in output sono sorretti da due scan chain come quelle
  utilizzate in Booth 
 \begin_inset ERT
 status open
@@ -226,8 +283,8 @@ ref{Booth}
 
 \end_inset
 
-, quella dell' input è più grande di bit perchè vi è un primo bit alto per
- indicare che non vi è trasmissione di dati fino a che non vi è un invio
+, quella dell' input è più grande di tre bit perchè vi è un primo bit alto
+ per indicare che non vi è trasmissione di dati fino a che non vi è un invio
  di dati, il secondo è il bit di start ed il terzo messo in coda ai dati
  è quello di stop.
 \end_layout
@@ -244,11 +301,11 @@ one qui non effettuati, la riteniamo di non facile comprensione, scrivere
  (pensiamo al caso in cui dobbiamo solo inviare i dati e non riceverli),
  invece nella nostra soluzione possiamo estrapolare una delle due macchine
  a stati finiti all' occorrenza e nell' unico file in cui sono riacchiusi
- i componenti a corredo capire quali ci occorrono ed ricopiarli, oppure
+ i componenti a corredo capire quali ci occorrono ed riutilizzarli, oppure
  in base ai segnali in ingresso alle due macchine sequenziali capire quali
  segnali ci possano occorrere, altro punto a sfavore è la realizzazione
  di diversi process per fare andare la macchina ad una frequenza voluta
- per trasmettere ricevere ad un determinato baud rate, soluzione migliore
+ per trasmettere/ricevere ad un determinato baud rate, soluzione migliore
  consisterebbe di utilizzare un DCM e cambiare la frequenza in base alla
  necessità.
 \end_layout

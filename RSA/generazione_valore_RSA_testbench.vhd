@@ -68,7 +68,7 @@ ARCHITECTURE behavior OF generazione_valore_RSA_testbench IS
 	signal correct: STD_LOGIC_VECTOR (0 downto 0);
 	signal msg_r: std_logic_vector(15 downto 0);
    -- Clock period definitions
-   constant clk_period : time := 10 ns;
+   constant clk_period : time := 20 ns;
  
 BEGIN
  

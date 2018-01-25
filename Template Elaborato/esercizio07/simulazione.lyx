@@ -179,9 +179,9 @@ end{figure}
 \end_layout
 
 \begin_layout Standard
-Nei due esempi: in alto, viene mostrato un caso simulativo in cui la stringa
- da riconoscere è quella in ingresso sono le stesse in basso invece, in
- cui le due stringhe sono dissimili.
+Nei due esempi: in alto, viene mostrato un caso in cui la stringa da riconoscere
+ è quella in ingresso sono le stesse in basso invece, in cui le due stringhe
+ sono dissimili.
 \end_layout
 
 \end_body

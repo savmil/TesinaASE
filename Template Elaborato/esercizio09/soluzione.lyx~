@@ -170,7 +170,7 @@ centering
 
 
 \backslash
-includegraphics[scale=0.7]{esercizio09/images/carry_look_a_head_adder.png}
+includegraphics[scale=0.5]{esercizio09/images/carry_look_a_head_adder.png}
 \end_layout
 
 \begin_layout Plain Layout
@@ -203,6 +203,7 @@ L' addizionatore è costituito, da una rete che permette di calcolare i riporti
 
 \begin_layout Standard
 \begin_inset Float table
+placement H
 wide false
 sideways false
 status open
@@ -507,8 +508,8 @@ status open
 
 
 \backslash
-lstinputlisting [language=VHDL,caption={Definizione del Carry Look a Head}]
- {progetti/Carry_Look_A-head_Adder_with_test/Carry_Look_A_head_r.vhd}
+lstinputlisting [language=VHDL,caption={Definizione del Carry Look a Head},first
+line=32] {progetti/Carry_Look_A-head_Adder_with_test/Carry_Look_A_head_r.vhd}
 \end_layout
 
 \end_inset

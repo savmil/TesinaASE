@@ -108,7 +108,7 @@ status open
 
 
 \backslash
-href{run:esercizio16/codice/gpio.vhd}{GPIO Code}
+href{run:progetti/GPIO/gpio.vhd}{GPIO Code}
 \end_layout
 
 \end_inset

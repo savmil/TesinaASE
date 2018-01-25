@@ -7,8 +7,8 @@ Parsing VHDL file "/media/sf_ASE/RSA/netgen/par/generazione_valori_RSA_timesim.v
 Parsing VHDL file "/media/sf_ASE/RSA/generazione_valore_RSA_testbench.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 231056 KB
-Fuse CPU Usage: 3030 ms
+Fuse Memory Usage: 231052 KB
+Fuse CPU Usage: 3550 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package textio
@@ -38,6 +38,6 @@ Compiling architecture behavior of entity generazione_valore_rsa_testbench
 Time Resolution for simulation is 1ps.
 Compiled 8080 VHDL Units
 Built simulation executable /media/sf_ASE/RSA/generazione_valore_RSA_testbench_isim_par.exe
-Fuse Memory Usage: 276948 KB
-Fuse CPU Usage: 15380 ms
-GCC CPU Usage: 11510 ms
+Fuse Memory Usage: 276936 KB
+Fuse CPU Usage: 19450 ms
+GCC CPU Usage: 10280 ms

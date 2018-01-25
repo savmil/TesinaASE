@@ -292,9 +292,11 @@ dout
 \shape default
  dei flip flop, mentre quando è alto abilita la modalità di shift register
  che, nel caso in cui scan_en è basso viene utilizzata per shiftare il valore
- din, che se non usassi questa doppia abilitazione perderei, e nel caso
- in cui scan_en è alto viene utilizzata per shiftare un valore messo in
- ingresso al segnale di 
+ din, che se non usassi questa doppia abilitazione perderei( per ottenere
+ lo stesso risultato dovrei caricare la scan chain serialmente, questa piccola
+ modifica ci servirà successivamente), e nel caso in cui scan_en è alto
+ viene utilizzata per shiftare un valore messo in ingresso al segnale di
+ 
 \shape italic
 scan_in
 \shape default

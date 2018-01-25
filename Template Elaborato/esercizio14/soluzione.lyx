@@ -208,17 +208,35 @@ ref{Booth}
 \end_inset
 
 , cambia radicalmente però in che modo i bit vengono trattati difatti la
- macchina a stati finiti consiste di sei stati: idle stato di riposo, attende
- il segnale di avvio di una computazione; init inizializzazione delle scan
- chain, in questo caso q ed r (quoziente caricato con il valore del dividendo
- e il resto inzializzato a 0) e un registro per salvare il valore del divisore;
- shift in cui i dati ( q ed r ) vengono shiftati a sinistra ( in Booth i
- dati shiftano a destra); sub in cui viene effettuata la sottrazione, nel
- caso il risultato sia un numero negativo si ritorna in shift altrimenti,
- si procede nello stato set_1 che setta ad uno il bit da dover shiftare
- all' interno di q, tale shift avverrà nello stato shift1.
- Il segnale di terminazione della computazione viene attivato quando il
- contatore segnale un numero di operazioni pari al numero di bit del dividendo.
+ macchina a stati finiti consiste di sei stati: 
+\end_layout
+
+\begin_layout Itemize
+idle stato di riposo, attende il segnale di avvio di una computazione;
+\end_layout
+
+\begin_layout Itemize
+init, in cui avviene l' inizializzazione delle scan chain, in questo caso
+ q ed r (q caricato con il valore del dividendo ed r inzializzato a 0) e
+ un registro per salvare il valore del divisore;
+\end_layout
+
+\begin_layout Itemize
+shift in cui i dati ( q ed r ) vengono shiftati a sinistra ( in Booth i
+ dati shiftano a destra);
+\end_layout
+
+\begin_layout Itemize
+sub in cui viene effettuata la sottrazione, nel caso il risultato sia un
+ numero negativo si ritorna in shift altrimenti, si procede nello stato
+ set_1 che setta ad uno il bit da dover shiftare all' interno di q, tale
+ shift avverrà nello stato shift1.
+ 
+\end_layout
+
+\begin_layout Standard
+Il segnale di terminazione della computazione viene attivato quando il contatore
+ segnala un numero di operazioni pari al numero di bit del dividendo.
 \end_layout
 
 \begin_layout Subsection

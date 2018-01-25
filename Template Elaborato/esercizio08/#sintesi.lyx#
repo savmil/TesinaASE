@@ -94,6 +94,22 @@ Indicare la soluzione adottata per interfacciare il design realizzato con
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{Sintesi ripple carry}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Per la sintesi si è utilizzato un tester simile a questo 
 \begin_inset ERT
 status open
@@ -102,27 +118,28 @@ status open
 
 
 \backslash
-ref{fig:tester_dispositivi_seriali}
+ref{tester dispositivi seriali}
 \end_layout
 
 \end_inset
 
 , con la differenza che non vi è un process per la gestione dello start,
  essendo il componente da testare combinatoriale, gli switch occorrono per
- l' inserimento degli operandi i led 7, 6 e 5 indicano nel caso in cui o
- il led 5 o il led 6 sia acceso che abbiamo selezionato un registro per
- caricare i dati, se sono accessi entrambi stiamo assegnando il valore uno
- al carry in ingresso, se si abilita il led 7 utilizziamo l' addizionatore
- come sottrattore, mentre l' accensione del led 0 determina se è presente
- il carry in uscita o meno, quella del led 1 che vi è una situazione d'
- errore dovuta al sottrattore, a dispetto del tester messo in riferimento,
- qui viene anche utilizzato il display per visualizzare il risultato, per
- decidere quante cifre del display vogliamo utilizzare basta alzare gli
- ultimi quattro switch (a partire dal quinto all' ottavo questi accenderanno
- dalla prima alla quarta cifra) e premere il pulsante 2, se abbiamo bisogno
- dei punti questi vengono abilitati dai primi quattro switch (stesso ragionament
-o fatto per le cifre) dopodichè bisogna sempre premere il pulsante 2, per
- visionare la somma bisogna premere il pulsante 1
+ l' inserimento degli operandi i led sette , sei e cinque indicano, nel
+ caso in cui il led cinque o il led sei sia acceso che abbiamo selezionato
+ un registro per caricare i dati, se sono accesi entrambi stiamo assegnando
+ il valore uno al carry in ingresso, se si abilita il led sette utilizziamo
+ l' addizionatore come sottrattore, mentre l' accensione del led zeo determina
+ se è presente il carry in uscita o meno, quella del led uno che vi è una
+ situazione d' errore dovuta al sottrattore, a dispetto del tester messo
+ in riferimento, qui viene anche utilizzato il display per visualizzare
+ il risultato, per decidere quante cifre del display vogliamo utilizzare
+ basta alzare gli ultimi quattro switch (a partire dal quinto all' ottavo
+ questi accenderanno dalla prima alla quarta cifra) e premere il pulsante
+ 2, se abbiamo bisogno dei punti questi vengono abilitati dai primi quattro
+ switch (stesso ragionamento fatto per le cifre) dopodichè bisogna sempre
+ premere il pulsante 2, per visionare la somma bisogna premere il pulsante
+ 1.
 \end_layout
 
 \end_body

@@ -7,17 +7,17 @@
 -- \   \   \/     Version: P.20131013
 --  \   \         Application: netgen
 --  /   /         Filename: t_latch_timesim.vhd
--- /___/   /\     Timestamp: Sun Jan 14 13:49:27 2018
+-- /___/   /\     Timestamp: Thu Jan 25 18:50:13 2018
 -- \   \  /  \ 
 --  \___\/\___\
 --             
 -- Command	: -intstyle ise -s 5 -pcf t_latch.pcf -rpw 100 -tpw 0 -ar Structure -tm t_latch -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim t_latch.ncd t_latch_timesim.vhd 
 -- Device	: 3s100etq144-5 (PRODUCTION 1.27 2013-10-13)
 -- Input file	: t_latch.ncd
--- Output file	: C:\DAVIDE\ASE\Esercizi\ISE\latch_flip-flop\t_latch\netgen\par\t_latch_timesim.vhd
+-- Output file	: /media/sf_ASE/Template Elaborato/progetti/latch_flip-flop/t_latch/netgen/par/t_latch_timesim.vhd
 -- # of Entities	: 1
 -- Design Name	: t_latch
--- Xilinx	: C:\Xilinx\14.7\ISE_DS\ISE\
+-- Xilinx	: /opt/Xilinx/14.7/ISE_DS/ISE/
 --             
 -- Purpose:    
 --     This VHDL netlist is a verification model and uses simulation 
@@ -74,6 +74,15 @@ begin
       I => t,
       O => t_INBUF
     );
+  t_IFF_IMUX : X_BUF
+    generic map(
+      LOC => "IPAD26",
+      PATHPULSE => 694 ps
+    )
+    port map (
+      I => t_INBUF,
+      O => t_IBUF_18
+    );
   notq_OBUF : X_OBUF
     generic map(
       LOC => "PAD24"
@@ -99,15 +108,6 @@ begin
     port map (
       I => Inst_rs_latch_Inst_nor_gate1_f_or0000_pack_5,
       O => Inst_rs_latch_Inst_nor_gate1_f_or0000
-    );
-  t_IFF_IMUX : X_BUF
-    generic map(
-      LOC => "IPAD26",
-      PATHPULSE => 694 ps
-    )
-    port map (
-      I => t_INBUF,
-      O => t_IBUF_18
     );
   Inst_rs_latch_Inst_nor_gate1_f_or00001 : X_LUT4
     generic map(

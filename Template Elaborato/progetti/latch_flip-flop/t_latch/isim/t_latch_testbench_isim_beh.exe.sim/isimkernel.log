@@ -2,9 +2,28 @@ Command line:
    t_latch_testbench_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  49372
+     -socket  48634
 
-Sun Jan 14 13:46:44 2018
+Thu Jan 25 18:47:29 2018
 
 
- Elaboration Time: 0.0468 sec
+ Elaboration Time: 0.03 sec
+
+ Current Memory Usage: 199.68 Meg
+
+ Total Signals          : 30
+ Total Nets             : 11
+ Total Signal Drivers   : 11
+ Total Blocks           : 8
+ Total Primitive Blocks : 5
+ Total Processes        : 11
+ Total Traceable Variables  : 8
+ Total Scalar Nets and Variables : 371
+Total Line Count : 12
+
+ Total Simulation Time: 0.07 sec
+
+ Current Memory Usage: 208.073 Meg
+
+Thu Jan 25 18:48:13 2018
+

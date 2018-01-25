@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-01-14T13:44:58</DateModified>
+  <DateModified>2018-01-25T18:51:16</DateModified>
   <ModuleName>t_latch</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/t_latch/iseconfig/t_latch.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/t_latch</ImplementationReportsDirectory>
+  <SummaryTimeStamp>2018-01-25T18:50:15</SummaryTimeStamp>
+  <SavedFilePath>/media/sf_ASE/Template Elaborato/progetti/latch_flip-flop/t_latch/iseconfig/t_latch.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/media/sf_ASE/Template Elaborato/progetti/latch_flip-flop/t_latch/</ImplementationReportsDirectory>
   <DateInitialized>2018-01-14T13:44:58</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

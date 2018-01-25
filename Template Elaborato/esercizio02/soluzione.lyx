@@ -1059,21 +1059,10 @@ noindent
  Il numero di nodi utilizzati per sintetizzare la rete è diminuito e il
  numero di letterali è aumentato di 7 unità: un nodo è stato eliminato sostituen
 do la sua espressione nei nodi a valle.
- Ciò ha consentito un risparmio di area, in termini di celle Xilinx, ed
- eventualmente anche di tempo, grazie ad una dipendenza più diretta dei
- nodi a valle dagli input primari.
+ Ciò ha consentito un risparmio di area, in termini di celle, ed eventualmente
+ anche di tempo, grazie ad una dipendenza più diretta dei nodi a valle dagli
+ input primari.
  
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-anche se nel caso delle FPGA, ogni nodo ha un tempo di calcolo costante
- quindi si sono avuti sia miglioramenti di area che di tempo.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_body

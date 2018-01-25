@@ -133,8 +133,8 @@ ref{tester dispositivi seriali}
 
 \end_inset
 
-, dove l' accensione del led zero indica la fine dell' operazione ed il
- led uno non viene utilizzato e viene utilizzato il display come in 
+, dove l' accensione del led zero indica la fine dell' operazione, il led
+ uno non viene utilizzato mentre invece il display è impiegato come in 
 \begin_inset ERT
 status open
 

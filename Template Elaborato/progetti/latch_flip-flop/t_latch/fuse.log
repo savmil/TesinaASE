@@ -1,12 +1,14 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/t_latch/t_latch_testbench_isim_par.exe -prj C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/t_latch/t_latch_testbench_par.prj work.t_latch_testbench 
-ISim P.20131013 (signature 0x7708f090)
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /media/sf_ASE/Template Elaborato/progetti/latch_flip-flop/t_latch/t_latch_testbench_isim_par.exe -prj /media/sf_ASE/Template Elaborato/progetti/latch_flip-flop/t_latch/t_latch_testbench_par.prj work.t_latch_testbench 
+ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 1
 Turning on mult-threading, number of parallel sub-compilation jobs: 0 
 Determining compilation order of HDL files
-Parsing VHDL file "C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/t_latch/netgen/par/t_latch_timesim.vhd" into library work
-Parsing VHDL file "C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/t_latch/t_latch_testbench.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/Template Elaborato/progetti/latch_flip-flop/t_latch/netgen/par/t_latch_timesim.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/Template Elaborato/progetti/latch_flip-flop/t_latch/t_latch_testbench.vhd" into library work
 Starting static elaboration
 Completed static elaboration
+Fuse Memory Usage: 137072 KB
+Fuse CPU Usage: 1490 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package textio
@@ -25,6 +27,7 @@ Compiling architecture structure of entity t_latch [t_latch_default]
 Compiling architecture behavior of entity t_latch_testbench
 Time Resolution for simulation is 1ps.
 Compiled 32 VHDL Units
-Built simulation executable C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/t_latch/t_latch_testbench_isim_par.exe
-Fuse Memory Usage: 78208 KB
-Fuse CPU Usage: 1107 ms
+Built simulation executable /media/sf_ASE/Template Elaborato/progetti/latch_flip-flop/t_latch/t_latch_testbench_isim_par.exe
+Fuse Memory Usage: 159868 KB
+Fuse CPU Usage: 1700 ms
+GCC CPU Usage: 890 ms

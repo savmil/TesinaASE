@@ -128,26 +128,44 @@ label{tester dispositivi seriali}
 \end_layout
 
 \begin_layout Standard
-Il seguente codice in VHDL, descrive un tester utilizzato, con piccole differenz
-e dove occorre, per dispositivi non combinatoriali, difatti al suo interno
- è presente un process che da un segnale di start che è attivo fino a quando
- il counter al di sopra di esso non ha finito di contare, questo perchè
- il segnale di start non deve essere dato continuamente altrimenti il dispositiv
-i computerebbe in ogni momento, ma deve essere dato per un tempo necessario
- affinchè venga rilevato dal dispositivo che debba essere avviato.
+Il seguente codice in VHDL descrive un tester utilizzato, con piccole differenze
+ dove occorre, utilizzato per tutti i dispositivi non solo combinatoriali
+ presenti in tale elaborato, difatti al suo interno è presente un process
+ che genera un segnale di start attivo fino a quando il contatore al di
+ sopra di esso non termina, questo perchè tale segnale non deve essere attivo
+ continuamente altrimenti i dispositivi ricomincerebbero a computare non
+ appena tornerebbero nello stato di riposo, ma deve essere attivo per un
+ tempo tale affinchè venga rilevato dal dispositivo che deve essere avviato.
 \end_layout
 
 \begin_layout Standard
 Vengono utilizzati gli switch per inserire sia la stringa da riconoscere,
- oltre a quella con cui si deve effettuare il confronto, i valori sono sorretti
- da registri così il dispositivo sa su quali dati operare, mentre invece
- il led 0 si attiva se il riconoscimento è andata a buon fine il led 1 nel
- caso contrario, i led 6 e 7 occorrono a capire se si sta salvando i dati
- nei registri, si è avviata la computazione o nel caso in cui si resetti
- il dispositivo per effettuare una successiva computazione, per effettuare
- il reset degli altri componenti invece basta premere il pulsante 3, invece
- il pulsante 0 permette la selezione dei registri e l' avvio della macchina
- a stati finiti.
+ oltre a quella con cui si deve effettuare il confronto, tali valori sono
+ sorretti da registri;
+\end_layout
+
+\begin_layout Standard
+il led zero si attiva se il riconoscimento è andato a buon fine, il led
+ uno nel caso contrario;
+\end_layout
+
+\begin_layout Standard
+i led sei e sette occorrono a determinare: quali registri per contenere
+ i dati si sono selezionati (se acceso il led sei il dato da voler confrontare,
+ se acceso il sette la stringa da riconoscere), se si è avviata la computazione
+ (entrambi i led accesi) o nel caso in cui sono spenti entrambi venga effettuato
+ il reset del dispositivo per effettuare una successiva computazione;
+\end_layout
+
+\begin_layout Standard
+il reset degli altri componenti invece è abilitato della pressione del pulsante
+ tre, invece il pulsante zero permette la selezione dei registri e l' avvio
+ della macchina a stati finiti;
+\end_layout
+
+\begin_layout Standard
+per caricare i dati gli switch devono essere impostati prima che il led
+ relativo al registro venga acceso, vale anche per gli altri tester utilizzati.
 \end_layout
 
 \end_body

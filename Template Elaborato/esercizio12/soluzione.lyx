@@ -194,16 +194,20 @@ end{figure}
 
 \begin_layout Standard
 L' addizionatore è costituito dapprima da un dispositivo che trasforma i
- sette input in ingresso in soli tre input da nove bit ognugno, questo è
- dovuto al componente seven to three, che conta il numero di uno presenti
- in ingresso, di questi ne sono presenti otto ognugno ha in ingresso bit
- dello stesso peso appartenenti a ciascuno operando, i valori in uscita
- di tali componenti prima di essere passati al successivo vengono incollonati
- introducendo degli zero fittizzi per rispettare il perso dei bit.
- Il partial sum due non sono altro che dei full adder, utilizzati come carry
- save, i valori in uscita prima di essere fatti sommare da dei Ripple Carry
- Adder vengono incollonnati con lo stesso ragionamento effetuato nel passaggio
- precendete.
+ sette input in ingresso in soli tre input da nove bit ognugno, grazie al
+ componente seven to three il quale conta il numero di uno presenti in ingresso,
+ di questi ne sono presenti otto ed ognugno ha in ingresso bit dello stesso
+ peso appartenenti a ciascuno operando, i valori in uscita di tali componenti
+ prima di essere passati al successivo vengono incolonnati introducendo
+ degli zero fittizzi per fa sì che le tre stringhe di bit in uscita abbiano
+ lo stesso peso(se pensiamo al primo seven to three genera un bit di peso
+ zero, uno di peso uno e l' ultimo di peso due, questi vanno associati a
+ tre strighe diverse ma le stringhe con il bit di peso uno e due hanno bisogno
+ di zero antecedenti per poter incollonare le somme).
+ Il partial sum due non sono altro che dei full adder utilizzati come carry
+ save, per produrre due stringhe che vengono fatte sommare da dei Ripple
+ Carry Adder, facendo le stesse considerazione sui pesi discusse nel passo
+ precedente.
 \end_layout
 
 \begin_layout Subsection

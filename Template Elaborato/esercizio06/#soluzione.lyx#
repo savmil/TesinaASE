@@ -226,6 +226,24 @@ Codice
 \end_layout
 
 \begin_layout Standard
+Progetto ISE: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+href{run:progetti/Boundary_Scan_Chain/Boundary_Scan_Chain.xise}{Boundary
+ Scan Chain ISE}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status collapsed
 
@@ -274,17 +292,25 @@ dout
 \shape default
  dei flip flop, mentre quando è alto abilita la modalità di shift register
  che, nel caso in cui scan_en è basso viene utilizzata per shiftare il valore
- din, che se non usassi questa doppia abilitazione perderei, e nel caso
- in cui scan_en è alto viene utilizzata per shiftare un valore messo in
- ingresso al segnale di 
+ din, che se non usassi questa doppia abilitazione perderei( per ottenere
+ lo stesso risultato dovrei , e nel caso in cui scan_en è alto viene utilizzata
+ per shiftare un valore messo in ingresso al segnale di 
 \shape italic
 scan_in
 \shape default
-, visibile poi i
+, che sarà visibile poi all'uscita scan_out dopo un certo numero di colpi
+ di clock.
+ Infine per concatenare l' uscita di ogni flip flop con l'ingresso del mux
+ successivo, è stato utilizzato il segnale 
+\shape italic
+q
+\shape default
+.
+ 
 \begin_inset Newline newline
 \end_inset
 
-Il componente in questione è osservabile a questo link: 
+
 \begin_inset ERT
 status open
 
@@ -292,11 +318,8 @@ status open
 
 
 \backslash
-href{esercizio06/codice/boundary_scan_chain.vhd}{Boundary
-\backslash
-_Scan
-\backslash
-_Chain}
+lstinputlisting [language=VHDL,caption={Definizione della Boundary Scan
+ Chain}] {progetti/Boundary_Scan_Chain/boundary_scan_chain.vhd}
 \end_layout
 
 \end_inset

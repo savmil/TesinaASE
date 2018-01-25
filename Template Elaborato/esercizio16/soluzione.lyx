@@ -264,8 +264,8 @@ in_out
 \shape default
 viene caricato con il valore del segnale di input, poi trasferito al segnale
  di output.
- Quando enable è basso si effettua un'operazione di lettura e quindi, per
- evitare di danneggiare il valore da leggere, viene spento il buffer, ponendo
+ Quando enable è basso si effettua un'operazione di lettura quindi, per
+ evitare di disturbare il valore da leggere, viene spento il buffer, ponendo
  il segnale in_out ad alta impedenza ('Z').
  Questo comportamento è modellato tramite un costrutto dataflow 
 \shape italic
