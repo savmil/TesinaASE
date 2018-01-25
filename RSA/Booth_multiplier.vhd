@@ -98,7 +98,7 @@ COMPONENT contatore_modulo_2n
 	 );
 	end component;
 	signal q_val,q_val_2:STD_LOGIC_VECTOR(width downto 0):=(others=>'0');
-	signal moltiplicatore,molt2,suma,sum1:STD_LOGIC_VECTOR(width-1 downto 0):=(others=>'0');
+	signal moltiplicatore,suma,sum1:STD_LOGIC_VECTOR(width-1 downto 0):=(others=>'0');
 	signal prod:STD_LOGIC_VECTOR(2*width-1 downto 0):=(others=>'0');
 	signal fint_stop: STD_LOGIC_VECTOR(0 downto 0);
 	signal stop,en_m,en_c,en_sh,en_p1,bit_shift,en_q,en_a:STD_LOGIC:='0';

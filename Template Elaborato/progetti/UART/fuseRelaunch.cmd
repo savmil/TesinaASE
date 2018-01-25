@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/media/sf_ASE/VHDL/Milo/UART/Sender_Receiver_testbench_isim_beh.exe" -prj "/media/sf_ASE/VHDL/Milo/UART/Sender_Receiver_testbench_beh.prj" "work.Sender_Receiver_testbench" 

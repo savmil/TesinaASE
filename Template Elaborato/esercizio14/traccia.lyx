@@ -77,5 +77,12 @@
 Traccia
 \end_layout
 
+\begin_layout Standard
+Realizzare in hardware l’algoritmo della divisione Restoring per operandi
+ ad 8 bit.
+ L’architettura deve essere realizzata sulla base dello schema di progettazione
+ PO/PC (Parte Operativa e Parte di Controllo).
+\end_layout
+
 \end_body
 \end_document

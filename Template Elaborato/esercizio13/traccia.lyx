@@ -77,5 +77,43 @@
 Traccia
 \end_layout
 
+\begin_layout Subsection
+Moltiplicatore a celle Mac
+\end_layout
+
+\begin_layout Standard
+Realizzare in VHDL un circuito di moltiplicazione a celle MAC di N bit.
+ La cella MAC deve contenere un Full Adder (descritto gi`a in esercizi pre-
+ cedenti) ed una porta AND per la moltiplicazione parziale.
+ Tale cella deve essere replicata in una struttura ordinata (per righe e
+ colonne) per comporre il circuito intero di moltiplicazione.
+ Eﬀettuare considerazioni di occupazione di area e di tempi di propagazione
+ dei segnali al variare di N per valori signiﬁcativi, apportando eventuali
+ commenti salienti.
+\end_layout
+
+\begin_layout Subsection
+Moltiplicatore di Booth
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Realizzare in hardware l’algoritmo della moltiplica- zione secondo Booth
+ per operandi ad 8 bit.
+ L’architettura deve essere rea- lizzata sulla base dello schema di progettazion
+e PO/PC (Parte Operativa e Parte di Controllo).
+\end_layout
+
 \end_body
 \end_document

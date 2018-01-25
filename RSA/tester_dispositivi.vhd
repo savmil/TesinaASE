@@ -31,9 +31,6 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity tester_dispositivi is
     Port ( clock : in  STD_LOGIC;
-           reset : in  STD_LOGIC;
-           load_conf : in  STD_LOGIC;
-           load_value : in  STD_LOGIC;
 			  button : in STD_LOGIC_VECTOR (3 downto 0);
 			  led : out STD_LOGIC_VECTOR (7 downto 0);
            in_byte : in  STD_LOGIC_VECTOR (7 downto 0);
@@ -97,7 +94,7 @@ COMPONENT contatore_modulo_2n
 	signal scelta: STD_LOGIC_VECTOR( 7 downto 0):=( others=>'0');
 	signal e_v,d_v:STD_LOGIC_VECTOR(15 downto 0) := (others=>'0');
 	signal p_v,q_v,msg_v:STD_LOGIC_VECTOR(7 downto 0):=(others=>'0');
-	signal msg_r,msg_p:STD_LOGIC_VECTOR(15 downto 0):=(others=>'0');
+	signal msg_r:STD_LOGIC_VECTOR(15 downto 0):=(others=>'0');
 	signal en_c1,hit,en_c,reset_c,start :STD_LOGIC:='0';
 	signal correct: STD_LOGIC_VECTOR (0 downto 0):="0";
 begin
@@ -151,7 +148,7 @@ begin
 	led(7)<=sel(2);
 	led(6)<=sel(1);
 	led(5)<=sel(0);
-	RSA : generazione_valori_RSA port map(clock,start,not(scelta(0)),p_v,q_v,msg_v,e_v,d_v,correct,msg_r);
+	RSA : generazione_valori_RSA port map(clock,start,not(scelta(6)),p_v,q_v,msg_v,e_v,d_v,correct,msg_r);
 	--msg_r( 7 downto 0)<=msg_v;
 	gest_disp : display_top_level port map(clock,button(3),button(2),button(1),msg_r,in_byte,anodes,cathodes);
 end Behavioral;

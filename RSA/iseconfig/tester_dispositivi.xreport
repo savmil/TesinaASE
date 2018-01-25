@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-01-21T10:05:16</DateModified>
-  <ModuleName>tester_dispositivi</ModuleName>
-  <SummaryTimeStamp>2018-01-10T22:00:52</SummaryTimeStamp>
+  <DateModified>2018-01-25T14:10:34</DateModified>
+  <ModuleName>generazione_valori_RSA</ModuleName>
+  <SummaryTimeStamp>2018-01-25T14:09:27</SummaryTimeStamp>
   <SavedFilePath>/media/sf_ASE/RSA/iseconfig/tester_dispositivi.xreport</SavedFilePath>
   <ImplementationReportsDirectory>/media/sf_ASE/RSA/</ImplementationReportsDirectory>
-  <DateInitialized>2018-01-10T22:02:37</DateInitialized>
+  <DateInitialized>2018-01-25T14:10:34</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>

@@ -1,9 +1,10 @@
 --------------------------------------------------------------------------------
-Release 14.7 Trace  (nt64)
+Release 14.7 Trace  (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
--n 3 -fastpaths -xml gpio.twx gpio.ncd -o gpio.twr gpio.pcf
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 5 -n
+3 -fastpaths -xml gpio.twx gpio.ncd -o gpio.twr gpio.pcf -ucf
+BasysRevEGeneral.ucf
 
 Design file:              gpio.ncd
 Physical constraint file: gpio.pcf
@@ -43,29 +44,29 @@ Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-enable<0>      |pads<0>        |    4.784|
-enable<1>      |pads<1>        |    5.036|
-enable<2>      |pads<2>        |    4.788|
-enable<3>      |pads<3>        |    4.784|
-inputs<0>      |pads<0>        |    4.543|
-inputs<1>      |pads<1>        |    4.852|
-inputs<2>      |pads<2>        |    5.022|
-inputs<3>      |pads<3>        |    4.529|
-pads<0>        |outputs<0>     |    4.797|
-pads<1>        |outputs<1>     |    4.527|
-pads<2>        |outputs<2>     |    4.775|
-pads<3>        |outputs<3>     |    5.048|
+enable<0>      |pads<0>        |    5.931|
+enable<1>      |pads<1>        |    6.177|
+enable<2>      |pads<2>        |    6.104|
+enable<3>      |pads<3>        |    5.906|
+inputs<0>      |pads<0>        |    5.943|
+inputs<1>      |pads<1>        |    6.132|
+inputs<2>      |pads<2>        |    5.482|
+inputs<3>      |pads<3>        |    6.023|
+pads<0>        |outputs<0>     |    6.407|
+pads<1>        |outputs<1>     |    6.320|
+pads<2>        |outputs<2>     |    6.622|
+pads<3>        |outputs<3>     |    6.009|
 ---------------+---------------+---------+
 
 
-Analysis completed Thu Dec 28 20:19:59 2017 
+Analysis completed Tue Jan 23 20:25:19 2018 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 149 MB
+Peak Memory Usage: 331 MB
 
 
 

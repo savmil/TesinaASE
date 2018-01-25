@@ -13,3 +13,43 @@ map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o gpio_ma
 par -w -intstyle ise -ol high -t 1 gpio_map.ncd gpio.ncd gpio.pcf 
 trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml gpio.twx gpio.ncd -o gpio.twr gpio.pcf 
 bitgen -intstyle ise -f gpio.ut gpio.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BasysRevEGeneral.ucf -p xc3s100e-tq144-5 "gpio.ngc" gpio.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o gpio_map.ncd gpio.ngd gpio.pcf 
+par -w -intstyle ise -ol high -t 1 gpio_map.ncd gpio.ncd gpio.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml gpio.twx gpio.ncd -o gpio.twr gpio.pcf -ucf BasysRevEGeneral.ucf 
+bitgen -intstyle ise -f gpio.ut gpio.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BasysRevEGeneral.ucf -p xc3s100e-tq144-5 "gpio.ngc" gpio.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o gpio_map.ncd gpio.ngd gpio.pcf 
+par -w -intstyle ise -ol high -t 1 gpio_map.ncd gpio.ncd gpio.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml gpio.twx gpio.ncd -o gpio.twr gpio.pcf -ucf BasysRevEGeneral.ucf 
+bitgen -intstyle ise -f gpio.ut gpio.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BasysRevEGeneral.ucf -p xc3s100e-tq144-5 "gpio.ngc" gpio.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o gpio_map.ncd gpio.ngd gpio.pcf 
+par -w -intstyle ise -ol high -t 1 gpio_map.ncd gpio.ncd gpio.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml gpio.twx gpio.ncd -o gpio.twr gpio.pcf -ucf BasysRevEGeneral.ucf 
+bitgen -intstyle ise -f gpio.ut gpio.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BasysRevEGeneral.ucf -p xc3s100e-tq144-5 "gpio.ngc" gpio.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o gpio_map.ncd gpio.ngd gpio.pcf 
+par -w -intstyle ise -ol high -t 1 gpio_map.ncd gpio.ncd gpio.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml gpio.twx gpio.ncd -o gpio.twr gpio.pcf -ucf BasysRevEGeneral.ucf 
+bitgen -intstyle ise -f gpio.ut gpio.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BasysRevEGeneral.ucf -p xc3s100e-tq144-5 "gpio.ngc" gpio.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o gpio_map.ncd gpio.ngd gpio.pcf 
+par -w -intstyle ise -ol high -t 1 gpio_map.ncd gpio.ncd gpio.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml gpio.twx gpio.ncd -o gpio.twr gpio.pcf -ucf BasysRevEGeneral.ucf 
+bitgen -intstyle ise -f gpio.ut gpio.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BasysRevEGeneral.ucf -p xc3s100e-tq144-5 "gpio.ngc" gpio.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o gpio_map.ncd gpio.ngd gpio.pcf 
+par -w -intstyle ise -ol high -t 1 gpio_map.ncd gpio.ncd gpio.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml gpio.twx gpio.ncd -o gpio.twr gpio.pcf -ucf BasysRevEGeneral.ucf 
+bitgen -intstyle ise -f gpio.ut gpio.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BasysRevEGeneral.ucf -p xc3s100e-tq144-5 "gpio.ngc" gpio.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o gpio_map.ncd gpio.ngd gpio.pcf 
+par -w -intstyle ise -ol high -t 1 gpio_map.ncd gpio.ncd gpio.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml gpio.twx gpio.ncd -o gpio.twr gpio.pcf -ucf BasysRevEGeneral.ucf 
+bitgen -intstyle ise -f gpio.ut gpio.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BasysRevEGeneral.ucf -p xc3s100e-tq144-5 "gpio.ngc" gpio.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o gpio_map.ncd gpio.ngd gpio.pcf 
+par -w -intstyle ise -ol high -t 1 gpio_map.ncd gpio.ncd gpio.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml gpio.twx gpio.ncd -o gpio.twr gpio.pcf -ucf BasysRevEGeneral.ucf 
+bitgen -intstyle ise -f gpio.ut gpio.ncd 

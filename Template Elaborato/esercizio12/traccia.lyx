@@ -78,6 +78,25 @@ Traccia
 \end_layout
 
 \begin_layout Standard
+Progettare in VHDL un sommatore ad N bit capace di sommare 7 operandi.
+ Il risultato della somma deve essere completo senza overﬂow, cio`e la somma
+ in uscita deve essere espressa su un numero di bit tali da consentire il
+ non veriﬁcarsi di condizioni di overﬂow.
+ Nel caso speciﬁco i bit in uscita devono essere pari ad N+3.
+ Il progetto pu`o essere realizzato mediante composizione di Full Adder.
+ Per ciascuna colonna si pu`o eﬀettuare un conteggio, producendo in uscita
+ un valore binario espresso su 3 bit.
+ Tenendo conto della posizione dei riporti un sommatore (e.g.
+ ripple carry) pu`o sommare tutti i riporti generati, restituendo il risultato
+ ﬁnale.
+ I riporti generati possono propagarsi sino alla cifra i+2 (e.g.
+ la somma di 5 volte 1 genera 1 con riporto 10).
+ Eventuali altre cifre binarie, come i riporti generati da somme precedenti,
+ vanno considerati: quindi si veriﬁca che un riporto pu`o generarsi ﬁno
+ alla i+4-esima cifra binaria.
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 

@@ -1,4 +1,23 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Thu Dec 28 20:19:51 2017
+// Written by: Map P.20131013 on Tue Jan 23 20:25:10 2018
 //! **************************************************************************
+
+SCHEMATIC START;
+COMP "inputs<0>" LOCATE = SITE "P38" LEVEL 1;
+COMP "enable<2>" LOCATE = SITE "P10" LEVEL 1;
+COMP "inputs<1>" LOCATE = SITE "P36" LEVEL 1;
+COMP "enable<3>" LOCATE = SITE "P6" LEVEL 1;
+COMP "inputs<2>" LOCATE = SITE "P29" LEVEL 1;
+COMP "inputs<3>" LOCATE = SITE "P24" LEVEL 1;
+COMP "pads<0>" LOCATE = SITE "P81" LEVEL 1;
+COMP "pads<1>" LOCATE = SITE "P91" LEVEL 1;
+COMP "pads<2>" LOCATE = SITE "P82" LEVEL 1;
+COMP "pads<3>" LOCATE = SITE "P92" LEVEL 1;
+COMP "outputs<0>" LOCATE = SITE "P5" LEVEL 1;
+COMP "outputs<1>" LOCATE = SITE "P4" LEVEL 1;
+COMP "outputs<2>" LOCATE = SITE "P3" LEVEL 1;
+COMP "outputs<3>" LOCATE = SITE "P2" LEVEL 1;
+COMP "enable<0>" LOCATE = SITE "P18" LEVEL 1;
+COMP "enable<1>" LOCATE = SITE "P12" LEVEL 1;
+SCHEMATIC END;
 

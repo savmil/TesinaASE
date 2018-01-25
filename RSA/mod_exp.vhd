@@ -98,7 +98,6 @@ COMPONENT counter_2n_down
 			  d_div: in std_logic_vector(63 downto 0);
 			  d_res: OUT std_logic_vector(63 downto 0);
            en_o : out  STD_LOGIC;
-           en_d1 : out  STD_LOGIC;
            en_d : out  STD_LOGIC;
            en_m : out  STD_LOGIC;
 			  reset_m: out STD_LOGIC;
@@ -109,9 +108,9 @@ COMPONENT counter_2n_down
 			  val_mul: out STD_LOGIC_VECTOR(1 downto 0);
            finish : out  STD_LOGIC);
 	END COMPONENT;
-	signal hit_o,en_o,en_d1,en_d,en_m,en_div,exp_bit,reset_m,reset_div,en_res,finish,en_v_m: STD_LOGIC:='0';
+	signal hit_o,en_o,en_d,en_m,en_div,exp_bit,reset_m,reset_div,en_res,finish,en_v_m: STD_LOGIC:='0';
 	signal fin_m,fin_div,fin_exp,fin_exp1:STD_LOGIC_VECTOR(0 downto 0):="0";
-	signal d,d1,module,rema,d_res,p_d1:STD_LOGIC_VECTOR(63 downto 0):=(others=>'0');
+	signal d,module,rema,d_res,p_d1:STD_LOGIC_VECTOR(63 downto 0):=(others=>'0');
 	signal v_m1,v_m:STD_LOGIC_VECTOR( 1 downto 0):=(others=>'0');
 	signal d_v:STD_LOGIC_VECTOR(127 downto 0):=(others=>'0');
 	signal val_mul2,val_mul1:STD_LOGIC_VECTOR(31 downto 0):=(others=>'0');
@@ -170,7 +169,7 @@ begin
 	esponente(2) when "00010",
 	esponente(1) when "00001",
 	esponente(0) when others;
- m_e_g: mod_exp_gestore port map(start,clk,reset,counter,fin_m,fin_div,exp_bit,base,d,modulo,p_d1,d_v(63 downto 0),d_res,en_o,en_d1,en_d,en_m,reset_m,en_div,reset_div,en_res,en_v_m,v_m1,finish);
+ m_e_g: mod_exp_gestore port map(start,clk,reset,counter,fin_m,fin_div,exp_bit,base,d,modulo,p_d1,d_v(63 downto 0),d_res,en_o,en_d,en_m,reset_m,en_div,reset_div,en_res,en_v_m,v_m1,finish);
  m_exp:latch_d_en generic map (width=>32) port map (clk,reset,en_res,d(31 downto 0),m_e);
 -- mod_e:process(clk)
 -- variable base1,modulo1,n_o_d,check_esp,check_first:integer:=0;

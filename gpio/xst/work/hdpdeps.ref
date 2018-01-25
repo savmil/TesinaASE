@@ -1,0 +1,12 @@
+V3 7
+FL C:/Users/Mario/Desktop/Esercizi_ASE/gpio/gpio.vhd 2015/12/18.09:58:24 P.49d
+EN work/gpio 1450433427 FL C:/Users/Mario/Desktop/Esercizi_ASE/gpio/gpio.vhd \
+      PB ieee/std_logic_1164 1354696159
+AR work/gpio/Behavioral 1450433428 \
+      FL C:/Users/Mario/Desktop/Esercizi_ASE/gpio/gpio.vhd EN work/gpio 1450433427 \
+      CP pad_io
+FL C:/Users/Mario/Desktop/Esercizi_ASE/gpio/pad_io.vhd 2015/12/18.11:10:22 P.49d
+EN work/pad_io 1450433425 FL C:/Users/Mario/Desktop/Esercizi_ASE/gpio/pad_io.vhd \
+      PB ieee/std_logic_1164 1354696159
+AR work/pad_io/Behavioral 1450433426 \
+      FL C:/Users/Mario/Desktop/Esercizi_ASE/gpio/pad_io.vhd EN work/pad_io 1450433425

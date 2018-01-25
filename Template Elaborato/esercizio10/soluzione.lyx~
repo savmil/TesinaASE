@@ -248,8 +248,8 @@ status open
 
 
 \backslash
-lstinputlisting [language=VHDL,caption={Definizione della carry save cell}]
- {progetti/CarrySaveAdder/carry_save_cell.vhd}
+lstinputlisting [language=VHDL,caption={Definizione della carry save cell},first
+line=32] {progetti/CarrySaveAdder/carry_save_cell.vhd}
 \end_layout
 
 \end_inset

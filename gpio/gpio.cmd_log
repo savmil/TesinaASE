@@ -1,0 +1,15 @@
+xst -intstyle ise -ifn "C:/Users/Mario/Desktop/Esercizi_ASE/gpio/gpio.xst" -ofn "C:/Users/Mario/Desktop/Esercizi_ASE/gpio/gpio.syr" 
+xst -intstyle ise -ifn "C:/Users/Mario/Desktop/Esercizi_ASE/gpio/gpio.xst" -ofn "C:/Users/Mario/Desktop/Esercizi_ASE/gpio/gpio.syr" 
+xst -intstyle ise -ifn "C:/Users/Mario/Desktop/Esercizi_ASE/gpio/gpio.xst" -ofn "C:/Users/Mario/Desktop/Esercizi_ASE/gpio/gpio.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_nexys2_1200.ucf -p xc3s1200e-fg320-5 gpio.ngc gpio.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o gpio_map.ncd gpio.ngd gpio.pcf 
+par -w -intstyle ise -ol high -t 1 gpio_map.ncd gpio.ncd gpio.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml gpio.twx gpio.ncd -o gpio.twr gpio.pcf -ucf constraints_nexys2_1200.ucf 
+bitgen -intstyle ise -f gpio.ut gpio.ncd 
+xst -intstyle ise -ifn "C:/Users/Mario/Desktop/Esercizi_ASE/gpio/gpio.xst" -ofn "C:/Users/Mario/Desktop/Esercizi_ASE/gpio/gpio.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints_nexys2_1200.ucf -p xc3s1200e-fg320-5 gpio.ngc gpio.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o gpio_map.ncd gpio.ngd gpio.pcf 
+par -w -intstyle ise -ol high -t 1 gpio_map.ncd gpio.ncd gpio.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml gpio.twx gpio.ncd -o gpio.twr gpio.pcf -ucf constraints_nexys2_1200.ucf 
+bitgen -intstyle ise -f gpio.ut gpio.ncd 
+netgen -intstyle ise -s 5  -pcf gpio.pcf -rpw 100 -tpw 0 -ar Structure -tm gpio -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim gpio.ncd gpio_timesim.vhd 

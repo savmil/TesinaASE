@@ -41,83 +41,83 @@ entity funzione_hash_moltiplicazione is
 end funzione_hash_moltiplicazione;
 
 architecture Behavioral of funzione_hash_moltiplicazione is
-COMPONENT Booth_multiplier
-	 generic (width : NATURAL:=32);
-    Port ( mul1 : in  STD_LOGIC_VECTOR (width-1 downto 0):=(others=>'0');
-           mul2 : in  STD_LOGIC_VECTOR (width-1 downto 0);
-           start : in  STD_LOGIC;
-			  clk: in STD_LOGIC;
-			  reset : in STD_LOGIC;
-			  fin: out STD_LOGIC_VECTOR(0 downto 0);
-           product : out  STD_LOGIC_VECTOR (2*width-1 downto 0));
-	END COMPONENT;
-	COMPONENT boundary_scan_chain
-	generic (n: NATURAL:=32);
-	PORT(
-		scan_in : IN std_logic;
-		clk : IN std_logic;
-		reset_n : IN std_logic;
-		en : IN std_logic;
-		din : IN std_logic_vector(n-1 downto 0);
-		scan_en : IN std_logic;          
-		scan_out : OUT std_logic;
-		dout : OUT std_logic_vector(n-1 downto 0)
-		);
-	END COMPONENT;
-	COMPONENT gestore_hash
-	PORT(clk : IN std_logic;
-		  start: IN std_logic;
-		  reset : IN std_logic;
-		  shift_r : OUT std_logic;
-		  shift_l : OUT std_logic;
-		  start_sh : IN std_logic_vector(0 downto 0);
-		  en_i_r : OUT std_logic;
-		  en_i_l : OUT std_logic;
-		  en_c_r : OUT std_logic;
-		  en_c_l: out STD_LOGIC;
-		  stop_r : IN std_logic;
-		  stop_l : in STD_LOGIC;
-		  hashed : OUT std_logic_vector(0 downto 0)
-		);
-	END COMPONENT;
-	COMPONENT contatore_modulo_2n
-	generic(width: natural:=4);
-	PORT(
-		clk : IN std_logic;
-		enable : IN std_logic;
-		reset : IN std_logic;          
-		hit : OUT std_logic;
-		output : OUT std_logic_vector(width-1 downto 0)
-		);
-	END COMPONENT;
-	COMPONENT shifter_a_sinistra
-	generic (n: NATURAL:=32);
-	PORT(
-		scan_in : IN std_logic;
-		clk : IN std_logic;
-		reset_n : IN std_logic;
-		en : IN std_logic;
-		din : IN std_logic_vector(n-1 downto 0);
-		scan_en : IN std_logic;          
-		scan_out : OUT std_logic;
-		dout : OUT std_logic_vector(n-1 downto 0)
-		);
-	END COMPONENT;
-	component latch_d_en is
-	generic(width:natural:=1);
-    Port ( clk : in  STD_LOGIC;
-           reset : in  STD_LOGIC;
-           en : in  STD_LOGIC;
-           d : in  STD_LOGIC_VECTOR (width-1 downto 0);
-           q : out  STD_LOGIC_VECTOR (width-1 downto 0));
-	end component;
+--COMPONENT Booth_multiplier
+--	 generic (width : NATURAL:=32);
+--    Port ( mul1 : in  STD_LOGIC_VECTOR (width-1 downto 0):=(others=>'0');
+--           mul2 : in  STD_LOGIC_VECTOR (width-1 downto 0);
+--           start : in  STD_LOGIC;
+--			  clk: in STD_LOGIC;
+--			  reset : in STD_LOGIC;
+--			  fin: out STD_LOGIC_VECTOR(0 downto 0);
+--           product : out  STD_LOGIC_VECTOR (2*width-1 downto 0));
+--	END COMPONENT;
+--	COMPONENT boundary_scan_chain
+--	generic (n: NATURAL:=32);
+--	PORT(
+--		scan_in : IN std_logic;
+--		clk : IN std_logic;
+--		reset_n : IN std_logic;
+--		en : IN std_logic;
+--		din : IN std_logic_vector(n-1 downto 0);
+--		scan_en : IN std_logic;          
+--		scan_out : OUT std_logic;
+--		dout : OUT std_logic_vector(n-1 downto 0)
+--		);
+--	END COMPONENT;
+--	COMPONENT gestore_hash
+--	PORT(clk : IN std_logic;
+--		  start: IN std_logic;
+--		  reset : IN std_logic;
+--		  shift_r : OUT std_logic;
+--		  shift_l : OUT std_logic;
+--		  start_sh : IN std_logic_vector(0 downto 0);
+--		  en_i_r : OUT std_logic;
+--		  en_i_l : OUT std_logic;
+--		  en_c_r : OUT std_logic;
+--		  en_c_l: out STD_LOGIC;
+--		  stop_r : IN std_logic;
+--		  stop_l : in STD_LOGIC;
+--		  hashed : OUT std_logic_vector(0 downto 0)
+--		);
+--	END COMPONENT;
+--	COMPONENT contatore_modulo_2n
+--	generic(width: natural:=4);
+--	PORT(
+--		clk : IN std_logic;
+--		enable : IN std_logic;
+--		reset : IN std_logic;          
+--		hit : OUT std_logic;
+--		output : OUT std_logic_vector(width-1 downto 0)
+--		);
+--	END COMPONENT;
+--	COMPONENT shifter_a_sinistra
+--	generic (n: NATURAL:=32);
+--	PORT(
+--		scan_in : IN std_logic;
+--		clk : IN std_logic;
+--		reset_n : IN std_logic;
+--		en : IN std_logic;
+--		din : IN std_logic_vector(n-1 downto 0);
+--		scan_en : IN std_logic;          
+--		scan_out : OUT std_logic;
+--		dout : OUT std_logic_vector(n-1 downto 0)
+--		);
+--	END COMPONENT;
+--	component latch_d_en is
+--	generic(width:natural:=1);
+--    Port ( clk : in  STD_LOGIC;
+--           reset : in  STD_LOGIC;
+--           en : in  STD_LOGIC;
+--           d : in  STD_LOGIC_VECTOR (width-1 downto 0);
+--           q : out  STD_LOGIC_VECTOR (width-1 downto 0));
+--	end component;
 	signal product: STD_LOGIC_VECTOR(63 downto 0):=(others=>'0');
 	signal result_product,shifted_r,shifted_l,moltiplicatore: STD_LOGIC_VECTOR(31 downto 0):=(others=>'0');
-	signal en_s_r,en_s_l,en_c_r,en_c_l,hit_r,hit_l,en_i_r,en_i_l:STD_LOGIC:='0';
-	signal fin,hashed,finish:STD_LOGIC_VECTOR(0 downto 0):="0";
+	--signal en_s_r,en_s_l,en_c_r,en_c_l,hit_r,hit_l,en_i_r,en_i_l:STD_LOGIC:='0';
+	--signal fin,hashed,finish:STD_LOGIC_VECTOR(0 downto 0):="0";
 begin
 	moltiplicatore(7 downto 0)<=data;
-	hash_mol:process(clk)
+	hash_mol:process(clk,start,moltiplicatore,moltiplicando,reset)
 	begin
 	if start='1' then
 		product<=std_logic_vector(unsigned(moltiplicatore)*unsigned(moltiplicando));

@@ -1,8 +1,0 @@
-[Inputs]
-clk
-enable
-reset
-[Outputs]
-hit
-=output[1:0]=
-[BiDir]

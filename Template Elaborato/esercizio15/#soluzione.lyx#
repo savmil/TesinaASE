@@ -170,7 +170,7 @@ centering
 
 
 \backslash
-includegraphics[scale=0.7]{esercizio14/images/div_restoring.png}
+includegraphics[scale=0.65]{esercizio15/images/UART.png}
 \end_layout
 
 \begin_layout Plain Layout
@@ -243,11 +243,34 @@ one qui non effettuati, la riteniamo di non facile comprensione, scrivere
  un altro dato o estrapolare uno solo dei due componenti e riutilizzarlo
  (pensiamo al caso in cui dobbiamo solo inviare i dati e non riceverli),
  invece nella nostra soluzione possiamo estrapolare una delle due macchine
- a stati finiti all' occorrenza e nel
+ a stati finiti all' occorrenza e nell' unico file in cui sono riacchiusi
+ i componenti a corredo capire quali ci occorrono ed ricopiarli, oppure
+ in base ai segnali in ingresso alle due macchine sequenziali capire quali
+ segnali ci possano occorrere, altro punto a sfavore è la realizzazione
+ di diversi process per fare andare la macchina ad una frequenza voluta
+ per trasmettere ricevere ad un determinato baud rate, soluzione migliore
+ consisterebbe di utilizzare un DCM e cambiare la frequenza in base alla
+ necessità.
 \end_layout
 
 \begin_layout Subsection
 Codice
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+href{run:progetti/carry_select_adder/carry_seven_adder.xise}{UART ISE}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

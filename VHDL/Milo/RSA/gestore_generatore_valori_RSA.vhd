@@ -36,7 +36,6 @@ entity gestore_generatore_valori_RSA is
 			  start: in STD_LOGIC;
            reset : in  STD_LOGIC;
            clk : in  STD_LOGIC;
-			  msg: in STD_LOGIC_VECTOR(31 downto 0);
 			  correct:out STD_LOGIC_VECTOR(0 downto 0);
 			  en_correct: out STD_LOGIC;
 			  check_exp: out STD_LOGIC_VECTOR(0 downto 0);
@@ -118,6 +117,7 @@ begin
 					reset_hash<='0';
 					if start='1' then
 						reset_exp<='0';
+						reset_hash<='0';
 						current_state <= calc_n;
 					end if;
 				when calc_n =>
@@ -148,10 +148,12 @@ begin
 						current_state<=res_exp;
 					end if;
 				when res_exp=>reset_exp<='0';
-							 current_state<=calc_pu;
+									if fin_exp='0' then
+									current_state<=calc_pu;
+							end if;
+							 
 				when calc_pu=>
 					check_exp(0)<='1';
-					en_pr<='0';
 					en_exp<='1';
 					current_state<=wait_pu;
 				when wait_pu=>
@@ -167,7 +169,6 @@ begin
 									current_state<=check_msg;
 								end if;
 				when check_msg=>
-					
 					en_h<='1';
 					current_state<=wait_check;
 				when wait_check=>
@@ -177,7 +178,8 @@ begin
 									  end if;
 					
 				when check => 
-						
+						reset_exp<='0';
+						reset_hash<='0';
 						current_state<=idle;
 					
 			end case;

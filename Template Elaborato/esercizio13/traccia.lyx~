@@ -77,63 +77,42 @@
 Traccia
 \end_layout
 
-\begin_layout Standard
-Progettare una cella di un comparatore a maggioranza (magnitude comparator)
- ad 1 bit la cui tabella di verità è riportata in fig.
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Tabella-di-verità"
-
-\end_inset
-
-.
- La sintesi è basata sull'uso di una porta NXOR come mostrato in fig.
+\begin_layout Subsection
+Moltiplicatore a celle Mac
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
+Realizzare in VHDL un circuito di moltiplicazione a celle MAC di N bit.
+ La cella MAC deve contenere un Full Adder (descritto gi`a in esercizi pre-
+ cedenti) ed una porta AND per la moltiplicazione parziale.
+ Tale cella deve essere replicata in una struttura ordinata (per righe e
+ colonne) per comporre il circuito intero di moltiplicazione.
+ Eﬀettuare considerazioni di occupazione di area e di tempi di propagazione
+ dei segnali al variare di N per valori signiﬁcativi, apportando eventuali
+ commenti salienti.
+\end_layout
+
+\begin_layout Subsection
+Moltiplicatore di Booth
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/traccia/tab-ver-bit-comparator.png
-	scale 50
-
-\end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Tabella-di-verità"
-
-\end_inset
-
-Tabella di verità magnitude comparator
+\backslash
+noident
 \end_layout
 
 \end_inset
 
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Descrivere il circuito in VHDL e simularlo nell'ambiente Xilinx ISE costruendo
- un ambiente di test per verificarne tutte le funzionalità e gli aspetti
- di tempificazione.
+Realizzare in hardware l’algoritmo della moltiplica- zione secondo Booth
+ per operandi ad 8 bit.
+ L’architettura deve essere rea- lizzata sulla base dello schema di progettazion
+e PO/PC (Parte Operativa e Parte di Controllo).
 \end_layout
 
 \end_body

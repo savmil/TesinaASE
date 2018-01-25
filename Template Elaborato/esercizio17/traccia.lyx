@@ -77,5 +77,14 @@
 Traccia
 \end_layout
 
+\begin_layout Standard
+Realizzare un'architettura per la realizzazione di un sistema che effettui
+ l’autenticazione di un messaggio a lunghezza variabile tramite l’algoritmo
+ di crittografia RSA.
+ Il sistema deve consentire di effettuare sia la fase di firma del messaggio,
+ sia la fase di verifica del messaggio firmato.
+ 
+\end_layout
+
 \end_body
 \end_document

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Mario\Desktop\Esercizi_ASE\gpio\gpio.ncd
+OUTFILE=C:\Users\Mario\Desktop\Esercizi_ASE\gpio\gpio.bit
+FAMILY=Spartan3E
+PART=xc3s1200e-5fg320
+WORKINGDIR=C:\Users\Mario\Desktop\Esercizi_ASE\gpio
+LICENSE=WebPack
+USER_INFO=__0_0_0

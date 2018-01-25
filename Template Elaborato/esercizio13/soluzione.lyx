@@ -592,7 +592,7 @@ label{Booth}
 \end_layout
 
 \begin_layout Standard
-Per realizzare il motiplicatore (che utilizza la codifica Booth2), si è
+Per realizzare il motiplicatore (che utilizza la codifica Booth-1), si è
  utilizzato una macchina a stati finiti con i seguenti stati: idle, stato
  in cui la macchina non oper; init, vi è una inizializzazione dei registri
  e delle scan chain, il moltiplicatore va in un registro latch, nella scan

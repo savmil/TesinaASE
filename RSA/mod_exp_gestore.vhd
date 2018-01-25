@@ -44,7 +44,6 @@ entity mod_exp_gestore is
 			  d_div: in std_logic_vector(63 downto 0);
 			  d_res: OUT std_logic_vector(63 downto 0);
            en_o : out  STD_LOGIC;
-           en_d1 : out  STD_LOGIC;
            en_d : out  STD_LOGIC;
            en_m : out  STD_LOGIC;
 			  reset_m: out STD_LOGIC;
@@ -69,7 +68,6 @@ begin
 		en_o<='0';
 		reset_div<='1';
 		reset_m<='1';
-		en_d1<='0';
 		en_d<='0';
 		en_m<='0';
 		en_div<='0';
@@ -79,7 +77,6 @@ begin
 		d_res<=x"0000000000000000";
 		case current_state is
 			when idle=>	en_o<='0';
-							en_d1<='0';
 							en_d<='0';
 							en_m<='0';
 							en_div<='0';

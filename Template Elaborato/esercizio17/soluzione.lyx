@@ -219,11 +219,18 @@ end{figure}
 
 \end_inset
 
-Il circuito utilizza una macchina a stati finiti descritta da cinque stati:
- idle, stato di riposo dell' automa; init in cui si attende che il moltiplicator
-e termini il suo compito; shifting_r in cui il valore della moltiplicazione
- viene shiftato a destra; shifting_l il valore viene shiftato a sinistra;
- ended per comunicare la fine dell' operazione di hash.
+Il circuito è stato realizzato in due differenti modi nel primo caso si:
+ utilizza una macchina a stati finiti descritta da cinque stati: idle, stato
+ di riposo dell' automa; init in cui si attende che il moltiplicatore termini
+ il suo compito; shifting_r in cui il valore della moltiplicazione viene
+ shiftato a destra; shifting_l il valore viene shiftato a sinistra; ended
+ per comunicare la fine dell' operazione di hash, nel secondo si è utilizzato
+ lo stesso ragionamento ma tutto viene implementato in un process, alla
+ fine si è utilizzata questa soluzione perché occupa meno spazio, dato che
+ le operazione di shifting consiste semplicemente: nel caso dello shifting
+ a destra prendere i sedici bit più significativi, quando si shifta a sinistra
+ basta accodare sedici zeri per avere lo stesso risultato della prima soluzione
+ .
  Il circito è così descritto perché tale forma di hashing prevedere di moltiplic
 are il dato per un valore A il quale è un numero compreso tra 0 ed 1, di
  cui il denominatore è un multiplo di due, per tale ragione di è scelto

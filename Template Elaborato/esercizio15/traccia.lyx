@@ -77,5 +77,19 @@
 Traccia
 \end_layout
 
+\begin_layout Standard
+Realizzare un dispositivo VHDL che implementa il protocollo UART (a partire
+ da quello diﬀuso dalla Digilent).
+ Collegare internamente, oppure tramite inter- faccia ﬁsica esterna alla
+ board stessa, ad un’altra board oppure ad un PC previo utilizzo di un physical
+ RS232, due interfacce per trasmette e ricevere ottetti.
+ Svolgere l’esercizio riutilizzando il VHDL messo a disposizione da Digilent
+ (e disponbile nel materiale del corso) commentando eventuali ristrutturazioni
+ del codice.
+ (Opzionale) Sviluppare un’architettura per l’implementazione del protocollo
+ UART secondo il paradigma PO/PC ex-novo, evidenziando le similarit`a/dissimilar
+it`a con il progetto Digilent.
+\end_layout
+
 \end_body
 \end_document

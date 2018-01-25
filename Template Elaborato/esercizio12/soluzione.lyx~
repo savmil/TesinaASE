@@ -170,14 +170,14 @@ centering
 
 
 \backslash
-includegraphics[scale=0.7]{esercizio12/images/seven_operation_adder.png}
+includegraphics[scale=0.45]{esercizio12/images/seven_operation_adder.png}
 \end_layout
 
 \begin_layout Plain Layout
 
 	
 \backslash
-caption{Seven Adder}
+caption{Seven Operand Adder}
 \end_layout
 
 \begin_layout Plain Layout

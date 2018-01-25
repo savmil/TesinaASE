@@ -103,7 +103,6 @@ COMPONENT funzione_hash_moltiplicazione
 		start : IN std_logic;
 		reset : IN std_logic;
 		clk : IN std_logic;
-		msg: in STD_LOGIC_VECTOR(31 downto 0);
 		correct:out STD_LOGIC_VECTOR(0 downto 0);
 		en_correct: out STD_LOGIC;
 		check_exp: out STD_LOGIC_VECTOR(0 downto 0);
@@ -146,22 +145,23 @@ begin
 		d_val when '0',
 		e_val when '1',
 		x"00000000" when others;
-		msg_t_b_h<= m_e_e( 7 downto 0)		when check_exp(0)='1' else msg;
+		--msg_t_b_h<= m_e_e( 7 downto 0)		when check_hash(0)='1' else msg;
 	with check_exp(0) select msg_exp<=
 		msg_1 when '0',
 		m_e_d when '1',
 		x"00000000" when others;
---	with check_hash(0) select msg_t_b_h <=
---		msg when '0',
---		m_e_e(7 downto 0) when '1',
---		x"00" when others;
+	with check_hash(0) select msg_t_b_h <=
+		msg when '0',
+		m_e_e(7 downto 0) when '1',
+		x"00" when others;
 	with check_hash(0) select en_hash <=
 		'1' when '0',
 		'0' when '1',
 		'0' when others;
 	m_e_exp: mod_exp port map (clk,en_exp,reset_exp,msg_exp,exp,nval,fin_exp,m_e);
 	correct(0)<='0' when msg_hash=msg_hash1 else '1';
-	g_g_v_rsa: gestore_generatore_valori_RSA port map(fin_n,fin_h,fin_exp,start,reset,clk,msg_1,correct1,en_correct,check_exp1,check_hash1,en_n,en_h,en_exp,reset_exp,reset_hash,en_pr,en_pu);
+	--corr:latch_d_en generic map (width=>1) port map (clk,reset,en_correct,correct1,correct);
+	g_g_v_rsa: gestore_generatore_valori_RSA port map(fin_n,fin_h,fin_exp,start,reset,clk,correct1,en_correct,check_exp1,check_hash1,en_n,en_h,en_exp,reset_exp,reset_hash,en_pr,en_pu);
 	msg_r<=m_e_d(15 downto 0);
 end Behavioral;
 

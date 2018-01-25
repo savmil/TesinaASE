@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total CPU time to Xst completion: 0.02 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
 Reading design: tester_dispositivi.prj
@@ -152,7 +152,8 @@ Architecture structural of Entity booth_multiplier is up to date.
 Compiling vhdl file "/media/sf_ASE/RSA/divisore_restoring.vhd" in Library work.
 Architecture structural of Entity divisore_restoring is up to date.
 Compiling vhdl file "/media/sf_ASE/RSA/mod_exp_gestore.vhd" in Library work.
-Architecture behavioral of Entity mod_exp_gestore is up to date.
+Entity <mod_exp_gestore> compiled.
+Entity <mod_exp_gestore> (Architecture <behavioral>) compiled.
 Compiling vhdl file "/media/sf_ASE/RSA/display_on_board.vhd" in Library work.
 Architecture behavioral of Entity display_on_board is up to date.
 Compiling vhdl file "/media/sf_ASE/RSA/display.vhd" in Library work.
@@ -160,14 +161,15 @@ Architecture structural of Entity display is up to date.
 Compiling vhdl file "/media/sf_ASE/RSA/funzione_hash_moltiplicazione.vhd" in Library work.
 Architecture behavioral of Entity funzione_hash_moltiplicazione is up to date.
 Compiling vhdl file "/media/sf_ASE/RSA/mod_exp.vhd" in Library work.
-Architecture behavioral of Entity mod_exp is up to date.
+Entity <mod_exp> compiled.
+Entity <mod_exp> (Architecture <behavioral>) compiled.
 Compiling vhdl file "/media/sf_ASE/RSA/gestore_generatore_valori_RSA.vhd" in Library work.
-Architecture behavioral of Entity gestore_generatore_valori_rsa is up to date.
+Entity <gestore_generatore_valori_rsa> compiled.
+Entity <gestore_generatore_valori_rsa> (Architecture <behavioral>) compiled.
 Compiling vhdl file "/media/sf_ASE/RSA/debounce.vhd" in Library work.
 Architecture logic of Entity debounce is up to date.
 Compiling vhdl file "/media/sf_ASE/RSA/generazione_valori_RSA.vhd" in Library work.
-Entity <generazione_valori_rsa> compiled.
-Entity <generazione_valori_rsa> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity generazione_valori_rsa is up to date.
 Compiling vhdl file "/media/sf_ASE/RSA/display_top_level.vhd" in Library work.
 Architecture structural of Entity display_top_level is up to date.
 Compiling vhdl file "/media/sf_ASE/RSA/tester_dispositivi.vhd" in Library work.
@@ -1210,8 +1212,8 @@ Analyzing hierarchy for entity <half_adder> in library <work> (architecture <dat
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <tester_dispositivi> in library <work> (Architecture <behavioral>).
-WARNING:Xst:753 - "/media/sf_ASE/RSA/tester_dispositivi.vhd" line 124: Unconnected output port 'hit' of component 'contatore_modulo_2n'.
-WARNING:Xst:753 - "/media/sf_ASE/RSA/tester_dispositivi.vhd" line 136: Unconnected output port 'output' of component 'contatore_modulo_2n'.
+WARNING:Xst:753 - "/media/sf_ASE/RSA/tester_dispositivi.vhd" line 121: Unconnected output port 'hit' of component 'contatore_modulo_2n'.
+WARNING:Xst:753 - "/media/sf_ASE/RSA/tester_dispositivi.vhd" line 133: Unconnected output port 'output' of component 'contatore_modulo_2n'.
 Entity <tester_dispositivi> analyzed. Unit <tester_dispositivi> generated.
 
 Analyzing generic Entity <debounce> in library <work> (Architecture <logic>).
@@ -1282,8 +1284,6 @@ Analyzing generic Entity <latch_d_en.2> in library <work> (Architecture <behavio
 Entity <latch_d_en.2> analyzed. Unit <latch_d_en.2> generated.
 
 Analyzing Entity <funzione_hash_moltiplicazione> in library <work> (Architecture <behavioral>).
-WARNING:Xst:819 - "/media/sf_ASE/RSA/funzione_hash_moltiplicazione.vhd" line 120: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-   <start>, <moltiplicatore>, <moltiplicando>, <reset>
 Entity <funzione_hash_moltiplicazione> analyzed. Unit <funzione_hash_moltiplicazione> generated.
 
 Analyzing generic Entity <edge_triggered_d_n.2> in library <work> (Architecture <behavioral>).
@@ -1341,7 +1341,6 @@ Analyzing generic Entity <latch_d_en.8> in library <work> (Architecture <behavio
 Entity <latch_d_en.8> analyzed. Unit <latch_d_en.8> generated.
 
 Analyzing Entity <mod_exp_gestore> in library <work> (Architecture <behavioral>).
-INFO:Xst:2679 - Register <en_d1> in unit <mod_exp_gestore> has a constant value of 0 during circuit operation. The register is replaced by logic.
 Entity <mod_exp_gestore> analyzed. Unit <mod_exp_gestore> generated.
 
 Analyzing generic Entity <latch_d_en.7> in library <work> (Architecture <behavioral>).
@@ -1463,17 +1462,6 @@ WARNING:Xst:1780 - Signal <result_product> is never used or assigned. This uncon
 WARNING:Xst:646 - Signal <product<63:32>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <product<15:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:653 - Signal <moltiplicatore<31:8>> is used but never assigned. This sourceless signal will be automatically connected to value 000000000000000000000000.
-WARNING:Xst:1780 - Signal <hit_r> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:1780 - Signal <hit_l> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:1780 - Signal <hashed> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:1780 - Signal <finish> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:1780 - Signal <fin> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:1780 - Signal <en_s_r> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:1780 - Signal <en_s_l> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:1780 - Signal <en_i_r> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:1780 - Signal <en_i_l> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:1780 - Signal <en_c_r> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:1780 - Signal <en_c_l> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:737 - Found 1-bit latch for signal <finished>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 32-bit latch for signal <dato_hashed>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 64-bit latch for signal <product>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -1502,11 +1490,10 @@ Unit <latch_d_en_3> synthesized.
 Synthesizing Unit <gestore_generatore_valori_RSA>.
     Related source file is "/media/sf_ASE/RSA/gestore_generatore_valori_RSA.vhd".
 WARNING:Xst:1305 - Output <correct> is never assigned. Tied to value 0.
-WARNING:Xst:647 - Input <msg> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found finite state machine <FSM_0> for signal <current_state>.
     -----------------------------------------------------------------------
     | States             | 14                                             |
-    | Transitions        | 21                                             |
+    | Transitions        | 22                                             |
     | Inputs             | 4                                              |
     | Outputs            | 17                                             |
     | Clock              | clk                       (rising_edge)        |
@@ -1534,10 +1521,6 @@ Unit <gestore_generatore_valori_RSA> synthesized.
 
 Synthesizing Unit <Serial_Booth_PC_Moore>.
     Related source file is "/media/sf_ASE/RSA/Serial_Booth_PC_Moore.vhd".
-WARNING:Xst:1780 - Signal <q_val> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:1780 - Signal <en_q_val> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:1780 - Signal <en_a_val> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:1780 - Signal <a_val> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
     Found finite state machine <FSM_1> for signal <current_state>.
     -----------------------------------------------------------------------
     | States             | 5                                              |
@@ -1640,7 +1623,7 @@ WARNING:Xst:647 - Input <base> is never used. This port will be preserved and le
     Found 1-bit register for signal <en_d>.
     Found 1-bit register for signal <en_m>.
     Found 1-bit register for signal <en_o>.
-    Found 64-bit comparator greatequal for signal <current_state$cmp_ge0000> created at line 109.
+    Found 64-bit comparator greatequal for signal <current_state$cmp_ge0000> created at line 106.
     Summary:
 	inferred   1 Finite State Machine(s).
 	inferred  74 D-type flip-flop(s).
@@ -1831,7 +1814,6 @@ Unit <add_sub_2> synthesized.
 
 Synthesizing Unit <Booth_multiplier>.
     Related source file is "/media/sf_ASE/RSA/Booth_multiplier.vhd".
-WARNING:Xst:1780 - Signal <molt2> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 Unit <Booth_multiplier> synthesized.
 
 
@@ -1846,9 +1828,7 @@ Synthesizing Unit <mod_exp>.
 WARNING:Xst:1780 - Signal <rema> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:653 - Signal <module<63:32>> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
 WARNING:Xst:646 - Signal <hit_o> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <en_d1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <d_v<127:64>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:1780 - Signal <d1> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
     Found 1-bit 32-to-1 multiplexer for signal <exp_bit>.
     Found 32-bit 4-to-1 multiplexer for signal <val_mul1>.
     Found 32-bit 4-to-1 multiplexer for signal <val_mul2>.
@@ -1868,7 +1848,7 @@ WARNING:Xst:646 - Signal <en_correct> is assigned but never used. This unconnect
 WARNING:Xst:653 - Signal <e_val<31:16>> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000.
 WARNING:Xst:653 - Signal <d_val<31:16>> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000.
 WARNING:Xst:646 - Signal <correct1<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-    Found 32-bit comparator equal for signal <correct_0$cmp_eq0000> created at line 163.
+    Found 32-bit comparator equal for signal <correct_0$cmp_eq0000> created at line 162.
     Summary:
 	inferred   1 Comparator(s).
 Unit <generazione_valori_RSA> synthesized.
@@ -1876,17 +1856,13 @@ Unit <generazione_valori_RSA> synthesized.
 
 Synthesizing Unit <tester_dispositivi>.
     Related source file is "/media/sf_ASE/RSA/tester_dispositivi.vhd".
-WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <load_value> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <load_conf> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:1306 - Output <led<4:1>> is never assigned.
-WARNING:Xst:646 - Signal <scelta<7:6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:1780 - Signal <msg_p> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <scelta<7>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:653 - Signal <e_v<15:8>> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
 WARNING:Xst:653 - Signal <d_v<15:8>> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
     Register <start> equivalent to <en_c1> has been removed
 WARNING:Xst:737 - Found 1-bit latch for signal <en_c1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 8x8-bit ROM for signal <scelta$mux0002> created at line 109.
+    Found 8x8-bit ROM for signal <scelta$mux0002> created at line 106.
     Found 8-bit register for signal <scelta>.
     Summary:
 	inferred   1 ROM(s).
@@ -2266,13 +2242,11 @@ WARNING:Xst:2677 - Node <q_124> of sequential type is unconnected in block <q_r_
 WARNING:Xst:2677 - Node <q_125> of sequential type is unconnected in block <q_r_l>.
 WARNING:Xst:2677 - Node <q_126> of sequential type is unconnected in block <q_r_l>.
 WARNING:Xst:2677 - Node <q_127> of sequential type is unconnected in block <q_r_l>.
-WARNING:Xst:2677 - Node <scelta_6> of sequential type is unconnected in block <tester_dispositivi>.
 WARNING:Xst:2677 - Node <scelta_7> of sequential type is unconnected in block <tester_dispositivi>.
 
 Synthesizing (advanced) Unit <tester_dispositivi>.
 INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_scelta_mux0002> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
 Unit <tester_dispositivi> synthesized (advanced).
-WARNING:Xst:2677 - Node <scelta_6> of sequential type is unconnected in block <tester_dispositivi>.
 WARNING:Xst:2677 - Node <scelta_7> of sequential type is unconnected in block <tester_dispositivi>.
 
 =========================================================================
@@ -2294,8 +2268,8 @@ Macro Statistics
  5-bit down counter                                    : 1
  5-bit up counter                                      : 2
  6-bit up counter                                      : 1
-# Registers                                            : 1110
- Flip-Flops                                            : 1110
+# Registers                                            : 1111
+ Flip-Flops                                            : 1111
 # Latches                                              : 4
  1-bit latch                                           : 2
  32-bit latch                                          : 1
@@ -2666,8 +2640,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 958
- Flip-Flops                                            : 958
+# Registers                                            : 959
+ Flip-Flops                                            : 959
 
 =========================================================================
 
@@ -2693,34 +2667,34 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 36
+# IOs                              : 33
 
 Cell Usage :
-# BELS                             : 1899
+# BELS                             : 1898
 #      GND                         : 1
 #      INV                         : 18
 #      LUT1                        : 36
 #      LUT2                        : 104
-#      LUT3                        : 347
-#      LUT3_D                      : 36
+#      LUT3                        : 350
+#      LUT3_D                      : 33
 #      LUT3_L                      : 7
-#      LUT4                        : 870
-#      LUT4_D                      : 80
-#      LUT4_L                      : 18
+#      LUT4                        : 869
+#      LUT4_D                      : 81
+#      LUT4_L                      : 17
 #      MUXCY                       : 89
 #      MUXF5                       : 252
 #      MUXF6                       : 1
 #      MUXF7                       : 1
 #      VCC                         : 1
 #      XORCY                       : 38
-# FlipFlops/Latches                : 990
+# FlipFlops/Latches                : 991
 #      FD                          : 2
 #      FDC                         : 115
 #      FDCE                        : 722
 #      FDE                         : 84
 #      FDP                         : 4
 #      FDPE                        : 5
-#      FDR                         : 6
+#      FDR                         : 7
 #      FDRE                        : 20
 #      LDC                         : 31
 #      LDPE                        : 1
@@ -2739,10 +2713,10 @@ Device utilization summary:
 
 Selected Device : 3s100etq144-5 
 
- Number of Slices:                      934  out of    960    97%  
- Number of Slice Flip Flops:            990  out of   1920    51%  
- Number of 4 input LUTs:               1516  out of   1920    78%  
- Number of IOs:                          36
+ Number of Slices:                      931  out of    960    96%  
+ Number of Slice Flip Flops:            991  out of   1920    51%  
+ Number of 4 input LUTs:               1515  out of   1920    78%  
+ Number of IOs:                          33
  Number of bonded IOBs:                  29  out of    108    26%  
  Number of MULT18X18SIOs:                 1  out of      4    25%  
  Number of GCLKs:                         2  out of     24     8%  
@@ -2768,7 +2742,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clock                              | BUFGP                  | 955   |
+clock                              | BUFGP                  | 956   |
 counter/hit                        | NONE(en_c1)            | 1     |
 deb/result                         | NONE(selettore/count_0)| 3     |
 RSA/g_g_v_rsa/en_h1                | BUFG                   | 31    |
@@ -2781,7 +2755,7 @@ Asynchronous Control Signals Information:
 Control Signal                                                                                                                                   | Buffer(FF name)                                                    | Load  |
 -------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------+-------+
 RSA/m_e_exp/div/cu/current_state_FSM_Acst_FSM_inv(RSA/m_e_exp/div/remainder/chain_gen[0].sc_in.inst_edge_triggered/reset_inv1_INV_0:O)           | NONE(RSA/m_e_exp/div/cu/current_state_FSM_FFd1)                    | 247   |
-scelta_0(scelta_0:Q)                                                                                                                             | NONE(RSA/c_e/q_0)                                                  | 230   |
+scelta_6(scelta_6:Q)                                                                                                                             | NONE(RSA/c_e/q_0)                                                  | 230   |
 RSA/m_e_exp/mul/a/chain_gen[0].sc_out.inst_edge_triggered/reset_inv(RSA/m_e_exp/mul/q/chain_gen[0].sc_out.inst_edge_triggered/reset_inv1_INV_0:O)| NONE(RSA/m_e_exp/mul/a/chain_gen[0].sc_out.inst_edge_triggered/q_0)| 174   |
 RSA/m_e_exp/counter_o/reset_inv(RSA/m_e_exp/m_exp/reset_inv1_INV_0:O)                                                                            | NONE(RSA/m_e_exp/counter_o/count_0)                                | 108   |
 button<3>                                                                                                                                        | IBUF                                                               | 83    |
@@ -2806,7 +2780,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clock'
   Clock period: 12.738ns (frequency: 78.508MHz)
-  Total number of paths / destination ports: 267844 / 1465
+  Total number of paths / destination ports: 267851 / 1466
 -------------------------------------------------------------------------
 Delay:               12.738ns (Levels of Logic = 10)
   Source:            RSA/m_e_exp/div/cu/current_state_FSM_FFd3_3 (FF)
@@ -2820,12 +2794,12 @@ Delay:               12.738ns (Levels of Logic = 10)
     ----------------------------------------  ------------
      FDC:C->Q             16   0.514   0.948  RSA/m_e_exp/div/cu/current_state_FSM_FFd3_3 (RSA/m_e_exp/div/cu/current_state_FSM_FFd3_3)
      LUT4_D:I1->O          2   0.612   0.410  RSA/m_e_exp/div/gestore_shift/Mxor_b_add_sub<27>_Result1 (RSA/m_e_exp/div/gestore_shift/b_add_sub<27>)
-     LUT4:I2->O            2   0.612   0.532  RSA/m_e_exp/div/gestore_shift/rca/rca[26].fa/c1_SW0 (N690)
-     LUT3:I0->O            3   0.612   0.481  RSA/m_e_exp/div/gestore_shift/rca/rca[25].fa/c1_SW1 (N760)
-     LUT3:I2->O            2   0.612   0.532  RSA/m_e_exp/div/gestore_shift/rca/rca[23].fa/c1_SW0_SW0_SW1 (N1014)
-     LUT3:I0->O            1   0.612   0.509  RSA/m_e_exp/div/gestore_shift/rca/rca[23].fa/c1_SW0 (N955)
+     LUT4:I2->O            2   0.612   0.532  RSA/m_e_exp/div/gestore_shift/rca/rca[26].fa/c1_SW0 (N691)
+     LUT3:I0->O            3   0.612   0.481  RSA/m_e_exp/div/gestore_shift/rca/rca[25].fa/c1_SW1 (N761)
+     LUT3:I2->O            2   0.612   0.532  RSA/m_e_exp/div/gestore_shift/rca/rca[23].fa/c1_SW0_SW0_SW1 (N1015)
+     LUT3:I0->O            1   0.612   0.509  RSA/m_e_exp/div/gestore_shift/rca/rca[23].fa/c1_SW0 (N956)
      LUT3:I0->O            7   0.612   0.605  RSA/m_e_exp/div/gestore_shift/rca/rca[31].fa/c1 (RSA/m_e_exp/div/gestore_shift/rca/carry<32>)
-     LUT4_D:I3->LO         1   0.612   0.103  RSA/m_e_exp/div/gestore_shift/rca/rca[53].fa/c1 (N1631)
+     LUT4_D:I3->LO         1   0.612   0.103  RSA/m_e_exp/div/gestore_shift/rca/rca[53].fa/c1 (N1628)
      LUT4:I3->O            7   0.612   0.605  RSA/m_e_exp/div/gestore_shift/rca/rca[61].fa/c1 (RSA/m_e_exp/div/gestore_shift/rca/carry<62>)
      LUT4_D:I3->O         62   0.612   1.111  RSA/m_e_exp/div/rest<0>21 (RSA/m_e_exp/div/N11)
      LUT4:I2->O            1   0.612   0.000  RSA/m_e_exp/div/rest<8>1 (RSA/m_e_exp/div/rest<8>)
@@ -2836,10 +2810,10 @@ Delay:               12.738ns (Levels of Logic = 10)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'deb/result'
-  Clock period: 2.501ns (frequency: 399.888MHz)
+  Clock period: 2.544ns (frequency: 393.074MHz)
   Total number of paths / destination ports: 6 / 3
 -------------------------------------------------------------------------
-Delay:               2.501ns (Levels of Logic = 1)
+Delay:               2.544ns (Levels of Logic = 1)
   Source:            selettore/count_0 (FF)
   Destination:       selettore/count_0 (FF)
   Source Clock:      deb/result rising
@@ -2849,12 +2823,12 @@ Delay:               2.501ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q            10   0.514   0.750  selettore/count_0 (selettore/count_0)
+     FDCE:C->Q            11   0.514   0.793  selettore/count_0 (selettore/count_0)
      INV:I->O              1   0.612   0.357  selettore/Mcount_count_xor<0>11_INV_0 (Result<0>2)
      FDCE:D                    0.268          selettore/count_0
     ----------------------------------------
-    Total                      2.501ns (1.394ns logic, 1.107ns route)
-                                       (55.7% logic, 44.3% route)
+    Total                      2.544ns (1.394ns logic, 1.150ns route)
+                                       (54.8% logic, 45.2% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'RSA/g_g_v_rsa/en_h1'
@@ -2923,7 +2897,7 @@ Offset:              7.356ns (Levels of Logic = 4)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'deb/result'
   Total number of paths / destination ports: 3 / 3
 -------------------------------------------------------------------------
-Offset:              4.433ns (Levels of Logic = 1)
+Offset:              4.476ns (Levels of Logic = 1)
   Source:            selettore/count_0 (FF)
   Destination:       led<5> (PAD)
   Source Clock:      deb/result rising
@@ -2932,24 +2906,24 @@ Offset:              4.433ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q            10   0.514   0.750  selettore/count_0 (selettore/count_0)
+     FDCE:C->Q            11   0.514   0.793  selettore/count_0 (selettore/count_0)
      OBUF:I->O                 3.169          led_5_OBUF (led<5>)
     ----------------------------------------
-    Total                      4.433ns (3.683ns logic, 0.750ns route)
-                                       (83.1% logic, 16.9% route)
+    Total                      4.476ns (3.683ns logic, 0.793ns route)
+                                       (82.3% logic, 17.7% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 21.00 secs
-Total CPU time to Xst completion: 17.83 secs
+Total REAL time to Xst completion: 18.00 secs
+Total CPU time to Xst completion: 15.05 secs
  
 --> 
 
 
-Total memory usage is 592388 kilobytes
+Total memory usage is 592224 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  619 (   0 filtered)
-Number of infos    :   14 (   0 filtered)
+Number of warnings :  593 (   0 filtered)
+Number of infos    :   13 (   0 filtered)
 

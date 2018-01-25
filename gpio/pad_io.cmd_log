@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "C:/Users/Mario/Desktop/Esercizi_ASE/gpio/pad_io.xst" -ofn "C:/Users/Mario/Desktop/Esercizi_ASE/gpio/pad_io.syr" 
+vhdtdtfi -prj gpio -o C:/Users/Mario/Desktop/Esercizi_ASE/gpio/pad_io.vhi -module pad_io -template C:/Xilinx/14.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work pad_io.vhd 
+xst -intstyle ise -ifn "C:/Users/Mario/Desktop/Esercizi_ASE/gpio/pad_io.xst" -ofn "C:/Users/Mario/Desktop/Esercizi_ASE/gpio/pad_io.syr" 

@@ -1,0 +1,23 @@
+//! **************************************************************************
+// Written by: Map P.49d on Fri Dec 18 11:10:39 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "output<0>" LOCATE = SITE "J14" LEVEL 1;
+COMP "output<1>" LOCATE = SITE "J15" LEVEL 1;
+COMP "output<2>" LOCATE = SITE "K15" LEVEL 1;
+COMP "output<3>" LOCATE = SITE "K14" LEVEL 1;
+COMP "pads<0>" LOCATE = SITE "L15" LEVEL 1;
+COMP "pads<1>" LOCATE = SITE "K12" LEVEL 1;
+COMP "pads<2>" LOCATE = SITE "L17" LEVEL 1;
+COMP "en_o<0>" LOCATE = SITE "L14" LEVEL 1;
+COMP "pads<3>" LOCATE = SITE "M15" LEVEL 1;
+COMP "en_o<1>" LOCATE = SITE "L13" LEVEL 1;
+COMP "en_o<2>" LOCATE = SITE "N17" LEVEL 1;
+COMP "en_o<3>" LOCATE = SITE "R17" LEVEL 1;
+COMP "input<0>" LOCATE = SITE "G18" LEVEL 1;
+COMP "input<1>" LOCATE = SITE "H18" LEVEL 1;
+COMP "input<2>" LOCATE = SITE "K18" LEVEL 1;
+COMP "input<3>" LOCATE = SITE "K17" LEVEL 1;
+SCHEMATIC END;
+

@@ -1,0 +1,1 @@
+vhdtdtfi -prj UART -o /media/sf_ASE/VHDL/Milo/UART/Receiver.vhi -module Receiver -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Receiver.vhd 

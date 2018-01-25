@@ -1,8 +1,0 @@
-vhdl work "/media/sf_ASE/VHDL/Milo/UART/mux2_1.vhd"
-vhdl work "/media/sf_ASE/VHDL/Milo/UART/edge_triggered_d_n.vhd"
-vhdl work "/media/sf_ASE/VHDL/Milo/UART/Transmitter.vhd"
-vhdl work "/media/sf_ASE/VHDL/Milo/UART/Receiver.vhd"
-vhdl work "/media/sf_ASE/VHDL/Milo/UART/latch_d_en.vhd"
-vhdl work "/media/sf_ASE/VHDL/Milo/UART/contatore_modulo_4.vhd"
-vhdl work "/media/sf_ASE/VHDL/Milo/UART/boundary_scan_chain.vhd"
-vhdl work "/media/sf_ASE/VHDL/Milo/UART/Sender_receiver.vhd"
