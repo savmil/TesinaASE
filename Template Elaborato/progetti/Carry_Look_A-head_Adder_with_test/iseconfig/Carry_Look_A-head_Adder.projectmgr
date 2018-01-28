@@ -32,13 +32,13 @@
          <ClosedNode>/unit_test - behavior |home|sav|ASE|Carry_Look_A-head_Adder|unit_test.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>c_l_a - Carry_Look_A_head_Adder - structural (/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/Carry_Look_A_head_Adder.vhd)</SelectedItem>
+         <SelectedItem>c_l_a - Carry_Look_A_head_Adder - structural (/media/sf_ASE/Template Elaborato/progetti/Carry_Look_A-head_Adder_with_test/Carry_Look_A_head_Adder.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000261000000020000000000000000000000000200000064ffffffff000000810000000300000002000002610000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000002c4000000020000000000000000000000000200000064ffffffff000000810000000300000002000002c40000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>c_l_a - Carry_Look_A_head_Adder - structural (/media/sf_ASE/VHDL/Milo/Carry_Look_A-head_Adder_with_test/Carry_Look_A_head_Adder.vhd)</CurrentItem>
+      <CurrentItem>c_l_a - Carry_Look_A_head_Adder - structural (/media/sf_ASE/Template Elaborato/progetti/Carry_Look_A-head_Adder_with_test/Carry_Look_A_head_Adder.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -58,12 +58,14 @@
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
-      <SelectedItems/>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <SelectedItems>
+         <SelectedItem>half_adder.vhdl</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >1</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000390000000040101000100000000000000000000000064ffffffff000000810000000000000004000001280000000100000000000000290000000100000000000000840000000100000000000001bb0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000239000000040101000100000000000000000000000064ffffffff000000810000000000000004000001280000000100000000000000290000000100000000000000840000000100000000000000640000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>anode_manager.vhd</CurrentItem>
+      <CurrentItem>half_adder.vhdl</CurrentItem>
    </ItemView>
    <ItemView guiview="Library" >
       <ClosedNodes>
@@ -92,7 +94,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001be000000010000000100000000000000000000000064ffffffff000000810000000000000001000001be0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000022a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000022a0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>

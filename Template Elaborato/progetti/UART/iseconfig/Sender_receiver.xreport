@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-01-23T18:17:06</DateModified>
+  <DateModified>2018-01-26T11:22:44</DateModified>
   <ModuleName>Sender_receiver</ModuleName>
   <SummaryTimeStamp>2018-01-18T18:58:57</SummaryTimeStamp>
-  <SavedFilePath>/media/sf_ASE/VHDL/Milo/UART/iseconfig/Sender_receiver.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/media/sf_ASE/VHDL/Milo/UART/</ImplementationReportsDirectory>
+  <SavedFilePath>/media/sf_ASE/Template Elaborato/progetti/UART/iseconfig/Sender_receiver.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/media/sf_ASE/Template Elaborato/progetti/UART/</ImplementationReportsDirectory>
   <DateInitialized>2017-12-26T09:44:57</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

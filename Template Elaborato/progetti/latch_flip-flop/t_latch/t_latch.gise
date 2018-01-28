@@ -193,7 +193,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="t_latch.lso"/>
@@ -217,6 +219,7 @@
     <transform xil_pn:end_ts="1516902592" xil_pn:in_ck="182228433238400901" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="2948557442036465132" xil_pn:start_ts="1516902586">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
       <outfile xil_pn:name="t_latch.bld"/>
@@ -226,6 +229,7 @@
     <transform xil_pn:end_ts="1516902598" xil_pn:in_ck="182228433238400902" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-6349267131326700252" xil_pn:start_ts="1516902592">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
       <outfile xil_pn:name="t_latch.pcf"/>
       <outfile xil_pn:name="t_latch_map.map"/>
@@ -239,6 +243,7 @@
     <transform xil_pn:end_ts="1516902610" xil_pn:in_ck="4918953097032352159" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="1934304854298957634" xil_pn:start_ts="1516902598">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
       <outfile xil_pn:name="t_latch.ncd"/>
       <outfile xil_pn:name="t_latch.pad"/>
@@ -253,6 +258,7 @@
     <transform xil_pn:end_ts="1516902615" xil_pn:in_ck="182228433238400770" xil_pn:name="TRAN_postParSimModel" xil_pn:prop_ck="-8883824227158497023" xil_pn:start_ts="1516902610">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="netgen"/>
       <outfile xil_pn:name="netgen/par/t_latch_timesim.nlf"/>
       <outfile xil_pn:name="netgen/par/t_latch_timesim.sdf"/>
@@ -261,6 +267,7 @@
     <transform xil_pn:end_ts="1516902643" xil_pn:in_ck="4620460975505346553" xil_pn:name="TRAN_copyPost-ParAbstractToPreSimulation" xil_pn:start_ts="1516902643">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="netgen/par/t_latch_timesim.sdf"/>
       <outfile xil_pn:name="netgen/par/t_latch_timesim.vhd"/>
       <outfile xil_pn:name="t_latch_testbench.vhd"/>
@@ -268,6 +275,8 @@
     <transform xil_pn:end_ts="1516902649" xil_pn:in_ck="-4713736743764426250" xil_pn:name="TRAN_ISimulatePostPlace&amp;RouteModelRunFuse" xil_pn:prop_ck="7904873803235138634" xil_pn:start_ts="1516902643">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fuse.log"/>
@@ -280,6 +289,10 @@
     <transform xil_pn:end_ts="1516902649" xil_pn:in_ck="8349794720209951361" xil_pn:name="TRAN_ISimulatePostPlace&amp;RouteModel" xil_pn:prop_ck="-9146562332886437145" xil_pn:start_ts="1516902649">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="t_latch_testbench_isim_par.wdb"/>
@@ -287,6 +300,7 @@
     <transform xil_pn:end_ts="1516902610" xil_pn:in_ck="182228433238400770" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1516902606">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
       <outfile xil_pn:name="t_latch.twr"/>
       <outfile xil_pn:name="t_latch.twx"/>

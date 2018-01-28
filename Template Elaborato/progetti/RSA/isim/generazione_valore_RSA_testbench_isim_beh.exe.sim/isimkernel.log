@@ -1,0 +1,29 @@
+Command line:
+   generazione_valore_RSA_testbench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  48459
+
+Fri Jan 26 10:55:52 2018
+
+
+ Elaboration Time: 0.07 sec
+
+ Current Memory Usage: 214.905 Meg
+
+ Total Signals          : 5134
+ Total Nets             : 4243
+ Total Signal Drivers   : 1434
+ Total Blocks           : 1727
+ Total Primitive Blocks : 937
+ Total Processes        : 1383
+ Total Traceable Variables  : 832
+ Total Scalar Nets and Variables : 6079
+Total Line Count : 2448
+
+ Total Simulation Time: 0.63 sec
+
+ Current Memory Usage: 223.298 Meg
+
+Fri Jan 26 11:22:17 2018
+

@@ -20,13 +20,13 @@
          <ClosedNode>/sevent_to_three - Structural |media|sf_ASE|VHDL|Milo|seven_operand_adder|sevent_to_threee.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>seven_operand_adder - Behavioral (/media/sf_ASE/VHDL/Milo/seven_operand_adder/seven_operand_adder.vhd)</SelectedItem>
+         <SelectedItem>tester_dispositivi - Behavioral (/media/sf_ASE/Template Elaborato/progetti/seven_operand_adder/tester_dispositivi.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001e8000000020000000000000000000000000200000064ffffffff000000810000000300000002000001e80000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000002b5000000020000000000000000000000000200000064ffffffff000000810000000300000002000002b50000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>seven_operand_adder - Behavioral (/media/sf_ASE/VHDL/Milo/seven_operand_adder/seven_operand_adder.vhd)</CurrentItem>
+      <CurrentItem>tester_dispositivi - Behavioral (/media/sf_ASE/Template Elaborato/progetti/seven_operand_adder/tester_dispositivi.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -46,10 +46,35 @@
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
-      <SelectedItems/>
+      <SelectedItems>
+         <SelectedItem>anode_manager.vhd</SelectedItem>
+         <SelectedItem>BasysRevEGeneral.ucf</SelectedItem>
+         <SelectedItem>cathode_encoder.vhd</SelectedItem>
+         <SelectedItem>cathode_manager.vhd</SelectedItem>
+         <SelectedItem>clock_filter.vhd</SelectedItem>
+         <SelectedItem>contatore_modulo_4.vhd</SelectedItem>
+         <SelectedItem>counter_mod2n.vhd</SelectedItem>
+         <SelectedItem>debounce.vhd</SelectedItem>
+         <SelectedItem>demux1_n.vhd</SelectedItem>
+         <SelectedItem>display.vhd</SelectedItem>
+         <SelectedItem>display_on_board.vhd</SelectedItem>
+         <SelectedItem>display_top_level.vhd</SelectedItem>
+         <SelectedItem>edge_triggered_d_n.vhd</SelectedItem>
+         <SelectedItem>full_adder_half.vhdl</SelectedItem>
+         <SelectedItem>half_adder.vhdl</SelectedItem>
+         <SelectedItem>latch_d.vhd</SelectedItem>
+         <SelectedItem>muxn_1.vhd</SelectedItem>
+         <SelectedItem>partial_sum_2.vhd</SelectedItem>
+         <SelectedItem>partial_sum_3.vhd</SelectedItem>
+         <SelectedItem>RippleCarryAdder.vhd</SelectedItem>
+         <SelectedItem>sevent_to_threee.vhd</SelectedItem>
+         <SelectedItem>seven_operand_adder.vhd</SelectedItem>
+         <SelectedItem>seven_operand_adder_testbench.vhd</SelectedItem>
+         <SelectedItem>tester_dispositivi.vhd</SelectedItem>
+      </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000039f000000040101000100000000000000000000000064ffffffff000000810000000000000004000000510000000100000000000000290000000100000000000000840000000100000000000002a10000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000022a000000040101000100000000000000000000000064ffffffff000000810000000000000004000000510000000100000000000000d00000000100000000000000840000000100000000000000850000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>full_adder_half.vhdl</CurrentItem>
    </ItemView>
@@ -77,7 +102,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000124000000010000000100000000000000000000000064ffffffff000000810000000000000001000001240000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000022a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000022a0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
@@ -94,13 +119,13 @@
          <ClosedNode>/sevent_to_three - Structural |media|sf_ASE|VHDL|Milo|seven_operand_adder|sevent_to_threee.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>seven_operand_adder_testbench - behavior (/media/sf_ASE/VHDL/Milo/seven_operand_adder/seven_operand_adder_testbench.vhd)</SelectedItem>
+         <SelectedItem>seven_operand_adder_testbench - behavior (/media/sf_ASE/Template Elaborato/progetti/seven_operand_adder/seven_operand_adder_testbench.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000262000000020000000000000000000000000200000064ffffffff000000810000000300000002000002620000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000002b5000000020000000000000000000000000200000064ffffffff000000810000000300000002000002b50000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>seven_operand_adder_testbench - behavior (/media/sf_ASE/VHDL/Milo/seven_operand_adder/seven_operand_adder_testbench.vhd)</CurrentItem>
+      <CurrentItem>seven_operand_adder_testbench - behavior (/media/sf_ASE/Template Elaborato/progetti/seven_operand_adder/seven_operand_adder_testbench.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -108,13 +133,13 @@
          <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem>Check All Core Versions</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000124000000010000000100000000000000000000000064ffffffff000000810000000000000001000001240000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000022a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000022a0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem>Check All Core Versions</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
@@ -125,7 +150,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000124000000010000000100000000000000000000000064ffffffff000000810000000000000001000001240000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000022a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000022a0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>

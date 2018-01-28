@@ -152,14 +152,39 @@ Schematici
 Il seguente circuito implementa l' algortimo RSA per la firma di un messaggio,
  applica una funzione di hash sul messaggio e verifica che il messaggio
  ricevuto sia coretto.
- Il tutto avviene nel seguente modo: dopo aver scelto i valori caratteristici
- per inviare il dato (p pari a 3, q 11, e 7 e d 3) ed il messaggio da inviare,
- viene prima effettuato l' hashing del messaggio, utilizzando il metodo
- della moltiplicazione, dopodichè sul messaggio originale viene applicata
- la chiave privata, il trasmettitore invia i due dati appena calcolati.
- Il ricevitore applica la chiave pubblica sul messaggio firmato, ne effettua
+\end_layout
+
+\begin_layout Standard
+L' intera procedura è divisa nelle seguenti fasi: 
+\end_layout
+
+\begin_layout Itemize
+vengono scelti i valori caratteristici per inviare il dato (p pari a 3,
+ q 11, e 7 e d 3) ed il messaggio da inviare;
+\end_layout
+
+\begin_layout Itemize
+si applica la funzione di hashing sul messaggio, utilizzando il metodo della
+ moltiplicazione;
+\end_layout
+
+\begin_layout Itemize
+viene applicata la firma sul messaggio originale utilizzando la chiave privata,
+ il trasmettitore invia i due dati appena calcolati (anche se non è presente
+ un vero e proprio invio essendo trasmettitore e ricevitore implementati
+ sulla stessa board);
+\end_layout
+
+\begin_layout Itemize
+Il ricevitore applica la chiave pubblica sul messaggio firmato, ne effettua
  l' hashing e verifica se la sua versione del messaggio a cui è stato applicato
  l' hashing è identico a quello che è stato ricevuto.
+\end_layout
+
+\begin_layout Standard
+Così facendo garantiamo sia la segretezza( infatti non mandiamo il messaggio
+ in chiaro), sia l' autenticazione( chi riceve il messaggio può verificare
+ effettuando l' hashing con parametri convenuti non è stato modificato),
 \end_layout
 
 \begin_layout Standard
@@ -219,27 +244,57 @@ end{figure}
 
 \end_inset
 
-Il circuito è stato realizzato in due differenti modi nel primo caso si:
- utilizza una macchina a stati finiti descritta da cinque stati: idle, stato
- di riposo dell' automa; init in cui si attende che il moltiplicatore termini
- il suo compito; shifting_r in cui il valore della moltiplicazione viene
- shiftato a destra; shifting_l il valore viene shiftato a sinistra; ended
- per comunicare la fine dell' operazione di hash, nel secondo si è utilizzato
- lo stesso ragionamento ma tutto viene implementato in un process, alla
- fine si è utilizzata questa soluzione perché occupa meno spazio, dato che
- le operazione di shifting consiste semplicemente: nel caso dello shifting
- a destra prendere i sedici bit più significativi, quando si shifta a sinistra
- basta accodare sedici zeri per riavere .
- Il circito è così descritto perché tale forma di hashing prevedere di moltiplic
-are il dato per un valore A il quale è un numero compreso tra 0 ed 1, di
- cui il denominatore è un multiplo di due, per tale ragione di è scelto
- di moltiplicare per un valore W ed infine di shiftare a destra un numero
- di volte pari al valore dell' esponente, tale numero è la parte decimale
- del valore del dato per W (perché quando shiftiamo inseriamo degli zero
- fittizzi), dopodichè si effettua uno shifting a sinistra di un numero pari
- di volte affinché la nostra parte deciamale rientri nella parte del registro
- da inviare, nel nostro caso avendo un dato da otto bit e dovendolo trasformare
- in un messaggio da trentadue non compaiono questi problemi.
+Il circuito è stato realizzato in due differenti modi: 
+\end_layout
+
+\begin_layout Itemize
+nel primo caso si utilizza una macchina a stati finiti descritta da cinque
+ stati: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+idle, stato di riposo dell' automa; 
+\end_layout
+
+\begin_layout Itemize
+init in cui si attende che il moltiplicatore termini il suo compito; 
+\end_layout
+
+\begin_layout Itemize
+shifting_r in cui il valore della moltiplicazione viene shiftato a destra;
+ 
+\end_layout
+
+\begin_layout Itemize
+shifting_l il valore viene shiftato a sinistra; ended per comunicare la
+ fine dell' operazione di hash;
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+nel secondo si è utilizzato lo stesso procedimento ma il tutto viene implementat
+o in un process.
+\end_layout
+
+\begin_layout Standard
+Viene utilizzata la seconda soluzione perché occupa meno spazio, dato che
+ le operazioni di shifting consistono semplicemente, nel caso dello shifting
+ a destra prendere i sedici bit più significativi dal risultato della moltiplica
+zione, quando si shifta a sinistra basta accodare sedici zeri per avere
+ lo stesso risultato della prima soluzione.
+\end_layout
+
+\begin_layout Standard
+Il circito viene così descritto poiché tale forma di hashing prevedere di
+ moltiplicare il dato per un valore A il quale è un numero compreso tra
+ 0 ed 1, di cui il denominatore è un multiplo di due, per tale ragione di
+ è scelto di moltiplicare per un valore W ed infine di shiftare a destra
+ un numero di volte pari al valore dell' esponente, tale numero è la parte
+ decimale del valore del dato per W (perché quando shiftiamo inseriamo degli
+ zero fittizzi), dopodichè si effettua uno shifting a sinistra di un numero
+ pari di volte affinché la nostra parte deciamale rientri nella parte del
+ registro da inviare.
 \end_layout
 
 \begin_layout Subsubsection
@@ -306,7 +361,10 @@ end{figure}
 L ' algoritmo cicla sul numero di bit dell ' esponente, moltiplica il valore
  d prima per se stesso e ne fa il modulo, questo stesso valore di d per
  la base quando il valore dell' esponente in forma binaria assume valore
- uno e ne effettua il modulo.
+ uno e ne effettua il modulo, (il parametro c non occorre per il calcolo
+ del valore finale, occorre solo a capire in realtà alla fine se il numero
+ è stato elevato per il corretto esponente).
+ 
 \end_layout
 
 \begin_layout Standard
@@ -354,18 +412,19 @@ end{figure}
 \end_layout
 
 \begin_layout Standard
-Abbiamo deciso di utilizzare quest' ultimo perché ci permette di riutilizzare
- componenti già sviluppati negli esercizi precedenti, difatti osservando
- lo schematico, vi è presente un moltiplicatore di Booth e il divisore restoring
- per le varie operazioni prodotto e modulo, un contatore down per indicare
- quale dei bit dell' esponente dobbiamo analizzare e dei selettori descritti
- con il costrutto with select per selezionare quali valori devono essere
- moltiplicati.
+Utiliziamo questo algoritmo perché ci permette di riutilizzare componenti
+ già sviluppati negli esercizi precedenti, difatti osservando lo schematico,
+ vi è presente un moltiplicatore di Booth e il divisore restoring per le
+ varie operazioni prodotto e modulo, un contatore down per indicare quale
+ dei bit dell' esponente dobbiamo analizzare e dei selettori descritti con
+ il costrutto with select per selezionare quali valori devono essere moltiplicat
+i.
  La macchina a stati finiti non fa altro che eseguire i vari passi dell'
  algoritmo, però per problemi relativi al timing è stata realizzata alla
  fine con un singolo process, difatti una prima realizzazione con due process
  determinava che alcuni registri contenti i dati dell' operazione assumessero
- un valore indefinito.
+ un valore indefinito (veniva sintetizzata un macchina che doveva avere
+ una frequenza di clock minore da quella generabile dalla scheda).
  
 \end_layout
 
@@ -373,7 +432,11 @@ Abbiamo deciso di utilizzare quest' ultimo perché ci permette di riutilizzare
 Per problemi di spazio, si è ricorsi a componenti per la moltiplicazione
  e divisione seriali, oltre ad riutilizzarli all' interno dello stesso progetto
  difatti il moltiplicatore di Booth è stato utilizzato per: calcolare il
- prodotto di pq, per la funzione di hashing ed l' esponenziazione.
+ prodotto di pq ed l' esponenziazione.
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout Subsection

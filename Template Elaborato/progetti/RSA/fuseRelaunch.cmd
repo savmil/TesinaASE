@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/media/sf_ASE/RSA/generazione_valore_RSA_testbench_isim_beh.exe" -prj "/media/sf_ASE/RSA/generazione_valore_RSA_testbench_beh.prj" "work.generazione_valore_RSA_testbench" 

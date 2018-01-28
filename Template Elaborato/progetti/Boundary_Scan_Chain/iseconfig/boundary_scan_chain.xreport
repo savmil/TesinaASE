@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-01-15T12:56:58</DateModified>
+  <DateModified>2018-01-26T11:16:05</DateModified>
   <ModuleName>boundary_scan_chain</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain/iseconfig/boundary_scan_chain.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain</ImplementationReportsDirectory>
+  <SavedFilePath>/media/sf_ASE/Template Elaborato/progetti/Boundary_Scan_Chain/iseconfig/boundary_scan_chain.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/media/sf_ASE/Template Elaborato/progetti/Boundary_Scan_Chain/</ImplementationReportsDirectory>
   <DateInitialized>2018-01-15T12:56:58</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "/media/sf_ASE/RSA/generazione_valori_RSA.xst" -ofn "/media/sf_ASE/RSA/generazione_valori_RSA.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-tq144-5 generazione_valori_RSA.ngc generazione_valori_RSA.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o generazione_valori_RSA_map.ncd generazione_valori_RSA.ngd generazione_valori_RSA.pcf 

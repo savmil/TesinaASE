@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-01-17T12:39:56</DateModified>
-  <ModuleName>carry_select</ModuleName>
+  <DateModified>2018-01-26T11:16:26</DateModified>
+  <ModuleName>tester_dispositivi</ModuleName>
   <SummaryTimeStamp>2018-01-17T12:29:19</SummaryTimeStamp>
-  <SavedFilePath>/media/sf_ASE/VHDL/Milo/carry_select_adder/iseconfig/tester_dispositivi.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/media/sf_ASE/VHDL/Milo/carry_select_adder/</ImplementationReportsDirectory>
+  <SavedFilePath>/media/sf_ASE/Template Elaborato/progetti/carry_select_adder/iseconfig/tester_dispositivi.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/media/sf_ASE/Template Elaborato/progetti/carry_select_adder/</ImplementationReportsDirectory>
   <DateInitialized>2018-01-17T12:09:46</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

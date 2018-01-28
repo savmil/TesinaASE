@@ -1,0 +1,31 @@
+Command line:
+   generazione_valore_RSA_testbench_isim_par.exe
+     -simmode  gui
+     -sdfmax  /uut/=.sdf
+     -sdfroot  /uut
+     -simrunnum  0
+     -socket  43613
+
+Fri Jan 26 08:38:46 2018
+
+
+ Elaboration Time: 0.03 sec
+
+ Current Memory Usage: 199.676 Meg
+
+ Total Signals          : 10
+ Total Nets             : 76
+ Total Signal Drivers   : 8
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 2
+ Total Traceable Variables  : 9
+ Total Scalar Nets and Variables : 437
+Total Line Count : 17
+
+ Total Simulation Time: 0.03 sec
+
+ Current Memory Usage: 208.069 Meg
+
+Fri Jan 26 08:39:04 2018
+

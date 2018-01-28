@@ -1,0 +1,324 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="RSA" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/boundary_scan_chain - Structural |media|sf_ASE|VHDL|Milo|RSA|shifter_a_sinistra.vhd</ClosedNode>
+         <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|RSA|tester_dispositivi.vhd/RSA - generazione_valori_RSA - Behavioral/m_e_exp - mod_exp - Behavioral</ClosedNode>
+         <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|RSA|tester_dispositivi.vhd/RSA - generazione_valori_RSA - Behavioral/m_e_exp - mod_exp - Behavioral/div - divisore_restoring - Structural</ClosedNode>
+         <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|RSA|tester_dispositivi.vhd/RSA - generazione_valori_RSA - Behavioral/m_e_exp - mod_exp - Behavioral/mul - Booth_multiplier - Structural</ClosedNode>
+         <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|RSA|tester_dispositivi.vhd/RSA - generazione_valori_RSA - Behavioral/n_calc - Booth_multiplier - Structural</ClosedNode>
+         <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|RSA|tester_dispositivi.vhd/RSA - generazione_valori_RSA - Behavioral/n_calc - Booth_multiplier - Structural/a - boundary_scan_chain - Structural</ClosedNode>
+         <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|RSA|tester_dispositivi.vhd/RSA - generazione_valori_RSA - Behavioral/n_calc - Booth_multiplier - Structural/gestore_shift - add_sub - structural</ClosedNode>
+         <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|RSA|tester_dispositivi.vhd/RSA - generazione_valori_RSA - Behavioral/n_calc - Booth_multiplier - Structural/q - boundary_scan_chain - Structural</ClosedNode>
+         <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|RSA|tester_dispositivi.vhd/gest_disp - display_top_level - structural</ClosedNode>
+         <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|VHDL|Milo|RSA|tester_dispositivi.vhd/RSA - generazione_valori_RSA - Behavioral/hash - funzione_hash_moltiplicazione - Behavioral</ClosedNode>
+         <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|VHDL|Milo|RSA|tester_dispositivi.vhd/RSA - generazione_valori_RSA - Behavioral/hash - funzione_hash_moltiplicazione - Behavioral/mul - Booth_multiplier - Structural</ClosedNode>
+         <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|VHDL|Milo|RSA|tester_dispositivi.vhd/RSA - generazione_valori_RSA - Behavioral/hash - funzione_hash_moltiplicazione - Behavioral/mul - Booth_multiplier - Structural/a - boundary_scan_chain - Structural</ClosedNode>
+         <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|VHDL|Milo|RSA|tester_dispositivi.vhd/RSA - generazione_valori_RSA - Behavioral/hash - funzione_hash_moltiplicazione - Behavioral/mul - Booth_multiplier - Structural/gestore_shift - add_sub - structural</ClosedNode>
+         <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|VHDL|Milo|RSA|tester_dispositivi.vhd/RSA - generazione_valori_RSA - Behavioral/hash - funzione_hash_moltiplicazione - Behavioral/mul - Booth_multiplier - Structural/q - boundary_scan_chain - Structural</ClosedNode>
+         <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|VHDL|Milo|RSA|tester_dispositivi.vhd/RSA - generazione_valori_RSA - Behavioral/hash - funzione_hash_moltiplicazione - Behavioral/sh_d - boundary_scan_chain - Structural</ClosedNode>
+         <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|VHDL|Milo|RSA|tester_dispositivi.vhd/RSA - generazione_valori_RSA - Behavioral/hash - funzione_hash_moltiplicazione - Behavioral/sh_r - shifter_a_sinistra - Structural</ClosedNode>
+         <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|VHDL|Milo|RSA|tester_dispositivi.vhd/RSA - generazione_valori_RSA - Behavioral/m_e_exp - mod_exp - Behavioral/div - divisore_restoring - Structural/gestore_shift - add_sub - structural</ClosedNode>
+         <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|VHDL|Milo|RSA|tester_dispositivi.vhd/RSA - generazione_valori_RSA - Behavioral/m_e_exp - mod_exp - Behavioral/div - divisore_restoring - Structural/quotient - shifter_a_sinistra - Structural</ClosedNode>
+         <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|VHDL|Milo|RSA|tester_dispositivi.vhd/RSA - generazione_valori_RSA - Behavioral/m_e_exp - mod_exp - Behavioral/div - divisore_restoring - Structural/remainder - shifter_a_sinistra - Structural</ClosedNode>
+         <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|VHDL|Milo|RSA|tester_dispositivi.vhd/RSA - generazione_valori_RSA - Behavioral/m_e_exp - mod_exp - Behavioral/mul - Booth_multiplier - Structural/a - boundary_scan_chain - Structural</ClosedNode>
+         <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|VHDL|Milo|RSA|tester_dispositivi.vhd/RSA - generazione_valori_RSA - Behavioral/m_e_exp - mod_exp - Behavioral/mul - Booth_multiplier - Structural/gestore_shift - add_sub - structural</ClosedNode>
+         <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|VHDL|Milo|RSA|tester_dispositivi.vhd/RSA - generazione_valori_RSA - Behavioral/m_e_exp - mod_exp - Behavioral/mul - Booth_multiplier - Structural/q - boundary_scan_chain - Structural</ClosedNode>
+         <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|VHDL|Milo|RSA|tester_dispositivi.vhd/RSA - generazione_valori_RSA - Behavioral/n_calc - Booth_multiplier - Structural/a - boundary_scan_chain - Structural</ClosedNode>
+         <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|VHDL|Milo|RSA|tester_dispositivi.vhd/RSA - generazione_valori_RSA - Behavioral/n_calc - Booth_multiplier - Structural/gestore_shift - add_sub - structural</ClosedNode>
+         <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|VHDL|Milo|RSA|tester_dispositivi.vhd/RSA - generazione_valori_RSA - Behavioral/n_calc - Booth_multiplier - Structural/q - boundary_scan_chain - Structural</ClosedNode>
+         <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|VHDL|Milo|RSA|tester_dispositivi.vhd/gest_disp - display_top_level - structural</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>tester_dispositivi - Behavioral (/media/sf_ASE/Template Elaborato/progetti/RSA/tester_dispositivi.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000002c4000000020000000000000000000000000200000064ffffffff000000810000000300000002000002c40000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>tester_dispositivi - Behavioral (/media/sf_ASE/Template Elaborato/progetti/RSA/tester_dispositivi.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>Implement Design/Map/Generate Post-Map Static Timing</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route/Back-annotate Pin Locations</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route/Generate IBIS Model</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route/Generate Post-Place &amp; Route Static Timing</ClosedNode>
+         <ClosedNode>Implement Design/Translate</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000022a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000022a0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>latch_d.vhd</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >11</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000390000000040101000100000000000000000000000064ffffffff000000810000000000000004000001400000000100000000000000d00000000100000000000000840000000100000000000000fc0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>latch_d.vhd</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000124000000010001000100000000000000000000000064ffffffff000000810000000000000001000001240000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/funzione_hash_moltiplicazione_testbench - behavior |media|sf_ASE|VHDL|Milo|RSA|funzione_hash_moltiplicazione_testbench.vhd</ClosedNode>
+         <ClosedNode>/funzione_hash_moltiplicazione_testbench - behavior |media|sf_ASE|VHDL|Milo|RSA|funzione_hash_moltiplicazione_testbench.vhd/uut - funzione_hash_moltiplicazione - Behavioral/mul - Booth_multiplier - Structural</ClosedNode>
+         <ClosedNode>/funzione_hash_moltiplicazione_testbench - behavior |media|sf_ASE|VHDL|Milo|RSA|funzione_hash_moltiplicazione_testbench.vhd/uut - funzione_hash_moltiplicazione - Behavioral/mul - Booth_multiplier - Structural/a - boundary_scan_chain - Structural</ClosedNode>
+         <ClosedNode>/funzione_hash_moltiplicazione_testbench - behavior |media|sf_ASE|VHDL|Milo|RSA|funzione_hash_moltiplicazione_testbench.vhd/uut - funzione_hash_moltiplicazione - Behavioral/mul - Booth_multiplier - Structural/gestore_shift - add_sub - structural</ClosedNode>
+         <ClosedNode>/funzione_hash_moltiplicazione_testbench - behavior |media|sf_ASE|VHDL|Milo|RSA|funzione_hash_moltiplicazione_testbench.vhd/uut - funzione_hash_moltiplicazione - Behavioral/mul - Booth_multiplier - Structural/q - boundary_scan_chain - Structural</ClosedNode>
+         <ClosedNode>/funzione_hash_moltiplicazione_testbench - behavior |media|sf_ASE|VHDL|Milo|RSA|funzione_hash_moltiplicazione_testbench.vhd/uut - funzione_hash_moltiplicazione - Behavioral/sh_d - boundary_scan_chain - Structural</ClosedNode>
+         <ClosedNode>/funzione_hash_moltiplicazione_testbench - behavior |media|sf_ASE|VHDL|Milo|RSA|funzione_hash_moltiplicazione_testbench.vhd/uut - funzione_hash_moltiplicazione - Behavioral/sh_r - shifter_a_sinistra - Structural</ClosedNode>
+         <ClosedNode>/generazione_valore_RSA_testbench - behavior |media|sf_ASE|RSA|generazione_valore_RSA_testbench.vhd/uut - generazione_valori_RSA - Behavioral/m_e_exp - mod_exp - Behavioral/div - divisore_restoring - Structural</ClosedNode>
+         <ClosedNode>/generazione_valore_RSA_testbench - behavior |media|sf_ASE|RSA|generazione_valore_RSA_testbench.vhd/uut - generazione_valori_RSA - Behavioral/m_e_exp - mod_exp - Behavioral/mul - Booth_multiplier - Structural</ClosedNode>
+         <ClosedNode>/generazione_valore_RSA_testbench - behavior |media|sf_ASE|RSA|generazione_valore_RSA_testbench.vhd/uut - generazione_valori_RSA - Behavioral/n_calc - Booth_multiplier - Structural</ClosedNode>
+         <ClosedNode>/generazione_valore_RSA_testbench - behavior |media|sf_ASE|VHDL|Milo|RSA|generazione_valore_RSA_testbench.vhd</ClosedNode>
+         <ClosedNode>/generazione_valore_RSA_testbench - behavior |media|sf_ASE|VHDL|Milo|RSA|generazione_valore_RSA_testbench.vhd/uut - generazione_valori_RSA - Behavioral/hash - funzione_hash_moltiplicazione - Behavioral</ClosedNode>
+         <ClosedNode>/generazione_valore_RSA_testbench - behavior |media|sf_ASE|VHDL|Milo|RSA|generazione_valore_RSA_testbench.vhd/uut - generazione_valori_RSA - Behavioral/m_e_exp - mod_exp - Behavioral/div - divisore_restoring - Structural</ClosedNode>
+         <ClosedNode>/generazione_valore_RSA_testbench - behavior |media|sf_ASE|VHDL|Milo|RSA|generazione_valore_RSA_testbench.vhd/uut - generazione_valori_RSA - Behavioral/m_e_exp - mod_exp - Behavioral/mul - Booth_multiplier - Structural</ClosedNode>
+         <ClosedNode>/generazione_valore_RSA_testbench - behavior |media|sf_ASE|VHDL|Milo|RSA|generazione_valore_RSA_testbench.vhd/uut - generazione_valori_RSA - Behavioral/n_calc - Booth_multiplier - Structural</ClosedNode>
+         <ClosedNode>/mod_exp_testbench - behavior |media|sf_ASE|RSA|mod_exp_testbench.vhd/uut - mod_exp - Behavioral/div - divisore_restoring - Structural</ClosedNode>
+         <ClosedNode>/mod_exp_testbench - behavior |media|sf_ASE|RSA|mod_exp_testbench.vhd/uut - mod_exp - Behavioral/mul - Booth_multiplier - Structural</ClosedNode>
+         <ClosedNode>/mod_exp_testbench - behavior |media|sf_ASE|VHDL|Milo|RSA|mod_exp_testbench.vhd/uut - mod_exp - Behavioral/div - divisore_restoring - Structural</ClosedNode>
+         <ClosedNode>/mod_exp_testbench - behavior |media|sf_ASE|VHDL|Milo|RSA|mod_exp_testbench.vhd/uut - mod_exp - Behavioral/div - divisore_restoring - Structural/gestore_shift - add_sub - structural</ClosedNode>
+         <ClosedNode>/mod_exp_testbench - behavior |media|sf_ASE|VHDL|Milo|RSA|mod_exp_testbench.vhd/uut - mod_exp - Behavioral/div - divisore_restoring - Structural/quotient - boundary_scan_chain - Structural</ClosedNode>
+         <ClosedNode>/mod_exp_testbench - behavior |media|sf_ASE|VHDL|Milo|RSA|mod_exp_testbench.vhd/uut - mod_exp - Behavioral/div - divisore_restoring - Structural/quotient - shifter_a_sinistra - Structural</ClosedNode>
+         <ClosedNode>/mod_exp_testbench - behavior |media|sf_ASE|VHDL|Milo|RSA|mod_exp_testbench.vhd/uut - mod_exp - Behavioral/div - divisore_restoring - Structural/remainder - boundary_scan_chain - Structural</ClosedNode>
+         <ClosedNode>/mod_exp_testbench - behavior |media|sf_ASE|VHDL|Milo|RSA|mod_exp_testbench.vhd/uut - mod_exp - Behavioral/div - divisore_restoring - Structural/remainder - shifter_a_sinistra - Structural</ClosedNode>
+         <ClosedNode>/mod_exp_testbench - behavior |media|sf_ASE|VHDL|Milo|RSA|mod_exp_testbench.vhd/uut - mod_exp - Behavioral/mul - Booth_multiplier - Structural</ClosedNode>
+         <ClosedNode>/mod_exp_testbench - behavior |media|sf_ASE|VHDL|Milo|RSA|mod_exp_testbench.vhd/uut - mod_exp - Behavioral/mul - Booth_multiplier - Structural/a - boundary_scan_chain - Structural</ClosedNode>
+         <ClosedNode>/mod_exp_testbench - behavior |media|sf_ASE|VHDL|Milo|RSA|mod_exp_testbench.vhd/uut - mod_exp - Behavioral/mul - Booth_multiplier - Structural/gestore_shift - add_sub - structural</ClosedNode>
+         <ClosedNode>/mod_exp_testbench - behavior |media|sf_ASE|VHDL|Milo|RSA|mod_exp_testbench.vhd/uut - mod_exp - Behavioral/mul - Booth_multiplier - Structural/q - boundary_scan_chain - Structural</ClosedNode>
+         <ClosedNode>/tester_testbench - behavior |media|sf_ASE|VHDL|Milo|RSA|tester_testbench.vhd/uut - tester_dispositivi - Behavioral/RSA - generazione_valori_RSA - Behavioral</ClosedNode>
+         <ClosedNode>/tester_testbench - behavior |media|sf_ASE|VHDL|Milo|RSA|tester_testbench.vhd/uut - tester_dispositivi - Behavioral/gest_disp - display_top_level - structural</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Unassigned User Library Modules</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000002d8000000020000000000000000000000000200000064ffffffff000000810000000300000002000002d80000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>Unassigned User Library Modules</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000022a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000022a0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="PostRouteSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/funzione_hash_moltiplicazione_testbench - behavior |media|sf_ASE|VHDL|Milo|RSA|funzione_hash_moltiplicazione_testbench.vhd/uut - funzione_hash_moltiplicazione - Structure</ClosedNode>
+         <ClosedNode>/generazione_valore_RSA_testbench - behavior |media|sf_ASE|VHDL|Milo|RSA|generazione_valore_RSA_testbench.vhd</ClosedNode>
+         <ClosedNode>/mod_exp_testbench - behavior |media|sf_ASE|VHDL|Milo|RSA|mod_exp_testbench.vhd</ClosedNode>
+         <ClosedNode>/tester_testbench - behavior |media|sf_ASE|VHDL|Milo|RSA|tester_testbench.vhd</ClosedNode>
+         <ClosedNode>/tester_testbench - behavior |media|sf_ASE|VHDL|Milo|RSA|tester_testbench.vhd/uut - tester_dispositivi - Structure</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>generazione_valore_RSA_testbench - behavior (/media/sf_ASE/RSA/generazione_valore_RSA_testbench.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >1</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000002c3000000020000000000000000000000000200000064ffffffff000000810000000300000002000002c30000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>generazione_valore_RSA_testbench - behavior (/media/sf_ASE/RSA/generazione_valore_RSA_testbench.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="PostRouteSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001be000000010000000100000000000000000000000064ffffffff000000810000000000000001000001be0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="PostRouteSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Simulate Post-Place &amp; Route Model</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000022a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000022a0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Simulate Post-Place &amp; Route Model</CurrentItem>
+   </ItemView>
+   <ItemView engineview="PostTransSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/funzione_hash_moltiplicazione_testbench - behavior |media|sf_ASE|VHDL|Milo|RSA|funzione_hash_moltiplicazione_testbench.vhd</ClosedNode>
+         <ClosedNode>/generazione_valore_RSA_testbench - behavior |media|sf_ASE|VHDL|Milo|RSA|generazione_valore_RSA_testbench.vhd</ClosedNode>
+         <ClosedNode>/mod_exp_testbench - behavior |media|sf_ASE|VHDL|Milo|RSA|mod_exp_testbench.vhd</ClosedNode>
+         <ClosedNode>/tester_testbench - behavior |media|sf_ASE|VHDL|Milo|RSA|tester_testbench.vhd/uut - tester_dispositivi - Structure</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>generazione_valore_RSA_testbench - behavior (/media/sf_ASE/VHDL/Milo/RSA/generazione_valore_RSA_testbench.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000002c3000000020000000000000000000000000200000064ffffffff000000810000000300000002000002c30000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>generazione_valore_RSA_testbench - behavior (/media/sf_ASE/VHDL/Milo/RSA/generazione_valore_RSA_testbench.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="PostTransSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001be000000010000000100000000000000000000000064ffffffff000000810000000000000001000001be0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="PostTransSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Simulate Post-Translate Model</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001be000000010000000100000000000000000000000064ffffffff000000810000000000000001000001be0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Simulate Post-Translate Model</CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff0000000000000002000001440000011d01000000060100000002</SourceProcessView>
+   <CurrentView>Behavioral Simulation</CurrentView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000022a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000022a0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001be000000010000000100000000000000000000000064ffffffff000000810000000000000001000001be0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001be000000010000000100000000000000000000000064ffffffff000000810000000000000001000001be0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="PostMapSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/funzione_hash_moltiplicazione_testbench - behavior |media|sf_ASE|VHDL|Milo|RSA|funzione_hash_moltiplicazione_testbench.vhd</ClosedNode>
+         <ClosedNode>/mod_exp_testbench - behavior |media|sf_ASE|VHDL|Milo|RSA|mod_exp_testbench.vhd/uut - mod_exp - Structure</ClosedNode>
+         <ClosedNode>/tester_testbench - behavior |media|sf_ASE|VHDL|Milo|RSA|tester_testbench.vhd</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>generazione_valore_RSA_testbench - behavior (/media/sf_ASE/RSA/generazione_valore_RSA_testbench.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000002c3000000020000000000000000000000000200000064ffffffff000000810000000300000002000002c30000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>generazione_valore_RSA_testbench - behavior (/media/sf_ASE/RSA/generazione_valore_RSA_testbench.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="PostMapSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001be000000010000000100000000000000000000000064ffffffff000000810000000000000001000001be0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="PostMapSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Simulate Post-Map Model</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001be000000010000000100000000000000000000000064ffffffff000000810000000000000001000001be0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Simulate Post-Map Model</CurrentItem>
+   </ItemView>
+</Project>

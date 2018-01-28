@@ -126,7 +126,7 @@ ref{Sintesi ripple carry}
 \end_inset
 
  e viene mostrata la versione firmata del messaggio inviato, il circuito
- che effettua la firma viene resettato quando tutti i led sono bassi.
+ che effettua la firma viene resettato quando tutti i led sono spenti.
 \end_layout
 
 \end_body
