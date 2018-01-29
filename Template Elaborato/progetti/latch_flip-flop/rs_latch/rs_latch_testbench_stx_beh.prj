@@ -1,3 +1,0 @@
-vhdl isim_temp "nor_gate.vhd"
-vhdl isim_temp "rs_latch.vhd"
-vhdl isim_temp "rs_latch_testbench.vhd"

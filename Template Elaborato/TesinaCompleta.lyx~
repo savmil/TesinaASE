@@ -219,10 +219,10 @@ morecomment=[s]{--}
     \foreach \x in {#1}
         \path (\x) node {X};
 }
-
 \hypersetup{hidelinks}
 \usepackage[italian]{varioref}
 \usepackage{caption}
+\colorlet{BLACK}{black}
 \captionsetup{tableposition=top,figureposition=bottom,font=small,format=hang,labelfont={sf,bf}}
 \usepackage{hyperref}
 \end_preamble
@@ -528,7 +528,11 @@ esercizio01/Tesina.lyx ->esercizio02/Tesina.lyx e così via.
 \end_layout
 
 \begin_layout Chapter
-Minimizzazione reti combinatorie 
+
+\color black
+Minimizzazione
+\color inherit
+ reti combinatorie 
 \end_layout
 
 \begin_layout Standard
@@ -557,23 +561,6 @@ filename "esercizio02/Tesina.lyx"
 
 \begin_layout Chapter
 Latch/Flip Flop
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-href{run://DAVIDE/Università/Architettura_dei_sistemi_di_elaborazione/TesinaASE/
-Template Elaborato/logo.png}{logo}
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard

@@ -1,0 +1,1 @@
+vhdtdtfi -prj RSA -o /media/sf_ASE/VHDL/Milo/RSA/shifter_a_sinistra.vhi -module shifter_a_sinistra -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work mux2_1.vhd -lib work edge_triggered_d_n.vhd -lib work shifter_a_sinistra.vhd 

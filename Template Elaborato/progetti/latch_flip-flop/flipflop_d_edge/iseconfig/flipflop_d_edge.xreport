@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-01-09T16:03:43</DateModified>
+  <DateModified>2018-01-29T09:37:49</DateModified>
   <ModuleName>flipflop_d_edge</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/flipflop_d_edge/iseconfig/flipflop_d_edge.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/flipflop_d_edge</ImplementationReportsDirectory>
+  <SavedFilePath>/media/sf_ASE/Template Elaborato/progetti/latch_flip-flop/flipflop_d_edge/iseconfig/flipflop_d_edge.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/media/sf_ASE/Template Elaborato/progetti/latch_flip-flop/flipflop_d_edge/</ImplementationReportsDirectory>
   <DateInitialized>2018-01-09T16:03:43</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

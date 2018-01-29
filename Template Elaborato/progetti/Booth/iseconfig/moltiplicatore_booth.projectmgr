@@ -27,7 +27,7 @@
       <SelectedItems>
          <SelectedItem>tester_dispositivi - Behavioral (/media/sf_ASE/Template Elaborato/progetti/Booth/tester_dispositivi.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >37</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000002b5000000020000000000000000000000000200000064ffffffff000000810000000300000002000002b50000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
@@ -37,7 +37,6 @@
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
          <ClosedNode>Configure Target Device</ClosedNode>
-         <ClosedNode>Design Utilities</ClosedNode>
          <ClosedNode>Implement Design/Map/Generate Post-Map Static Timing</ClosedNode>
          <ClosedNode>Implement Design/Place &amp; Route/Back-annotate Pin Locations</ClosedNode>
          <ClosedNode>Implement Design/Place &amp; Route/Generate IBIS Model</ClosedNode>
@@ -57,34 +56,7 @@
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
-      <SelectedItems>
-         <SelectedItem>add_sub.vhd</SelectedItem>
-         <SelectedItem>anode_manager.vhd</SelectedItem>
-         <SelectedItem>BasysRevEGeneral.ucf</SelectedItem>
-         <SelectedItem>Booth_multiplier.vhd</SelectedItem>
-         <SelectedItem>Booth_testbench.vhd</SelectedItem>
-         <SelectedItem>boundary_scan_chain.vhd</SelectedItem>
-         <SelectedItem>cathode_encoder.vhd</SelectedItem>
-         <SelectedItem>cathode_manager.vhd</SelectedItem>
-         <SelectedItem>clock_filter.vhd</SelectedItem>
-         <SelectedItem>contatore_modulo_4.vhd</SelectedItem>
-         <SelectedItem>counter_mod2n.vhd</SelectedItem>
-         <SelectedItem>debounce.vhd</SelectedItem>
-         <SelectedItem>demux1_n.vhd</SelectedItem>
-         <SelectedItem>display.vhd</SelectedItem>
-         <SelectedItem>display_on_board.vhd</SelectedItem>
-         <SelectedItem>display_top_level.vhd</SelectedItem>
-         <SelectedItem>edge_triggered_d_n.vhd</SelectedItem>
-         <SelectedItem>full_adder.vhd</SelectedItem>
-         <SelectedItem>half_adder.vhd</SelectedItem>
-         <SelectedItem>latch_d_en.vhd</SelectedItem>
-         <SelectedItem>mux2_1.vhd</SelectedItem>
-         <SelectedItem>muxn_1.vhd</SelectedItem>
-         <SelectedItem>ripple_carry_adder.vhd</SelectedItem>
-         <SelectedItem>Serial_Booth_PC_Moore.vhd</SelectedItem>
-         <SelectedItem>tester_dispositivi.vhd</SelectedItem>
-         <SelectedItem>tester_disp_test.vhd</SelectedItem>
-      </SelectedItems>
+      <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000022a000000040101000100000000000000000000000064ffffffff000000810000000000000004000000cb00000001000000000000005c00000001000000000000008400000001000000000000007f0000000100000000</ViewHeaderState>
@@ -112,6 +84,9 @@
          <ClosedNode>/Booth_testbench - behavior |home|sav|ASE|moltiplicatore_booth|Booth_testbench.vhd/uut - Booth_multiplier - Structural/gestore_shift - add_sub - structural</ClosedNode>
          <ClosedNode>/Booth_testbench - behavior |home|sav|ASE|moltiplicatore_booth|Booth_testbench.vhd/uut - Booth_multiplier - Structural/q - boundary_scan_chain - Structural</ClosedNode>
          <ClosedNode>/Booth_testbench - behavior |home|sav|ASE|moltiplicatore_booth|Booth_testbench.vhd/uut - Booth_multiplier - Structural/shifter - boundary_scan_chain - Structural</ClosedNode>
+         <ClosedNode>/Booth_testbench - behavior |media|sf_ASE|Template Elaborato|progetti|Booth|Booth_testbench.vhd/uut - Booth_multiplier - Structural/a - boundary_scan_chain - Structural</ClosedNode>
+         <ClosedNode>/Booth_testbench - behavior |media|sf_ASE|Template Elaborato|progetti|Booth|Booth_testbench.vhd/uut - Booth_multiplier - Structural/gestore_shift - add_sub - structural</ClosedNode>
+         <ClosedNode>/Booth_testbench - behavior |media|sf_ASE|Template Elaborato|progetti|Booth|Booth_testbench.vhd/uut - Booth_multiplier - Structural/q - boundary_scan_chain - Structural</ClosedNode>
          <ClosedNode>/Booth_testbench - behavior |media|sf_ASE|VHDL|Milo|moltiplicatore_B_buono|Booth_testbench.vhd/uut - Booth_multiplier - Structural/a - boundary_scan_chain - Structural</ClosedNode>
          <ClosedNode>/Booth_testbench - behavior |media|sf_ASE|VHDL|Milo|moltiplicatore_B_buono|Booth_testbench.vhd/uut - Booth_multiplier - Structural/gestore_shift - add_sub - structural</ClosedNode>
          <ClosedNode>/Booth_testbench - behavior |media|sf_ASE|VHDL|Milo|moltiplicatore_B_buono|Booth_testbench.vhd/uut - Booth_multiplier - Structural/q - boundary_scan_chain - Structural</ClosedNode>
@@ -130,13 +105,13 @@
          <ClosedNode>/tester_dispositivi - Behavioral |media|sf_ASE|VHDL|Milo|moltiplicatore_B_buono|tester_dispositivi.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>cu - Serial_Booth_PC_Moore - Behavioral (/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/Serial_Booth_PC_Moore.vhd)</SelectedItem>
+         <SelectedItem>uut - Booth_multiplier - Structural (/media/sf_ASE/Template Elaborato/progetti/Booth/Booth_multiplier.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000277000000020000000000000000000000000200000064ffffffff000000810000000300000002000002770000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000002c9000000020000000000000000000000000200000064ffffffff000000810000000300000002000002c90000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>cu - Serial_Booth_PC_Moore - Behavioral (/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/Serial_Booth_PC_Moore.vhd)</CurrentItem>
+      <CurrentItem>uut - Booth_multiplier - Structural (/media/sf_ASE/Template Elaborato/progetti/Booth/Booth_multiplier.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -144,26 +119,26 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000002ac000000010000000100000000000000000000000064ffffffff000000810000000000000001000002ac0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000022a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000022a0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001be000000010000000100000000000000000000000064ffffffff000000810000000000000001000001be0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000022a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000022a0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff0000000000000002000001440000011d01000000060100000002</SourceProcessView>
    <CurrentView>Implementation</CurrentView>
@@ -240,13 +215,13 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001be000000010000000100000000000000000000000064ffffffff000000810000000000000001000001be0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000022a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000022a0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
       <ClosedNodes>
@@ -254,13 +229,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001be000000010000000100000000000000000000000064ffffffff000000810000000000000001000001be0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000022a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000022a0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="PostRouteSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>

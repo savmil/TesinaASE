@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain/boundary_scan_chain_testbench_isim_beh.exe" -prj "C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain/boundary_scan_chain_testbench_beh.prj" "work.boundary_scan_chain_testbench" 
+-intstyle "ise" -incremental -o "/media/sf_ASE/Template Elaborato/progetti/Boundary_Scan_Chain/boundary_scan_chain_testbench_isim_beh.exe" -prj "/media/sf_ASE/Template Elaborato/progetti/Boundary_Scan_Chain/boundary_scan_chain_testbench_beh.prj" "work.boundary_scan_chain_testbench" 

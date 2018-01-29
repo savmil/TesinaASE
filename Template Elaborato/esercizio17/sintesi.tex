@@ -1,0 +1,16 @@
+\selectlanguage{italian}%
+
+\section{Sintesi su board FPGA}
+
+Valgono le stesse considerazione per il riconoscitore di stringhe
+\ref{tester dispositivi seriali}, dove l' accensione del led zero
+indica che il messaggio ricevuto è diverso da quello di cui si è effettuato
+l' hashing, infatti se il messaggio è corretto tale led non viene
+abilitato. Dato il numero maggiore di dati in input i registri da
+caricare sono in numero superiore difatti viene accesso anche il led
+cinque per indicare quale registro si sta caricando, il caricamento
+del messaggio avviene quando led cinque e sei sono alti, si utilizza
+il display come descritto qui \ref{Sintesi ripple carry} e viene
+mostrata la versione firmata del messaggio inviato, il circuito che
+effettua la firma viene resettato quando i led sette e sei sono accesi.\selectlanguage{italian}%
+

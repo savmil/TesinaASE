@@ -1,14 +1,16 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain/boundary_scan_chain_testbench_isim_beh.exe -prj C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain/boundary_scan_chain_testbench_beh.prj work.boundary_scan_chain_testbench 
-ISim P.20131013 (signature 0x7708f090)
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /media/sf_ASE/Template Elaborato/progetti/Boundary_Scan_Chain/boundary_scan_chain_testbench_isim_beh.exe -prj /media/sf_ASE/Template Elaborato/progetti/Boundary_Scan_Chain/boundary_scan_chain_testbench_beh.prj work.boundary_scan_chain_testbench 
+ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 1
 Turning on mult-threading, number of parallel sub-compilation jobs: 0 
 Determining compilation order of HDL files
-Parsing VHDL file "C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain/mux2_1.vhd" into library work
-Parsing VHDL file "C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain/latch_d_en.vhd" into library work
-Parsing VHDL file "C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain/boundary_scan_chain.vhd" into library work
-Parsing VHDL file "C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain/boundary_scan_chain_testbench.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/Template Elaborato/progetti/Boundary_Scan_Chain/mux2_1.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/Template Elaborato/progetti/Boundary_Scan_Chain/latch_d_en.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/Template Elaborato/progetti/Boundary_Scan_Chain/boundary_scan_chain.vhd" into library work
+Parsing VHDL file "/media/sf_ASE/Template Elaborato/progetti/Boundary_Scan_Chain/boundary_scan_chain_testbench.vhd" into library work
 Starting static elaboration
 Completed static elaboration
+Fuse Memory Usage: 95400 KB
+Fuse CPU Usage: 1060 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package std_logic_arith
@@ -18,6 +20,7 @@ Compiling architecture structural of entity boundary_scan_chain [\boundary_scan_
 Compiling architecture behavior of entity boundary_scan_chain_testbench
 Time Resolution for simulation is 1ps.
 Compiled 10 VHDL Units
-Built simulation executable C:/DAVIDE/ASE/Esercizi/ISE/Boundary_Scan_Chain/boundary_scan_chain_testbench_isim_beh.exe
-Fuse Memory Usage: 32052 KB
-Fuse CPU Usage: 639 ms
+Built simulation executable /media/sf_ASE/Template Elaborato/progetti/Boundary_Scan_Chain/boundary_scan_chain_testbench_isim_beh.exe
+Fuse Memory Usage: 108528 KB
+Fuse CPU Usage: 1150 ms
+GCC CPU Usage: 210 ms

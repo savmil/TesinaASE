@@ -1,0 +1,462 @@
+\selectlanguage{italian}%
+
+\section{Latch RS}
+
+
+\subsection{Schematico}
+
+Si è scelto di implementare il latch RS in logica 1-attiva con due
+porte NOR, questo implica che, quando S=1 e R=0, l'uscita Q è alta,
+che lo stato neutro degli ingressi è S=R=0 e quello non ammesso è
+S=R=1, il quale, seguito dal passaggio allo stato neutro, produce
+un'uscita non stabile e soggetta ad un transitorio, che può portare
+ad alee e quindi a corse. Dualmente, grazie alla simmetria del circuito,
+è possibile cambiare la logica in 0-attiva utilizzando due porte NAND.
+
+\subsection{Codice}
+
+
+\subsubsection{RS\_Latch}
+
+Questo componente è stato realizzato con un'architettura di tipo Structural,
+connettendo due componenti \textit{nor\_gate}, che non fanno altro
+che la NOR dei due ingressi. Le uscite di ogni porta nor viene poi
+retroazionata all'ingresso dell'altra porta.\\
+Il progetto ISE del componente in questione è osservabile a questo
+link: \href{run:progetti/latch_flip-flop/rs_latch/rs_latch.xise}{RS\_Latch ISE}
+
+\subsection{Simulazione}
+
+\subsubsection{Behavioral}
+
+In questo tipo di simulazione, viene modellato solo il comportamento
+funzionale del sistema, infatti le porte sono considerate ideali e
+quindi senza ritardo; per questo motivo quando provo ad utilizzare
+la configurazione degli ingressi non ammessa R=S=1 (che viola il vincolo
+logico $R\cdot S=0$ e quindi quello $Q=not(\neg Q)$) e poi nello
+stesso istante (80 ns) le abbasso entrambe , questo genera degli eventi
+oscillatori che producono cicli di delta cycle. Questi però non riusciamo
+ad osservarli in simulazione poichè il tempo di simulazione non avanza
+e viene generato un errore che indica che si è raggiunto il limite
+di iterazioni, dovuto al fatto che il sistema non riesce a raggiungere
+uno stato stabile. Queste oscillazioni invece sono visibili nella
+simulazione Post-Map, in cui vengono introdotti i ritardi dei componenti
+di libreria ma non quelli relativi alle loro connessioni.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{esercizio03/images/rs_latch_behavioral.png}
+	\caption{Simulazione del latch RS Behavioral}
+	\label{fig:RS_behavioral}
+\end{figure}
+
+\subsubsection{Post-Sintesi}
+
+La simulazione di Figura \ref{fig:RS_post-route} rappresenta l'evoluzione
+del sistema in seguito all'operazione di Place \& Route che, dopo
+aver utilizzato dei componenti della libreria Xilinx con i relativi
+ritardi dovuti ai tempi di commutazione, collega tali componenti,
+tenendo in considerazione i ritardi delle connessioni relative al
+routing effettuato. Proprio grazie a questi ritardi la simulazione
+continua e non si blocca come quella precedente quando gli ingressi
+passano dal valore R=S=1 a R=S=0, ma vengono introdotte delle asimmetrie
+nel circuito che portano le uscite ad assumere dei valori che rispettano
+i vincoli logici, nel nostro caso sono Q=1 e $\lnot$Q=0 a 86 ns.
+Però è importante sottolineare che questi valori prodotti in uscita
+non sono deterministici, perchè generati da corse e quindi è preferibile
+non ottenerli rispettando il vincolo che proibisce l'utilizzo di entrambi
+gli ingressi alti.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{esercizio03/images/rs_latch_post-route.png}
+	\caption{Simulazione del latch RS Post-Route}
+	\label{fig:RS_post-route}
+\end{figure}
+
+\section{Latch RS abilitato}
+
+\subsection{Schematico}
+
+Questo tipo di latch deriva dal latch RS precedente, al quale si antepone
+una rete combinatoria formata da due porte AND, i cui ingressi sono
+R ed S e in più un segnale di abilitazione, che può essere un clock,
+ma che in nessun caso rende sincrona la rete.
+
+\subsection{Codice}
+
+\subsubsection{RS\_Latch\_Clocked}
+
+Tale componente è stato realizzato con un'architettura Structural,
+connettendo, tramite i due segnali \textit{r\_clocked} ed \textit{s\_clocked},
+le uscite di due porte AND, realizzate con il componente \textit{and\_gate},
+agli ingressi R ed S del componente \textit{rs\_latch} visto precedentemente
+(componente \href{run:progetti/latch_flip-flop/rs_latch_clocked/rs_latch.vhd}{RS\_Latch}).
+Ovviamente in ingresso alle porte AND ci saranno i segnali di set
+e reset, nonché un clock che funge da segnale di abilitazione.\\
+Il progetto ISE del componente in questione è osservabile a questo
+link: \href{run:progetti/latch_flip-flop/rs_latch_clocked/rs_latch_clocked.xise}{RS\_Latch\_Clocked ISE}
+
+\subsection{Simulazione}
+
+\subsubsection{Behavioral}
+
+In Figura \ref{fig:RS_clk_behavioral} è rappresentata la simulazione
+behavioral del latch RS abilitato, che si comporta come un normale
+latch RS quando il clock è alto, altrimenti mantiene lo stato precedente.
+Inoltre si osserva, come nel caso del latch RS, che la simulazione
+si ferma (in questo caso a 50 ns) e viene generato un errore che indica
+che si è raggiunto il limite di iterazioni. Tutto questo è dovuto
+al fatto che, avendo utilizzanto nel testbench, a 45 ns, la configurazione
+degli ingressi non ammessa R=S=1, vengono generate delle oscillazioni
+non osservabili in questo tipo di simulazione e che probabilmente
+sono causate dal successivo abbassamento del segnale di clock alla
+soglia dei 50 ns, che porterebbe il sistema a conservare lo stato
+precedente forzando i valori di ingresso R=S=0.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{esercizio03/images/rs_latch_clocked_behavioral.png}
+	\caption{Simulazione del latch RS abilitato Behavioral}
+	\label{fig:RS_clk_behavioral}
+\end{figure}
+
+\subsubsection{Post-Sintesi}
+
+In Figura \ref{fig:RS_clk_post-route} è mostrata la simulazione Post-Route
+del sistema. Come si è verificato per il lactch RS, anche qui, utilizzando
+i componenti della libreria Xilinx e considerando i loro ritardi e
+quelli delle connessioni, si osserva che la simulazione continua e
+non si arresta, grazie al fatto che vengono forzati dei valori in
+uscita (Q=1 e $\lnot$Q=0 a 55ns) dovuti all'asimmetria introdotta
+dopo l'operazione di Place \& Route. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{esercizio03/images/rs_latch_clocked_post-route.png}
+	\caption{Simulazione del latch RS abilitato Post-Route}
+	\label{fig:RS_clk_post-route}
+\end{figure}
+
+\section{Latch D abilitato}
+
+\subsection{Schematico}
+
+Il latch D abilitato può essere realizzato a partire da un latch RS
+abilitato i cui ingressi R ed S vengono fatti corrispondere al valore
+D in ingresso, rispettivamente una volta negato tramite una porta
+NOT e una volta no. Questo latch permette di avere in uscita Q il
+valore D in ingresso, ma ritardato di un certo $\Delta$.
+
+\subsection{Codice}
+
+\subsubsection{D\_Latch\_Clocked}
+
+Questo componente è stato creato come un'architettura Structural a
+partire dal componente \textit{rs\_latch\_clocked} visto in precedenza
+(componente \href{run:progetti/latch_flip-flop/d_latch/rs_latch_clocked.vhd}{RS\_Latch\_Clocked}).
+L'ingresso D viene colleggato all'ingresso S del latch rs abilitato
+e viene utilizzato un segnale \textit{notd} per negare D e collegarlo
+all'ingresso R.\\
+Il progetto ISE del componente in questione è osservabile a questo
+link: \href{run:progetti/latch_flip-flop/d_latch/d_latch.xise}{D\_latch\_Clocked ISE}.
+
+\subsection{Simulazione}
+
+\subsubsection{Behavioral}
+
+Come si nota dalla simulazione behavioral di Figura \ref{fig:D_clk_behavioral}
+quando D e il clock sono alti il segnale in uscita Q è alto, altrimenti
+o viene mantenuto lo stato precedente quando il clock è basso oppure
+quando D è basso e il clock è altro, sarà l'uscita $\lnot$Q ad essere
+alta. Anche in questo caso come in quelli precedenti, la simulazione
+si arresta a 40 ns a causa di un errore che indica il raggiungimento
+del limite di iterazioni dovuto alla generazione di cicli di delta
+cycle, che non permettono di giungere ad uno stato stabile.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{esercizio03/images/d_latch_clocked_behavioral.png}
+	\caption{Simulazione del latch D abilitato Behavioral}
+	\label{fig:D_clk_behavioral}
+\end{figure}
+
+\subsubsection{Post-Sintesi}
+
+In Figura \ref{fig:D_clk_post-route} è rappresentata la simulazione
+Post-Route del componente. Grazie all'introduzione dei ritardi dei
+componenti della libreria Xilinx e a quelli relatvi ai collegamenti
+tra gli stessi, la simulazione è in grado di continuare senza bloccarsi;
+ovviamente questo comporta un ritardo nella generazione delle uscite
+che commutano un po' dopo il sollevamento del segnale di clock. Ad
+aumentare ulteriormente il ritardo è l'aggiunta della porta NOT, che
+aumenta ulteriormente il tempo di commutazione rispetto al latch RS
+abilitato.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{esercizio03/images/d_latch_clocked_post-route.png}
+	\caption{Simulazione del latch D abilitato Post-Route}
+	\label{fig:D_clk_post-route}
+\end{figure}
+
+\section{Latch T}
+
+\subsection{Schematico}
+
+Il latch T può essere realizzato similmente al latch RS abilitato,
+solo che, in ingresso alle porte AND, vanno le uscite retroazionate
+al posto degli ingressi di reset e set e il segnale T che, quando
+è abilitato, non fa altro che commutare l'uscita Q.
+
+\subsection{Codice}
+
+\subsubsection{T\_Latch}
+
+L'approccio utilizzato per la realizzazione di questo tipo di latch
+è quello strutturale, in base al quale, a partire dal componente \href{run:progetti/latch_flip-flop/t_latch/rs_latch.vhd}{RS\_Latch}
+visto in precedenza, sono state aggiunte due porte AND, in ingresso
+alle quali vanno il segnale T e le uscite Q e $\lnot$Q del latch
+RS retroazionate. Per fare questo sono stati utilizzati quattro segnali:
+due (\textit{retro\_q} e \textit{retro\_notq}) utilizzati per le uscite
+del latch e altri due (\textit{retro\_q\_delayed} e \textit{retro\_notq\_delayed})
+utilizzati per ritardare, tramite la parola chiave after, tali uscite
+in modo che possano essere utilizzate in ingresso alle porte AND,
+questo perchè altrimenti le uscite non riescono a commutare. \\
+Il progetto ISE del componente in questione è osservabile a questo
+link: \href{run:progetti/latch_flip-flop/t_latch/t_latch.xise}{T\_Latch ISE}
+
+\subsection{Simulazione}
+
+\subsubsection{Behavioral}
+
+In figura \ref{fig:t_behavioral} si osserva la simulazione Behavioral
+del latch\_t. Così come si nota quando T è alto possono avvenire una
+o più commutazione delle uscite in base alla sua durata, infatti T
+dovrebbe essere alto per un tempo sufficientemente grande affinchè
+avvenga una commutazione ma sufficientemente piccolo affinchè non
+ne avvengano altre. Si noti inoltre, che quando T è basso, il sistema
+mantine lo stato precedente. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{esercizio03/images/t_latch_behavioral.png}
+	\caption{Simulazione del latch T Behavioral}
+	\label{fig:t_behavioral}
+\end{figure}
+
+\subsubsection{Post-Sintesi}
+
+Nella simulazione Post-Sintesi invece, dato che la parola chiave after,
+usata precedentemente per permettere la commutazione delle uscite,
+non è sintetizzabile, allora le uscite non cambiano stato e permangono
+per tutta la durata della simulazione in uno stato ``uninitialized''.
+
+\section{Latch JK abilitato}
+
+\subsection{Schematico}
+
+Il latch JK è strutturato in maniera simile al latch RS abilitato,
+ciò che cambia è che le porte AND prendono in ingresso le uscite retroazionate,
+così come avviene per il latch T, il clock e due segnali J e K. In
+base alla configurazione di questi due segnali cambia il funzionamento
+del latch, poiché se K=J=1, esso si comporta come un latch T, altrimenti
+si comporta come un latch RS in cui R=K e S=J.
+
+\subsection{Codice}
+
+\subsubsection{JK\_Latch\_Clocked}
+
+Questo tipo di componente è stato realizzato con un'architettura Structural,
+in cui si antepongono ad un latch RS (componente \href{run:progetti/latch_flip-flop/jk_latch_clocked/rs_latch.vhd}{RS\_Latch}),
+due porte AND a tre ingressi, cioè il clock, K o J, e una delle due
+uscite retroazionata. Questo avviene tramite l'utilizzo di quattro
+segnali, ovvero \textit{q\_feedback} e \textit{notq\_feedback}, utilizzati
+per le uscite del latch RS, e \textit{q\_feedback\_delayed} e \textit{notq\_feedback\_delayed},
+utilizzati per ritardare tali segnali, in modo che possano essere
+retroazionati in ingresso alle porte AND e quindi permettere la commutazione.
+Sono presenti inoltre due ingressi di \textit{clear} e \textit{preset},
+messi in OR con le uscite delle porte AND, in modo da inizializzare
+il dispositivo, tramite i segnali \textit{in\_latch\_r} e \textit{in\_latch\_s},
+messi in ingresso al latch RS. \\
+Il progetto ISE del componente in questione è osservabile a questo
+link: \href{run:progetti/latch_flip-flop/jk_latch_clocked/jk_latch_clocked.xise}{JK\_Latch ISE}
+
+\subsection{Simulazione}
+
+\subsubsection{Behavioral}
+
+In Figura \ref{fig:jk_clk_behavioral} è rappresentata la simulazione
+Behavioral del funzionamento del latch JK abilitato. Si nota che,
+così come ci aspettiamo, quando J è alto, Q è alto, mentre quando
+K è alto, $\lnot$Q è alto; quando invece sia J che K sono alti, il
+sistema funziona come un latch T e quindi le uscite commutano un certo
+numero di volte, che dipende dalla durata dello stato J=K=1. Ovviamente
+quando sia J che K sono bassi oppure il clock è basso, il sistema
+permane nello stato precedente. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{esercizio03/images/jk_latch_clocked_behavioral.png}
+	\caption{Simulazione del latch JK abilitato Behavioral}
+	\label{fig:jk_clk_behavioral}
+\end{figure}
+
+\subsubsection{Post-Sintesi}
+
+Nella simulazione Post-Route di Figura \ref{fig:jk_clk_post-route}
+vengono utilizzati i componenti della libreria Xilinx con i relativi
+ritardi e quelli dovuti ai collegamenti tra gli stessi e quindi notiamo
+un certo delay nella commutazione delle uscite rispetto al caso Behavioral.
+Si nota inoltre che in seguito alla fine della condizione in cui J=K=1,
+anzichè permanere in uno stato, le uscite commutano sempre, probabilmente
+a causa di alcune asimmetrie introdotte nel circuito dalla fase di
+sintesi.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{esercizio03/images/jk_latch_clocked_post-route.png}
+	\caption{Simulazione del latch JK abilitato Post-Route}
+	\label{fig:jk_clk_post-route}
+\end{figure}
+
+\section{Flip-Flop D Edge Triggered}
+
+\subsection{Schematico}
+
+Un Flip-Flop D Edge Triggered che commuta sul fronte di discesa del
+clock può essere realizzato, così come si evince dalla Figura \ref{fig:ffd},
+attraverso 6 porte NOR opportunamente interconnesse. Quando il clock
+è alto, l'uscita delle porte G2 e G3 viene forzata a 0, quindi il
+latch 3 mantiene il proprio stato delle uscite e il latch 1 e il latch
+2 seguono il valore D e $\lnot$D rispettivamente. All'atto della
+transizione del clock dal valore alto a quello basso, i valori di
+D e $\lnot$D vengono propagati agli ingressi del latch 3 e quindi
+in uscita. Considerando $\tau$ il ritardo di ogni porta, la rete
+impiega 5$\tau$ per commutare. Si noti inoltre, un ulteriore ingresso
+alla porta G2, che non è altro che l'uscita della porta G1 retroazionata;
+questo elemento, può sembrare ridondante, in realtà evita il presentarsi
+di un'alea che, all'atto della transizione del clock 1->0, causerebbe
+un valore inatteso all'uscita della porta G2, dovuto al ritardo di
+3$\tau$ per propagare l'ingresso R1a, infatti l'uscita della porta
+G1 ha lo stesso valore dell'uscita della porta G3, solo che è possibile
+ottenerla con un ritardo pari solo a $\tau$.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{esercizio03/images/ffd.png}
+	\caption{Schematico Flip-Flop D Edge Triggered}
+	\label{fig:ffd}
+\end{figure}
+
+\subsection{Codice}
+
+\subsubsection{FlipFlop\_D\_edge}
+
+Il Flip-Flop D Edge Triggered è stato realizzato con un'architettura
+Structural componendo 6 porte NOR, opportunamente connesse con dei
+segnali da G1 a G6 che rappresentano le uscite delle omonime porte.
+Si noti che per settare l'uscita della porta NOR G2, che ha tre ingressi,
+è stata applicata una porta NOT al risultato dell'OR tra l'uscita
+della porta G3, il clock e l'uscita della porta G1, utilizzata per
+eliminare l'alea.\\
+Il progetto ISE del componente in questione è osservabile a questo
+link: \href{run:progetti/latch_flip-flop/flipflop_d_edge/flipflop_d_edge.xise}{FlipFlop\_D\_Edge ISE}
+
+\subsection{Simulazione}
+
+\subsubsection{Behavioral}
+
+Nella simulazione Behavioral di Figura \ref{fig:ffd_behavioral} si
+osserva il funzionamento del Flip Flop D. Come si nota la commutazione
+delle uscite avviene in corrispondenza del fronte di discesa del clock
+in maniera istantanea, non avendo usato a questo livello i componenti
+della libreria Xilinx.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{esercizio03/images/flipflop_d_edge_behavioral.png}
+	\caption{Simulazione del Flip-Flop D Edge Triggered Behavioral}
+	\label{fig:ffd_behavioral}
+\end{figure}
+
+\subsubsection{Post-Sintesi}
+
+In Figura \ref{fig:ffd_post-route} è rappresetata una simulazione
+Post-Route del Flip-Flop D. Come c'era da aspettarsi, tenendo in considerazione
+i ritardi dei componenti utilizzati e quelli relativi al routing,
+la commutazione delle uscite non avviene istantanemente rispetto al
+fronte di discesa del clock, ma con un ritardo che è circa 6 ns, che
+quindi è in linea con il ritardo di 5$\tau$ predetto precedentemente.
+Si noti inoltre l'assenza di alee grazie all'aggiunta del collegamento
+dell'uscita della porta G1 all'ingresso della porta G2.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{esercizio03/images/flipflop_d_edge_post-route.png}
+	\caption{Simulazione del Flip-Flop D Edge Triggered Post-Route}
+	\label{fig:ffd_post-route}
+\end{figure}
+
+\section{Flip-Flop RS Master-Slave}
+
+\subsection{Schematico}
+
+Un Flip-Flop RS Master-Slave viene realizzato collegando in cascata
+due latch RS abilitati da un segnale di clock nel caso del primo latch
+(master) è affermato, mentre nel caso del secondo (slave) è negato.
+Questo comporta che i due latch non funzionano contemporaneamente
+ma quando uno è attivo l'altro è disattivo e viceversa.
+
+\subsection{Codice}
+
+\subsubsection{FlipFlop\_RS\_MS}
+
+Il componente \textit{flipflop\_rs\_ms} è stato realizzato con un
+approccio Structural, poichè sono stati utilizzati due componenti
+rs\_latch\_clocked visti in precedeza (componente \href{run:progetti/latch_flip-flop/flipflop_rs_ms/rs_latch_clocked.vhd}{RS\_Latch\_Clocked}),
+collegati tramite i due segnali \textit{q\_master} e \textit{notq\_master}
+che vanno in ingresso rispettivamente al set e al reset del latch
+slave. Infine è stata utilizzata una porta NOT per negare il segnale
+di clock che è stato poi collegato al secondo latch.\\
+Il componente in questione è osservabile a questo link: \href{run:progetti/latch_flip-flop/flipflop_rs_ms/flipflop_rs_ms.xise}{FlipFlop\_RS\_MS ISE}
+
+\subsection{Simulazione}
+
+\subsubsection{Behavioral}
+
+In Figura \ref{fig:ffrs_behavioral} viene mostrata la simulazione
+Behavioral quindi il funzionamento di questo tipo di circuito. Come
+si nota, quello che di fatto realizza è un flip-flop RS pilotato sul
+fronte di discesa del clock, in corrispondeza del quale avviene la
+commutazione delle uscite Q e $\lnot$Q. In questo caso la simulazione
+continua fino alla fine poichè non è stata utilizzata la configurazione
+R=S=1 non ammessa e quindi non si sono generati eventi oscillatori.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{esercizio03/images/flipflop_rs_ms_behavioral.png}
+	\caption{Simulazione del Flip-Flop RS Master-Slave Behavioral}
+	\label{fig:ffrs_behavioral}
+\end{figure}
+
+\subsubsection{Post-Sintesi}
+
+Nella simulazione Post-Route di Figura \ref{fig:ffd_post-route},
+come nei casi precedenti notiamo che la commutazione delle uscite
+avviene con circa 5-6 ns di ritardo, dovuto all'utilizzo dei componenti
+della libreria Xilinx e ai ritardi dei loro collegamenti. Fortunatamente,
+in questo caso, il ritardo della porta NOT sembra non pregiudicare
+il funzionamento del sistema, infatti il master e lo slave funzionano
+alternativamente, cosa che potrebbe non accadere se il ritardo della
+porta NOT fosse troppo grande e quindi non si riuscisse a determinare
+l'uscita. Questo però è un caso limite poiché di solito il ritardo
+della porta NOT è un $\tau$ piccolissimo.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{esercizio03/images/flipflop_rs_ms_post-route.png}
+	\caption{Simulazione del Flip-Flop RS Master-Slave Post-Route}
+	\label{fig:ffd_post-route}
+\end{figure}\selectlanguage{italian}%
+

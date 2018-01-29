@@ -259,17 +259,7 @@ Segue un esempio di inclusione di codice
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Subsubsection
-Boundary_Scan_Chain
-\end_layout
-
-\begin_layout Standard
-Questo componente è stato realizzato con un approccio Structural, componendo
- opportunamente dei flip-flop d edge triggered e dei mux 2-1.
- In particolare è stato utilizzato un secondo segnale di abilitazione 
+In particolare è stato utilizzato un secondo segnale di abilitazione 
 \shape italic
 en
 \shape default
@@ -293,8 +283,10 @@ dout
  dei flip flop, mentre quando è alto abilita la modalità di shift register
  che, nel caso in cui scan_en è basso viene utilizzata per shiftare il valore
  din, che se non usassi questa doppia abilitazione perderei( per ottenere
- lo stesso risultato dovrei , e nel caso in cui scan_en è alto viene utilizzata
- per shiftare un valore messo in ingresso al segnale di 
+ lo stesso risultato dovrei caricare la scan chain serialmente, questa piccola
+ modifica ci servirà successivamente), e nel caso in cui scan_en è alto
+ viene utilizzata per shiftare un valore messo in ingresso al segnale di
+ 
 \shape italic
 scan_in
 \shape default
@@ -311,6 +303,39 @@ q
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsubsection
+Boundary_Scan_Chain
+\end_layout
+
+\begin_layout Standard
+Questo componente è stato realizzato con un approccio Structural, componendo
+ opportunamente dei flip-flop d edge triggered e dei mux 2-1.
+ Quando 
+\shape italic
+scan_en
+\shape default
+ è basso, il segnale 
+\shape italic
+din 
+\shape default
+viene salvato nel registro composto dai vari flip flop, nel caso in cui
+ 
+\shape italic
+scan_en
+\shape default
+ sia attivo i vari flip flop vengono connessi modo tale che ad ogni colpo
+ di clock, il valore di 
+\shape italic
+scan_in
+\end_layout
+
+\begin_layout Standard
+venga salvato nel primo flip 
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 

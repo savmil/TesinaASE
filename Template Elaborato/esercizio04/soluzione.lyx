@@ -423,6 +423,23 @@ Codice
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+href{run:progetti/display_sette_segmenti/display_sette_segmenti.xise}{Display
+ sette segmenti ISE}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 

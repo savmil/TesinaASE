@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-01-14T17:56:47</DateModified>
+  <DateModified>2018-01-29T09:39:53</DateModified>
   <ModuleName>jk_latch</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/jk_latch_clocked/iseconfig/jk_latch.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/jk_latch_clocked</ImplementationReportsDirectory>
+  <SavedFilePath>/media/sf_ASE/Template Elaborato/progetti/latch_flip-flop/jk_latch_clocked/iseconfig/jk_latch.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/media/sf_ASE/Template Elaborato/progetti/latch_flip-flop/jk_latch_clocked/</ImplementationReportsDirectory>
   <DateInitialized>2018-01-14T17:56:46</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

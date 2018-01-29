@@ -127,7 +127,20 @@ morecomment=[s]{--}
 \begin_body
 
 \begin_layout Section
-Soluzione
+Soluzione 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{scan}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -269,50 +282,29 @@ Boundary_Scan_Chain
 \begin_layout Standard
 Questo componente è stato realizzato con un approccio Structural, componendo
  opportunamente dei flip-flop d edge triggered e dei mux 2-1.
- In particolare è stato utilizzato un secondo segnale di abilitazione 
-\shape italic
-en
-\shape default
- oltre a 
+ Quando 
 \shape italic
 scan_en
 \shape default
-: il primo, quando è basso, attiva la modalità registro e quindi uno dei
- due ingressi del mux 
+ è basso, il segnale 
 \shape italic
-dinapp
+din 
 \shape default
- viene caricato con l'ingresso utente 
-\shape italic
-din
-\shape default
- e mostrato poi all'uscita 
-\shape italic
-dout
-\shape default
- dei flip flop, mentre quando è alto abilita la modalità di shift register
- che, nel caso in cui scan_en è basso viene utilizzata per shiftare il valore
- din, che se non usassi questa doppia abilitazione perderei( per ottenere
- lo stesso risultato dovrei caricare la scan chain serialmente, questa piccola
- modifica ci servirà successivamente), e nel caso in cui scan_en è alto
- viene utilizzata per shiftare un valore messo in ingresso al segnale di
+viene salvato nel registro composto dai vari flip flop, nel caso in cui
  
+\shape italic
+scan_en
+\shape default
+ sia attivo i vari flip flop vengono connessi modo tale che ad ogni colpo
+ di clock, il valore di 
 \shape italic
 scan_in
 \shape default
-, che sarà visibile poi all'uscita scan_out dopo un certo numero di colpi
- di clock.
- Infine per concatenare l' uscita di ogni flip flop con l'ingresso del mux
- successivo, è stato utilizzato il segnale 
-\shape italic
-q
-\shape default
-.
- 
-\begin_inset Newline newline
-\end_inset
+venga salvato nel primo flip flop, il valore salvato nel primo venga propagato
+ nel secondo e così via.
+\end_layout
 
-
+\begin_layout Standard
 \begin_inset ERT
 status open
 

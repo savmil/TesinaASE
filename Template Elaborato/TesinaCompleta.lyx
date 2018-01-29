@@ -219,10 +219,10 @@ morecomment=[s]{--}
     \foreach \x in {#1}
         \path (\x) node {X};
 }
-
 \hypersetup{hidelinks}
 \usepackage[italian]{varioref}
 \usepackage{caption}
+\colorlet{BLACK}{black}
 \captionsetup{tableposition=top,figureposition=bottom,font=small,format=hang,labelfont={sf,bf}}
 \usepackage{hyperref}
 \end_preamble
@@ -387,7 +387,7 @@ status open
 
 \backslash
 author{Milo Saverio - Mat.
- M63/XXXX
+ M63/0773
 \end_layout
 
 \begin_layout Plain Layout
@@ -395,7 +395,7 @@ author{Milo Saverio - Mat.
 
 \backslash
 and Pommella Michele - Mat.
- M63/XXXX
+ M63/0790
 \end_layout
 
 \begin_layout Plain Layout
@@ -403,7 +403,7 @@ and Pommella Michele - Mat.
 
 \backslash
 and Trimaldi Davide - Mat.
- M63/XXXX
+ M63/0799
 \end_layout
 
 \begin_layout Plain Layout
@@ -528,7 +528,11 @@ esercizio01/Tesina.lyx ->esercizio02/Tesina.lyx e così via.
 \end_layout
 
 \begin_layout Chapter
-Minimizzazione reti combinatorie 
+
+\color black
+Minimizzazione
+\color inherit
+ reti combinatorie 
 \end_layout
 
 \begin_layout Standard

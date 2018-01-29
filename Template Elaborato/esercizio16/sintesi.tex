@@ -1,0 +1,17 @@
+\selectlanguage{italian}%
+
+\section{Sintesi su board FPGA}
+
+Questo dispositivo di GPIO è stato utilizzato per pilotare quattro
+led su una board Basys. 
+
+Facendo riferimento al codice presente al seguente link: \href{run:progetti/GPIO/gpio.vhd}{GPIO Code},
+la sintesi di questo componente è stata realizzata facendo corrispondere
+al segnale di input/output \textit{pads, }quattro pin di un 6-pin
+connectors; al segnale \textit{inputs} i quattro switch meno significativi,
+per determinare l'accensione o lo spegnimento dei led; il segnale
+\textit{enable} è stato collegato ai quattro switch più significativi,
+per abilitare la scrittura o la lettura dei valori di input ed infine
+il segnale \textit{outputs }è stato collegato ai primi quattro degli
+otto led della board.\selectlanguage{italian}%
+

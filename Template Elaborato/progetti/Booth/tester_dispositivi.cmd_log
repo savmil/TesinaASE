@@ -1,1 +1,0 @@
-xst -intstyle ise -ifn "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/tester_dispositivi.xst" -ofn "/media/sf_ASE/VHDL/Milo/moltiplicatore_B_buono/tester_dispositivi.syr" 

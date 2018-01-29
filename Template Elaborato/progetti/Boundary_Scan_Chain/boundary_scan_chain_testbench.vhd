@@ -44,7 +44,6 @@ ARCHITECTURE behavior OF boundary_scan_chain_testbench IS
          scan_in : IN  std_logic;
          clk : IN  std_logic;
          reset_n : IN  std_logic;
-         en : IN  std_logic;
          din : IN  std_logic_vector(3 downto 0);
          scan_en : IN  std_logic;
          scan_out : OUT  std_logic;
@@ -57,7 +56,6 @@ ARCHITECTURE behavior OF boundary_scan_chain_testbench IS
    signal scan_in : std_logic := '0';
    signal clk : std_logic := '0';
    signal reset_n : std_logic := '1';
-   signal en : std_logic := '0';
    signal din : std_logic_vector(3 downto 0) := (others => '0');
    signal scan_en : std_logic := '0';
 
@@ -75,7 +73,6 @@ BEGIN
           scan_in => scan_in,
           clk => clk,
           reset_n => reset_n,
-          en => en,
           din => din,
           scan_en => scan_en,
           scan_out => scan_out,
@@ -103,7 +100,7 @@ BEGIN
       -- insert stimulus here 
 		wait until clk'event and clk='1';
 		din <= "1010";
-		en <= '1';
+		wait until clk'event and clk='1';
 		scan_en <= '1';
 		scan_in <= '1';
 		wait until clk'event and clk='1';
@@ -111,7 +108,6 @@ BEGIN
 		wait until clk'event and clk='1';
 		wait until clk'event and clk='1';
 		wait until clk'event and clk='1';
-		en <= '0';
 		scan_en <= '0';
 		
 

@@ -85,7 +85,7 @@ COMPONENT contatore_modulo_2n
 			  en_p1 : out STD_LOGIC;
            stop : in  STD_LOGIC);
 	END COMPONENT;
-	component boundary_scan_chain 
+	component boundary_scan_chain is
 	generic(n : natural := 8);
     Port ( --state_vector : in  STD_LOGIC_VECTOR (n-1 downto 0);
 			  scan_in : in STD_LOGIC;

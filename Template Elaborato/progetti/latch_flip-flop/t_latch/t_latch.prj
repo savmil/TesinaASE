@@ -1,4 +1,0 @@
-vhdl work "nor_gate.vhd"
-vhdl work "rs_latch.vhd"
-vhdl work "and_gate.vhd"
-vhdl work "t_latch.vhd"

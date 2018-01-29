@@ -1,0 +1,26 @@
+\selectlanguage{italian}%
+
+\section{Sintesi su board FPGA}
+
+\label{Sintesi ripple carry}
+
+Per la sintesi si è utilizzato un tester simile a questo \ref{tester dispositivi seriali},
+con la differenza che non vi è un process per la gestione dello start,
+essendo il componente da testare combinatoriale, gli switch occorrono
+per l' inserimento degli operandi i led sette , sei e cinque indicano,
+nel caso in cui il led cinque o il led sei sia acceso che abbiamo
+selezionato un registro per caricare i dati, se sono accesi entrambi
+stiamo assegnando il valore uno al carry in ingresso, se si abilita
+il led sette utilizziamo l' addizionatore come sottrattore, mentre
+l' accensione del led zeo determina se è presente il carry in uscita
+o meno, quella del led uno che vi è una situazione d' errore dovuta
+al sottrattore, a dispetto del tester messo in riferimento, qui viene
+anche utilizzato il display per visualizzare il risultato, per decidere
+quante cifre del display vogliamo utilizzare basta abilitare gli ultimi
+quattro switch (a partire dal quinto all' ottavo questi mettono in
+funzione dalla prima alla quarta cifra) e premere il pulsante due,
+se abbiamo bisogno dei punti questi vengono abilitati dai primi quattro
+switch (stesso ragionamento fatto per le cifre) dopodichè bisogna
+sempre premere il pulsante due, per visionare la somma bisogna premere
+il pulsante uno.\selectlanguage{italian}%
+

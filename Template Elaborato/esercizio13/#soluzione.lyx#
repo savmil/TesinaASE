@@ -599,24 +599,63 @@ label{Booth}
 
 \begin_layout Standard
 Per realizzare il motiplicatore (che utilizza la codifica Booth-1), si è
- utilizzato una macchina a stati finiti con i seguenti stati: idle, stato
- in cui la macchina non opera; init, vi è l' inizializzazione dei registri
- e delle scan chain, il moltiplicatore va salvato in un registro, nella
- scan chain q il moltiplicando e a viene settata a 0; 
+ utilizzato una macchina a stati finiti con i seguenti stati: 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
+idle, stato in cui la macchina non opera; init, vi è l' inizializzazione
+ dei registri e delle scan chain, il moltiplicatore va salvato in un registro,
+ nella scan chain q il moltiplicando e a viene settata a 0; 
+\end_layout
+
+\begin_layout Itemize
 in getseq vengono letti gli ultimi due bit in uscita dalla scan chain q,
  in base ai valori ne si ricava la codifica di Booth e si decide se sommare,
- sottrarre prima di effettu o solo shiftare; in inits si abilita lo shifting
- che verrà effettuato al passaggio nel successivo stato shift.
+ sottrarre prima di effettuare lo shifting o solo effettuare quest' ultimo;
+\end_layout
+
+\begin_layout Itemize
+in inits si abilita lo shifting che verrà effettuato al passaggio nel successivo
+ stato shift.
 \end_layout
 
 \begin_layout Standard
-La scan chain da anche la possibilità di essere usata come semplice registro,
- difatti viene sfruttato nel caso in cui avvenga una somma o una sottrazione,
- perchè prima di fare lo shiting viene caricato il risultato di tale operazione
- in a e poi shiftato.
+Le scan chain utilizzata per questo progetto e per gli altri dispositivi
+ sequenziali non è quella mostrata nel paragrafo 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{scan}
+\end_layout
+
+\end_inset
+
+, in particolare è stato utilizzato un secondo segnale di abilitazione 
+\shape italic
+en
+\shape default
+ oltre a 
+\shape italic
+scan_en
+\shape default
+: il primo, permette di scegliere cosa shiftare se l' ingresso 
+\shape italic
+din 
+\shape default
+oppure un valore già precedentemente shiftato, difatti viene sfruttato nel
+ caso in cui avvenga una somma o una sottrazione, perchè prima di fare lo
+ shiting viene caricato il risultato di tale operazione in a e poi shiftato,
+ se avessi utilizzato la semplice scan chain ogni volta che 
+\shape italic
+scan_en 
+\shape default
+sarebbe stato attivo avrei shiftato il valore presente nel registro, ma
+ in realtà lo shift avviene un numero di volte pari al numero di bit del
+  .
  La terminazione si ha quando il contatore genera un segnale di hit, che
  avviene successivamente all' ultima operazione derivante dalla codifica
  di Booth.

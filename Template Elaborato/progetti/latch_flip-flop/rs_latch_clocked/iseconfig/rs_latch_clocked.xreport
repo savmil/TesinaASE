@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-01-07T13:44:00</DateModified>
+  <DateModified>2018-01-29T09:38:42</DateModified>
   <ModuleName>rs_latch_clocked</ModuleName>
   <SummaryTimeStamp>2018-01-06T21:28:07</SummaryTimeStamp>
-  <SavedFilePath>C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/rs_latch_clocked/iseconfig/rs_latch_clocked.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/rs_latch_clocked\</ImplementationReportsDirectory>
+  <SavedFilePath>/media/sf_ASE/Template Elaborato/progetti/latch_flip-flop/rs_latch_clocked/iseconfig/rs_latch_clocked.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/media/sf_ASE/Template Elaborato/progetti/latch_flip-flop/rs_latch_clocked/</ImplementationReportsDirectory>
   <DateInitialized>2018-01-06T21:02:44</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

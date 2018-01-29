@@ -28,66 +28,61 @@
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1516017529" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1516017529">
+    <transform xil_pn:end_ts="1517231904" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1517231904">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1516017529" xil_pn:in_ck="861579493265683667" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1516017529">
+    <transform xil_pn:end_ts="1517231904" xil_pn:in_ck="5452391818601678512" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1517231904">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputAdded"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="boundary_scan_chain.vhd"/>
       <outfile xil_pn:name="boundary_scan_chain_testbench.vhd"/>
+      <outfile xil_pn:name="latch_d_en.vhd"/>
+      <outfile xil_pn:name="mux2_1.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1516017529" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-6028836212325485505" xil_pn:start_ts="1516017529">
+    <transform xil_pn:end_ts="1517231904" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-6028836212325485505" xil_pn:start_ts="1517231904">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1516017529" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="3358865235503172609" xil_pn:start_ts="1516017529">
+    <transform xil_pn:end_ts="1517231904" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="3358865235503172609" xil_pn:start_ts="1517231904">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1516017529" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="1558679320302927242" xil_pn:start_ts="1516017529">
+    <transform xil_pn:end_ts="1517231904" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="1558679320302927242" xil_pn:start_ts="1517231904">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1516017529" xil_pn:in_ck="861579493265683667" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1516017529">
+    <transform xil_pn:end_ts="1517231904" xil_pn:in_ck="5452391818601678512" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1517231904">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="boundary_scan_chain.vhd"/>
       <outfile xil_pn:name="boundary_scan_chain_testbench.vhd"/>
+      <outfile xil_pn:name="latch_d_en.vhd"/>
+      <outfile xil_pn:name="mux2_1.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1516017532" xil_pn:in_ck="861579493265683667" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="4303735508800529568" xil_pn:start_ts="1516017529">
+    <transform xil_pn:end_ts="1517231907" xil_pn:in_ck="5452391818601678512" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="4303735508800529568" xil_pn:start_ts="1517231904">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="boundary_scan_chain_testbench_beh.prj"/>
       <outfile xil_pn:name="boundary_scan_chain_testbench_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1516017533" xil_pn:in_ck="2349750017253782072" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="6110374508233642669" xil_pn:start_ts="1516017532">
+    <transform xil_pn:end_ts="1517231907" xil_pn:in_ck="2349750017253782072" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="6110374508233642669" xil_pn:start_ts="1517231907">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="boundary_scan_chain_testbench_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
     </transform>
   </transforms>
 

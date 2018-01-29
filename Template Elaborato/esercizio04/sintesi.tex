@@ -1,0 +1,29 @@
+\selectlanguage{italian}%
+
+\section{Sintesi su board FPGA\label{board disp}}
+
+La soluzione adottata per interfacciare il design con la board fa
+uso di una semplice unità di controllo. Essa consente di ricevere
+i valori di input tramite gli interruttori della board, e caricarli
+nei registri relativi mediante i pulsanti. Il segnale di \emph{clock}
+è associato al clock della board, il \emph{reset} ed i tre bit di
+\emph{loader} sono associati ai quattro pulsanti, \emph{in\_byte }agli
+otto interruttori, \emph{anodes} ai quattro anodi e \emph{cathodes}
+agli otto catodi. Sono utilizzate tre batterie di otto flip flop D
+edge triggered per salvare l'input nel giusto registro a seconda del
+pulsante premuto. Esse, infatti, hanno per abilitazione ciascuna un
+differente bit di caricamento (\emph{button)}, e quindi un differente
+pulsante. Il reset negato ed i vari registri sono poi collegati al
+display. Per i punti, il registro è collegato al display in forma
+negata. Ciò perché sono presi in input i punti da abilitare, abilitazione
+che corrisponde a valle ad un abbassamento del catodo relativo. Infine,
+si noti che gli anodi della board sono associati al valore negato
+di quelli in uscita dal display: essi sono pilotati con una logica
+0 attiva, di questo se ne occupa il componente display on board che
+con un process controlla se è stato premuto il primo pulsante così
+da usare l' input in ingresso per abilitare solo determinate cifre
+o punti; con il secondo invece si carica il valore da voler visualizzare
+sul display . 
+
+\lstinputlisting[language=VHDL,caption={Architettura della Control Unit},firstline=32]{progetti/DCM/display_top_level.vhd}\selectlanguage{italian}%
+

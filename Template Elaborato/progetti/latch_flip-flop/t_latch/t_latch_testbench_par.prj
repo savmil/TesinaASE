@@ -1,2 +1,0 @@
-vhdl work "netgen/par/t_latch_timesim.vhd"
-vhdl work "t_latch_testbench.vhd"

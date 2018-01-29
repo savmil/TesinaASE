@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-01-10T00:40:12</DateModified>
+  <DateModified>2018-01-29T09:38:02</DateModified>
   <ModuleName>flipflop_rs_ms</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/flipflop_rs_ms/iseconfig/flipflop_rs_ms.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/DAVIDE/ASE/Esercizi/ISE/latch_flip-flop/flipflop_rs_ms</ImplementationReportsDirectory>
+  <SavedFilePath>/media/sf_ASE/Template Elaborato/progetti/latch_flip-flop/flipflop_rs_ms/iseconfig/flipflop_rs_ms.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/media/sf_ASE/Template Elaborato/progetti/latch_flip-flop/flipflop_rs_ms/</ImplementationReportsDirectory>
   <DateInitialized>2018-01-10T00:35:57</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

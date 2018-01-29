@@ -7,7 +7,6 @@ entity boundary_scan_chain is
     Port ( scan_in : in STD_LOGIC;
            clk : in  STD_LOGIC;
 			  reset_n : in STD_LOGIC;
-			  en: in STD_LOGIC;
            din : in  STD_LOGIC_VECTOR (n-1 downto 0);
            scan_en : in  STD_LOGIC;
            scan_out : out  STD_LOGIC;
@@ -43,8 +42,8 @@ begin
 		sc_in: if i=n-1 generate
 			inst_mux2_1: mux2_1 
 			Port map( SEL => scan_en,
-						 A => scan_in,
-						 B => dinapp(i),
+						 A => q(i-1),
+						 B => din(i),
 						 X => x(i)
 			);
 			
@@ -53,14 +52,14 @@ begin
 						 reset => reset_n,
 						 en => '1',
 						 d(0) => x(i),
-						 q(0) => q(i-1)			
+						 q(0) => q(i)			
 			);
 		end generate sc_in;
-		sc_ch: if i>0 and i <n-1 generate
+		sc_ch: if i>0 and i<n-1 generate
 			inst_mux2_1: mux2_1 
 				Port map( SEL => scan_en,
-							A => q(i),
-							B => dinapp(i),
+							A => q(i-1),
+							B => din(i),
 							X => x(i)
 				);
 			
@@ -69,33 +68,26 @@ begin
 						 reset => reset_n,
 						 en => '1',
 						 d(0) => x(i),
-						 q(0) => q(i-1)			
+						 q(0) => q(i)			
 			);
 			end generate sc_ch;
 		sc_out: if i=0 generate
 		inst_mux2_1: mux2_1 
 			Port map( SEL => scan_en,
-						 A => q(i),
-						 B => dinapp(i),
+						 A => scan_in,
+						 B => din(i),
 						 X => x(i)
 			);
-			
 		inst_edge_triggered: latch_d_en generic map(width =>1)
 			Port map( clk => clk,
 						 reset => reset_n,
 						 en => '1',
 						 d(0) => x(i),
-						 q(0) => s_out			
+						 q(0) => q(i)			
 			);
 		end generate sc_out;
 	end generate;
-	
-	dout<=	q(n-2 downto 0) & s_out;
-
-	with en select dinapp<=
-		din when '0',
-		q(n-2 downto 0) & s_out when others;
-	scan_out<=s_out;
-	
+	dout<=q;
+	scan_out<=q(n-1);
 end Structural;
 

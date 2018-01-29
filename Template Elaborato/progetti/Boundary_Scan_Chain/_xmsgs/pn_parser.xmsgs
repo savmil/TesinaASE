@@ -11,11 +11,5 @@
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/media/sf_ASE/Template Elaborato/progetti/Boundary_Scan_Chain/boundary_scan_chain.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/media/sf_ASE/Template Elaborato/progetti/Boundary_Scan_Chain/latch_d_en.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/media/sf_ASE/Template Elaborato/progetti/Boundary_Scan_Chain/mux2_1.vhd&quot; into library work</arg>
-</msg>
-
 </messages>
 

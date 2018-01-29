@@ -74,6 +74,19 @@
 
 \begin_layout Section
 Sintesi su board FPGA
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{board disp}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -113,27 +126,7 @@ La soluzione adottata per interfacciare il design con la board fa uso di
  una semplice unità di controllo.
  Essa consente di ricevere i valori di input tramite gli interruttori della
  board, e caricarli nei registri relativi mediante i pulsanti.
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-lstinputlisting[language=VHDL,caption={Entità della Control Unit},firstline=4,la
-stline=15]{esercizio04/codice/display_cu.vhd}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Il segnale di 
+ Il segnale di 
 \emph on
 clock
 \emph default
@@ -147,11 +140,11 @@ loader
 \emph default
  sono associati ai quattro pulsanti, 
 \emph on
-input_byte 
+in_byte 
 \emph default
 agli otto interruttori, 
 \emph on
-anodes_n
+anodes
 \emph default
  ai quattro anodi e 
 \emph on
@@ -160,9 +153,10 @@ cathodes
  agli otto catodi.
  Sono utilizzate tre batterie di otto flip flop D edge triggered per salvare
  l'input nel giusto registro a seconda del pulsante premuto.
- Esse, infatti, hanno per abilitazione ciascuna un differente bit di 
+ Esse, infatti, hanno per abilitazione ciascuna un differente bit di caricamento
+ (
 \emph on
-loader
+button)
 \emph default
 , e quindi un differente pulsante.
  Il reset negato ed i vari registri sono poi collegati al display.
@@ -170,7 +164,12 @@ loader
  Ciò perché sono presi in input i punti da abilitare, abilitazione che corrispon
 de a valle ad un abbassamento del catodo relativo.
  Infine, si noti che gli anodi della board sono associati al valore negato
- di quelli in uscita dal display: essi sono pilotati con una logica 0 attiva.
+ di quelli in uscita dal display: essi sono pilotati con una logica 0 attiva,
+ di questo se ne occupa il componente display on board che con un process
+ controlla se è stato premuto il primo pulsante così da usare l' input in
+ ingresso per abilitare solo determinate cifre o punti; con il secondo invece
+ si carica il valore da voler visualizzare sul display .
+ 
 \end_layout
 
 \begin_layout Standard
@@ -182,7 +181,7 @@ status open
 
 \backslash
 lstinputlisting[language=VHDL,caption={Architettura della Control Unit},firstlin
-e=43]{esercizio04/codice/display_cu.vhd}
+e=32]{progetti/DCM/display_top_level.vhd}
 \end_layout
 
 \end_inset

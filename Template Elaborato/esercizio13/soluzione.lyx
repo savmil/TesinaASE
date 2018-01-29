@@ -620,10 +620,43 @@ in inits si abilita lo shifting che verrà effettuato al passaggio nel successiv
 \end_layout
 
 \begin_layout Standard
-La scan chain dà anche la possibilità di essere usata come semplice registro,
- difatti viene sfruttato nel caso in cui avvenga una somma o una sottrazione,
- perchè prima di fare lo shiting viene caricato il risultato di tale operazione
- in a e poi shiftato.
+Le scan chain utilizzata per questo progetto e per gli altri dispositivi
+ sequenziali non è quella mostrata nel paragrafo 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{scan}
+\end_layout
+
+\end_inset
+
+, in particolare è stato aggiunto un secondo segnale di abilitazione 
+\shape italic
+en
+\shape default
+ oltre a 
+\shape italic
+scan_en
+\shape default
+: il primo, permette di scegliere cosa shiftare se l' ingresso 
+\shape italic
+din 
+\shape default
+oppure un valore già precedentemente shiftato, difatti viene sfruttato nel
+ caso in cui avvenga una somma o una sottrazione, perchè prima di fare lo
+ shiting viene caricato il risultato di tale operazione in a e poi shiftato,
+ se avessi utilizzato la semplice scan chain ogni volta che 
+\shape italic
+scan_en 
+\shape default
+sarebbe stato attivo avrei shiftato il valore presente nel registro, ma
+ in realtà lo shift avviene un numero di volte pari al numero di bit del
+ moltiplicando che ci da cui si trae la codifica di Booth e si vuole anche
+ decidere se shiftare il valore della somma corrente o di quella precedente.
  La terminazione si ha quando il contatore genera un segnale di hit, che
  avviene successivamente all' ultima operazione derivante dalla codifica
  di Booth.

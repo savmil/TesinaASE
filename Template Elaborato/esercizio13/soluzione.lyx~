@@ -599,19 +599,22 @@ label{Booth}
 
 \begin_layout Standard
 Per realizzare il motiplicatore (che utilizza la codifica Booth-1), si è
- utilizzato una macchina a stati finiti con i seguenti stati: idle, stato
- in cui la macchina non opera; init, vi è l' inizializzazione dei registri
- e delle scan chain, il moltiplicatore va salvato in un registro, nella
- scan chain q il moltiplicando e a viene settata a 0; 
+ utilizzato una macchina a stati finiti con i seguenti stati: 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
+idle, stato in cui la macchina non opera; init, vi è l' inizializzazione
+ dei registri e delle scan chain, il moltiplicatore va salvato in un registro,
+ nella scan chain q il moltiplicando e a viene settata a 0; 
+\end_layout
+
+\begin_layout Itemize
 in getseq vengono letti gli ultimi due bit in uscita dalla scan chain q,
  in base ai valori ne si ricava la codifica di Booth e si decide se sommare,
  sottrarre prima di effettuare lo shifting o solo effettuare quest' ultimo;
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 in inits si abilita lo shifting che verrà effettuato al passaggio nel successivo
  stato shift.
 \end_layout

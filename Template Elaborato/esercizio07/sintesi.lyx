@@ -74,6 +74,19 @@
 
 \begin_layout Section
 Sintesi su board FPGA
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{tester dispositivi seriali}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -112,23 +125,7 @@ dispositivi.vhd}
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-label{tester dispositivi seriali}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Il seguente codice in VHDL descrive un tester utilizzato, con piccole differenze
+Il codice mostrato descrive un tester utilizzato, con piccole differenze
  dove occorre, utilizzato per tutti i dispositivi non solo combinatoriali
  presenti in tale elaborato, difatti al suo interno è presente un process
  che genera un segnale di start attivo fino a quando il contatore al di

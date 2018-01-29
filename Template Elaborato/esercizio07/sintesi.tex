@@ -1,0 +1,38 @@
+\selectlanguage{italian}%
+
+\section{Sintesi su board FPGA\label{tester dispositivi seriali}}
+
+\lstinputlisting [language=VHDL,caption={Definizione del componente che gestisce il caricamento dei dati},firstline=32] {/progetti/riconoscitore_stringa/tester_dispositivi.vhd}
+
+Il seguente codice in VHDL descrive un tester utilizzato, con piccole
+differenze dove occorre, utilizzato per tutti i dispositivi non solo
+combinatoriali presenti in tale elaborato, difatti al suo interno
+è presente un process che genera un segnale di start attivo fino a
+quando il contatore al di sopra di esso non termina, questo perchè
+tale segnale non deve essere attivo continuamente altrimenti i dispositivi
+ricomincerebbero a computare non appena tornerebbero nello stato di
+riposo, ma deve essere attivo per un tempo tale affinchè venga rilevato
+dal dispositivo che deve essere avviato.
+
+Vengono utilizzati gli switch per inserire sia la stringa da riconoscere,
+oltre a quella con cui si deve effettuare il confronto, tali valori
+sono sorretti da registri;
+
+il led zero si attiva se il riconoscimento è andato a buon fine, il
+led uno nel caso contrario;
+
+i led sei e sette occorrono a determinare: quali registri per contenere
+i dati si sono selezionati (se acceso il led sei il dato da voler
+confrontare, se acceso il sette la stringa da riconoscere), se si
+è avviata la computazione (entrambi i led accesi) o nel caso in cui
+sono spenti entrambi venga effettuato il reset del dispositivo per
+effettuare una successiva computazione;
+
+il reset degli altri componenti invece è abilitato della pressione
+del pulsante tre, invece il pulsante zero permette la selezione dei
+registri e l' avvio della macchina a stati finiti;
+
+per caricare i dati gli switch devono essere impostati prima che il
+led relativo al registro venga acceso, vale anche per gli altri tester
+utilizzati.\selectlanguage{italian}%
+

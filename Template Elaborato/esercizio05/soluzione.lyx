@@ -215,7 +215,6 @@ Codice
 \end_layout
 
 \begin_layout Standard
-Fare riferimento al codice del display 
 \begin_inset ERT
 status open
 
@@ -223,12 +222,12 @@ status open
 
 
 \backslash
-ref{fig:display}
+href{run:progetti/DCM/DCM.xise}{DCM ISE}
 \end_layout
 
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Standard
