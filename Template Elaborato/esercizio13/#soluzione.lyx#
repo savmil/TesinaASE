@@ -634,7 +634,7 @@ ref{scan}
 
 \end_inset
 
-, in particolare è stato utilizzato un secondo segnale di abilitazione 
+, in particolare è stato aggiunto un secondo segnale di abilitazione 
 \shape italic
 en
 \shape default
@@ -655,7 +655,10 @@ scan_en
 \shape default
 sarebbe stato attivo avrei shiftato il valore presente nel registro, ma
  in realtà lo shift avviene un numero di volte pari al numero di bit del
-  .
+ moltiplicando che ci da cui si trae la codifica di Booth e si vuole anche
+ decidere se shiftare il valore della somma corrente o di quella precedente,
+ perché nel caso avessi solo lo shift allora il valore della somma non dovrebbe
+ andare nella scan chain e dovrei continua a shiftare il valore precedente.
  La terminazione si ha quando il contatore genera un segnale di hit, che
  avviene successivamente all' ultima operazione derivante dalla codifica
  di Booth.

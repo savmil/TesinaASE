@@ -653,10 +653,10 @@ oppure un valore già precedentemente shiftato, difatti viene sfruttato nel
 \shape italic
 scan_en 
 \shape default
-sarebbe stato attivo avrei shiftato il valore presente nel registro, ma
- in realtà lo shift avviene un numero di volte pari al numero di bit del
- moltiplicando che ci da cui si trae la codifica di Booth e si vuole anche
- decidere se shiftare il valore della somma corrente o di quella precedente.
+sarebbe stato attivo avrei shiftato il valore presente nel registro, oppure
+ avrei shiftato sempre il valore della somma messa in ingresso nella semplice
+ scan chain, invece in alcuni casi non voglio shiftare il risultato dell'
+ addizione.
  La terminazione si ha quando il contatore genera un segnale di hit, che
  avviene successivamente all' ultima operazione derivante dalla codifica
  di Booth.
