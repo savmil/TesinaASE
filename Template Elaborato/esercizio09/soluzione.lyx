@@ -194,11 +194,12 @@ end{figure}
 
 \begin_layout Standard
 L' addizionatore è costituito, da una rete che permette di calcolare i riporti
- generati e propagati, questi poi vengono propagati ad una rete Carry Look
- A Head che contemporaneamente combina i riporti ricevuti, altrimenti ci
- si riconducerebbe al caso Ripple Carry, dopodiché il riporto generato dalla
- rete Carry Look A Head viene messo in ingresso ad un XOR insieme al ritardo
- propagato, calcolato precedentemente.
+ generati e propagati (vengono utilizzati una serie di half adder per ogni
+ coppia di bit), questi poi vengono propagati ad una rete Carry Look A Head
+ che contemporaneamente combina i riporti ricevuti, altrimenti ci si riconducere
+bbe al caso Ripple Carry, dopodiché il riporto generato dalla rete Carry
+ Look A Head viene messo in ingresso ad un XOR insieme al ritardo propagato,
+ calcolato precedentemente.
 \end_layout
 
 \begin_layout Standard
@@ -469,10 +470,9 @@ ref{Dati ripple carry}
 
 \end_inset
 
-, possiamo osservare che trascurando il caso 8 bit,  l' area occupata è
- pressoché la stessa, ma i tempi di calcolo sono sensibilmente minore, aiutando
- ad affermare con certezza che sulla nostra FPGA tale soluzione risulta
- migliore.
+, possiamo osservare che trascurando il caso 8 bit, l' area occupata è pressoché
+ la stessa, ma i tempi di calcolo sono sensibilmente minore, aiutando ad
+ affermare con certezza che sulla nostra FPGA tale soluzione risulta migliore.
 \end_layout
 
 \begin_layout Subsection

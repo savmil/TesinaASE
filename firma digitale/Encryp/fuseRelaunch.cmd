@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "D:/Encryp/tb_RSA_isim_map.exe" -prj "D:/Encryp/tb_RSA_map.prj" "work.tb_RSA" 

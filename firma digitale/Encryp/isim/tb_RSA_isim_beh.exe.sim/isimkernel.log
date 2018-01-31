@@ -1,0 +1,28 @@
+Command line:
+   tb_RSA_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  53195
+
+Fri Dec 15 14:26:40 2017
+
+
+ Elaboration Time: 0.109375 sec
+
+ Current Memory Usage: 846.344 Meg
+
+ Total Signals          : 864
+ Total Nets             : 1163
+ Total Signal Drivers   : 288
+ Total Blocks           : 239
+ Total Primitive Blocks : 120
+ Total Processes        : 265
+ Total Traceable Variables  : 172
+ Total Scalar Nets and Variables : 1915
+
+ Total Simulation Time: 1.42188 sec
+
+ Current Memory Usage: 689.058 Meg
+
+Fri Dec 15 14:29:57 2017
+

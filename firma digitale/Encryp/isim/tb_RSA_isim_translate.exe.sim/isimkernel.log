@@ -1,0 +1,28 @@
+Command line:
+   tb_RSA_isim_translate.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  53231
+
+Fri Dec 15 14:30:30 2017
+
+
+ Elaboration Time: 0.453125 sec
+
+ Current Memory Usage: 927.015 Meg
+
+ Total Signals          : 20581
+ Total Nets             : 13101
+ Total Signal Drivers   : 13070
+ Total Blocks           : 4070
+ Total Primitive Blocks : 2218
+ Total Processes        : 13067
+ Total Traceable Variables  : 29037
+ Total Scalar Nets and Variables : 92599
+
+ Total Simulation Time: 126.422 sec
+
+ Current Memory Usage: 769.729 Meg
+
+Fri Dec 15 14:32:54 2017
+

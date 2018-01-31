@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Encryp\HashFunction.ncd
+OUTFILE=D:\Encryp\HashFunction.bit
+FAMILY=Spartan3E
+PART=xc3s250e-4vq100
+WORKINGDIR=D:\Encryp
+LICENSE=WebPack
+USER_INFO=_

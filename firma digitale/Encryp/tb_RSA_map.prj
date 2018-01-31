@@ -1,0 +1,2 @@
+vhdl work "netgen/map/RSA_map.vhd"
+vhdl work "tb_RSA.vhd"

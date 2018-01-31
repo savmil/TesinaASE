@@ -152,15 +152,55 @@ Schematici
 Il sommattore essenzialmente è costituito da un numero di carry select cell,
  di dimensione identiche (è possibile scegliere la dimensione della cella)
  che calcolano le somma parziali e propagano i riporti alle celle successive,
- il numero di celle da istanziare è data dalla sua dimensione e dal numero
- di bit su cui viene effettuata la somma, una cella è costituita da due
- Ripple Carry Adder uno avente carry in ingresso pari ad uno ed un altro
- pari a zero, di seguito si determinano valori caratteristici del sommatore
- considerando una carry select cell di dimensione pari a quattro bit.
+ il numero di celle da istanziare è data dalla dimensione della cella e
+ dal numero di bit su cui viene effettuata la somma, una cella è costituita
+ da due Ripple Carry Adder uno avente carry in ingresso pari ad uno ed un
+ altro pari a zero, di seguito si determinano valori caratteristici del
+ sommatore considerando una carry select cell di dimensione pari a quattro
+ bit.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[H]
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
+
+	
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[scale=0.6]{esercizio11/images/carry_select.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+caption{Carry Select Adder}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
 \begin_inset Float table
+placement H
 wide false
 sideways false
 status open
@@ -421,13 +461,33 @@ ref{Dati ripple carry}
  che sono pressoché gli stessi, l' uguaglianza del tempo di calcolo nell'
  ultimo caso con quello del Ripple Carry Adder è dovuto che il carry select
  avendo una cella di dimensione quattro all' aumentare del numero di operandi,
- aumentano il numero di celle istanziate il tempo di attesa dell l' ultima
+ aumentano il numero di celle istanziate, il tempo di attesa dell' ultima
  cella diventa sempre maggiore e tende ad essere comparabile con quello
- di un Ripple Carry Adder.
+ di un Ripple Carry Adder, difatti anche se i vari sommattori stanno funzionando
+ in parallelo, i vari selettori che decidono quali risultati dare in uscita,
+ devono attendere il carry proveniente dal blocco precedente ed all' aumentare
+ dal numero di blocchi, il beneficio di a
 \end_layout
 
 \begin_layout Subsection
 Codice
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+href{run:progetti/carry_select_adder/carry_select_adder.xise}{Carry Select
+ Adder ISE}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -447,10 +507,6 @@ Segue un esempio di inclusione di codice
 \end_inset
 
 
-\end_layout
-
-\begin_layout Subsubsection
-Bit String Comparator
 \end_layout
 
 \end_body

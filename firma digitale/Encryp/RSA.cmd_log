@@ -1,0 +1,62 @@
+xst -intstyle ise -ifn "D:/Encryp/RSA.xst" -ofn "D:/Encryp/RSA.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s250e-vq100-4 RSA.ngc RSA.ngd  
+map -intstyle ise -p xc3s250e-vq100-4 -cm area -ir off -pr off -c 100 -o RSA_map.ncd RSA.ngd RSA.pcf 
+xst -intstyle ise -ifn "D:/Encryp/RSA.xst" -ofn "D:/Encryp/RSA.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s250e-vq100-4 RSA.ngc RSA.ngd  
+map -intstyle ise -p xc3s250e-vq100-4 -cm area -ir off -pr off -c 100 -o RSA_map.ncd RSA.ngd RSA.pcf 
+xst -intstyle ise -ifn "D:/Encryp/RSA.xst" -ofn "D:/Encryp/RSA.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys2_1200General.ucf -p xc3s1200e-ft256-4 RSA.ngc RSA.ngd  
+xst -intstyle ise -ifn "D:/Encryp/RSA.xst" -ofn "D:/Encryp/RSA.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys2_1200General.ucf -p xc3s1200e-ft256-4 RSA.ngc RSA.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys2_1200General.ucf -p xc3s1200e-ft256-4 RSA.ngc RSA.ngd  
+map -intstyle ise -p xc3s1200e-ft256-4 -cm area -ir off -pr off -c 100 -o RSA_map.ncd RSA.ngd RSA.pcf 
+xst -intstyle ise -ifn "D:/Encryp/RSA.xst" -ofn "D:/Encryp/RSA.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys2_1200General.ucf -p xc3s1200e-fg320-4 RSA.ngc RSA.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o RSA_map.ncd RSA.ngd RSA.pcf 
+par -w -intstyle ise -ol high -t 1 RSA_map.ncd RSA.ncd RSA.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RSA.twx RSA.ncd -o RSA.twr RSA.pcf -ucf Nexys2_1200General.ucf 
+bitgen -intstyle ise -f RSA.ut RSA.ncd 
+netgen -intstyle ise -rpw 100 -tpw 0 -ar Structure -tm RSA -w -dir netgen/translate -ofmt vhdl -sim RSA.ngd RSA_translate.vhd 
+netgen -intstyle ise -s 4  -pcf RSA.pcf -rpw 100 -tpw 0 -ar Structure -tm RSA -w -dir netgen/map -ofmt vhdl -sim RSA_map.ncd RSA_map.vhd 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RSA_preroute.twx RSA_map.ncd -o RSA_preroute.twr RSA.pcf -ucf Nexys2_1200General.ucf 
+xst -intstyle ise -ifn "D:/Encryp/RSA.xst" -ofn "D:/Encryp/RSA.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys2_1200General.ucf -p xc3s1200e-fg320-4 RSA.ngc RSA.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o RSA_map.ncd RSA.ngd RSA.pcf 
+netgen -intstyle ise -s 4  -pcf RSA.pcf -rpw 100 -tpw 0 -ar Structure -tm RSA -w -dir netgen/map -ofmt vhdl -sim RSA_map.ncd RSA_map.vhd 
+xst -intstyle ise -ifn "D:/Encryp/RSA.xst" -ofn "D:/Encryp/RSA.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys2_1200General.ucf -p xc3s1200e-fg320-4 RSA.ngc RSA.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o RSA_map.ncd RSA.ngd RSA.pcf 
+par -w -intstyle ise -ol high -t 1 RSA_map.ncd RSA.ncd RSA.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RSA.twx RSA.ncd -o RSA.twr RSA.pcf -ucf Nexys2_1200General.ucf 
+xst -intstyle ise -ifn "D:/Encryp/RSA.xst" -ofn "D:/Encryp/RSA.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys2_1200General.ucf -p xc3s1200e-fg320-4 RSA.ngc RSA.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o RSA_map.ncd RSA.ngd RSA.pcf 
+netgen -intstyle ise -s 4  -pcf RSA.pcf -rpw 100 -tpw 0 -ar Structure -tm RSA -w -dir netgen/map -ofmt vhdl -sim RSA_map.ncd RSA_map.vhd 
+xst -intstyle ise -ifn "D:/Encryp/RSA.xst" -ofn "D:/Encryp/RSA.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s250e-tq144-4 RSA.ngc RSA.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o RSA_map.ncd RSA.ngd RSA.pcf 
+xst -intstyle ise -ifn "D:/Encryp/RSA.xst" -ofn "D:/Encryp/RSA.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc csa.ucf -p xc3s250e-tq144-4 RSA.ngc RSA.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc csa.ucf -p xc3s250e-tq144-4 RSA.ngc RSA.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o RSA_map.ncd RSA.ngd RSA.pcf 
+par -w -intstyle ise -ol high -t 1 RSA_map.ncd RSA.ncd RSA.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RSA.twx RSA.ncd -o RSA.twr RSA.pcf -ucf csa.ucf 
+bitgen -intstyle ise -f RSA.ut RSA.ncd 
+xst -intstyle ise -ifn "D:/Encryp/RSA.xst" -ofn "D:/Encryp/RSA.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc csa.ucf -p xc3s250e-tq144-4 RSA.ngc RSA.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o RSA_map.ncd RSA.ngd RSA.pcf 
+par -w -intstyle ise -ol high -t 1 RSA_map.ncd RSA.ncd RSA.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RSA.twx RSA.ncd -o RSA.twr RSA.pcf -ucf csa.ucf 
+bitgen -intstyle ise -f RSA.ut RSA.ncd 
+xst -intstyle ise -ifn "/media/sf_ASE/firma digitale/Encryp/RSA.xst" -ofn "/media/sf_ASE/firma digitale/Encryp/RSA.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s250e-tq144-4 "RSA.ngc" RSA.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o RSA_map.ncd RSA.ngd RSA.pcf 
+xst -intstyle ise -ifn "/media/sf_ASE/firma digitale/Encryp/RSA.xst" -ofn "/media/sf_ASE/firma digitale/Encryp/RSA.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-tq144-5 "RSA.ngc" RSA.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o RSA_map.ncd RSA.ngd RSA.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-tq144-5 "RSA.ngc" RSA.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o RSA_map.ncd RSA.ngd RSA.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_100_250General.ucf -p xc3s100e-tq144-5 "RSA.ngc" RSA.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o RSA_map.ncd RSA.ngd RSA.pcf 
+par -w -intstyle ise -ol high -t 1 RSA_map.ncd RSA.ncd RSA.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml RSA.twx RSA.ncd -o RSA.twr RSA.pcf -ucf Basys2_100_250General.ucf 

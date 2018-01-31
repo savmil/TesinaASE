@@ -1,0 +1,1007 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+Reading design: RSA.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "RSA.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "RSA"
+Output Format                      : NGC
+Target Device                      : xc3s100e-5-tq144
+
+---- Source Options
+Top Module Name                    : RSA
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/media/sf_ASE/firma digitale/Encryp/Mux_4_1.vhd" in Library work.
+Architecture dataflow of Entity mux_4_1 is up to date.
+Compiling vhdl file "/media/sf_ASE/firma digitale/Encryp/Mux_4n_1n_struct.vhd" in Library work.
+Architecture structural of Entity mux_4n_1n_struct is up to date.
+Compiling vhdl file "/media/sf_ASE/firma digitale/Encryp/FF_D_RAsync.vhd" in Library work.
+Architecture behavioral of Entity ff_d_rasync is up to date.
+Compiling vhdl file "/media/sf_ASE/firma digitale/Encryp/Blocco_PG.vhd" in Library work.
+Architecture dataflow of Entity blocco_pg is up to date.
+Compiling vhdl file "/media/sf_ASE/firma digitale/Encryp/Blocco_CLA_8bit.vhd" in Library work.
+Architecture dataflow of Entity blocco_cla_8bit is up to date.
+Compiling vhdl file "/media/sf_ASE/firma digitale/Encryp/RAsync_H_Count_UpCounter.vhd" in Library work.
+Architecture behavioral of Entity rasync_h_count_upcounter is up to date.
+Compiling vhdl file "/media/sf_ASE/firma digitale/Encryp/RAsync_2UpNCount_UpCounter.vhd" in Library work.
+Architecture behavioral of Entity rasync_2upncount_upcounter is up to date.
+Compiling vhdl file "/media/sf_ASE/firma digitale/Encryp/Decoder_2_4.vhd" in Library work.
+Architecture dataflow of Entity decoder_2_4 is up to date.
+Compiling vhdl file "/media/sf_ASE/firma digitale/Encryp/Mux_Seven_segm.vhd" in Library work.
+Architecture structural of Entity mux_seven_segm is up to date.
+Compiling vhdl file "/media/sf_ASE/firma digitale/Encryp/Decoder_Seven_segm.vhd" in Library work.
+Architecture dataflow of Entity decoder_seven_segm is up to date.
+Compiling vhdl file "/media/sf_ASE/firma digitale/Encryp/Generic_RAsync_Register.vhd" in Library work.
+Architecture structural of Entity generic_rasync_register is up to date.
+Compiling vhdl file "/media/sf_ASE/firma digitale/Encryp/CLA_8bit_Adder.vhd" in Library work.
+Architecture structural of Entity cla_8bit_adder is up to date.
+Compiling vhdl file "/media/sf_ASE/firma digitale/Encryp/Debouncer_xilinx.vhd" in Library work.
+Architecture behavioral of Entity debouncer_xilinx is up to date.
+Compiling vhdl file "/media/sf_ASE/firma digitale/Encryp/FSM_RSA.vhd" in Library work.
+Architecture behavioral of Entity fsm_rsa is up to date.
+Compiling vhdl file "/media/sf_ASE/firma digitale/Encryp/HashFunction.vhd" in Library work.
+Architecture structural of Entity hashfunction is up to date.
+Compiling vhdl file "/media/sf_ASE/firma digitale/Encryp/Mux_2n_1n.vhd" in Library work.
+Architecture dataflow of Entity mux_2n_1n is up to date.
+Compiling vhdl file "/media/sf_ASE/firma digitale/Encryp/exponentiator.vhd" in Library work.
+Architecture rtl of Entity reduction_step is up to date.
+Architecture rtl of Entity sequential_mod_mult is up to date.
+Architecture circuit of Entity exponentiator is up to date.
+Compiling vhdl file "/media/sf_ASE/firma digitale/Encryp/SignReg.vhd" in Library work.
+Architecture structural of Entity signreg is up to date.
+Compiling vhdl file "/media/sf_ASE/firma digitale/Encryp/Comparator32.vhd" in Library work.
+Architecture behavioral of Entity comparator32 is up to date.
+Compiling vhdl file "/media/sf_ASE/firma digitale/Encryp/seven_seg_interface_adapter.vhd" in Library work.
+Architecture structural of Entity seven_seg_interface_adapter is up to date.
+Compiling vhdl file "/media/sf_ASE/firma digitale/Encryp/RSA.vhd" in Library work.
+Architecture structural of Entity rsa is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <RSA> in library <work> (architecture <structural>) with generics.
+	width = 32
+	width_reg = 8
+
+Analyzing hierarchy for entity <Debouncer_xilinx> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FSM_RSA> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Generic_RAsync_Register> in library <work> (architecture <Structural>) with generics.
+	width = 32
+
+Analyzing hierarchy for entity <HashFunction> in library <work> (architecture <structural>) with generics.
+	width = 32
+	width_reg = 8
+
+Analyzing hierarchy for entity <Mux_2n_1n> in library <work> (architecture <dataflow>) with generics.
+	width = 32
+
+Analyzing hierarchy for entity <exponentiator> in library <work> (architecture <circuit>) with generics.
+	n = 32
+
+Analyzing hierarchy for entity <SignReg> in library <work> (architecture <structural>) with generics.
+	width = 32
+	width_reg = 8
+
+Analyzing hierarchy for entity <Comparator32> in library <work> (architecture <behavioral>) with generics.
+	width = 32
+
+Analyzing hierarchy for entity <Mux_2n_1n> in library <work> (architecture <dataflow>) with generics.
+	width = 16
+
+Analyzing hierarchy for entity <seven_seg_interface_adapter> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <FF_D_RAsync> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <CLA_8bit_Adder> in library <work> (architecture <Structural>).
+
+Analyzing hierarchy for entity <Generic_RAsync_Register> in library <work> (architecture <Structural>) with generics.
+	width = 8
+
+Analyzing hierarchy for entity <sequential_mod_mult> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <RAsync_H_Count_UpCounter> in library <work> (architecture <behavioral>) with generics.
+	MAX_COUNT = 4
+	width = 3
+
+Analyzing hierarchy for entity <Generic_RAsync_Register> in library <work> (architecture <structural>) with generics.
+	width = 8
+
+Analyzing hierarchy for entity <RAsync_H_Count_UpCounter> in library <work> (architecture <behavioral>) with generics.
+	MAX_COUNT = 125000
+	width = 0
+
+Analyzing hierarchy for entity <RAsync_2UpNCount_UpCounter> in library <work> (architecture <behavioral>) with generics.
+	width = 2
+
+Analyzing hierarchy for entity <Decoder_2_4> in library <work> (architecture <dataflow>).
+
+Analyzing hierarchy for entity <Mux_Seven_segm> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <Decoder_Seven_segm> in library <work> (architecture <dataflow>).
+
+Analyzing hierarchy for entity <Blocco_PG> in library <work> (architecture <dataflow>) with generics.
+	width = 8
+
+Analyzing hierarchy for entity <Blocco_CLA_8bit> in library <work> (architecture <dataflow>).
+
+Analyzing hierarchy for entity <FF_D_RAsync> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <reduction_step> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <FF_D_RAsync> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FF_D_RAsync> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FF_D_RAsync> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FF_D_RAsync> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FF_D_RAsync> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FF_D_RAsync> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FF_D_RAsync> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FF_D_RAsync> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Mux_4n_1n_struct> in library <work> (architecture <structural>) with generics.
+	width = 4
+
+Analyzing hierarchy for entity <Mux_4_1> in library <work> (architecture <dataflow>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <RSA> in library <work> (Architecture <structural>).
+	width = 32
+	width_reg = 8
+Entity <RSA> analyzed. Unit <RSA> generated.
+
+Analyzing Entity <Debouncer_xilinx> in library <work> (Architecture <behavioral>).
+Entity <Debouncer_xilinx> analyzed. Unit <Debouncer_xilinx> generated.
+
+Analyzing Entity <FSM_RSA> in library <work> (Architecture <behavioral>).
+INFO:Xst:2679 - Register <Mux_disp> in unit <FSM_RSA> has a constant value of 0 during circuit operation. The register is replaced by logic.
+Entity <FSM_RSA> analyzed. Unit <FSM_RSA> generated.
+
+Analyzing generic Entity <Generic_RAsync_Register.1> in library <work> (Architecture <Structural>).
+	width = 32
+Entity <Generic_RAsync_Register.1> analyzed. Unit <Generic_RAsync_Register.1> generated.
+
+Analyzing Entity <FF_D_RAsync> in library <work> (Architecture <behavioral>).
+Entity <FF_D_RAsync> analyzed. Unit <FF_D_RAsync> generated.
+
+Analyzing generic Entity <HashFunction> in library <work> (Architecture <structural>).
+	width = 32
+	width_reg = 8
+WARNING:Xst:753 - "/media/sf_ASE/firma digitale/Encryp/HashFunction.vhd" line 55: Unconnected output port 'cout' of component 'CLA_8bit_Adder'.
+WARNING:Xst:753 - "/media/sf_ASE/firma digitale/Encryp/HashFunction.vhd" line 55: Unconnected output port 'ovf' of component 'CLA_8bit_Adder'.
+Entity <HashFunction> analyzed. Unit <HashFunction> generated.
+
+Analyzing Entity <CLA_8bit_Adder> in library <work> (Architecture <Structural>).
+Entity <CLA_8bit_Adder> analyzed. Unit <CLA_8bit_Adder> generated.
+
+Analyzing generic Entity <Blocco_PG> in library <work> (Architecture <dataflow>).
+	width = 8
+Entity <Blocco_PG> analyzed. Unit <Blocco_PG> generated.
+
+Analyzing Entity <Blocco_CLA_8bit> in library <work> (Architecture <dataflow>).
+Entity <Blocco_CLA_8bit> analyzed. Unit <Blocco_CLA_8bit> generated.
+
+Analyzing generic Entity <Generic_RAsync_Register.2> in library <work> (Architecture <Structural>).
+	width = 8
+Entity <Generic_RAsync_Register.2> analyzed. Unit <Generic_RAsync_Register.2> generated.
+
+Analyzing generic Entity <Mux_2n_1n.1> in library <work> (Architecture <dataflow>).
+	width = 32
+Entity <Mux_2n_1n.1> analyzed. Unit <Mux_2n_1n.1> generated.
+
+Analyzing generic Entity <exponentiator> in library <work> (Architecture <circuit>).
+	n = 32
+Entity <exponentiator> analyzed. Unit <exponentiator> generated.
+
+Analyzing Entity <sequential_mod_mult> in library <work> (Architecture <rtl>).
+Entity <sequential_mod_mult> analyzed. Unit <sequential_mod_mult> generated.
+
+Analyzing Entity <reduction_step> in library <work> (Architecture <rtl>).
+Entity <reduction_step> analyzed. Unit <reduction_step> generated.
+
+Analyzing generic Entity <SignReg> in library <work> (Architecture <structural>).
+	width = 32
+	width_reg = 8
+WARNING:Xst:753 - "/media/sf_ASE/firma digitale/Encryp/SignReg.vhd" line 92: Unconnected output port 'count' of component 'RAsync_H_Count_UpCounter'.
+Entity <SignReg> analyzed. Unit <SignReg> generated.
+
+Analyzing generic Entity <RAsync_H_Count_UpCounter.1> in library <work> (Architecture <behavioral>).
+	MAX_COUNT = 4
+	width = 3
+Entity <RAsync_H_Count_UpCounter.1> analyzed. Unit <RAsync_H_Count_UpCounter.1> generated.
+
+Analyzing generic Entity <Generic_RAsync_Register.3> in library <work> (Architecture <structural>).
+	width = 8
+Entity <Generic_RAsync_Register.3> analyzed. Unit <Generic_RAsync_Register.3> generated.
+
+Analyzing generic Entity <Comparator32> in library <work> (Architecture <behavioral>).
+	width = 32
+Entity <Comparator32> analyzed. Unit <Comparator32> generated.
+
+Analyzing generic Entity <Mux_2n_1n.2> in library <work> (Architecture <dataflow>).
+	width = 16
+Entity <Mux_2n_1n.2> analyzed. Unit <Mux_2n_1n.2> generated.
+
+Analyzing Entity <seven_seg_interface_adapter> in library <work> (Architecture <structural>).
+WARNING:Xst:1994 - "/media/sf_ASE/firma digitale/Encryp/seven_seg_interface_adapter.vhd" line 38: Null range in type of signal <count>.
+Entity <seven_seg_interface_adapter> analyzed. Unit <seven_seg_interface_adapter> generated.
+
+Analyzing generic Entity <RAsync_H_Count_UpCounter.2> in library <work> (Architecture <behavioral>).
+	MAX_COUNT = 125000
+	width = 0
+WARNING:Xst:1994 - "/media/sf_ASE/firma digitale/Encryp/RAsync_H_Count_UpCounter.vhd" line 38: Null range in type of signal <count>.
+WARNING:Xst:1995 - "/media/sf_ASE/firma digitale/Encryp/RAsync_H_Count_UpCounter.vhd" line 72: Use of null array on signal <count> is not supported.
+Entity <RAsync_H_Count_UpCounter.2> analyzed. Unit <RAsync_H_Count_UpCounter.2> generated.
+
+Analyzing generic Entity <RAsync_2UpNCount_UpCounter> in library <work> (Architecture <behavioral>).
+	width = 2
+Entity <RAsync_2UpNCount_UpCounter> analyzed. Unit <RAsync_2UpNCount_UpCounter> generated.
+
+Analyzing Entity <Decoder_2_4> in library <work> (Architecture <dataflow>).
+Entity <Decoder_2_4> analyzed. Unit <Decoder_2_4> generated.
+
+Analyzing Entity <Mux_Seven_segm> in library <work> (Architecture <structural>).
+Entity <Mux_Seven_segm> analyzed. Unit <Mux_Seven_segm> generated.
+
+Analyzing generic Entity <Mux_4n_1n_struct> in library <work> (Architecture <structural>).
+	width = 4
+Entity <Mux_4n_1n_struct> analyzed. Unit <Mux_4n_1n_struct> generated.
+
+Analyzing Entity <Mux_4_1> in library <work> (Architecture <dataflow>).
+Entity <Mux_4_1> analyzed. Unit <Mux_4_1> generated.
+
+Analyzing Entity <Decoder_Seven_segm> in library <work> (Architecture <dataflow>).
+Entity <Decoder_Seven_segm> analyzed. Unit <Decoder_Seven_segm> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Debouncer_xilinx>.
+    Related source file is "/media/sf_ASE/firma digitale/Encryp/Debouncer_xilinx.vhd".
+    Found 1-bit register for signal <Q0>.
+    Found 1-bit register for signal <Q1>.
+    Found 1-bit register for signal <Q2>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+Unit <Debouncer_xilinx> synthesized.
+
+
+Synthesizing Unit <FSM_RSA>.
+    Related source file is "/media/sf_ASE/firma digitale/Encryp/FSM_RSA.vhd".
+    Using one-hot encoding for signal <Current_State>.
+WARNING:Xst:737 - Found 15-bit latch for signal <Next_State>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 15-bit register for signal <Current_State>.
+    Summary:
+	inferred  15 D-type flip-flop(s).
+Unit <FSM_RSA> synthesized.
+
+
+Synthesizing Unit <Mux_2n_1n_1>.
+    Related source file is "/media/sf_ASE/firma digitale/Encryp/Mux_2n_1n.vhd".
+Unit <Mux_2n_1n_1> synthesized.
+
+
+Synthesizing Unit <Comparator32>.
+    Related source file is "/media/sf_ASE/firma digitale/Encryp/Comparator32.vhd".
+    Found 1-bit register for signal <Notequal>.
+    Found 1-bit register for signal <equal>.
+    Found 32-bit comparator not equal for signal <equal$cmp_ne0000> created at line 49.
+    Found 32-bit comparator equal for signal <Notequal$cmp_eq0000> created at line 49.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <Comparator32> synthesized.
+
+
+Synthesizing Unit <Mux_2n_1n_2>.
+    Related source file is "/media/sf_ASE/firma digitale/Encryp/Mux_2n_1n.vhd".
+Unit <Mux_2n_1n_2> synthesized.
+
+
+Synthesizing Unit <FF_D_RAsync>.
+    Related source file is "/media/sf_ASE/firma digitale/Encryp/FF_D_RAsync.vhd".
+    Found 1-bit register for signal <q_tmp>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <FF_D_RAsync> synthesized.
+
+
+Synthesizing Unit <Blocco_PG>.
+    Related source file is "/media/sf_ASE/firma digitale/Encryp/Blocco_PG.vhd".
+    Found 8-bit xor2 for signal <p>.
+Unit <Blocco_PG> synthesized.
+
+
+Synthesizing Unit <Blocco_CLA_8bit>.
+    Related source file is "/media/sf_ASE/firma digitale/Encryp/Blocco_CLA_8bit.vhd".
+Unit <Blocco_CLA_8bit> synthesized.
+
+
+Synthesizing Unit <reduction_step>.
+    Related source file is "/media/sf_ASE/firma digitale/Encryp/exponentiator.vhd".
+WARNING:Xst:646 - Signal <z<32>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 34-bit subtractor for signal <z>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <reduction_step> synthesized.
+
+
+Synthesizing Unit <RAsync_H_Count_UpCounter_1>.
+    Related source file is "/media/sf_ASE/firma digitale/Encryp/RAsync_H_Count_UpCounter.vhd".
+    Found 1-bit register for signal <hit>.
+    Found 32-bit register for signal <CNT$mux0001> created at line 52.
+    Found 32-bit adder for signal <hit$add0000> created at line 55.
+    Summary:
+	inferred  33 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <RAsync_H_Count_UpCounter_1> synthesized.
+
+
+Synthesizing Unit <RAsync_H_Count_UpCounter_2>.
+    Related source file is "/media/sf_ASE/firma digitale/Encryp/RAsync_H_Count_UpCounter.vhd".
+    Found 1-bit register for signal <hit>.
+    Found 32-bit up counter for signal <CNT>.
+    Found 32-bit adder for signal <CNT$add0000> created at line 55.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <RAsync_H_Count_UpCounter_2> synthesized.
+
+
+Synthesizing Unit <RAsync_2UpNCount_UpCounter>.
+    Related source file is "/media/sf_ASE/firma digitale/Encryp/RAsync_2UpNCount_UpCounter.vhd".
+    Found 2-bit up counter for signal <CNT>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <RAsync_2UpNCount_UpCounter> synthesized.
+
+
+Synthesizing Unit <Decoder_2_4>.
+    Related source file is "/media/sf_ASE/firma digitale/Encryp/Decoder_2_4.vhd".
+Unit <Decoder_2_4> synthesized.
+
+
+Synthesizing Unit <Decoder_Seven_segm>.
+    Related source file is "/media/sf_ASE/firma digitale/Encryp/Decoder_Seven_segm.vhd".
+Unit <Decoder_Seven_segm> synthesized.
+
+
+Synthesizing Unit <Mux_4_1>.
+    Related source file is "/media/sf_ASE/firma digitale/Encryp/Mux_4_1.vhd".
+Unit <Mux_4_1> synthesized.
+
+
+Synthesizing Unit <Generic_RAsync_Register_1>.
+    Related source file is "/media/sf_ASE/firma digitale/Encryp/Generic_RAsync_Register.vhd".
+Unit <Generic_RAsync_Register_1> synthesized.
+
+
+Synthesizing Unit <CLA_8bit_Adder>.
+    Related source file is "/media/sf_ASE/firma digitale/Encryp/CLA_8bit_Adder.vhd".
+    Found 8-bit xor2 for signal <s>.
+    Found 1-bit xor2 for signal <ovf>.
+Unit <CLA_8bit_Adder> synthesized.
+
+
+Synthesizing Unit <Generic_RAsync_Register_2>.
+    Related source file is "/media/sf_ASE/firma digitale/Encryp/Generic_RAsync_Register.vhd".
+Unit <Generic_RAsync_Register_2> synthesized.
+
+
+Synthesizing Unit <sequential_mod_mult>.
+    Related source file is "/media/sf_ASE/firma digitale/Encryp/exponentiator.vhd".
+    Found 1-bit register for signal <done>.
+    Found 1-bit 68-to-1 multiplexer for signal <done$mux0000> created at line 70.
+    Found 64-bit register for signal <product>.
+    Found 1-bit 68-to-1 multiplexer for signal <product_0$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_1$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_10$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_11$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_12$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_13$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_14$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_15$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_16$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_17$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_18$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_19$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_2$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_20$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_21$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_22$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_23$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_24$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_25$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_26$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_27$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_28$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_29$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_3$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_30$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_31$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_32$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_33$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_34$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_35$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_36$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_37$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_38$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_39$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_4$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_40$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_41$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_42$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_43$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_44$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_45$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_46$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_47$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_48$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_49$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_5$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_50$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_51$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_52$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_53$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_54$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_55$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_56$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_57$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_58$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_59$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_6$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_60$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_61$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_62$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_63$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_7$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_8$mux0000> created at line 70.
+    Found 1-bit 68-to-1 multiplexer for signal <product_9$mux0000> created at line 70.
+    Found 7-bit register for signal <state>.
+    Found 7-bit adder for signal <state$addsub0000>.
+    Found 7-bit 68-to-1 multiplexer for signal <state$mux0000> created at line 70.
+    Found 33-bit adder for signal <w$addsub0000> created at line 64.
+    Summary:
+	inferred  72 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  72 Multiplexer(s).
+Unit <sequential_mod_mult> synthesized.
+
+
+Synthesizing Unit <Generic_RAsync_Register_3>.
+    Related source file is "/media/sf_ASE/firma digitale/Encryp/Generic_RAsync_Register.vhd".
+Unit <Generic_RAsync_Register_3> synthesized.
+
+
+Synthesizing Unit <Mux_4n_1n_struct>.
+    Related source file is "/media/sf_ASE/firma digitale/Encryp/Mux_4n_1n_struct.vhd".
+Unit <Mux_4n_1n_struct> synthesized.
+
+
+Synthesizing Unit <HashFunction>.
+    Related source file is "/media/sf_ASE/firma digitale/Encryp/HashFunction.vhd".
+Unit <HashFunction> synthesized.
+
+
+Synthesizing Unit <exponentiator>.
+    Related source file is "/media/sf_ASE/firma digitale/Encryp/exponentiator.vhd".
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 15                                             |
+    | Transitions        | 21                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 15                                             |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0000                                           |
+    | Power Up State     | 0000                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 32-bit register for signal <z>.
+    Found 1-bit register for signal <done>.
+    Found 6-bit register for signal <count>.
+    Found 6-bit adder for signal <count$addsub0000> created at line 143.
+    Found 32-bit register for signal <reg_x>.
+    Found 1-bit register for signal <sel_y>.
+    Found 1-bit register for signal <start_mult>.
+    Found 6-bit comparator greatequal for signal <state$cmp_ge0000> created at line 144.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  73 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <exponentiator> synthesized.
+
+
+Synthesizing Unit <SignReg>.
+    Related source file is "/media/sf_ASE/firma digitale/Encryp/SignReg.vhd".
+Unit <SignReg> synthesized.
+
+
+Synthesizing Unit <Mux_Seven_segm>.
+    Related source file is "/media/sf_ASE/firma digitale/Encryp/Mux_Seven_segm.vhd".
+Unit <Mux_Seven_segm> synthesized.
+
+
+Synthesizing Unit <seven_seg_interface_adapter>.
+    Related source file is "/media/sf_ASE/firma digitale/Encryp/seven_seg_interface_adapter.vhd".
+Unit <seven_seg_interface_adapter> synthesized.
+
+
+Synthesizing Unit <RSA>.
+    Related source file is "/media/sf_ASE/firma digitale/Encryp/RSA.vhd".
+Unit <RSA> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 6
+ 32-bit adder                                          : 2
+ 33-bit adder                                          : 1
+ 34-bit subtractor                                     : 1
+ 6-bit adder                                           : 1
+ 7-bit adder                                           : 1
+# Counters                                             : 2
+ 2-bit up counter                                      : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 217
+ 1-bit register                                        : 212
+ 15-bit register                                       : 1
+ 32-bit register                                       : 2
+ 6-bit register                                        : 1
+ 7-bit register                                        : 1
+# Latches                                              : 1
+ 15-bit latch                                          : 1
+# Comparators                                          : 3
+ 32-bit comparator equal                               : 1
+ 32-bit comparator not equal                           : 1
+ 6-bit comparator greatequal                           : 1
+# Multiplexers                                         : 66
+ 1-bit 68-to-1 multiplexer                             : 65
+ 7-bit 68-to-1 multiplexer                             : 1
+# Xors                                                 : 3
+ 1-bit xor2                                            : 1
+ 8-bit xor2                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <exp/state/FSM> on signal <state[1:15]> with one-hot encoding.
+--------------------------
+ State | Encoding
+--------------------------
+ 0000  | 000000000000001
+ 0001  | 000000000000010
+ 0010  | 000000000000100
+ 0011  | 000000000001000
+ 0100  | 000000000010000
+ 0101  | 000000000100000
+ 0110  | 000000001000000
+ 0111  | 000000010000000
+ 1000  | 000000100000000
+ 1001  | 000010000000000
+ 1010  | 000100000000000
+ 1011  | 001000000000000
+ 1100  | 010000000000000
+ 1101  | 000001000000000
+ 1110  | 100000000000000
+--------------------------
+WARNING:Xst:1290 - Hierarchical block <Mux_dot> is unconnected in block <cathods_mux>.
+   It will be removed from the design.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Adders/Subtractors                                   : 6
+ 32-bit adder                                          : 2
+ 33-bit adder                                          : 1
+ 34-bit subtractor                                     : 1
+ 6-bit adder                                           : 1
+ 7-bit adder                                           : 1
+# Counters                                             : 2
+ 2-bit up counter                                      : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 304
+ Flip-Flops                                            : 304
+# Latches                                              : 1
+ 15-bit latch                                          : 1
+# Comparators                                          : 3
+ 32-bit comparator equal                               : 1
+ 32-bit comparator not equal                           : 1
+ 6-bit comparator greatequal                           : 1
+# Multiplexers                                         : 66
+ 1-bit 68-to-1 multiplexer                             : 65
+ 7-bit 68-to-1 multiplexer                             : 1
+# Xors                                                 : 3
+ 1-bit xor2                                            : 1
+ 8-bit xor2                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <RSA> ...
+
+Optimizing unit <reduction_step> ...
+
+Optimizing unit <RAsync_H_Count_UpCounter_1> ...
+
+Optimizing unit <Generic_RAsync_Register_1> ...
+
+Optimizing unit <Generic_RAsync_Register_2> ...
+
+Optimizing unit <sequential_mod_mult> ...
+
+Optimizing unit <Generic_RAsync_Register_3> ...
+
+Optimizing unit <exponentiator> ...
+
+Optimizing unit <seven_seg_interface_adapter> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block RSA, actual ratio is 68.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 353
+ Flip-Flops                                            : 353
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : RSA.ngr
+Top Level Output File Name         : RSA
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 27
+
+Cell Usage :
+# BELS                             : 1422
+#      GND                         : 1
+#      INV                         : 35
+#      LUT1                        : 97
+#      LUT2                        : 52
+#      LUT2_D                      : 1
+#      LUT3                        : 168
+#      LUT3_D                      : 3
+#      LUT4                        : 564
+#      LUT4_D                      : 1
+#      LUT4_L                      : 31
+#      MUXCY                       : 190
+#      MUXF5                       : 117
+#      VCC                         : 1
+#      XORCY                       : 161
+# FlipFlops/Latches                : 368
+#      FD                          : 12
+#      FD_1                        : 15
+#      FDC                         : 32
+#      FDCE                        : 162
+#      FDE                         : 129
+#      FDP                         : 1
+#      FDR                         : 1
+#      FDRE                        : 1
+#      LD                          : 15
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 26
+#      IBUF                        : 12
+#      OBUF                        : 14
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100etq144-5 
+
+ Number of Slices:                      555  out of    960    57%  
+ Number of Slice Flip Flops:            368  out of   1920    19%  
+ Number of 4 input LUTs:                952  out of   1920    49%  
+ Number of IOs:                          27
+ Number of bonded IOBs:                  27  out of    108    25%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-------------------------------------------------------+------------------------------+-------+
+Clock Signal                                           | Clock buffer(FF name)        | Load  |
+-------------------------------------------------------+------------------------------+-------+
+Clock                                                  | BUFGP                        | 353   |
+RSAFSM/Next_State_not0001(RSAFSM/Next_State_not00011:O)| NONE(*)(RSAFSM/Next_State_14)| 15    |
+-------------------------------------------------------+------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+----------------------------------------------------------------------------------+----------------------------------------+-------+
+Control Signal                                                                    | Buffer(FF name)                        | Load  |
+----------------------------------------------------------------------------------+----------------------------------------+-------+
+HashF/Reg0/ins_reg[0].ff_as/reset_inv(sign_reg/Reg3/ins_reg[0].ff_as/reset_inv1:O)| NONE(HashF/Reg0/ins_reg[0].ff_as/q_tmp)| 160   |
+Disp_en(RSAFSM/Enable_Disp27:O)                                                   | NONE(Disp/clock_div/CNT_0)             | 35    |
+----------------------------------------------------------------------------------+----------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 16.402ns (Maximum Frequency: 60.967MHz)
+   Minimum input arrival time before clock: 8.204ns
+   Maximum output required time after clock: 8.324ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clock'
+  Clock period: 16.402ns (frequency: 60.967MHz)
+  Total number of paths / destination ports: 37912 / 618
+-------------------------------------------------------------------------
+Delay:               8.201ns (Levels of Logic = 23)
+  Source:            RSAFSM/Current_State_13 (FF)
+  Destination:       exp/label_1/product_63 (FF)
+  Source Clock:      Clock falling
+  Destination Clock: Clock rising
+
+  Data Path: RSAFSM/Current_State_13 to exp/label_1/product_63
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD_1:C->Q            10   0.514   0.902  RSAFSM/Current_State_13 (RSAFSM/Current_State_13)
+     LUT3_D:I0->O          9   0.612   0.727  RSAFSM/Mux_sel1_2 (RSAFSM/Mux_sel11)
+     LUT3:I2->O            1   0.612   0.360  exp/label_1/Madd_w_addsub0000_lut<14>_SW0 (N237)
+     LUT4:I3->O            1   0.612   0.000  exp/label_1/Madd_w_addsub0000_lut<14> (exp/label_1/Madd_w_addsub0000_lut<14>)
+     MUXCY:S->O            1   0.404   0.000  exp/label_1/Madd_w_addsub0000_cy<14> (exp/label_1/Madd_w_addsub0000_cy<14>)
+     MUXCY:CI->O           1   0.052   0.000  exp/label_1/Madd_w_addsub0000_cy<15> (exp/label_1/Madd_w_addsub0000_cy<15>)
+     MUXCY:CI->O           1   0.052   0.000  exp/label_1/Madd_w_addsub0000_cy<16> (exp/label_1/Madd_w_addsub0000_cy<16>)
+     MUXCY:CI->O           1   0.052   0.000  exp/label_1/Madd_w_addsub0000_cy<17> (exp/label_1/Madd_w_addsub0000_cy<17>)
+     MUXCY:CI->O           1   0.052   0.000  exp/label_1/Madd_w_addsub0000_cy<18> (exp/label_1/Madd_w_addsub0000_cy<18>)
+     MUXCY:CI->O           1   0.052   0.000  exp/label_1/Madd_w_addsub0000_cy<19> (exp/label_1/Madd_w_addsub0000_cy<19>)
+     MUXCY:CI->O           1   0.052   0.000  exp/label_1/Madd_w_addsub0000_cy<20> (exp/label_1/Madd_w_addsub0000_cy<20>)
+     MUXCY:CI->O           1   0.052   0.000  exp/label_1/Madd_w_addsub0000_cy<21> (exp/label_1/Madd_w_addsub0000_cy<21>)
+     MUXCY:CI->O           1   0.052   0.000  exp/label_1/Madd_w_addsub0000_cy<22> (exp/label_1/Madd_w_addsub0000_cy<22>)
+     MUXCY:CI->O           1   0.052   0.000  exp/label_1/Madd_w_addsub0000_cy<23> (exp/label_1/Madd_w_addsub0000_cy<23>)
+     MUXCY:CI->O           1   0.052   0.000  exp/label_1/Madd_w_addsub0000_cy<24> (exp/label_1/Madd_w_addsub0000_cy<24>)
+     MUXCY:CI->O           1   0.052   0.000  exp/label_1/Madd_w_addsub0000_cy<25> (exp/label_1/Madd_w_addsub0000_cy<25>)
+     MUXCY:CI->O           1   0.052   0.000  exp/label_1/Madd_w_addsub0000_cy<26> (exp/label_1/Madd_w_addsub0000_cy<26>)
+     MUXCY:CI->O           1   0.052   0.000  exp/label_1/Madd_w_addsub0000_cy<27> (exp/label_1/Madd_w_addsub0000_cy<27>)
+     MUXCY:CI->O           1   0.052   0.000  exp/label_1/Madd_w_addsub0000_cy<28> (exp/label_1/Madd_w_addsub0000_cy<28>)
+     MUXCY:CI->O           1   0.052   0.000  exp/label_1/Madd_w_addsub0000_cy<29> (exp/label_1/Madd_w_addsub0000_cy<29>)
+     MUXCY:CI->O           1   0.052   0.000  exp/label_1/Madd_w_addsub0000_cy<30> (exp/label_1/Madd_w_addsub0000_cy<30>)
+     MUXCY:CI->O           2   0.399   0.383  exp/label_1/Madd_w_addsub0000_cy<31> (exp/label_1/Madd_w_addsub0000_cy<31>)
+     LUT4:I3->O            1   0.612   0.360  exp/label_1/Mmux_product_63_mux00001340 (exp/label_1/Mmux_product_63_mux00001340)
+     LUT4:I3->O            1   0.612   0.000  exp/label_1/Mmux_product_63_mux000013121 (exp/label_1/product_63_mux0000)
+     FDE:D                     0.268          exp/label_1/product_63
+    ----------------------------------------
+    Total                      8.201ns (5.469ns logic, 2.732ns route)
+                                       (66.7% logic, 33.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clock'
+  Total number of paths / destination ports: 56 / 20
+-------------------------------------------------------------------------
+Offset:              8.204ns (Levels of Logic = 8)
+  Source:            CharacterByte<1> (PAD)
+  Destination:       HashF/Reg3/ins_reg[7].ff_as/q_tmp (FF)
+  Destination Clock: Clock rising
+
+  Data Path: CharacterByte<1> to HashF/Reg3/ins_reg[7].ff_as/q_tmp
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.106   0.603  CharacterByte_1_IBUF (CharacterByte_1_IBUF)
+     LUT4:I0->O            2   0.612   0.449  HashF/CLA8/Mxor_s_Result<2>_SW0 (N13)
+     LUT3:I1->O            2   0.612   0.449  HashF/CLA8/ist_clb/c_vect_3_or00001 (HashF/CLA8/temp_c<3>)
+     LUT3:I1->O            2   0.612   0.449  HashF/CLA8/ist_clb/c_vect_4_or00001 (HashF/CLA8/temp_c<4>)
+     LUT3:I1->O            2   0.612   0.449  HashF/CLA8/ist_clb/c_vect_5_or00001 (HashF/CLA8/temp_c<5>)
+     LUT3:I1->O            3   0.612   0.481  HashF/CLA8/ist_clb/c_vect_6_or00001 (HashF/CLA8/temp_c<6>)
+     LUT4:I2->O            1   0.612   0.000  HashF/CLA8/Mxor_s_Result<7>11 (HashF/CLA8/Mxor_s_Result<7>1)
+     MUXF5:I1->O           1   0.278   0.000  HashF/CLA8/Mxor_s_Result<7>1_f5 (HashF/sum_temp<7>)
+     FDCE:D                    0.268          HashF/Reg3/ins_reg[7].ff_as/q_tmp
+    ----------------------------------------
+    Total                      8.204ns (5.324ns logic, 2.880ns route)
+                                       (64.9% logic, 35.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clock'
+  Total number of paths / destination ports: 258 / 13
+-------------------------------------------------------------------------
+Offset:              8.324ns (Levels of Logic = 4)
+  Source:            RSAFSM/Current_State_2 (FF)
+  Destination:       Anodes<0> (PAD)
+  Source Clock:      Clock falling
+
+  Data Path: RSAFSM/Current_State_2 to Anodes<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD_1:C->Q             8   0.514   0.795  RSAFSM/Current_State_2 (RSAFSM/Current_State_2)
+     LUT3_D:I0->O          1   0.612   0.426  RSAFSM/Enable_Disp3 (RSAFSM/Enable_Disp3)
+     LUT4:I1->O           40   0.612   1.227  RSAFSM/Enable_Disp27 (Disp_en)
+     LUT3:I0->O            1   0.612   0.357  Disp/Anodes_or00031 (Anodes_0_OBUF)
+     OBUF:I->O                 3.169          Anodes_0_OBUF (Anodes<0>)
+    ----------------------------------------
+    Total                      8.324ns (5.519ns logic, 2.805ns route)
+                                       (66.3% logic, 33.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 17.00 secs
+Total CPU time to Xst completion: 13.50 secs
+ 
+--> 
+
+
+Total memory usage is 552960 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    9 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

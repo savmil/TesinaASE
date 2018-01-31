@@ -192,9 +192,12 @@ end{figure}
 Si è scelto di realizzare un semplice addizionatore di tipo carry save che
  effettua la somma di due operandi da tre bit, nello schematico sono mostrati
  due carry save cell, queste sono formate da due full adder, uno utilizzato
- come carry save ed un altro come un full adder, dopodiché i valori calcolari
- dal primo carry save cell vengono propagati al secondo e la somma è determinata
- dalla uscita dei full adder.
+ come carry save ed un altro come un full adder, dopodiché i valori calcolati
+ dal primo carry save cell vengono propagati al secondo(viene propagato
+ il riporto del full adder), mentre il valore di somma del secondo carry
+ save presente nella seconda cella (carry save cell) viene messo in ingresso
+ al full adder della prima e la somma è determinata dalle uscite dei full
+ adder, più l' uscita della somma del primo carry save .
 \end_layout
 
 \begin_layout Subsection

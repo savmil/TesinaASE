@@ -1,0 +1,2 @@
+vhdl work "netgen/translate/RSA_translate.vhd"
+vhdl work "tb_RSA.vhd"

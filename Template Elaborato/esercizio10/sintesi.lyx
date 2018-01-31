@@ -107,10 +107,11 @@ ref{Sintesi ripple carry}
 
 \end_inset
 
-, eccezione fatta per gli switch che ne vengono utilizzati solo sei inceve
- di otto, (tre per un operando e tre per un altro), il led cinque è disabilitato
- non avendo la bisogno di provare anche quando il carry in ingresso è alto
- e la sottrazione viene effettuata quando led sette e 6 sono alti.
+, eccezione fatta per gli switch che ne vengono utilizzati solo sei invece
+ di otto, (tre per un operando e tre per un altro, sono i primi sei a partire
+ da destra), il led cinque è disabilitato non avendo la bisogno di provare
+ anche quando il carry in ingresso è alto e la sottrazione viene effettuata
+ quando led sette e 6 sono alti.
 \end_layout
 
 \end_body

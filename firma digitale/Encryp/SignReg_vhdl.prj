@@ -1,0 +1,4 @@
+vhdl work "D:\Encryp\FF_D_RAsync.vhd"
+vhdl work "D:\Encryp\RAsync_H_Count_UpCounter.vhd"
+vhdl work "D:\Encryp\Generic_RAsync_Register.vhd"
+vhdl work "D:\Encryp\SignReg.vhd"

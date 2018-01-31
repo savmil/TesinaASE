@@ -1,0 +1,53 @@
+CONFIG stepping="0";
+#BASYS
+NET Clock period = 20.000 ;
+#OFFSET = out : 20.000 : AFTER clk ;
+#OFFSET = in : 8.000 : BEFORE clk ;
+
+NET "Clock"   LOC = "P54"; # Bank = 0, Pin name = IP_L13P_0/GCLK8, Type = GCLK, Sch name = GCLK0
+
+#NET "dsubre" LOC = "H13"  | IOSTANDARD = LVTTL ;#button(2)
+#NET "dsuact" LOC = "J15"  | IOSTANDARD = LVTTL ;#led(1)
+#NET "error"  LOC = "J14" | IOSTANDARD = LVTTL; # Bank = 1, Pin name = IO_L14N_1/A3/RHCLK7, Type = RHCLK/DUAL, Sch name = JD10/LD0
+#NET "rst" LOC = "G18" | IOSTANDARD = LVTTL; # Bank = 1, Pin name = IP, Type = INPUT, Sch name = SW0
+
+NET "Anodes(0)" LOC = "P34" | IOSTANDARD = LVTTL; #AN0
+NET "Anodes(1)" LOC = "P33" | IOSTANDARD = LVTTL; #AN1
+NET "Anodes(2)" LOC = "P32" | IOSTANDARD = LVTTL; #AN2
+NET "Anodes(3)" LOC = "P26" | IOSTANDARD = LVTTL; #AN3
+
+NET "Cathodes(0)" LOC = "P25" | IOSTANDARD = LVTTL; # DISP A
+NET "Cathodes(1)" LOC = "P16" | IOSTANDARD = LVTTL; # DISP B
+NET "Cathodes(2)" LOC = "P23" | IOSTANDARD = LVTTL; # DISP C
+NET "Cathodes(3)" LOC = "P21" | IOSTANDARD = LVTTL; # DISP D
+NET "Cathodes(4)" LOC = "P20" | IOSTANDARD = LVTTL; # DISP E
+NET "Cathodes(5)" LOC = "P17" | IOSTANDARD = LVTTL; # DISP F
+NET "Cathodes(6)" LOC = "P83" | IOSTANDARD = LVTTL; # DISP G
+NET "Cathodes(7)" LOC = "P22" | IOSTANDARD = LVTTL; # POINT
+
+# Leds
+#NET "led<0>"  LOC = "J14"; # Bank = 1, Pin name = IO_L14N_1/A3/RHCLK7, Type = RHCLK/DUAL, Sch name = JD10/LD0
+#NET "led<1>"  LOC = "J15"; # Bank = 1, Pin name = IO_L14P_1/A4/RHCLK6, Type = RHCLK/DUAL, Sch name = JD9/LD1
+#NET "led(2)"  LOC = "K15"; # Bank = 1, Pin name = IO_L12P_1/A8/RHCLK2, Type = RHCLK/DUAL, Sch name = JD8/LD2
+#NET "led(3)"  LOC = "K14"; # Bank = 1, Pin name = IO_L12N_1/A7/RHCLK3/TRDY1, Type = RHCLK/DUAL, Sch name = JD7/LD3
+#NET "led(4)" LOC = "E16"; # Bank = 1, Pin name = N.C., Type = N.C., Sch name = LD4? other than s3e500
+#NET "led(5)" LOC = "P16"; # Bank = 1, Pin name = N.C., Type = N.C., Sch name = LD5? other than s3e500
+#NET "led(6)" LOC = "E4";  # Bank = 3, Pin name = N.C., Type = N.C., Sch name = LD6? other than s3e500
+#NET "led(7)" LOC = "P4";  # Bank = 3, Pin name = N.C., Type = N.C., Sch name = LD7? other than s3e500
+
+# Switches
+NET "CharacterByte(0)" LOC = "P38"; # Bank = 1, Pin name = IP, Type = INPUT, Sch name = SW0
+NET "CharacterByte(1)" LOC = "P36"; # Bank = 1, Pin name = IP/VREF_1, Type = VREF, Sch name = SW1
+NET "CharacterByte(2)" LOC = "P29"; # Bank = 1, Pin name = IP, Type = INPUT, Sch name = SW2
+NET "CharacterByte(3)" LOC = "P24"; # Bank = 1, Pin name = IP, Type = INPUT, Sch name = SW3
+NET "CharacterByte(4)" LOC = "P18"; # Bank = 1, Pin name = IP, Type = INPUT, Sch name = SW4
+NET "CharacterByte(5)" LOC = "P12"; # Bank = 1, Pin name = IP, Type = INPUT, Sch name = SW5
+NET "CharacterByte(6)" LOC = "P10"; # Bank = 1, Pin name = IP, Type = INPUT, Sch name = SW6
+NET "CharacterByte(7)" LOC = "P6"; # Bank = 1, Pin name = IP, Type = INPUT, Sch name = SW7
+
+# Buttons
+
+NET "Start" LOC = "P69"; # quarto bottone da sinistra...Bank = 1, Pin name = IP, Type = INPUT, Sch name = BTN0
+NET "Load" LOC = "P48"; # terzo bottone da sinistra...Bank = 1, Pin name = IP/VREF_1, Type = VREF, Sch name = BTN1
+NET "Verify" LOC = "P47"; # secondo bottone da sinistra...Bank = 1, Pin name = IP, Type = INPUT, Sch name = BTN2
+NET "Done" LOC = "P41"; # primo bottone da sinistra...Bank = 1, Pin name = IP, Type = INPUT, Sch name = BTN3

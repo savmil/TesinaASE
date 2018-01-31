@@ -104,13 +104,13 @@ begin
 	if rising_edge(clock) then
 		if en_c='1' then
 			case sel is
-				when "000" => scelta<="00000001";
-				when "001" => scelta<="00000010";
-				when "010" => scelta<="00000100";
-				when "011" => scelta<="00001000";
-				when "100" => scelta<="00010000";
-				when "101" => scelta<="00100000";
-				when "110" => scelta<="01000000";
+				when "001" => scelta<="00000001";
+				when "010" => scelta<="00000010";
+				when "011" => scelta<="00000100";
+				when "100" => scelta<="00001000";
+				when "101" => scelta<="00010000";
+				when "110" => scelta<="00100000";
+				when "111" => scelta<="01000000";
 				when others => scelta<="00000000";
 			end case;
 		else
@@ -148,7 +148,7 @@ begin
 	led(7)<=sel(2);
 	led(6)<=sel(1);
 	led(5)<=sel(0);
-	RSA : generazione_valori_RSA port map(clock,start,not(scelta(6)),p_v,q_v,msg_v,e_v,d_v,correct,msg_r);
+	RSA : generazione_valori_RSA port map(clock,start,not(scelta(4)),p_v,q_v,msg_v,e_v,d_v,correct,msg_r);
 	--msg_r( 7 downto 0)<=msg_v;
 	gest_disp : display_top_level port map(clock,button(3),button(2),button(1),msg_r,in_byte,anodes,cathodes);
 end Behavioral;

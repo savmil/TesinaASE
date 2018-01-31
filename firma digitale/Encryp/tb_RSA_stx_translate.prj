@@ -1,0 +1,2 @@
+vhdl isim_temp "netgen/translate/RSA_translate.vhd"
+vhdl isim_temp "tb_RSA.vhd"

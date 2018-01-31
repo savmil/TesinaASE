@@ -1,0 +1,6 @@
+vhdl work "D:\Encryp\FF_D_RAsync.vhd"
+vhdl work "D:\Encryp\Blocco_PG.vhd"
+vhdl work "D:\Encryp\Blocco_CLA_8bit.vhd"
+vhdl work "D:\Encryp\Generic_RAsync_Register.vhd"
+vhdl work "D:\Encryp\CLA_8bit_Adder.vhd"
+vhdl work "D:\Encryp\HashFunction.vhd"

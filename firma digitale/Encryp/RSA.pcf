@@ -1,0 +1,35 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed Jan 31 18:23:24 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Compare_ok" LOCATE = SITE "P2" LEVEL 1;
+COMP "Compare_nok" LOCATE = SITE "P3" LEVEL 1;
+COMP "Done" LOCATE = SITE "P41" LEVEL 1;
+COMP "Load" LOCATE = SITE "P48" LEVEL 1;
+COMP "Clock" LOCATE = SITE "P54" LEVEL 1;
+COMP "Start" LOCATE = SITE "P69" LEVEL 1;
+COMP "Anodes<0>" LOCATE = SITE "P34" LEVEL 1;
+COMP "Anodes<1>" LOCATE = SITE "P33" LEVEL 1;
+COMP "Anodes<2>" LOCATE = SITE "P32" LEVEL 1;
+COMP "Anodes<3>" LOCATE = SITE "P26" LEVEL 1;
+COMP "Cathodes<0>" LOCATE = SITE "P25" LEVEL 1;
+COMP "Cathodes<1>" LOCATE = SITE "P16" LEVEL 1;
+COMP "Cathodes<2>" LOCATE = SITE "P23" LEVEL 1;
+COMP "Cathodes<3>" LOCATE = SITE "P21" LEVEL 1;
+COMP "Cathodes<4>" LOCATE = SITE "P20" LEVEL 1;
+COMP "Cathodes<5>" LOCATE = SITE "P17" LEVEL 1;
+COMP "Cathodes<6>" LOCATE = SITE "P83" LEVEL 1;
+COMP "Cathodes<7>" LOCATE = SITE "P22" LEVEL 1;
+COMP "Verify" LOCATE = SITE "P47" LEVEL 1;
+COMP "CharacterByte<0>" LOCATE = SITE "P38" LEVEL 1;
+COMP "CharacterByte<1>" LOCATE = SITE "P36" LEVEL 1;
+COMP "CharacterByte<2>" LOCATE = SITE "P29" LEVEL 1;
+COMP "CharacterByte<3>" LOCATE = SITE "P24" LEVEL 1;
+COMP "CharacterByte<4>" LOCATE = SITE "P18" LEVEL 1;
+COMP "CharacterByte<5>" LOCATE = SITE "P12" LEVEL 1;
+COMP "CharacterByte<6>" LOCATE = SITE "P10" LEVEL 1;
+COMP "CharacterByte<7>" LOCATE = SITE "P6" LEVEL 1;
+NET "Clock_BUFGP/IBUFG" BEL "Clock_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

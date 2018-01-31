@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/Encryp/test_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="std_logic_1164" />
+            <top_module name="test" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="/test/charactermes" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">charactermes[7:0]</obj_property>
+      <obj_property name="ObjectShortName">charactermes[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/hash_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">hash_en</obj_property>
+      <obj_property name="ObjectShortName">hash_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/reg_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_en</obj_property>
+      <obj_property name="ObjectShortName">reg_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/digest" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">digest[31:0]</obj_property>
+      <obj_property name="ObjectShortName">digest[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="group75" type="group">
+      <obj_property name="label">byte0</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/test/digest[7]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[7]</obj_property>
+         <obj_property name="ObjectShortName">digest[7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/digest[6]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">digest[6]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/digest[5]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">digest[5]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/digest[4]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">digest[4]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/digest[3]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">digest[3]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/digest[2]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">digest[2]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/digest[1]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">digest[1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/digest[0]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">digest[0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group66" type="group">
+      <obj_property name="label">byte1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/test/digest[15]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[15]</obj_property>
+         <obj_property name="ObjectShortName">digest[15]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/digest[14]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[14]</obj_property>
+         <obj_property name="ObjectShortName">digest[14]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/digest[13]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[13]</obj_property>
+         <obj_property name="ObjectShortName">digest[13]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/digest[12]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[12]</obj_property>
+         <obj_property name="ObjectShortName">digest[12]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/digest[11]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[11]</obj_property>
+         <obj_property name="ObjectShortName">digest[11]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/digest[10]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[10]</obj_property>
+         <obj_property name="ObjectShortName">digest[10]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/digest[9]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[9]</obj_property>
+         <obj_property name="ObjectShortName">digest[9]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/digest[8]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[8]</obj_property>
+         <obj_property name="ObjectShortName">digest[8]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group57" type="group">
+      <obj_property name="label">byte2</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/test/digest[23]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[23]</obj_property>
+         <obj_property name="ObjectShortName">digest[23]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/digest[22]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[22]</obj_property>
+         <obj_property name="ObjectShortName">digest[22]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/digest[21]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[21]</obj_property>
+         <obj_property name="ObjectShortName">digest[21]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/digest[20]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[20]</obj_property>
+         <obj_property name="ObjectShortName">digest[20]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/digest[19]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[19]</obj_property>
+         <obj_property name="ObjectShortName">digest[19]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/digest[18]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[18]</obj_property>
+         <obj_property name="ObjectShortName">digest[18]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/digest[17]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[17]</obj_property>
+         <obj_property name="ObjectShortName">digest[17]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/digest[16]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[16]</obj_property>
+         <obj_property name="ObjectShortName">digest[16]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group48" type="group">
+      <obj_property name="label">byte3</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/test/digest[31]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[31]</obj_property>
+         <obj_property name="ObjectShortName">digest[31]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/digest[30]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[30]</obj_property>
+         <obj_property name="ObjectShortName">digest[30]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/digest[29]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[29]</obj_property>
+         <obj_property name="ObjectShortName">digest[29]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/digest[28]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[28]</obj_property>
+         <obj_property name="ObjectShortName">digest[28]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/digest[27]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[27]</obj_property>
+         <obj_property name="ObjectShortName">digest[27]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/digest[26]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[26]</obj_property>
+         <obj_property name="ObjectShortName">digest[26]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/digest[25]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[25]</obj_property>
+         <obj_property name="ObjectShortName">digest[25]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/digest[24]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[24]</obj_property>
+         <obj_property name="ObjectShortName">digest[24]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/test/clock_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clock_period</obj_property>
+      <obj_property name="ObjectShortName">clock_period</obj_property>
+   </wvobject>
+</wave_config>

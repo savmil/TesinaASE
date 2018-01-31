@@ -1,0 +1,30 @@
+Command line:
+   tb_RSA_isim_map.exe
+     -simmode  gui
+     -sdfmax  /uut/=netgen/map/RSA_map.sdf
+     -sdfroot  /uut
+     -simrunnum  0
+     -socket  53645
+
+Fri Dec 15 15:06:00 2017
+
+
+ Elaboration Time: 0.71875 sec
+
+ Current Memory Usage: 967.094 Meg
+
+ Total Signals          : 33449
+ Total Nets             : 19654
+ Total Signal Drivers   : 19611
+ Total Blocks           : 9134
+ Total Primitive Blocks : 4792
+ Total Processes        : 19609
+ Total Traceable Variables  : 46211
+ Total Scalar Nets and Variables : 150308
+
+ Total Simulation Time: 2.25 sec
+
+ Current Memory Usage: 511.816 Meg
+
+Fri Dec 15 16:22:33 2017
+

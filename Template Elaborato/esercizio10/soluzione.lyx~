@@ -189,11 +189,11 @@ end{figure}
 
 \end_inset
 
-Si è scelto di realizzare un semplice addizionatore di tipo carry_save che
+Si è scelto di realizzare un semplice addizionatore di tipo carry save che
  effettua la somma di due operandi da tre bit, nello schematico sono mostrati
  due carry save cell, queste sono formate da due full adder, uno utilizzato
- come carry_save ed un altro come un full adder, dopodiché i valori calcolari
- dal primo carry save vengono propagati al secondo e la somma è determinata
+ come carry save ed un altro come un full adder, dopodiché i valori calcolari
+ dal primo carry save cell vengono propagati al secondo e la somma è determinata
  dalla uscita dei full adder.
 \end_layout
 

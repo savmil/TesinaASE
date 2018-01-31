@@ -463,7 +463,11 @@ ref{Dati ripple carry}
  avendo una cella di dimensione quattro all' aumentare del numero di operandi,
  aumentano il numero di celle istanziate, il tempo di attesa dell' ultima
  cella diventa sempre maggiore e tende ad essere comparabile con quello
- di un Ripple Carry Adder.
+ di un Ripple Carry Adder, difatti anche se i vari sommattori stanno funzionando
+ in parallelo, i vari selettori che decidono quali risultati dare in uscita,
+ devono attendere il carry proveniente dal blocco precedente ed all' aumentare
+ dal numero di blocchi, il beneficio di avere tanti sommatori va diminuendo,
+ se la dimensione dei blocchi non viene ottimizzata.
 \end_layout
 
 \begin_layout Subsection

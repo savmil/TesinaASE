@@ -1,0 +1,30 @@
+Command line:
+   tb_comp_isim_map.exe
+     -simmode  gui
+     -sdfmax  /uut/=.sdf
+     -sdfroot  /uut
+     -simrunnum  0
+     -socket  53241
+
+Fri Dec 15 14:33:20 2017
+
+
+ Elaboration Time: 0.078125 sec
+
+ Current Memory Usage: 846.606 Meg
+
+ Total Signals          : 5
+ Total Nets             : 67
+ Total Signal Drivers   : 4
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 2
+ Total Traceable Variables  : 9
+ Total Scalar Nets and Variables : 428
+
+ Total Simulation Time: 0.09375 sec
+
+ Current Memory Usage: 846.606 Meg
+
+Fri Dec 15 14:33:27 2017
+
